@@ -1,25 +1,26 @@
-image: node
+build:public-website
+  image: node
 
-before_script:
-  - pwd
-
-pages:
-  script:
-    - cd public-website
-    - npm --version
-    - date
-    - yarn install
-    - date
-    - yarn run generate
-    - date 
-    - du -sh public/
-    - mv public ../public
-    - ls -a 
-    - pwd 
-    - cd .. 
-    - ls -a 
+  before_script:
     - pwd
-  artifacts:
-    paths:
-      - public
+
+  pages:
+    script:
+      - cd public-website
+      - npm --version
+      - date
+      - yarn install
+      - date
+      - yarn run generate
+      - date 
+      - du -sh public/
+      - mv public ../public
+      - ls -a 
+      - pwd 
+      - cd .. 
+      - ls -a 
+      - pwd
+    artifacts:
+      paths:
+        - public
 
