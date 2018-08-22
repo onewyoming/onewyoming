@@ -8,7 +8,9 @@ pages:
     - cd public-website
     - npm --version
     - date
-    - npm run generate
+    - yarn install
+    - date
+    - yarn run generate
     - date 
     - du -sh public/
     - mv -r public ../public
