@@ -13,7 +13,7 @@ pages:
     - yarn run generate
     - date 
     - du -sh public/
-    - mv -r public ../public
+    - mv public ../public
     - ls -a 
     - pwd 
     - cd .. 
