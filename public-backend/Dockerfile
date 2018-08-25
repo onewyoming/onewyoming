@@ -10,8 +10,8 @@ ADD . /var/www/
 # Install dependencies from requirements.txt
 RUN pip install --upgrade pip setuptools
 RUN pip install -r requirements.txt
-RUN python secret.py
+RUN export FLASK_APP=flaskr
 
-EXPOSE 5000
+EXPOSE 8080
 
-CMD ["python","app.py"]
+CMD ["waitress-serve --call 'flaskr:create_app'"]
