@@ -5,6 +5,7 @@ free -h;
 nvm install node;
 node --version;
 npm --version;
+npm install -g yarn
 cd /root/wyoming;
 docker-compose down --remove-orphans;
 git clean -df 
