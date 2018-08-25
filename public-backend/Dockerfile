@@ -14,4 +14,4 @@ RUN export FLASK_APP=flaskr
 
 EXPOSE 8080
 
-CMD ["waitress-serve --call 'flaskr:create_app'"]
+CMD ["waitress-serve", "--call 'flaskr:create_app'"]
