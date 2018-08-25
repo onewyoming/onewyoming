@@ -5,16 +5,21 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Windows", "Windows\Windows.csproj", "{1B5C208C-ACFB-4081-A0C6-7DDE9993A0A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{DFDA33EC-E2D9-4102-A066-20C835100BAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|ARM = Release|ARM
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B5C208C-ACFB-4081-A0C6-7DDE9993A0A7}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{1B5C208C-ACFB-4081-A0C6-7DDE9993A0A7}.Debug|ARM.ActiveCfg = Debug|ARM
 		{1B5C208C-ACFB-4081-A0C6-7DDE9993A0A7}.Debug|ARM.Build.0 = Debug|ARM
 		{1B5C208C-ACFB-4081-A0C6-7DDE9993A0A7}.Debug|ARM.Deploy.0 = Debug|ARM
@@ -24,6 +29,7 @@ Global
 		{1B5C208C-ACFB-4081-A0C6-7DDE9993A0A7}.Debug|x86.ActiveCfg = Debug|x86
 		{1B5C208C-ACFB-4081-A0C6-7DDE9993A0A7}.Debug|x86.Build.0 = Debug|x86
 		{1B5C208C-ACFB-4081-A0C6-7DDE9993A0A7}.Debug|x86.Deploy.0 = Debug|x86
+		{1B5C208C-ACFB-4081-A0C6-7DDE9993A0A7}.Release|Any CPU.ActiveCfg = Release|x86
 		{1B5C208C-ACFB-4081-A0C6-7DDE9993A0A7}.Release|ARM.ActiveCfg = Release|ARM
 		{1B5C208C-ACFB-4081-A0C6-7DDE9993A0A7}.Release|ARM.Build.0 = Release|ARM
 		{1B5C208C-ACFB-4081-A0C6-7DDE9993A0A7}.Release|ARM.Deploy.0 = Release|ARM
@@ -33,6 +39,22 @@ Global
 		{1B5C208C-ACFB-4081-A0C6-7DDE9993A0A7}.Release|x86.ActiveCfg = Release|x86
 		{1B5C208C-ACFB-4081-A0C6-7DDE9993A0A7}.Release|x86.Build.0 = Release|x86
 		{1B5C208C-ACFB-4081-A0C6-7DDE9993A0A7}.Release|x86.Deploy.0 = Release|x86
+		{DFDA33EC-E2D9-4102-A066-20C835100BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFDA33EC-E2D9-4102-A066-20C835100BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFDA33EC-E2D9-4102-A066-20C835100BAF}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{DFDA33EC-E2D9-4102-A066-20C835100BAF}.Debug|ARM.Build.0 = Debug|Any CPU
+		{DFDA33EC-E2D9-4102-A066-20C835100BAF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DFDA33EC-E2D9-4102-A066-20C835100BAF}.Debug|x64.Build.0 = Debug|Any CPU
+		{DFDA33EC-E2D9-4102-A066-20C835100BAF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DFDA33EC-E2D9-4102-A066-20C835100BAF}.Debug|x86.Build.0 = Debug|Any CPU
+		{DFDA33EC-E2D9-4102-A066-20C835100BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFDA33EC-E2D9-4102-A066-20C835100BAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFDA33EC-E2D9-4102-A066-20C835100BAF}.Release|ARM.ActiveCfg = Release|Any CPU
+		{DFDA33EC-E2D9-4102-A066-20C835100BAF}.Release|ARM.Build.0 = Release|Any CPU
+		{DFDA33EC-E2D9-4102-A066-20C835100BAF}.Release|x64.ActiveCfg = Release|Any CPU
+		{DFDA33EC-E2D9-4102-A066-20C835100BAF}.Release|x64.Build.0 = Release|Any CPU
+		{DFDA33EC-E2D9-4102-A066-20C835100BAF}.Release|x86.ActiveCfg = Release|Any CPU
+		{DFDA33EC-E2D9-4102-A066-20C835100BAF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
