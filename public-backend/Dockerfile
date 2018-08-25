@@ -9,9 +9,9 @@ ADD . /var/www/
 
 # Install dependencies from requirements.txt
 RUN pip install --upgrade pip setuptools
-RUN pip install -r requirements.txt
 RUN export FLASK_APP=flaskr
+RUN flask init-db
 
-EXPOSE 8080
+EXPOSE 5000
 
-CMD ["waitress-serve", "--call 'flaskr:create_app'"]
+CMD ["flask", "run"]
