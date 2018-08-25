@@ -51,8 +51,8 @@ services:
   website:
     restart: always
     image: website
-    build: ./public-website
-    container_name: public-website
+    build: ./built-website
+    container_name: built-website
     volumes:
       - "./volumes/nginx-website/conf.d/:/etc/nginx/conf.d:z"
     environment:
