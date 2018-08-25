@@ -8,7 +8,6 @@ npm --version;
 npm install -g yarn
 cd /root/wyoming;
 docker-compose down --remove-orphans;
-git clean -df 
 git reset --hard;
 git pull origin master;
 cd /root/wyoming/public-website;
