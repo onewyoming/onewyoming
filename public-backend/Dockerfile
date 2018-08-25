@@ -10,7 +10,8 @@ ADD . /var/www/
 # Install dependencies from requirements.txt
 RUN pip install --upgrade pip setuptools
 RUN pip install -r requirements.txt
+RUN export FLASK_ENV=development
 
 EXPOSE 5000
 
-CMD ["flask", "run"]
+CMD ["flask", "run --host=0.0.0.0"]
