@@ -20,7 +20,7 @@ rsync -av /root/wyoming/public-website/public/ /root/wyoming/built-website/;
 cat /root/wyoming/built-website/index.html;
 du -sh /root/wyoming/built-website;
 ls -a /root/wyoming/built-website;
-cd /root/wyoming/;docker-compose up --build -d;
+cd /root/wyoming/;docker-compose up --build;
 free -h;
 w;
 last;
