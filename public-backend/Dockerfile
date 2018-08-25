@@ -10,8 +10,6 @@ ADD . /var/www/
 # Install dependencies from requirements.txt
 RUN pip install --upgrade pip setuptools
 RUN pip install -r requirements.txt
-RUN export FLASK_APP=flaskr
-RUN flask init-db
 
 EXPOSE 5000
 
