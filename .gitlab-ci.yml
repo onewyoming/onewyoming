@@ -26,9 +26,11 @@ build:dotnetcore:
   script:
     - pwd
     - cd Windows
+    - cd ClassLibrary1
+    - pwd
     - dotnet --version
-    - dotnet restore --verbosity normal
-    - dotnet build --verbosity normal
+    - dotnet restore --verbosity detailed
+    - dotnet build --verbosity detailed
 
 test:dotnetcore:
    image: microsoft/dotnet:latest
@@ -36,5 +38,5 @@ test:dotnetcore:
      - pwd
      - cd Windows
      - cd XUnitTestProject1
-     - dotnet restore --verbosity normal
-     - dotnet test --verbosity normal
+     - dotnet restore --verbosity detailed
+     - dotnet test --verbosity detailed
