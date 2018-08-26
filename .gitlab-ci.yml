@@ -1,4 +1,4 @@
-page:website:
+pages:website:
   image: node
   before_script:
     - pwd
@@ -9,14 +9,32 @@ page:website:
     - yarn install
     - date
     - yarn run generate
-    - date 
+    - date
     - du -sh public/
     - mv public ../public
-    - ls -a 
-    - pwd 
-    - cd .. 
-    - ls -a 
+    - ls -a
+    - pwd
+    - cd ..
+    - ls -a
     - pwd
   artifacts:
     paths:
       - public
+
+build:dotnetcore:
+  image: microsoft/dotnet:latest
+  script:
+    - pwd
+    - cd Windows
+    - dotnet --version
+    - dotnet restore --verbosity normal
+    - dotnet build --verbosity normal
+
+test:dotnetcore:
+   image: microsoft/dotnet:latest
+   script:
+     - pwd
+     - cd Windows
+     - cd XUnitTestProject1
+     - dotnet restore --verbosity normal
+     - dotnet test --verbosity normal
