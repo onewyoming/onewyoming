@@ -42,6 +42,7 @@ test:dotnetcore:
      - dotnet test --verbosity detailed
 
 test:databases:
+  image: postgres
   services:
     - postgres
 

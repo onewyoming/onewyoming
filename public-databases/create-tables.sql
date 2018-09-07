@@ -3,7 +3,6 @@ create schema wyoming;
 CREATE TABLE wyoming.person(
 id SERIAL PRIMARY KEY,
 profile_picture BYTEA,
-facebook_id INTEGER,
 email VARCHAR(400),
 password VARCHAR(60) NOT NULL,
 password_salt VARCHAR(300),
