@@ -1,7 +1,7 @@
 package io.gitlab.wyoming.publicandroidapp
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import io.gitlab.wyoming.publicandroidapp.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
