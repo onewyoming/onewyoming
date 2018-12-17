@@ -18,3 +18,39 @@ This project is a way to learn about monorepos by collaboration.
 We have a throw everything in the sink mantra. 
 Ideally, every project shows up in the .gitlab-ci.yml file 
 which allows us to demonstrate Gitlab continuous integration and continuous delivery. 
+
+
+```json
+{
+    "hello": {
+        "scope": "javascript,html",
+        "prefix": "hello",
+        "body": "$BLOCK_COMMENT_START Hello World $BLOCK_COMMENT_END"
+    }
+}
+```
+
+```ts
+import * as vscode from 'vscode';
+
+export function activate(context: vscode.ExtensionContext) {
+    vscode.languages.registerSignatureHelpProvider('markdown', new class implements vscode.SignatureHelpProvider {
+        provideSignatureHelp(
+            document: vscode.TextDocument,
+            position: vscode.Position,
+            token: vscode.CancellationToken,
+            context: vscode.SignatureHelpContext
+        ): vscode.ProviderResult<vscode.SignatureHelp> {
+            // Return fake signature help result
+            const sigHelp = new vscode.SignatureHelp();
+            sigHelp.activeParameter = 0;
+            sigHelp.activeSignature = 0;
+            sigHelp.signatures = [new vscode.SignatureInformation(getLabel(context))];
+            return sigHelp;
+        }
+    }, {
+        triggerCharacters: ['('],
+        retriggerCharacters: [',']
+    });
+}
+```
