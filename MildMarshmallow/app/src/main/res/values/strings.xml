@@ -1,4 +1,10 @@
 <resources>
-    <string name="app_name">Mild Marshmallow</string>
-    <string name="main_fragment_text">Hello, and welcome to the Mild Marshmallow, Aniqa.</string>
+    <string name="app_name">
+        Mild Marshmallow
+    </string>
+    <string name="main_fragment_text">
+        Hello.
+        Welcome to the Mild Marshmallow, Aniqa.
+        I am glad you came.
+    </string>
 </resources>
