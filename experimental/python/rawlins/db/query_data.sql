@@ -1,1 +1,1 @@
-select registration_time from users;
+select id, email, password, registration_time from users;
