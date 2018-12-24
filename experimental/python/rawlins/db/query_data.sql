@@ -1,1 +1,1 @@
-select registration_time from person;
+select registration_time from users;
