@@ -36,5 +36,6 @@ create table if not exists reservations
   start_time timestamp not null,
   end_time   timestamp not null,
   room_id    uuid references rooms,
+  user_id    uuid references users,
   primary key (id)
 );
