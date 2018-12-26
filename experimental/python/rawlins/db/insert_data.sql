@@ -22,8 +22,8 @@ limit 1;
 insert into reservations (start_time, end_time, room_id, user_id)
 select '2020-12-26 19:30:00.000000+00',
        '2020-12-26 21:30:00.000000+00',
-       room.id,
-       user.id
+       rooms.id,
+       users.id
 from rooms,
      users
 where rooms.name = 'Narendra Modi Executive Conference Suite'
