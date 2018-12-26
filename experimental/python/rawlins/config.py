@@ -20,7 +20,10 @@ def config_section_map(section):
 
 
 def set_environment_variables():
-    os.environ["POSTGRES_DB"] = config_section_map("database")['dbname']
-    os.environ["POSTGRES_USER"] = config_section_map("database")['user']
-    os.environ["POSTGRES_HOST"] = config_section_map("database")['host']
-    os.environ["POSTGRES_PASSWORD"] = config_section_map("database")['password']
+    if 'image' in os.environ:
+        pass
+    else:
+        os.environ["POSTGRES_DB"] = config_section_map("database")['dbname']
+        os.environ["POSTGRES_USER"] = config_section_map("database")['user']
+        os.environ["POSTGRES_HOST"] = config_section_map("database")['host']
+        os.environ["POSTGRES_PASSWORD"] = config_section_map("database")['password']
