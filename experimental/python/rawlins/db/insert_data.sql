@@ -14,7 +14,7 @@ select 'Narendra Modi Executive Conference Suite',
        12,
        48,
        'Narendra Modi Executive Conference Suite is the crown jewel meeting room available in our make believe universe',
-       id
+       room_groups.id
 from room_groups
 where name = 'Sania Mirza Conference Suites'
 limit 1;
