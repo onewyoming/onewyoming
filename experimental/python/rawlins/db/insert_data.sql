@@ -16,5 +16,5 @@ select 'Narendra Modi Executive Conference Suite',
        'Narendra Modi Executive Conference Suite is the crown jewel meeting room available in our make believe universe',
        id
 from room_groups
-where name like 'Sania Mirza Conference Suites'
+where name = 'Sania Mirza Conference Suites'
 limit 1;
