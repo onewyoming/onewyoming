@@ -2,7 +2,6 @@ import configparser
 
 Config = configparser.ConfigParser()
 Config.read(".env")
-print(Config.sections())
 
 
 def config_section_map(section):
