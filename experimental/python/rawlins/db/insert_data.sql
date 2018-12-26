@@ -18,3 +18,14 @@ select 'Narendra Modi Executive Conference Suite',
 from room_groups
 where name = 'Sania Mirza Conference Suites'
 limit 1;
+
+insert into reservations (start_time, end_time, room_id, user_id)
+select '2020-12-26 19:30:00.000000+00',
+       '2020-12-26 21:30:00.000000+00',
+       room.id,
+       user.id
+from rooms,
+     users
+where rooms.name = 'Narendra Modi Executive Conference Suite'
+  and users.email = 'hikingfan@gmail.com'
+limit 1;
