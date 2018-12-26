@@ -1,7 +1,7 @@
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 SELECT uuid_generate_v4();
 
-ALTER DATABASE rawlins SET timezone TO 'Europe/Berlin';
+ALTER DATABASE rawlins SET timezone TO 'Australia/Sydney';
 
 create table if not exists users
 (
