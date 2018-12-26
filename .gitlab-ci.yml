@@ -84,3 +84,23 @@ test:rawlinsdb:
     - psql -h "postgres" -U "$POSTGRES_USER" -d "$POSTGRES_DB" -f create_tables.sql
     - psql -h "postgres" -U "$POSTGRES_USER" -d "$POSTGRES_DB" -f insert_data.sql
     - psql -h "postgres" -U "$POSTGRES_USER" -d "$POSTGRES_DB" -f query_data.sql
+
+test:rawlinsunittest:
+  image: python3
+  services:
+    - postgres
+
+  variables:
+    # Configure postgres service (https://hub.docker.com/_/postgres/)
+    POSTGRES_DB: rawlins
+    POSTGRES_USER: rawlins
+    POSTGRES_PASSWORD: rawlins
+    image: postgres
+  script:
+    - cd experimental/python/rawlins
+    - pwd
+    - ls -a 
+    - pip install --upgrade pip setuptools
+    - pip install --user pipenv
+    - pipenv install
+    - pipenv run unittest discover
