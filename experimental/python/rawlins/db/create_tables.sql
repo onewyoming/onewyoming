@@ -10,7 +10,7 @@ create table if not exists users
   primary key (id)
 );
 
-create table if not exists roomgroup
+create table if not exists room_groups
 (
   id               uuid default uuid_generate_v4(),
   name             varchar(40) not null unique,
