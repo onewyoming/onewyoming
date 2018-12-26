@@ -6,7 +6,7 @@ create table if not exists users
   id                uuid default uuid_generate_v4(),
   email             varchar(400) not null unique,
   password          varchar(120),
-  registration_time timestamp    not null,
+  registration_time timestamptz  not null,
   primary key (id)
 );
 
@@ -34,8 +34,8 @@ create table if not exists rooms
 create table if not exists reservations
 (
   id         uuid default uuid_generate_v4(),
-  start_time timestamp not null,
-  end_time   timestamp not null,
+  start_time timestamptz not null,
+  end_time   timestamptz not null,
   room_id    uuid references rooms,
   user_id    uuid references users,
   primary key (id)
