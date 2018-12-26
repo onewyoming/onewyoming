@@ -4,7 +4,7 @@ from datetime import datetime
 
 @dataclass
 class User:
-    id: int
+    id: str
     email: str
     password: str
     registration_time: datetime
