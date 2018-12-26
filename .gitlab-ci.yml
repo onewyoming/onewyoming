@@ -86,7 +86,7 @@ test:rawlinsdb:
     - psql -h "postgres" -U "$POSTGRES_USER" -d "$POSTGRES_DB" -f query_data.sql
 
 test:rawlinsunittest:
-  image: python3
+  image: python:stretch
   services:
     - postgres
 
