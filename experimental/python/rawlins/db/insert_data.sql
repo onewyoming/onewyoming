@@ -9,7 +9,7 @@ values ('Sania Mirza Conference Suites',
         48,
         'Sania Mirza conference rooms are usually for small groups but we can accommodate up to four dozen people');
 
-insert into rooms (name, minimum_capacity, maximum_capacity, room_group)
+insert into rooms (name, minimum_capacity, maximum_capacity, note, room_group)
 select 'Narendra Modi Executive Conference Suite',
        12,
        48,
