@@ -35,5 +35,6 @@ create table if not exists reservations
   id         uuid default uid_generate_v4(),
   start_time timestamp not null,
   end_time   timestamp not null,
-  room_id    uuid references rooms
+  room_id    uuid references rooms,
+  primary key (id)
 );
