@@ -29,6 +29,16 @@ class TestUser(unittest.TestCase):
         # except Exception:
         #     traceback.print_exc()
 
+    def test_update_email(self):
+        visitor = User(
+            id="",
+            email="hikingfan@gmail.com",
+            password="hunter2",
+            registration_time=datetime.now()
+        )
+        visitor.email = "hikingfan2@gmail.com"
+        self.assertEqual(visitor.email, "hikingfan2@gmail.com")
+
 
 if __name__ == '__main__':
     unittest.main()
