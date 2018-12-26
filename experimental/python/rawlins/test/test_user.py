@@ -1,3 +1,4 @@
+import traceback
 import unittest
 from datetime import datetime
 
@@ -25,8 +26,8 @@ class TestUser(unittest.TestCase):
             rows = cursor.fetchall()
             for row in rows:
                 print("Database name: ", row[0])
-        except:
-            print("I am unable to connect to the database")
+        except Exception:
+            traceback.print_exc()
 
 
 if __name__ == '__main__':
