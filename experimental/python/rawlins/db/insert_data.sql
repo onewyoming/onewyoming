@@ -8,3 +8,10 @@ values ('Sania Mirza Conference Suites',
         4,
         48,
         'Sania Mirza conference rooms are usually for small groups but we can accommodate up to four dozen people');
+
+insert into rooms (name, minimum_capacity, maximum_capacity, room_group)
+values ('Narendra Modi Executive Conference Suite',
+        12,
+        48,
+        'Narendra Modi Executive Conference Suite is the crown jewel meeting room available in our make believe universe',
+         select id from room_groups where name like 'Sania Mirza Conference Suites' limit 1);
