@@ -20,7 +20,10 @@ class TestUser(unittest.TestCase):
         self.assertEqual(visitor.email, "hikingfan@gmail.com")
         try:
             dbname = config_section_map("development")['dbname']
-            connection = psycopg2.connect(f"dbname='{dbname}' user='postgres' host='127.0.0.1' password=''")
+            user = config_section_map("development")['user']
+            host = config_section_map("development")['host']
+            password = config_section_map("development")['password']
+            connection = psycopg2.connect(f"dbname='{dbname}' user='{user}' host='{host}' password='{password}'")
             cursor = connection.cursor()
             cursor.execute("""SELECT datname from pg_database""")
             rows = cursor.fetchall()
