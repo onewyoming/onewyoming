@@ -18,4 +18,4 @@ create table if not exists roomgroup
   maximum_capacity int         not null,
   note             text,
   primary key (id)
-)
+);
