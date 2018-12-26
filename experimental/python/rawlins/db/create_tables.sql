@@ -22,7 +22,7 @@ create table if not exists room_groups
 
 create table if not exists rooms
 (
-  id               uuid default uid_generate_v4(),
+  id               uuid default uuid_generate_v4(),
   name             varchar(40) not null unique,
   minimum_capacity int         not null,
   maximum_capacity int         not null,
@@ -32,7 +32,7 @@ create table if not exists rooms
 
 create table if not exists reservations
 (
-  id         uuid default uid_generate_v4(),
+  id         uuid default uuid_generate_v4(),
   start_time timestamp not null,
   end_time   timestamp not null,
   room_id    uuid references rooms,
