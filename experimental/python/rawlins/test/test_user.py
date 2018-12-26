@@ -1,6 +1,9 @@
 import unittest
 from datetime import datetime
 
+import psycopg2
+
+from config import config_section_map
 from model.User import User
 
 
@@ -14,10 +17,9 @@ class TestUser(unittest.TestCase):
             registration_time=datetime.now()
         )
         self.assertEqual(visitor.email, "hikingfan@gmail.com")
-        import psycopg2
-
         try:
-            connection = psycopg2.connect("dbname='rawlins' user='postgres' host='localhost' password=''")
+            print(config_section_map("development")['dbname'])
+            connection = psycopg2.connect("dbname='rawlins' user='postgres' host='127.0.0.1' password=''")
             cursor = connection.cursor()
             cursor.execute("""SELECT datname from pg_database""")
             rows = cursor.fetchall()
