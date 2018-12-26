@@ -19,3 +19,12 @@ create table if not exists room_groups
   note             text,
   primary key (id)
 );
+
+create table if not exists rooms
+(
+  id               uuid default uid_generate_v4(),
+  name             varchar(40) not null unique,
+  minimum_capacity int         not null,
+  maximum_capacity int         not null,
+  primary key (id)
+);
