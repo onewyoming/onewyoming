@@ -1,10 +1,11 @@
+import os
 import traceback
 import unittest
 from datetime import datetime
 
 import psycopg2
 
-from config import config_section_map
+from config import set_environment_variables
 from model.User import User
 
 
@@ -19,10 +20,11 @@ class TestUser(unittest.TestCase):
         )
         self.assertEqual(visitor.email, "hikingfan@gmail.com")
         try:
-            dbname = config_section_map("development")['dbname']
-            user = config_section_map("development")['user']
-            host = config_section_map("development")['host']
-            password = config_section_map("development")['password']
+            set_environment_variables()
+            dbname = os.environ["POSTGRES_DB"]
+            user = os.environ["POSTGRES_USER"]
+            host = os.environ["POSTGRES_HOST"]
+            password = os.environ["POSTGRES_PASSWORD"]
             connection = psycopg2.connect(f"dbname='{dbname}' user='{user}' host='{host}' password='{password}'")
             cursor = connection.cursor()
             cursor.execute("""SELECT datname from pg_database""")

@@ -1,4 +1,5 @@
 import configparser
+import os
 
 Config = configparser.ConfigParser()
 Config.read(".env")
@@ -16,3 +17,10 @@ def config_section_map(section):
             print("exception on %s!" % option)
             dictionary[option] = None
     return dictionary
+
+
+def set_environment_variables():
+    os.environ["POSTGRES_DB"] = config_section_map("database")['dbname']
+    os.environ["POSTGRES_USER"] = config_section_map("database")['user']
+    os.environ["POSTGRES_HOST"] = config_section_map("database")['host']
+    os.environ["POSTGRES_PASSWORD"] = config_section_map("database")['password']
