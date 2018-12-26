@@ -104,4 +104,4 @@ test:rawlinsunittest:
     - pip install --user pipenv
     - export PATH="$HOME/.local/bin:$PATH"
     - pipenv install
-    - pipenv run unittest discover
+    - pipenv run python -m unittest discover
