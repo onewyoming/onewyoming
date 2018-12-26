@@ -26,7 +26,7 @@ create table if not exists rooms
   name             varchar(40) not null unique,
   minimum_capacity int         not null,
   maximum_capacity int         not null,
-  room_group       uuid references room_groups
+  room_group       uuid references room_groups,
   primary key (id)
 );
 
