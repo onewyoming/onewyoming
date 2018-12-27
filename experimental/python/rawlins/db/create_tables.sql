@@ -9,6 +9,9 @@ create table if not exists users
   email             varchar     not null unique,
   password          varchar,
   registration_time timestamptz not null,
+  is_administrator  boolean     not null,
+  is_reporter       boolean     not null,
+  is_banned         boolean     not null,
   primary key (id)
 );
 
