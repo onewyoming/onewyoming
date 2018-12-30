@@ -1,0 +1,22 @@
+body {
+    background-color: #004D40;
+    font-family: sans-serif;
+    color: #FAFAFA;
+}
+
+.centered-image {
+    display: block;
+    margin: auto;
+}
+
+.seamless {
+    background-color: #004D40;
+}
+
+.clickMe {
+    -moz-appearance: button;
+    -webkit-appearance: button;
+    text-decoration: none;
+    color: red;
+    padding: 0.2em 0.4em;
+}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Subscribe!{% endblock %}
+
+{% block body %}
+    <form action="/subscribe" method="post">
+        <div>
+            <label for="name">Email:</label>
+            <input type="email" id="name" name="user_name" autofocus="autofocus"/>
+        </div>
+    </form>
+{% endblock %}
