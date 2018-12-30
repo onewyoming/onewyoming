@@ -17,8 +17,9 @@ def welcome():
                         format='%(name)s - %(levelname)s - %(message)s',
                         level=logging.DEBUG)
     logging.debug(f"Request information: ")
-    for argument in request.args:
-        print(f"{argument}")
+    for argument in request.headers:
+        logging.debug(f"{argument}")
+    logging.debug(f"{request.remote_addr}")
     logging.debug(f"User agent: {request.user_agent.platform}")
     return render_template('welcome.html')
 
