@@ -1,4 +1,6 @@
-from flask import Flask, render_template
+import logging
+
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -10,6 +12,8 @@ def hello_world():
 
 @app.route('/welcome')
 def welcome():
+    logging.basicConfig(filename='app.log', filemode='a', format='%(name)s - %(levelname)s - %(message)s')
+    logging.debug(msg=f"User agent: {request.user_agent.string}")
     return render_template('welcome.html')
 
 
