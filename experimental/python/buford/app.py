@@ -12,8 +12,14 @@ def hello_world():
 
 @app.route('/welcome')
 def welcome():
-    logging.basicConfig(filename='app.log', filemode='a', format='%(name)s - %(levelname)s - %(message)s')
-    logging.debug(msg=f"User agent: {request.user_agent.string}")
+    logging.basicConfig(filename='app.log',
+                        filemode='a',
+                        format='%(name)s - %(levelname)s - %(message)s',
+                        level=logging.DEBUG)
+    logging.debug(f"Request information: ")
+    for argument in request.args:
+        print(f"{argument}")
+    logging.debug(f"User agent: {request.user_agent.platform}")
     return render_template('welcome.html')
 
 
