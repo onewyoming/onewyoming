@@ -2,6 +2,8 @@ import configparser
 import logging
 import os
 
+import psycopg2
+
 Config = configparser.ConfigParser()
 Config.read(".env")
 
@@ -29,6 +31,16 @@ def set_environment_variables():
         os.environ["POSTGRES_HOST"] = config_section_map("database")['host']
         os.environ["POSTGRES_PASSWORD"] = config_section_map("database")['password']
         os.environ["FLASK_LOGGING_FILE"] = config_section_map("logging")['logfile']
+
+
+def get_connection():
+    set_environment_variables()
+    database = os.environ["POSTGRES_DB"]
+    user = os.environ["POSTGRES_USER"]
+    host = os.environ["POSTGRES_HOST"]
+    password = os.environ["POSTGRES_PASSWORD"]
+    connection = psycopg2.connect(f"dbname='{database}' user='{user}' host='{host}' password='{password}'")
+    return connection
 
 
 def log_request(request):
