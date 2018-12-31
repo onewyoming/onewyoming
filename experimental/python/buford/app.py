@@ -1,5 +1,3 @@
-import logging
-
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
@@ -12,20 +10,17 @@ def hello_world():
 
 @app.route('/welcome')
 def welcome():
-    logging.basicConfig(filename='app.log',
-                        filemode='a',
-                        format='%(name)s - %(levelname)s - %(message)s',
-                        level=logging.DEBUG)
-    logging.debug(f"Request information: ")
-    for argument in request.headers:
-        logging.debug(f"{argument}")
-    logging.debug(f"{request.remote_addr}")
-    logging.debug(f"User agent: {request.user_agent.platform}")
     return render_template('welcome.html')
 
 
 @app.route('/subscribe')
 def subscribe():
+    return render_template('subscribe.html')
+
+
+@app.route('/subscribe', methods=['POST'])
+def post_subscribe():
+    print(request.form['input_email'])
     return render_template('subscribe.html')
 
 

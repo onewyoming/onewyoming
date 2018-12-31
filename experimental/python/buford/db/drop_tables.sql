@@ -1,3 +1,3 @@
 select version();
 drop table if exists visitors;
-drop table if exists email;
+drop table if exists applicant;

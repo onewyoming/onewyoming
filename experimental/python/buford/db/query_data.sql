@@ -1,0 +1,1 @@
+select id, email, registration_time from applicant;

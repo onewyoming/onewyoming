@@ -1,0 +1,1 @@
+insert into applicant (email, registration_time) values ('hikingfan@gmail.com', now());

@@ -1,4 +1,5 @@
 import configparser
+import logging
 import os
 
 Config = configparser.ConfigParser()
@@ -28,3 +29,15 @@ def set_environment_variables():
         os.environ["POSTGRES_HOST"] = config_section_map("database")['host']
         os.environ["POSTGRES_PASSWORD"] = config_section_map("database")['password']
         os.environ["FLASK_LOGGING_FILE"] = config_section_map("logging")['logfile']
+
+
+def log_request(request):
+    logging.basicConfig(filename='app.log',
+                        filemode='a',
+                        format='%(name)s - %(levelname)s - %(message)s',
+                        level=logging.DEBUG)
+    logging.debug(f"Request information: ")
+    for argument in request.headers:
+        logging.debug(f"{argument}")
+    logging.debug(f"Request URL: {request.url}")
+    logging.debug(f"User agent platform: {request.user_agent.platform}")

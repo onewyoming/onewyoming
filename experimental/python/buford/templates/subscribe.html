@@ -2,10 +2,10 @@
 {% block title %}Subscribe!{% endblock %}
 
 {% block body %}
-    <form action="/subscribe" method="post">
+    <form action="{{ url_for('subscribe') }}" method="post">
         <div>
-            <label for="name">Email:</label>
-            <input type="email" id="name" name="user_name" autofocus="autofocus"/>
+            <label for="input_email">Email:</label>
+            <input type="email" id="input_email" name="input_email" autofocus="autofocus"/>
         </div>
     </form>
 {% endblock %}
