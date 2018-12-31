@@ -21,7 +21,7 @@ class Applicant:
         connection = psycopg2.connect(f"dbname='{database}' user='{user}' host='{host}' password='{password}'")
         cursor = connection.cursor()
         try:
-            cursor.execute('insert into applicant (email, registration_time) values (%s, %s)', self.email,
+            cursor.execute("""insert into applicant (email, registration_time) values (%s, %s)""", self.email,
                            self.registration_time)
         except psycopg2.IntegrityError:
             print("this email already exists")
