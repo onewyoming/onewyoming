@@ -12,7 +12,7 @@ class Applicant:
     email: str
     registration_time: datetime
 
-    def on_save(self):
+    def on_save(self) -> int:
         set_environment_variables()
         database = os.environ["POSTGRES_DB"]
         user = os.environ["POSTGRES_USER"]
