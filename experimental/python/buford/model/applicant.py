@@ -25,6 +25,7 @@ class Applicant:
                 f"insert into applicant (email, registration_time) values ('{self.email}', '{self.registration_time}');")
             print(
                 f"insert into applicant (email, registration_time) values ('{self.email}', '{self.registration_time}');")
+            connection.commit()
             print("we executed the cursor")
         except psycopg2.IntegrityError:
             print("this email already exists")
