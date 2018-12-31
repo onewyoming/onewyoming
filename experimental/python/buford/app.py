@@ -17,16 +17,19 @@ def hello_world():
 
 @app.route('/welcome')
 def welcome():
+    save_visitor_information()
     return render_template('welcome.html')
 
 
 @app.route('/subscribe')
 def subscribe():
+    save_visitor_information()
     return render_template('subscribe.html')
 
 
 @app.route('/subscribe', methods=['POST'])
 def post_subscribe():
+    save_visitor_information()
     applicant = Applicant(email=request.form['input_email'],
                           registration_time=datetime.utcnow().replace(tzinfo=pytz.UTC))
     if 0 == applicant.on_save():
