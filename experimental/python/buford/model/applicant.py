@@ -12,7 +12,6 @@ class Applicant:
     email: str
     registration_time: datetime
 
-    @property
     def on_save(self) -> int:
         set_environment_variables()
         database = os.environ["POSTGRES_DB"]
