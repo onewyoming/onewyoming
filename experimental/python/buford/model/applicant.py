@@ -26,4 +26,7 @@ class Applicant:
         except psycopg2.IntegrityError:
             print("this email already exists")
             return 1
+        except:
+            print("this is an error")
+            return 1
         return 0
