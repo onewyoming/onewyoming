@@ -12,6 +12,7 @@ class Applicant:
     email: str
     registration_time: datetime
 
+    @property
     def on_save(self) -> int:
         set_environment_variables()
         database = os.environ["POSTGRES_DB"]
@@ -20,6 +21,10 @@ class Applicant:
         password = os.environ["POSTGRES_PASSWORD"]
         connection = psycopg2.connect(f"dbname='{database}' user='{user}' host='{host}' password='{password}'")
         cursor = connection.cursor()
-        cursor.execute(
-            f"insert into applicant (email, registration_time) values ('{self.email}', '{self.registration_time}')")
+        try:
+            cursor.execute(
+                f"insert into applicant (email, registration_time) values ('{self.email}', '{self.registration_time}')")
+        except psycopg2.IntegrityError:
+            print("this email already exists")
+            return 1
         return 0

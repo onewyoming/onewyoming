@@ -1,5 +1,6 @@
 from datetime import datetime
 
+import pytz
 from flask import Flask, render_template, request
 
 from model.applicant import Applicant
@@ -24,9 +25,9 @@ def subscribe():
 
 @app.route('/subscribe', methods=['POST'])
 def post_subscribe():
-    print(request.form['input_email'])
-    applicant = Applicant(email=request.form['input_email'], registration_time=datetime.utcnow())
-    if 0 == applicant.on_save():
+    applicant = Applicant(email=request.form['input_email'],
+                          registration_time=datetime.utcnow().replace(tzinfo=pytz.UTC))
+    if 0 == applicant.on_save:
         return render_template('subscribe.html')
     return render_template('welcome.html')
 
