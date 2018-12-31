@@ -23,6 +23,7 @@ class Applicant:
         try:
             cursor.execute("""insert into applicant (email, registration_time) values (%s, %s)""", (self.email,
                                                                                                     self.registration_time))
+            print("we executed the cursor")
         except psycopg2.IntegrityError:
             print("this email already exists")
             return 1
