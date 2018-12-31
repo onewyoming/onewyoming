@@ -27,8 +27,8 @@ def subscribe():
 def post_subscribe():
     applicant = Applicant(email=request.form['input_email'],
                           registration_time=datetime.utcnow().replace(tzinfo=pytz.UTC))
-    if 0 == applicant.on_save:
-        return render_template('subscribe.html')
+    if 0 == applicant.on_save():
+        return render_template('success.html')
     return render_template('welcome.html')
 
 

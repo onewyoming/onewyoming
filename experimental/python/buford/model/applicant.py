@@ -1,8 +1,8 @@
 import os
 from dataclasses import dataclass
-from datetime import datetime
 
 import psycopg2
+import pytz
 
 from config import set_environment_variables
 
@@ -10,7 +10,7 @@ from config import set_environment_variables
 @dataclass
 class Applicant:
     email: str
-    registration_time: datetime
+    registration_time: pytz
 
     def on_save(self) -> int:
         set_environment_variables()
@@ -21,9 +21,8 @@ class Applicant:
         connection = psycopg2.connect(f"dbname='{database}' user='{user}' host='{host}' password='{password}'")
         cursor = connection.cursor()
         try:
-            s = f"insert into applicant (email, registration_time) values ('{self.email}', '{self.registration_time}')"
-            print(s)
-            cursor.execute(s)
+            cursor.execute('insert into applicant (email, registration_time) values (%s, %s)', self.email,
+                           self.registration_time)
         except psycopg2.IntegrityError:
             print("this email already exists")
             return 1
