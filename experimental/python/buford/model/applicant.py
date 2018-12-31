@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
+import psycopg2
 import pytz
 
 from config import get_connection
@@ -13,8 +14,12 @@ class Applicant:
     def on_save(self) -> int:
         connection = get_connection()
         cursor = connection.cursor()
-        cursor.execute(
+        try:
+            cursor.execute(
             f"insert into applicants (email, registration_time) values ('{self.email}', '{self.registration_time}');")
-        connection.commit()
+            connection.commit()
+        except psycopg2.IntegrityError:
+            print("this email already exists")
+            return 1
         connection.close()
         return 0
