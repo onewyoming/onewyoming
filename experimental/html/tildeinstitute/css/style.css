@@ -1,20 +1,23 @@
 article {
-    background: #CFD8DC;
-    padding: 0 5%;
+    background: #263238;
+    padding: 10px 5%;
+    max-width: 90%;
 }
 aside {
-    background: #CFD8DC;
+    background: #263238;
     padding: 0 5%;
     list-style-type: none;
 }
 body { 
-    background: #78909C;
+    background: #263238;
+    max-width: 100%;
 }
 
 img { 
   max-width: 100%;
   max-height: 100%;
 }
+
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
