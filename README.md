@@ -19,6 +19,32 @@ We have a throw everything in the sink mantra.
 Ideally, every project shows up in the .gitlab-ci.yml file 
 which allows us to demonstrate Gitlab continuous integration and continuous delivery. 
 
+## A new mirror on github 
+
+We have a new mirror on github! 
+[https://github.com/onewyoming/onewyoming](OneWyoming/OneWyoming)
+
+Remember, gitlab is STILL our single source of truth. 
+
+to follow along, you can simply 
+
+```sh
+git remote set-url --add --push origin git@github.com:onewyoming/onewyoming.git
+git remote set-url --add --push origin git@gitlab.com:wyoming/wyoming.gitlab.io.git
+``` 
+
+and check your config with git remote --verbose. You should see something like 
+
+```
+$ git remote --verbose
+origin  git@gitlab.com:wyoming/wyoming.gitlab.io.git (fetch)
+origin  git@github.com:onewyoming/onewyoming.git (push)
+origin  git@gitlab.com:wyoming/wyoming.gitlab.io.git (push)
+```
+
+Now, when you push it will try to push to both remotes. 
+Remember, if your push fails, 
+it is your responsibility to pull and merge and try pushing again. 
 
 ```json
 {
