@@ -9,6 +9,8 @@ verify_ssl = true
 flask = "*"
 psycopg2-binary = "*"
 pytz = "*"
+flask-track-usage = "*"
+six = "*"
 
 [requires]
 python_version = "3.7"

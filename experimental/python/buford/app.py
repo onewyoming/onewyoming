@@ -2,31 +2,54 @@ from datetime import datetime
 
 import pytz
 from flask import Flask, render_template, request
+from flask_track_usage import TrackUsage
+from flask_track_usage.storage.output import OutputWriter
+from flask_track_usage.storage.printer import PrintWriter
 
 from model.applicant import Applicant
 from model.visitor import Visitor
 
 app = Flask(__name__)
 
+# Set the configuration items manually for the example
+app.config['TRACK_USAGE_USE_FREEGEOIP'] = False
+# You can use a different instance of freegeoip like so
+# app.config['TRACK_USAGE_FREEGEOIP_ENDPOINT'] = 'https://example.org/api/'
+app.config['TRACK_USAGE_INCLUDE_OR_EXCLUDE_VIEWS'] = 'include'
 
+# We will just print out the data for the example
+
+# We will just print out the data for the example
+
+# Make an instance of the extension and put two writers
+t = TrackUsage(app, [
+    PrintWriter(),
+    OutputWriter(transform=lambda s: "OUTPUT: " + str(s))
+])
+
+
+@t.include
 @app.route('/')
 def hello_world():
     save_visitor_information()
     return 'Hello World!'
 
 
+@t.include
 @app.route('/welcome')
 def welcome():
     save_visitor_information()
     return render_template('welcome.html')
 
 
+@t.include
 @app.route('/subscribe')
 def subscribe():
     save_visitor_information()
     return render_template('subscribe.html')
 
 
+@t.include
 @app.route('/subscribe', methods=['POST'])
 def post_subscribe():
     save_visitor_information()

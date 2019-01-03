@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "2fe6d0850b2765984c7a76061833bd33ded31d24c5000ce597a9caf6905da9f0"
+            "sha256": "ee6457fb2760ec836d0256444fdc5777c51db3d1746f029033bce63323998377"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -30,6 +30,13 @@
             ],
             "index": "pypi",
             "version": "==1.0.2"
+        },
+        "flask-track-usage": {
+            "hashes": [
+                "sha256:798b6c08bd84748e8aeb772fac2a4b07e70cc33313f1b10318f19f658ae3e641"
+            ],
+            "index": "pypi",
+            "version": "==2.0.0"
         },
         "itsdangerous": {
             "hashes": [
@@ -121,6 +128,14 @@
             ],
             "index": "pypi",
             "version": "==2018.7"
+        },
+        "six": {
+            "hashes": [
+                "sha256:3350809f0555b11f552448330d0b52d5f24c91a322ea4a15ef22629740f3761c",
+                "sha256:d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73"
+            ],
+            "index": "pypi",
+            "version": "==1.12.0"
         },
         "werkzeug": {
             "hashes": [
