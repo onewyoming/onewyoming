@@ -105,3 +105,15 @@ test:rawlinsunittest:
     - export PATH="$HOME/.local/bin:$PATH"
     - pipenv install
     - pipenv run python -m unittest discover
+
+test:hobackunittest:
+  image: python:stretch
+  script:
+    - cd experimental/python/hoback
+    - pwd
+    - ls -a
+    - pip install --upgrade pip setuptools
+    - pip install --user pipenv
+    - export PATH="$HOME/.local/bin:$PATH"
+    - pipenv install
+    - pipenv run pytest
