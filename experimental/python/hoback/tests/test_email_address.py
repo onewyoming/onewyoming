@@ -11,4 +11,4 @@ def create_email_address():
 
 
 def test_to_string(create_email_address):
-    assert "hikingfan@gmail.com" == create_email_address.__str__()
+    assert "hikingfan@gmail.com" == str(create_email_address)
