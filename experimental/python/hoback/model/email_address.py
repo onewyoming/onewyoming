@@ -2,6 +2,6 @@ import attr
 
 
 @attr.s(auto_attribs=True)
-class Email(object):
+class EmailAddress(object):
     local_part: str
     domain: str
