@@ -7,5 +7,5 @@ class Person(object):
     name: str
     date_of_birth: pendulum.DateTime
 
-    def age(self):
-        return pendulum.now() - self.date_of_birth
+    def age(self, current_date: pendulum.DateTime) -> pendulum:
+        return current_date - self.date_of_birth
