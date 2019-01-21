@@ -135,6 +135,16 @@ headers = {'x-amz-date': amazon_date, 'Authorization': authorization_header}
 # ************* SEND THE REQUEST *************
 request_url = endpoint + canonical_uri
 
+# from the documentation: https://docs.aws.amazon.com/pinpoint/latest/apireference/pinpoint-api.pdf
+# The following is an example of a REST request that you make to Amazon Pinpoint:
+# GET /v1/apps/a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6/campaigns
+# Accept: application/json
+# Authorization: AWS4-HMAC-SHA256 Credential=AKIAIOSFODNN7EXAMPLE/20161127/us-
+# east-1/mobiletargeting/aws4_request, SignedHeaders=accept;host;x-amz-date,
+# Signature=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a1b2c3d4e5f6
+# Host: pinpoint.us-east-1.amazonaws.com
+# X-Amz-Date: 20161127T202324Z
+
 print('\nBEGIN REQUEST++++++++++++++++++++++++++++++++++++')
 print('Request URL = ' + request_url)
 print(headers)
