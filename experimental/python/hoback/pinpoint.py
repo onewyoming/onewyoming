@@ -74,7 +74,7 @@ date_stamp = t.strftime('%Y%m%d')  # Date w/o time, used in credential scope
 
 # Step 2: Create canonical URI--the part of the URI from domain to query
 # string (use '/' if no path)
-canonical_uri = f"/v1/apps/{os.getenv('PINPOINT_PROJECT')}/campaigns"
+canonical_uri = f"/apps/{os.getenv('PINPOINT_PROJECT')}/campaigns"
 print(f"The canonical uri is {canonical_uri}")
 
 # Step 3: Create the canonical query string. In this example (a GET request),
