@@ -30,7 +30,7 @@ test:mypages:
     - ls -a
     - npm install
     - ./node_modules/@angular/cli/bin/ng test --progress false --watch=false
-    - ./node_modules/@angular/cli/bin/ng e2e --progress false --watch=false
+    - ./node_modules/@angular/cli/bin/ng e2e
 
 build:dotnetcore:
   image: microsoft/dotnet:latest
