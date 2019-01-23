@@ -25,19 +25,22 @@
 import datetime
 import hashlib
 import hmac
+import json
 import os
 import sys
 
 import requests  # pip install requests
 
+import settings
+
 # ************* REQUEST VALUES *************
-method = 'GET'
-service = 'mobiletargeting'
-host = 'ec2.amazonaws.com'
-region = 'us-east-1'
-endpoint = 'https://pinpoint.us-east-1.amazonaws.com/v1'
+method: str = 'GET'
+service: str = 'mobiletargeting'
+host: str = 'pinpoint.us-east-1.amazonaws.com'
+region: str = 'us-east-1'
+endpoint: str = 'https://pinpoint.us-east-1.amazonaws.com'
 print(endpoint)
-request_parameters = ''
+request_parameters: str = ''
 
 
 # Key derivation functions. See:
@@ -65,6 +68,9 @@ if access_key is None or secret_key is None:
 # Create a date for headers and the credential string
 t = datetime.datetime.utcnow()
 amazon_date = t.strftime('%Y%m%dT%H%M%SZ')
+# print(amazon_date)
+# 20161127T202324Z
+# 20190122T013202Z
 date_stamp = t.strftime('%Y%m%d')  # Date w/o time, used in credential scope
 
 # ************* TASK 1: CREATE A CANONICAL REQUEST *************
@@ -74,8 +80,8 @@ date_stamp = t.strftime('%Y%m%d')  # Date w/o time, used in credential scope
 
 # Step 2: Create canonical URI--the part of the URI from domain to query
 # string (use '/' if no path)
-canonical_uri = f"/apps/{os.getenv('PINPOINT_PROJECT')}/campaigns"
-print(f"The canonical uri is {canonical_uri}")
+canonical_uri = f"/v1/apps/{settings.PINPOINT_PROJECT}/campaigns"
+# print(f"The canonical uri is {canonical_uri}")
 
 # Step 3: Create the canonical query string. In this example (a GET request),
 # request parameters are in the query string. Query string values must
@@ -100,16 +106,22 @@ signed_headers = 'host;x-amz-date'
 payload_hash = hashlib.sha256(''.encode('utf-8')).hexdigest()
 
 # Step 7: Combine elements to create canonical request
-canonical_request = method + '\n' + canonical_uri + '\n' + canonical_querystring + '\n' + canonical_headers \
-                    + '\n' + signed_headers + '\n' + payload_hash
+canonical_request = method + '\n' + canonical_uri + '\n' + '\n' + canonical_headers + '\n' + signed_headers \
+                    + '\n' + payload_hash
+
+print(f"The canonical request is {canonical_request}")
 
 # ************* TASK 2: CREATE THE STRING TO SIGN*************
 # Match the algorithm to the hashing algorithm you use, either SHA-1 or
 # SHA-256 (recommended)
 algorithm = 'AWS4-HMAC-SHA256'
 credential_scope = date_stamp + '/' + region + '/' + service + '/' + 'aws4_request'
-string_to_sign = algorithm + '\n' + amazon_date + '\n' + credential_scope + '\n' + hashlib.sha256(
-    canonical_request.encode('utf-8')).hexdigest()
+string_to_sign = algorithm + '\n' + amazon_date + '\n' + credential_scope + '\n' \
+                 + hashlib.sha256(canonical_request.encode('utf-8')).hexdigest()
+what_we_have: str = hashlib.sha256(canonical_request.encode('utf-8')).hexdigest()
+
+# print(f"The canonical request encoded in utf 8 is {canonical_request.encode('utf-8')}")
+# print(f"The string to sign is {string_to_sign}")
 
 # ************* TASK 3: CALCULATE THE SIGNATURE *************
 # Create the signing key using the function defined above.
@@ -139,18 +151,27 @@ request_url = endpoint + canonical_uri
 # The following is an example of a REST request that you make to Amazon Pinpoint:
 # GET /v1/apps/a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6/campaigns
 # Accept: application/json
-# Authorization: AWS4-HMAC-SHA256 Credential=AKIAIOSFODNN7EXAMPLE/20161127/us-
-# east-1/mobiletargeting/aws4_request, SignedHeaders=accept;host;x-amz-date,
+# Authorization: AWS4-HMAC-SHA256
+# Credential=AKIAIOSFODNN7EXAMPLE/20161127/us-east-1/mobiletargeting/aws4_request,
+# SignedHeaders=accept;host;x-amz-date,
 # Signature=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a1b2c3d4e5f6
 # Host: pinpoint.us-east-1.amazonaws.com
 # X-Amz-Date: 20161127T202324Z
 
-print('\nBEGIN REQUEST++++++++++++++++++++++++++++++++++++')
-print('Request URL = ' + request_url)
-print(headers)
+# Request URL = https://pinpoint.us-east-1.amazonaws.com/v1/apps/63eb6cebb22043bf97e2e3d6b65114d3/campaigns
+# https://pinpoint.us-east-1.amazonaws.com/v1/apps/63eb6cebb22043bf97e2e3d6b65114d3/campaigns
+# {
+#   'x-amz-date': '20190122T023556Z',
+#   'Authorization': 'AWS4-HMAC-SHA256
+#   Credential=AKIAJKZMMI4DIEJVP4AQ/20190122/us-east-1/mobiletargeting/aws4_request,
+#   SignedHeaders=host;
+#   x-amz-date,
+#   Signature=b66e703dd04edc7edb50b8f3f5f4e1c1eaec7eb98acca22640172b9702340a1d'}
 
+
+print(f"\nBEGIN REQUEST++++++++++++++++++++++++++++++++++++\nRequest URL = {request_url}")
 r = requests.get(request_url, headers=headers)
 
 print('\nRESPONSE++++++++++++++++++++++++++++++++++++')
 print('Response code: %d\n' % r.status_code)
-print(r.text)
+print(json.dumps(json.loads(r.text), indent=4, sort_keys=True))
