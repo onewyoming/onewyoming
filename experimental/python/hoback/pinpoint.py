@@ -106,7 +106,7 @@ signed_headers = 'host;x-amz-date'
 payload_hash = hashlib.sha256(''.encode('utf-8')).hexdigest()
 
 # Step 7: Combine elements to create canonical request
-canonical_request = method + '\n' + canonical_uri + '\n' + '\n' + canonical_headers + '\n' + signed_headers \
+canonical_request = method + '\n' + canonical_uri + '\n' + request_parameters + '\n' + canonical_headers + '\n' + signed_headers \
                     + '\n' + payload_hash
 
 print(f"The canonical request is {canonical_request}")
@@ -147,31 +147,9 @@ headers = {'x-amz-date': amazon_date, 'Authorization': authorization_header}
 # ************* SEND THE REQUEST *************
 request_url = endpoint + canonical_uri
 
-# from the documentation: https://docs.aws.amazon.com/pinpoint/latest/apireference/pinpoint-api.pdf
-# The following is an example of a REST request that you make to Amazon Pinpoint:
-# GET /v1/apps/a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6/campaigns
-# Accept: application/json
-# Authorization: AWS4-HMAC-SHA256
-# Credential=AKIAIOSFODNN7EXAMPLE/20161127/us-east-1/mobiletargeting/aws4_request,
-# SignedHeaders=accept;host;x-amz-date,
-# Signature=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a1b2c3d4e5f6
-# Host: pinpoint.us-east-1.amazonaws.com
-# X-Amz-Date: 20161127T202324Z
-
-# Request URL = https://pinpoint.us-east-1.amazonaws.com/v1/apps/63eb6cebb22043bf97e2e3d6b65114d3/campaigns
-# https://pinpoint.us-east-1.amazonaws.com/v1/apps/63eb6cebb22043bf97e2e3d6b65114d3/campaigns
-# {
-#   'x-amz-date': '20190122T023556Z',
-#   'Authorization': 'AWS4-HMAC-SHA256
-#   Credential=AKIAJKZMMI4DIEJVP4AQ/20190122/us-east-1/mobiletargeting/aws4_request,
-#   SignedHeaders=host;
-#   x-amz-date,
-#   Signature=b66e703dd04edc7edb50b8f3f5f4e1c1eaec7eb98acca22640172b9702340a1d'}
-
-
-print(f"\nBEGIN REQUEST++++++++++++++++++++++++++++++++++++\nRequest URL = {request_url}")
+print(f"\nBEGIN REQUEST\nRequest URL = {request_url}")
 r = requests.get(request_url, headers=headers)
 
-print('\nRESPONSE++++++++++++++++++++++++++++++++++++')
+print('\nRESPONSE')
 print('Response code: %d\n' % r.status_code)
 print(json.dumps(json.loads(r.text), indent=4, sort_keys=True))
