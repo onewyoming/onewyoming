@@ -68,9 +68,6 @@ if access_key is None or secret_key is None:
 # Create a date for headers and the credential string
 t = datetime.datetime.utcnow()
 amazon_date = t.strftime('%Y%m%dT%H%M%SZ')
-# print(amazon_date)
-# 20161127T202324Z
-# 20190122T013202Z
 date_stamp = t.strftime('%Y%m%d')  # Date w/o time, used in credential scope
 
 # ************* TASK 1: CREATE A CANONICAL REQUEST *************
@@ -118,10 +115,6 @@ algorithm = 'AWS4-HMAC-SHA256'
 credential_scope = date_stamp + '/' + region + '/' + service + '/' + 'aws4_request'
 string_to_sign = algorithm + '\n' + amazon_date + '\n' + credential_scope + '\n' \
                  + hashlib.sha256(canonical_request.encode('utf-8')).hexdigest()
-what_we_have: str = hashlib.sha256(canonical_request.encode('utf-8')).hexdigest()
-
-# print(f"The canonical request encoded in utf 8 is {canonical_request.encode('utf-8')}")
-# print(f"The string to sign is {string_to_sign}")
 
 # ************* TASK 3: CALCULATE THE SIGNATURE *************
 # Create the signing key using the function defined above.
