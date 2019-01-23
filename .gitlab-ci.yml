@@ -29,7 +29,7 @@ test:mypages:
     - pwd 
     - ls -a
     - npm install
-    - ./node_modules/@angular/cli/bin/ng test --progress false --single-run=true --watch=false
+    - ./node_modules/@angular/cli/bin/ng test --progress false --watch=false
     - ./node_modules/@angular/cli/bin/ng e2e --progress false --watch=false
 
 build:dotnetcore:
