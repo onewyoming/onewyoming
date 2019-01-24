@@ -1,8 +1,9 @@
 import boto3
 
-from settings import region_name
+from settings import aws_access_key_id
 
-print(region_name)
+session = boto3.Session(profile_name='glacier')
 glacier = boto3.resource('glacier')
-account = glacier.Account('id')
-print(account)
+account = glacier.Account(aws_access_key_id)
+for vault in account.vaults.all():
+    print(vault)
