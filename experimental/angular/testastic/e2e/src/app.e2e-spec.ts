@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to testastic!');
+    expect(page.getTitleText()).toEqual('Testastic: Building Angular applications with TDD!');
   });
 
   afterEach(async () => {
