@@ -1,0 +1,15 @@
+{
+  "name": "jonah",
+  "version": "1.0.0",
+  "description": "Jonah is an experiment in Typescript",
+  "main": "index.js",
+  "repository": {
+    "url": "https://gitlab.com/wyoming/wyoming.gitlab.io",
+    "type": "git"
+  },
+  "author": "Kushal Hada <kushaldeveloper@gmail.com>",
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "typescript": "^3.2.4"
+  }
+}
