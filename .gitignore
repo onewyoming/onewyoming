@@ -264,3 +264,4 @@ __pycache__/
 experimental/rust/hello/main
 experimental/angular/testastic/public
 experimental/angular/testastictwo/public
+experimental/php/noframework/barebear/vendor

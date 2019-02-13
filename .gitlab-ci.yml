@@ -166,3 +166,11 @@ test:rusthello:
   - pwd 
   - rustc main.rs
   - ./main
+
+  test:barebearphp:
+  image: php:latest
+  script:
+  - cd experimental/php/barebear
+  - pwd 
+  - composer update
+  - vendor/bin/phpunit --configuration phpunit.xml 
