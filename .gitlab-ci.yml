@@ -168,8 +168,10 @@ test:rusthello:
   - ./main
 
 test:barebearphp:
-  image: php:latest
+  image: fedora:latest
   script:
+  - dnf upgrade --refresh -y
+  - dnf install php-cli composer php-xml php-mbstring php-pdo php-pgsql php-pdo-mysqlnd
   - cd experimental/php/noframework/barebear
   - pwd 
   - composer update
