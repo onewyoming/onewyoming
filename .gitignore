@@ -262,3 +262,5 @@ __pycache__/
 
 .DS_Store
 experimental/rust/hello/main
+experimental/angular/testastic/public
+experimental/angular/testastictwo/public

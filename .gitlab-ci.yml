@@ -41,6 +41,19 @@ test:testastic:
     - ./node_modules/@angular/cli/bin/ng test --progress false --watch=false
     - ./node_modules/@angular/cli/bin/ng e2e
 
+
+
+test:testastictwo:
+  image: trion/ng-cli-karma
+  script:
+    - cd experimental/angular/testastictwo
+    - pwd 
+    - ls -a
+    - npm install
+    - ./node_modules/@angular/cli/bin/ng test --progress false --watch=false
+    - ./node_modules/@angular/cli/bin/ng e2e
+    - ./node_modules/@angular/cli/bin/ng build --aot=true --prod --build-optimizer --verbose --progress=true --delete-output-path --extract-licenses --subresource-integrity --stats-json --output-path=public
+
 build:dotnetcore:
   image: microsoft/dotnet:latest
   script:
