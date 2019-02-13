@@ -184,7 +184,7 @@ test:barebearphppgsql:
   - composer update
   - vendor/bin/phpunit --configuration phpunit.xml --verbose --debug
 
-  test:barebearphpmysql:
+test:barebearphpmysql:
   image: fedora:latest
   services:
   - mysql
