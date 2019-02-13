@@ -79,7 +79,6 @@ test:databases:
   image: postgres
   services:
     - postgres
-
   variables:
     # Configure postgres service (https://hub.docker.com/_/postgres/)
     POSTGRES_DB: custom_db
@@ -101,7 +100,6 @@ test:rawlinsdb:
   image: postgres
   services:
     - postgres
-
   variables:
     # Configure postgres service (https://hub.docker.com/_/postgres/)
     POSTGRES_DB: rawlins
@@ -167,11 +165,38 @@ test:rusthello:
   - rustc main.rs
   - ./main
 
-test:barebearphp:
+test:barebearphppgsql:
   image: fedora:latest
+  services:
+    - postgres
+  variables:
+    POSTGRES_DB: barebears
+    POSTGRES_USER: barebears
+    POSTGRES_PASSWORD: barebears
+    image: postgres
   script:
   - dnf upgrade --refresh -y
-  - dnf install php-cli composer php-xml php-mbstring php-pdo php-pgsql php-mysqlnd -y
+  - dnf install php-cli composer php-xml php-mbstring php-pdo php-pgsql php-mysqlnd postgresql mariadb -y
+  - export PGPASSWORD=$POSTGRES_PASSWORD
+  - psql -h "postgres" -U "$POSTGRES_USER" -d "$POSTGRES_DB" -c "SELECT 'OK' AS status;"
+  - cd experimental/php/noframework/barebear
+  - pwd 
+  - composer update
+  - vendor/bin/phpunit --configuration phpunit.xml --verbose --debug
+
+  test:barebearphpmysql:
+  image: fedora:latest
+  services:
+  - mysql
+  variables:
+    # Configure mysql service (https://hub.docker.com/_/mysql/)
+    MYSQL_DATABASE: hello_world_test
+    MYSQL_ROOT_PASSWORD: mysql
+  script:
+  - dnf upgrade --refresh -y
+  - dnf install php-cli composer php-xml php-mbstring php-pdo php-pgsql php-mysqlnd postgresql mariadb -y
+  - export PGPASSWORD=$POSTGRES_PASSWORD
+  - echo "SELECT 'OK';" | mysql --user=root --password="$MYSQL_ROOT_PASSWORD" --host=mysql "$MYSQL_DATABASE"
   - cd experimental/php/noframework/barebear
   - pwd 
   - composer update
