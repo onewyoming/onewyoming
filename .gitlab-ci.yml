@@ -170,7 +170,7 @@ test:rusthello:
 test:barebearphp:
   image: php:latest
   script:
-  - cd experimental/php/barebear
+  - cd experimental/php/noframework/barebear
   - pwd 
   - composer update
   - vendor/bin/phpunit --configuration phpunit.xml 
