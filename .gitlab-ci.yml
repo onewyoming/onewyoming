@@ -167,7 +167,7 @@ test:rusthello:
   - rustc main.rs
   - ./main
 
-  test:barebearphp:
+test:barebearphp:
   image: php:latest
   script:
   - cd experimental/php/barebear
