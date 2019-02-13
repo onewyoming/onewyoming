@@ -201,3 +201,11 @@ test:barebearphpmysql:
   - pwd 
   - composer update
   - vendor/bin/phpunit --configuration phpunit.xml --verbose --debug
+
+test:barebearphpcomposer:
+  image: composer:latest
+  script:
+  - cd experimental/php/noframework/barebear
+  - pwd 
+  - composer update
+  - vendor/bin/phpunit --configuration phpunit.xml --verbose --debug
