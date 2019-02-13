@@ -151,3 +151,4 @@ test:rusthello:
   - cd experimental/rust/hello
   - pwd 
   - rustc main.rs
+  - ./main
