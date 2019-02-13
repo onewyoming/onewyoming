@@ -175,4 +175,4 @@ test:barebearphp:
   - cd experimental/php/noframework/barebear
   - pwd 
   - composer update
-  - vendor/bin/phpunit --configuration phpunit.xml 
+  - vendor/bin/phpunit --configuration phpunit.xml --verbose --debug
