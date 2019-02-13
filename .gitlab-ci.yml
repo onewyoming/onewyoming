@@ -171,7 +171,7 @@ test:barebearphp:
   image: fedora:latest
   script:
   - dnf upgrade --refresh -y
-  - dnf install php-cli composer php-xml php-mbstring php-pdo php-pgsql php-pdo-mysqlnd
+  - dnf install php-cli composer php-xml php-mbstring php-pdo php-pgsql php-pdo-mysqlnd -y
   - cd experimental/php/noframework/barebear
   - pwd 
   - composer update
