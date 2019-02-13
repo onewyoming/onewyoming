@@ -137,3 +137,10 @@ test:hobackunittest:
     - export PATH="$HOME/.local/bin:$PATH"
     - pipenv install
     - pipenv run pytest
+
+test:micronesia:
+  image: golang:latest
+  script:
+  - cd experimental/golang/micronesia
+  - pwd 
+  - go test ./... -v
