@@ -69,7 +69,7 @@ test:testasticthree:
     - df -h
 
 build:dotnetcore:
-  mage: microsoft/dotnet:latest
+  image: microsoft/dotnet:latest
   script:
     - pwd
     - cd Windows
