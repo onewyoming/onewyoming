@@ -9,6 +9,7 @@ ADD . /var/www
 
 RUN pip install --upgrade pip setuptools
 RUN pip install -r requirements.txt
+RUN pytest
 RUN export FLASK_APP=app.py
 
 EXPOSE 5000
