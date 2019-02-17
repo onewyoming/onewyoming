@@ -16,6 +16,17 @@ def get_visit_count():
     return rows[0][0]
 
 
+def get_last_n_visitors(n):
+    connection = get_connection()
+    cursor = connection.cursor()
+    cursor.execute(
+        f"select user_agent, referrer from visitors order by visit_time desc limit 3;")
+    rows = cursor.fetchall()
+    connection.commit()
+    connection.close()
+    return rows[0][0]
+
+
 @dataclass()
 class Visitor:
     ip_address: str
@@ -28,7 +39,8 @@ class Visitor:
         connection = get_connection()
         cursor = connection.cursor()
         cursor.execute(
-            f"insert into visitors (ip_address, user_agent, referrer, full_path, visit_time) values ('{self.ip_address}', '{self.user_agent}', '{self.referrer}', '{self.full_path}', '{self.visit_time}');")
+            "insert into visitors (ip_address, user_agent, referrer, full_path, visit_time) values (%s, %s, %s, %s, %s);",
+            (str(self.ip_address), str(self.user_agent), str(self.referrer), str(self.full_path), self.visit_time))
         connection.commit()
         connection.close()
         return 0
