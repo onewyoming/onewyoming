@@ -7,7 +7,7 @@ from flask_track_usage.storage.output import OutputWriter
 from flask_track_usage.storage.printer import PrintWriter
 
 from model.applicant import Applicant
-from model.visitor import Visitor, get_visit_count
+from model.visitor import Visitor, get_visit_count, get_last_n_visitors
 
 app = Flask(__name__)
 
@@ -75,6 +75,11 @@ def inject_global_organization_name():
 @app.context_processor
 def inject_global_visitor_count():
     return dict(visit_count=get_visit_count())
+
+
+@app.context_processor
+def inject_last_three_users():
+    return dict(last_three_users=get_last_n_visitors(3))
 
 
 if __name__ == '__main__':

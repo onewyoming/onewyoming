@@ -20,11 +20,13 @@ def get_last_n_visitors(n):
     connection = get_connection()
     cursor = connection.cursor()
     cursor.execute(
-        f"select user_agent, referrer from visitors order by visit_time desc limit 3;")
+        """
+        select user_agent, referrer from visitors order by visit_time desc limit %s;
+        """, [n])
     rows = cursor.fetchall()
     connection.commit()
     connection.close()
-    return rows[0][0]
+    return rows
 
 
 @dataclass()

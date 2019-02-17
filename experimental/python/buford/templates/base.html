@@ -18,5 +18,14 @@
 {{ global_organization_name }}
 
 Counter: {{ visit_count }}
+
+Last three visits:
+
+{% for visitor in last_three_users %}
+<p>
+    User-agent: {{ visitor[0] }}
+    Referrer: {{ visitor[1] }}
+</p>
+{% endfor %}
 </body>
 </html>
