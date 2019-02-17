@@ -13,7 +13,7 @@ def get_visit_count():
     rows = cursor.fetchall()
     connection.commit()
     connection.close()
-    return rows[1][1]
+    return rows[0][0]
 
 
 @dataclass()

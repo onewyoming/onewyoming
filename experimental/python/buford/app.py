@@ -73,7 +73,7 @@ def inject_global_organization_name():
 
 
 @app.context_processor
-def inject_global_organization_name():
+def inject_global_visitor_count():
     return dict(visit_count=get_visit_count())
 
 
