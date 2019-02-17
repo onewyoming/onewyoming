@@ -9,9 +9,9 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - "/etc/nginx/conf.d:z"
-      - "/etc/nginx/vhost.d:z"
-      - "/usr/share/nginx/html:z"
+      - "/etc/nginx/conf.d"
+      - "/etc/nginx/vhost.d"
+      - "/usr/share/nginx/html"
       - "./volumes/proxy/certs:/etc/nginx/certs:ro,z"
   nginx-gen:
     restart: always
