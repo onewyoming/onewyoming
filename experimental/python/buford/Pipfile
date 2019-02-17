@@ -12,6 +12,7 @@ pytz = "*"
 flask-track-usage = "*"
 six = "*"
 gunicorn = "*"
+pytest = "*"
 
 [requires]
 python_version = "3.7"

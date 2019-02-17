@@ -163,6 +163,18 @@ test:hobackunittest:
     - pipenv install
     - pipenv run pytest
 
+test:buford:
+  image: python:stretch
+  script:
+    - cd experimental/python/buford
+    - pwd
+    - ls -a
+    - pip install --upgrade pip setuptools
+    - pip install --user pipenv
+    - export PATH="$HOME/.local/bin:$PATH"
+    - pipenv install
+    - pipenv run pytest
+
 test:micronesia:
   image: golang:latest
   script:
