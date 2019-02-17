@@ -32,7 +32,7 @@ t = TrackUsage(app, [
 @app.route('/')
 def hello_world():
     save_visitor_information()
-    return 'Hello World!'
+    return render_template('welcome.html')
 
 
 @t.include
