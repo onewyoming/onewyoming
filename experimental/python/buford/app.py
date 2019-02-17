@@ -74,7 +74,7 @@ def inject_global_organization_name():
 
 @app.context_processor
 def inject_global_organization_name():
-    return dict(global_organization_name=get_visit_count)
+    return dict(visit_count=get_visit_count())
 
 
 if __name__ == '__main__':
