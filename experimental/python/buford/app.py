@@ -7,7 +7,7 @@ from flask_track_usage.storage.output import OutputWriter
 from flask_track_usage.storage.printer import PrintWriter
 
 from model.applicant import Applicant
-from model.visitor import Visitor
+from model.visitor import Visitor, get_visit_count
 
 app = Flask(__name__)
 
@@ -65,6 +65,16 @@ def save_visitor_information() -> int:
                       full_path=request.url, visit_time=datetime.utcnow().replace(tzinfo=pytz.UTC))
     visitor.on_save()
     return 0
+
+
+@app.context_processor
+def inject_global_organization_name():
+    return dict(global_organization_name="Wyoming, Inc.")
+
+
+@app.context_processor
+def inject_global_organization_name():
+    return dict(global_organization_name=get_visit_count)
 
 
 if __name__ == '__main__':
