@@ -39,8 +39,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      container_name: buford
-      environment:
+    container_name: buford
+    environment:
         - VIRTUAL_HOST=mynepal.duckdns.org
         - VIRTUAL_NETWORK=nginx-proxy
         - VIRTUAL_PORT=5000
