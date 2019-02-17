@@ -15,17 +15,24 @@
 {% block body %}
 
 {% endblock %}
-{{ global_organization_name }}
+<footer>
+    <p>
+        {{ global_organization_name }}
+    </p>
+    <p>
+        Counter: {{ visit_count }}
+    </p>
+    <p>
+        Last ten visits:
+    </p>
 
-Counter: {{ visit_count }}
-
-Last three visits:
-
-{% for visitor in last_three_users %}
-<p>
-    User-agent: {{ visitor[0] }}
-    Referrer: {{ visitor[1] }}
-</p>
-{% endfor %}
+    {% for visitor in last_ten_users %}
+    <p>
+        User-agent: {{ visitor[0] }}
+        <br/>
+        Referrer: {{ visitor[1] }}
+    </p>
+    {% endfor %}
+</footer>
 </body>
 </html>

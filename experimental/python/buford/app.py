@@ -79,7 +79,7 @@ def inject_global_visitor_count():
 
 @app.context_processor
 def inject_last_three_users():
-    return dict(last_three_users=get_last_n_visitors(3))
+    return dict(last_ten_users=get_last_n_visitors(10))
 
 
 if __name__ == '__main__':
