@@ -69,7 +69,7 @@ def save_visitor_information() -> int:
 
 @app.context_processor
 def inject_global_organization_name():
-    return dict(global_organization_name="Wyoming, Inc.")
+    return dict(global_organization_name="My Nepal")
 
 
 @app.context_processor
