@@ -17,7 +17,10 @@ class Applicant:
         try:
             cursor.execute(
                 """
-                insert into applicants (email, registration_time) values (%s, %s);", (self.email, self.registration_time))
+                insert into applicants (email, registration_time) values (%s, %s);
+                """, 
+                (self.email, self.registration_time)
+                )
             connection.commit()
         except psycopg2.IntegrityError:
             print("this email already exists")
