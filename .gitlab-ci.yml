@@ -134,7 +134,6 @@ test:rawlinsunittest:
   image: python:stretch
   services:
     - postgres
-
   variables:
     # Configure postgres service (https://hub.docker.com/_/postgres/)
     POSTGRES_DB: rawlins
