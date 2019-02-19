@@ -179,7 +179,7 @@ test:buford:
     - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
     - git config user.name "Gitlab Agent"
     - git config user.email "agent@gitlab.com"
-    - git remote set-url origin git://kus@mynepal.duckdns.org:/home/kus/Documents/wyoming
+    - git remote set-url origin ssh://kus@mynepal.duckdns.org:/home/kus/Documents/wyoming
     - git push origin --all
 
 
