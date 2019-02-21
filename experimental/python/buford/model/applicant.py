@@ -14,13 +14,13 @@ def get_id_from_email(email) -> int:
         select id from applicants where email = %s;
         """,
         (
-            email.lower()
+            [email]
         )
     )
     rows = cursor.fetchall()
     connection.commit()
     connection.close()
-    return rows[0][0]
+    return rows[0]
 
 
 @dataclass

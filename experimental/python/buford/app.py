@@ -51,7 +51,7 @@ def subscribe():
     print("welcome to the subscribe page")
     if referrer:
         print(f"hello, referrer: {referrer}")
-    return render_template('subscribe.html')
+    return render_template('subscribe.html', referrer=referrer)
 
 
 @t.include
@@ -61,16 +61,16 @@ def post_subscribe():
     applicant = Applicant(email=request.form['input_email'],
                           registration_time=datetime.utcnow().replace(tzinfo=pytz.UTC))
     if 0 == applicant.on_save():
-        referrer = request.args.get('referrer')
+        referrer = request.form['input_referrer'].rstrip('/'),
         if referrer:
-            print(f"hello, referrer: {referrer}")
-            referrer_id = get_id_from_email(referrer)
-            referee_id = get_id_from_email(applicant.email)
+            print(f"hello, referrer: {referrer[0]}")
+            referrer_id = get_id_from_email(referrer[0].lower())
+            referee_id = get_id_from_email(email=request.form['input_email'].lower())
             new_referral = Referral(referrer=referrer_id, referee=referee_id,
                                     referral_time=datetime.utcnow().replace(tzinfo=pytz.UTC))
             new_referral.on_save()
         return render_template('success.html',
-                               referral_url=f"https://mynepal.duckdns.org/subscribe?referrer={applicant.email.lower()}")
+                               referral_url=f"https://mynepal.duckdns.org/subscribe?referrer={applicant.email}")
     return render_template('welcome.html')
 
 
