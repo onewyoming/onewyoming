@@ -22,6 +22,6 @@ create table if not exists referrals
   referrer int references applicants,
   referee int unique references applicants,
   referral_time timestamptz,
-  primary key (referer, referee)
+  primary key (referrer, referee)
 );
 

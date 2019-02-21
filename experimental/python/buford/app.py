@@ -57,20 +57,15 @@ def post_subscribe():
     applicant = Applicant(email=request.form['input_email'],
                           registration_time=datetime.utcnow().replace(tzinfo=pytz.UTC))
     if 0 == applicant.on_save():
-        referer = request.args.get('referer')
-        if referer:
-            # get id for referer
-            referer_id = get_id_from_email(referer)
-            # get id for referee
+        referrer = request.args.get('referrer')
+        if referrer:
+            referrer_id = get_id_from_email(referrer)
             referee_id = get_id_from_email(applicant.email)
-            # create referral object
-            new_referral = Referral(referrer=referer_id, referee=referee_id,
+            new_referral = Referral(referrer=referrer_id, referee=referee_id,
                                     referral_time=datetime.utcnow().replace(tzinfo=pytz.UTC))
-            # save referral object
             new_referral.on_save()
-            pass
         return render_template('success.html',
-                               referral_url=f"https://mynepal.duckdns.org/subscribe?referer={applicant.email.lower()}")
+                               referral_url=f"https://mynepal.duckdns.org/subscribe?referrer={applicant.email.lower()}")
     return render_template('welcome.html')
 
 
