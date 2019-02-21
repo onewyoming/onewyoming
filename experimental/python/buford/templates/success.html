@@ -2,15 +2,21 @@
 {% block title %}Success{% endblock %}
 
 {% block body %}
-    <div class="call-to-action">
-        <img src="/static/cta4096x800.png" alt="call to action" width="100%" height="auto"/>
-    </div>
-    <article class="seamless">
-        <h1>
-            Good job!
-        </h1>
-        <p class="lead">
-            You have subscribed.
-        </p>
-    </article>
+<div class="call-to-action">
+    <img alt="call to action" height="auto" src="/static/cta4096x800.png" width="100%"/>
+</div>
+<article class="seamless">
+    <h1>
+        Good job!
+    </h1>
+    <p class="lead">
+        You have subscribed.
+    </p>
+    <p>
+        Tell all your friends about our fantastic waiting list using your referral link!
+        <a href="{{ referral_url }}">
+            {{ referral_url }}
+        </a>
+    </p>
+</article>
 {% endblock %}

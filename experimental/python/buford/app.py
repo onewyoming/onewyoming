@@ -6,7 +6,8 @@ from flask_track_usage import TrackUsage
 from flask_track_usage.storage.output import OutputWriter
 from flask_track_usage.storage.printer import PrintWriter
 
-from model.applicant import Applicant
+from model.applicant import Applicant, get_id_from_email
+from model.referral import Referral
 from model.visitor import Visitor, get_visit_count, get_last_n_visitors
 
 app = Flask(__name__)
@@ -56,7 +57,20 @@ def post_subscribe():
     applicant = Applicant(email=request.form['input_email'],
                           registration_time=datetime.utcnow().replace(tzinfo=pytz.UTC))
     if 0 == applicant.on_save():
-        return render_template('success.html')
+        referer = request.args.get('referer')
+        if referer:
+            # get id for referer
+            referer_id = get_id_from_email(referer)
+            # get id for referee
+            referee_id = get_id_from_email(applicant.email)
+            # create referral object
+            new_referral = Referral(referrer=referer_id, referee=referee_id,
+                                    referral_time=datetime.utcnow().replace(tzinfo=pytz.UTC))
+            # save referral object
+            new_referral.on_save()
+            pass
+        return render_template('success.html',
+                               referral_url=f"https://mynepal.duckdns.org/subscribe?referer={applicant.email.lower()}")
     return render_template('welcome.html')
 
 
