@@ -15,4 +15,11 @@ create table if not exists visitors
   full_path  varchar,
   visit_time timestamptz,
   primary key (id)
-)
+);
+
+create table if not exists referrals
+(
+referrer int references applicants,
+referee int unique references applicants
+primary key(referer, referee)
+);
