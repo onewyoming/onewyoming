@@ -62,8 +62,7 @@ def post_subscribe():
                           registration_time=datetime.utcnow().replace(tzinfo=pytz.UTC))
     if 0 == applicant.on_save():
         referrer = request.form['input_referrer'].rstrip('/'),
-        if referrer:
-            print(f"hello, referrer: {referrer[0]}")
+        if referrer[0] != 'None':
             referrer_id = get_id_from_email(referrer[0].lower())
             referee_id = get_id_from_email(email=request.form['input_email'].lower())
             new_referral = Referral(referrer=referrer_id, referee=referee_id,
