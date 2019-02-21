@@ -47,6 +47,9 @@ def welcome():
 @app.route('/subscribe')
 def subscribe():
     save_visitor_information()
+    referrer = request.args.get('referrer')
+    if referrer:
+        print(f"hello, referrer: {referrer}")
     return render_template('subscribe.html')
 
 
