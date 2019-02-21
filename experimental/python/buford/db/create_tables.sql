@@ -19,8 +19,9 @@ create table if not exists visitors
 
 create table if not exists referrals
 (
-referrer int references applicants,
-referee int unique references applicants,
-referral_time timestamptz,
-primary key (referer, referee)
+  referrer int references applicants,
+  referee int unique references applicants,
+  referral_time timestamptz,
+  primary key (referer, referee)
 );
+
