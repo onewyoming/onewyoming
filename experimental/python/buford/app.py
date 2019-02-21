@@ -1,7 +1,7 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 
 import pytz
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, make_response
 from flask_track_usage import TrackUsage
 from flask_track_usage.storage.output import OutputWriter
 from flask_track_usage.storage.printer import PrintWriter
@@ -58,6 +58,26 @@ def post_subscribe():
     if 0 == applicant.on_save():
         return render_template('success.html')
     return render_template('welcome.html')
+
+
+@t.include
+# a route for generating sitemap.xml
+@app.route('/sitemap.xml', methods=['GET'])
+def sitemap():
+    """Generate sitemap.xml. Makes a list of urls and date modified."""
+    save_visitor_information()
+    pages = []
+    ten_days_ago = (datetime.now() - timedelta(days=10)).date().isoformat()
+    # static pages
+    for rule in app.url_map.iter_rules():
+        if "GET" in rule.methods and len(rule.arguments) == 0:
+            pages.append(
+                [f"https://mynepal.duckdns.org{rule.rule}", ten_days_ago]
+            )
+    sitemap_xml = render_template('pages/sitemap.xml', pages=pages)
+    response = make_response(sitemap_xml)
+    response.headers["Content-Type"] = "application/xml"
+    return response
 
 
 def save_visitor_information() -> int:
