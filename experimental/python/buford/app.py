@@ -48,6 +48,7 @@ def welcome():
 def subscribe():
     save_visitor_information()
     referrer = request.args.get('referrer')
+    print("welcome to the subscribe page")
     if referrer:
         print(f"hello, referrer: {referrer}")
     return render_template('subscribe.html')
