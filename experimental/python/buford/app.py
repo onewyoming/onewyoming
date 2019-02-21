@@ -74,7 +74,7 @@ def sitemap():
             pages.append(
                 [f"https://mynepal.duckdns.org{rule.rule}", ten_days_ago]
             )
-    sitemap_xml = render_template('pages/sitemap.xml', pages=pages)
+    sitemap_xml = render_template('sitemap.xml', pages=pages)
     response = make_response(sitemap_xml)
     response.headers["Content-Type"] = "application/xml"
     return response
