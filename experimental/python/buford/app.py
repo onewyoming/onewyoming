@@ -59,6 +59,7 @@ def post_subscribe():
     if 0 == applicant.on_save():
         referrer = request.args.get('referrer')
         if referrer:
+            print(f"hello, referrer: {referrer}")
             referrer_id = get_id_from_email(referrer)
             referee_id = get_id_from_email(applicant.email)
             new_referral = Referral(referrer=referrer_id, referee=referee_id,
