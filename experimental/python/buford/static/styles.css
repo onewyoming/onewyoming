@@ -20,3 +20,17 @@ body {
     color: red;
     padding: 0.2em 0.4em;
 }
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+#input_email {
+    width: 90%;
+    height: 2em;
+}
+
+a {
+   color: #E0F2F1;
+}

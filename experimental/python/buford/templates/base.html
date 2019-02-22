@@ -23,9 +23,21 @@
 </head>
 <body>
 <nav>
-    <a href="/">
+    <a href="https://{{global_url_base}}">
         <img class="centered-image" src="/static/logo240x100.png" alt="project logo"/>
     </a>
+    <ul>
+        <li>
+            <a href="/welcome">
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="/subscribe">
+                Join the email list
+            </a>
+        </li>
+    </ul>
 </nav>
 <hr>
 {% block body %}
@@ -33,22 +45,8 @@
 {% endblock %}
 <footer>
     <p>
-        {{ global_organization_name }}
+        &copy; {{ global_organization_name }}, Some rights reserved
     </p>
-    <nav>
-        <ul>
-            <li>
-                <a href="/welcome">
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="/subscribe">
-                    Give me your email address
-                </a>
-            </li>
-        </ul>
-    </nav>
     <p>
         Counter: {{ visit_count }}
     </p>

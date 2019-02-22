@@ -20,7 +20,26 @@ def get_id_from_email(email) -> int:
     rows = cursor.fetchall()
     connection.commit()
     connection.close()
-    return rows[0]
+    return rows[0][0]
+
+
+def check_id_exists(input_id) -> int:
+    if isinstance(input_id, int):
+        connection = get_connection()
+        cursor = connection.cursor()
+        cursor.execute(
+            """
+            select count(*) from applicants where id = %s;
+            """,
+            (
+                [input_id]
+            )
+        )
+        rows = cursor.fetchall()
+        connection.commit()
+        connection.close()
+        print(rows)
+        return rows[0]
 
 
 @dataclass

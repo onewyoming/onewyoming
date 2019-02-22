@@ -6,7 +6,8 @@ from flask_track_usage import TrackUsage
 from flask_track_usage.storage.output import OutputWriter
 from flask_track_usage.storage.printer import PrintWriter
 
-from model.applicant import Applicant, get_id_from_email
+from config import config_section_map
+from model.applicant import Applicant, get_id_from_email, check_id_exists
 from model.referral import Referral
 from model.visitor import Visitor, get_visit_count, get_last_n_visitors
 
@@ -61,15 +62,17 @@ def post_subscribe():
     applicant = Applicant(email=request.form['input_email'],
                           registration_time=datetime.utcnow().replace(tzinfo=pytz.UTC))
     if 0 == applicant.on_save():
-        referrer = request.form['input_referrer'].rstrip('/'),
+        referrer = request.form['input_referrer'].rstrip('/')
+        referee_id = get_id_from_email(email=request.form['input_email'].lower())
+        print(referee_id)
         if referrer[0] != 'None':
-            referrer_id = get_id_from_email(referrer[0].lower())
-            referee_id = get_id_from_email(email=request.form['input_email'].lower())
-            new_referral = Referral(referrer=referrer_id, referee=referee_id,
-                                    referral_time=datetime.utcnow().replace(tzinfo=pytz.UTC))
-            new_referral.on_save()
+            if check_id_exists(referrer[0]) == 1:
+                referrer_id = get_id_from_email(referrer[0].lower())
+                new_referral = Referral(referrer=referrer_id, referee=referee_id,
+                                        referral_time=datetime.utcnow().replace(tzinfo=pytz.UTC))
+                new_referral.on_save()
         return render_template('success.html',
-                               referral_url=f"https://mynepal.duckdns.org/subscribe?referrer={applicant.email}")
+                               referral_url=f"/subscribe?referrer={referee_id}")
     return render_template('welcome.html')
 
 
@@ -103,6 +106,11 @@ def save_visitor_information() -> int:
 @app.context_processor
 def inject_global_organization_name():
     return dict(global_organization_name="My Nepal")
+
+
+@app.context_processor
+def inject_global_url_base():
+    return dict(global_url_base=config_section_map("general")['base_url'])
 
 
 @app.context_processor
