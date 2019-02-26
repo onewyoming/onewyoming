@@ -1,5 +1,5 @@
 // for  https://www.hackerrank.com/challenges/js10-loops/problem
-// see https://github.com/Microsoft/TypeScript/issues/10678
+// use correct command tsc hackerrank.ts --lib ES2016,DOM 
 'use strict';
 
 main();
