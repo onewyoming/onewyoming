@@ -1,14 +1,13 @@
 // for  https://www.hackerrank.com/challenges/js10-loops/problem
 // use correct command tsc hackerrank.ts --lib ES2016,DOM 
 'use strict';
-
-main();
+mine();
 
 /*
  * Complete the vowelsAndConsonants function.
  * Print your output using 'console.log()'.
  */
-function vowelsAndConsonants(s: string) {
+function vowelsAndConsonants(s: string): void {
     const vowels = ['a', 'e', 'i', 'o', 'u'];
     let myConsonants = [];
     for (var i = 0; i < s.length; i++) {
@@ -25,7 +24,7 @@ function vowelsAndConsonants(s: string) {
     });
 }
 
-function main() {
+function mine(): void {
     const s = "javascriptloops";
     vowelsAndConsonants(s);
 }
