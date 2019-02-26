@@ -263,3 +263,11 @@ test:barebearphpcomposer:
   - pwd 
   - composer update
   - vendor/bin/phpunit --configuration phpunit.xml --verbose --debug
+
+test:jonahtypescript:
+  image:node:latest
+  script:
+  - cd experimental/typescript/jonah
+  - yarn install
+  - ./node_modules/.bin/tsc 
+  - node hackerrank.js
