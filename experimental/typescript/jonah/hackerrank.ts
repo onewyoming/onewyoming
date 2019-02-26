@@ -24,6 +24,6 @@ function vowelsAndConsonants(s: string): void {
 }
 
 function mine(): void {
-    const s = "javascriptloops";
-    vowelsAndConsonants(s);
+    const inputString = "javascriptloops";
+    vowelsAndConsonants(inputString);
 }
