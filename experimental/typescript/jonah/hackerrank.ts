@@ -1,5 +1,4 @@
-// for  https://www.hackerrank.com/challenges/js10-loops/problem
-// use correct command tsc hackerrank.ts --lib ES2016,DOM 
+// for  https://www.hackerrank.com/challenges/js10-loops/problem 
 'use strict';
 mine();
 
