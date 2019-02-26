@@ -265,7 +265,7 @@ test:barebearphpcomposer:
   - vendor/bin/phpunit --configuration phpunit.xml --verbose --debug
 
 test:jonahtypescript:
-  image:node:latest
+  image: node:latest
   script:
   - cd experimental/typescript/jonah
   - yarn install
