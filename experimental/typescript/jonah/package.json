@@ -10,6 +10,6 @@
   "author": "Kushal Hada <kushaldeveloper@gmail.com>",
   "license": "AGPL-3.0-or-later",
   "dependencies": {
-    "typescript": "^3.2.4"
+    "typescript": "^3.3.3333"
   }
 }
