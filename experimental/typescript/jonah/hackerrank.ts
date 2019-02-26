@@ -1,3 +1,5 @@
+// for  https://www.hackerrank.com/challenges/js10-loops/problem
+// see https://github.com/Microsoft/TypeScript/issues/10678
 'use strict';
 
 main();
