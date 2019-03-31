@@ -9,4 +9,5 @@ def get_number_of_matching_pairs_of_socks(number_of_socks_in_pile, sock_colors):
     :param sock_colors: an array representing the colors of each sock
     :return: the number of matching pairs of socks that are available
     """
+    print(len(sock_colors))
     return 3
