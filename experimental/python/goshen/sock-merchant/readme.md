@@ -11,3 +11,8 @@ representing the number of matching pairs of socks that are available.
 
     n: the number of socks in the pile
     ar: the colors of each sock
+
+Let me write down my thoughts. 
+
+My first thought is there is an array of integers as input 
+but I can't do math with these integers, right? 
