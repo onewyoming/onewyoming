@@ -10,10 +10,3 @@ def get_number_of_matching_pairs_of_socks(number_of_socks_in_pile, sock_colors):
     :return: the number of matching pairs of socks that are available
     """
     return 3
-
-
-if __name__ == '__main__':
-    n = 9
-    ar = {10, 20, 20, 10, 10, 30, 50, 10, 20}
-    result = get_number_of_matching_pairs_of_socks(n, ar)
-    assert result == 3
