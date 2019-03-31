@@ -162,6 +162,18 @@ test:hobackunittest:
     - pipenv install
     - pipenv run pytest
 
+test:goshenunittest:
+  image: python:stretch
+  script:
+    - cd experimental/python/goshen
+    - pwd
+    - ls -a
+    - pip install --upgrade pip setuptools
+    - pip install --user pipenv
+    - export PATH="$HOME/.local/bin:$PATH"
+    - pipenv install
+    - pipenv run pytest
+
 test:buford:
   image: python:stretch
   script:
