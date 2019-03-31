@@ -172,7 +172,7 @@ test:goshenunittest:
     - pip install --user pipenv
     - export PATH="$HOME/.local/bin:$PATH"
     - pipenv install
-    - pipenv run pytest
+    - pipenv run python -m pytest
 
 test:buford:
   image: python:stretch
