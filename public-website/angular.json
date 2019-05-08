@@ -3,21 +3,21 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "public-website": {
+    "hello": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
-          "styleext": "sass"
+          "style": "sass"
         }
       },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/public-website",
+            "outputPath": "dist/hello",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,10 +27,10 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.sass"
             ],
-            "scripts": []
+            "scripts": [],
+            "es5BrowserSupport": true
           },
           "configurations": {
             "production": {
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "public-website:build"
+            "browserTarget": "hello:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "public-website:build:production"
+              "browserTarget": "hello:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "public-website:build"
+            "browserTarget": "hello:build"
           }
         },
         "test": {
@@ -84,7 +84,6 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.sass"
             ],
             "scripts": [],
@@ -108,7 +107,7 @@
         }
       }
     },
-    "public-website-e2e": {
+    "hello-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -117,11 +116,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "public-website:serve"
+            "devServerTarget": "hello:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "public-website:serve:production"
+              "devServerTarget": "hello:serve:production"
             }
           }
         },
@@ -137,5 +136,5 @@
       }
     }
   },
-  "defaultProject": "public-website"
+  "defaultProject": "hello"
 }
