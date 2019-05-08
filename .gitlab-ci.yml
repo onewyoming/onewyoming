@@ -1,5 +1,5 @@
 pages:
-  image: node:11
+  image: node
   before_script:
     - pwd
   script:
