@@ -6,3 +6,7 @@ def test_get_last_n():
     n_to_find = 7
     expected_index = 8
     assert get_last_n(input_array, n_to_find) == expected_index
+
+def test_freebie():
+    assert 2 == 2 
+
