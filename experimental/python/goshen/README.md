@@ -1,5 +1,6 @@
 let us do some programming exercises 
 
+```
 [kus@localhost ~]$ cd /home/kus/src/wyoming.gitlab.io/experimental/python/goshen/;vim .;git pull origin master --strategy-option=theirs;git add .;git commit -S;git push origin master
 From gitlab.com:wyoming/wyoming.gitlab.io
  * branch            master     -> FETCH_HEAD
@@ -28,4 +29,4 @@ remote:      https://github.com/onewyoming/onewyoming/network/alerts
 remote: 
 To github.com:onewyoming/onewyoming
    19d56f2..056baaa  master -> master
-
+```
