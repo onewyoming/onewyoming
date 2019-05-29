@@ -9,4 +9,3 @@ def get_last_n(input_array, value):
         if element > value:
             return index - 1
     return -1
-
