@@ -68,6 +68,19 @@ test:testasticthree:
     - free -h
     - df -h
 
+test:testastictfour:
+  image: trion/ng-cli-karma
+  script:
+    - cd experimental/angular/testasticfour
+    - pwd 
+    - ls -a
+    - yarn install
+    - ./node_modules/@angular/cli/bin/ng test --progress false --watch=false
+    - ./node_modules/@angular/cli/bin/ng e2e
+    - ./node_modules/@angular/cli/bin/ng build --aot=true --prod --build-optimizer --verbose --progress=true --delete-output-path --extract-licenses --subresource-integrity --stats-json --output-path=public
+    - free -h
+    - df -h
+
 build:dotnetcore:
   image: microsoft/dotnet:latest
   script:
