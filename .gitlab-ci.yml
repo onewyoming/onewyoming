@@ -297,7 +297,7 @@ test:jonahtypescript:
   - ./node_modules/.bin/tsc 
   - node hackerrank.js
 
-test:exprimental-dotnet-consoleapp1-webapp3-client:
+test:experimental-dotnet-consoleapp1-webapp3-client:
   image: trion/ng-cli-karma
   script:
     - cd experimental/dotnet/ConsoleApp1/WebApplication3/ClientApp
