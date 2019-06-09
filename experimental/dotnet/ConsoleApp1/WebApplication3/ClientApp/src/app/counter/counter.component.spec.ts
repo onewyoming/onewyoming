@@ -54,8 +54,8 @@ describe('CounterComponent', () => {
     fixture.detectChanges();
     expect(countElement.textContent).toEqual('1');
 
-    const incrementButton = fixture.nativeElement.querySelector(by.id('decrementButton'));
-    incrementButton.click();
+    const incrementButtonAgain = fixture.nativeElement.querySelector(by.id('decrementButton'));
+    incrementButtonAgain.click();
     fixture.detectChanges();
     expect(countElement.textContent).toEqual('0');
   }));
