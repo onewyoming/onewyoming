@@ -306,3 +306,7 @@ test:experimental-dotnet-consoleapp1-webapp3-client:
     - npm install
     - ./node_modules/@angular/cli/bin/ng test --progress false --watch=false
     - ./node_modules/@angular/cli/bin/ng e2e
+  only:
+    changes:
+    - experimental/dotnet/ConsoleApp1/WebApplication3/ClientApp/**/*
+  
