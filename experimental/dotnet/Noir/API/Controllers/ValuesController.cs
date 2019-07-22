@@ -23,7 +23,7 @@ namespace API.Controllers
         {
             if (id <= 0) 
             {
-                return "You requested a non-positive id.";
+                return "Welcome to Hubcap! You requested a non-positive id.";
             } 
             var stringBuilder = new System.Text.StringBuilder();
             int parameter; 
@@ -55,6 +55,7 @@ namespace API.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+
         }
     }
 }
