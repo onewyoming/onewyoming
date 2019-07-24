@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using API.Models;
 
 namespace API.Controllers
 {
@@ -12,9 +13,11 @@ namespace API.Controllers
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<User> Get()
         {
-            return new string[] { "value1", "value2" };
+            string[] roles = new string[]{"Administrator", "Power User", "Janitor"};
+            var user = new User(id: 42, siteId: 42, xxhrId: 42, username: "Captain1987", email: "daityaraj@hotmail.com", displayName: "Captain 1987 (Daityaraj)", roles: roles);
+            return Ok(user);
         }
 
         // GET api/values/5
