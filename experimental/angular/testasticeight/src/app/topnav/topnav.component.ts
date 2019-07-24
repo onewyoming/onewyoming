@@ -6,7 +6,7 @@ import { map, share } from 'rxjs/operators';
 @Component({
   selector: 'app-topnav',
   templateUrl: './topnav.component.html',
-  styleUrls: ['./topnav.component.css']
+  styleUrls: ['./topnav.component.sass']
 })
 export class TopnavComponent {
 

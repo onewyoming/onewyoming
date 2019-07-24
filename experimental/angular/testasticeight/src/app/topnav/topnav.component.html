@@ -1,8 +1,6 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
       <a mat-list-item href="#">Link 1</a>
@@ -12,16 +10,29 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span>testasticeight</span>
     </mat-toolbar>
-    <!-- Add Content Here -->
+    <article>
+      <h1>
+        Boris Jonhnson becomes the Prime Minister of the United Kingdom
+      </h1>
+      <h2>
+        Is Brexit official? 
+      </h2>
+      <p>
+        What does this mean for Europeans living in the UK?
+      </p>
+      <h2>
+        Will Boris Johnson honor the promises that David Cameron's administration made to Scotland?
+      </h2>
+      <p>
+        What options does Scotland have if he does not honor past promises? 
+        Will Labour @ Scotland look beyond what is good for the party and do what is good for Scotland?
+      </p>
+    </article>
   </mat-sidenav-content>
 </mat-sidenav-container>
