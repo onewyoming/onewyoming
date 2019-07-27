@@ -19,6 +19,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     BrowserAnimationsModule,
     MatToolbarModule,
   ],
+  exports: [
+    NavbarComponent,
+  ],
   providers: [
     Title,
   ],
