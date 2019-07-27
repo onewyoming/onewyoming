@@ -8,7 +8,7 @@ pages:
     - date
     - yarn install
     - date
-    - yarn run generate
+    - yarn run ng build --aot=true --prod --build-optimizer --verbose --progress=true --delete-output-path --extract-licenses --subresource-integrity --stats-json --output-path=public
     - date
     - du -sh public/
     - mv public ../public
@@ -27,9 +27,9 @@ test:mypages:
     - cd public-website
     - pwd 
     - ls -a
-    - npm install
-    - ./node_modules/@angular/cli/bin/ng test --progress false --watch=false
-    - ./node_modules/@angular/cli/bin/ng e2e
+    - yarn install
+    - yarn run ng test --progress false --watch=false
+    - yarn run ng e2e
 
 test:testastic:
   image: trion/ng-cli-karma
