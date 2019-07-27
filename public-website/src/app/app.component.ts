@@ -8,7 +8,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class AppComponent implements OnInit {
   title = 'Welcome to Wyoming!';
-  public constructor(private titleService: Title) {}
+  public constructor(private titleService: Title) { }
   public setTitle(newTitle: string) {
     this.titleService.setTitle(newTitle);
   }
