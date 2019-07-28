@@ -3,6 +3,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatTabsModule} from '@angular/material/tabs';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -10,6 +11,7 @@ describe('AppComponent', () => {
       imports: [
         RouterTestingModule, 
         MatToolbarModule,
+        MatTabsModule,
       ],
       declarations: [
         AppComponent,
