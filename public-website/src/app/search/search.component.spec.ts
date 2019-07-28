@@ -1,6 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatTabsModule } from '@angular/material/tabs';
-import { MatIcon } from '@angular/material/icon';
 
 import { SearchComponent } from './search.component';
 
@@ -12,7 +11,6 @@ describe('SearchComponent', () => {
     TestBed.configureTestingModule({
       imports: [
         MatTabsModule,
-        MatIcon,
       ],
       declarations: [SearchComponent]
     })
