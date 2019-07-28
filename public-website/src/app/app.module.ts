@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatTabsModule} from '@angular/material/tabs';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchComponent } from './search/search.component';
 
@@ -20,6 +21,7 @@ import { SearchComponent } from './search/search.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    MatTabsModule,
   ],
   exports: [
     NavbarComponent,
