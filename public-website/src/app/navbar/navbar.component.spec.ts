@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIcon } from '@angular/material/icon';
 
 import { NavbarComponent } from './navbar.component';
 
@@ -11,6 +12,7 @@ describe('NavbarComponent', () => {
     TestBed.configureTestingModule({
       imports: [
         MatToolbarModule,
+        MatIcon,
       ],
       declarations: [NavbarComponent]
     })
