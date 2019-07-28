@@ -205,7 +205,7 @@ test:buford:
     - git config user.name "Gitlab Agent"
     - git config user.email "agent@gitlab.com"
     - git remote set-url origin ssh://kus@mynepal.duckdns.org:/home/kus/Documents/wyoming_remote.git
-    - git push origin --all
+    # - git push origin --all
 
 
 test:buforddb:
