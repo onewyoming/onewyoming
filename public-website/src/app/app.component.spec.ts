@@ -7,6 +7,7 @@ import { MatTreeModule } from '@angular/material/tree';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 
@@ -21,6 +22,7 @@ describe('AppComponent', () => {
         MatFormFieldModule,
         MatInputModule,
         MatIconModule,
+        MatCardModule,
       ],
       declarations: [
         AppComponent,
