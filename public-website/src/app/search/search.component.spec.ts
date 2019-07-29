@@ -1,9 +1,13 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatTreeModule } from '@angular/material/tree';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
-
 import { SearchComponent } from './search.component';
+import { SearchFormComponent } from '../search-form/search-form.component';
 
 describe('SearchComponent', () => {
   let component: SearchComponent;
@@ -15,8 +19,12 @@ describe('SearchComponent', () => {
         BrowserAnimationsModule,
         MatTabsModule,
         MatCardModule,
+        MatFormFieldModule,
+        MatTreeModule,
+        MatIconModule,
+        MatInputModule,
       ],
-      declarations: [SearchComponent]
+      declarations: [SearchComponent, SearchFormComponent]
     })
       .compileComponents();
   }));

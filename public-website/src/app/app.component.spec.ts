@@ -10,6 +10,7 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
+import { SearchFormComponent } from './search-form/search-form.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -28,6 +29,7 @@ describe('AppComponent', () => {
         AppComponent,
         NavbarComponent,
         SearchComponent,
+        SearchFormComponent,
       ],
     }).compileComponents();
   }));
