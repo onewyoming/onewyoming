@@ -259,4 +259,3 @@ test:experimental-dotnet-consoleapp1-webapp3-client:
   only:
     changes:
     - experimental/dotnet/ConsoleApp1/WebApplication3/ClientApp/**/*
-  
