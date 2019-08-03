@@ -1,7 +1,0 @@
-namespace dal
-{
-    class PersonRepository
-    {
-
-    }
-}
