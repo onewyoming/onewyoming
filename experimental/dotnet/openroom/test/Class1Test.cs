@@ -1,4 +1,4 @@
-using Class1;
+using model;
 
 namespace test {
     [TestClass]
