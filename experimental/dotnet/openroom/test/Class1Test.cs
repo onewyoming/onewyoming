@@ -1,3 +1,4 @@
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using model;
 
 namespace test {
@@ -15,7 +16,7 @@ namespace test {
         public void IsLengthOfPointZero()
         {
             var result = _class1.getLength();
-            Assert.IsEqual(result, 0);
+            Assert.AreEqual(result, 0);
         }
     }
 }
