@@ -15,6 +15,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import { SearchFormComponent } from './search-form/search-form.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,7 @@ import { SearchFormComponent } from './search-form/search-form.component';
     MatInputModule,
     MatIconModule,
     MatCardModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   exports: [
     NavbarComponent,
