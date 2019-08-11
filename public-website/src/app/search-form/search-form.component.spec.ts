@@ -6,6 +6,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { SearchFormComponent } from './search-form.component';
+import { FormsModule } from '@angular/forms';
 
 describe('SearchFormComponent', () => {
   let component: SearchFormComponent;
@@ -20,6 +21,7 @@ describe('SearchFormComponent', () => {
         MatInputModule,
         MatIconModule,
         MatCardModule,
+        FormsModule,
       ],
       declarations: [SearchFormComponent]
     })
