@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { SearchComponent } from './search.component';
 import { SearchFormComponent } from '../search-form/search-form.component';
+import { FormsModule } from '@angular/forms';
 
 describe('SearchComponent', () => {
   let component: SearchComponent;
@@ -23,6 +24,7 @@ describe('SearchComponent', () => {
         MatTreeModule,
         MatIconModule,
         MatInputModule,
+        FormsModule,
       ],
       declarations: [SearchComponent, SearchFormComponent]
     })
