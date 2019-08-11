@@ -13,7 +13,7 @@ export class SearchFormComponent implements OnInit, AfterContentChecked {
   ngOnInit() {
   }
 
-  ngAfterContentChecked() { 
+  ngAfterContentChecked() {
     console.log(this.sdpSearchTextboxValue);
   }
 
