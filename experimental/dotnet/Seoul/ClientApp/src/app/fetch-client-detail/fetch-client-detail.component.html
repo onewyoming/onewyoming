@@ -1,0 +1,13 @@
+<table *ngIf="clientDetails">
+    <th>
+        <tr>
+            ID
+        </tr>
+    </th>
+    <tbody>
+        <tr *ngFor="let clientDetail of clientDetails">
+            <td>
+                {{ clientDetail.ID }}
+            </td>
+        </tr>
+    </tbody>
