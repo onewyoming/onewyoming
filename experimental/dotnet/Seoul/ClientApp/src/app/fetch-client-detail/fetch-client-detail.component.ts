@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject, AfterContentChecked } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -6,9 +6,10 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './fetch-client-detail.component.html',
   styleUrls: ['./fetch-client-detail.component.css']
 })
-export class FetchClientDetailComponent implements OnInit {
+export class FetchClientDetailComponent implements OnInit, AfterContentChecked {
 
   public clientDetails: ClientDetail[];
+  public clientDetailUniqueStates;
 
   constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
     http.get<ClientDetail[]>(baseUrl + 'clientdetail').subscribe(result => {
@@ -17,6 +18,15 @@ export class FetchClientDetailComponent implements OnInit {
   }
 
   ngOnInit() {
+
+  }
+
+  ngAfterContentChecked() {
+    if(this.clientDetails) {
+      console.log([...new Set(this.clientDetails.map(clientDetail => clientDetail.State))]);
+    }
+    console.log(this);
+    // console.log(this.clientDetailUniqueStates);
   }
 
 }

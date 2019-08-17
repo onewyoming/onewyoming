@@ -16,7 +16,7 @@ namespace Seoul.Controllers
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        private static readonly string[] Names = new[] 
+        private static readonly string[] Names = new[]
         {
             "Amazon", "Apple", "Facebook", "Google", "Microsoft", "Netflix"
         };
@@ -26,9 +26,14 @@ namespace Seoul.Controllers
             "Austin", "Mountain View", "San Francisco", "Menlo Park", "San Diego", "Los Angeles", "Santa Clara"
         };
 
-        private static readonly string[] States = new[] 
+        private static readonly string[] States = new[]
         {
             "CA", "CO", "TX", "WA"
+        };
+
+        private static readonly string[] Streets = new[]
+        {
+            "St", "Rd", "Ave", "Blvd", "Dr"
         };
 
         private readonly ILogger<ClientDetailController> _logger;
@@ -52,7 +57,9 @@ namespace Seoul.Controllers
                 Name = Names[rng.Next(Names.Length)],
                 LegacyName = Names[rng.Next(Names.Length)],
                 YearEstablished = (1900 + rng.Next(0, 110)).ToString(),
-                StreetAddress = "",
+                StreetAddress = rng.Next(1, 9000).ToString()
+                + " " + Cities[rng.Next(Cities.Length)]
+                + " " + Streets[rng.Next(Streets.Length)],
                 City = Cities[rng.Next(Cities.Length)],
                 State = States[rng.Next(States.Length)],
                 AccountManager = Names[rng.Next(Names.Length)] + " " + Names[rng.Next(Names.Length)],

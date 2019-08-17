@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { FetchClientDetailComponent } from './fetch-client-detail/fetch-client-detail.component';
+import { FilterUniquePipe } from './filter-unique.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FetchClientDetailComponent } from './fetch-client-detail/fetch-client-d
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    FetchClientDetailComponent
+    FetchClientDetailComponent,
+    FilterUniquePipe,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
