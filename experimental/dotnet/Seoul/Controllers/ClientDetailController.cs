@@ -42,7 +42,7 @@ namespace Seoul.Controllers
         public IEnumerable<ClientDetail> Get()
         {
             var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new ClientDetail
+            return Enumerable.Range(1, 5000).Select(index => new ClientDetail
             {
                 // Date = DateTime.Now.AddDays(index),
                 // TemperatureC = rng.Next(-20, 55),
