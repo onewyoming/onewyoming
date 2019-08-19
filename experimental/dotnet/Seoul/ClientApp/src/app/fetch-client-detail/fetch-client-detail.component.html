@@ -32,28 +32,32 @@
             </th>
             <th>
                 <select>
-                    <option *ngFor="let clientDetail of clientDetails | filterUnique: 'uniqueIdentifier'" [ngValue]="clientDetail.uniqueIdentifier">
+                    <option *ngFor="let clientDetail of clientDetails | filterUnique: 'uniqueIdentifier'"
+                        [ngValue]="clientDetail.uniqueIdentifier">
                         {{ clientDetail.uniqueIdentifier }}
                     </option>
                 </select>
             </th>
             <th>
                 <select>
-                    <option *ngFor="let clientDetail of clientDetails | filterUnique: 'name'" [ngValue]="clientDetail.name">
+                    <option *ngFor="let clientDetail of clientDetails | filterUnique: 'name'"
+                        [ngValue]="clientDetail.name">
                         {{ clientDetail.name }}
                     </option>
                 </select>
             </th>
             <th>
                 <select>
-                    <option *ngFor="let clientDetail of clientDetails | filterUnique: 'legacyName' " [ngValue]="clientDetail.legacyName">
+                    <option *ngFor="let clientDetail of clientDetails | filterUnique: 'legacyName' "
+                        [ngValue]="clientDetail.legacyName">
                         {{ clientDetail.legacyName }}
                     </option>
                 </select>
             </th>
             <th>
                 <select>
-                    <option *ngFor="let clientDetail of clientDetails | filterUnique: 'yearEstablished'" [ngValue]="clientDetail.yearEstablished">
+                    <option *ngFor="let clientDetail of clientDetails | filterUnique: 'yearEstablished'"
+                        [ngValue]="clientDetail.yearEstablished">
                         {{ clientDetail.yearEstablished }}
                     </option>
                 </select>
@@ -63,14 +67,16 @@
             </th>
             <th>
                 <select>
-                    <option *ngFor="let clientDetail of clientDetails | filterUnique: 'city'" [ngValue]="clientDetail.city">
+                    <option *ngFor="let clientDetail of clientDetails | filterUnique: 'city'"
+                        [ngValue]="clientDetail.city">
                         {{ clientDetail.city }}
                     </option>
                 </select>
             </th>
             <th>
                 <select>
-                    <option *ngFor="let clientDetail of clientDetails | filterUnique: 'state'" [ngValue]="clientDetail.state">
+                    <option *ngFor="let clientDetail of clientDetails | filterUnique: 'state'"
+                        [ngValue]="clientDetail.state">
                         {{ clientDetail.state }}
                     </option>
                 </select>
