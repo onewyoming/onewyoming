@@ -20,9 +20,9 @@ namespace Daegu
             inputDictionary.Add("B", B);
             inputDictionary.Add("C", C);
 
-            var myList = inputDictionary.OrderByDescending(element => element.Value);
+            var myEnumerable = inputDictionary.OrderByDescending(element => element.Value);
 
-            foreach (var element in myList)
+            foreach (var element in myEnumerable)
             {
                 Console.WriteLine($"The key is {element.Key.ToString()} and the value is {element.Value.ToString()}.");
             }
