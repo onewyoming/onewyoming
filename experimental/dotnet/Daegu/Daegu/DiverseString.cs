@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Daegu
 {
@@ -19,7 +20,9 @@ namespace Daegu
             inputDictionary.Add("B", B);
             inputDictionary.Add("C", C);
 
-            foreach (var element in inputDictionary)
+            var myList = inputDictionary.OrderBy(element => element.Value).ToList();
+
+            foreach (var element in myList)
             {
                 Console.WriteLine($"The key is {element.Key.ToString()} and the value is {element.Value.ToString()}.");
             }
