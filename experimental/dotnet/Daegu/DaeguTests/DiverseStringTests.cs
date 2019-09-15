@@ -17,5 +17,29 @@ namespace DaeguTests
             var result = x.GetString(0, 0, 0);
             Assert.Equal("", result);
         }
+
+        [Fact]
+        public void ReturnASingleA()
+        {
+            var x = new DiverseString();
+            var result = x.GetString(1, 0, 0);
+            Assert.Equal("A", result);
+        }
+
+        [Fact]
+        public void ReturnASingleB()
+        {
+            var x = new DiverseString();
+            var result = x.GetString(0, 1, 0);
+            Assert.Equal("B", result);
+        }
+
+        [Fact]
+        public void ReturnASingleC()
+        {
+            var x = new DiverseString();
+            var result = x.GetString(0, 0, 1);
+            Assert.Equal("C", result);
+        }
     }
 }
