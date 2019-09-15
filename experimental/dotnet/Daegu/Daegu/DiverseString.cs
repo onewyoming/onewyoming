@@ -7,15 +7,28 @@ namespace Daegu
     {
         public string GetString(int A, int B, int C)
         {
-            var sortedDictionary = new SortedDictionary<string, int>();
-            sortedDictionary.Add("A", A);
-            sortedDictionary.Add("B", B);
-            sortedDictionary.Add("C", C);
-            foreach (var element in sortedDictionary)
+            var result = "";
+
+            Console.WriteLine($"Input contains {A} As, {B} Bs, and {C} Cs.");
+
+            var isComplete = false;
+            var iterator = 0;
+
+            while (!isComplete)
             {
-                Console.WriteLine(element.Key);
+                iterator++;
+                if (A < 0 || B  < 0 || C < 0)
+                {
+                    isComplete = true;
+                }
+                A--;
+                B--;
+                C--;
+
+                Console.WriteLine(iterator);
             }
-            return "";
+
+            return result;
         }
     }
 }
