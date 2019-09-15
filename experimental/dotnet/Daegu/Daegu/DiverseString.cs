@@ -20,7 +20,7 @@ namespace Daegu
             inputDictionary.Add("B", B);
             inputDictionary.Add("C", C);
 
-            var myList = inputDictionary.OrderBy(element => element.Value).ToList();
+            var myList = inputDictionary.OrderByDescending(element => element.Value);
 
             foreach (var element in myList)
             {
