@@ -14,6 +14,16 @@ namespace Daegu
             var isComplete = false;
             var iterator = 0;
 
+            var inputDictionary = new Dictionary<string, int>();
+            inputDictionary.Add("A", A);
+            inputDictionary.Add("B", B);
+            inputDictionary.Add("C", C);
+
+            foreach (var element in inputDictionary)
+            {
+                Console.WriteLine($"The key is {element.Key.ToString()} and the value is {element.Value.ToString()}.");
+            }
+
             while (!isComplete)
             {
                 iterator++;
@@ -27,6 +37,8 @@ namespace Daegu
 
                 Console.WriteLine(iterator);
             }
+
+            
 
             return result;
         }
