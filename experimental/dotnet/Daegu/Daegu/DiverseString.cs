@@ -20,9 +20,10 @@ namespace Daegu
             inputDictionary.Add("B", B);
             inputDictionary.Add("C", C);
 
-            var myEnumerable = inputDictionary.OrderByDescending(element => element.Value);
+            var myOrderedEnumerable = inputDictionary.OrderByDescending(element => element.Value);
+            var myList = myOrderedEnumerable.ToList();
 
-            foreach (var element in myEnumerable)
+            foreach (var element in myOrderedEnumerable)
             {
                 Console.WriteLine($"The key is {element.Key.ToString()} and the value is {element.Value.ToString()}.");
             }
@@ -34,9 +35,8 @@ namespace Daegu
                 {
                     isComplete = true;
                 }
-                A--;
-                B--;
-                C--;
+                result += myList.First().Key.ToString();
+                // myList.First().Value = 
 
                 Console.WriteLine(iterator);
             }
