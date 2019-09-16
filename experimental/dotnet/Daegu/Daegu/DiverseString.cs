@@ -58,9 +58,7 @@ namespace Daegu
                     myList = myList.OrderByDescending(element => element.Value).ToList();
                 }
             }
-
-
-
+            Console.WriteLine($"The result is {result}");
             return result;
         }
     }
