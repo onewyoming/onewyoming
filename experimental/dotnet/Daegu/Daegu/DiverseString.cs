@@ -26,7 +26,7 @@ namespace Daegu
             while (!isComplete)
             {
                 iterator++;
-                if(myList.First().Value == 0 || myList[myList.Count - 1].Value < 0 && myList[myList.Count - 2].Value <= 0) 
+                if(myList.First().Value == 0 || myList[myList.Count - 1].Value <= 0 && myList[myList.Count - 2].Value <= 0) 
                 {
                     isComplete = true;
                     if(myList.First().Value == 0)
@@ -34,7 +34,7 @@ namespace Daegu
                         break;
                     }
                 }
-                if (result.Length > 1 && result[result.Length - 1] == result[result.Length - 2])
+                if (result.Length > 1 && result[result.Length - 1] == result[result.Length - 2] && myList[1].Value > 0)
                 {
                     result += myList[1].Key.ToString();
                     Console.WriteLine(result);
