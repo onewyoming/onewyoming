@@ -1,5 +1,5 @@
 
-Sunday, September 15, 2019 8:19:16 PM
+Sunday, September 15, 2019 8:20:00 PM
 
 Test run for C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\bin\Debug\netcoreapp3.0\DaeguTests.dll(.NETCoreApp,Version=v3.0)
 Microsoft (R) Test Execution Command Line Tool Version 16.3.0-preview-20190820-01
@@ -45,7 +45,7 @@ The result is CCBCC
 Test Run Successful.
 Total tests: 6
      Passed: 6
- Total time: 2.9854 Seconds
+ Total time: 3.6292 Seconds
 Input contains 0 As, 2 Bs, and 8 Cs.
 Entered the else. The first key is C and the value is 8
 C
@@ -71,5 +71,5 @@ CCBCCBCC
 The first key is A and the value is 0
 The result is CCBCCBCC
 
-Sunday, September 15, 2019 8:19:29 PM
+Sunday, September 15, 2019 8:20:11 PM
 
