@@ -1,5 +1,5 @@
 
-Sunday, September 15, 2019 8:09:41 PM
+Sunday, September 15, 2019 8:11:43 PM
 
 Test run for C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\bin\Debug\netcoreapp3.0\DaeguTests.dll(.NETCoreApp,Version=v3.0)
 Microsoft (R) Test Execution Command Line Tool Version 16.3.0-preview-20190820-01
@@ -37,21 +37,36 @@ The second key is A and the value is 0
 Entered the else. The first key is C and the value is 6
 CCBC
 The first key is A and the value is 0
-The result is CCBC
-  X DaeguTests.DiverseStringTests.ReturnCCBCC [11ms]
+Entered the else. The first key is C and the value is 5
+CCBCC
+The first key is A and the value is 0
+Entered the else. The first key is C and the value is 4
+CCBCCC
+The first key is A and the value is 0
+Entered the else. The first key is C and the value is 3
+CCBCCCC
+The first key is A and the value is 0
+Entered the else. The first key is C and the value is 2
+CCBCCCCC
+The first key is A and the value is 0
+Entered the else. The first key is C and the value is 1
+CCBCCCCCC
+The first key is A and the value is 0
+The result is CCBCCCCCC
+  X DaeguTests.DiverseStringTests.ReturnCCBCC [8ms]
   Error Message:
    Assert.Equal() Failure
-               (pos 4)
+                (pos 5)
 Expected: CCBCC
-Actual:   CCBC
-               (pos 4)
+Actual:   CCBCCCCCC
+                (pos 5)
   Stack Trace:
      at DaeguTests.DiverseStringTests.ReturnCCBCC() in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DiverseStringTests.cs:line 50
 
 Total tests: 6
      Passed: 5
      Failed: 1
- Total time: 2.9885 Seconds
+ Total time: 3.5319 Seconds
 Input contains 0 As, 2 Bs, and 8 Cs.
 Entered the else. The first key is C and the value is 8
 C
@@ -72,7 +87,16 @@ The second key is A and the value is 0
 Entered the else. The first key is C and the value is 4
 CCBCCBC
 The first key is A and the value is 0
-The result is CCBCCBC
+Entered the else. The first key is C and the value is 3
+CCBCCBCC
+The first key is A and the value is 0
+Entered the else. The first key is C and the value is 2
+CCBCCBCCC
+The first key is A and the value is 0
+Entered the else. The first key is C and the value is 1
+CCBCCBCCCC
+The first key is A and the value is 0
+The result is CCBCCBCCCC
 
-Sunday, September 15, 2019 8:09:53 PM
+Sunday, September 15, 2019 8:11:58 PM
 

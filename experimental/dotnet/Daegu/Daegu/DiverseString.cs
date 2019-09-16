@@ -13,6 +13,7 @@ namespace Daegu
             Console.WriteLine($"Input contains {A} As, {B} Bs, and {C} Cs.");
 
             var isComplete = false;
+            var isAlmostComplete = false;
             var iterator = 0;
 
             var inputDictionary = new Dictionary<string, int>();
@@ -26,9 +27,9 @@ namespace Daegu
             while (!isComplete)
             {
                 iterator++;
-                if(myList.First().Value == 0 || myList[myList.Count - 1].Value <= 0 && myList[myList.Count - 2].Value <= 0) 
+                if(myList.First().Value == 0 || isAlmostComplete && myList[myList.Count - 1].Value <= 0 && myList[myList.Count - 2].Value <= 0) 
                 {
-                    isComplete = true;
+                    isAlmostComplete = true;
                     if(myList.First().Value == 0)
                     {
                         break;
