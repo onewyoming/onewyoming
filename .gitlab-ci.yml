@@ -269,7 +269,6 @@ build:daegu:
     - cd Daegu
     - pwd
     - dotnet --version
-    - dotnet restore --verbosity detailed
     - dotnet build --verbosity detailed
 
 test:daegu:
@@ -279,6 +278,4 @@ test:daegu:
      - cd experimental
      - cd dotnet
      - cd Daegu
-     - cd XUnitTestProject1
-     - dotnet restore --verbosity detailed
      - dotnet test --verbosity detailed
