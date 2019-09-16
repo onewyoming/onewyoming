@@ -1,5 +1,5 @@
 
-Sunday, September 15, 2019 8:11:43 PM
+Sunday, September 15, 2019 8:13:03 PM
 
 Test run for C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\bin\Debug\netcoreapp3.0\DaeguTests.dll(.NETCoreApp,Version=v3.0)
 Microsoft (R) Test Execution Command Line Tool Version 16.3.0-preview-20190820-01
@@ -53,7 +53,7 @@ Entered the else. The first key is C and the value is 1
 CCBCCCCCC
 The first key is A and the value is 0
 The result is CCBCCCCCC
-  X DaeguTests.DiverseStringTests.ReturnCCBCC [8ms]
+  X DaeguTests.DiverseStringTests.ReturnCCBCC [11ms]
   Error Message:
    Assert.Equal() Failure
                 (pos 5)
@@ -66,7 +66,7 @@ Actual:   CCBCCCCCC
 Total tests: 6
      Passed: 5
      Failed: 1
- Total time: 3.5319 Seconds
+ Total time: 4.0903 Seconds
 Input contains 0 As, 2 Bs, and 8 Cs.
 Entered the else. The first key is C and the value is 8
 C
@@ -98,5 +98,5 @@ CCBCCBCCCC
 The first key is A and the value is 0
 The result is CCBCCBCCCC
 
-Sunday, September 15, 2019 8:11:58 PM
+Sunday, September 15, 2019 8:13:18 PM
 
