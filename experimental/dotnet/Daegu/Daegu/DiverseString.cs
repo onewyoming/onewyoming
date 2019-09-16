@@ -47,6 +47,7 @@ namespace Daegu
                 }
                 else
                 {
+                    Console.WriteLine($"Entered the else. The first key is {myList.First().Key.ToString()} and the value is {myList.First().Value.ToString()}");
                     result += myList.First().Key.ToString();
                     Console.WriteLine(result);
                     var oldValue = myList.First().Value;
