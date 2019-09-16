@@ -259,3 +259,26 @@ test:experimental-dotnet-consoleapp1-webapp3-client:
   only:
     changes:
     - experimental/dotnet/ConsoleApp1/WebApplication3/ClientApp/**/*
+
+build:daegu:
+  image: mcr.microsoft.com/dotnet/core/sdk:3.0
+  script:
+    - pwd
+    - cd experimental
+    - cd dotnet
+    - cd Daegu
+    - pwd
+    - dotnet --version
+    - dotnet restore --verbosity detailed
+    - dotnet build --verbosity detailed
+
+test:daegu:
+   image: mcr.microsoft.com/dotnet/core/sdk:3.0
+   script:
+     - pwd
+     - cd experimental
+     - cd dotnet
+     - cd Daegu
+     - cd XUnitTestProject1
+     - dotnet restore --verbosity detailed
+     - dotnet test --verbosity detailed
