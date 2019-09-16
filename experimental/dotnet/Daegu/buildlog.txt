@@ -1,5 +1,5 @@
 
-Sunday, September 15, 2019 8:13:03 PM
+Sunday, September 15, 2019 8:15:29 PM
 
 Test run for C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\bin\Debug\netcoreapp3.0\DaeguTests.dll(.NETCoreApp,Version=v3.0)
 Microsoft (R) Test Execution Command Line Tool Version 16.3.0-preview-20190820-01
@@ -9,94 +9,45 @@ Starting test execution, please wait...
 
 A total of 1 test files matched the specified pattern.
 Input contains 1 As, 0 Bs, and 0 Cs.
-Entered the else. The first key is A and the value is 1
-A
-The first key is B and the value is 0
-The result is A
 Input contains 0 As, 1 Bs, and 0 Cs.
-Entered the else. The first key is B and the value is 1
-B
-The first key is A and the value is 0
-The result is B
 Input contains 0 As, 0 Bs, and 0 Cs.
 The result is 
 Input contains 0 As, 0 Bs, and 1 Cs.
-Entered the else. The first key is C and the value is 1
-C
-The first key is A and the value is 0
-The result is C
 Input contains 0 As, 1 Bs, and 8 Cs.
-Entered the else. The first key is C and the value is 8
-C
-The first key is B and the value is 1
-Entered the else. The first key is C and the value is 7
-CC
-The first key is B and the value is 1
-CCB
-The second key is A and the value is 0
-Entered the else. The first key is C and the value is 6
-CCBC
-The first key is A and the value is 0
-Entered the else. The first key is C and the value is 5
-CCBCC
-The first key is A and the value is 0
-Entered the else. The first key is C and the value is 4
-CCBCCC
-The first key is A and the value is 0
-Entered the else. The first key is C and the value is 3
-CCBCCCC
-The first key is A and the value is 0
-Entered the else. The first key is C and the value is 2
-CCBCCCCC
-The first key is A and the value is 0
-Entered the else. The first key is C and the value is 1
-CCBCCCCCC
-The first key is A and the value is 0
-The result is CCBCCCCCC
-  X DaeguTests.DiverseStringTests.ReturnCCBCC [11ms]
+  X DaeguTests.DiverseStringTests.ReturnASingleA [18ms]
   Error Message:
-   Assert.Equal() Failure
-                (pos 5)
-Expected: CCBCC
-Actual:   CCBCCCCCC
-                (pos 5)
+   System.IndexOutOfRangeException : Index was outside the bounds of the array.
   Stack Trace:
-     at DaeguTests.DiverseStringTests.ReturnCCBCC() in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DiverseStringTests.cs:line 50
+     at System.String.get_Chars(Int32 index)
+   at Daegu.DiverseString.GetString(Int32 A, Int32 B, Int32 C) in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\Daegu\DiverseString.cs:line 49
+   at DaeguTests.DiverseStringTests.ReturnASingleA() in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DiverseStringTests.cs:line 25
+  X DaeguTests.DiverseStringTests.ReturnASingleB [1ms]
+  Error Message:
+   System.IndexOutOfRangeException : Index was outside the bounds of the array.
+  Stack Trace:
+     at System.String.get_Chars(Int32 index)
+   at Daegu.DiverseString.GetString(Int32 A, Int32 B, Int32 C) in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\Daegu\DiverseString.cs:line 49
+   at DaeguTests.DiverseStringTests.ReturnASingleB() in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DiverseStringTests.cs:line 33
+  X DaeguTests.DiverseStringTests.ReturnASingleC [< 1ms]
+  Error Message:
+   System.IndexOutOfRangeException : Index was outside the bounds of the array.
+  Stack Trace:
+     at System.String.get_Chars(Int32 index)
+   at Daegu.DiverseString.GetString(Int32 A, Int32 B, Int32 C) in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\Daegu\DiverseString.cs:line 49
+   at DaeguTests.DiverseStringTests.ReturnASingleC() in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DiverseStringTests.cs:line 41
+  X DaeguTests.DiverseStringTests.ReturnCCBCC [3ms]
+  Error Message:
+   System.IndexOutOfRangeException : Index was outside the bounds of the array.
+  Stack Trace:
+     at System.String.get_Chars(Int32 index)
+   at Daegu.DiverseString.GetString(Int32 A, Int32 B, Int32 C) in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\Daegu\DiverseString.cs:line 49
+   at DaeguTests.DiverseStringTests.ReturnCCBCC() in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DiverseStringTests.cs:line 49
 
 Total tests: 6
-     Passed: 5
-     Failed: 1
- Total time: 4.0903 Seconds
+     Passed: 2
+     Failed: 4
+ Total time: 2.9174 Seconds
 Input contains 0 As, 2 Bs, and 8 Cs.
-Entered the else. The first key is C and the value is 8
-C
-The first key is B and the value is 2
-Entered the else. The first key is C and the value is 7
-CC
-The first key is B and the value is 2
-CCB
-The second key is A and the value is 0
-Entered the else. The first key is C and the value is 6
-CCBC
-The first key is B and the value is 1
-Entered the else. The first key is C and the value is 5
-CCBCC
-The first key is B and the value is 1
-CCBCCB
-The second key is A and the value is 0
-Entered the else. The first key is C and the value is 4
-CCBCCBC
-The first key is A and the value is 0
-Entered the else. The first key is C and the value is 3
-CCBCCBCC
-The first key is A and the value is 0
-Entered the else. The first key is C and the value is 2
-CCBCCBCCC
-The first key is A and the value is 0
-Entered the else. The first key is C and the value is 1
-CCBCCBCCCC
-The first key is A and the value is 0
-The result is CCBCCBCCCC
 
-Sunday, September 15, 2019 8:13:18 PM
+Sunday, September 15, 2019 8:15:46 PM
 
