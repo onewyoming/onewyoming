@@ -1,5 +1,5 @@
 
-Sunday, September 15, 2019 8:00:05 PM
+Sunday, September 15, 2019 8:01:10 PM
 
 Test run for C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\bin\Debug\netcoreapp3.0\DaeguTests.dll(.NETCoreApp,Version=v3.0)
 Microsoft (R) Test Execution Command Line Tool Version 16.3.0-preview-20190820-01
@@ -31,33 +31,21 @@ CCB
 The second key is A and the value is 0
 CCBC
 The first key is A and the value is 0
-CCBCC
-The first key is A and the value is 0
-CCBCCA
-The second key is B and the value is 0
-CCBCCAC
-The first key is B and the value is 0
-CCBCCACC
-The first key is B and the value is 0
-CCBCCACCB
-The second key is A and the value is -1
-CCBCCACCBC
-The first key is A and the value is -1
-The result is CCBCCACCBC
-  X DaeguTests.DiverseStringTests.ReturnCCBCC [5ms]
+The result is CCBC
+  X DaeguTests.DiverseStringTests.ReturnCCBCC [8ms]
   Error Message:
    Assert.Equal() Failure
-                (pos 5)
+               (pos 4)
 Expected: CCBCC
-Actual:   CCBCCACCBC
-                (pos 5)
+Actual:   CCBC
+               (pos 4)
   Stack Trace:
      at DaeguTests.DiverseStringTests.ReturnCCBCC() in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DiverseStringTests.cs:line 50
 
 Total tests: 6
      Passed: 5
      Failed: 1
- Total time: 3.2235 Seconds
+ Total time: 3.3722 Seconds
 Input contains 0 As, 2 Bs, and 8 Cs.
 C
 The first key is B and the value is 2
@@ -73,15 +61,7 @@ CCBCCB
 The second key is A and the value is 0
 CCBCCBC
 The first key is A and the value is 0
-CCBCCBCC
-The first key is A and the value is 0
-CCBCCBCCA
-The second key is B and the value is 0
-CCBCCBCCAC
-The first key is B and the value is 0
-CCBCCBCCACC
-The first key is B and the value is 0
-The result is CCBCCBCCACC
+The result is CCBCCBC
 
-Sunday, September 15, 2019 8:00:18 PM
+Sunday, September 15, 2019 8:01:24 PM
 
