@@ -1,5 +1,5 @@
 
-Sunday, September 15, 2019 7:49:30 PM
+Sunday, September 15, 2019 7:50:59 PM
 
 Test run for C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\bin\Debug\netcoreapp3.0\DaeguTests.dll(.NETCoreApp,Version=v3.0)
 Microsoft (R) Test Execution Command Line Tool Version 16.3.0-preview-20190820-01
@@ -12,12 +12,16 @@ Input contains 1 As, 0 Bs, and 0 Cs.
 The key is A and the value is 1.
 The key is B and the value is 0.
 The key is C and the value is 0.
-The result is 
+A
+The key is B and the value is 0
+The result is A
 Input contains 0 As, 1 Bs, and 0 Cs.
 The key is B and the value is 1.
 The key is A and the value is 0.
 The key is C and the value is 0.
-The result is 
+B
+The key is A and the value is 0
+The result is B
 Input contains 0 As, 0 Bs, and 0 Cs.
 The key is A and the value is 0.
 The key is B and the value is 0.
@@ -27,7 +31,9 @@ Input contains 0 As, 0 Bs, and 1 Cs.
 The key is C and the value is 1.
 The key is A and the value is 0.
 The key is B and the value is 0.
-The result is 
+C
+The key is A and the value is 0
+The result is C
 Input contains 0 As, 1 Bs, and 8 Cs.
 The key is C and the value is 8.
 The key is B and the value is 1.
@@ -38,48 +44,23 @@ CC
 The key is B and the value is 1
 CCB
 The key is A and the value is 0
-The result is CCB
-  X DaeguTests.DiverseStringTests.ReturnASingleA [37ms]
+CCBC
+The key is A and the value is 0
+The result is CCBC
+  X DaeguTests.DiverseStringTests.ReturnCCBCC [7ms]
   Error Message:
    Assert.Equal() Failure
-           (pos 0)
-Expected: A
-Actual:   
-           (pos 0)
-  Stack Trace:
-     at DaeguTests.DiverseStringTests.ReturnASingleA() in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DiverseStringTests.cs:line 26
-  X DaeguTests.DiverseStringTests.ReturnASingleB [1ms]
-  Error Message:
-   Assert.Equal() Failure
-           (pos 0)
-Expected: B
-Actual:   
-           (pos 0)
-  Stack Trace:
-     at DaeguTests.DiverseStringTests.ReturnASingleB() in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DiverseStringTests.cs:line 34
-  X DaeguTests.DiverseStringTests.ReturnASingleC [1ms]
-  Error Message:
-   Assert.Equal() Failure
-           (pos 0)
-Expected: C
-Actual:   
-           (pos 0)
-  Stack Trace:
-     at DaeguTests.DiverseStringTests.ReturnASingleC() in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DiverseStringTests.cs:line 42
-  X DaeguTests.DiverseStringTests.ReturnCCBCC [11ms]
-  Error Message:
-   Assert.Equal() Failure
-              (pos 3)
+               (pos 4)
 Expected: CCBCC
-Actual:   CCB
-              (pos 3)
+Actual:   CCBC
+               (pos 4)
   Stack Trace:
      at DaeguTests.DiverseStringTests.ReturnCCBCC() in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DiverseStringTests.cs:line 50
 
 Total tests: 6
-     Passed: 2
-     Failed: 4
- Total time: 3.5589 Seconds
+     Passed: 5
+     Failed: 1
+ Total time: 4.3662 Seconds
 Input contains 0 As, 2 Bs, and 8 Cs.
 The key is C and the value is 8.
 The key is B and the value is 2.
@@ -96,7 +77,9 @@ CCBCC
 The key is B and the value is 1
 CCBCCB
 The key is A and the value is 0
-The result is CCBCCB
+CCBCCBC
+The key is A and the value is 0
+The result is CCBCCBC
 
-Sunday, September 15, 2019 7:49:44 PM
+Sunday, September 15, 2019 7:51:23 PM
 

@@ -34,7 +34,7 @@ namespace Daegu
                 if(myList[myList.Count - 1].Value <= 0 && myList[myList.Count - 2].Value <= 0) 
                 {
                     isComplete = true;
-                    if(myList[myList.Count - 2].Value == 0)
+                    if(myList[myList.Count - 3].Value == 0)
                     {
                         break;
                     }
