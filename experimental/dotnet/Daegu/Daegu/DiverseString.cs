@@ -31,14 +31,21 @@ namespace Daegu
             while (!isComplete)
             {
                 iterator++;
-                if (A < 0 || B  < 0 || C < 0)
+                foreach (var element in myList)
                 {
-                    isComplete = true;
+                    if (element.Value < 0)
+                    {
+                        isComplete = true;
+                    }
                 }
                 result += myList.First().Key.ToString();
-                // myList.First().Value = 
-
-                Console.WriteLine(iterator);
+                Console.WriteLine(result);
+                var oldValue = myList.First().Value;
+                var newEntry = new KeyValuePair<string, int>(myList.First().Key, oldValue - 1);
+                myList.Remove(myList.First());
+                myList.Add(newEntry);
+                Console.WriteLine($"The key is {myList.First().Key.ToString()} and the value is {myList.First().Value.ToString()}");
+                myList = myList.OrderByDescending(element => element.Value).ToList();
             }
 
             
