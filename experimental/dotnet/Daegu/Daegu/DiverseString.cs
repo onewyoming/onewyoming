@@ -26,10 +26,10 @@ namespace Daegu
             while (!isComplete)
             {
                 iterator++;
-                if(myList[myList.Count - 1].Value <= 0 && myList[myList.Count - 2].Value <= 0) 
+                if(myList.First().Value == 0 || myList[myList.Count - 1].Value < 0 && myList[myList.Count - 2].Value < 0) 
                 {
                     isComplete = true;
-                    if(myList[myList.Count - 3].Value == 0)
+                    if(myList.First().Value == 0)
                     {
                         break;
                     }
