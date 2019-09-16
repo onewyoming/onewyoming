@@ -38,17 +38,31 @@ namespace Daegu
                         isComplete = true;
                     }
                 }
-                result += myList.First().Key.ToString();
-                Console.WriteLine(result);
-                var oldValue = myList.First().Value;
-                var newEntry = new KeyValuePair<string, int>(myList.First().Key, oldValue - 1);
-                myList.Remove(myList.First());
-                myList.Add(newEntry);
-                Console.WriteLine($"The key is {myList.First().Key.ToString()} and the value is {myList.First().Value.ToString()}");
-                myList = myList.OrderByDescending(element => element.Value).ToList();
+                if (result.Length > 1 && result[result.Length - 1] == result[result.Length - 2])
+                {
+                    result += myList[1].Key.ToString();
+                    Console.WriteLine(result);
+                    var oldValue = myList[1].Value;
+                    var newEntry = new KeyValuePair<string, int>(myList[1].Key, oldValue - 1);
+                    myList.Remove(myList[1]);
+                    myList.Add(newEntry);
+                    Console.WriteLine($"The key is {myList[1].Key.ToString()} and the value is {myList[1].Value.ToString()}");
+                    myList = myList.OrderByDescending(element => element.Value).ToList();
+                }
+                else
+                {
+                    result += myList.First().Key.ToString();
+                    Console.WriteLine(result);
+                    var oldValue = myList.First().Value;
+                    var newEntry = new KeyValuePair<string, int>(myList.First().Key, oldValue - 1);
+                    myList.Remove(myList.First());
+                    myList.Add(newEntry);
+                    Console.WriteLine($"The key is {myList.First().Key.ToString()} and the value is {myList.First().Value.ToString()}");
+                    myList = myList.OrderByDescending(element => element.Value).ToList();
+                }
             }
 
-            
+
 
             return result;
         }
