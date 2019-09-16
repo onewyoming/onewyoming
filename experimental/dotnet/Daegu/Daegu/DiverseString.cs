@@ -11,7 +11,6 @@ namespace Daegu
             var result = "";
 
             var isComplete = false;
-            var iterator = 0;
 
             var inputDictionary = new Dictionary<string, int>();
             inputDictionary.Add("A", A);
@@ -23,7 +22,6 @@ namespace Daegu
 
             while (!isComplete)
             {
-                iterator++;
                 if(myList.First().Value == 0 || myList[myList.Count - 1].Value <= 0 && myList[myList.Count - 2].Value <= 0) 
                 {
                     if(myList.First().Value == 0)
@@ -31,6 +29,7 @@ namespace Daegu
                         break;
                     }
                 }
+                // try to find an alternate letter if we have two consecutive of something
                 if (result.Length > 1 && result[result.Length - 1] == result[result.Length - 2] && myList[1].Value > 0)
                 {
                     result += myList[1].Key.ToString();
@@ -41,6 +40,7 @@ namespace Daegu
                     myList.Add(newEntry);
                     myList = myList.OrderByDescending(element => element.Value).ToList();
                 }
+                // if we can't find an alternate when we have two of something, exit the loop 
                 else if (result.Length > 1 && result[result.Length - 1] == result[result.Length - 2] && myList[1].Value == 0)
                 {
                     break;
