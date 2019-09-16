@@ -1,5 +1,5 @@
 
-Sunday, September 15, 2019 7:43:17 PM
+Sunday, September 15, 2019 7:46:32 PM
 
 Test run for C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\bin\Debug\netcoreapp3.0\DaeguTests.dll(.NETCoreApp,Version=v3.0)
 Microsoft (R) Test Execution Command Line Tool Version 16.3.0-preview-20190820-01
@@ -28,7 +28,18 @@ The key is C and the value is 1.
 The key is A and the value is 0.
 The key is B and the value is 0.
 The result is 
-  X DaeguTests.DiverseStringTests.ReturnASingleA [42ms]
+Input contains 0 As, 1 Bs, and 8 Cs.
+The key is C and the value is 8.
+The key is B and the value is 1.
+The key is A and the value is 0.
+C
+The key is B and the value is 1
+CC
+The key is B and the value is 1
+CCB
+The key is A and the value is 0
+The result is CCB
+  X DaeguTests.DiverseStringTests.ReturnASingleA [56ms]
   Error Message:
    Assert.Equal() Failure
            (pos 0)
@@ -37,7 +48,7 @@ Actual:
            (pos 0)
   Stack Trace:
      at DaeguTests.DiverseStringTests.ReturnASingleA() in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DiverseStringTests.cs:line 26
-  X DaeguTests.DiverseStringTests.ReturnASingleB [2ms]
+  X DaeguTests.DiverseStringTests.ReturnASingleB [3ms]
   Error Message:
    Assert.Equal() Failure
            (pos 0)
@@ -55,11 +66,20 @@ Actual:
            (pos 0)
   Stack Trace:
      at DaeguTests.DiverseStringTests.ReturnASingleC() in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DiverseStringTests.cs:line 42
+  X DaeguTests.DiverseStringTests.ReturnCCBCC [13ms]
+  Error Message:
+   Assert.Equal() Failure
+              (pos 3)
+Expected: CCBCC
+Actual:   CCB
+              (pos 3)
+  Stack Trace:
+     at DaeguTests.DiverseStringTests.ReturnCCBCC() in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DiverseStringTests.cs:line 50
 
-Total tests: 5
+Total tests: 6
      Passed: 2
-     Failed: 3
- Total time: 4.8186 Seconds
+     Failed: 4
+ Total time: 3.4250 Seconds
 Input contains 0 As, 2 Bs, and 8 Cs.
 The key is C and the value is 8.
 The key is B and the value is 2.
@@ -78,5 +98,5 @@ CCBCCB
 The key is A and the value is 0
 The result is CCBCCB
 
-Sunday, September 15, 2019 7:43:34 PM
+Sunday, September 15, 2019 7:46:49 PM
 
