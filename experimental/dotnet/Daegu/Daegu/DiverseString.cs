@@ -31,12 +31,9 @@ namespace Daegu
             while (!isComplete)
             {
                 iterator++;
-                foreach (var element in myList)
+                if(myList[myList.Count - 1].Value < 0 && myList[myList.Count - 2].Value < 0) 
                 {
-                    if (element.Value < 0)
-                    {
-                        isComplete = true;
-                    }
+                    isComplete = true;
                 }
                 if (result.Length > 1 && result[result.Length - 1] == result[result.Length - 2])
                 {
