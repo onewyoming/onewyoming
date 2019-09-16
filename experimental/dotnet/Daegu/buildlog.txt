@@ -1,5 +1,5 @@
 
-Sunday, September 15, 2019 8:25:25 PM
+Monday, September 16, 2019 7:01:10 AM
 
 Test run for C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\bin\Debug\netcoreapp3.0\DaeguTests.dll(.NETCoreApp,Version=v3.0)
 Microsoft (R) Test Execution Command Line Tool Version 16.3.0-preview-20190820-01
@@ -8,115 +8,14 @@ Copyright (c) Microsoft Corporation.  All rights reserved.
 Starting test execution, please wait...
 
 A total of 1 test files matched the specified pattern.
-Input contains 4 As, 5 Bs, and 6 Cs.
-Entered the else. The first key is C and the value is 6
-C
-The first key is B and the value is 5
-Entered the else. The first key is B and the value is 5
-CB
-The first key is C and the value is 5
-Entered the else. The first key is C and the value is 5
-CBC
-The first key is A and the value is 4
-Entered the else. The first key is A and the value is 4
-CBCA
-The first key is B and the value is 4
-Entered the else. The first key is B and the value is 4
-CBCAB
-The first key is C and the value is 4
-Entered the else. The first key is C and the value is 4
-CBCABC
-The first key is A and the value is 3
-Entered the else. The first key is A and the value is 3
-CBCABCA
-The first key is B and the value is 3
-Entered the else. The first key is B and the value is 3
-CBCABCAB
-The first key is C and the value is 3
-Entered the else. The first key is C and the value is 3
-CBCABCABC
-The first key is A and the value is 2
-Entered the else. The first key is A and the value is 2
-CBCABCABCA
-The first key is B and the value is 2
-Entered the else. The first key is B and the value is 2
-CBCABCABCAB
-The first key is C and the value is 2
-Entered the else. The first key is C and the value is 2
-CBCABCABCABC
-The first key is A and the value is 1
-Entered the else. The first key is A and the value is 1
-CBCABCABCABCA
-The first key is B and the value is 1
-Entered the else. The first key is B and the value is 1
-CBCABCABCABCAB
-The first key is C and the value is 1
-Entered the else. The first key is C and the value is 1
-CBCABCABCABCABC
-The first key is A and the value is 0
-The result is CBCABCABCABCABC
-Input contains 1 As, 0 Bs, and 0 Cs.
-Entered the else. The first key is A and the value is 1
-A
-The first key is B and the value is 0
-The result is A
-Input contains 0 As, 1 Bs, and 0 Cs.
-Entered the else. The first key is B and the value is 1
-B
-The first key is A and the value is 0
-The result is B
-Input contains 0 As, 0 Bs, and 0 Cs.
-The result is 
-Input contains 0 As, 0 Bs, and 1 Cs.
-Entered the else. The first key is C and the value is 1
-C
-The first key is A and the value is 0
-The result is C
-Input contains 0 As, 1 Bs, and 8 Cs.
-Entered the else. The first key is C and the value is 8
-C
-The first key is B and the value is 1
-Entered the else. The first key is C and the value is 7
-CC
-The first key is B and the value is 1
 CCB
-The second key is A and the value is 0
-Entered the else. The first key is C and the value is 6
-CCBC
-The first key is A and the value is 0
-Entered the else. The first key is C and the value is 5
-CCBCC
-The first key is A and the value is 0
-The result is CCBCC
 
 Test Run Successful.
 Total tests: 7
      Passed: 7
- Total time: 2.2026 Seconds
-Input contains 0 As, 2 Bs, and 8 Cs.
-Entered the else. The first key is C and the value is 8
-C
-The first key is B and the value is 2
-Entered the else. The first key is C and the value is 7
-CC
-The first key is B and the value is 2
+ Total time: 4.5977 Seconds
 CCB
-The second key is A and the value is 0
-Entered the else. The first key is C and the value is 6
-CCBC
-The first key is B and the value is 1
-Entered the else. The first key is C and the value is 5
-CCBCC
-The first key is B and the value is 1
 CCBCCB
-The second key is A and the value is 0
-Entered the else. The first key is C and the value is 4
-CCBCCBC
-The first key is A and the value is 0
-Entered the else. The first key is C and the value is 3
-CCBCCBCC
-The first key is A and the value is 0
-The result is CCBCCBCC
 
-Sunday, September 15, 2019 8:25:33 PM
+Monday, September 16, 2019 7:01:24 AM
 
