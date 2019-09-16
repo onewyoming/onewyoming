@@ -46,7 +46,11 @@ namespace Daegu
                     Console.WriteLine($"The second key is {myList[1].Key.ToString()} and the value is {myList[1].Value.ToString()}");
                     myList = myList.OrderByDescending(element => element.Value).ToList();
                 }
-                else if (result[result.Length - 1] == result[result.Length - 2])
+                else if (result.Length > 1 && result[result.Length - 1] == result[result.Length - 2] && myList[1].Value == 0)
+                {
+                    break;
+                }
+                else
                 {
                     Console.WriteLine($"Entered the else. The first key is {myList.First().Key.ToString()} and the value is {myList.First().Value.ToString()}");
                     result += myList.First().Key.ToString();
