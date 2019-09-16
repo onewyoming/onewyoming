@@ -1,5 +1,5 @@
 
-Sunday, September 15, 2019 7:56:02 PM
+Sunday, September 15, 2019 7:57:09 PM
 
 Test run for C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\bin\Debug\netcoreapp3.0\DaeguTests.dll(.NETCoreApp,Version=v3.0)
 Microsoft (R) Test Execution Command Line Tool Version 16.3.0-preview-20190820-01
@@ -32,7 +32,7 @@ The second key is A and the value is 0
 CCBC
 The first key is A and the value is 0
 The result is CCBC
-  X DaeguTests.DiverseStringTests.ReturnCCBCC [9ms]
+  X DaeguTests.DiverseStringTests.ReturnCCBCC [16ms]
   Error Message:
    Assert.Equal() Failure
                (pos 4)
@@ -45,7 +45,7 @@ Actual:   CCBC
 Total tests: 6
      Passed: 5
      Failed: 1
- Total time: 4.2745 Seconds
+ Total time: 5.5377 Seconds
 Input contains 0 As, 2 Bs, and 8 Cs.
 C
 The first key is B and the value is 2
@@ -63,5 +63,5 @@ CCBCCBC
 The first key is A and the value is 0
 The result is CCBCCBC
 
-Sunday, September 15, 2019 7:56:17 PM
+Sunday, September 15, 2019 7:57:29 PM
 
