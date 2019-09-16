@@ -49,5 +49,13 @@ namespace DaeguTests
             var result = x.GetString(0, 1, 8);
             Assert.Equal("CCBCC", result);
         }
+
+        [Fact]
+        public void ReturnPat()
+        {
+            var x = new DiverseString();
+            var result = x.GetString(4,5,6);
+            Assert.Equal(15, result.Length);
+        }
     }
 }
