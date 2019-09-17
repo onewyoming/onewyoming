@@ -269,6 +269,7 @@ build:daegu:
     - cd Daegu
     - pwd
     - dotnet --version
+    - dotnet --info
     - dotnet build --verbosity detailed
 
 test:daegu:
