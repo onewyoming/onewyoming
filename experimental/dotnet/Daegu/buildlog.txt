@@ -1,8 +1,27 @@
 
-Monday, September 16, 2019 7:03:56 AM
+Tuesday, September 17, 2019 6:44:01 AM
 
+
+Welcome to .NET Core 3.0!
+---------------------
+SDK Version: 3.0.100-rc1-014190
+
+Telemetry
+---------
+The .NET Core tools collect usage data in order to help us improve your experience. The data is anonymous. It is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
+
+Read more about .NET Core CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
+
+----------------
+Explore documentation: https://aka.ms/dotnet-docs
+Report issues and find source on GitHub: https://github.com/dotnet/core
+Find out what's new: https://aka.ms/dotnet-whats-new
+Learn about the installed HTTPS developer cert: https://aka.ms/aspnet-core-https
+Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli-docs
+Write your first app: https://aka.ms/first-net-core-app
+--------------------------------------------------------------------------------------
 Test run for C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\bin\Debug\netcoreapp3.0\DaeguTests.dll(.NETCoreApp,Version=v3.0)
-Microsoft (R) Test Execution Command Line Tool Version 16.3.0-preview-20190820-01
+Microsoft (R) Test Execution Command Line Tool Version 16.3.0-preview-20190905-01
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
 Starting test execution, please wait...
@@ -13,9 +32,9 @@ CCB
 Test Run Successful.
 Total tests: 7
      Passed: 7
- Total time: 3.5435 Seconds
+ Total time: 5.0721 Seconds
 CCB
 CCBCCB
 
-Monday, September 16, 2019 7:04:09 AM
+Tuesday, September 17, 2019 6:44:27 AM
 
