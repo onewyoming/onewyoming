@@ -280,3 +280,24 @@ test:daegu:
      - cd dotnet
      - cd Daegu
      - dotnet test --verbosity detailed
+
+build:pyeongtaek:
+  image: mcr.microsoft.com/dotnet/core/sdk:3.0
+  script:
+    - pwd
+    - cd experimental
+    - cd dotnet
+    - cd pyeongtaek
+    - pwd
+    - dotnet --version
+    - dotnet --info
+    - dotnet build --verbosity detailed
+
+test:pyeongtaek:
+   image: mcr.microsoft.com/dotnet/core/sdk:3.0
+   script:
+     - pwd
+     - cd experimental
+     - cd dotnet
+     - cd pyeongtaek
+     - dotnet test --verbosity detailed
