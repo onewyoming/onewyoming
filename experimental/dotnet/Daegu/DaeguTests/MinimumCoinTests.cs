@@ -15,7 +15,7 @@ namespace DaeguTests
         {
             var amountRequired = 0;
             var coinValues = new int[]{ 1, 5, 10, 25 };
-            MinimumCoin minimumCoin = new MinimumCoin();
+            MinimumCoin minimumCoin = new MinimumCoin(TotalValue: amountRequired, CoinSet: coinValues);
             Assert.Equal(0, minimumCoin.getCount());
         }
     }
