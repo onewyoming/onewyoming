@@ -29,7 +29,6 @@ test:mypages:
     - ls -a
     - yarn install
     - yarn run ng test --progress false --watch=false
-    - yarn run ng e2e
 
 build:dotnetcore:
   image: microsoft/dotnet:latest
