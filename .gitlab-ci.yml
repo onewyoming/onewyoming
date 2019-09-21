@@ -301,3 +301,24 @@ test:pyeongtaek:
      - cd dotnet
      - cd pyeongtaek
      - dotnet test --verbosity detailed
+
+build:sokcho:
+  image: mcr.microsoft.com/dotnet/core/sdk:3.0
+  script:
+    - pwd
+    - cd experimental
+    - cd dotnet
+    - cd Sokcho
+    - pwd
+    - dotnet --version
+    - dotnet --info
+    - dotnet build --verbosity detailed
+
+test:sokcho:
+   image: mcr.microsoft.com/dotnet/core/sdk:3.0
+   script:
+     - pwd
+     - cd experimental
+     - cd dotnet
+     - cd Sokcho
+     - dotnet test --verbosity detailed
