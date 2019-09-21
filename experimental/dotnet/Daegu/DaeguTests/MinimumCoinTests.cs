@@ -1,3 +1,4 @@
+using System.Linq;
 using Xunit;
 using Daegu;
 namespace DaeguTests

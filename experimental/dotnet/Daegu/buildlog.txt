@@ -1,10 +1,9 @@
 
-Saturday, September 21, 2019 2:58:56 PM
+Saturday, September 21, 2019 3:01:09 PM
 
-MinimumCoinTests.cs(38,42): error CS1061: 'int[]' does not contain a definition for 'length' and no accessible extension method 'length' accepting a first argument of type 'int[]' could be found (are you missing a using directive or an assembly reference?) [C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DaeguTests.csproj]
-MinimumCoinTests.cs(38,82): error CS1061: 'int[]' does not contain a definition for 'Contains' and no accessible extension method 'Contains' accepting a first argument of type 'int[]' could be found (are you missing a using directive or an assembly reference?) [C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DaeguTests.csproj]
+MinimumCoinTests.cs(39,42): error CS1061: 'int[]' does not contain a definition for 'length' and no accessible extension method 'length' accepting a first argument of type 'int[]' could be found (are you missing a using directive or an assembly reference?) [C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DaeguTests.csproj]
 CCB
 CCBCCB
 
-Saturday, September 21, 2019 2:59:16 PM
+Saturday, September 21, 2019 3:01:25 PM
 
