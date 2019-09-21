@@ -1,9 +1,21 @@
 
-Saturday, September 21, 2019 12:41:45 PM
+Saturday, September 21, 2019 12:43:20 PM
 
-MinimumCoinTests.cs(8,16): error CS1520: Method must have a return type [C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DaeguTests.csproj]
+Test run for C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\bin\Debug\netcoreapp3.0\DaeguTests.dll(.NETCoreApp,Version=v3.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.3.0-preview-20190905-01
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+A total of 1 test files matched the specified pattern.
+CCB
+
+Test Run Successful.
+Total tests: 9
+     Passed: 9
+ Total time: 2.8976 Seconds
 CCB
 CCBCCB
 
-Saturday, September 21, 2019 12:41:56 PM
+Saturday, September 21, 2019 12:43:31 PM
 

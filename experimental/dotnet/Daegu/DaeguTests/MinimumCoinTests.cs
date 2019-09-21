@@ -2,7 +2,7 @@ using Xunit;
 using Daegu;
 namespace DaeguTests
 {
-    public class MinimumCoinFixture: System.IDisposable
+    public class MinimumCoinTests
     {
         MinimumCoin minimumCoin;
         public MinimumCoinTests() 
@@ -10,11 +10,6 @@ namespace DaeguTests
             var amountRequired = 0;
             var coinValues = new int[]{ 1, 5, 10, 25 };
             this.minimumCoin = new MinimumCoin(TotalValue: amountRequired, CoinSet: coinValues);
-        }
-
-        public void Dispose()
-        {
-            minimumCoin.Dispose();
         }
 
         [Fact]

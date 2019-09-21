@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Daegu
 {
-    public class MinimumCoin: System.IDisposable
+    public class MinimumCoin
     {
         public int TotalValue { get; set; }
         public int[] CoinSet { get; set; }
@@ -13,11 +13,6 @@ namespace Daegu
         {
             this.TotalValue = TotalValue;
             this.CoinSet = CoinSet;
-        }
-
-        public void Dispose()
-        {
-            // do nothing because I am managed code
         }
 
         public int getCount()
