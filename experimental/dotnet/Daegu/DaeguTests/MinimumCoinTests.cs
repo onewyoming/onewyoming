@@ -13,9 +13,9 @@ namespace DaeguTests
         [Fact]
         public void GetTrivialCaseOfZeroCoin()
         {
-            MinimumCoin minimumCoin = new MinimumCoin();
             var amountRequired = 0;
             var coinValues = new int[]{ 1, 5, 10, 25 };
+            MinimumCoin minimumCoin = new MinimumCoin();
             Assert.Equal(0, minimumCoin.getCount());
         }
     }

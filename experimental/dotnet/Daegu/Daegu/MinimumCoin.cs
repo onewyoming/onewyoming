@@ -9,6 +9,12 @@ namespace Daegu
         public int TotalValue { get; set; }
         public int[] CoinSet { get; set; }
 
+        public MinimumCoin(int TotalValue, int[] CoinSet)
+        {
+            this.TotalValue = TotalValue;
+            this.CoinSet = CoinSet;
+        }
+
         public int getCount()
         {
 

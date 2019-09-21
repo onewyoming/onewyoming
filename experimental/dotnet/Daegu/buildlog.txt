@@ -1,22 +1,10 @@
 
-Saturday, September 21, 2019 12:27:01 PM
+Saturday, September 21, 2019 12:29:09 PM
 
-MinimumCoinTests.cs(17,17): warning CS0219: The variable 'amountRequired' is assigned but its value is never used [C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DaeguTests.csproj]
-Test run for C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\bin\Debug\netcoreapp3.0\DaeguTests.dll(.NETCoreApp,Version=v3.0)
-Microsoft (R) Test Execution Command Line Tool Version 16.3.0-preview-20190905-01
-Copyright (c) Microsoft Corporation.  All rights reserved.
-
-Starting test execution, please wait...
-
-A total of 1 test files matched the specified pattern.
-CCB
-
-Test Run Successful.
-Total tests: 9
-     Passed: 9
- Total time: 2.5470 Seconds
+MinimumCoinTests.cs(18,43): error CS7036: There is no argument given that corresponds to the required formal parameter 'TotalValue' of 'MinimumCoin.MinimumCoin(int, int[])' [C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DaeguTests.csproj]
+MinimumCoinTests.cs(16,17): warning CS0219: The variable 'amountRequired' is assigned but its value is never used [C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DaeguTests.csproj]
 CCB
 CCBCCB
 
-Saturday, September 21, 2019 12:27:12 PM
+Saturday, September 21, 2019 12:29:19 PM
 
