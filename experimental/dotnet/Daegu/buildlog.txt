@@ -1,5 +1,5 @@
 
-Saturday, September 21, 2019 12:51:26 PM
+Saturday, September 21, 2019 12:54:15 PM
 
 Test run for C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\bin\Debug\netcoreapp3.0\DaeguTests.dll(.NETCoreApp,Version=v3.0)
 Microsoft (R) Test Execution Command Line Tool Version 16.3.0-preview-20190905-01
@@ -9,20 +9,13 @@ Starting test execution, please wait...
 
 A total of 1 test files matched the specified pattern.
 CCB
-  X DaeguTests.MinimumCoinTests.GetTrivialCaseOfOneCoin [13ms]
-  Error Message:
-   Assert.Equal() Failure
-Expected: 1
-Actual:   0
-  Stack Trace:
-     at DaeguTests.MinimumCoinTests.GetTrivialCaseOfOneCoin() in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\MinimumCoinTests.cs:line 29
 
+Test Run Successful.
 Total tests: 10
-     Passed: 9
-     Failed: 1
- Total time: 2.7081 Seconds
+     Passed: 10
+ Total time: 2.3427 Seconds
 CCB
 CCBCCB
 
-Saturday, September 21, 2019 12:51:36 PM
+Saturday, September 21, 2019 12:54:24 PM
 

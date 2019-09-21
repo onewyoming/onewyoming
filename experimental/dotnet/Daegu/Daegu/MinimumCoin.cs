@@ -15,7 +15,10 @@ namespace Daegu
 
         public int getCount(int total)
         {
-
+            if (this.CoinSet.Contains(total))
+            {
+                return 1;
+            }
             return 0;
         }
     }
