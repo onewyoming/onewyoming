@@ -1,6 +1,7 @@
 
-Saturday, September 21, 2019 12:29:50 PM
+Saturday, September 21, 2019 12:35:35 PM
 
+MinimumCoinTests.cs(7,21): warning CS0649: Field 'MinimumCoinTests.minimumCoin' is never assigned to, and will always have its default value null [C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DaeguTests.csproj]
 Test run for C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\bin\Debug\netcoreapp3.0\DaeguTests.dll(.NETCoreApp,Version=v3.0)
 Microsoft (R) Test Execution Command Line Tool Version 16.3.0-preview-20190905-01
 Copyright (c) Microsoft Corporation.  All rights reserved.
@@ -9,13 +10,25 @@ Starting test execution, please wait...
 
 A total of 1 test files matched the specified pattern.
 CCB
+  X DaeguTests.MinimumCoinTests.GetTrivialCaseOfZeroCoin [15ms]
+  Error Message:
+   System.NullReferenceException : Object reference not set to an instance of an object.
+  Stack Trace:
+     at DaeguTests.MinimumCoinTests.Dispose() in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\MinimumCoinTests.cs:line 12
+   at ReflectionAbstractionExtensions.DisposeTestClass(ITest test, Object testClass, IMessageBus messageBus, ExecutionTimer timer, CancellationTokenSource cancellationTokenSource) in C:\Dev\xunit\xunit\src\xunit.execution\Extensions\ReflectionAbstractionExtensions.cs:line 79
+  X DaeguTests.MinimumCoinTests.Freebie [< 1ms]
+  Error Message:
+   System.NullReferenceException : Object reference not set to an instance of an object.
+  Stack Trace:
+     at DaeguTests.MinimumCoinTests.Dispose() in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\MinimumCoinTests.cs:line 12
+   at ReflectionAbstractionExtensions.DisposeTestClass(ITest test, Object testClass, IMessageBus messageBus, ExecutionTimer timer, CancellationTokenSource cancellationTokenSource) in C:\Dev\xunit\xunit\src\xunit.execution\Extensions\ReflectionAbstractionExtensions.cs:line 79
 
-Test Run Successful.
 Total tests: 9
-     Passed: 9
- Total time: 2.3841 Seconds
+     Passed: 7
+     Failed: 2
+ Total time: 2.8080 Seconds
 CCB
 CCBCCB
 
-Saturday, September 21, 2019 12:29:59 PM
+Saturday, September 21, 2019 12:35:46 PM
 

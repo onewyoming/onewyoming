@@ -2,8 +2,15 @@ using Xunit;
 using Daegu;
 namespace DaeguTests
 {
-    public class MinimumCoinTests
+    public class MinimumCoinTests: System.IDisposable
     {
+        MinimumCoin minimumCoin;
+        public MinimumCoinTests() {}
+
+        public void Dispose()
+        {
+            minimumCoin.Dispose();
+        }
         [Fact]
         public void Freebie()
         {
