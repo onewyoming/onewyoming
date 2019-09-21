@@ -23,5 +23,11 @@ namespace DaeguTests
         {
             Assert.Equal(0, this.minimumCoin.getCount());
         }
+
+        [Fact]
+        public void GetTrivialCaseOfOneCoin()
+        {
+            Assert.Equal(1, this.minimumCoin.CoinSet[0]);
+        }
     }
 }
