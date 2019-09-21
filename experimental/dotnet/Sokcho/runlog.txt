@@ -1,0 +1,491 @@
+
+Saturday, September 21, 2019 11:59:18 AM
+
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: https://localhost:5001
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm
+
+Saturday, September 21, 2019 12:00:58 PM
+
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: https://localhost:5001
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/counter  
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Fallback {*path:nonfile}'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/index.html'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\wwwroot\index.html'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Fallback {*path:nonfile}'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 1142.574ms 200 text/html
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/css/bootstrap/bootstrap.min.css  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/css/site.css  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/blazor.webassembly.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\wwwroot\css\site.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 10.8513ms 200 text/css
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/css/bootstrap/bootstrap.min.css'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\wwwroot\css\bootstrap\bootstrap.min.css'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/blazor.webassembly.js'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\blazor.webassembly.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 94.4807ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 95.5108ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/css/open-iconic/font/css/open-iconic-bootstrap.min.css  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/css/open-iconic/font/css/open-iconic-bootstrap.min.css'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 23.5115ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/blazor.boot.json  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/blazor.boot.json'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\blazor.boot.json'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 4.1869000000000005ms 200 application/json
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/wasm/mono.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/wasm/mono.js'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\wasm\mono.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 59.679ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/wasm/mono.wasm  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/wasm/mono.wasm'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\wasm\mono.wasm'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 1272.2164ms 200 application/wasm
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/SokchoBlazorWasm.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.AspNetCore.Authorization.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.AspNetCore.Blazor.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.AspNetCore.Blazor.HttpClient.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.AspNetCore.Components.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.AspNetCore.Components.Forms.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.AspNetCore.Components.Web.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.AspNetCore.Metadata.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.Bcl.AsyncInterfaces.dll  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/SokchoBlazorWasm.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\SokchoBlazorWasm.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 44.298300000000005ms 200 application/octet-stream
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.Extensions.DependencyInjection.Abstractions.dll  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.Extensions.DependencyInjection.Abstractions.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 3.891ms 200 application/octet-stream
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.Extensions.DependencyInjection.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.Extensions.Logging.Abstractions.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.Extensions.Options.dll  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.AspNetCore.Blazor.HttpClient.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.AspNetCore.Blazor.HttpClient.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 53.3021ms 200 application/octet-stream
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.Extensions.Primitives.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.JSInterop.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Mono.Security.dll  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.AspNetCore.Components.Forms.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.AspNetCore.Components.Forms.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Mono.WebAssembly.Interop.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 55.5993ms 200 application/octet-stream
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/mscorlib.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/System.Buffers.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/System.ComponentModel.Annotations.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/System.Core.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/System.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/System.Memory.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/System.Net.Http.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/System.Numerics.Vectors.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/System.Runtime.CompilerServices.Unsafe.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/System.Text.Encodings.Web.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/System.Text.Json.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/System.Threading.Tasks.Extensions.dll  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.AspNetCore.Components.Web.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.AspNetCore.Components.Web.dll'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/System.Threading.Tasks.Extensions.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\System.Threading.Tasks.Extensions.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 153.33950000000002ms 200 application/octet-stream
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 270.6861ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.AspNetCore.Metadata.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.AspNetCore.Metadata.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 270.91970000000003ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/System.Buffers.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\System.Buffers.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 214.9495ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Mono.Security.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Mono.Security.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 218.6209ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/System.Runtime.CompilerServices.Unsafe.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\System.Runtime.CompilerServices.Unsafe.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 177.63750000000002ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.Bcl.AsyncInterfaces.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.Bcl.AsyncInterfaces.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 249.76860000000002ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Mono.WebAssembly.Interop.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Mono.WebAssembly.Interop.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 217.64970000000002ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.AspNetCore.Blazor.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.AspNetCore.Blazor.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 279.86220000000003ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.AspNetCore.Authorization.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.AspNetCore.Authorization.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 301.3773ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.JSInterop.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.JSInterop.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 250.5343ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.Extensions.Primitives.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.Extensions.Primitives.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 255.52730000000003ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/System.Text.Encodings.Web.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\System.Text.Encodings.Web.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 248.8546ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/System.ComponentModel.Annotations.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\System.ComponentModel.Annotations.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 295.67650000000003ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.Extensions.Logging.Abstractions.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.Extensions.Logging.Abstractions.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 323.6895ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.Extensions.Options.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.Extensions.Options.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 345.4039ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.AspNetCore.Components.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.AspNetCore.Components.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 413.25800000000004ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/System.Numerics.Vectors.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\System.Numerics.Vectors.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 345.73760000000004ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.Extensions.DependencyInjection.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.Extensions.DependencyInjection.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 418.31100000000004ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/System.Memory.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\System.Memory.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 363.7038ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/System.Core.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\System.Core.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 389.5339ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/System.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\System.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 402.09130000000005ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/System.Text.Json.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\System.Text.Json.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 404.73560000000003ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/System.Net.Http.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\System.Net.Http.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 431.4246ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/mscorlib.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\mscorlib.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 534.7228ms 200 application/octet-stream
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/css/open-iconic/font/fonts/open-iconic.woff  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/css/open-iconic/font/fonts/open-iconic.woff'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\wwwroot\css\open-iconic\font\fonts\open-iconic.woff'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 6.1298ms 200 application/font-woff
+
+Saturday, September 21, 2019 12:02:02 PM
+
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: https://localhost:5001
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/counter  
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Fallback {*path:nonfile}'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/index.html'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\wwwroot\index.html'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Fallback {*path:nonfile}'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 284.6729ms 200 text/html
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/css/bootstrap/bootstrap.min.css  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/css/site.css  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\wwwroot\css\site.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/blazor.webassembly.js  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 2.4446000000000003ms 200 text/css
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /_framework/blazor.webassembly.js was not modified
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 49.7684ms 304 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/css/bootstrap/bootstrap.min.css'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\wwwroot\css\bootstrap\bootstrap.min.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 81.8788ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/blazor.boot.json  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/blazor.boot.json'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\blazor.boot.json'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 18.9728ms 200 application/json
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/wasm/mono.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/wasm/mono.js'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\wasm\mono.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 33.8403ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/wasm/mono.wasm  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/wasm/mono.wasm'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\wasm\mono.wasm'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 323.70840000000004ms 200 application/wasm
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/SokchoBlazorWasm.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.AspNetCore.Authorization.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.AspNetCore.Blazor.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.AspNetCore.Blazor.HttpClient.dll  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.AspNetCore.Blazor.HttpClient.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.AspNetCore.Blazor.HttpClient.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 3.3301000000000003ms 200 application/octet-stream
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.AspNetCore.Components.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.AspNetCore.Components.Forms.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.AspNetCore.Components.Web.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.AspNetCore.Metadata.dll  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/SokchoBlazorWasm.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\SokchoBlazorWasm.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 29.4756ms 200 application/octet-stream
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.Bcl.AsyncInterfaces.dll  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.Bcl.AsyncInterfaces.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.Bcl.AsyncInterfaces.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 3.1237000000000004ms 200 application/octet-stream
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.Extensions.DependencyInjection.Abstractions.dll  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.AspNetCore.Components.Forms.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.AspNetCore.Components.Forms.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 23.7589ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.AspNetCore.Authorization.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.AspNetCore.Authorization.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 33.5129ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.AspNetCore.Components.Web.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.AspNetCore.Components.Web.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 45.747ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.AspNetCore.Metadata.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.AspNetCore.Metadata.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 44.2993ms 200 application/octet-stream
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.Extensions.DependencyInjection.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.Extensions.Logging.Abstractions.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.Extensions.Options.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.Extensions.Primitives.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Microsoft.JSInterop.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Mono.Security.dll  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.Extensions.DependencyInjection.Abstractions.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 55.420300000000005ms 200 application/octet-stream
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/Mono.WebAssembly.Interop.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/mscorlib.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/System.Buffers.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/System.Core.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/System.ComponentModel.Annotations.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/System.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/System.Memory.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/System.Net.Http.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/System.Numerics.Vectors.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/System.Runtime.CompilerServices.Unsafe.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/System.Text.Encodings.Web.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/System.Text.Json.dll  
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 GET https://localhost:5001/_framework/_bin/System.Threading.Tasks.Extensions.dll  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/System.Threading.Tasks.Extensions.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\System.Threading.Tasks.Extensions.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 82.9576ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/System.Runtime.CompilerServices.Unsafe.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\System.Runtime.CompilerServices.Unsafe.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 91.0139ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.Extensions.Logging.Abstractions.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.Extensions.Logging.Abstractions.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 163.5628ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.AspNetCore.Components.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.AspNetCore.Components.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 216.98870000000002ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.AspNetCore.Blazor.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.AspNetCore.Blazor.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 224.0652ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.Extensions.DependencyInjection.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.Extensions.DependencyInjection.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 168.76250000000002ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/System.ComponentModel.Annotations.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\System.ComponentModel.Annotations.dll'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/System.Buffers.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\System.Buffers.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 110.34140000000001ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Mono.WebAssembly.Interop.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Mono.WebAssembly.Interop.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 126.2039ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.Extensions.Options.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.Extensions.Options.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 164.5661ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Mono.Security.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Mono.Security.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 158.8836ms 200 application/octet-stream
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 157.11450000000002ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.Extensions.Primitives.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.Extensions.Primitives.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 216.5404ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/System.Net.Http.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\System.Net.Http.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 159.9067ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/System.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\System.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 165.467ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/Microsoft.JSInterop.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\Microsoft.JSInterop.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 228.8906ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/System.Core.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\System.Core.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 181.3238ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/System.Text.Encodings.Web.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\System.Text.Encodings.Web.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 177.4042ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/System.Text.Json.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\System.Text.Json.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 181.0569ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/System.Numerics.Vectors.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\System.Numerics.Vectors.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 205.50390000000002ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/System.Memory.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\System.Memory.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 209.87390000000002ms 200 application/octet-stream
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/_framework/_bin/mscorlib.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\mscorlib.dll'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished in 414.63120000000004ms 200 application/octet-stream
