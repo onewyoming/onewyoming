@@ -6,12 +6,10 @@ namespace Daegu
 {
     public class MinimumCoin
     {
-        public int TotalValue { get; set; }
         public int[] CoinSet { get; set; }
 
-        public MinimumCoin(int TotalValue, int[] CoinSet)
+        public MinimumCoin(int[] CoinSet)
         {
-            this.TotalValue = TotalValue;
             this.CoinSet = CoinSet;
         }
 
