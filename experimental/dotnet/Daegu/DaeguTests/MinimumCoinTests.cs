@@ -5,7 +5,12 @@ namespace DaeguTests
     public class MinimumCoinTests: System.IDisposable
     {
         MinimumCoin minimumCoin;
-        public MinimumCoinTests() {}
+        public MinimumCoinTests() 
+        {
+            var amountRequired = 0;
+            var coinValues = new int[]{ 1, 5, 10, 25 };
+            this.minimumCoin = new MinimumCoin(TotalValue: amountRequired, CoinSet: coinValues);
+        }
 
         public void Dispose()
         {
@@ -19,11 +24,8 @@ namespace DaeguTests
 
         [Fact]
         public void GetTrivialCaseOfZeroCoin()
-        {
-            var amountRequired = 0;
-            var coinValues = new int[]{ 1, 5, 10, 25 };
-            MinimumCoin minimumCoin = new MinimumCoin(TotalValue: amountRequired, CoinSet: coinValues);
-            Assert.Equal(0, minimumCoin.getCount());
+        
+            Assert.Equal(0, this.minimumCoin.getCount());
         }
     }
 }
