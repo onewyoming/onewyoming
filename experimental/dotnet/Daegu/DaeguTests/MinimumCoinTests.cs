@@ -2,7 +2,7 @@ using Xunit;
 using Daegu;
 namespace DaeguTests
 {
-    public class MinimumCoinTests: System.IDisposable
+    public class MinimumCoinFixture: System.IDisposable
     {
         MinimumCoin minimumCoin;
         public MinimumCoinTests() 
@@ -16,6 +16,7 @@ namespace DaeguTests
         {
             minimumCoin.Dispose();
         }
+
         [Fact]
         public void Freebie()
         {
@@ -24,7 +25,7 @@ namespace DaeguTests
 
         [Fact]
         public void GetTrivialCaseOfZeroCoin()
-        
+        {
             Assert.Equal(0, this.minimumCoin.getCount());
         }
     }

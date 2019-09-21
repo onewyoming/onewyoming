@@ -1,18 +1,9 @@
 
-Saturday, September 21, 2019 12:37:55 PM
+Saturday, September 21, 2019 12:41:45 PM
 
-MinimumCoinTests.cs(26,47): error CS1002: ; expected [C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DaeguTests.csproj]
-MinimumCoinTests.cs(28,25): error CS1519: Invalid token '(' in class, struct, or interface member declaration [C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DaeguTests.csproj]
-MinimumCoinTests.cs(28,26): error CS1031: Type expected [C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DaeguTests.csproj]
-MinimumCoinTests.cs(28,26): error CS8124: Tuple must contain at least two elements. [C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DaeguTests.csproj]
-MinimumCoinTests.cs(28,26): error CS1026: ) expected [C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DaeguTests.csproj]
-MinimumCoinTests.cs(28,26): error CS1519: Invalid token '0' in class, struct, or interface member declaration [C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DaeguTests.csproj]
-MinimumCoinTests.cs(28,54): error CS1519: Invalid token '(' in class, struct, or interface member declaration [C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DaeguTests.csproj]
-MinimumCoinTests.cs(28,55): error CS8124: Tuple must contain at least two elements. [C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DaeguTests.csproj]
-MinimumCoinTests.cs(28,56): error CS1519: Invalid token ')' in class, struct, or interface member declaration [C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DaeguTests.csproj]
-MinimumCoinTests.cs(31,1): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DaeguTests.csproj]
+MinimumCoinTests.cs(8,16): error CS1520: Method must have a return type [C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DaeguTests.csproj]
 CCB
 CCBCCB
 
-Saturday, September 21, 2019 12:38:02 PM
+Saturday, September 21, 2019 12:41:56 PM
 
