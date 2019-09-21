@@ -1,5 +1,5 @@
 
-Saturday, September 21, 2019 3:02:40 PM
+Saturday, September 21, 2019 4:18:28 PM
 
 Test run for C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\bin\Debug\netcoreapp3.0\DaeguTests.dll(.NETCoreApp,Version=v3.0)
 Microsoft (R) Test Execution Command Line Tool Version 16.3.0-preview-20190905-01
@@ -9,7 +9,7 @@ Starting test execution, please wait...
 
 A total of 1 test files matched the specified pattern.
 CCB
-  X DaeguTests.MinimumCoinTests.GetCaseOfTwoCoins [74ms]
+  X DaeguTests.MinimumCoinTests.GetCaseOfTwoCoins [13ms]
   Error Message:
    Assert.Equal() Failure
 Expected: 2
@@ -20,9 +20,9 @@ Actual:   0
 Total tests: 11
      Passed: 10
      Failed: 1
- Total time: 5.1846 Seconds
+ Total time: 5.7493 Seconds
 CCB
 CCBCCB
 
-Saturday, September 21, 2019 3:03:04 PM
+Saturday, September 21, 2019 4:18:53 PM
 
