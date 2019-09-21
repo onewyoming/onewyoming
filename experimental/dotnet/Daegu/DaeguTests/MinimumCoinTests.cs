@@ -7,9 +7,8 @@ namespace DaeguTests
         MinimumCoin minimumCoin;
         public MinimumCoinTests() 
         {
-            var amountRequired = 0;
             var coinValues = new int[]{ 1, 5, 10, 25 };
-            this.minimumCoin = new MinimumCoin(TotalValue: amountRequired, CoinSet: coinValues);
+            this.minimumCoin = new MinimumCoin(CoinSet: coinValues);
         }
 
         [Fact]
