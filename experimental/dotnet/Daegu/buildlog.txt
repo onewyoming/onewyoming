@@ -1,5 +1,5 @@
 
-Saturday, September 21, 2019 12:54:15 PM
+Saturday, September 21, 2019 1:42:50 PM
 
 Test run for C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\bin\Debug\netcoreapp3.0\DaeguTests.dll(.NETCoreApp,Version=v3.0)
 Microsoft (R) Test Execution Command Line Tool Version 16.3.0-preview-20190905-01
@@ -13,9 +13,9 @@ CCB
 Test Run Successful.
 Total tests: 10
      Passed: 10
- Total time: 2.3427 Seconds
+ Total time: 2.4514 Seconds
 CCB
 CCBCCB
 
-Saturday, September 21, 2019 12:54:24 PM
+Saturday, September 21, 2019 1:43:01 PM
 
