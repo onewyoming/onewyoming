@@ -1,5 +1,5 @@
 
-Saturday, September 21, 2019 12:02:24 PM
+Saturday, September 21, 2019 12:17:11 PM
 
 .NET Core SDK (reflecting any global.json):
  Version:   3.0.100-rc1-014190
@@ -47,7 +47,7 @@ To install additional .NET Core runtimes or SDKs:
 Microsoft (R) Build Engine version 16.3.0-preview-19455-02+4a2d77107 for .NET Core
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-  Restore completed in 49.86 ms for C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\SokchoBlazorWasm.csproj.
+  Restore completed in 29.4 ms for C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\SokchoBlazorWasm.csproj.
   You are using a preview version of .NET Core. See: https://aka.ms/dotnet-core-preview
   SokchoBlazorWasm -> C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\SokchoBlazorWasm.dll
   Writing boot data to: C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\obj\Debug\netstandard2.0\blazor\blazor.boot.json
@@ -57,7 +57,7 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:02.07
+Time Elapsed 00:00:01.28
 
-Saturday, September 21, 2019 12:02:29 PM
+Saturday, September 21, 2019 12:17:15 PM
 

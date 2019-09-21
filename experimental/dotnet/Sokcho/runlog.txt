@@ -489,3 +489,16 @@ info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
       Sending file. Request path: '/_framework/_bin/mscorlib.dll'. Physical path: 'C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist\_framework\_bin\mscorlib.dll'
 info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
       Request finished in 414.63120000000004ms 200 application/octet-stream
+
+Saturday, September 21, 2019 12:03:21 PM
+
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: https://localhost:5001
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm
