@@ -36,7 +36,7 @@ namespace DaeguTests
         [Fact]
         public void GetCaseOfTwoCoins()
         {
-            if (this.minimumCoin.CoinSet.length > 1 && !this.minimumCoin.CoinSet.Contains(this.minimumCoin.CoinSet[0] + this.minimumCoin.CoinSet[1]))
+            if (this.minimumCoin.CoinSet.Length > 1 && !this.minimumCoin.CoinSet.Contains(this.minimumCoin.CoinSet[0] + this.minimumCoin.CoinSet[1]))
             {
                 Assert.Equal(2, this.minimumCoin.getCount(this.minimumCoin.CoinSet[0] + this.minimumCoin.CoinSet[1]));
             }

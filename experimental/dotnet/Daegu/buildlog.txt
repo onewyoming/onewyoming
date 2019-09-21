@@ -1,9 +1,28 @@
 
-Saturday, September 21, 2019 3:01:09 PM
+Saturday, September 21, 2019 3:02:40 PM
 
-MinimumCoinTests.cs(39,42): error CS1061: 'int[]' does not contain a definition for 'length' and no accessible extension method 'length' accepting a first argument of type 'int[]' could be found (are you missing a using directive or an assembly reference?) [C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\DaeguTests.csproj]
+Test run for C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\bin\Debug\netcoreapp3.0\DaeguTests.dll(.NETCoreApp,Version=v3.0)
+Microsoft (R) Test Execution Command Line Tool Version 16.3.0-preview-20190905-01
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+A total of 1 test files matched the specified pattern.
+CCB
+  X DaeguTests.MinimumCoinTests.GetCaseOfTwoCoins [74ms]
+  Error Message:
+   Assert.Equal() Failure
+Expected: 2
+Actual:   0
+  Stack Trace:
+     at DaeguTests.MinimumCoinTests.GetCaseOfTwoCoins() in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Daegu\DaeguTests\MinimumCoinTests.cs:line 41
+
+Total tests: 11
+     Passed: 10
+     Failed: 1
+ Total time: 5.1846 Seconds
 CCB
 CCBCCB
 
-Saturday, September 21, 2019 3:01:25 PM
+Saturday, September 21, 2019 3:03:04 PM
 
