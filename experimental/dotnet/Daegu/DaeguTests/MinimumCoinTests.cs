@@ -20,13 +20,13 @@ namespace DaeguTests
         [Fact]
         public void GetTrivialCaseOfZeroCoin()
         {
-            Assert.Equal(0, this.minimumCoin.getCount());
+            Assert.Equal(0, this.minimumCoin.getCount(0));
         }
 
         [Fact]
         public void GetTrivialCaseOfOneCoin()
         {
-            Assert.Equal(1, this.minimumCoin.CoinSet[0]);
+            Assert.Equal(1, this.minimumCoin.getCount(this.minimumCoin.CoinSet[0]));
         }
     }
 }

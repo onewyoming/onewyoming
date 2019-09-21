@@ -13,7 +13,7 @@ namespace Daegu
             this.CoinSet = CoinSet;
         }
 
-        public int getCount()
+        public int getCount(int total)
         {
 
             return 0;
