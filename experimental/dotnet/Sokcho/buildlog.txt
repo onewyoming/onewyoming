@@ -1,0 +1,19 @@
+
+Saturday, September 21, 2019 11:19:51 AM
+
+Microsoft (R) Build Engine version 16.3.0-preview-19455-02+4a2d77107 for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Restore completed in 66.97 ms for C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\SokchoBlazorWasm.csproj.
+  You are using a preview version of .NET Core. See: https://aka.ms/dotnet-core-preview
+  SokchoBlazorWasm -> C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\SokchoBlazorWasm.dll
+  Blazor Build result -> 35 files in C:\Users\kus\Documents\src\wyoming\experimental\dotnet\Sokcho\SokchoBlazorWasm\bin\Debug\netstandard2.0\dist
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.21
+
+Saturday, September 21, 2019 11:19:59 AM
+
