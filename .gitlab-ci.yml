@@ -321,3 +321,36 @@ test:sokcho:
      - cd dotnet
      - cd Sokcho
      - dotnet test --verbosity detailed
+
+build:wonju:
+  image: mcr.microsoft.com/dotnet/core/sdk:3.0
+  script:
+    - pwd
+    - cd experimental
+    - cd dotnet
+    - cd wonju
+    - pwd
+    - dotnet --version
+    - dotnet --info
+    - dotnet build --verbosity detailed
+
+test:wonju:
+   image: mcr.microsoft.com/dotnet/core/sdk:3.0
+   script:
+     - pwd
+     - cd experimental
+     - cd dotnet
+     - cd wonju
+     - dotnet test --verbosity detailed
+
+build:wonjuui:
+  image: node
+  script:
+    - pwd
+    - cd experimental
+    - cd dotnet
+    - cd wonju
+    - cd WonjuUI
+    - pwd
+    - yarn
+    - yarn run ng build
