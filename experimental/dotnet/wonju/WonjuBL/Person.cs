@@ -2,23 +2,12 @@ namespace WonjuBL
 {
     public class Person : IName
     {
-        private string legalName;
-        private string preferredName;
-        public void SetLegalName(string inputLegalName) 
+        public string LegalName { get; set; }
+        public string PreferredName { get; set; }
+        public Person(string legalName, string preferredName)
         {
-            legalName = inputLegalName;
-        }
-        public void SetPreferredName(string inputPreferredName)
-        {
-            preferredName = inputPreferredName;
-        }
-        public string GetLegalName()
-        {
-            return legalName;
-        }
-        public string GetPreferredName()
-        {
-            return preferredName;
+            LegalName = legalName;
+            PreferredName = preferredName;
         }
     }
 }

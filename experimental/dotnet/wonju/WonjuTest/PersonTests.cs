@@ -8,25 +8,22 @@ namespace WonjuTest
     {
         const string LegalName = "Kushal Hada";
         const string PreferredName = "kus";
+        WonjuBL.Person person = new WonjuBL.Person(LegalName, PreferredName);
+
         [Fact]
         public void TestPersonShouldCreateNotNull()
         {
-            WonjuBL.Person person = new WonjuBL.Person();
             Assert.NotNull(person);
         }
         [Fact]
-        public void TestPersonSetGetLegalName()
+        public void TestPersonGetLegalName()
         {
-            WonjuBL.Person person = new WonjuBL.Person();
-            person.SetLegalName(LegalName);
-            Assert.Equal(LegalName, person.GetLegalName());
+            Assert.Equal(LegalName, person.LegalName);
         }
         [Fact]
-        public void TestPersonSetGetPreferredName()
+        public void TestPersonGetPreferredName()
         {
-            WonjuBL.Person person = new WonjuBL.Person();
-            person.SetPreferredName(PreferredName);
-            Assert.Equal(PreferredName, person.GetPreferredName());
+            Assert.Equal(PreferredName, person.PreferredName);
         }
     }
 }

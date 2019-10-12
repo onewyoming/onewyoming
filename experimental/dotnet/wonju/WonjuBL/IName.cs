@@ -2,9 +2,7 @@ namespace WonjuBL
 {
     interface IName
     {
-        string GetLegalName();
-        void SetLegalName(string inputLegalName);
-        string GetPreferredName();
-        void SetPreferredName(string inputPreferredName);
+        string LegalName { get; set; }
+        string PreferredName { get; set; }
     }
 }
