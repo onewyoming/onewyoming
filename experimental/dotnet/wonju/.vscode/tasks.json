@@ -42,10 +42,12 @@
             "type": "npm",
             "script": "start",
             "isBackground": true,
-            "path": "WonjuUI/",
             "presentation": {
                 "focus": true,
                 "panel": "dedicated"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/WonjuUI/",
             },
             "group": {
                 "kind": "build",

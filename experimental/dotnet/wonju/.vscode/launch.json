@@ -14,11 +14,6 @@
             "args": [],
             "cwd": "${workspaceFolder}/WonjuAPI",
             "stopAtEntry": false,
-            // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
-            "serverReadyAction": {
-                "action": "openExternally",
-                "pattern": "^\\s*Now listening on:\\s+(https?://\\S+)"
-            },
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development"
             },
@@ -38,7 +33,10 @@
             "request": "launch",
             "preLaunchTask": "npm: start",
             "url": "http://localhost:4200/",
-            "webRoot": "${workspaceFolder}/WonjuUI",
+            "runtimeArgs": [
+                "--disable-web-security"
+             ],
+            "webRoot": "${workspaceFolder}/WonjuUI/",
             "sourceMapPathOverrides": {
                 "webpack:/*": "${webRoot}/*",
                 "/./*": "${webRoot}/*",
@@ -52,7 +50,7 @@
             "type": "chrome",
             "request": "launch",
             "url": "http://localhost:9876/debug.html",
-            "webRoot": "${workspaceFolder}/WonjuUI",
+            "webRoot": "${workspaceFolder}/WonjuUI/",
             "sourceMaps": true,
             "sourceMapPathOverrides": {
                 "webpack:/*": "${webRoot}/*",
@@ -70,6 +68,15 @@
             "protocol": "inspector",
             "args": [
                 "${workspaceFolder}/WonjuUI/e2e/protractor.conf.js"
+            ]
+        },
+    ],
+    "compounds": [
+        {
+            "name": "Serve both client and server",
+            "configurations": [
+                "ng serve", 
+                ".NET Core Launch (web)"
             ]
         }
     ]
