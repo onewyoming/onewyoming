@@ -35,7 +35,7 @@
             "url": "http://localhost:4200/",
             "runtimeArgs": [
                 "--disable-web-security"
-             ],
+            ],
             "webRoot": "${workspaceFolder}/WonjuUI/",
             "sourceMapPathOverrides": {
                 "webpack:/*": "${webRoot}/*",
@@ -75,7 +75,7 @@
         {
             "name": "Serve both client and server",
             "configurations": [
-                "ng serve", 
+                "ng serve",
                 ".NET Core Launch (web)"
             ]
         }
