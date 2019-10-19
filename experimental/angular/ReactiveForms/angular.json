@@ -122,8 +122,12 @@
               "devServerTarget": "ReactiveForms:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@zeit/ng-deploy:deploy"
         }
       }
-    }},
+    }
+  },
   "defaultProject": "ReactiveForms"
 }
