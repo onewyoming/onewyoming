@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterContentChecked } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, ReactiveFormModule } from '@angular/forms';
 
 @Component({
   selector: 'app-name-editor',
