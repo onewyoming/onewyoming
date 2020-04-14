@@ -23,10 +23,10 @@ export class NavbarComponent implements OnInit, OnChanges {
   }
   getNumbers(): Observable<number> {
     return Observable.create(function (observer: { next: (arg0: number) => void; complete: () => void; }) {
-      for (let i = 0; i < 999999; i++) {
+      for (let i = 0; i < 999; i++) {
         setTimeout(() => {
           observer.next(i);
-        }, 1);
+        }, 100);
       }
       setTimeout(() => {
         observer.next(4);
