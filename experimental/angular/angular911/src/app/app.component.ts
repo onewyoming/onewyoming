@@ -29,5 +29,13 @@ export class AppComponent implements OnInit {
         console.log('complete');
       }
     });
+    this.itemService.getItem(1).subscribe({
+      next: x => {
+        console.log({ title: x.title});
+      },
+      error: x => {
+        console.error({ error: x });
+      }
+    });
   }
 }

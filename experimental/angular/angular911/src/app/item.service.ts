@@ -26,4 +26,21 @@ export class ItemService {
     );
     return returnObject;
   }
+  getItem(id: number): Observable<Item>{
+    const returnObject = this.httpClient.get<Item>(this.getItemUrl(id));
+    returnObject.pipe(
+      map( val => {
+        return val;
+      }),
+      retryWhen(
+        delayWhen(
+          val => timer(val * 1000)
+        )
+      )
+    );
+    return returnObject;
+  }
+  getItemUrl(id: number): string {
+    return `assets/json/item/${id}.json`;
+  }
 }
