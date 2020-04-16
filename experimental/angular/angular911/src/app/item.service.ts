@@ -12,8 +12,8 @@ export class ItemService {
   constructor(
     private httpClient: HttpClient
   ) { }
-  getAllItems(): Observable<Array<Item>>{
-    const returnObject = this.httpClient.get<Array<Item>>(this.getAllItemsUrl);
+  getAllItems(): Observable<{ items: Array<Item> }>{
+    const returnObject = this.httpClient.get<{ items: Array<Item> }>(this.getAllItemsUrl);
     returnObject.pipe(
       map( val => {
         return val;

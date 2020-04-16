@@ -16,10 +16,11 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.itemService.getAllItems().subscribe({
       next: x => {
-        this.items = this.items.concat(x);
-        this.items.forEach(y => {
-          console.log(y.title);
+        console.log(x);
+        x.items.forEach(item => {
+          this.items.push(item);
         });
+        console.log({ items: this.items });
       },
       error: x => {
         console.error({ x });
@@ -27,6 +28,6 @@ export class AppComponent implements OnInit {
       complete: () => {
         console.log('complete');
       }
-    })
+    });
   }
 }
