@@ -366,4 +366,5 @@ build:angular911:
     - yarn
     - yarn run ng --version
     - free -m
+    - node --max_old_space_size=2700 ./node_modules/@angular/cli/bin/ng"
     - yarn run ng build
