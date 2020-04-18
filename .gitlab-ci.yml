@@ -354,3 +354,16 @@ build:wonjuui:
     - pwd
     - yarn
     - yarn run ng build
+
+build:angular911:
+  image: node
+  script:
+    - pwd
+    - cd experimental
+    - cd angular
+    - cd angular911
+    - pwd
+    - yarn
+    - yarn run ng --version
+    - free -m
+    - yarn run ng build
