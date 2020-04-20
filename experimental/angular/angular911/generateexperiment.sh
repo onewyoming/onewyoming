@@ -1,5 +1,5 @@
 #!/bin/bash
-for i in {1..50}
+for i in {1..400}
 do
     echo $i
     ng generate component experiment/experiment$i
