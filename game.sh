@@ -22,5 +22,6 @@ do
     git commit -m "go $direction";
     git pull -r origin master;
     git push origin master;
+    date
     sleep 300
 done
