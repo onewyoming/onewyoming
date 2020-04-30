@@ -2,40 +2,25 @@
 cd ~/src/gitland-client/
 while (true)
 do
-    if [ $((1 + RANDOM % 4)) -eq 1 ]
+    myrandom=$((1 + RANDOM % 4))
+    if [ $myrandom -eq 1 ]
     then
-        echo "right" > act;
-        date > timestamp;
-        git add .;
-        git commit -m "go right";
-        git pull -r origin master;
-        git push origin master;
-    fi
-    if [ $((1 + RANDOM % 4)) -eq 2 ]
+        direction="right"
+    elif [ $myrandom -eq 2 ]
     then
-        echo "down" > act;
-        date > timestamp;
-        git add .;
-        git commit -m "go down";
-        git pull -r origin master;
-        git push origin master;
-    fi
-    if [ $((1 + RANDOM % 4)) -eq 3 ]
+        direction="down"
+    elif [ $myrandom -eq 3 ]
     then
-        echo "left" > act;
-        date > timestamp;
-        git add .;
-        git commit -m "go left";
-        git pull -r origin master;
-        git push origin master;
-    fi
-    if [ $((1 + RANDOM % 4)) -eq 4 ]
+        direction="left"
+    elif [ $myrandom -eq 4 ]
     then
-        echo "up" > act;
-        date > timestamp;
-        git add .;
-        git commit -m "go up";
-        git pull -r origin master;
-        git push origin master;
+        direction="up"
     fi
+    echo $direction;
+    echo $direction > act;
+    date > timestamp;
+    git add .;
+    git commit -m "go $direction";
+    git pull -r origin master;
+    git push origin master;
 done
