@@ -12,8 +12,7 @@ do
     elif [ $myrandom -eq 3 ]
     then
         direction="left"
-    elif [ $myrandom -eq 4 ]
-    then
+    else 
         direction="up"
     fi
     echo $direction;
