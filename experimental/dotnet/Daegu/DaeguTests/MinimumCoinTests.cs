@@ -1,6 +1,8 @@
 using System.Linq;
 using Xunit;
 using Daegu;
+using System.Collections.Generic;
+
 namespace DaeguTests
 {
     public class MinimumCoinTests
@@ -8,7 +10,7 @@ namespace DaeguTests
         MinimumCoin minimumCoin;
         public MinimumCoinTests() 
         {
-            var coinValues = new int[]{ 1, 5, 10, 25 };
+            var coinValues = new List<int>(new int[]{ 1, 5, 10, 25 });
             this.minimumCoin = new MinimumCoin(CoinSet: coinValues);
         }
 
@@ -36,9 +38,11 @@ namespace DaeguTests
         [Fact]
         public void GetCaseOfTwoCoins()
         {
-            if (this.minimumCoin.CoinSet.Length > 1 && !this.minimumCoin.CoinSet.Contains(this.minimumCoin.CoinSet[0] + this.minimumCoin.CoinSet[1]))
+            if (this.minimumCoin.CoinSet.Count > 1 && !this.minimumCoin.CoinSet.Contains(this.minimumCoin.CoinSet[0] + this.minimumCoin.CoinSet[1]))
             {
-                Assert.Equal(2, this.minimumCoin.getCount(this.minimumCoin.CoinSet[0] + this.minimumCoin.CoinSet[1]));
+                int total = this.minimumCoin.CoinSet[0] + this.minimumCoin.CoinSet[1];
+                int actual = this.minimumCoin.getCount(total);
+                Assert.Equal(2, actual);
             }
         }
     }
