@@ -368,7 +368,7 @@ build:angular911:
     - free -m
     - time node --max_old_space_size=8000 ./node_modules/@angular/cli/bin/ng build
 
-build:experimental_rust_hello_world_fedora
+build:experimental_rust_hello_world_fedora:
   image: fedora:latest
   script:
     - pwd
@@ -379,7 +379,7 @@ build:experimental_rust_hello_world_fedora
     - dnf install rust -yqq
     - time cargo build
 
-build:experimental_rust_hello_world_default
+build:experimental_rust_hello_world_default:
   image: rust:latest
   script:
     - pwd
