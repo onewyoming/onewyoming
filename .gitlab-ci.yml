@@ -387,3 +387,25 @@ build:experimental_rust_hello_world_default:
     - cd rust
     - cd hello_world
     - time cargo build
+
+test:experimental_rust_hello_world_fedora:
+  image: fedora:latest
+  script:
+    - pwd
+    - cd experimental
+    - cd rust
+    - cd hello_world
+    - dnf update -y
+    - dnf install rust cargo -y
+    - time cargo build
+    - time cargo run
+
+test:experimental_rust_hello_world_default:
+  image: rust:latest
+  script:
+    - pwd
+    - cd experimental
+    - cd rust
+    - cd hello_world
+    - time cargo build
+    - time cargo run
