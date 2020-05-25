@@ -375,7 +375,7 @@ build:experimental_rust_hello_world_fedora:
     - cd experimental
     - cd rust
     - cd hello_world
-    - dnf update --yqq
+    - dnf update -yqq
     - dnf install rust -yqq
     - time cargo build
 
