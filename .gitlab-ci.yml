@@ -22,13 +22,15 @@ pages:
       - public
 
 test:mypages:
-  image: trion/ng-cli-karma
+  image: fedora:
   script:
     - cd public-website
     - pwd 
     - ls -a
-    - yarn install
-    - yarn run ng test --progress false --watch=false
+    - time dnf update -y
+    - time dnf install firefox nodejs npm -y
+    - time npm install -g @angular/cli yarn
+    - time ng test --no-watch --code-coverage
 
 build:dotnetcore:
   image: microsoft/dotnet:latest
