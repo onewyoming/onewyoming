@@ -260,7 +260,7 @@ test:experimental-dotnet-consoleapp1-webapp3-client:
     - experimental/dotnet/ConsoleApp1/WebApplication3/ClientApp/**/*
 
 build:daegu:
-  image: mcr.microsoft.com/dotnet/core/sdk:3.0
+  image: mcr.microsoft.com/dotnet/core/sdk:3.1
   script:
     - pwd
     - cd experimental
@@ -272,7 +272,7 @@ build:daegu:
     - dotnet build --verbosity detailed
 
 test:daegu:
-   image: mcr.microsoft.com/dotnet/core/sdk:3.0
+   image: mcr.microsoft.com/dotnet/core/sdk:3.1
    script:
      - pwd
      - cd experimental
@@ -281,7 +281,7 @@ test:daegu:
      - dotnet test --verbosity detailed
 
 build:pyeongtaek:
-  image: mcr.microsoft.com/dotnet/core/sdk:3.0
+  image: mcr.microsoft.com/dotnet/core/sdk:3.1
   script:
     - pwd
     - cd experimental
@@ -293,7 +293,7 @@ build:pyeongtaek:
     - dotnet build --verbosity detailed
 
 test:pyeongtaek:
-   image: mcr.microsoft.com/dotnet/core/sdk:3.0
+   image: mcr.microsoft.com/dotnet/core/sdk:3.1
    script:
      - pwd
      - cd experimental
@@ -302,7 +302,7 @@ test:pyeongtaek:
      - dotnet test --verbosity detailed
 
 build:sokcho:
-  image: mcr.microsoft.com/dotnet/core/sdk:3.0
+  image: mcr.microsoft.com/dotnet/core/sdk:3.1
   script:
     - pwd
     - cd experimental
@@ -314,7 +314,7 @@ build:sokcho:
     - dotnet build --verbosity detailed
 
 test:sokcho:
-   image: mcr.microsoft.com/dotnet/core/sdk:3.0
+   image: mcr.microsoft.com/dotnet/core/sdk:3.1
    script:
      - pwd
      - cd experimental
@@ -323,7 +323,7 @@ test:sokcho:
      - dotnet test --verbosity detailed
 
 build:wonju:
-  image: mcr.microsoft.com/dotnet/core/sdk:3.0
+  image: mcr.microsoft.com/dotnet/core/sdk:3.1
   script:
     - pwd
     - cd experimental
@@ -335,7 +335,7 @@ build:wonju:
     - dotnet build --verbosity detailed
 
 test:wonju:
-   image: mcr.microsoft.com/dotnet/core/sdk:3.0
+   image: mcr.microsoft.com/dotnet/core/sdk:3.1
    script:
      - pwd
      - cd experimental
