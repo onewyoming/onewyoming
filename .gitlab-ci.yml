@@ -22,7 +22,7 @@ pages:
       - public
 
 test:mypages:
-  image: fedora:
+  image: fedora:latest
   script:
     - cd public-website
     - pwd 
