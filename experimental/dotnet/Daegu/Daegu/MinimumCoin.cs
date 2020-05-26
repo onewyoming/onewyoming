@@ -6,11 +6,13 @@ namespace Daegu
 {
     public class MinimumCoin
     {
-        public List<int> CoinSet { get; set; }
+        public List<int> CoinSet { get; private set; }
+        public int RepeatFactor { get; private set; }
 
-        public MinimumCoin(List<int> CoinSet)
+        public MinimumCoin(List<int> CoinSet, int RepeatFactor)
         {
             this.CoinSet = CoinSet;
+            this.RepeatFactor = RepeatFactor;
         }
 
         private static IEnumerable<IEnumerable<T>> SubSetsOf<T>(IEnumerable<T> source)
@@ -57,8 +59,7 @@ namespace Daegu
             else
             {
                 List<int> repeatedList = new List<int>();
-                int repeatFactor = 10;
-                for (int i = 0; i < repeatFactor; i++) {
+                for (int i = 0; i < this.RepeatFactor; i++) {
                     foreach (int x in this.CoinSet) 
                     {
                         repeatedList.Add(x);

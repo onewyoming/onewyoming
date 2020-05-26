@@ -11,7 +11,7 @@ namespace DaeguTests
         public MinimumCoinTests() 
         {
             var coinValues = new List<int>(new int[]{ 1, 5, 10, 25 });
-            this.minimumCoin = new MinimumCoin(CoinSet: coinValues);
+            this.minimumCoin = new MinimumCoin(CoinSet: coinValues, RepeatFactor: 6);
         }
 
         [Fact]
