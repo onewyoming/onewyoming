@@ -30,6 +30,7 @@ test:mypages:
     - time dnf update -y
     - time dnf install firefox nodejs npm -y
     - time npm install -g @angular/cli yarn
+    - time yarn
     - time ng test --no-watch --code-coverage
 
 build:dotnetcore:
