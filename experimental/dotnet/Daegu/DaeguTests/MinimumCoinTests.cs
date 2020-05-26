@@ -45,5 +45,27 @@ namespace DaeguTests
                 Assert.Equal(2, actual);
             }
         }
+
+        [Fact]
+        public void GetCaseOfFourCoins()
+        {
+            int total = this.minimumCoin.CoinSet[0] + this.minimumCoin.CoinSet[1] + this.minimumCoin.CoinSet[2] + this.minimumCoin.CoinSet[3];
+            if (this.minimumCoin.CoinSet.Count > 1 && !this.minimumCoin.CoinSet.Contains(total))
+            {;
+                int actual = this.minimumCoin.getCount(total);
+                Assert.Equal(4, actual);
+            }
+        }
+
+        [Fact]
+        public void GetCaseOfEightCoins()
+        {
+            int total = this.minimumCoin.CoinSet[0] + this.minimumCoin.CoinSet[1] + this.minimumCoin.CoinSet[2] + this.minimumCoin.CoinSet[3] + this.minimumCoin.CoinSet[0] + this.minimumCoin.CoinSet[1] + this.minimumCoin.CoinSet[2] + this.minimumCoin.CoinSet[3];
+            if (this.minimumCoin.CoinSet.Count > 1 && !this.minimumCoin.CoinSet.Contains(total))
+            {;
+                int actual = this.minimumCoin.getCount(total);
+                Assert.Equal(4, actual);
+            }
+        }
     }
 }

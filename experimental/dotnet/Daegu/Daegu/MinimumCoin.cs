@@ -41,6 +41,9 @@ namespace Daegu
                     }
                 }
             }
+            if (currentCount == int.MaxValue) {
+                // try multiple coins of same value 
+            }
             return currentCount;
         }
 
