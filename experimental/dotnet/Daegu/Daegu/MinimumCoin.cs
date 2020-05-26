@@ -26,23 +26,20 @@ namespace Daegu
             return haves.Concat(haveNots);
         }
 
-        private int getCountInternal(int total)
+        private int getCountInternal(int total, List<int> repeatedList)
         {
             int currentCount = int.MaxValue;
-            var x = SubSetsOf<int>(this.CoinSet);
+            var x = SubSetsOf<int>(repeatedList);
             foreach (var y in x)
             {
                 int sum = y.Sum();
-                if (sum == total) 
+                if (sum == total)
                 {
                     if (currentCount > y.Count())
                     {
                         currentCount = y.Count();
                     }
                 }
-            }
-            if (currentCount == int.MaxValue) {
-                // try multiple coins of same value 
             }
             return currentCount;
         }
@@ -59,7 +56,15 @@ namespace Daegu
             }
             else
             {
-                return this.getCountInternal(total);
+                List<int> repeatedList = new List<int>();
+                int repeatFactor = 10;
+                for (int i = 0; i < repeatFactor; i++) {
+                    foreach (int x in this.CoinSet) 
+                    {
+                        repeatedList.Add(x);
+                    }
+                }
+                return this.getCountInternal(total, repeatedList);
             }
         }
     }
