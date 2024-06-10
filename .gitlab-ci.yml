@@ -3,12 +3,12 @@ pages:
   before_script:
     - pwd
   script:
-    - cd public-website
+    - cd src/public-website
     - npm --version
     - date
     - yarn install
     - date
-    - yarn run ng build --aot=true --prod --build-optimizer --verbose --progress=true --delete-output-path --extract-licenses --subresource-integrity --stats-json --output-path=public
+    - yarn run build
     - date
     - du -sh dist/
     - mv dist ../../public
