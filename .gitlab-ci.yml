@@ -1,0 +1,22 @@
+pages:
+  image: node
+  before_script:
+    - pwd
+  script:
+    - cd public-website
+    - npm --version
+    - date
+    - yarn install
+    - date
+    - yarn run ng build --aot=true --prod --build-optimizer --verbose --progress=true --delete-output-path --extract-licenses --subresource-integrity --stats-json --output-path=public
+    - date
+    - du -sh dist/
+    - mv dist ../../public
+    - ls -a
+    - pwd
+    - cd ..
+    - ls -a
+    - pwd
+  artifacts:
+    paths:
+      - public
