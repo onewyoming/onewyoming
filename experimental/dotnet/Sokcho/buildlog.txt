@@ -1,8 +1,0 @@
-
-Saturday, September 21, 2019 12:21:31 PM
-
-MSBUILD : error MSB1009: Project file does not exist.
-Switch: .\Daegu\Daegu.csproj
-
-Saturday, September 21, 2019 12:21:33 PM
-

@@ -1,1 +1,0 @@
-select registration_time from wyoming.person;
