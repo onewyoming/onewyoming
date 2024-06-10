@@ -84,3 +84,53 @@ export function activate(context: vscode.ExtensionContext) {
 ```bash
 sudo podman run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Microsoft1987" -p 1433:1433 --name sql1 -d mcr.microsoft.com/mssql/server:2019-CU3-ubuntu-18.04
 ```
+
+```powershell
+PS C:\code> cd C:\code\; git clone git@gitlab.com:wyoming/wyoming.gitlab.io.git wyoming
+Cloning into 'wyoming'...
+The authenticity of host 'gitlab.com (172.65.251.78)' can't be established.
+ED25519 key fingerprint is SHA256:eUXGGm1YGsMAS7vkcx6JOJdOGHPem5gQp4taiCfCLB8.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'gitlab.com' (ED25519) to the list of known hosts.
+remote: Enumerating objects: 13973, done.
+remote: Counting objects: 100% (13973/13973), done.
+remote: Compressing objects: 100% (4237/4237), done.
+remote: Total 13973 (delta 7500), reused 13906 (delta 7452), pack-reused 0 (from 0)
+Receiving objects: 100% (13973/13973), 41.51 MiB | 8.33 MiB/s, done.
+Resolving deltas: 100% (7500/7500), done.
+Updating files: 100% (5232/5232), done.
+PS C:\code> cd C:\code\wyoming\; date; git status; date; git remote set-url --add --push origin git@github.com:onewyoming/onewyoming.git
+
+Monday, June 10, 2024 1:50:52 PM
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+Monday, June 10, 2024 1:50:53 PM
+
+
+PS C:\code\wyoming> git remote set-url --add --push origin git@gitlab.com:wyoming/wyoming.gitlab.io.git
+PS C:\code\wyoming> cd C:\code\wyoming\; date; git status; date; git remote show origin
+
+Monday, June 10, 2024 1:51:13 PM
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+Monday, June 10, 2024 1:51:13 PM
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+
+
+PS C:\code\wyoming>
+```
