@@ -1,0 +1,6 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\kushal> cd C:\code\wyoming\; date; git status; date; git remote show origin; date; git add .; git commit --message "delete everything" --message "a new start"; date; git pull --rebase --strategy-option=ours; date; git push origin master; date;
