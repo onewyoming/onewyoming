@@ -1,13 +1,11 @@
 import './style.css'
 
 document.querySelector<HTMLDivElement>('#nav')!.innerHTML = `
-<nav class="navbar">
-    <ul>
-        <li><a href="#/" class="link link-hover">Home</a></li>
-        <li><a href="#/about" class="link link-hover">About</a></li>
+<div class="navbar bg-primary text-primary-content">
+  <button class="btn btn-ghost text-xl">Wyoming</button>
+      <ul>
+        <li class="ml-1 mr-1"><a href="#/" class="link link-hover">Home</a></li>
+        <li class="ml-1 mr-1"><a href="#/about" class="link link-hover">About</a></li>
     </ul>
-</nav>
-<span class="countdown">
-  <span style="--value:55;"></span>
-</span>
+</div>
 `

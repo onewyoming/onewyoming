@@ -25,6 +25,13 @@ setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
 
 function router() {
   const routes = {
+    '': () => {
+      // Render home page
+      document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+        <h1>Home Page</h1>
+        <p>Welcome to the home page!</p>
+      `;
+    },
     '#/': () => {
       // Render home page
       document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
@@ -37,6 +44,13 @@ function router() {
       document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <h1>About Page</h1>
         <p>This is the about page!</p>
+      `;
+    },
+    '#/contact': () => {
+      // Render about page
+      document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+        <h1>Contact us</h1>
+        <p>This is the contact us page. I don't even know why I am doing this anymore.</p>
       `;
     },
     // Add more routes as needed
@@ -52,6 +66,7 @@ function router() {
     document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <h1>404 Page Not Found</h1>
       <p>The page you are looking for does not exist.</p>
+      <p class="btn">please click <a href="/#/" class="link link-hover">here</a> to go home.
     `;
   }
 }
