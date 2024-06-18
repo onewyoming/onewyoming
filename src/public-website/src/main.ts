@@ -22,3 +22,42 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 `
 
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+
+function router() {
+  const routes = {
+    '#/': () => {
+      // Render home page
+      document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+        <h1>Home Page</h1>
+        <p>Welcome to the home page!</p>
+      `;
+    },
+    '#/about': () => {
+      // Render about page
+      document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+        <h1>About Page</h1>
+        <p>This is the about page!</p>
+      `;
+    },
+    // Add more routes as needed
+  };
+
+  const currentRoute = window.location.hash as keyof typeof routes;
+  const route = routes[currentRoute];
+
+  if (route) {
+    route();
+  } else {
+    // Handle 404 page not found
+    document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+      <h1>404 Page Not Found</h1>
+      <p>The page you are looking for does not exist.</p>
+    `;
+  }
+}
+
+// Call the router function when the page loads
+router();
+
+// Listen for changes to the URL hash
+window.addEventListener('hashchange', router);
