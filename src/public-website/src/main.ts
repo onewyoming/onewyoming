@@ -66,10 +66,12 @@ interface Page {
 function renderPage(page: Page) {
   const contentParagraphs = page.content.map((paragraph: string) => `<p>${paragraph}</p>`).join('');
   document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+    <article class="prose prose-stone dark:prose-invert ml-10 mr-10">
     <h1>${page.title}</h1>
     <h2>${page.subtitle}</h2>
     ${contentParagraphs}
     <p><a href="${page.cta.url}" class="btn">${page.cta.text}</a></p>
+    </article>
   `;
 }
 

@@ -4,7 +4,10 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [require('daisyui'),],
+  plugins: [
+    require('daisyui'),
+    require('@tailwindcss/typography'),
+  ],
     // daisyUI config (optional - here are the default values)
     daisyui: {
       themes: true, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
@@ -16,6 +19,5 @@ export default {
       logs: true, // Shows info about daisyUI version and used config in the console when building your CSS
       themeRoot: ":root", // The element that receives theme color CSS variables
     },
-  
 }
 
