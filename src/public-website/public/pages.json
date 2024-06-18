@@ -1,0 +1,51 @@
+{
+    "home": {
+      "title": "Home Page",
+      "subtitle": "Welcome to Our World",
+      "content": [
+        "Discover the wonders of our platform.",
+        "Explore our features and offerings."
+      ],
+      "cta": {
+        "text": "Learn More",
+        "url": "/learn-more.html"
+      }
+    },
+    "about": {
+      "title": "About Us",
+      "subtitle": "Our Story",
+      "content": [
+        "Learn about our journey and how we started.",
+        "Meet the team that makes everything possible."
+      ],
+      "cta": {
+        "text": "Meet the Team",
+        "url": "/team"
+      }
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "subtitle": "Contact Us",
+      "content": [
+        "Have questions? We have answers.",
+        "Reach out to us for any inquiries or support."
+      ],
+      "cta": {
+        "text": "Send a Message",
+        "url": "/contact"
+      }
+    },
+    "notFound": {
+      "title": "Oops!",
+      "subtitle": "404 Page Not Found",
+      "content": [
+        "The page you are looking for does not exist.",
+        "But don't worry, you can find your way back home."
+      ],
+      "cta": {
+        "text": "Go Home",
+        "url": "/#/"
+      }
+    }
+  }
+  

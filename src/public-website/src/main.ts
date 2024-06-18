@@ -24,51 +24,53 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
 
 function router() {
-  const routes = {
-    '': () => {
-      // Render home page
-      document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-        <h1>Home Page</h1>
-        <p>Welcome to the home page!</p>
-      `;
-    },
-    '#/': () => {
-      // Render home page
-      document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-        <h1>Home Page</h1>
-        <p>Welcome to the home page!</p>
-      `;
-    },
-    '#/about': () => {
-      // Render about page
-      document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-        <h1>About Page</h1>
-        <p>This is the about page!</p>
-      `;
-    },
-    '#/contact': () => {
-      // Render about page
-      document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-        <h1>Contact us</h1>
-        <p>This is the contact us page. I don't even know why I am doing this anymore.</p>
-      `;
-    },
-    // Add more routes as needed
-  };
+  fetch('pages.json')
+    .then(response => response.json())
+    .then(pages => {
+      const routes = {
+        '': () => renderPage(pages.home),
+        '#/': () => renderPage(pages.home),
+        '#/about': () => renderPage(pages.about),
+        '#/contact': () => renderPage(pages.contact),
+        // Add more routes as needed
+      };
 
-  const currentRoute = window.location.hash as keyof typeof routes;
-  const route = routes[currentRoute];
+      const currentRoute = window.location.hash as keyof typeof routes;
+      const route = routes[currentRoute];
 
-  if (route) {
-    route();
-  } else {
-    // Handle 404 page not found
-    document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-      <h1>404 Page Not Found</h1>
-      <p>The page you are looking for does not exist.</p>
-      <p class="btn">please click <a href="/#/" class="link link-hover">here</a> to go home.
-    `;
-  }
+      if (route) {
+        route();
+      } else {
+        // Handle 404 page not found
+        document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+          <h1>404 Page Not Found</h1>
+          <p>The page you are looking for does not exist.</p>
+          <p class="btn">please click <a href="/#/" class="link link-hover">here</a> to go home.
+        `;
+      }
+    });
+}
+
+interface CTA {
+  text: string;
+  url: string;
+}
+
+interface Page {
+  title: string;
+  subtitle: string;
+  content: string[];
+  cta: CTA;
+}
+
+function renderPage(page: Page) {
+  const contentParagraphs = page.content.map((paragraph: string) => `<p>${paragraph}</p>`).join('');
+  document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+    <h1>${page.title}</h1>
+    <h2>${page.subtitle}</h2>
+    ${contentParagraphs}
+    <p><a href="${page.cta.url}" class="btn">${page.cta.text}</a></p>
+  `;
 }
 
 // Call the router function when the page loads
@@ -76,3 +78,4 @@ router();
 
 // Listen for changes to the URL hash
 window.addEventListener('hashchange', router);
+
