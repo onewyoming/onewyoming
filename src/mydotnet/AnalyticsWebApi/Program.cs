@@ -1,8 +1,6 @@
 using AnalyticsWebApi.Datamodel;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Diagnostics;
 using AnalyticsWebApi;
-using Microsoft.Extensions.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +10,10 @@ builder.AddServiceDefaults();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.DocumentFilter<IgnorePathsDocumentFilter>();
+});
 
 if (string.IsNullOrWhiteSpace(builder.Configuration.GetConnectionString("AnalyticsDb")))
 {
