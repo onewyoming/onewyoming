@@ -1,0 +1,11 @@
+2024-06-23 12:29:59.350 -04:00 [INF] Registered 5 endpoints in 1,329 milliseconds.
+2024-06-23 12:30:00.319 -04:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-06-23 12:30:00.444 -04:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2024-06-23 12:30:00.545 -04:00 [INF] Now listening on: https://localhost:57679
+2024-06-23 12:30:00.546 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-23 12:30:00.546 -04:00 [INF] Hosting environment: Development
+2024-06-23 12:30:00.547 -04:00 [INF] Content root path: C:\src\wyoming\src\WyomingDotNet\src\WyomingDotNet.Web

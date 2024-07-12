@@ -6,7 +6,7 @@ public class ContributorByIdSpec : Specification<Contributor>
 {
   public ContributorByIdSpec(int contributorId)
   {
-    Query
+    _ = Query
         .Where(contributor => contributor.Id == contributorId);
   }
 }

@@ -22,20 +22,14 @@ public class Contributor(string name) : EntityBase, IAggregateRoot
   }
 }
 
-public class PhoneNumber : ValueObject
+public class PhoneNumber(string countryCode,
+  string number,
+  string? extension) : ValueObject
 {
-  public string CountryCode { get; private set; } = string.Empty;
-  public string Number { get; private set; } = string.Empty;
-  public string? Extension { get; private set; } = string.Empty;
+  public string CountryCode { get; private set; } = countryCode;
+  public string Number { get; private set; } = number;
+  public string? Extension { get; private set; } = extension;
 
-  public PhoneNumber(string countryCode,
-    string number,
-    string? extension)
-  {
-    CountryCode = countryCode;
-    Number = number;
-    Extension = extension;
-  }
   protected override IEnumerable<object> GetEqualityComponents()
   {
     yield return CountryCode;
