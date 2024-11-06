@@ -13,11 +13,18 @@
     "isolatedModules": true,
     "noEmit": true,
 
-    /* Linting */
+    /* Linting and strict checks */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true
   },
-  "include": ["src"]
+  "include": ["src"],
 }

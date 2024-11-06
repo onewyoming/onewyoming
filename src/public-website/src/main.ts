@@ -21,6 +21,11 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </div>
 `
 
+export function dude(name: string) {
+  var x = name;
+  console.log(x);
+}
+
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
 
 function router() {
