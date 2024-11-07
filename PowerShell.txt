@@ -151,3 +151,72 @@ Wednesday, November 6, 2024 3:19:38 PM
 
 
 PS C:\code\wyoming\src\public-website> cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "addall changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git push origin master; date;
+
+Wednesday, November 6, 2024 3:20:58 PM
+Wednesday, November 6, 2024 3:20:58 PM
+You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy
+
+Build succeeded in 2.0s
+Wednesday, November 6, 2024 3:21:01 PM
+Restore complete (6.1s)
+You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy
+  webapi succeeded (8.5s) → webapi\bin\Debug\net8.0\webapi.dll
+
+Build succeeded in 15.9s
+
+Workload updates are available. Run `dotnet workload list` for more information.
+Wednesday, November 6, 2024 3:21:17 PM
+Wednesday, November 6, 2024 3:21:17 PM
+yarn install v1.22.22
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.36s.
+Wednesday, November 6, 2024 3:21:18 PM
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PowerShell.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Wednesday, November 6, 2024 3:21:18 PM
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+Wednesday, November 6, 2024 3:21:19 PM
+[master b227d00] add all changes
+ 1 file changed, 104 insertions(+), 47 deletions(-)
+Wednesday, November 6, 2024 3:21:19 PM
+Current branch master is up to date.
+Wednesday, November 6, 2024 3:21:21 PM
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.05 KiB | 700.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:onewyoming/onewyoming.git
+   bb8461e..b227d00  master -> master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.05 KiB | 700.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   bb8461e..b227d00  master -> master
+Wednesday, November 6, 2024 3:21:23 PM
+
+
+PS C:\code\wyoming> cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git push origin master; date;
