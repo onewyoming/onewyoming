@@ -352,3 +352,779 @@ Saturday, November 16, 2024 3:22:29 PM
 
 
 PS C:\code\wyoming> $env:DOTNET_CLI_TELEMETRY_OPTOUT='1';cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git push origin master; date;
+
+
+
+
+
+
+Restoring packages for C:\code\wyoming\src\mydotnet\AlphaTabTutorial\AlphaTabTutorial.csproj...
+Restoring packages for C:\code\wyoming\src\mydotnet\AnalyticsWebApi\AnalyticsWebApi.csproj...
+Restoring packages for C:\code\wyoming\src\mydotnet\mydotnet.ServiceDefaults\mydotnet.ServiceDefaults.csproj...
+  GET https://api.nuget.org/v3-flatcontainer/fontawesome.sharp/index.json
+  GET https://api.nuget.org/v3-flatcontainer/npgsql/index.json
+Restoring packages for C:\code\wyoming\src\mydotnet\mydotnet.AppHost\mydotnet.AppHost.csproj...
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.openapi/index.json
+  GET https://api.nuget.org/v3-flatcontainer/opentelemetry.exporter.opentelemetryprotocol/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http.resilience/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.servicediscovery/index.json
+  GET https://api.nuget.org/v3-flatcontainer/opentelemetry.extensions.hosting/index.json
+  GET https://api.nuget.org/v3-flatcontainer/aspire.hosting.apphost/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.servicediscovery/index.json 264ms
+  OK https://api.nuget.org/v3-flatcontainer/aspire.hosting.apphost/index.json 259ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.openapi/index.json 277ms
+  GET https://api.nuget.org/v3-flatcontainer/aspire.hosting.apphost/9.0.0/aspire.hosting.apphost.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.servicediscovery/9.0.0/microsoft.extensions.servicediscovery.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.openapi/9.0.0/microsoft.aspnetcore.openapi.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http.resilience/index.json 285ms
+  OK https://api.nuget.org/v3-flatcontainer/opentelemetry.extensions.hosting/index.json 280ms
+  OK https://api.nuget.org/v3-flatcontainer/npgsql/index.json 292ms
+  OK https://api.nuget.org/v3-flatcontainer/fontawesome.sharp/index.json 298ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http.resilience/9.0.0/microsoft.extensions.http.resilience.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/opentelemetry.extensions.hosting/1.10.0/opentelemetry.extensions.hosting.1.10.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/fontawesome.sharp/6.6.0/fontawesome.sharp.6.6.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/npgsql/8.0.5/npgsql.8.0.5.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/aspire.hosting.apphost/9.0.0/aspire.hosting.apphost.9.0.0.nupkg 40ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.openapi/9.0.0/microsoft.aspnetcore.openapi.9.0.0.nupkg 38ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.servicediscovery/9.0.0/microsoft.extensions.servicediscovery.9.0.0.nupkg 47ms
+  OK https://api.nuget.org/v3-flatcontainer/opentelemetry.extensions.hosting/1.10.0/opentelemetry.extensions.hosting.1.10.0.nupkg 29ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http.resilience/9.0.0/microsoft.extensions.http.resilience.9.0.0.nupkg 34ms
+  OK https://api.nuget.org/v3-flatcontainer/fontawesome.sharp/6.6.0/fontawesome.sharp.6.6.0.nupkg 38ms
+  OK https://api.nuget.org/v3-flatcontainer/npgsql/8.0.5/npgsql.8.0.5.nupkg 42ms
+  OK https://api.nuget.org/v3-flatcontainer/opentelemetry.exporter.opentelemetryprotocol/index.json 355ms
+  GET https://api.nuget.org/v3-flatcontainer/opentelemetry.exporter.opentelemetryprotocol/1.10.0/opentelemetry.exporter.opentelemetryprotocol.1.10.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/aspnetcore.healthchecks.uris/index.json
+  GET https://api.nuget.org/v3-flatcontainer/google.protobuf/index.json
+  GET https://api.nuget.org/v3-flatcontainer/aspire.hosting/index.json
+  GET https://api.nuget.org/v3-flatcontainer/grpc.aspnetcore/index.json
+  GET https://api.nuget.org/v3-flatcontainer/grpc.tools/index.json
+  GET https://api.nuget.org/v3-flatcontainer/grpc.net.clientfactory/index.json
+  GET https://api.nuget.org/v3-flatcontainer/humanizer.core/index.json
+  GET https://api.nuget.org/v3-flatcontainer/jsonpatch.net/index.json
+  GET https://api.nuget.org/v3-flatcontainer/kubernetesclient/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.binder/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.healthchecks/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.hosting/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.hosting.abstractions/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/index.json
+  GET https://api.nuget.org/v3-flatcontainer/polly.core/index.json
+  OK https://api.nuget.org/v3-flatcontainer/opentelemetry.exporter.opentelemetryprotocol/1.10.0/opentelemetry.exporter.opentelemetryprotocol.1.10.0.nupkg 94ms
+  OK https://api.nuget.org/v3-flatcontainer/aspnetcore.healthchecks.uris/index.json 129ms
+  GET https://api.nuget.org/v3-flatcontainer/aspnetcore.healthchecks.uris/8.0.1/aspnetcore.healthchecks.uris.8.0.1.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/aspnetcore.healthchecks.uris/8.0.1/aspnetcore.healthchecks.uris.8.0.1.nupkg 119ms
+  OK https://api.nuget.org/v3-flatcontainer/aspire.hosting/index.json 337ms
+  OK https://api.nuget.org/v3-flatcontainer/grpc.aspnetcore/index.json 337ms
+  OK https://api.nuget.org/v3-flatcontainer/google.protobuf/index.json 338ms
+  GET https://api.nuget.org/v3-flatcontainer/aspire.hosting/9.0.0/aspire.hosting.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/grpc.aspnetcore/2.66.0/grpc.aspnetcore.2.66.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/google.protobuf/3.28.2/google.protobuf.3.28.2.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/grpc.tools/index.json 488ms
+  GET https://api.nuget.org/v3-flatcontainer/grpc.tools/2.67.0/grpc.tools.2.67.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.healthchecks/index.json 491ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/index.json 489ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.healthchecks/9.0.0/microsoft.extensions.diagnostics.healthchecks.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/9.0.0/microsoft.extensions.options.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/humanizer.core/index.json 510ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.binder/index.json 508ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/index.json 509ms
+  OK https://api.nuget.org/v3-flatcontainer/grpc.net.clientfactory/index.json 511ms
+  GET https://api.nuget.org/v3-flatcontainer/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/9.0.0/microsoft.extensions.configuration.abstractions.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/index.json 508ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.binder/9.0.0/microsoft.extensions.configuration.binder.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/grpc.net.clientfactory/2.66.0/grpc.net.clientfactory.2.66.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/aspire.hosting/9.0.0/aspire.hosting.9.0.0.nupkg 179ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/9.0.0/microsoft.extensions.primitives.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/google.protobuf/3.28.2/google.protobuf.3.28.2.nupkg 207ms
+  OK https://api.nuget.org/v3-flatcontainer/grpc.aspnetcore/2.66.0/grpc.aspnetcore.2.66.0.nupkg 231ms
+  OK https://api.nuget.org/v3-flatcontainer/grpc.tools/2.67.0/grpc.tools.2.67.0.nupkg 142ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.binder/9.0.0/microsoft.extensions.configuration.binder.9.0.0.nupkg 123ms
+  OK https://api.nuget.org/v3-flatcontainer/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg 131ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/9.0.0/microsoft.extensions.configuration.abstractions.9.0.0.nupkg 132ms
+  OK https://api.nuget.org/v3-flatcontainer/grpc.net.clientfactory/2.66.0/grpc.net.clientfactory.2.66.0.nupkg 134ms
+  OK https://api.nuget.org/v3-flatcontainer/jsonpatch.net/index.json 666ms
+  OK https://api.nuget.org/v3-flatcontainer/polly.core/index.json 655ms
+  GET https://api.nuget.org/v3-flatcontainer/jsonpatch.net/3.1.1/jsonpatch.net.3.1.1.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/polly.core/8.4.2/polly.core.8.4.2.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/9.0.0/microsoft.extensions.primitives.9.0.0.nupkg 147ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http/index.json 674ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/index.json 681ms
+  OK https://api.nuget.org/v3-flatcontainer/kubernetesclient/index.json 691ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http/9.0.0/microsoft.extensions.http.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/kubernetesclient/15.0.1/kubernetesclient.15.0.1.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/9.0.0/microsoft.extensions.logging.abstractions.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.hosting/index.json 728ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.healthchecks/9.0.0/microsoft.extensions.diagnostics.healthchecks.9.0.0.nupkg 231ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/9.0.0/microsoft.extensions.options.9.0.0.nupkg 231ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.hosting/9.0.0/microsoft.extensions.hosting.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/polly.core/8.4.2/polly.core.8.4.2.nupkg 106ms
+  OK https://api.nuget.org/v3-flatcontainer/jsonpatch.net/3.1.1/jsonpatch.net.3.1.1.nupkg 122ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http/9.0.0/microsoft.extensions.http.9.0.0.nupkg 112ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/9.0.0/microsoft.extensions.logging.abstractions.9.0.0.nupkg 111ms
+  OK https://api.nuget.org/v3-flatcontainer/kubernetesclient/15.0.1/kubernetesclient.15.0.1.nupkg 121ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.hosting.abstractions/index.json 826ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.hosting/9.0.0/microsoft.extensions.hosting.9.0.0.nupkg 127ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.hosting.abstractions/9.0.0/microsoft.extensions.hosting.abstractions.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/index.json 984ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/9.0.0/microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.hosting/8.0.1/microsoft.extensions.hosting.8.0.1.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.healthchecks/8.0.11/microsoft.extensions.diagnostics.healthchecks.8.0.11.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.hosting.abstractions/8.0.1/microsoft.extensions.hosting.abstractions.8.0.1.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.binder/8.0.2/microsoft.extensions.configuration.binder.8.0.2.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http/8.0.1/microsoft.extensions.http.8.0.1.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.healthchecks/8.0.0/microsoft.extensions.diagnostics.healthchecks.8.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/opentelemetry/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http.diagnostics/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.resilience/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.binder/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.objectpool/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.servicediscovery.abstractions/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.features/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.hosting.abstractions/9.0.0/microsoft.extensions.hosting.abstractions.9.0.0.nupkg 119ms
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.hosting.abstractions/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/9.0.0/microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg 127ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.hosting/8.0.1/microsoft.extensions.hosting.8.0.1.nupkg 122ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http/8.0.1/microsoft.extensions.http.8.0.1.nupkg 143ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.healthchecks/8.0.11/microsoft.extensions.diagnostics.healthchecks.8.0.11.nupkg 149ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg 148ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.binder/8.0.2/microsoft.extensions.configuration.binder.8.0.2.nupkg 161ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg 167ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.hosting.abstractions/8.0.1/microsoft.extensions.hosting.abstractions.8.0.1.nupkg 172ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http.diagnostics/index.json 207ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.resilience/index.json 205ms
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.hosting.abstractions/9.0.0/microsoft.extensions.hosting.abstractions.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http.diagnostics/9.0.0/microsoft.extensions.http.diagnostics.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.resilience/9.0.0/microsoft.extensions.resilience.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/opentelemetry/index.json 345ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.objectpool/index.json 338ms
+  GET https://api.nuget.org/v3-flatcontainer/opentelemetry/1.10.0/opentelemetry.1.10.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.objectpool/9.0.0/microsoft.extensions.objectpool.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.resilience/9.0.0/microsoft.extensions.resilience.9.0.0.nupkg 178ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http.diagnostics/9.0.0/microsoft.extensions.http.diagnostics.9.0.0.nupkg 188ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.openapi/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.objectpool/9.0.0/microsoft.extensions.objectpool.9.0.0.nupkg 199ms
+  OK https://api.nuget.org/v3-flatcontainer/opentelemetry/1.10.0/opentelemetry.1.10.0.nupkg 243ms
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.binder/9.0.0/microsoft.extensions.configuration.binder.9.0.0.nupkg
+Installed FontAwesome.Sharp 6.6.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\fontawesome.sharp\6.6.0 with content hash bJCb2x73UC1nD9+9iMLaUy6Ujf9Pf+buL6FHwVnaoDYT4CQNLazz59hO5gQ0+SMSW0G+ZXmjjShOYr3Jn2UZiw==.
+  CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/vulnerability.base.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/2024.11.16.17.25.48/vulnerability.update.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.openapi/index.json 300ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.healthchecks/8.0.0/microsoft.extensions.diagnostics.healthchecks.8.0.0.nupkg 811ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.features/index.json 781ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.features/8.0.11/microsoft.extensions.features.8.0.11.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.servicediscovery.abstractions/index.json 796ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.servicediscovery.abstractions/9.0.0/microsoft.extensions.servicediscovery.abstractions.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg 72ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.features/8.0.11/microsoft.extensions.features.8.0.11.nupkg 109ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.servicediscovery.abstractions/9.0.0/microsoft.extensions.servicediscovery.abstractions.9.0.0.nupkg 118ms
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http/8.0.1/microsoft.extensions.http.8.0.1.nupkg
+Installed Microsoft.AspNetCore.OpenApi 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.aspnetcore.openapi\9.0.0 with content hash FqUK5j1EOPNuFT7IafltZQ3cakqhSwVzH5ZW1MhZDe4pPXs9sJ2M5jom1Omsu+mwF2tNKKlRAzLRHQTZzbd+6Q==.
+Installed Microsoft.OpenApi 1.6.17 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.openapi\1.6.17 with content hash Le+kehlmrlQfuDFUt1zZ2dVwrhFQtKREdKBo+rexOwaCoYP0/qpgT9tLxCsZjsgR5Itk1UKPcbgO+FyaNid/bA==.
+  GET https://api.nuget.org/v3-flatcontainer/opentelemetry.api.providerbuilderextensions/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.abstractions/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.configuration/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.autoactivation/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.telemetry/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.http/9.0.0/microsoft.extensions.http.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options.configurationextensions/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.exceptionsummarization/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.telemetry.abstractions/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics/index.json
+  GET https://api.nuget.org/v3-flatcontainer/polly.extensions/index.json
+  GET https://api.nuget.org/v3-flatcontainer/polly.ratelimiting/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/9.0.0/microsoft.extensions.configuration.abstractions.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.configuration/index.json 92ms
+  OK https://api.nuget.org/v3-flatcontainer/opentelemetry.api.providerbuilderextensions/index.json 94ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.abstractions/index.json 95ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options.configurationextensions/index.json 86ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.autoactivation/index.json 89ms
+  GET https://api.nuget.org/v3-flatcontainer/opentelemetry.api.providerbuilderextensions/1.10.0/opentelemetry.api.providerbuilderextensions.1.10.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.configuration/9.0.0/microsoft.extensions.logging.configuration.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.abstractions/9.0.0/microsoft.extensions.diagnostics.abstractions.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.autoactivation/9.0.0/microsoft.extensions.dependencyinjection.autoactivation.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options.configurationextensions/9.0.0/microsoft.extensions.options.configurationextensions.9.0.0.nupkg
+Installed Npgsql 8.0.5 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\npgsql\8.0.5 with content hash zRG5V8cyeZLpzJlKzFKjEwkRMYIYnHWJvEor2lWXeccS2E1G2nIWYYhnukB51iz5XsWSVEtqg3AxTWM0QJ6vfg==.
+  CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/vulnerability.base.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/2024.11.16.17.25.48/vulnerability.update.json
+  OK https://api.nuget.org/v3-flatcontainer/opentelemetry.api.providerbuilderextensions/1.10.0/opentelemetry.api.providerbuilderextensions.1.10.0.nupkg 113ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.configuration/9.0.0/microsoft.extensions.logging.configuration.9.0.0.nupkg 116ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.abstractions/9.0.0/microsoft.extensions.diagnostics.abstractions.9.0.0.nupkg 116ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options.configurationextensions/9.0.0/microsoft.extensions.options.configurationextensions.9.0.0.nupkg 127ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging/index.json 418ms
+  OK https://api.nuget.org/v3-flatcontainer/polly.ratelimiting/index.json 421ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.exceptionsummarization/index.json 425ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics/index.json 422ms
+  OK https://api.nuget.org/v3-flatcontainer/polly.extensions/index.json 427ms
+  GET https://api.nuget.org/v3-flatcontainer/polly.ratelimiting/8.4.2/polly.ratelimiting.8.4.2.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging/8.0.1/microsoft.extensions.logging.8.0.1.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics/8.0.1/microsoft.extensions.diagnostics.8.0.1.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics/9.0.0/microsoft.extensions.diagnostics.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/polly.extensions/8.4.2/polly.extensions.8.4.2.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.exceptionsummarization/9.0.0/microsoft.extensions.diagnostics.exceptionsummarization.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.telemetry.abstractions/index.json 441ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.telemetry.abstractions/9.0.0/microsoft.extensions.telemetry.abstractions.9.0.0.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging/8.0.1/microsoft.extensions.logging.8.0.1.nupkg 88ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics/9.0.0/microsoft.extensions.diagnostics.9.0.0.nupkg 130ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics/8.0.1/microsoft.extensions.diagnostics.8.0.1.nupkg 139ms
+  OK https://api.nuget.org/v3-flatcontainer/polly.ratelimiting/8.4.2/polly.ratelimiting.8.4.2.nupkg 207ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.exceptionsummarization/9.0.0/microsoft.extensions.diagnostics.exceptionsummarization.9.0.0.nupkg 208ms
+  OK https://api.nuget.org/v3-flatcontainer/polly.extensions/8.4.2/polly.extensions.8.4.2.nupkg 214ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.autoactivation/9.0.0/microsoft.extensions.dependencyinjection.autoactivation.9.0.0.nupkg 563ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.telemetry.abstractions/9.0.0/microsoft.extensions.telemetry.abstractions.9.0.0.nupkg 213ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.telemetry/index.json 821ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.telemetry/9.0.0/microsoft.extensions.telemetry.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/grpc.aspnetcore.server.clientfactory/index.json
+  GET https://api.nuget.org/v3-flatcontainer/google.protobuf/3.27.0/google.protobuf.3.27.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/grpc.tools/2.66.0/grpc.tools.2.66.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/grpc.net.client/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.telemetry/9.0.0/microsoft.extensions.telemetry.9.0.0.nupkg 63ms
+  OK https://api.nuget.org/v3-flatcontainer/grpc.tools/2.66.0/grpc.tools.2.66.0.nupkg 169ms
+  OK https://api.nuget.org/v3-flatcontainer/google.protobuf/3.27.0/google.protobuf.3.27.0.nupkg 169ms
+  OK https://api.nuget.org/v3-flatcontainer/grpc.aspnetcore.server.clientfactory/index.json 319ms
+  OK https://api.nuget.org/v3-flatcontainer/grpc.net.client/index.json 320ms
+  GET https://api.nuget.org/v3-flatcontainer/grpc.aspnetcore.server.clientfactory/2.66.0/grpc.aspnetcore.server.clientfactory.2.66.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/grpc.net.client/2.66.0/grpc.net.client.2.66.0.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.binder/8.0.2/microsoft.extensions.configuration.binder.8.0.2.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/9.0.0/microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.abstractions/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/9.0.0/microsoft.extensions.logging.abstractions.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/opentelemetry.api/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging/9.0.0/microsoft.extensions.logging.9.0.0.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/9.0.0/microsoft.extensions.options.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.ambientmetadata.application/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.compliance.abstractions/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/polly.core/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/9.0.0/microsoft.extensions.primitives.9.0.0.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/polly.core/8.4.2/polly.core.8.4.2.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/grpc.aspnetcore.server.clientfactory/2.66.0/grpc.aspnetcore.server.clientfactory.2.66.0.nupkg 232ms
+  OK https://api.nuget.org/v3-flatcontainer/grpc.net.client/2.66.0/grpc.net.client.2.66.0.nupkg 257ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging/9.0.0/microsoft.extensions.logging.9.0.0.nupkg 361ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.abstractions/index.json 436ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration/index.json 431ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.compliance.abstractions/index.json 427ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.ambientmetadata.application/index.json 429ms
+  OK https://api.nuget.org/v3-flatcontainer/opentelemetry.api/index.json 436ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.ambientmetadata.application/9.0.0/microsoft.extensions.ambientmetadata.application.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration/9.0.0/microsoft.extensions.configuration.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.compliance.abstractions/9.0.0/microsoft.extensions.compliance.abstractions.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.abstractions/9.0.0/microsoft.extensions.fileproviders.abstractions.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/opentelemetry.api/1.10.0/opentelemetry.api.1.10.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.ambientmetadata.application/9.0.0/microsoft.extensions.ambientmetadata.application.9.0.0.nupkg 209ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.abstractions/9.0.0/microsoft.extensions.fileproviders.abstractions.9.0.0.nupkg 217ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.compliance.abstractions/9.0.0/microsoft.extensions.compliance.abstractions.9.0.0.nupkg 221ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration/9.0.0/microsoft.extensions.configuration.9.0.0.nupkg 239ms
+  OK https://api.nuget.org/v3-flatcontainer/opentelemetry.api/1.10.0/opentelemetry.api.1.10.0.nupkg 322ms
+  GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/index.json
+  OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/index.json 169ms
+  GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/9.0.0/system.diagnostics.diagnosticsource.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection/index.json
+  OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/9.0.0/system.diagnostics.diagnosticsource.9.0.0.nupkg 131ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection/index.json 202ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection/9.0.0/microsoft.extensions.dependencyinjection.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection/9.0.0/microsoft.extensions.dependencyinjection.9.0.0.nupkg 215ms
+Installed Microsoft.Extensions.Compliance.Abstractions 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.compliance.abstractions\9.0.0 with content hash Y85iXLdg55OYwJR23KvCYAPDaIa+723vus9WzLROVWMy0sblHlxVtPR01QR+mwVFbYiljqa9NknmELVitzxbXw==.
+Installed Microsoft.Extensions.AmbientMetadata.Application 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.ambientmetadata.application\9.0.0 with content hash F/pe4t8UXc65l0KFLoUDtYttoLI0qtXiWQ4HStw3Cq2ExaNARxS4isAvA6w0PNCyIs8dLxkaruJHeyKN8mK1lA==.
+Installed Microsoft.Extensions.Telemetry 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.telemetry\9.0.0 with content hash aid79SF7sJmn/rpliUscwV3gnDOjqx1GmG+R/5E9mK8Cy5tNhEcGnak7RW9RSOOCzqpLEP3jOwdcH3YZ2F/kNA==.
+Installed Microsoft.Extensions.Configuration 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.configuration\9.0.0 with content hash YIMO9T3JL8MeEXgVozKt2v79hquo/EFtnY0vgxmLnUvk1Rei/halI7kOWZL2RBeV9FMGzgM9LZA8CVaNwFMaNA==.
+Installed Microsoft.Extensions.DependencyInjection 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.dependencyinjection\9.0.0 with content hash MCPrg7v3QgNMr0vX4vzRXvkNGgLg8vKWX0nKCWUxu2uPyMsaRgiRc1tHBnbTcfJMhMKj2slE/j2M9oGkd25DNw==.
+Installed Microsoft.Extensions.Primitives 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.primitives\9.0.0 with content hash N3qEBzmLMYiASUlKxxFIISP4AiwuPTHF5uCh+2CWSwwzAJiIYx0kBJsS30cp1nvhSySFAVi30jecD307jV+8Kg==.
+Installed Microsoft.Extensions.Logging.Configuration 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.logging.configuration\9.0.0 with content hash H05HiqaNmg6GjH34ocYE9Wm1twm3Oz2aXZko8GTwGBzM7op2brpAA8pJ5yyD1OpS1mXUtModBYOlcZ/wXeWsSg==.
+Installed OpenTelemetry.Api 1.10.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\opentelemetry.api\1.10.0 with content hash HcmxppwGFna1oY8cLX6hZ/nU1dw07UutfOVCltrbVE3RNYwRD7qFdQRtQQAoKZnbXE9yW4QMdtohcLClNFOk8w==.
+Installed Microsoft.Extensions.Logging 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.logging\9.0.0 with content hash crjWyORoug0kK7RSNJBTeSE6VX8IQgLf3nUpTB9m62bPXp/tzbnOsnbe8TXEG0AASNaKZddnpHKw7fET8E++Pg==.
+Installed OpenTelemetry.Api.ProviderBuilderExtensions 1.10.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\opentelemetry.api.providerbuilderextensions\1.10.0 with content hash cu+jYs6WdZjNohM1LriHRBs9JvpuWrdU8/Iz+DRoC0DkfKIlFubsp4lsoiKJm/aCgDBLAyvLmMna3Y3pMM8WpA==.
+Installed System.Diagnostics.DiagnosticSource 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\system.diagnostics.diagnosticsource\9.0.0 with content hash ddppcFpnbohLWdYKr/ZeLZHmmI+DXFgZ3Snq+/E7SwcdW4UnvxmaugkwGywvGVWkHPGCSZjCP+MLzu23AL5SDw==.
+Installed Polly.Core 8.4.2 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\polly.core\8.4.2 with content hash BpE2I6HBYYA5tF0Vn4eoQOGYTYIK1BlF5EXVgkWGn3mqUUjbXAr13J6fZVbp7Q3epRR8yshacBMlsHMhpOiV3g==.
+Installed Microsoft.Extensions.DependencyInjection.AutoActivation 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.dependencyinjection.autoactivation\9.0.0 with content hash Wv4APocpxkPf0zcEFDwGrdwP6tOOSSQ5ByHUxRYcvXu8CXY0N0Pf95usTVs605jG2txxLOpRESH6ficdPDNiTg==.
+Installed Microsoft.Extensions.Http.Resilience 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.http.resilience\9.0.0 with content hash XkzXX1r+J6wxzR9jLZtJhW+h2x3Ff/hgwVBS9hrzAS7CUFaQgL+oYTAFiP6fyp93ruDxx0rDi/kGzy3KWUDCiQ==.
+Installed OpenTelemetry.Exporter.OpenTelemetryProtocol 1.10.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\opentelemetry.exporter.opentelemetryprotocol\1.10.0 with content hash kdSehZAg5Q1CJPoOFPmq4eLSsWOn/ETtP4hsGum6ymM3FgIhklXZEXB61u8WaVdJNkk050CGUgQjGRGCt5UEqQ==.
+Installed Microsoft.Extensions.Options 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.options\9.0.0 with content hash y2146b3jrPI3Q0lokKXdKLpmXqakYbDIPDV6r3M8SqvSf45WwOTzkyfDpxnZXJsJQEpAsAqjUq5Pu8RCJMjubg==.
+Installed Microsoft.Extensions.ServiceDiscovery 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.servicediscovery\9.0.0 with content hash bRJ7+R+Qz6ueGGH2WqiZjyAJJho9UBLBclSTf8ReOIeMxjvbaBXTtOGmmrckSSJ/RLQRJKM9QNyK9+y1UUpVGw==.
+Installed Microsoft.Extensions.ServiceDiscovery.Abstractions 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.servicediscovery.abstractions\9.0.0 with content hash gJRU3MTYVtB6reZGJGVOcYhNLgt1i86Pt8yMnekCe7mEz9hr2g5fg5mu2l1lWoxM4eagqDHtk9HkrQFS88yJ3w==.
+Installed Microsoft.Extensions.Features 8.0.11 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.features\8.0.11 with content hash xL0WcA9bRu49QSUmGZEYY5dslR/x52fl+XY9GWOP2h5ibOJY7hF8Tz/raXVP+GPJ2S2piNPlfL4GkJK794PjFA==.
+Installed OpenTelemetry.Extensions.Hosting 1.10.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\opentelemetry.extensions.hosting\1.10.0 with content hash luLe3deRmThvJd8+Oav4ohg+S3DoXnxDx06+GBinAgmVi873C9YPzA0dJlXG1Zeh7uFajzMtLhskaDejQYCFWw==.
+Installed Microsoft.Extensions.Resilience 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.resilience\9.0.0 with content hash ZwG0HaAUbtTaQ6gTnSXd+2mmh3oWbjh+/HKQJRxjBpIOmdKXVCJrs7N6nbVzAZ7GS6eilR1XJFZmjDyJ8QGhRA==.
+Installed Polly.RateLimiting 8.4.2 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\polly.ratelimiting\8.4.2 with content hash ehTImQ/eUyO07VYW2WvwSmU9rRH200SKJ/3jku9rOkyWE0A2JxNFmAVms8dSn49QLSjmjFRRSgfNyOgr/2PSmA==.
+Installed Microsoft.Extensions.Http.Diagnostics 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.http.diagnostics\9.0.0 with content hash 68vpnYcWc/6WZQItq1P4bwJ5K14jFrj0BvFl7yIKwsGrQK+hvqU/1sqT/DnjmvgXSUAnTLluAtBIVMomadYD/g==.
+Installed Microsoft.Extensions.Http 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.http\9.0.0 with content hash DqI4q54U4hH7bIAq9M5a/hl5Odr/KBAoaZ0dcT4OgutD8dook34CbkvAfAIzkMVjYXiL+E5ul9etwwqiX4PHGw==.
+Installed Microsoft.Extensions.DependencyInjection.Abstractions 8.0.2 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\8.0.2 with content hash 3iE7UF7MQkCv1cxzCahz+Y/guQbTqieyxyaWKhrRO91itI9cOKO76OHeQDahqG4MmW5umr3CcCvGmK92lWNlbg==.
+Installed Microsoft.Extensions.Diagnostics 8.0.1 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.diagnostics\8.0.1 with content hash doVPCUUCY7c6LhBsEfiy3W1bvS7Mi6LkfQMS8nlC22jZWNxBv8VO8bdfeyvpYFst6Kxqk7HBC6lytmEoBssvSQ==.
+Installed Microsoft.Extensions.Logging 8.0.1 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.logging\8.0.1 with content hash 4x+pzsQEbqxhNf1QYRr5TDkLP9UsLT3A6MdRKDDEgrW7h1ljiEPgTNhKYUhNCCAaVpQECVQ+onA91PTPnIp6Lw==.
+Installed Microsoft.Extensions.Http 8.0.1 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.http\8.0.1 with content hash kDYeKJUzh0qeg/AI+nSr3ffthmXYQTEb0nS9qRC7YhSbbuN4M4NPbaB77AJwtkTnCV9XZ7qYj3dkZaNcyl73EA==.
+Installed Microsoft.Extensions.Hosting.Abstractions 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.hosting.abstractions\9.0.0 with content hash yUKJgu81ExjvqbNWqZKshBbLntZMbMVz/P7Way2SBx7bMqA08Mfdc9O7hWDKAiSp+zPUGT6LKcSCQIPeDK+CCw==.
+Installed OpenTelemetry 1.10.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\opentelemetry\1.10.0 with content hash YUWnKsu0qsD7SO45r6a6nm6dAB3kVZ4Qf5DClU9xG+ObKV2beg0VJwX3U85pAaEhE/IBFp1C8Fj7L3F6gNjpeg==.
+Installed Microsoft.Extensions.Configuration.Binder 8.0.2 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.configuration.binder\8.0.2 with content hash 7IQhGK+wjyGrNsPBjJcZwWAr+Wf6D4+TwOptUt77bWtgNkiV8tDEbhFS+dDamtQFZ2X7kWG9m71iZQRj2x3zgQ==.
+Installed Polly.Extensions 8.4.2 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\polly.extensions\8.4.2 with content hash GZ9vRVmR0jV2JtZavt+pGUsQ1O1cuRKG7R7VOZI6ZDy9y6RNPvRvXK1tuS4ffUrv8L0FTea59oEuQzgS0R7zSA==.
+Installed Microsoft.Extensions.Diagnostics.Abstractions 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.diagnostics.abstractions\9.0.0 with content hash 1K8P7XzuzX8W8pmXcZjcrqS6x5eSSdvhQohmcpgiQNY/HlDAlnrhR9dvlURfFz428A+RTCJpUyB+aKTA6AgVcQ==.
+Installed Microsoft.Extensions.Diagnostics.ExceptionSummarization 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.diagnostics.exceptionsummarization\9.0.0 with content hash eRuTbk4jB0JcNEcYngXNAiLM6tpDyuUfFd13bPy/TJCdHU3IP+C7dZN7qu+Z7mOg3CmxS78YtRULQX8QhL+fMQ==.
+Installed Microsoft.Extensions.Telemetry.Abstractions 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.telemetry.abstractions\9.0.0 with content hash F84i7q3FleH1kjmaSuslZ33yzWtzxZXWjd1ylXcuwM5jNjWN2ifJSO0xQ5c5BYWZA5VeIWWUWupIYr6+3TnDqA==.
+Installed Microsoft.Extensions.ObjectPool 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.objectpool\9.0.0 with content hash UbsU/gYe4nv1DeqMXIVzDfNNek7Sk2kKuAOXL/Y+sLcAR0HwFUqzg1EPiU88jeHNe0g81aPvvHbvHarQr3r9IA==.
+Installed Microsoft.Extensions.Diagnostics 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.diagnostics\9.0.0 with content hash 0CF9ZrNw5RAlRfbZuVIvzzhP8QeWqHiUmMBU/2H7Nmit8/vwP3/SbHeEctth7D4Gz2fBnEbokPc1NU8/j/1ZLw==.
+Installed Microsoft.Extensions.FileProviders.Abstractions 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.fileproviders.abstractions\9.0.0 with content hash uK439QzYR0q2emLVtYzwyK3x+T5bTY4yWsd/k/ZUS9LR6Sflp8MIdhGXW8kQCd86dQD4tLqvcbLkku8qHY263Q==.
+Installed Microsoft.Extensions.Configuration.Abstractions 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.configuration.abstractions\9.0.0 with content hash lqvd7W3FGKUO1+ZoUEMaZ5XDJeWvjpy2/M/ptCGz3tXLD4HWVaSzjufsAsjemasBEg+2SxXVtYVvGt5r2nKDlg==.
+Installed Microsoft.Extensions.DependencyInjection.Abstractions 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\9.0.0 with content hash +6f2qv2a3dLwd5w6JanPIPs47CxRbnk+ZocMJUhv9NxP88VlOcJYZs9jY+MYSjxvady08bUZn6qgiNh7DadGgg==.
+Installed Microsoft.Extensions.Options.ConfigurationExtensions 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.options.configurationextensions\9.0.0 with content hash Ob3FXsXkcSMQmGZi7qP07EQ39kZpSBlTcAZLbJLdI4FIf0Jug8biv2HTavWmnTirchctPlq9bl/26CXtQRguzA==.
+Installed Microsoft.Extensions.Configuration.Binder 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.configuration.binder\9.0.0 with content hash RiScL99DcyngY9zJA2ROrri7Br8tn5N4hP4YNvGdTN/bvg1A3dwvDOxHnNZ3Im7x2SJ5i4LkX1uPiR/MfSFBLQ==.
+Installed Microsoft.Extensions.Logging.Abstractions 8.0.2 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.logging.abstractions\8.0.2 with content hash nroMDjS7hNBPtkZqVBbSiQaQjWRDxITI8Y7XnDs97rqG3EbzVTNLZQf7bIeUJcaHOV8bca47s1Uxq94+2oGdxA==.
+Installed Microsoft.Extensions.Logging.Abstractions 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.logging.abstractions\9.0.0 with content hash g0UfujELzlLbHoVG8kPKVBaW470Ewi+jnptGS9KUi6jcb+k2StujtK3m26DFSGGwQ/+bVgZfsWqNzlP6YOejvw==.
+  CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/vulnerability.base.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/2024.11.16.17.25.48/vulnerability.update.json
+  GET https://api.nuget.org/v3-flatcontainer/jsonpointer.net/index.json
+  GET https://api.nuget.org/v3-flatcontainer/yamldotnet/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.healthchecks.abstractions/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.commandline/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.environmentvariables/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.fileextensions/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.json/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.usersecrets/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.physical/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.console/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.debug/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.eventlog/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.eventsource/index.json
+  GET https://api.nuget.org/v3-flatcontainer/grpc.aspnetcore.server/index.json
+  GET https://api.nuget.org/v3-flatcontainer/grpc.net.common/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.usersecrets/index.json 73ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.usersecrets/9.0.0/microsoft.extensions.configuration.usersecrets.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/jsonpointer.net/index.json 110ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.environmentvariables/index.json 101ms
+  OK https://api.nuget.org/v3-flatcontainer/yamldotnet/index.json 104ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.json/index.json 99ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.fileextensions/index.json 101ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.debug/index.json 89ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.eventsource/index.json 86ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.console/index.json 91ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.physical/index.json 94ms
+  OK https://api.nuget.org/v3-flatcontainer/grpc.net.common/index.json 60ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.healthchecks.abstractions/index.json 110ms
+  GET https://api.nuget.org/v3-flatcontainer/jsonpointer.net/5.0.2/jsonpointer.net.5.0.2.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.environmentvariables/9.0.0/microsoft.extensions.configuration.environmentvariables.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.json/9.0.0/microsoft.extensions.configuration.json.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/yamldotnet/16.0.0/yamldotnet.16.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.usersecrets/9.0.0/microsoft.extensions.configuration.usersecrets.9.0.0.nupkg 32ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.physical/9.0.0/microsoft.extensions.fileproviders.physical.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/grpc.net.common/2.66.0/grpc.net.common.2.66.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.console/9.0.0/microsoft.extensions.logging.console.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.healthchecks.abstractions/9.0.0/microsoft.extensions.diagnostics.healthchecks.abstractions.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.eventsource/9.0.0/microsoft.extensions.logging.eventsource.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.debug/9.0.0/microsoft.extensions.logging.debug.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.fileextensions/9.0.0/microsoft.extensions.configuration.fileextensions.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/jsonpointer.net/5.0.2/jsonpointer.net.5.0.2.nupkg 76ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.eventlog/index.json 176ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.eventlog/9.0.0/microsoft.extensions.logging.eventlog.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.environmentvariables/9.0.0/microsoft.extensions.configuration.environmentvariables.9.0.0.nupkg 94ms
+  OK https://api.nuget.org/v3-flatcontainer/yamldotnet/16.0.0/yamldotnet.16.0.0.nupkg 98ms
+  GET https://api.nuget.org/v3-flatcontainer/json.more.net/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.json/9.0.0/microsoft.extensions.configuration.json.9.0.0.nupkg 120ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.console/9.0.0/microsoft.extensions.logging.console.9.0.0.nupkg 153ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.physical/9.0.0/microsoft.extensions.fileproviders.physical.9.0.0.nupkg 181ms
+  OK https://api.nuget.org/v3-flatcontainer/grpc.net.common/2.66.0/grpc.net.common.2.66.0.nupkg 187ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.eventsource/9.0.0/microsoft.extensions.logging.eventsource.9.0.0.nupkg 192ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.debug/9.0.0/microsoft.extensions.logging.debug.9.0.0.nupkg 194ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.diagnostics.healthchecks.abstractions/9.0.0/microsoft.extensions.diagnostics.healthchecks.abstractions.9.0.0.nupkg 204ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.fileextensions/9.0.0/microsoft.extensions.configuration.fileextensions.9.0.0.nupkg 213ms
+  OK https://api.nuget.org/v3-flatcontainer/grpc.aspnetcore.server/index.json 303ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.eventlog/9.0.0/microsoft.extensions.logging.eventlog.9.0.0.nupkg 148ms
+  GET https://api.nuget.org/v3-flatcontainer/grpc.aspnetcore.server/2.66.0/grpc.aspnetcore.server.2.66.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/json.more.net/index.json 151ms
+  GET https://api.nuget.org/v3-flatcontainer/json.more.net/2.0.1.2/json.more.net.2.0.1.2.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/grpc.aspnetcore.server/2.66.0/grpc.aspnetcore.server.2.66.0.nupkg 41ms
+  OK https://api.nuget.org/v3-flatcontainer/json.more.net/2.0.1.2/json.more.net.2.0.1.2.nupkg 68ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.commandline/index.json 466ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.commandline/9.0.0/microsoft.extensions.configuration.commandline.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.commandline/9.0.0/microsoft.extensions.configuration.commandline.9.0.0.nupkg 36ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.filesystemglobbing/index.json
+  GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.eventlog/index.json
+  GET https://api.nuget.org/v3-flatcontainer/grpc.core.api/index.json
+  OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.eventlog/index.json 37ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.filesystemglobbing/index.json 42ms
+  GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.eventlog/9.0.0/system.diagnostics.eventlog.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.filesystemglobbing/9.0.0/microsoft.extensions.filesystemglobbing.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.eventlog/9.0.0/system.diagnostics.eventlog.9.0.0.nupkg 32ms
+  OK https://api.nuget.org/v3-flatcontainer/grpc.core.api/index.json 61ms
+  GET https://api.nuget.org/v3-flatcontainer/grpc.core.api/2.66.0/grpc.core.api.2.66.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.filesystemglobbing/9.0.0/microsoft.extensions.filesystemglobbing.9.0.0.nupkg 56ms
+  OK https://api.nuget.org/v3-flatcontainer/grpc.core.api/2.66.0/grpc.core.api.2.66.0.nupkg 40ms
+Installed Json.More.Net 2.0.1.2 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\json.more.net\2.0.1.2 with content hash uF3QeiaXEfH92emz0/BWUiNtMSfxIIvgynuB0Bf1vF4s8eWTcZitBx9l+g/FDaJk5XxqBv9buQXizXKQcXFG1w==.
+Installed Microsoft.Extensions.FileSystemGlobbing 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.filesystemglobbing\9.0.0 with content hash jGFKZiXs2HNseK3NK/rfwHNNovER71jSj4BD1a/649ml9+h6oEtYd0GSALZDNW8jZ2Rh+oAeadOa6sagYW1F2A==.
+Installed Microsoft.Extensions.Logging.Console 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.logging.console\9.0.0 with content hash yDZ4zsjl7N0K+R/1QTNpXBd79Kaf4qNLHtjk4NaG82UtNg2Z6etJywwv6OarOv3Rp7ocU7uIaRY4CrzHRO/d3w==.
+Installed Microsoft.Extensions.Logging.EventLog 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.logging.eventlog\9.0.0 with content hash /B8I5bScondnLMNULA3PBu/7Gvmv/P7L83j7gVrmLh6R+HCgHqUNIwVvzCok4ZjIXN2KxrsONHjFYwoBK5EJgQ==.
+Installed Microsoft.Extensions.Logging.Debug 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.logging.debug\9.0.0 with content hash 4wGlHsrLhYjLw4sFkfRixu2w4DK7dv60OjbvgbLGhUJk0eUPxYHhnszZ/P18nnAkfrPryvtOJ3ZTVev0kpqM6A==.
+Installed Microsoft.Extensions.Configuration.Json 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.configuration.json\9.0.0 with content hash WiTK0LrnsqmedrbzwL7f4ZUo+/wByqy2eKab39I380i2rd8ImfCRMrtkqJVGDmfqlkP/YzhckVOwPc5MPrSNpg==.
+Installed YamlDotNet 16.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\yamldotnet\16.0.0 with content hash kZ4jR5ltFhnjaUqK9x81zXRIUTH4PTXTTEmJDNQdkDLQhcv+2Nl19r0dCSvPW1mstOYBfXTnjdieRbUO6gHMDw==.
+Installed Microsoft.Extensions.FileProviders.Physical 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.fileproviders.physical\9.0.0 with content hash 3+ZUSpOSmie+o8NnLIRqCxSh65XL/ExU7JYnFOg58awDRlY3lVpZ9A369jkoZL1rpsq7LDhEfkn2ghhGaY1y5Q==.
+Installed Microsoft.Extensions.Configuration.EnvironmentVariables 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.configuration.environmentvariables\9.0.0 with content hash v5R638eNMxksfXb7MFnkPwLPp+Ym4W/SIGNuoe8qFVVyvygQD5DdLusybmYSJEr9zc1UzWzim/ATKeIOVvOFDg==.
+Installed Microsoft.Extensions.Configuration.FileExtensions 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.configuration.fileextensions\9.0.0 with content hash 4EK93Jcd2lQG4GY6PAw8jGss0ZzFP0vPc1J85mES5fKNuDTqgFXHba9onBw2s18fs3I4vdo2AWyfD1mPAxWSQQ==.
+Installed Aspire.Hosting.AppHost 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\aspire.hosting.apphost\9.0.0 with content hash Op37VIDUUfKYEm6RWWabdA6oKMw+4kamHWLkMiZVpTLoOB/W5s88vrgWtszayVud12fgZBfV9urMTHMu+KQSZw==.
+Installed Microsoft.Extensions.Logging.EventSource 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.logging.eventsource\9.0.0 with content hash zvSjdOAb3HW3aJPM5jf+PR9UoIkoci9id80RXmBgrDEozWI0GDw8tdmpyZgZSwFDvGCwHFodFLNQaeH8879rlA==.
+Installed System.Diagnostics.EventLog 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\system.diagnostics.eventlog\9.0.0 with content hash qd01+AqPhbAG14KtdtIqFk+cxHQFZ/oqRSCoxU1F+Q6Kv0cl726sl7RzU9yLFGd4BUOKdN4XojXF0pQf/R6YeA==.
+Installed Grpc.AspNetCore.Server 2.66.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\grpc.aspnetcore.server\2.66.0 with content hash SogFEs8bLvcRtEWMdueOJeMxiaLryvyivWtmBwz/vLtS5xlN4Zrfv+npMbn1PS4iT99AqBY+R+bRxdIFfvfeIA==.
+Installed Microsoft.Extensions.Configuration.UserSecrets 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.configuration.usersecrets\9.0.0 with content hash FShWw8OysquwV7wQHYkkz0VWsJSo6ETUu4h7tJRMtnG0uR+tzKOldhcO8xB1pGSOI3Ng6v3N1Q94YO8Rzq1P6A==.
+Installed Grpc.Net.Common 2.66.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\grpc.net.common\2.66.0 with content hash YJpQpIvpo0HKlsG6SHwaieyji08qfv0DdEDIewCAA0egQY08637sHOj1netLGUhzBEsCqlGC3e92TZ2uqhxnvw==.
+Installed Grpc.Core.Api 2.66.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\grpc.core.api\2.66.0 with content hash HsjsQVAHe4hqP4t4rpUnmq+MZvPdyrlPsWF4T5fbMvyP3o/lMV+KVJfDlaNH8+v0aGQTVT3EsDFufbhaWb52cw==.
+Installed AspNetCore.HealthChecks.Uris 8.0.1 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\aspnetcore.healthchecks.uris\8.0.1 with content hash A1ahRx4pdXjrSGlGFLoyoXOV4Lfp5sfs+OIGfvi14RwecIAac4xs6cP0Q8tw/rv4Ng+KAaYpzD4qhxXVwUcIyA==.
+Installed JsonPatch.Net 3.1.1 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\jsonpatch.net\3.1.1 with content hash dLAUhmL7RgezL8lkBpzf+O4U4sEtbGE9DDF858MiQdNmGK8LYBfLqO73n5N288e5H8jVvwypQG/DUJunWvaJyQ==.
+Installed Microsoft.Extensions.Diagnostics.HealthChecks 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.diagnostics.healthchecks\9.0.0 with content hash cxsK9/Dx7Ka9sfiA1nY8XlSzIaWff5FNRw0+ls8yR+aGzmnah5JGKsTHgQrehjMwGAVud/pjiUZ9MWizfUSkTQ==.
+Installed Microsoft.Extensions.Diagnostics.HealthChecks 8.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.diagnostics.healthchecks\8.0.0 with content hash P9SoBuVZhJPpALZmSq72aQEb9ryP67EdquaCZGXGrrcASTNHYdrUhnpgSwIipgM5oVC+dKpRXg5zxobmF9xr5g==.
+Installed Grpc.AspNetCore 2.66.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\grpc.aspnetcore\2.66.0 with content hash b4V5V/yiCeK94wiQReUyHPB/Xj/fCaDWhlcFnYzSCm3pQtyADAN9t3g7V631PzLjFZQnPn9iIN3M6BHnVx3nfA==.
+Installed Grpc.AspNetCore.Server.ClientFactory 2.66.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\grpc.aspnetcore.server.clientfactory\2.66.0 with content hash glLCZ5K8iBSzzd2eIKjMBYBApygvwJqGJ87FBJrHL4bSrnBTywCUFfLj2EckiPjvvW6SNwLtapwdY4Sj0WwWQg==.
+Installed JsonPointer.Net 5.0.2 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\jsonpointer.net\5.0.2 with content hash H/OtixKadr+ja1j7Fru3WG56V9zP0AKT1Bd0O7RWN/zH1bl8ZIwW9aCa4+xvzuVvt4SPmrvBu3G6NpAkNOwNAA==.
+Installed Grpc.Net.ClientFactory 2.66.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\grpc.net.clientfactory\2.66.0 with content hash I6HUbtcqb24OiQlbvxpBLruCxQ8wrmJ5tUtU96QK7nqyerrMLeqLDDbhotznPAnZtR8x1bJvck/Xt4fgvVo92Q==.
+Installed Microsoft.Extensions.Hosting 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.hosting\9.0.0 with content hash wNmQWRCa83HYbpxQ3wH7xBn8oyGjONSj1k8svzrFUFyJMfg/Ja/g0NfI0p85wxlUxBh97A6ypmL8X5vVUA5y2Q==.
+Installed Aspire.Hosting 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\aspire.hosting\9.0.0 with content hash mPsP6Yy5oZxRGdFEio7wVf99js7ieVWSrgPuFwPM/7rXedQfxN0WgKZZntbt5ryio5uW5+9c8Hr29aYVQlU5HA==.
+Installed Microsoft.Extensions.Diagnostics.HealthChecks 8.0.11 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.diagnostics.healthchecks\8.0.11 with content hash zLgN22Zp9pk8RHlwssRTexw4+a6wqOnKWN+VejdPn5Yhjql4XiBhkFo35Nu8mmqHIk/UEmmCnMGLWq75aFfkOw==.
+Installed Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.diagnostics.healthchecks.abstractions\9.0.0 with content hash H1IbHm/MnUgEV0N07WrkPBIIoX7isP6IPaqUdZ3CwbMcUVDGIu+okamW28kyDRfIiZqbTbyHuNIkr4ZSHPyvDw==.
+Installed Google.Protobuf 3.28.2 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\google.protobuf\3.28.2 with content hash Z86ZKAB+v1B/m0LTM+EVamvZlYw/g3VND3/Gs4M/+aDIxa2JE9YPKjDxTpf0gv2sh26hrve3eI03brxBmzn92g==.
+Installed Humanizer.Core 2.14.1 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\humanizer.core\2.14.1 with content hash lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==.
+Installed Grpc.Net.Client 2.66.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\grpc.net.client\2.66.0 with content hash GwkSsssXFgN9+M2U+UQWdErf61sn1iqgP+2NRBlDXATcP9vlxda0wySxd/eIL8U522+SnyFNUXlvQ5tAzGk9cA==.
+Installed Microsoft.Extensions.Hosting.Abstractions 8.0.1 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.hosting.abstractions\8.0.1 with content hash nHwq9aPBdBPYXPti6wYEEfgXddfBrYC+CQLn+qISiwQq5tpfaqDZSKOJNxoe9rfQxGf1c+2wC/qWFe1QYJPYqw==.
+Installed Microsoft.Extensions.Hosting 8.0.1 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.hosting\8.0.1 with content hash bP9EEkHBEfjgYiG8nUaXqMk/ujwJrffOkNPP7onpRMO8R+OUSESSP4xHkCAXgYZ1COP2Q9lXlU5gkMFh20gRuw==.
+Installed Microsoft.Extensions.Configuration.CommandLine 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.configuration.commandline\9.0.0 with content hash qD+hdkBtR9Ps7AxfhTJCnoVakkadHgHlD1WRN0QHGHod+SDuca1ao1kF4G2rmpAz2AEKrE2N2vE8CCCZ+ILnNw==.
+Installed Google.Protobuf 3.27.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\google.protobuf\3.27.0 with content hash tEaKpc+SP7I3gYW9AHozESyKkrCg8Xe7huI3Q3iUt5t8Dn29r2k1u8jyrGrD16maj/0UsQBM0MDViWEj0iynOA==.
+Installed KubernetesClient 15.0.1 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\kubernetesclient\15.0.1 with content hash IOsMJaBpiHELr7ZeiJQypdtLDbc/HqxbEh9UMaDvLpBvGIzS+KhjA0LJVEbGgvubmhWHxLPfgHAL0le1zr2RwA==.
+Installed Grpc.Tools 2.66.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\grpc.tools\2.66.0 with content hash URTltx2E0aTGQqVW+H09AZiGR/qyQ3naHPymSG1/Ytgm8bPdjSltnsIFanbxb7rXxdYwGzLFGy82R82M1UktXg==.
+Installed Grpc.Tools 2.67.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\grpc.tools\2.67.0 with content hash AQwGGe1dhCWlO72dTW4XtZBsvE9+mHt5rUpVOPjX9Q6sYZZ0GFyqs+7DjFeulaHKjsOg7Wteob1oq7a++SJWgA==.
+  CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/vulnerability.base.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/2024.11.16.17.25.48/vulnerability.update.json
+Installing NuGet package Microsoft.Extensions.Http.Resilience 9.0.0.
+Installing NuGet package Microsoft.Extensions.ServiceDiscovery 9.0.0.
+Installing NuGet package OpenTelemetry.Exporter.OpenTelemetryProtocol 1.10.0.
+Installing NuGet package OpenTelemetry.Extensions.Hosting 1.10.0.
+Generating MSBuild file C:\code\wyoming\src\mydotnet\mydotnet.ServiceDefaults\obj\mydotnet.ServiceDefaults.csproj.nuget.g.props.
+Generating MSBuild file C:\code\wyoming\src\mydotnet\mydotnet.ServiceDefaults\obj\mydotnet.ServiceDefaults.csproj.nuget.g.targets.
+Writing assets file to disk. Path: C:\code\wyoming\src\mydotnet\mydotnet.ServiceDefaults\obj\project.assets.json
+Successfully uninstalled 'Microsoft.Extensions.AmbientMetadata.Application 8.6.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.Compliance.Abstractions 8.6.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.Configuration 8.0.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.Configuration.Abstractions 8.0.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.Configuration.Binder 8.0.1' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.DependencyInjection 8.0.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.DependencyInjection.Abstractions 8.0.1' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.DependencyInjection.AutoActivation 8.6.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.DiagnosticAdapter 3.1.32' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.Diagnostics 8.0.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.Diagnostics.Abstractions 8.0.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.Diagnostics.ExceptionSummarization 8.6.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.Features 8.0.4' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.FileProviders.Abstractions 8.0.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.Hosting.Abstractions 8.0.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.Http 8.0.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.Http.Diagnostics 8.6.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.Http.Resilience 8.6.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.Logging 8.0.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.Logging.Abstractions 8.0.1' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.Logging.Configuration 8.0.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.ObjectPool 8.0.5' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.Options 8.0.2' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.Options.ConfigurationExtensions 8.0.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.Primitives 8.0.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.Resilience 8.6.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.ServiceDiscovery 8.0.1' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.ServiceDiscovery.Abstractions 8.0.1' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.Telemetry 8.6.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Microsoft.Extensions.Telemetry.Abstractions 8.6.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'OpenTelemetry 1.9.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'OpenTelemetry.Api 1.9.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'OpenTelemetry.Api.ProviderBuilderExtensions 1.9.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'OpenTelemetry.Exporter.OpenTelemetryProtocol 1.9.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'OpenTelemetry.Extensions.Hosting 1.9.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Polly.Core 8.4.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Polly.Extensions 8.4.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'Polly.RateLimiting 8.4.0' from mydotnet.ServiceDefaults
+Successfully uninstalled 'System.Diagnostics.DiagnosticSource 8.0.0' from mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.AmbientMetadata.Application 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.Compliance.Abstractions 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.Configuration 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.Configuration.Abstractions 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.Configuration.Binder 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.DependencyInjection 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.DependencyInjection.Abstractions 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.DependencyInjection.AutoActivation 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.Diagnostics 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.Diagnostics.Abstractions 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.Diagnostics.ExceptionSummarization 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.Features 8.0.11' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.FileProviders.Abstractions 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.Hosting.Abstractions 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.Http 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.Http.Diagnostics 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.Http.Resilience 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.Logging 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.Logging.Abstractions 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.Logging.Configuration 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.ObjectPool 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.Options 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.Options.ConfigurationExtensions 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.Primitives 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.Resilience 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.ServiceDiscovery 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.ServiceDiscovery.Abstractions 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.Telemetry 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'Microsoft.Extensions.Telemetry.Abstractions 9.0.0' to mydotnet.ServiceDefaults
+Successfully installed 'OpenTelemetry 1.10.0' to mydotnet.ServiceDefaults
+Successfully installed 'OpenTelemetry.Api 1.10.0' to mydotnet.ServiceDefaults
+Successfully installed 'OpenTelemetry.Api.ProviderBuilderExtensions 1.10.0' to mydotnet.ServiceDefaults
+Successfully installed 'OpenTelemetry.Exporter.OpenTelemetryProtocol 1.10.0' to mydotnet.ServiceDefaults
+Successfully installed 'OpenTelemetry.Extensions.Hosting 1.10.0' to mydotnet.ServiceDefaults
+Successfully installed 'Polly.Core 8.4.2' to mydotnet.ServiceDefaults
+Successfully installed 'Polly.Extensions 8.4.2' to mydotnet.ServiceDefaults
+Successfully installed 'Polly.RateLimiting 8.4.2' to mydotnet.ServiceDefaults
+Successfully installed 'System.Diagnostics.DiagnosticSource 9.0.0' to mydotnet.ServiceDefaults
+Executing nuget actions took 357 ms
+Installing NuGet package Microsoft.AspNetCore.OpenApi 9.0.0.
+Installing NuGet package Npgsql 8.0.5.
+Installing NuGet package Swashbuckle.AspNetCore 7.0.0.
+Generating MSBuild file C:\code\wyoming\src\mydotnet\AnalyticsWebApi\obj\AnalyticsWebApi.csproj.nuget.g.props.
+Writing assets file to disk. Path: C:\code\wyoming\src\mydotnet\AnalyticsWebApi\obj\project.assets.json
+Successfully uninstalled 'Microsoft.AspNetCore.OpenApi 8.0.6' from AnalyticsWebApi
+Successfully uninstalled 'Microsoft.OpenApi 1.6.14' from AnalyticsWebApi
+Successfully uninstalled 'Npgsql 8.0.3' from AnalyticsWebApi
+Successfully uninstalled 'Swashbuckle.AspNetCore 6.6.2' from AnalyticsWebApi
+Successfully uninstalled 'Swashbuckle.AspNetCore.Swagger 6.6.2' from AnalyticsWebApi
+Successfully uninstalled 'Swashbuckle.AspNetCore.SwaggerGen 6.6.2' from AnalyticsWebApi
+Successfully uninstalled 'Swashbuckle.AspNetCore.SwaggerUI 6.6.2' from AnalyticsWebApi
+Successfully installed 'Microsoft.AspNetCore.OpenApi 9.0.0' to AnalyticsWebApi
+Successfully installed 'Microsoft.OpenApi 1.6.22' to AnalyticsWebApi
+Successfully installed 'Npgsql 8.0.5' to AnalyticsWebApi
+Successfully installed 'Swashbuckle.AspNetCore 7.0.0' to AnalyticsWebApi
+Successfully installed 'Swashbuckle.AspNetCore.Swagger 7.0.0' to AnalyticsWebApi
+Successfully installed 'Swashbuckle.AspNetCore.SwaggerGen 7.0.0' to AnalyticsWebApi
+Successfully installed 'Swashbuckle.AspNetCore.SwaggerUI 7.0.0' to AnalyticsWebApi
+Executing nuget actions took 236 ms
+Installing NuGet package Aspire.Hosting.AppHost 9.0.0.
+Generating MSBuild file C:\code\wyoming\src\mydotnet\mydotnet.AppHost\obj\mydotnet.AppHost.csproj.nuget.g.props.
+Generating MSBuild file C:\code\wyoming\src\mydotnet\mydotnet.AppHost\obj\mydotnet.AppHost.csproj.nuget.g.targets.
+Writing assets file to disk. Path: C:\code\wyoming\src\mydotnet\mydotnet.AppHost\obj\project.assets.json
+Successfully uninstalled 'Aspire.Hosting 8.0.1' from mydotnet.AppHost
+Successfully uninstalled 'Aspire.Hosting.AppHost 8.0.1' from mydotnet.AppHost
+Successfully uninstalled 'Google.Protobuf 3.24.0' from mydotnet.AppHost
+Successfully uninstalled 'Grpc.AspNetCore 2.60.0' from mydotnet.AppHost
+Successfully uninstalled 'Grpc.AspNetCore.Server 2.60.0' from mydotnet.AppHost
+Successfully uninstalled 'Grpc.AspNetCore.Server.ClientFactory 2.60.0' from mydotnet.AppHost
+Successfully uninstalled 'Grpc.Core.Api 2.60.0' from mydotnet.AppHost
+Successfully uninstalled 'Grpc.Net.Client 2.60.0' from mydotnet.AppHost
+Successfully uninstalled 'Grpc.Net.ClientFactory 2.60.0' from mydotnet.AppHost
+Successfully uninstalled 'Grpc.Net.Common 2.60.0' from mydotnet.AppHost
+Successfully uninstalled 'Grpc.Tools 2.60.0' from mydotnet.AppHost
+Successfully uninstalled 'KubernetesClient 13.0.11' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Configuration 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Configuration.Abstractions 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Configuration.Binder 8.0.1' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Configuration.CommandLine 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Configuration.EnvironmentVariables 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Configuration.FileExtensions 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Configuration.Json 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Configuration.UserSecrets 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.DependencyInjection 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.DependencyInjection.Abstractions 8.0.1' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Diagnostics 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Diagnostics.Abstractions 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.FileProviders.Abstractions 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.FileProviders.Physical 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.FileSystemGlobbing 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Hosting 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Hosting.Abstractions 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Http 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Logging 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Logging.Abstractions 8.0.1' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Logging.Configuration 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Logging.Console 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Logging.Debug 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Logging.EventLog 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Logging.EventSource 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Options 8.0.2' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Options.ConfigurationExtensions 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.Extensions.Primitives 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'Microsoft.VisualStudio.SlnGen 11.1.0' from mydotnet.AppHost
+Successfully uninstalled 'Polly.Core 8.4.0' from mydotnet.AppHost
+Successfully uninstalled 'prometheus-net 8.2.1' from mydotnet.AppHost
+Successfully uninstalled 'System.Diagnostics.EventLog 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'System.Text.Encodings.Web 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'System.Text.Json 8.0.0' from mydotnet.AppHost
+Successfully uninstalled 'YamlDotNet 15.1.0' from mydotnet.AppHost
+Successfully installed 'Aspire.Hosting 9.0.0' to mydotnet.AppHost
+Successfully installed 'Aspire.Hosting.AppHost 9.0.0' to mydotnet.AppHost
+Successfully installed 'AspNetCore.HealthChecks.Uris 8.0.1' to mydotnet.AppHost
+Successfully installed 'Google.Protobuf 3.28.2' to mydotnet.AppHost
+Successfully installed 'Grpc.AspNetCore 2.66.0' to mydotnet.AppHost
+Successfully installed 'Grpc.AspNetCore.Server 2.66.0' to mydotnet.AppHost
+Successfully installed 'Grpc.AspNetCore.Server.ClientFactory 2.66.0' to mydotnet.AppHost
+Successfully installed 'Grpc.Core.Api 2.66.0' to mydotnet.AppHost
+Successfully installed 'Grpc.Net.Client 2.66.0' to mydotnet.AppHost
+Successfully installed 'Grpc.Net.ClientFactory 2.66.0' to mydotnet.AppHost
+Successfully installed 'Grpc.Net.Common 2.66.0' to mydotnet.AppHost
+Successfully installed 'Grpc.Tools 2.67.0' to mydotnet.AppHost
+Successfully installed 'Humanizer.Core 2.14.1' to mydotnet.AppHost
+Successfully installed 'Json.More.Net 2.0.1.2' to mydotnet.AppHost
+Successfully installed 'JsonPatch.Net 3.1.1' to mydotnet.AppHost
+Successfully installed 'JsonPointer.Net 5.0.2' to mydotnet.AppHost
+Successfully installed 'KubernetesClient 15.0.1' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Configuration 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Configuration.Abstractions 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Configuration.Binder 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Configuration.CommandLine 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Configuration.EnvironmentVariables 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Configuration.FileExtensions 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Configuration.Json 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Configuration.UserSecrets 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.DependencyInjection 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.DependencyInjection.Abstractions 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Diagnostics 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Diagnostics.Abstractions 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Diagnostics.HealthChecks 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.FileProviders.Abstractions 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.FileProviders.Physical 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.FileSystemGlobbing 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Hosting 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Hosting.Abstractions 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Http 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Logging 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Logging.Abstractions 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Logging.Configuration 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Logging.Console 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Logging.Debug 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Logging.EventLog 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Logging.EventSource 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Options 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Options.ConfigurationExtensions 9.0.0' to mydotnet.AppHost
+Successfully installed 'Microsoft.Extensions.Primitives 9.0.0' to mydotnet.AppHost
+Successfully installed 'Polly.Core 8.4.2' to mydotnet.AppHost
+Successfully installed 'System.Diagnostics.EventLog 9.0.0' to mydotnet.AppHost
+Successfully installed 'YamlDotNet 16.0.0' to mydotnet.AppHost
+Executing nuget actions took 96 ms
+Installing NuGet package FontAwesome.Sharp 6.6.0.
+Writing assets file to disk. Path: C:\code\wyoming\src\mydotnet\AlphaTabTutorial\obj\project.assets.json
+Successfully uninstalled 'FontAwesome.Sharp 6.3.0' from AlphaTabTutorial
+Successfully installed 'FontAwesome.Sharp 6.6.0' to AlphaTabTutorial
+Executing nuget actions took 69 ms
+Time Elapsed: 00:00:19.2512581
+========== Finished ==========
+
+Restored C:\code\wyoming\src\mydotnet\AnalyticsWebApi\AnalyticsWebApi.csproj (in 1.9 sec).
+Restored C:\code\wyoming\src\mydotnet\mydotnet.AppHost\mydotnet.AppHost.csproj (in 2.09 sec).
+Time Elapsed: 00:00:02.1525331
+========== Finished ==========
+
+
+Restored C:\code\wyoming\src\mydotnet\mydotnet.AppHost\mydotnet.AppHost.csproj (in 1.12 sec).
+Time Elapsed: 00:00:01.1874160
+========== Finished ==========
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rebuild started at 3:26 PM...
+Restored C:\code\wyoming\src\mydotnet\ConsoleApp1\ConsoleApp1.csproj (in 4 ms).
+Restored C:\code\wyoming\src\mydotnet\AlphaTabTutorial\AlphaTabTutorial.csproj (in 62 ms).
+Restored C:\code\wyoming\src\mydotnet\AnalyticsWebApi\AnalyticsWebApi.csproj (in 117 ms).
+Restored C:\code\wyoming\src\mydotnet\mydotnet.ServiceDefaults\mydotnet.ServiceDefaults.csproj (in 116 ms).
+1>------ Rebuild All started: Project: AlphaTabTutorial, Configuration: Debug Any CPU ------
+2>------ Rebuild All started: Project: mydotnet.ServiceDefaults, Configuration: Debug Any CPU ------
+3>------ Rebuild All started: Project: ConsoleApp1, Configuration: Debug Any CPU ------
+Restored C:\code\wyoming\src\mydotnet\mydotnet.AppHost\mydotnet.AppHost.csproj (in 137 ms).
+2>mydotnet.ServiceDefaults -> C:\code\wyoming\src\mydotnet\mydotnet.ServiceDefaults\bin\Debug\net9.0\mydotnet.ServiceDefaults.dll
+4>------ Rebuild All started: Project: AnalyticsWebApi, Configuration: Debug Any CPU ------
+3>ConsoleApp1 -> C:\code\wyoming\src\mydotnet\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.dll
+4>AnalyticsWebApi -> C:\code\wyoming\src\mydotnet\AnalyticsWebApi\bin\Debug\net9.0\AnalyticsWebApi.dll
+5>------ Rebuild All started: Project: mydotnet.AppHost, Configuration: Debug Any CPU ------
+5>C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.targets(38,5): error NETSDK1147: To build this project, the following workloads must be installed: aspire
+5>C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.targets(38,5): error NETSDK1147: To install these workloads, run the following command: dotnet workload restore
+5>Done building project "mydotnet.AppHost.csproj" -- FAILED.
+1>C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(254,50,254,65): warning CS8612: Nullability of reference types in type of 'event PropertyChangedEventHandler MainWindow.PropertyChanged' doesn't match implicitly implemented member 'event PropertyChangedEventHandler? INotifyPropertyChanged.PropertyChanged'.
+1>C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(255,91,255,95): warning CS8625: Cannot convert null literal to non-nullable reference type.
+1>C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16,176,26): warning CS8618: Non-nullable field '_score' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+1>C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16,176,26): warning CS8618: Non-nullable field '_selectedTrack' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+1>C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16,176,26): warning CS8618: Non-nullable event 'PropertyChanged' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable.
+1>Done building project "AlphaTabTutorial_4s1mznhh_wpftmp.csproj".
+1>C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(254,50,254,65): warning CS8612: Nullability of reference types in type of 'event PropertyChangedEventHandler MainWindow.PropertyChanged' doesn't match implicitly implemented member 'event PropertyChangedEventHandler? INotifyPropertyChanged.PropertyChanged'.
+1>C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(255,91,255,95): warning CS8625: Cannot convert null literal to non-nullable reference type.
+1>C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16,176,26): warning CS8618: Non-nullable field '_score' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+1>C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16,176,26): warning CS8618: Non-nullable field '_selectedTrack' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+1>C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16,176,26): warning CS8618: Non-nullable event 'PropertyChanged' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable.
+1>AlphaTabTutorial -> C:\code\wyoming\src\mydotnet\AlphaTabTutorial\bin\Debug\net9.0-windows\AlphaTabTutorial.dll
+1>Done building project "AlphaTabTutorial.csproj".
+========== Rebuild All: 4 succeeded, 1 failed, 0 skipped ==========
+========== Rebuild completed at 3:26 PM and took 07.193 seconds ==========
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rebuild started at 3:31 PM...
+Restored C:\code\wyoming\src\mydotnet\ConsoleApp1\ConsoleApp1.csproj (in 2 ms).
+Restored C:\code\wyoming\src\mydotnet\AlphaTabTutorial\AlphaTabTutorial.csproj (in 53 ms).
+Restored C:\code\wyoming\src\mydotnet\AnalyticsWebApi\AnalyticsWebApi.csproj (in 132 ms).
+Restored C:\code\wyoming\src\mydotnet\mydotnet.ServiceDefaults\mydotnet.ServiceDefaults.csproj (in 131 ms).
+Restored C:\code\wyoming\src\mydotnet\mydotnet.AppHost\mydotnet.AppHost.csproj (in 14.66 sec).
+1>------ Rebuild All started: Project: AlphaTabTutorial, Configuration: Debug Any CPU ------
+2>------ Rebuild All started: Project: mydotnet.ServiceDefaults, Configuration: Debug Any CPU ------
+3>------ Rebuild All started: Project: ConsoleApp1, Configuration: Debug Any CPU ------
+3>ConsoleApp1 -> C:\code\wyoming\src\mydotnet\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.dll
+2>mydotnet.ServiceDefaults -> C:\code\wyoming\src\mydotnet\mydotnet.ServiceDefaults\bin\Debug\net9.0\mydotnet.ServiceDefaults.dll
+4>------ Rebuild All started: Project: AnalyticsWebApi, Configuration: Debug Any CPU ------
+1>C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(254,50,254,65): warning CS8612: Nullability of reference types in type of 'event PropertyChangedEventHandler MainWindow.PropertyChanged' doesn't match implicitly implemented member 'event PropertyChangedEventHandler? INotifyPropertyChanged.PropertyChanged'.
+1>C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(255,91,255,95): warning CS8625: Cannot convert null literal to non-nullable reference type.
+1>C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16,176,26): warning CS8618: Non-nullable field '_score' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+1>C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16,176,26): warning CS8618: Non-nullable field '_selectedTrack' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+1>C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16,176,26): warning CS8618: Non-nullable event 'PropertyChanged' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable.
+1>Done building project "AlphaTabTutorial_xwmcgetm_wpftmp.csproj".
+1>C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(254,50,254,65): warning CS8612: Nullability of reference types in type of 'event PropertyChangedEventHandler MainWindow.PropertyChanged' doesn't match implicitly implemented member 'event PropertyChangedEventHandler? INotifyPropertyChanged.PropertyChanged'.
+1>C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(255,91,255,95): warning CS8625: Cannot convert null literal to non-nullable reference type.
+1>C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16,176,26): warning CS8618: Non-nullable field '_score' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+1>C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16,176,26): warning CS8618: Non-nullable field '_selectedTrack' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+1>C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16,176,26): warning CS8618: Non-nullable event 'PropertyChanged' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable.
+1>AlphaTabTutorial -> C:\code\wyoming\src\mydotnet\AlphaTabTutorial\bin\Debug\net9.0-windows\AlphaTabTutorial.dll
+1>Done building project "AlphaTabTutorial.csproj".
+4>AnalyticsWebApi -> C:\code\wyoming\src\mydotnet\AnalyticsWebApi\bin\Debug\net9.0\AnalyticsWebApi.dll
+5>------ Rebuild All started: Project: mydotnet.AppHost, Configuration: Debug Any CPU ------
+5>mydotnet.AppHost -> C:\code\wyoming\src\mydotnet\mydotnet.AppHost\bin\Debug\net9.0\mydotnet.AppHost.dll
+========== Rebuild All: 5 succeeded, 0 failed, 0 skipped ==========
+========== Rebuild completed at 3:31 PM and took 19.989 seconds ==========
