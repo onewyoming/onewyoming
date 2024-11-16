@@ -1128,3 +1128,883 @@ Restored C:\code\wyoming\src\mydotnet\mydotnet.AppHost\mydotnet.AppHost.csproj (
 5>mydotnet.AppHost -> C:\code\wyoming\src\mydotnet\mydotnet.AppHost\bin\Debug\net9.0\mydotnet.AppHost.dll
 ========== Rebuild All: 5 succeeded, 0 failed, 0 skipped ==========
 ========== Rebuild completed at 3:31 PM and took 19.989 seconds ==========
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Restoring packages for C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Core\WyomingDotNet.Core.csproj...
+  GET https://api.nuget.org/v3-flatcontainer/ardalis.guardclauses/index.json
+  GET https://api.nuget.org/v3-flatcontainer/ardalis.smartenum/index.json
+Restoring packages for C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Infrastructure\WyomingDotNet.Infrastructure.csproj...
+  GET https://api.nuget.org/v3-flatcontainer/ardalis.result/index.json
+  GET https://api.nuget.org/v3-flatcontainer/mediatr/index.json
+  GET https://api.nuget.org/v3-flatcontainer/ardalis.sharedkernel/index.json
+Restoring packages for C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.FunctionalTests\WyomingDotNet.FunctionalTests.csproj...
+  GET https://api.nuget.org/v3-flatcontainer/mailkit/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlite/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlserver/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.relational/index.json
+Restoring packages for C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Web\WyomingDotNet.Web.csproj...
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.tools/index.json
+  GET https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.testing/index.json
+  GET https://api.nuget.org/v3-flatcontainer/xunit/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.inmemory/index.json
+  GET https://api.nuget.org/v3-flatcontainer/fluentassertions/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration.design/index.json
+  GET https://api.nuget.org/v3-flatcontainer/fastendpoints/index.json
+  GET https://api.nuget.org/v3-flatcontainer/serilog.aspnetcore/index.json
+  GET https://api.nuget.org/v3-flatcontainer/fastendpoints.swagger/index.json
+  GET https://api.nuget.org/v3-flatcontainer/ardalis.result.aspnetcore/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.relational/index.json 344ms
+  OK https://api.nuget.org/v3-flatcontainer/mediatr/index.json 355ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlserver/index.json 345ms
+  OK https://api.nuget.org/v3-flatcontainer/ardalis.guardclauses/index.json 359ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/index.json 335ms
+  OK https://api.nuget.org/v3-flatcontainer/mailkit/index.json 348ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration.design/index.json 330ms
+  OK https://api.nuget.org/v3-flatcontainer/fluentassertions/index.json 332ms
+  OK https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/index.json 341ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.inmemory/index.json 335ms
+  CACHE https://api.nuget.org/v3-flatcontainer/mediatr/index.json
+  GET https://api.nuget.org/v3-flatcontainer/mediatr/12.4.1/mediatr.12.4.1.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.relational/9.0.0/microsoft.entityframeworkcore.relational.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/ardalis.guardclauses/5.0.0/ardalis.guardclauses.5.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlserver/9.0.0/microsoft.entityframeworkcore.sqlserver.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/17.11.1/microsoft.net.test.sdk.17.11.1.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration.design/9.0.0/microsoft.visualstudio.web.codegeneration.design.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/fluentassertions/6.12.2/fluentassertions.6.12.2.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/mailkit/4.8.0/mailkit.4.8.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/2.8.2/xunit.runner.visualstudio.2.8.2.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.inmemory/9.0.0/microsoft.entityframeworkcore.inmemory.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/ardalis.result/index.json 395ms
+  CACHE https://api.nuget.org/v3-flatcontainer/ardalis.result/index.json
+  GET https://api.nuget.org/v3-flatcontainer/ardalis.result/10.1.0/ardalis.result.10.1.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.testing/index.json 507ms
+  OK https://api.nuget.org/v3-flatcontainer/fastendpoints.swagger/index.json 492ms
+  OK https://api.nuget.org/v3-flatcontainer/ardalis.sharedkernel/index.json 525ms
+  OK https://api.nuget.org/v3-flatcontainer/xunit/index.json 508ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.relational/9.0.0/microsoft.entityframeworkcore.relational.9.0.0.nupkg 149ms
+  OK https://api.nuget.org/v3-flatcontainer/mediatr/12.4.1/mediatr.12.4.1.nupkg 162ms
+  CACHE https://api.nuget.org/v3-flatcontainer/ardalis.sharedkernel/index.json
+  GET https://api.nuget.org/v3-flatcontainer/xunit/2.9.2/xunit.2.9.2.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/ardalis.sharedkernel/2.1.1/ardalis.sharedkernel.2.1.1.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/ardalis.guardclauses/5.0.0/ardalis.guardclauses.5.0.0.nupkg 165ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.testing/9.0.0/microsoft.aspnetcore.mvc.testing.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/fastendpoints.swagger/5.31.0/fastendpoints.swagger.5.31.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/mailkit/4.8.0/mailkit.4.8.0.nupkg 165ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/17.11.1/microsoft.net.test.sdk.17.11.1.nupkg 180ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.tools/index.json 553ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.inmemory/9.0.0/microsoft.entityframeworkcore.inmemory.9.0.0.nupkg 179ms
+  OK https://api.nuget.org/v3-flatcontainer/fluentassertions/6.12.2/fluentassertions.6.12.2.nupkg 188ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.tools/9.0.0/microsoft.entityframeworkcore.tools.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/2.8.2/xunit.runner.visualstudio.2.8.2.nupkg 316ms
+  OK https://api.nuget.org/v3-flatcontainer/ardalis.smartenum/index.json 758ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration.design/9.0.0/microsoft.visualstudio.web.codegeneration.design.9.0.0.nupkg 375ms
+  GET https://api.nuget.org/v3-flatcontainer/ardalis.smartenum/8.1.0/ardalis.smartenum.8.1.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlite/index.json 756ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlserver/9.0.0/microsoft.entityframeworkcore.sqlserver.9.0.0.nupkg 386ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlite/9.0.0/microsoft.entityframeworkcore.sqlite.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/index.json 749ms
+  OK https://api.nuget.org/v3-flatcontainer/serilog.aspnetcore/index.json 759ms
+  OK https://api.nuget.org/v3-flatcontainer/ardalis.result/10.1.0/ardalis.result.10.1.0.nupkg 391ms
+  OK https://api.nuget.org/v3-flatcontainer/ardalis.result.aspnetcore/index.json 753ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/9.0.0/microsoft.entityframeworkcore.design.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/serilog.aspnetcore/8.0.3/serilog.aspnetcore.8.0.3.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/ardalis.result.aspnetcore/10.1.0/ardalis.result.aspnetcore.10.1.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/fastendpoints/index.json 826ms
+  GET https://api.nuget.org/v3-flatcontainer/fastendpoints/5.31.0/fastendpoints.5.31.0.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/mediatr/12.4.1/mediatr.12.4.1.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/ardalis.sharedkernel/2.1.1/ardalis.sharedkernel.2.1.1.nupkg 373ms
+  OK https://api.nuget.org/v3-flatcontainer/fastendpoints.swagger/5.31.0/fastendpoints.swagger.5.31.0.nupkg 376ms
+  CACHE https://api.nuget.org/v3-flatcontainer/ardalis.sharedkernel/2.1.1/ardalis.sharedkernel.2.1.1.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.testing/9.0.0/microsoft.aspnetcore.mvc.testing.9.0.0.nupkg 417ms
+  OK https://api.nuget.org/v3-flatcontainer/xunit/2.9.2/xunit.2.9.2.nupkg 438ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.tools/9.0.0/microsoft.entityframeworkcore.tools.9.0.0.nupkg 449ms
+  OK https://api.nuget.org/v3-flatcontainer/ardalis.smartenum/8.1.0/ardalis.smartenum.8.1.0.nupkg 683ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/9.0.0/microsoft.entityframeworkcore.design.9.0.0.nupkg 644ms
+  OK https://api.nuget.org/v3-flatcontainer/ardalis.result.aspnetcore/10.1.0/ardalis.result.aspnetcore.10.1.0.nupkg 643ms
+  OK https://api.nuget.org/v3-flatcontainer/fastendpoints/5.31.0/fastendpoints.5.31.0.nupkg 580ms
+  OK https://api.nuget.org/v3-flatcontainer/serilog.aspnetcore/8.0.3/serilog.aspnetcore.8.0.3.nupkg 646ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlite/9.0.0/microsoft.entityframeworkcore.sqlite.9.0.0.nupkg 682ms
+  CACHE https://api.nuget.org/v3-flatcontainer/ardalis.result/10.1.0/ardalis.result.10.1.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegenerators.mvc/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.dotnet.scaffolding.shared/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.build/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/index.json
+  GET https://api.nuget.org/v3-flatcontainer/mono.texttemplating/index.json
+  GET https://api.nuget.org/v3-flatcontainer/nuget.packaging/index.json
+  GET https://api.nuget.org/v3-flatcontainer/nuget.projectmodel/index.json
+  GET https://api.nuget.org/v3-flatcontainer/system.formats.asn1/index.json
+  GET https://api.nuget.org/v3-flatcontainer/system.security.cryptography.protecteddata/index.json
+Installed MediatR 12.4.1 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\mediatr\12.4.1 with content hash 0tLxCgEC5+r1OCuumR3sWyiVa+BMv3AgiU4+pz8xqTc+2q1WbUEXFOr7Orm96oZ9r9FsldgUtWvB2o7b9jDOaw==.
+Installed Ardalis.SharedKernel 2.1.1 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\ardalis.sharedkernel\2.1.1 with content hash U/EWM5GBQcIFZdJejBYKzm5cFday4cTObAKoMrYwerz9HkTMEJfmr1rgHpvhy5xH0rNpttGxGBqkbfiwpjIrtQ==.
+Installed Ardalis.Result 10.1.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\ardalis.result\10.1.0 with content hash +WgsXh+JRm0d8BZPlBUc5w0+FTda4vbWRa/IF2q4zDoRsU5BXr8w4rTbYEklZIMNgQQZTcNouR/QfBV5I/4XYQ==.
+Installed Ardalis.SmartEnum 8.1.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\ardalis.smartenum\8.1.0 with content hash +OpcDNwgfwdKEhEwq6U5lrXiBpdA3LxfZR7nTtF6vzbkXc1hKa2Uv/rHduzxwNLYrzOfR/7QUVyjWTliSS7pOA==.
+Installed Ardalis.GuardClauses 5.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\ardalis.guardclauses\5.0.0 with content hash jVPRvLw0xIUFto2cMrKgRYADWIHbEEfzZHGiU/swwNgl1zo28Q1zfSa3VUC3C0s9DyhFDPSaF4dEDQRyTZUcyQ==.
+  CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/2024.11.16.17.25.48/vulnerability.update.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegenerators.mvc/index.json 348ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.dotnet.scaffolding.shared/index.json 352ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegenerators.mvc/9.0.0/microsoft.visualstudio.web.codegenerators.mvc.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.dotnet.scaffolding.shared/9.0.0/microsoft.dotnet.scaffolding.shared.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.dotnet.scaffolding.shared/9.0.0/microsoft.dotnet.scaffolding.shared.9.0.0.nupkg 274ms
+  GET https://api.nuget.org/v3-flatcontainer/fastendpoints.attributes/index.json
+  GET https://api.nuget.org/v3-flatcontainer/fastendpoints.messaging.core/index.json
+  GET https://api.nuget.org/v3-flatcontainer/fluentvalidation/index.json
+  GET https://api.nuget.org/v3-flatcontainer/serilog.settings.configuration/index.json
+  GET https://api.nuget.org/v3-flatcontainer/nswag.aspnetcore/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.relational/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.build.locator/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.workspaces.msbuild/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.memory/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.relational/9.0.0/microsoft.entityframeworkcore.relational.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/system.text.json/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegenerators.mvc/9.0.0/microsoft.visualstudio.web.codegenerators.mvc.9.0.0.nupkg 453ms
+  OK https://api.nuget.org/v3-flatcontainer/fastendpoints.attributes/index.json 188ms
+  GET https://api.nuget.org/v3-flatcontainer/fastendpoints.attributes/5.31.0/fastendpoints.attributes.5.31.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/fastendpoints.messaging.core/index.json 199ms
+  OK https://api.nuget.org/v3-flatcontainer/fluentvalidation/index.json 197ms
+  GET https://api.nuget.org/v3-flatcontainer/fastendpoints.messaging.core/5.31.0/fastendpoints.messaging.core.5.31.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/fluentvalidation/11.10.0/fluentvalidation.11.10.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/nuget.packaging/index.json 1078ms
+  OK https://api.nuget.org/v3-flatcontainer/nuget.projectmodel/index.json 1077ms
+  GET https://api.nuget.org/v3-flatcontainer/nuget.projectmodel/6.11.0/nuget.projectmodel.6.11.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/nuget.packaging/6.11.0/nuget.packaging.6.11.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.build/index.json 1159ms
+  OK https://api.nuget.org/v3-flatcontainer/serilog.settings.configuration/index.json 446ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.build/17.10.4/microsoft.build.17.10.4.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/serilog.settings.configuration/8.0.4/serilog.settings.configuration.8.0.4.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/index.json 1303ms
+  OK https://api.nuget.org/v3-flatcontainer/system.formats.asn1/index.json 1296ms
+  OK https://api.nuget.org/v3-flatcontainer/fastendpoints.attributes/5.31.0/fastendpoints.attributes.5.31.0.nupkg 418ms
+  OK https://api.nuget.org/v3-flatcontainer/fastendpoints.messaging.core/5.31.0/fastendpoints.messaging.core.5.31.0.nupkg 406ms
+  OK https://api.nuget.org/v3-flatcontainer/fluentvalidation/11.10.0/fluentvalidation.11.10.0.nupkg 407ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/9.0.0-rc.2.24473.5/microsoft.extensions.dependencymodel.9.0.0-rc.2.24473.5.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/9.0.0/microsoft.extensions.dependencymodel.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/system.formats.asn1/9.0.0-rc.2.24473.5/system.formats.asn1.9.0.0-rc.2.24473.5.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/nuget.packaging/6.11.0/nuget.packaging.6.11.0.nupkg 561ms
+  OK https://api.nuget.org/v3-flatcontainer/nuget.projectmodel/6.11.0/nuget.projectmodel.6.11.0.nupkg 576ms
+  OK https://api.nuget.org/v3-flatcontainer/serilog.settings.configuration/8.0.4/serilog.settings.configuration.8.0.4.nupkg 607ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.build/17.10.4/microsoft.build.17.10.4.nupkg 610ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.testhost/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.codecoverage/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/index.json
+  GET https://api.nuget.org/v3-flatcontainer/xunit.core/index.json
+  GET https://api.nuget.org/v3-flatcontainer/xunit.assert/index.json
+  GET https://api.nuget.org/v3-flatcontainer/xunit.analyzers/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.testhost/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/index.json
+  OK https://api.nuget.org/v3-flatcontainer/system.formats.asn1/9.0.0-rc.2.24473.5/system.formats.asn1.9.0.0-rc.2.24473.5.nupkg 723ms
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/vulnerability.base.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/9.0.0-rc.2.24473.5/microsoft.extensions.dependencymodel.9.0.0-rc.2.24473.5.nupkg 752ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/9.0.0/microsoft.extensions.dependencymodel.9.0.0.nupkg 753ms
+Restoring packages for C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.IntegrationTests\WyomingDotNet.IntegrationTests.csproj...
+  GET https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.testing/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/index.json
+  GET https://api.nuget.org/v3-flatcontainer/xunit/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.inmemory/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.testhost/index.json 548ms
+  OK https://api.nuget.org/v3-flatcontainer/xunit.analyzers/index.json 542ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/index.json 546ms
+  OK https://api.nuget.org/v3-flatcontainer/xunit.core/index.json 544ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.codecoverage/index.json 547ms
+  OK https://api.nuget.org/v3-flatcontainer/xunit.assert/index.json 544ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.testhost/17.11.1/microsoft.testplatform.testhost.17.11.1.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/xunit.core/2.9.2/xunit.core.2.9.2.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/xunit.analyzers/1.16.0/xunit.analyzers.1.16.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/9.0.0/microsoft.entityframeworkcore.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/xunit.assert/2.9.2/xunit.assert.2.9.2.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.codecoverage/17.11.1/microsoft.codecoverage.17.11.1.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.memory/index.json 1838ms
+  OK https://api.nuget.org/v3-flatcontainer/mono.texttemplating/index.json 2557ms
+  OK https://api.nuget.org/v3-flatcontainer/system.text.json/index.json 1835ms
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.memory/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.memory/9.0.0/microsoft.extensions.caching.memory.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/mono.texttemplating/3.0.0/mono.texttemplating.3.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/system.text.json/9.0.0/system.text.json.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.workspaces.msbuild/index.json 1927ms
+  OK https://api.nuget.org/v3-flatcontainer/nswag.aspnetcore/index.json 1942ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.workspaces.msbuild/4.8.0/microsoft.codeanalysis.workspaces.msbuild.4.8.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/nswag.aspnetcore/14.1.0/nswag.aspnetcore.14.1.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.build.locator/index.json 1944ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.build.locator/1.7.8/microsoft.build.locator.1.7.8.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.testhost/17.11.1/microsoft.testplatform.testhost.17.11.1.nupkg 553ms
+  OK https://api.nuget.org/v3-flatcontainer/xunit.assert/2.9.2/xunit.assert.2.9.2.nupkg 548ms
+  OK https://api.nuget.org/v3-flatcontainer/xunit.core/2.9.2/xunit.core.2.9.2.nupkg 552ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/9.0.0/microsoft.entityframeworkcore.9.0.0.nupkg 549ms
+  OK https://api.nuget.org/v3-flatcontainer/xunit.analyzers/1.16.0/xunit.analyzers.1.16.0.nupkg 552ms
+  OK https://api.nuget.org/v3-flatcontainer/system.text.json/9.0.0/system.text.json.9.0.0.nupkg 1020ms
+  OK https://api.nuget.org/v3-flatcontainer/mono.texttemplating/3.0.0/mono.texttemplating.3.0.0.nupkg 1069ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.memory/9.0.0/microsoft.extensions.caching.memory.9.0.0.nupkg 1081ms
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.memory/9.0.0/microsoft.extensions.caching.memory.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/nswag.aspnetcore/14.1.0/nswag.aspnetcore.14.1.0.nupkg 1194ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.workspaces.msbuild/4.8.0/microsoft.codeanalysis.workspaces.msbuild.4.8.0.nupkg 1204ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.build.locator/1.7.8/microsoft.build.locator.1.7.8.nupkg 1228ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection/index.json 4415ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.codecoverage/17.11.1/microsoft.codecoverage.17.11.1.nupkg 1941ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection/9.0.0-rc.2.24473.5/microsoft.extensions.dependencyinjection.9.0.0-rc.2.24473.5.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/system.security.cryptography.protecteddata/index.json 4424ms
+  GET https://api.nuget.org/v3-flatcontainer/system.security.cryptography.protecteddata/8.0.0/system.security.cryptography.protecteddata.8.0.0.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/system.formats.asn1/index.json
+  GET https://api.nuget.org/v3-flatcontainer/mimekit/index.json
+  GET https://api.nuget.org/v3-flatcontainer/system.formats.asn1/8.0.1/system.formats.asn1.8.0.1.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlclient/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.memory/index.json
+  GET https://api.nuget.org/v3-flatcontainer/system.formats.asn1/9.0.0/system.formats.asn1.9.0.0.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/system.text.json/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.memory/9.0.0/microsoft.extensions.caching.memory.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlite.core/index.json
+  GET https://api.nuget.org/v3-flatcontainer/sqlitepclraw.bundle_e_sqlite3/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/index.json
+  GET https://api.nuget.org/v3-flatcontainer/sqlitepclraw.core/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/9.0.0/microsoft.entityframeworkcore.design.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/xunit/index.json 2465ms
+  GET https://api.nuget.org/v3-flatcontainer/xunit/2.9.2/xunit.2.9.2.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection/9.0.0-rc.2.24473.5/microsoft.extensions.dependencyinjection.9.0.0-rc.2.24473.5.nupkg 1469ms
+  OK https://api.nuget.org/v3-flatcontainer/system.security.cryptography.protecteddata/8.0.0/system.security.cryptography.protecteddata.8.0.0.nupkg 1513ms
+  OK https://api.nuget.org/v3-flatcontainer/system.formats.asn1/8.0.1/system.formats.asn1.8.0.1.nupkg 1535ms
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/9.0.0/microsoft.extensions.dependencymodel.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/system.formats.asn1/9.0.0/system.formats.asn1.9.0.0.nupkg 1522ms
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/9.0.0/microsoft.extensions.dependencymodel.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlclient/index.json 1556ms
+  OK https://api.nuget.org/v3-flatcontainer/mimekit/index.json 1574ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.testhost/index.json 4137ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlite.core/index.json 1545ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlclient/5.1.6/microsoft.data.sqlclient.5.1.6.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.testhost/9.0.0/microsoft.aspnetcore.testhost.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/mimekit/4.8.0/mimekit.4.8.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlite.core/9.0.0/microsoft.entityframeworkcore.sqlite.core.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/xunit/2.9.2/xunit.2.9.2.nupkg 1433ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.inmemory/index.json 3918ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.testing/index.json 3923ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.inmemory/9.0.0/microsoft.entityframeworkcore.inmemory.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.testing/9.0.0/microsoft.aspnetcore.mvc.testing.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/index.json 3940ms
+  OK https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/index.json 3943ms
+  GET https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/2.8.2/xunit.runner.visualstudio.2.8.2.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/17.11.1/microsoft.net.test.sdk.17.11.1.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlclient/5.1.6/microsoft.data.sqlclient.5.1.6.nupkg 435ms
+  OK https://api.nuget.org/v3-flatcontainer/mimekit/4.8.0/mimekit.4.8.0.nupkg 457ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.testhost/9.0.0/microsoft.aspnetcore.testhost.9.0.0.nupkg 469ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlite.core/9.0.0/microsoft.entityframeworkcore.sqlite.core.9.0.0.nupkg 483ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.mvc.testing/9.0.0/microsoft.aspnetcore.mvc.testing.9.0.0.nupkg 590ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.inmemory/9.0.0/microsoft.entityframeworkcore.inmemory.9.0.0.nupkg 599ms
+  OK https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/2.8.2/xunit.runner.visualstudio.2.8.2.nupkg 587ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/17.11.1/microsoft.net.test.sdk.17.11.1.nupkg 592ms
+  CACHE https://api.nuget.org/v3-flatcontainer/system.text.json/9.0.0/system.text.json.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/sqlitepclraw.bundle_e_sqlite3/index.json 3299ms
+  GET https://api.nuget.org/v3-flatcontainer/sqlitepclraw.bundle_e_sqlite3/2.1.10/sqlitepclraw.bundle_e_sqlite3.2.1.10.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/sqlitepclraw.core/index.json 3320ms
+  GET https://api.nuget.org/v3-flatcontainer/sqlitepclraw.core/2.1.10/sqlitepclraw.core.2.1.10.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/9.0.0/microsoft.entityframeworkcore.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.objectmodel/index.json
+  OK https://api.nuget.org/v3-flatcontainer/sqlitepclraw.bundle_e_sqlite3/2.1.10/sqlitepclraw.bundle_e_sqlite3.2.1.10.nupkg 450ms
+  OK https://api.nuget.org/v3-flatcontainer/sqlitepclraw.core/2.1.10/sqlitepclraw.core.2.1.10.nupkg 460ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.objectmodel/index.json 361ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.objectmodel/17.11.1/microsoft.testplatform.objectmodel.17.11.1.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.objectmodel/17.11.1/microsoft.testplatform.objectmodel.17.11.1.nupkg 312ms
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.testhost/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.codecoverage/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.memory/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.testhost/17.11.1/microsoft.testplatform.testhost.17.11.1.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/9.0.0/microsoft.entityframeworkcore.9.0.0.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.memory/9.0.0/microsoft.extensions.caching.memory.9.0.0.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/xunit.core/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/xunit.assert/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/xunit.analyzers/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.testhost/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/xunit.core/2.9.2/xunit.core.2.9.2.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/xunit.analyzers/1.16.0/xunit.analyzers.1.16.0.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/xunit.assert/2.9.2/xunit.assert.2.9.2.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.testhost/9.0.0/microsoft.aspnetcore.testhost.9.0.0.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.objectmodel/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/index.json 180ms
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/9.0.0/microsoft.extensions.dependencymodel.9.0.0.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.objectmodel/17.11.1/microsoft.testplatform.objectmodel.17.11.1.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration/index.json
+  GET https://api.nuget.org/v3-flatcontainer/bouncycastle.cryptography/index.json
+  GET https://api.nuget.org/v3-flatcontainer/azure.identity/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.identity.client/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlite.core/index.json
+  GET https://api.nuget.org/v3-flatcontainer/sqlitepclraw.provider.e_sqlite3/index.json
+  GET https://api.nuget.org/v3-flatcontainer/sqlitepclraw.lib.e_sqlite3/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.abstractions/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.analyzers/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.build.locator/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.workspaces.msbuild/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.build.locator/1.7.8/microsoft.build.locator.1.7.8.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/mono.texttemplating/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.workspaces.msbuild/4.8.0/microsoft.codeanalysis.workspaces.msbuild.4.8.0.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/mono.texttemplating/3.0.0/mono.texttemplating.3.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.build.framework/index.json
+  GET https://api.nuget.org/v3-flatcontainer/system.collections.immutable/index.json
+  GET https://api.nuget.org/v3-flatcontainer/system.configuration.configurationmanager/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration/index.json 73ms
+  OK https://api.nuget.org/v3-flatcontainer/bouncycastle.cryptography/index.json 72ms
+  GET https://api.nuget.org/v3-flatcontainer/system.reflection.metadataloadcontext/index.json
+  GET https://api.nuget.org/v3-flatcontainer/system.threading.tasks.dataflow/index.json
+  GET https://api.nuget.org/v3-flatcontainer/system.reflection.metadata/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.identity.client/index.json 74ms
+  GET https://api.nuget.org/v3-flatcontainer/bouncycastle.cryptography/2.4.0/bouncycastle.cryptography.2.4.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.net.stringtools/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/index.json 60ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlite.core/index.json 57ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.identity.client/4.61.3/microsoft.identity.client.4.61.3.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration/9.0.0/microsoft.visualstudio.web.codegeneration.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/9.0.0/microsoft.extensions.caching.abstractions.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlite.core/9.0.0/microsoft.data.sqlite.core.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/index.json
+  GET https://api.nuget.org/v3-flatcontainer/system.codedom/index.json
+  GET https://api.nuget.org/v3-flatcontainer/nuget.configuration/index.json
+  GET https://api.nuget.org/v3-flatcontainer/nuget.versioning/index.json
+  GET https://api.nuget.org/v3-flatcontainer/nuget.dependencyresolver.core/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/8.0.2/microsoft.extensions.dependencymodel.8.0.2.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/nswag.annotations/index.json
+  GET https://api.nuget.org/v3-flatcontainer/nswag.core/index.json
+  GET https://api.nuget.org/v3-flatcontainer/nswag.core.yaml/index.json
+  GET https://api.nuget.org/v3-flatcontainer/nswag.generation.aspnetcore/index.json
+  GET https://api.nuget.org/v3-flatcontainer/nswag.generation/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/9.0.0/microsoft.entityframeworkcore.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/bouncycastle.cryptography/2.4.0/bouncycastle.cryptography.2.4.0.nupkg 108ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.identity.client/4.61.3/microsoft.identity.client.4.61.3.nupkg 138ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/9.0.0/microsoft.extensions.caching.abstractions.9.0.0.nupkg 141ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlite.core/9.0.0/microsoft.data.sqlite.core.9.0.0.nupkg 162ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.net.stringtools/index.json 181ms
+  OK https://api.nuget.org/v3-flatcontainer/system.reflection.metadataloadcontext/index.json 188ms
+  OK https://api.nuget.org/v3-flatcontainer/system.configuration.configurationmanager/index.json 190ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.build.framework/index.json 195ms
+  OK https://api.nuget.org/v3-flatcontainer/system.reflection.metadata/index.json 185ms
+  OK https://api.nuget.org/v3-flatcontainer/sqlitepclraw.provider.e_sqlite3/index.json 236ms
+  OK https://api.nuget.org/v3-flatcontainer/system.codedom/index.json 152ms
+  OK https://api.nuget.org/v3-flatcontainer/nuget.dependencyresolver.core/index.json 147ms
+  OK https://api.nuget.org/v3-flatcontainer/nswag.annotations/index.json 138ms
+  OK https://api.nuget.org/v3-flatcontainer/nswag.core/index.json 138ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.net.stringtools/17.10.4/microsoft.net.stringtools.17.10.4.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/system.configuration.configurationmanager/8.0.0/system.configuration.configurationmanager.8.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.build.framework/17.10.4/microsoft.build.framework.17.10.4.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.build.framework/16.10.0/microsoft.build.framework.16.10.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/system.reflection.metadata/8.0.0/system.reflection.metadata.8.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/nswag.generation/index.json 181ms
+  GET https://api.nuget.org/v3-flatcontainer/sqlitepclraw.provider.e_sqlite3/2.1.10/sqlitepclraw.provider.e_sqlite3.2.1.10.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/system.codedom/6.0.0/system.codedom.6.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/nuget.dependencyresolver.core/6.11.0/nuget.dependencyresolver.core.6.11.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/nswag.core/14.1.0/nswag.core.14.1.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/nswag.annotations/14.1.0/nswag.annotations.14.1.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/nswag.generation/14.1.0/nswag.generation.14.1.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/nuget.versioning/index.json 220ms
+  GET https://api.nuget.org/v3-flatcontainer/nuget.versioning/6.11.0/nuget.versioning.6.11.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/nuget.configuration/index.json 242ms
+  GET https://api.nuget.org/v3-flatcontainer/nuget.configuration/6.11.0/nuget.configuration.6.11.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/nswag.generation.aspnetcore/index.json 258ms
+  OK https://api.nuget.org/v3-flatcontainer/nswag.core.yaml/index.json 263ms
+  GET https://api.nuget.org/v3-flatcontainer/nswag.generation.aspnetcore/14.1.0/nswag.generation.aspnetcore.14.1.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration/9.0.0/microsoft.visualstudio.web.codegeneration.9.0.0.nupkg 314ms
+  GET https://api.nuget.org/v3-flatcontainer/nswag.core.yaml/14.1.0/nswag.core.yaml.14.1.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/8.0.2/microsoft.extensions.dependencymodel.8.0.2.nupkg 286ms
+  OK https://api.nuget.org/v3-flatcontainer/system.threading.tasks.dataflow/index.json 361ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.abstractions/index.json 402ms
+  OK https://api.nuget.org/v3-flatcontainer/system.collections.immutable/index.json 373ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.net.stringtools/17.10.4/microsoft.net.stringtools.17.10.4.nupkg 133ms
+  GET https://api.nuget.org/v3-flatcontainer/system.threading.tasks.dataflow/8.0.0/system.threading.tasks.dataflow.8.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.abstractions/9.0.0/microsoft.entityframeworkcore.abstractions.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/system.collections.immutable/8.0.0/system.collections.immutable.8.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/system.configuration.configurationmanager/8.0.0/system.configuration.configurationmanager.8.0.0.nupkg 156ms
+  OK https://api.nuget.org/v3-flatcontainer/sqlitepclraw.provider.e_sqlite3/2.1.10/sqlitepclraw.provider.e_sqlite3.2.1.10.nupkg 166ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.build.framework/16.10.0/microsoft.build.framework.16.10.0.nupkg 177ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.build.framework/17.10.4/microsoft.build.framework.17.10.4.nupkg 192ms
+  OK https://api.nuget.org/v3-flatcontainer/nuget.dependencyresolver.core/6.11.0/nuget.dependencyresolver.core.6.11.0.nupkg 211ms
+  OK https://api.nuget.org/v3-flatcontainer/system.codedom/6.0.0/system.codedom.6.0.0.nupkg 218ms
+  OK https://api.nuget.org/v3-flatcontainer/nswag.annotations/14.1.0/nswag.annotations.14.1.0.nupkg 224ms
+  OK https://api.nuget.org/v3-flatcontainer/nswag.core/14.1.0/nswag.core.14.1.0.nupkg 228ms
+  OK https://api.nuget.org/v3-flatcontainer/azure.identity/index.json 554ms
+  GET https://api.nuget.org/v3-flatcontainer/azure.identity/1.11.4/azure.identity.1.11.4.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/nuget.versioning/6.11.0/nuget.versioning.6.11.0.nupkg 235ms
+  OK https://api.nuget.org/v3-flatcontainer/nuget.configuration/6.11.0/nuget.configuration.6.11.0.nupkg 273ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.analyzers/index.json 706ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.analyzers/9.0.0/microsoft.entityframeworkcore.analyzers.9.0.0.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/9.0.0/microsoft.extensions.caching.abstractions.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/nswag.core.yaml/14.1.0/nswag.core.yaml.14.1.0.nupkg 389ms
+  OK https://api.nuget.org/v3-flatcontainer/nswag.generation.aspnetcore/14.1.0/nswag.generation.aspnetcore.14.1.0.nupkg 399ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration.entityframeworkcore/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.abstractions/9.0.0/microsoft.entityframeworkcore.abstractions.9.0.0.nupkg 383ms
+  OK https://api.nuget.org/v3-flatcontainer/system.threading.tasks.dataflow/8.0.0/system.threading.tasks.dataflow.8.0.0.nupkg 396ms
+  OK https://api.nuget.org/v3-flatcontainer/system.collections.immutable/8.0.0/system.collections.immutable.8.0.0.nupkg 394ms
+  OK https://api.nuget.org/v3-flatcontainer/system.reflection.metadata/8.0.0/system.reflection.metadata.8.0.0.nupkg 775ms
+  OK https://api.nuget.org/v3-flatcontainer/azure.identity/1.11.4/azure.identity.1.11.4.nupkg 544ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.analyzers/9.0.0/microsoft.entityframeworkcore.analyzers.9.0.0.nupkg 444ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration.entityframeworkcore/index.json 562ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration.entityframeworkcore/9.0.0/microsoft.visualstudio.web.codegeneration.entityframeworkcore.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration.entityframeworkcore/9.0.0/microsoft.visualstudio.web.codegeneration.entityframeworkcore.9.0.0.nupkg 174ms
+  OK https://api.nuget.org/v3-flatcontainer/nswag.generation/14.1.0/nswag.generation.14.1.0.nupkg 1354ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/index.json 1899ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/9.0.0-rc.2.24473.5/microsoft.extensions.dependencyinjection.abstractions.9.0.0-rc.2.24473.5.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/9.0.0-rc.2.24473.5/microsoft.extensions.dependencyinjection.abstractions.9.0.0-rc.2.24473.5.nupkg 219ms
+  OK https://api.nuget.org/v3-flatcontainer/sqlitepclraw.lib.e_sqlite3/index.json 2553ms
+  GET https://api.nuget.org/v3-flatcontainer/sqlitepclraw.lib.e_sqlite3/2.1.10/sqlitepclraw.lib.e_sqlite3.2.1.10.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.codecoverage/17.11.1/microsoft.codecoverage.17.11.1.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.abstractions/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.analyzers/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.abstractions/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.abstractions/9.0.0/microsoft.entityframeworkcore.abstractions.9.0.0.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.analyzers/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.analyzers/9.0.0/microsoft.entityframeworkcore.analyzers.9.0.0.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/9.0.0/microsoft.extensions.caching.abstractions.9.0.0.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.abstractions/9.0.0/microsoft.entityframeworkcore.abstractions.9.0.0.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.analyzers/9.0.0/microsoft.entityframeworkcore.analyzers.9.0.0.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/9.0.0/microsoft.extensions.caching.abstractions.9.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/xunit.extensibility.core/index.json
+  GET https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/index.json
+  OK https://api.nuget.org/v3-flatcontainer/sqlitepclraw.lib.e_sqlite3/2.1.10/sqlitepclraw.lib.e_sqlite3.2.1.10.nupkg 130ms
+  OK https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/index.json 188ms
+  CACHE https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/index.json
+  GET https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/2.9.2/xunit.extensibility.execution.2.9.2.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/xunit.extensibility.core/index.json 282ms
+  CACHE https://api.nuget.org/v3-flatcontainer/xunit.extensibility.core/index.json
+  GET https://api.nuget.org/v3-flatcontainer/xunit.extensibility.core/2.9.2/xunit.extensibility.core.2.9.2.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/2.9.2/xunit.extensibility.execution.2.9.2.nupkg 229ms
+  OK https://api.nuget.org/v3-flatcontainer/xunit.extensibility.core/2.9.2/xunit.extensibility.core.2.9.2.nupkg 255ms
+  CACHE https://api.nuget.org/v3-flatcontainer/xunit.extensibility.core/2.9.2/xunit.extensibility.core.2.9.2.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/system.reflection.metadataloadcontext/8.0.0/system.reflection.metadataloadcontext.8.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/system.reflection.metadataloadcontext/8.0.0/system.reflection.metadataloadcontext.8.0.0.nupkg 158ms
+  CACHE https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/2.9.2/xunit.extensibility.execution.2.9.2.nupkg
+Installed Microsoft.EntityFrameworkCore.Abstractions 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.entityframeworkcore.abstractions\9.0.0 with content hash fnmifFL8KaA4ZNLCVgfjCWhZUFxkrDInx5hR4qG7Q8IEaSiy/6VOSRFyx55oH7MV4y7wM3J3EE90nSpcVBI44Q==.
+Installed Microsoft.EntityFrameworkCore.Analyzers 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.entityframeworkcore.analyzers\9.0.0 with content hash Qje+DzXJOKiXF72SL0XxNlDtTkvWWvmwknuZtFahY5hIQpRKO59qnGuERIQ3qlzuq5x4bAJ8WMbgU5DLhBgeOQ==.
+Installed Microsoft.AspNetCore.TestHost 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.aspnetcore.testhost\9.0.0 with content hash T5t8Qac05kJtFzsBxo+B3p0UcLNTRoWQf/1EbpaVBw9d7w2xL6RKYh0mqG+rPn2rulJDKeU3VfAd+r/YHdaKBg==.
+Installed Microsoft.AspNetCore.Mvc.Testing 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.aspnetcore.mvc.testing\9.0.0 with content hash 4tyGN2cb2lVqMwqPhDhXAkTtSci8RJ0cFKVHEU3yj6I4krcbyQE6SJmAQr5Hq8ARyVopKUrQp/qniDje/1I07A==.
+Installed Microsoft.Extensions.DependencyModel 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.dependencymodel\9.0.0 with content hash saxr2XzwgDU77LaQfYFXmddEDRUKHF4DaGMZkNB3qjdVSZlax3//dGJagJkKrGMIPNZs2jVFXITyCCR6UHJNdA==.
+Installed Microsoft.Extensions.Caching.Abstractions 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.caching.abstractions\9.0.0 with content hash FPWZAa9c0H4dvOj351iR1jkUIs4u9ykL4Bm592yhjDyO5lCoWd+TMAHx2EMbarzUvCvgjWjJIoC6//Q9kH6YhA==.
+Installed Microsoft.Extensions.Caching.Memory 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.caching.memory\9.0.0 with content hash zbnPX/JQ0pETRSUG9fNPBvpIq42Aufvs15gGYyNIMhCun9yhmWihz0WgsI7bSDPjxWTKBf8oX/zv6v2uZ3W9OQ==.
+Installed xunit 2.9.2 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\xunit\2.9.2 with content hash 7LhFS2N9Z6Xgg8aE5lY95cneYivRMfRI8v+4PATa4S64D5Z/Plkg0qa8dTRHSiGRgVZ/CL2gEfJDE5AUhOX+2Q==.
+Installed Microsoft.EntityFrameworkCore.InMemory 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.entityframeworkcore.inmemory\9.0.0 with content hash Pm4NBnv3aB8O5bBNwWRkL4a/H+3WdgKRKYD93FkR9TrUNb0jfns9JVN5w9WEUsQCm0C69Eg2Y85i8pdmSfaNnQ==.
+Installed Microsoft.EntityFrameworkCore 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.entityframeworkcore\9.0.0 with content hash wpG+nfnfDAw87R3ovAsUmjr3MZ4tYXf6bFqEPVAIKE6IfPml3DS//iX0DBnf8kWn5ZHSO5oi1m4d/Jf+1LifJQ==.
+Installed xunit.analyzers 1.16.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\xunit.analyzers\1.16.0 with content hash hptYM7vGr46GUIgZt21YHO4rfuBAQS2eINbFo16CV/Dqq+24Tp+P5gDCACu1AbFfW4Sp/WRfDPSK8fmUUb8s0Q==.
+Installed xunit.extensibility.core 2.9.2 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\xunit.extensibility.core\2.9.2 with content hash Ol+KlBJz1x8BrdnhN2DeOuLrr1I/cTwtHCggL9BvYqFuVd/TUSzxNT5O0NxCIXth30bsKxgMfdqLTcORtM52yQ==.
+Installed xunit.extensibility.execution 2.9.2 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\xunit.extensibility.execution\2.9.2 with content hash rKMpq4GsIUIJibXuZoZ8lYp5EpROlnYaRpwu9Zr0sRZXE7JqJfEEbCsUriZqB+ByXCLFBJyjkTRULMdC+U566g==.
+Installed xunit.core 2.9.2 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\xunit.core\2.9.2 with content hash O6RrNSdmZ0xgEn5kT927PNwog5vxTtKrWMihhhrT0Sg9jQ7iBDciYOwzBgP2krBEk5/GBXI18R1lKvmnxGcb4w==.
+Installed xunit.assert 2.9.2 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\xunit.assert\2.9.2 with content hash QkNBAQG4pa66cholm28AxijBjrmki98/vsEh4Sx5iplzotvPgpiotcxqJQMRC8d7RV7nIT8ozh97957hDnZwsQ==.
+Installed Microsoft.NET.Test.Sdk 17.11.1 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.net.test.sdk\17.11.1 with content hash U3Ty4BaGoEu+T2bwSko9tWqWUOU16WzSFkq6U8zve75oRBMSLTBdMAZrVNNz1Tq12aCdDom9fcOcM9QZaFHqFg==.
+Installed xunit.runner.visualstudio 2.8.2 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\xunit.runner.visualstudio\2.8.2 with content hash vm1tbfXhFmjFMUmS4M0J0ASXz3/U5XvXBa6DOQUL3fEz4Vt6YPhv+ESCarx6M6D+9kJkJYZKCNvJMas1+nVfmQ==.
+  GET https://api.nuget.org/v3-flatcontainer/nuget.common/index.json
+  GET https://api.nuget.org/v3-flatcontainer/system.formats.asn1/6.0.0/system.formats.asn1.6.0.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/nuget.librarymodel/index.json
+  GET https://api.nuget.org/v3-flatcontainer/nuget.protocol/index.json
+  GET https://api.nuget.org/v3-flatcontainer/njsonschema/index.json
+  GET https://api.nuget.org/v3-flatcontainer/njsonschema.yaml/index.json
+  GET https://api.nuget.org/v3-flatcontainer/njsonschema.newtonsoftjson/index.json
+Installed FluentAssertions 6.12.2 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\fluentassertions\6.12.2 with content hash 8YE+xJmT8wgzEpFuzJ4S62oFhEL/AKouMz1RWPEMEUhy9H11aRQlGIWcHurH5BEy7tbF6gb0CJrs0wOw/AtDcQ==.
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration.core/index.json
+  OK https://api.nuget.org/v3-flatcontainer/system.formats.asn1/6.0.0/system.formats.asn1.6.0.0.nupkg 53ms
+  OK https://api.nuget.org/v3-flatcontainer/njsonschema.newtonsoftjson/index.json 67ms
+  OK https://api.nuget.org/v3-flatcontainer/nuget.common/index.json 79ms
+  GET https://api.nuget.org/v3-flatcontainer/njsonschema.newtonsoftjson/11.0.2/njsonschema.newtonsoftjson.11.0.2.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/nuget.common/6.11.0/nuget.common.6.11.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/njsonschema/index.json 81ms
+  OK https://api.nuget.org/v3-flatcontainer/nuget.protocol/index.json 95ms
+  GET https://api.nuget.org/v3-flatcontainer/njsonschema/11.0.2/njsonschema.11.0.2.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/nuget.protocol/6.11.0/nuget.protocol.6.11.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration.core/index.json 74ms
+  OK https://api.nuget.org/v3-flatcontainer/njsonschema.yaml/index.json 114ms
+  OK https://api.nuget.org/v3-flatcontainer/njsonschema.newtonsoftjson/11.0.2/njsonschema.newtonsoftjson.11.0.2.nupkg 43ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration.core/9.0.0/microsoft.visualstudio.web.codegeneration.core.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/nuget.common/6.11.0/nuget.common.6.11.0.nupkg 55ms
+  GET https://api.nuget.org/v3-flatcontainer/njsonschema.yaml/11.0.2/njsonschema.yaml.11.0.2.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/nuget.librarymodel/index.json 157ms
+  GET https://api.nuget.org/v3-flatcontainer/nuget.librarymodel/6.11.0/nuget.librarymodel.6.11.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/njsonschema/11.0.2/njsonschema.11.0.2.nupkg 66ms
+Installed Microsoft.TestPlatform.TestHost 17.11.1 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.testplatform.testhost\17.11.1 with content hash DnG+GOqJXO/CkoqlJWeDFTgPhqD/V6VqUIL3vINizCWZ3X+HshCtbbyDdSHQQEjrc2Sl/K3yaxX6s+5LFEdYuw==.
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration.core/9.0.0/microsoft.visualstudio.web.codegeneration.core.9.0.0.nupkg 71ms
+  OK https://api.nuget.org/v3-flatcontainer/nuget.librarymodel/6.11.0/nuget.librarymodel.6.11.0.nupkg 64ms
+Installed Microsoft.TestPlatform.ObjectModel 17.11.1 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.testplatform.objectmodel\17.11.1 with content hash E2jZqAU6JeWEVsyOEOrSW1o1bpHLgb25ypvKNB/moBXPVsFYBPd/Jwi7OrYahG50J83LfHzezYI+GaEkpAotiA==.
+  OK https://api.nuget.org/v3-flatcontainer/nuget.protocol/6.11.0/nuget.protocol.6.11.0.nupkg 144ms
+  OK https://api.nuget.org/v3-flatcontainer/njsonschema.yaml/11.0.2/njsonschema.yaml.11.0.2.nupkg 151ms
+Installed Microsoft.CodeCoverage 17.11.1 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.codecoverage\17.11.1 with content hash nPJqrcA5iX+Y0kqoT3a+pD/8lrW/V7ayqnEJQsTonSoPz59J8bmoQhcSN4G8+UJ64Hkuf0zuxnfuj2lkHOq4cA==.
+  CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+  CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/vulnerability.base.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/2024.11.16.17.25.48/vulnerability.update.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/2024.11.16.17.25.48/vulnerability.update.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/vulnerability.base.json
+  GET https://api.nuget.org/v3-flatcontainer/azure.core/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.identity.client.extensions.msal/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.identity.client.extensions.msal/index.json 48ms
+  OK https://api.nuget.org/v3-flatcontainer/azure.core/index.json 49ms
+  GET https://api.nuget.org/v3-flatcontainer/azure.core/1.38.0/azure.core.1.38.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.identity.client.extensions.msal/4.61.3/microsoft.identity.client.extensions.msal.4.61.3.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/nuget.frameworks/index.json
+  GET https://api.nuget.org/v3-flatcontainer/njsonschema.annotations/index.json
+  GET https://api.nuget.org/v3-flatcontainer/yamldotnet/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.identity.client.extensions.msal/4.61.3/microsoft.identity.client.extensions.msal.4.61.3.nupkg 22ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration.templating/index.json
+  OK https://api.nuget.org/v3-flatcontainer/azure.core/1.38.0/azure.core.1.38.0.nupkg 31ms
+  OK https://api.nuget.org/v3-flatcontainer/nuget.frameworks/index.json 56ms
+  OK https://api.nuget.org/v3-flatcontainer/njsonschema.annotations/index.json 54ms
+  GET https://api.nuget.org/v3-flatcontainer/nuget.frameworks/6.11.0/nuget.frameworks.6.11.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/njsonschema.annotations/11.0.2/njsonschema.annotations.11.0.2.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration.templating/index.json 60ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration.templating/9.0.0/microsoft.visualstudio.web.codegeneration.templating.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/nuget.frameworks/6.11.0/nuget.frameworks.6.11.0.nupkg 30ms
+  OK https://api.nuget.org/v3-flatcontainer/njsonschema.annotations/11.0.2/njsonschema.annotations.11.0.2.nupkg 48ms
+NU1902: Warning As Error: Package 'Azure.Identity' 1.10.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9
+NU1902: Warning As Error: Package 'Azure.Identity' 1.10.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-wvxc-855f-jvrv
+NU1902: Warning As Error: Package 'Microsoft.Identity.Client' 4.56.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9
+NU1901: Warning As Error: Package 'Microsoft.Identity.Client' 4.56.0 has a known low severity vulnerability, https://github.com/advisories/GHSA-x674-v45j-fwxw
+NU1903: Warning As Error: Package 'MimeKit' 4.6.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-gmc6-fwg3-75m5
+NU1903: Warning As Error: Package 'System.Formats.Asn1' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-447r-wph3-92pm
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration.templating/9.0.0/microsoft.visualstudio.web.codegeneration.templating.9.0.0.nupkg 45ms
+Restoring packages for C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.UnitTests\WyomingDotNet.UnitTests.csproj...
+  OK https://api.nuget.org/v3-flatcontainer/yamldotnet/index.json 149ms
+  GET https://api.nuget.org/v3-flatcontainer/nsubstitute/index.json
+  GET https://api.nuget.org/v3-flatcontainer/reportgenerator/index.json
+  GET https://api.nuget.org/v3-flatcontainer/yamldotnet/15.1.4/yamldotnet.15.1.4.nupkg
+NU1902: Warning As Error: Package 'Azure.Identity' 1.10.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9
+NU1902: Warning As Error: Package 'Azure.Identity' 1.10.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-wvxc-855f-jvrv
+NU1902: Warning As Error: Package 'Microsoft.Identity.Client' 4.56.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9
+NU1901: Warning As Error: Package 'Microsoft.Identity.Client' 4.56.0 has a known low severity vulnerability, https://github.com/advisories/GHSA-x674-v45j-fwxw
+NU1903: Warning As Error: Package 'MimeKit' 4.6.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-gmc6-fwg3-75m5
+NU1903: Warning As Error: Package 'System.Formats.Asn1' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-447r-wph3-92pm
+NU1903: Warning As Error: Package 'System.Text.Json' 6.0.5 has a known high severity vulnerability, https://github.com/advisories/GHSA-8g4q-xg66-9fp4
+  OK https://api.nuget.org/v3-flatcontainer/yamldotnet/15.1.4/yamldotnet.15.1.4.nupkg 38ms
+Restoring packages for C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.UseCases\WyomingDotNet.UseCases.csproj...
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.relational/index.json
+  OK https://api.nuget.org/v3-flatcontainer/reportgenerator/index.json 172ms
+  GET https://api.nuget.org/v3-flatcontainer/reportgenerator/5.4.1/reportgenerator.5.4.1.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/reportgenerator/5.4.1/reportgenerator.5.4.1.nupkg 38ms
+  OK https://api.nuget.org/v3-flatcontainer/nsubstitute/index.json 243ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.relational/index.json 176ms
+  GET https://api.nuget.org/v3-flatcontainer/nsubstitute/5.3.0/nsubstitute.5.3.0.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.relational/9.0.0/microsoft.entityframeworkcore.relational.9.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/nsubstitute/5.3.0/nsubstitute.5.3.0.nupkg 42ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.relational/9.0.0/microsoft.entityframeworkcore.relational.9.0.0.nupkg 62ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration.utils/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration.utils/index.json 120ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration.utils/9.0.0/microsoft.visualstudio.web.codegeneration.utils.9.0.0.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.build.framework/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.web.codegeneration.utils/9.0.0/microsoft.visualstudio.web.codegeneration.utils.9.0.0.nupkg 29ms
+  CACHE https://api.nuget.org/v3-flatcontainer/system.codedom/index.json
+  GET https://api.nuget.org/v3-flatcontainer/system.clientmodel/index.json
+  CACHE https://api.nuget.org/v3-flatcontainer/microsoft.build.framework/16.10.0/microsoft.build.framework.16.10.0.nupkg
+  CACHE https://api.nuget.org/v3-flatcontainer/system.codedom/6.0.0/system.codedom.6.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/system.clientmodel/index.json 125ms
+  GET https://api.nuget.org/v3-flatcontainer/system.clientmodel/1.0.0/system.clientmodel.1.0.0.nupkg
+Installed NJsonSchema.Annotations 11.0.2 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\njsonschema.annotations\11.0.2 with content hash VbA0fmxVyqloGXYz863g6QHyojM1tgejwPQr9LjXdubs9YJt5YfRPCQOV/hnzpP2Bqd7nZFpDn9MCImmLAmqCw==.
+Installed Microsoft.VisualStudio.Web.CodeGeneration.Utils 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.visualstudio.web.codegeneration.utils\9.0.0 with content hash O8uehWLzgQhq3H2f+dxEkuYF8wWoBrT7iKtQXnHAc96qlVdLSARSxt3hlxqFSzK3ZkHp2P6lHt76LRH6J0PDrw==.
+Installed Microsoft.VisualStudio.Web.CodeGeneration.Templating 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.visualstudio.web.codegeneration.templating\9.0.0 with content hash euoX0M4JnbzSUcFXfDq+GSSdXNRbKGUBTK+8gcnzHmhY3sHgHn9bgeeZDp+LGuoUQaP+WrWA8Nq92gCTcZLWSA==.
+Installed NuGet.Frameworks 6.11.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\nuget.frameworks\6.11.0 with content hash Ew/mrfmLF5phsprysHbph2+tdZ10HMHAURavsr/Kx1WhybDG4vmGuoNLbbZMZOqnPRdpyCTc42OKWLoedxpYtA==.
+Installed NuGet.LibraryModel 6.11.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\nuget.librarymodel\6.11.0 with content hash KUV2eeMICMb24OPcICn/wgncNzt6+W+lmFVO5eorTdo1qV4WXxYGyG1NTPiCY+Nrv5H/Ilnv9UaUM2ozqSmnjw==.
+  OK https://api.nuget.org/v3-flatcontainer/system.clientmodel/1.0.0/system.clientmodel.1.0.0.nupkg 54ms
+Installed NJsonSchema.NewtonsoftJson 11.0.2 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\njsonschema.newtonsoftjson\11.0.2 with content hash tTVG8h7qfw6anxlhXGx3oUz7f3ig+t9jO3yrho73ypvMZ7DCyFtiaF5gG3GqBDZXM49ONogDmTZ+8HTG6AKaNQ==.
+Installed Microsoft.VisualStudio.Web.CodeGeneration.Core 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.visualstudio.web.codegeneration.core\9.0.0 with content hash 1VIEZs8DNnefMa0eVDZucz/dk28Sg0QRiNiRJj7SdU8E6UiNJxnkzA748aqA6Qqi8OMTHTBKhzx0Hj9ykIi6/Q==.
+Installed Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.visualstudio.web.codegeneration.entityframeworkcore\9.0.0 with content hash F4+A6CaXmof/QoeWpqaMMeoVinfUSIMKa5xLOrwsZxGfYl6Qryhb06bkJ8yJaF05WefMM/wnj73oI3Ms2bBh7g==.
+Installed NJsonSchema.Yaml 11.0.2 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\njsonschema.yaml\11.0.2 with content hash MtJSCP9c1FGIjJ/kb8qNx/KCRrlk4LMg6Pjk+7j9cfFFHPg3mEYgUHjp7QvN+tNs3IFZrARc2oiZVzICr6Au8g==.
+Installed Microsoft.VisualStudio.Web.CodeGeneration 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.visualstudio.web.codegeneration\9.0.0 with content hash W9ho78o/92MUDz04r7Al4dMx7djaqtSJE1cR7fMjy+Mm0StL5pVKXF24qnAFWJlip7KEpAa1QP35davXvuis9w==.
+Installed NuGet.Protocol 6.11.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\nuget.protocol\6.11.0 with content hash p5B8oNLLnGhUfMbcS16aRiegj11pD6k+LELyRBqvNFR/pE3yR1XT+g1XS33ME9wvoU+xbCGnl4Grztt1jHPinw==.
+Installed NuGet.Common 6.11.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\nuget.common\6.11.0 with content hash T3bCiKUSx8wdYpcqr6Dbx93zAqFp689ee/oa1tH22XI/xl7EUzQ7No/WlE1FUqvEX1+Mqar3wRNAn2O/yxo94g==.
+Installed NJsonSchema 11.0.2 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\njsonschema\11.0.2 with content hash BOgw+TOd1w7BSRIEWwkiSgHlKWC2eu0DHsSsb1LIwlC1Hq26A0ARZiMjsCsqfXqXdr7hLf1m4M84Z7LW1wmCGA==.
+Installed Serilog.AspNetCore 8.0.3 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\serilog.aspnetcore\8.0.3 with content hash Y5at41mc0OV982DEJslBKHd6uzcWO6POwR3QceJ6gtpMPxCzm4+FElGPF0RdaTD7MGsP6XXE05LMbSi0NO+sXg==.
+Installed Microsoft.Build.Framework 16.10.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.build.framework\16.10.0 with content hash uD2GUw3AYlFSpU42c/80DouuJL6w1Kb06q4FEjQhW/9wjhBwukgx13T5MPIpSvQ8ssahKINanHfMUL89EVQHgQ==.
+Installed FastEndpoints 5.31.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\fastendpoints\5.31.0 with content hash Knzq846PIWAhmbKhD3KdwQ1nDd02UkrW0zKt146D/YaqlP5yPm/mTGuqXXp6zPu5ISNMSLVpOO3b1kYPO5n4kA==.
+Installed Microsoft.VisualStudio.Web.CodeGeneration.Design 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.visualstudio.web.codegeneration.design\9.0.0 with content hash nO5MUL3iC0WjtAVea5d4v6kVcoL9ae/PnkC6NeEJhWazHKdKj7xfv6D2QvBx8uCIj8FUu9QpvvdN6m/xMp//EQ==.
+Installed FastEndpoints.Swagger 5.31.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\fastendpoints.swagger\5.31.0 with content hash x7S08dSvZrRnPgCwc8Gu3UazjS13mWqn30CSmD+40iLoMWF8x9Qs+xg/VghsStsXz8fdyHKFfUtUplsf9wJcDA==.
+Installed System.ClientModel 1.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\system.clientmodel\1.0.0 with content hash I3CVkvxeqFYjIVEP59DnjbeoGNfo/+SZrCLpRz2v/g0gpCHaEMPtWSY0s9k/7jR1rAsLNg2z2u1JRB76tPjnIw==.
+Installed Microsoft.DotNet.Scaffolding.Shared 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.dotnet.scaffolding.shared\9.0.0 with content hash 9pfRsTzUANgI6J7nFjYip50ifcvmORjMmFByXmdYa//x8toziydhbg0cMylP1S2mRf4/96VKSAfpayYrO3m4Ww==.
+Installed Microsoft.EntityFrameworkCore.Relational 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.entityframeworkcore.relational\9.0.0 with content hash j+msw6fWgAE9M3Q/5B9Uhv7pdAdAQUvFPJAiBJmoy+OXvehVbfbCE8ftMAa51Uo2ZeiqVnHShhnv4Y4UJJmUzA==.
+Installed Microsoft.Identity.Client.Extensions.Msal 4.61.3 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.identity.client.extensions.msal\4.61.3 with content hash PWnJcznrSGr25MN8ajlc2XIDW4zCFu0U6FkpaNLEWLgd1NgFCp5uDY3mqLDgM8zCN8hqj8yo5wHYfLB2HjcdGw==.
+Installed System.Formats.Asn1 6.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\system.formats.asn1\6.0.0 with content hash T6fD00dQ3NTbPDy31m4eQUwKW84s03z0N2C8HpOklyeaDgaJPa/TexP4/SkORMSOwc7WhKifnA6Ya33AkzmafA==.
+  CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/vulnerability.base.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/2024.11.16.17.25.48/vulnerability.update.json
+Installed Ardalis.Result.AspNetCore 10.1.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\ardalis.result.aspnetcore\10.1.0 with content hash +S653XCUMXbvVLqMXUVYNjE3Q5y0DLGIrxhxIDaoRwiK0E83czB8UHOBEMRyUgdqEykxQXRFsFUwOKcwKZ2uKw==.
+Installed Mono.TextTemplating 3.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\mono.texttemplating\3.0.0 with content hash YqueG52R/Xej4VVbKuRIodjiAhV0HR/XVbLbNrJhCZnzjnSjgMJ/dCdV0akQQxavX6hp/LC6rqLGLcXeQYU7XA==.
+Installed NuGet.Packaging 6.11.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\nuget.packaging\6.11.0 with content hash VmUv2LedVuPY1tfNybORO2I9IuqOzeV7I5JBD+PwNvJq2bAqovi4FCw2cYI0g+kjOJXBN2lAJfrfnqtUOlVJdQ==.
+Installed Microsoft.EntityFrameworkCore.SqlServer 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.entityframeworkcore.sqlserver\9.0.0 with content hash 3Y7/3kgz6C5kRFeELLZ5VeIeBlxB31x/ywscbN4r1JqTXIy8WWGo0CqzuOxBy4UzaTzpifElAZvv4fyD3ZQK5w==.
+Installed Microsoft.EntityFrameworkCore.Design 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.entityframeworkcore.design\9.0.0 with content hash Pqo8I+yHJ3VQrAoY0hiSncf+5P7gN/RkNilK5e+/K/yKh+yAWxdUAI6t0TG26a9VPlCa9FhyklzyFvRyj3YG9A==.
+Installed System.CodeDom 6.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\system.codedom\6.0.0 with content hash CPc6tWO1LAer3IzfZufDBRL+UZQcj5uS207NHALQzP84Vp/z6wF0Aa0YZImOQY8iStY0A2zI/e3ihKNPfUm8XA==.
+Installed Microsoft.Build.Locator 1.7.8 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.build.locator\1.7.8 with content hash sPy10x527Ph16S2u0yGME4S6ohBKJ69WfjeGG/bvELYeZVmJdKjxgnlL8cJJJLGV/cZIRqSfB12UDB8ICakOog==.
+Installed Microsoft.Extensions.DependencyModel 9.0.0-rc.2.24473.5 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.dependencymodel\9.0.0-rc.2.24473.5 with content hash Y+L5r4bqbSbhTVVQ8wt7AaO8vtB2ZgEfzI1gN3Ia/vBIsfECOQK8bDItAi7ikb1kk9c0unDnJnM08BuO59ydEQ==.
+Installed Microsoft.EntityFrameworkCore.Sqlite 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.entityframeworkcore.sqlite\9.0.0 with content hash xu6dlgBO9I1WA1WdT+rUvv+ZGQ9aGRn3c246ykyuFzBX02oNYd1lk7LEVGhjBN1T49N3C9yBUHFQY8vY4JZQrw==.
+Installed Azure.Core 1.38.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\azure.core\1.38.0 with content hash IuEgCoVA0ef7E4pQtpC3+TkPbzaoQfa77HlfJDmfuaJUCVJmn7fT0izamZiryW5sYUFKizsftIxMkXKbgIcPMQ==.
+Installed Azure.Identity 1.11.4 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\azure.identity\1.11.4 with content hash Sf4BoE6Q3jTgFkgBkx7qztYOFELBCo+wQgpYDwal/qJ1unBH73ywPztIJKXBXORRzAeNijsuxhk94h0TIMvfYg==.
+Installed YamlDotNet 15.1.4 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\yamldotnet\15.1.4 with content hash IjWucOgVbhm72da0Ck3KcyvMuKT/TfilHcvtwvhLLnkn2zr5st8BkH3lDoY5lkMH9Z3jsJeLDrnBS4GpAViUqg==.
+Installed NuGet.ProjectModel 6.11.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\nuget.projectmodel\6.11.0 with content hash g0KtmDH6fas97WsN73yV2h1F5JT9o6+Y0wlPK+ij9YLKaAXaF6+1HkSaQMMJ+xh9/jCJG9G6nau6InOlb1g48g==.
+Installed SQLitePCLRaw.provider.e_sqlite3 2.1.10 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.1.10 with content hash uZVTi02C1SxqzgT0HqTWatIbWGb40iIkfc3FpFCpE/r7g6K0PqzDUeefL6P6HPhDtc6BacN3yQysfzP7ks+wSQ==.
+Installed System.Formats.Asn1 9.0.0-rc.2.24473.5 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\system.formats.asn1\9.0.0-rc.2.24473.5 with content hash T7T1kH5MU5pd3jo+lPxKOvcUrvsNiGJpOVOM641CRWAy8HRdk55fmmOqcGYZQ2p8+qDOeMUikQyi5dbNVGEJjg==.
+Installed SQLitePCLRaw.core 2.1.10 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\sqlitepclraw.core\2.1.10 with content hash Ii8JCbC7oiVclaE/mbDEK000EFIJ+ShRPwAvvV89GOZhQ+ZLtlnSWl6ksCNMKu/VGXA4Nfi2B7LhN/QFN9oBcw==.
+Installed Serilog.Settings.Configuration 8.0.4 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\serilog.settings.configuration\8.0.4 with content hash pkxvq0umBKK8IKFJc1aV5S/HGRG/NIxJ6FV42KaTPLfDmBOAbBUB1m5gqqlGxzEa1MgDDWtQlWJdHTSxVWNx+Q==.
+Installed FastEndpoints.Attributes 5.31.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\fastendpoints.attributes\5.31.0 with content hash QyTCNe2SR+rXJM2+LRgJVraMR1ibMQehH+P3+2ixtw8iEnd5n7D9hp1URsn9ppbSpTrEHMGquW2qac/U0CC/pQ==.
+Installed FastEndpoints.Messaging.Core 5.31.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\fastendpoints.messaging.core\5.31.0 with content hash Hk7jZRsoJv0ysSHv/bgbARGTDLF0dh5Arr5P6q1f26HQBUScTY7pXJhCoJOU4oqnQv246AGmIne2FdDNgP7HNg==.
+Installed NuGet.Versioning 6.11.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\nuget.versioning\6.11.0 with content hash v/GGlIj2dd7svplFmASWEueu62veKW0MrMtBaZ7QG8aJTSGv2yE+pgUGhXRcQ4nxNOEq/wLBrz1vkth/1SND7A==.
+Installed Microsoft.EntityFrameworkCore.Sqlite.Core 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.entityframeworkcore.sqlite.core\9.0.0 with content hash 4gmIZli/Na39mck6s/gO2n1NdOHHwNQfSWucpA+bAU5UAEMYFGMXpCR1AHoo/VJuyMkfpBxuHzkj1/xczy2vFg==.
+Installed System.Security.Cryptography.ProtectedData 8.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\system.security.cryptography.protecteddata\8.0.0 with content hash +TUFINV2q2ifyXauQXRwy4CiBhqvDEDZeVJU7qfxya4aRYOKzVBpN+4acx25VcPB9ywUN6C0n8drWl110PhZEg==.
+Installed Microsoft.Data.Sqlite.Core 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.data.sqlite.core\9.0.0 with content hash cFfZjFL+tqzGYw9lB31EkV1IWF5xRQNk2k+MQd+Cf86Gl6zTeAoiZIFw5sRB1Z8OxpEC7nu+nTDsLSjieBAPTw==.
+Installed Microsoft.EntityFrameworkCore.Tools 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.entityframeworkcore.tools\9.0.0 with content hash qjw+3/CaWiWnyVblvKHY11rQKH5eHQDSbtxjgxVhxGJrOpmjZ3JxtD0pjwkr4y/ELubsXr6xDfBcRJSkX/9hWQ==.
+Installed Microsoft.Extensions.DependencyInjection 9.0.0-rc.2.24473.5 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.dependencyinjection\9.0.0-rc.2.24473.5 with content hash FHb7uxiX/08FBBtwat7fiBdQltxst1Farux6Ifn1dfke+D8h1rcDj1ZbKzNB9SvLh1XmEXNYmoWGkTjt1mVzXg==.
+Installed NuGet.Configuration 6.11.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\nuget.configuration\6.11.0 with content hash 73QprQqmumFrv3Ooi4YWpRYeBj8jZy9gNdOaOCp4pPInpt41SJJAz/aP4je+StwIJvi5HsgPPecLKekDIQEwKg==.
+Installed SQLitePCLRaw.bundle_e_sqlite3 2.1.10 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\sqlitepclraw.bundle_e_sqlite3\2.1.10 with content hash UxWuisvZ3uVcVOLJQv7urM/JiQH+v3TmaJc1BLKl5Dxfm/nTzTUrqswCqg/INiYLi61AXnHo1M1JPmPqqLnAdg==.
+Installed NSwag.Annotations 14.1.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\nswag.annotations\14.1.0 with content hash Cp/ftZRTptNmdiz7tuvH6zRwUUNO79cwTbmXutm0MvbBh3lulKmmaxmcqWrBJYrTa8WcetNu9BqeQEZ7dGto/Q==.
+Installed Microsoft.Identity.Client 4.61.3 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.identity.client\4.61.3 with content hash naJo/Qm35Caaoxp5utcw+R8eU8ZtLz2ALh8S+gkekOYQ1oazfCQMWVT4NJ/FnHzdIJlm8dMz0oMpMGCabx5odA==.
+Installed NSwag.Core.Yaml 14.1.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\nswag.core.yaml\14.1.0 with content hash 1VH5ymsIYJp5tl8KQMUbPbYhWzzWaktFY3mx6iAvTFJff1P9HrYVf6K8NEdi0kSZ4xLnFVSK1tfFuhoBiJRdJg==.
+Installed NuGet.DependencyResolver.Core 6.11.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\nuget.dependencyresolver.core\6.11.0 with content hash SoiPKPooA+IF+iCsX1ykwi3M0e+yBL34QnwIP3ujhQEn1dhlP/N1XsYAnKkJPxV15EZCahuuS4HtnBsZx+CHKA==.
+Installed NSwag.AspNetCore 14.1.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\nswag.aspnetcore\14.1.0 with content hash AAKr7sHsAsdFV4Bg2BiDUaZjHsDCd9FA9MmiaBJTjfBGoRWN/C5j9+J0EPBWMhaeHrmXGCqanJDlAgQDg1aqVA==.
+Installed NSwag.Generation 14.1.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\nswag.generation\14.1.0 with content hash SnOFXH3qObBp8JBY8KfFLBx1C9w/MvXXXp4YAKmWr2MsFWWtSzn3/lkAbTVAJO3kW/9wQIDwi2XQ3KYyDIImiw==.
+Installed Microsoft.Extensions.DependencyModel 8.0.2 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.dependencymodel\8.0.2 with content hash mUBDZZRgZrSyFOsJ2qJJ9fXfqd/kXJwf3AiDoqLD9m6TjY5OO/vLNOb9fb4juC0487eq4hcGN/M2Rh/CKS7QYw==.
+Installed System.Formats.Asn1 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\system.formats.asn1\9.0.0 with content hash VRDjgfqV0hCma5HBQa46nZTRuqfYMWZClwxUtvLJVTCeDp9Esdvr91AfEWP98IMO8ooSv1yXb6/oCc6jApoXvQ==.
+Installed System.Formats.Asn1 8.0.1 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\system.formats.asn1\8.0.1 with content hash XqKba7Mm/koKSjKMfW82olQdmfbI5yqeoLV/tidRp7fbh5rmHAQ5raDI/7SU0swTzv+jgqtUGkzmFxuUg0it1A==.
+Installed FluentValidation 11.10.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\fluentvalidation\11.10.0 with content hash qsJGSJDdZ8qiG+lVJ70PZfJHcEdq8UQZ/tZDXoj78/iHKG6lVKtMJsD11zyyv/IPc7rwqGqnFoFLTNzpo3IPYg==.
+Installed Microsoft.Build 17.10.4 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.build\17.10.4 with content hash ZmGA8vhVXFzC4oo48ybQKlEybVKd0Ntfdr+Enqrn5ES1R6e/krIK9hLk0W33xuT0/G6QYd3YdhJZh+Xle717Ag==.
+Installed Microsoft.Extensions.DependencyInjection.Abstractions 9.0.0-rc.2.24473.5 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\9.0.0-rc.2.24473.5 with content hash T8oVF5Kz+J5IVagQAqcFFUrc/JrjaSvpACSm+t6cNolBX1S41PZVe3JLa3bxKnz0GTkUfSPPIkaekLmpAmHu3Q==.
+Installed NSwag.Core 14.1.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\nswag.core\14.1.0 with content hash p8Yf22yhitpU185HBfxRwDPwQ89gV6gEt7Svt3LfVR8ZfWBkPWNooMrelBLoK3vigf3t+kIkYBF3kXkFk9AsJA==.
+Installed Microsoft.NET.StringTools 17.10.4 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.net.stringtools\17.10.4 with content hash wyABaqY+IHCMMSTQmcc3Ca6vbmg5BaEPgicnEgpll+4xyWZWlkQqUwafweUd9VAhBb4jqplMl6voUHQ6yfdUcg==.
+Installed NSubstitute 5.3.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\nsubstitute\5.3.0 with content hash lJ47Cps5Qzr86N99lcwd+OUvQma7+fBgr8+Mn+aOC0WrlqMNkdivaYD9IvnZ5Mqo6Ky3LS7ZI+tUq1/s9ERd0Q==.
+Installed NSwag.Generation.AspNetCore 14.1.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\nswag.generation.aspnetcore\14.1.0 with content hash o2qaMZCINdM+GZl3U8Ck7GnDkG+I8bAvFZSl0dbD2J4Uubxov+C2Wahh/Kqpc+yQ4+zmWaBuBYreORCp6iaP6w==.
+Installed Microsoft.CodeAnalysis.Workspaces.MSBuild 4.8.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.codeanalysis.workspaces.msbuild\4.8.0 with content hash IEYreI82QZKklp54yPHxZNG9EKSK6nHEkeuf+0Asie9llgS1gp0V1hw7ODG+QyoB7MuAnNQHmeV1Per/ECpv6A==.
+Installed Microsoft.Build.Framework 17.10.4 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.build.framework\17.10.4 with content hash 4qXCwNOXBR1dyCzuks9SwTwFJQO/xmf2wcMislotDWJu7MN/r3xDNoU8Ae5QmKIHPaLG1xmfDkYS7qBVzxmeKw==.
+Installed System.Collections.Immutable 8.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\system.collections.immutable\8.0.0 with content hash AurL6Y5BA1WotzlEvVaIDpqzpIPvYnnldxru8oXJU2yFxFUy3+pNXjXd1ymO+RA0rq0+590Q8gaz2l3Sr7fmqg==.
+Installed System.Threading.Tasks.Dataflow 8.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\system.threading.tasks.dataflow\8.0.0 with content hash 7V0I8tPa9V7UxMx/+7DIwkhls5ouaEMQx6l/GwGm1Y8kJQ61On9B/PxCXFLbgu5/C47g0BP2CUYs+nMv1+Oaqw==.
+Installed System.Reflection.MetadataLoadContext 8.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\system.reflection.metadataloadcontext\8.0.0 with content hash SZxrQ4sQYnIcdwiO3G/lHZopbPYQ2lW0ioT4JezgccWUrKaKbHLJbAGZaDfkYjWcta1pWssAo3MOXLsR0ie4tQ==.
+Installed System.Configuration.ConfigurationManager 8.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\system.configuration.configurationmanager\8.0.0 with content hash JlYi9XVvIREURRUlGMr1F6vOFLk7YSY4p1vHo4kX3tQ0AGrjqlRWHDi66ImHhy6qwXBG3BJ6Y1QlYQ+Qz6Xgww==.
+Installed BouncyCastle.Cryptography 2.4.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\bouncycastle.cryptography\2.4.0 with content hash SwXsAV3sMvAU/Nn31pbjhWurYSjJ+/giI/0n6tCrYoupEK34iIHCuk3STAd9fx8yudM85KkLSVdn951vTng/vQ==.
+Installed System.Reflection.Metadata 8.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\system.reflection.metadata\8.0.0 with content hash ptvgrFh7PvWI8bcVqG5rsA/weWM09EnthFHR5SCnS6IN+P4mj6rE1lBDC4U8HL9/57htKAqy4KQ3bBj84cfYyQ==.
+Installed System.Text.Json 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\system.text.json\9.0.0 with content hash js7+qAu/9mQvnhA4EfGMZNEzXtJCDxgkgj8ohuxq/Qxv+R56G+ljefhiJHOxTNiw54q8vmABCWUwkMulNdlZ4A==.
+Installed MimeKit 4.8.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\mimekit\4.8.0 with content hash U24wp4LKED+sBRzyrWICE+3bSwptsTrPOcCIXbW5zfeThCNzQx5NCo8Wus+Rmi+EUkQrCwlI/3sVfejeq9tuxQ==.
+Installed MailKit 4.8.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\mailkit\4.8.0 with content hash zZ1UoM4FUnSFUJ9fTl5CEEaejR0DNP6+FDt1OfXnjg4igZntcir1tg/8Ufd6WY5vrpmvToAjluYqjVM24A+5lA==.
+Installed Microsoft.Data.SqlClient 5.1.6 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.data.sqlclient\5.1.6 with content hash +pz7gIPh5ydsBcQvivt4R98PwJXer86fyQBBToIBLxZ5kuhW4N13Ijz87s9WpuPtF1vh4JesYCgpDPAOgkMhdg==.
+Installed SQLitePCLRaw.lib.e_sqlite3 2.1.10 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.10 with content hash mAr69tDbnf3QJpRy2nJz8Qdpebdil00fvycyByR58Cn9eARvR+UiG2Vzsp+4q1tV3ikwiYIjlXCQFc12GfebbA==.
+  CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/vulnerability.base.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/2024.11.16.17.25.48/vulnerability.update.json
+Installed ReportGenerator 5.4.1 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\reportgenerator\5.4.1 with content hash 43jtNAWOxLuGz0v4GbbQVNVw+No6PtrFw40VhhEsiZS3wJ0JjawoN8ezIFy4OsARKhQyM8KLhDqQy12YU/kuPA==.
+  CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/vulnerability.base.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/2024.11.16.17.25.48/vulnerability.update.json
+NU1903: Warning As Error: Package 'Microsoft.Extensions.Caching.Memory' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-qj66-m88j-hmgj
+Installed Microsoft.VisualStudio.Web.CodeGenerators.Mvc 9.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.visualstudio.web.codegenerators.mvc\9.0.0 with content hash WJhdsFXkpA0XR6PCjoxe9pRIqT8NV8Ggojv2cwaeCwxApzTAbLnglwADteeF7WlgHnr1VmJ+xdgzzNAAcJ9+Rg==.
+  CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/vulnerability.base.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/2024.11.16.17.25.48/vulnerability.update.json
+NU1902: Warning As Error: Package 'Azure.Identity' 1.10.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9
+NU1902: Warning As Error: Package 'Azure.Identity' 1.10.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-wvxc-855f-jvrv
+NU1902: Warning As Error: Package 'Microsoft.Identity.Client' 4.56.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9
+NU1901: Warning As Error: Package 'Microsoft.Identity.Client' 4.56.0 has a known low severity vulnerability, https://github.com/advisories/GHSA-x674-v45j-fwxw
+NU1903: Warning As Error: Package 'MimeKit' 4.6.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-gmc6-fwg3-75m5
+Installing NuGet package Ardalis.GuardClauses 5.0.0.
+Installing NuGet package Ardalis.Result 10.1.0.
+Installing NuGet package Ardalis.SharedKernel 2.1.1.
+Installing NuGet package Ardalis.SmartEnum 8.1.0.
+Installing NuGet package MediatR 12.4.1.
+Installing NuGet package Microsoft.Extensions.Logging.Abstractions 9.0.0.
+Generating MSBuild file C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Core\obj\WyomingDotNet.Core.csproj.nuget.g.props.
+Generating MSBuild file C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Core\obj\WyomingDotNet.Core.csproj.nuget.g.targets.
+Writing assets file to disk. Path: C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Core\obj\project.assets.json
+Successfully uninstalled 'Ardalis.GuardClauses 4.5.0' from WyomingDotNet.Core
+Successfully uninstalled 'Ardalis.Result 9.1.0' from WyomingDotNet.Core
+Successfully uninstalled 'Ardalis.SharedKernel 1.5.0' from WyomingDotNet.Core
+Successfully uninstalled 'Ardalis.SmartEnum 8.0.0' from WyomingDotNet.Core
+Successfully uninstalled 'MediatR 12.3.0' from WyomingDotNet.Core
+Successfully uninstalled 'Microsoft.Extensions.DependencyInjection.Abstractions 8.0.1' from WyomingDotNet.Core
+Successfully uninstalled 'Microsoft.Extensions.Logging.Abstractions 8.0.1' from WyomingDotNet.Core
+Successfully uninstalled 'System.ComponentModel.Annotations 5.0.0' from WyomingDotNet.Core
+Successfully installed 'Ardalis.GuardClauses 5.0.0' to WyomingDotNet.Core
+Successfully installed 'Ardalis.Result 10.1.0' to WyomingDotNet.Core
+Successfully installed 'Ardalis.SharedKernel 2.1.1' to WyomingDotNet.Core
+Successfully installed 'Ardalis.SmartEnum 8.1.0' to WyomingDotNet.Core
+Successfully installed 'MediatR 12.4.1' to WyomingDotNet.Core
+Successfully installed 'Microsoft.Extensions.DependencyInjection.Abstractions 9.0.0' to WyomingDotNet.Core
+Successfully installed 'Microsoft.Extensions.Logging.Abstractions 9.0.0' to WyomingDotNet.Core
+Executing nuget actions took 1.05 sec
+Installing NuGet package Ardalis.Result 10.1.0.
+Installing NuGet package MediatR 12.4.1.
+Installing NuGet package Microsoft.EntityFrameworkCore.Relational 9.0.0.
+Generating MSBuild file C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.UseCases\obj\WyomingDotNet.UseCases.csproj.nuget.g.props.
+Generating MSBuild file C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.UseCases\obj\WyomingDotNet.UseCases.csproj.nuget.g.targets.
+Writing assets file to disk. Path: C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.UseCases\obj\project.assets.json
+Successfully uninstalled 'Ardalis.Result 9.1.0' from WyomingDotNet.UseCases
+Successfully uninstalled 'MediatR 12.3.0' from WyomingDotNet.UseCases
+Successfully uninstalled 'Microsoft.EntityFrameworkCore 8.0.6' from WyomingDotNet.UseCases
+Successfully uninstalled 'Microsoft.EntityFrameworkCore.Abstractions 8.0.6' from WyomingDotNet.UseCases
+Successfully uninstalled 'Microsoft.EntityFrameworkCore.Analyzers 8.0.6' from WyomingDotNet.UseCases
+Successfully uninstalled 'Microsoft.EntityFrameworkCore.Relational 8.0.6' from WyomingDotNet.UseCases
+Successfully uninstalled 'Microsoft.Extensions.Caching.Abstractions 8.0.0' from WyomingDotNet.UseCases
+Successfully uninstalled 'Microsoft.Extensions.Caching.Memory 8.0.0' from WyomingDotNet.UseCases
+Successfully uninstalled 'Microsoft.Extensions.Configuration.Abstractions 8.0.0' from WyomingDotNet.UseCases
+Successfully uninstalled 'Microsoft.Extensions.DependencyInjection 8.0.0' from WyomingDotNet.UseCases
+Successfully uninstalled 'Microsoft.Extensions.DependencyInjection.Abstractions 8.0.1' from WyomingDotNet.UseCases
+Successfully uninstalled 'Microsoft.Extensions.Logging 8.0.0' from WyomingDotNet.UseCases
+Successfully uninstalled 'Microsoft.Extensions.Logging.Abstractions 8.0.1' from WyomingDotNet.UseCases
+Successfully uninstalled 'Microsoft.Extensions.Options 8.0.0' from WyomingDotNet.UseCases
+Successfully uninstalled 'Microsoft.Extensions.Primitives 8.0.0' from WyomingDotNet.UseCases
+Successfully installed 'Ardalis.Result 10.1.0' to WyomingDotNet.UseCases
+Successfully installed 'MediatR 12.4.1' to WyomingDotNet.UseCases
+Successfully installed 'Microsoft.EntityFrameworkCore 9.0.0' to WyomingDotNet.UseCases
+Successfully installed 'Microsoft.EntityFrameworkCore.Abstractions 9.0.0' to WyomingDotNet.UseCases
+Successfully installed 'Microsoft.EntityFrameworkCore.Analyzers 9.0.0' to WyomingDotNet.UseCases
+Successfully installed 'Microsoft.EntityFrameworkCore.Relational 9.0.0' to WyomingDotNet.UseCases
+Successfully installed 'Microsoft.Extensions.Caching.Abstractions 9.0.0' to WyomingDotNet.UseCases
+Successfully installed 'Microsoft.Extensions.Caching.Memory 9.0.0' to WyomingDotNet.UseCases
+Successfully installed 'Microsoft.Extensions.Configuration.Abstractions 9.0.0' to WyomingDotNet.UseCases
+Successfully installed 'Microsoft.Extensions.DependencyInjection 9.0.0' to WyomingDotNet.UseCases
+Successfully installed 'Microsoft.Extensions.DependencyInjection.Abstractions 9.0.0' to WyomingDotNet.UseCases
+Successfully installed 'Microsoft.Extensions.Logging 9.0.0' to WyomingDotNet.UseCases
+Successfully installed 'Microsoft.Extensions.Logging.Abstractions 9.0.0' to WyomingDotNet.UseCases
+Successfully installed 'Microsoft.Extensions.Options 9.0.0' to WyomingDotNet.UseCases
+Successfully installed 'Microsoft.Extensions.Primitives 9.0.0' to WyomingDotNet.UseCases
+Executing nuget actions took 425 ms
+Package restore failed. Rolling back package changes for 'WyomingDotNet.UnitTests'.
+Time Elapsed: 00:00:26.4569641
+========== Finished ==========
+
+Restored C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Core\WyomingDotNet.Core.csproj (in 73 ms).
+Restored C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.UseCases\WyomingDotNet.UseCases.csproj (in 131 ms).
+Restored C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.UnitTests\WyomingDotNet.UnitTests.csproj (in 324 ms).
+Failed to restore C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Infrastructure\WyomingDotNet.Infrastructure.csproj (in 414 ms).
+Failed to restore C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.IntegrationTests\WyomingDotNet.IntegrationTests.csproj (in 415 ms).
+Failed to restore C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.FunctionalTests\WyomingDotNet.FunctionalTests.csproj (in 414 ms).
+Failed to restore C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Web\WyomingDotNet.Web.csproj (in 915 ms).
+NuGet package restore failed. Please see Error List window for detailed warnings and errors.
+Time Elapsed: 00:00:01.0166217
+========== Finished ==========
+
+
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
+Error occurred while getting package vulnerability data: The operation was canceled.
