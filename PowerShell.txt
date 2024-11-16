@@ -215,56 +215,140 @@ Saturday, November 16, 2024 3:19:09 PM
 
 PS C:\code\wyoming> $env:DOTNET_CLI_TELEMETRY_OPTOUT='1';cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git push origin master; date;
 
+Saturday, November 16, 2024 3:19:39 PM
+Saturday, November 16, 2024 3:19:39 PM
+
+Build succeeded in 1.4s
+Saturday, November 16, 2024 3:19:40 PM
+Restore complete (1.4s)
+  webapi succeeded (2.1s) → webapi\bin\Debug\net9.0\webapi.dll
+
+Build succeeded in 4.5s
+Saturday, November 16, 2024 3:19:45 PM
+Saturday, November 16, 2024 3:19:45 PM
+yarn install v1.22.22
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.34s.
+Saturday, November 16, 2024 3:19:46 PM
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PowerShell.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Saturday, November 16, 2024 3:19:46 PM
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+Saturday, November 16, 2024 3:19:48 PM
+[master 37abff4] add all changes
+ 1 file changed, 74 insertions(+)
+Saturday, November 16, 2024 3:19:48 PM
+Current branch master is up to date.
+Saturday, November 16, 2024 3:19:49 PM
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.06 KiB | 363.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: GitHub found 1 vulnerability on onewyoming/onewyoming's default branch (1 high). To find out more, visit:
+remote:      https://github.com/onewyoming/onewyoming/security/dependabot/2062
+remote:
+To github.com:onewyoming/onewyoming.git
+   eca321f..37abff4  master -> master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.06 KiB | 363.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   eca321f..37abff4  master -> master
+Saturday, November 16, 2024 3:19:53 PM
 
 
+PS C:\code\wyoming> $env:DOTNET_CLI_TELEMETRY_OPTOUT='1';cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git push origin master; date;
 
-Restoring packages for C:\code\wyoming\src\dotnet\webapi\webapi.csproj...
-  GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore/index.json
-  OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore/index.json 279ms
-  GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore/7.0.0/swashbuckle.aspnetcore.7.0.0.nupkg
-  OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore/7.0.0/swashbuckle.aspnetcore.7.0.0.nupkg 59ms
-  GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swagger/index.json
-  GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggergen/index.json
-  GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggerui/index.json
-  OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swagger/index.json 52ms
-  GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swagger/7.0.0/swashbuckle.aspnetcore.swagger.7.0.0.nupkg
-  OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swagger/7.0.0/swashbuckle.aspnetcore.swagger.7.0.0.nupkg 41ms
-  GET https://api.nuget.org/v3-flatcontainer/microsoft.openapi/index.json
-  OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggergen/index.json 177ms
-  GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggergen/7.0.0/swashbuckle.aspnetcore.swaggergen.7.0.0.nupkg
-  OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggerui/index.json 325ms
-  GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggerui/7.0.0/swashbuckle.aspnetcore.swaggerui.7.0.0.nupkg
-  OK https://api.nuget.org/v3-flatcontainer/microsoft.openapi/index.json 216ms
-  OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggergen/7.0.0/swashbuckle.aspnetcore.swaggergen.7.0.0.nupkg 174ms
-  GET https://api.nuget.org/v3-flatcontainer/microsoft.openapi/1.6.22/microsoft.openapi.1.6.22.nupkg
-  OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggerui/7.0.0/swashbuckle.aspnetcore.swaggerui.7.0.0.nupkg 57ms
-  OK https://api.nuget.org/v3-flatcontainer/microsoft.openapi/1.6.22/microsoft.openapi.1.6.22.nupkg 86ms
-Installed Swashbuckle.AspNetCore 7.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\swashbuckle.aspnetcore\7.0.0 with content hash aF6oCgMy8CC17cSbILAw9J4UVhqOE+0Z11V8JstA+pIrXcY8ZbNL3ayHOWKZm0NdHMS6RI1k5sFVfMkpZOobvw==.
-Installed Swashbuckle.AspNetCore.Swagger 7.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\swashbuckle.aspnetcore.swagger\7.0.0 with content hash Y2QnwZkuszoIYpz069xqDU0h/rklVedE4a0NOdb8HSDTcXCmsi7Zm2RGdJccde5MojHmEhDmZggCO1wgpfZ2IA==.
-Installed Swashbuckle.AspNetCore.SwaggerGen 7.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\swashbuckle.aspnetcore.swaggergen\7.0.0 with content hash f/urqk9zkb5ZXc3ljLNP++JgYe2HTlA4WaIaO1DLRQLRFh3HXIZakFfMfTWX1T8NVqeMyJF7MzETN4HsokxNuQ==.
-Installed Microsoft.OpenApi 1.6.22 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.openapi\1.6.22 with content hash aBvunmrdu/x+4CaA/UP1Jx4xWGwk4kymhoIRnn2Vp+zi5/KOPQJ9EkSXHRUr01WcGKtYl3Au7XfkPJbU1G2sjQ==.
-Installed Swashbuckle.AspNetCore.SwaggerUI 7.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\swashbuckle.aspnetcore.swaggerui\7.0.0 with content hash rJJony+jsxvpfJM9ZGVxjp0DVpalZv8cAhiMSLW6L2hgUWb7k5qPVuzQHWXtkT8lrG1hQ8vWeR+HUwgCQm9J3A==.
-  CACHE https://api.nuget.org/v3/vulnerabilities/index.json
-  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/vulnerability.base.json
-  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/2024.11.16.17.25.48/vulnerability.update.json
-Installing NuGet package Swashbuckle.AspNetCore 7.0.0.
-Generating MSBuild file C:\code\wyoming\src\dotnet\webapi\obj\webapi.csproj.nuget.g.props.
-Writing assets file to disk. Path: C:\code\wyoming\src\dotnet\webapi\obj\project.assets.json
-Successfully uninstalled 'Microsoft.OpenApi 1.6.14' from webapi
-Successfully uninstalled 'Swashbuckle.AspNetCore 6.6.2' from webapi
-Successfully uninstalled 'Swashbuckle.AspNetCore.Swagger 6.6.2' from webapi
-Successfully uninstalled 'Swashbuckle.AspNetCore.SwaggerGen 6.6.2' from webapi
-Successfully uninstalled 'Swashbuckle.AspNetCore.SwaggerUI 6.6.2' from webapi
-Successfully installed 'Microsoft.OpenApi 1.6.22' to webapi
-Successfully installed 'Swashbuckle.AspNetCore 7.0.0' to webapi
-Successfully installed 'Swashbuckle.AspNetCore.Swagger 7.0.0' to webapi
-Successfully installed 'Swashbuckle.AspNetCore.SwaggerGen 7.0.0' to webapi
-Successfully installed 'Swashbuckle.AspNetCore.SwaggerUI 7.0.0' to webapi
-Executing nuget actions took 258 ms
-Time Elapsed: 00:00:02.2517203
-========== Finished ==========
+Saturday, November 16, 2024 3:22:14 PM
+Saturday, November 16, 2024 3:22:14 PM
 
-Time Elapsed: 00:00:00.0100329
-========== Finished ==========
+Build succeeded in 1.5s
+Saturday, November 16, 2024 3:22:16 PM
+Restore complete (2.0s)
+  webapi succeeded (2.2s) → webapi\bin\Debug\net9.0\webapi.dll
+
+Build succeeded in 5.2s
+Saturday, November 16, 2024 3:22:22 PM
+Saturday, November 16, 2024 3:22:22 PM
+yarn install v1.22.22
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.34s.
+Saturday, November 16, 2024 3:22:22 PM
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PowerShell.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Saturday, November 16, 2024 3:22:23 PM
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+Saturday, November 16, 2024 3:22:24 PM
+[master ac5d8ea] add all changes
+ 1 file changed, 54 insertions(+)
+Saturday, November 16, 2024 3:22:24 PM
+Current branch master is up to date.
+Saturday, November 16, 2024 3:22:26 PM
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.49 KiB | 509.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: GitHub found 1 vulnerability on onewyoming/onewyoming's default branch (1 high). To find out more, visit:
+remote:      https://github.com/onewyoming/onewyoming/security/dependabot/2062
+remote:
+To github.com:onewyoming/onewyoming.git
+   37abff4..ac5d8ea  master -> master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.49 KiB | 381.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   37abff4..ac5d8ea  master -> master
+Saturday, November 16, 2024 3:22:29 PM
 
 
+PS C:\code\wyoming> $env:DOTNET_CLI_TELEMETRY_OPTOUT='1';cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git push origin master; date;
