@@ -214,3 +214,57 @@ Saturday, November 16, 2024 3:19:09 PM
 
 
 PS C:\code\wyoming> $env:DOTNET_CLI_TELEMETRY_OPTOUT='1';cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git push origin master; date;
+
+
+
+
+Restoring packages for C:\code\wyoming\src\dotnet\webapi\webapi.csproj...
+  GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore/index.json
+  OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore/index.json 279ms
+  GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore/7.0.0/swashbuckle.aspnetcore.7.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore/7.0.0/swashbuckle.aspnetcore.7.0.0.nupkg 59ms
+  GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swagger/index.json
+  GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggergen/index.json
+  GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggerui/index.json
+  OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swagger/index.json 52ms
+  GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swagger/7.0.0/swashbuckle.aspnetcore.swagger.7.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swagger/7.0.0/swashbuckle.aspnetcore.swagger.7.0.0.nupkg 41ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.openapi/index.json
+  OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggergen/index.json 177ms
+  GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggergen/7.0.0/swashbuckle.aspnetcore.swaggergen.7.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggerui/index.json 325ms
+  GET https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggerui/7.0.0/swashbuckle.aspnetcore.swaggerui.7.0.0.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.openapi/index.json 216ms
+  OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggergen/7.0.0/swashbuckle.aspnetcore.swaggergen.7.0.0.nupkg 174ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.openapi/1.6.22/microsoft.openapi.1.6.22.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/swashbuckle.aspnetcore.swaggerui/7.0.0/swashbuckle.aspnetcore.swaggerui.7.0.0.nupkg 57ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.openapi/1.6.22/microsoft.openapi.1.6.22.nupkg 86ms
+Installed Swashbuckle.AspNetCore 7.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\swashbuckle.aspnetcore\7.0.0 with content hash aF6oCgMy8CC17cSbILAw9J4UVhqOE+0Z11V8JstA+pIrXcY8ZbNL3ayHOWKZm0NdHMS6RI1k5sFVfMkpZOobvw==.
+Installed Swashbuckle.AspNetCore.Swagger 7.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\swashbuckle.aspnetcore.swagger\7.0.0 with content hash Y2QnwZkuszoIYpz069xqDU0h/rklVedE4a0NOdb8HSDTcXCmsi7Zm2RGdJccde5MojHmEhDmZggCO1wgpfZ2IA==.
+Installed Swashbuckle.AspNetCore.SwaggerGen 7.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\swashbuckle.aspnetcore.swaggergen\7.0.0 with content hash f/urqk9zkb5ZXc3ljLNP++JgYe2HTlA4WaIaO1DLRQLRFh3HXIZakFfMfTWX1T8NVqeMyJF7MzETN4HsokxNuQ==.
+Installed Microsoft.OpenApi 1.6.22 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\microsoft.openapi\1.6.22 with content hash aBvunmrdu/x+4CaA/UP1Jx4xWGwk4kymhoIRnn2Vp+zi5/KOPQJ9EkSXHRUr01WcGKtYl3Au7XfkPJbU1G2sjQ==.
+Installed Swashbuckle.AspNetCore.SwaggerUI 7.0.0 from https://api.nuget.org/v3/index.json to C:\Users\kushal\.nuget\packages\swashbuckle.aspnetcore.swaggerui\7.0.0 with content hash rJJony+jsxvpfJM9ZGVxjp0DVpalZv8cAhiMSLW6L2hgUWb7k5qPVuzQHWXtkT8lrG1hQ8vWeR+HUwgCQm9J3A==.
+  CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/vulnerability.base.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/2024.11.16.17.25.48/vulnerability.update.json
+Installing NuGet package Swashbuckle.AspNetCore 7.0.0.
+Generating MSBuild file C:\code\wyoming\src\dotnet\webapi\obj\webapi.csproj.nuget.g.props.
+Writing assets file to disk. Path: C:\code\wyoming\src\dotnet\webapi\obj\project.assets.json
+Successfully uninstalled 'Microsoft.OpenApi 1.6.14' from webapi
+Successfully uninstalled 'Swashbuckle.AspNetCore 6.6.2' from webapi
+Successfully uninstalled 'Swashbuckle.AspNetCore.Swagger 6.6.2' from webapi
+Successfully uninstalled 'Swashbuckle.AspNetCore.SwaggerGen 6.6.2' from webapi
+Successfully uninstalled 'Swashbuckle.AspNetCore.SwaggerUI 6.6.2' from webapi
+Successfully installed 'Microsoft.OpenApi 1.6.22' to webapi
+Successfully installed 'Swashbuckle.AspNetCore 7.0.0' to webapi
+Successfully installed 'Swashbuckle.AspNetCore.Swagger 7.0.0' to webapi
+Successfully installed 'Swashbuckle.AspNetCore.SwaggerGen 7.0.0' to webapi
+Successfully installed 'Swashbuckle.AspNetCore.SwaggerUI 7.0.0' to webapi
+Executing nuget actions took 258 ms
+Time Elapsed: 00:00:02.2517203
+========== Finished ==========
+
+Time Elapsed: 00:00:00.0100329
+========== Finished ==========
+
+
