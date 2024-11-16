@@ -1,7 +1,4 @@
-﻿using WyomingDotNet.Core.ContributorAggregate;
-using Xunit;
-
-namespace WyomingDotNet.UnitTests.Core.ContributorAggregate;
+﻿namespace WyomingDotNet.UnitTests.Core.ContributorAggregate;
 
 public class ContributorConstructor
 {

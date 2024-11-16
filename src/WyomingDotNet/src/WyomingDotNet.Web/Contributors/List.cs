@@ -1,8 +1,5 @@
-﻿using Ardalis.Result;
-using WyomingDotNet.UseCases.Contributors;
+﻿using WyomingDotNet.UseCases.Contributors;
 using WyomingDotNet.UseCases.Contributors.List;
-using FastEndpoints;
-using MediatR;
 
 namespace WyomingDotNet.Web.Contributors;
 

@@ -1,6 +1,4 @@
-﻿using Ardalis.SmartEnum;
-
-namespace WyomingDotNet.Core.ContributorAggregate;
+﻿namespace WyomingDotNet.Core.ContributorAggregate;
 
 public class ContributorStatus : SmartEnum<ContributorStatus>
 {

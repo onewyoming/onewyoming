@@ -1,7 +1,4 @@
-﻿using Ardalis.Result;
-using Ardalis.SharedKernel;
-
-namespace WyomingDotNet.UseCases.Contributors.List;
+﻿namespace WyomingDotNet.UseCases.Contributors.List;
 
 public class ListContributorsHandler(IListContributorsQueryService _query)
   : IQueryHandler<ListContributorsQuery, Result<IEnumerable<ContributorDTO>>>

@@ -1,7 +1,4 @@
-﻿using System.Net.Mail;
-using WyomingDotNet.Core.Interfaces;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+﻿using WyomingDotNet.Core.Interfaces;
 
 namespace WyomingDotNet.Infrastructure.Email;
 
@@ -12,12 +9,12 @@ namespace WyomingDotNet.Infrastructure.Email;
 public class SmtpEmailSender(ILogger<SmtpEmailSender> logger,
                        IOptions<MailserverConfiguration> mailserverOptions) : IEmailSender
 {
-  private readonly MailserverConfiguration _mailserverConfiguration = mailserverOptions.Value!;
   private readonly ILogger<SmtpEmailSender> _logger = logger;
+  private readonly MailserverConfiguration _mailserverConfiguration = mailserverOptions.Value!;
 
   public async Task SendEmailAsync(string to, string from, string subject, string body)
   {
-    var emailClient = new SmtpClient(_mailserverConfiguration.Hostname, _mailserverConfiguration.Port);
+    var emailClient = new System.Net.Mail.SmtpClient(_mailserverConfiguration.Hostname, _mailserverConfiguration.Port);
 
     var message = new MailMessage
     {

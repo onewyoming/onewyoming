@@ -1,7 +1,4 @@
-﻿using Ardalis.Result;
-using WyomingDotNet.UseCases.Contributors.Delete;
-using FastEndpoints;
-using MediatR;
+﻿using WyomingDotNet.UseCases.Contributors.Delete;
 
 namespace WyomingDotNet.Web.Contributors;
 

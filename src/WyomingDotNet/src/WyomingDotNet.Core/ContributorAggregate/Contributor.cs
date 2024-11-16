@@ -1,7 +1,4 @@
-﻿using Ardalis.GuardClauses;
-using Ardalis.SharedKernel;
-
-namespace WyomingDotNet.Core.ContributorAggregate;
+﻿namespace WyomingDotNet.Core.ContributorAggregate;
 
 public class Contributor(string name) : EntityBase, IAggregateRoot
 {
@@ -11,15 +8,9 @@ public class Contributor(string name) : EntityBase, IAggregateRoot
   public ContributorStatus Status { get; private set; } = ContributorStatus.NotSet;
   public PhoneNumber? PhoneNumber { get; private set; }
 
-  public void SetPhoneNumber(string phoneNumber)
-  {
-    PhoneNumber = new PhoneNumber(string.Empty, phoneNumber, string.Empty);
-  }
+  public void SetPhoneNumber(string phoneNumber) => PhoneNumber = new PhoneNumber(string.Empty, phoneNumber, string.Empty);
 
-  public void UpdateName(string newName)
-  {
-    Name = Guard.Against.NullOrEmpty(newName, nameof(newName));
-  }
+  public void UpdateName(string newName) => Name = Guard.Against.NullOrEmpty(newName, nameof(newName));
 }
 
 public class PhoneNumber(string countryCode,

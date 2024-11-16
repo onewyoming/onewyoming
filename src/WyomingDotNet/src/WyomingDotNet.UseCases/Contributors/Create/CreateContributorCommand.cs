@@ -1,6 +1,4 @@
-﻿using Ardalis.Result;
-
-namespace WyomingDotNet.UseCases.Contributors.Create;
+﻿namespace WyomingDotNet.UseCases.Contributors.Create;
 
 /// <summary>
 /// Create a new Contributor.

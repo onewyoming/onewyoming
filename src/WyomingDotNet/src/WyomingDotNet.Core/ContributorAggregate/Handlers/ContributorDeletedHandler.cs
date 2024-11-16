@@ -1,7 +1,5 @@
 ﻿using WyomingDotNet.Core.ContributorAggregate.Events;
 using WyomingDotNet.Core.Interfaces;
-using MediatR;
-using Microsoft.Extensions.Logging;
 
 namespace WyomingDotNet.Core.ContributorAggregate.Handlers;
 

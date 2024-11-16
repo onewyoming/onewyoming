@@ -1,5 +1,4 @@
 ﻿using WyomingDotNet.Core.ContributorAggregate;
-using Xunit;
 
 namespace WyomingDotNet.IntegrationTests.Data;
 

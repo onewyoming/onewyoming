@@ -1,7 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-using MediatR;
-
-namespace WyomingDotNet.UnitTests;
+﻿namespace WyomingDotNet.UnitTests;
 
 public class NoOpMediator : IMediator
 {

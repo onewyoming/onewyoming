@@ -1,7 +1,4 @@
-﻿using System.Reflection;
-using Ardalis.SharedKernel;
-using WyomingDotNet.Core.ContributorAggregate;
-using Microsoft.EntityFrameworkCore;
+﻿using WyomingDotNet.Core.ContributorAggregate;
 
 namespace WyomingDotNet.Infrastructure.Data;
 public class AppDbContext(DbContextOptions<AppDbContext> options,
@@ -25,7 +22,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options,
     if (_dispatcher == null) return result;
 
     // dispatch events only if save was successful
-    var entitiesWithEvents = ChangeTracker.Entries<EntityBase>()
+    var entitiesWithEvents = ChangeTracker.Entries<HasDomainEventsBase>()
         .Select(e => e.Entity)
         .Where(e => e.DomainEvents.Any())
         .ToArray();

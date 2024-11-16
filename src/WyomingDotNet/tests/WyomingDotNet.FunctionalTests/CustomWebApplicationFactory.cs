@@ -1,9 +1,4 @@
 ﻿using WyomingDotNet.Infrastructure.Data;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 
 namespace WyomingDotNet.FunctionalTests;
 
@@ -17,7 +12,7 @@ public class CustomWebApplicationFactory<TProgram> : WebApplicationFactory<TProg
   /// <returns></returns>
   protected override IHost CreateHost(IHostBuilder builder)
   {
-    _ = builder.UseEnvironment("Development"); // will not send real emails
+    builder.UseEnvironment("Development"); // will not send real emails
     var host = builder.Build();
     host.Start();
 
@@ -36,10 +31,10 @@ public class CustomWebApplicationFactory<TProgram> : WebApplicationFactory<TProg
 
       // Reset Sqlite database for each test run
       // If using a real database, you'll likely want to remove this step.
-      _ = db.Database.EnsureDeleted();
+      db.Database.EnsureDeleted();
 
       // Ensure the database is created.
-      _ = db.Database.EnsureCreated();
+      db.Database.EnsureCreated();
 
       try
       {
@@ -47,7 +42,7 @@ public class CustomWebApplicationFactory<TProgram> : WebApplicationFactory<TProg
         //if (!db.ToDoItems.Any())
         //{
         // Seed the database with test data.
-        SeedData.PopulateTestData(db);
+        SeedData.PopulateTestDataAsync(db).Wait();
         //}
       }
       catch (Exception ex)
@@ -62,7 +57,7 @@ public class CustomWebApplicationFactory<TProgram> : WebApplicationFactory<TProg
 
   protected override void ConfigureWebHost(IWebHostBuilder builder)
   {
-    _ = builder
+    builder
         .ConfigureServices(services =>
         {
           // Configure test dependencies here

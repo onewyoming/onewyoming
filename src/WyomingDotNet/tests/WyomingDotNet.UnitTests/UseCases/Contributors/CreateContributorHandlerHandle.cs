@@ -1,11 +1,4 @@
-﻿using Ardalis.SharedKernel;
-using WyomingDotNet.Core.ContributorAggregate;
-using WyomingDotNet.UseCases.Contributors.Create;
-using FluentAssertions;
-using NSubstitute;
-using Xunit;
-
-namespace WyomingDotNet.UnitTests.UseCases.Contributors;
+﻿namespace WyomingDotNet.UnitTests.UseCases.Contributors;
 
 public class CreateContributorHandlerHandle
 {

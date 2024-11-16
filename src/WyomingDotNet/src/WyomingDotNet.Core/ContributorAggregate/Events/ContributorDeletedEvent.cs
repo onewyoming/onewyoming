@@ -1,6 +1,4 @@
-﻿using Ardalis.SharedKernel;
-
-namespace WyomingDotNet.Core.ContributorAggregate.Events;
+﻿namespace WyomingDotNet.Core.ContributorAggregate.Events;
 
 /// <summary>
 /// A domain event that is dispatched whenever a contributor is deleted.

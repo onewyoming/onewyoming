@@ -1,6 +1,5 @@
 ﻿using WyomingDotNet.UseCases.Contributors;
 using WyomingDotNet.UseCases.Contributors.List;
-using Microsoft.EntityFrameworkCore;
 
 namespace WyomingDotNet.Infrastructure.Data.Queries;
 

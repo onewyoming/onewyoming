@@ -1,9 +1,5 @@
-﻿using Ardalis.SharedKernel;
-using WyomingDotNet.Core.ContributorAggregate;
+﻿using WyomingDotNet.Core.ContributorAggregate;
 using WyomingDotNet.Infrastructure.Data;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using NSubstitute;
 
 namespace WyomingDotNet.IntegrationTests.Data;
 

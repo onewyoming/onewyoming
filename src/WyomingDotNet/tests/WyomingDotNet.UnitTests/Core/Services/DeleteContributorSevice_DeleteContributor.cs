@@ -1,10 +1,4 @@
-﻿using Ardalis.SharedKernel;
-using WyomingDotNet.Core.ContributorAggregate;
-using WyomingDotNet.Core.Services;
-using MediatR;
-using Microsoft.Extensions.Logging;
-using NSubstitute;
-using Xunit;
+﻿using WyomingDotNet.Core.Services;
 
 namespace WyomingDotNet.UnitTests.Core.Services;
 

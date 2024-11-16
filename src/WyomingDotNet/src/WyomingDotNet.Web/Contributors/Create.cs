@@ -1,6 +1,4 @@
 ﻿using WyomingDotNet.UseCases.Contributors.Create;
-using FastEndpoints;
-using MediatR;
 
 namespace WyomingDotNet.Web.Contributors;
 

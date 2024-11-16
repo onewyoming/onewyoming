@@ -1,6 +1,4 @@
-﻿using Ardalis.Result;
-
-namespace WyomingDotNet.Core.Interfaces;
+﻿namespace WyomingDotNet.Core.Interfaces;
 
 public interface IDeleteContributorService
 {
