@@ -140,3 +140,77 @@ Saturday, November 16, 2024 3:16:58 PM
 
 
 PS C:\code\wyoming> $env:DOTNET_CLI_TELEMETRY_OPTOUT='1';cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git push origin master; date;
+
+Saturday, November 16, 2024 3:18:52 PM
+Saturday, November 16, 2024 3:18:52 PM
+  webapi failed with 1 error(s) (0.3s)
+    C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(266,5): error NETSDK1005: Assets file 'C:\code\wyoming\src\dotnet\webapi\obj\project.assets.json' doesn't have a target for 'net9.0'. Ensure that restore has run and that you have included 'net9.0' in the TargetFrameworks for your project.
+
+Build failed with 1 error(s) in 1.4s
+Saturday, November 16, 2024 3:18:54 PM
+Restore complete (2.1s)
+  webapi succeeded (4.3s) → webapi\bin\Debug\net9.0\webapi.dll
+
+Build succeeded in 7.3s
+Saturday, November 16, 2024 3:19:01 PM
+Saturday, November 16, 2024 3:19:01 PM
+yarn install v1.22.22
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.36s.
+Saturday, November 16, 2024 3:19:02 PM
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PowerShell.txt
+        modified:   src/WyomingDotNet/Directory.Build.props
+        modified:   src/dotnet/webapi/webapi.csproj
+        modified:   src/mydotnet/AlphaTabTutorial/AlphaTabTutorial.csproj
+        modified:   src/mydotnet/AnalyticsWebApi/AnalyticsWebApi.csproj
+        modified:   src/mydotnet/ConsoleApp1/ConsoleApp1.csproj
+        modified:   src/mydotnet/mydotnet.AppHost/mydotnet.AppHost.csproj
+        modified:   src/mydotnet/mydotnet.ServiceDefaults/mydotnet.ServiceDefaults.csproj
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Saturday, November 16, 2024 3:19:02 PM
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+Saturday, November 16, 2024 3:19:04 PM
+[master eca321f] add all changes
+ 8 files changed, 72 insertions(+), 7 deletions(-)
+Saturday, November 16, 2024 3:19:04 PM
+Current branch master is up to date.
+Saturday, November 16, 2024 3:19:06 PM
+Enumerating objects: 39, done.
+Counting objects: 100% (39/39), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (20/20), 2.12 KiB | 196.00 KiB/s, done.
+Total 20 (delta 16), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (16/16), completed with 16 local objects.
+To github.com:onewyoming/onewyoming.git
+   26e62ab..eca321f  master -> master
+Enumerating objects: 39, done.
+Counting objects: 100% (39/39), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (20/20), 2.12 KiB | 196.00 KiB/s, done.
+Total 20 (delta 16), reused 0 (delta 0), pack-reused 0 (from 0)
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   26e62ab..eca321f  master -> master
+Saturday, November 16, 2024 3:19:09 PM
+
+
+PS C:\code\wyoming> $env:DOTNET_CLI_TELEMETRY_OPTOUT='1';cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git push origin master; date;
