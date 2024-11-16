@@ -863,3 +863,676 @@ Saturday, November 16, 2024 3:37:51 PM
 
 
 PS C:\code\wyoming> $env:DOTNET_CLI_TELEMETRY_OPTOUT='1';cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\mydotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\WyomingDotNet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git pushorigin master; date;
+
+Saturday, November 16, 2024 3:42:17 PM
+Saturday, November 16, 2024 3:42:17 PM
+
+Build succeeded in 1.5s
+Saturday, November 16, 2024 3:42:19 PM
+Restore complete (1.4s)
+  webapi succeeded (2.2s) → webapi\bin\Debug\net9.0\webapi.dll
+
+Build succeeded in 4.5s
+Saturday, November 16, 2024 3:42:24 PM
+Saturday, November 16, 2024 3:42:24 PM
+
+Build succeeded in 1.6s
+Saturday, November 16, 2024 3:42:26 PM
+Restore complete (1.6s)
+  mydotnet.ServiceDefaults succeeded (0.9s) → mydotnet.ServiceDefaults\bin\Debug\net9.0\mydotnet.ServiceDefaults.dll
+  AlphaTabTutorial_fxt51la2_wpftmp succeeded with 5 warning(s) (0.4s)
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(254,50): warning CS8612: Nullability of reference types in type of 'event PropertyChangedEventHandler MainWindow.PropertyChanged' doesn't match implicitly implemented member 'event PropertyChangedEventHandler? INotifyPropertyChanged.PropertyChanged'.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(255,91): warning CS8625: Cannot convert null literal to non-nullable reference type.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_score' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_selectedTrack' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable event 'PropertyChanged' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable.
+  ConsoleApp1 succeeded (1.3s) → ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.dll
+  AlphaTabTutorial succeeded with 5 warning(s) (2.1s) → AlphaTabTutorial\bin\Debug\net9.0-windows\AlphaTabTutorial.dll
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(254,50): warning CS8612: Nullability of reference types in type of 'event PropertyChangedEventHandler MainWindow.PropertyChanged' doesn't match implicitly implemented member 'event PropertyChangedEventHandler? INotifyPropertyChanged.PropertyChanged'.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(255,91): warning CS8625: Cannot convert null literal to non-nullable reference type.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_score' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_selectedTrack' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable event 'PropertyChanged' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable.
+  AnalyticsWebApi succeeded (2.0s) → AnalyticsWebApi\bin\Debug\net9.0\AnalyticsWebApi.dll
+  mydotnet.AppHost succeeded (1.5s) → mydotnet.AppHost\bin\Debug\net9.0\mydotnet.AppHost.dll
+
+Build succeeded with 10 warning(s) in 7.7s
+Saturday, November 16, 2024 3:42:34 PM
+Saturday, November 16, 2024 3:42:34 PM
+
+Build succeeded in 2.3s
+Saturday, November 16, 2024 3:42:37 PM
+    C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.FunctionalTests\WyomingDotNet.FunctionalTests.csproj : error NU1902: Warning As Error: Package 'Azure.Identity' 1.10.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9
+    C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Infrastructure\WyomingDotNet.Infrastructure.csproj : error NU1902: Warning As Error: Package 'Azure.Identity' 1.10.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9
+    C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.IntegrationTests\WyomingDotNet.IntegrationTests.csproj : error NU1902: Warning As Error: Package 'Azure.Identity' 1.10.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9
+    C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Web\WyomingDotNet.Web.csproj : error NU1902: Warning As Error: Package 'Azure.Identity' 1.10.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9
+    C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Web\WyomingDotNet.Web.csproj : error NU1902: Warning As Error: Package 'Azure.Identity' 1.10.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-wvxc-855f-jvrv
+    C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Infrastructure\WyomingDotNet.Infrastructure.csproj : error NU1902: Warning As Error: Package 'Azure.Identity' 1.10.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-wvxc-855f-jvrv
+    C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.FunctionalTests\WyomingDotNet.FunctionalTests.csproj : error NU1902: Warning As Error: Package 'Azure.Identity' 1.10.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-wvxc-855f-jvrv
+    C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.IntegrationTests\WyomingDotNet.IntegrationTests.csproj : error NU1902: Warning As Error: Package 'Azure.Identity' 1.10.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-wvxc-855f-jvrv
+    C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.IntegrationTests\WyomingDotNet.IntegrationTests.csproj : error NU1902: Warning As Error: Package 'Microsoft.Identity.Client' 4.56.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9
+    C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Web\WyomingDotNet.Web.csproj : error NU1902: Warning As Error: Package 'Microsoft.Identity.Client' 4.56.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9
+    C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Infrastructure\WyomingDotNet.Infrastructure.csproj : error NU1902: Warning As Error: Package 'Microsoft.Identity.Client' 4.56.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9
+    C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.FunctionalTests\WyomingDotNet.FunctionalTests.csproj : error NU1902: Warning As Error: Package 'Microsoft.Identity.Client' 4.56.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9
+    C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Web\WyomingDotNet.Web.csproj : error NU1901: Warning As Error: Package 'Microsoft.Identity.Client' 4.56.0 has a known low severity vulnerability, https://github.com/advisories/GHSA-x674-v45j-fwxw
+    C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Infrastructure\WyomingDotNet.Infrastructure.csproj : error NU1901: Warning As Error: Package 'Microsoft.Identity.Client' 4.56.0 has a known low severity vulnerability, https://github.com/advisories/GHSA-x674-v45j-fwxw
+    C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.IntegrationTests\WyomingDotNet.IntegrationTests.csproj : error NU1901: Warning As Error: Package 'Microsoft.Identity.Client' 4.56.0 has a known low severity vulnerability, https://github.com/advisories/GHSA-x674-v45j-fwxw
+    C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Infrastructure\WyomingDotNet.Infrastructure.csproj : error NU1903: Warning As Error: Package 'MimeKit' 4.6.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-gmc6-fwg3-75m5
+    C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.FunctionalTests\WyomingDotNet.FunctionalTests.csproj : error NU1901: Warning As Error: Package 'Microsoft.Identity.Client' 4.56.0 has a known low severity vulnerability, https://github.com/advisories/GHSA-x674-v45j-fwxw
+    C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.IntegrationTests\WyomingDotNet.IntegrationTests.csproj : error NU1903: Warning As Error: Package 'MimeKit' 4.6.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-gmc6-fwg3-75m5
+    C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Web\WyomingDotNet.Web.csproj : error NU1903: Warning As Error: Package 'MimeKit' 4.6.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-gmc6-fwg3-75m5
+    C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Web\WyomingDotNet.Web.csproj : error NU1903: Warning As Error: Package 'System.Formats.Asn1' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-447r-wph3-92pm
+    C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.FunctionalTests\WyomingDotNet.FunctionalTests.csproj : error NU1903: Warning As Error: Package 'MimeKit' 4.6.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-gmc6-fwg3-75m5
+    C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.IntegrationTests\WyomingDotNet.IntegrationTests.csproj : error NU1903: Warning As Error: Package 'System.Formats.Asn1' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-447r-wph3-92pm
+    C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Infrastructure\WyomingDotNet.Infrastructure.csproj : error NU1903: Warning As Error: Package 'System.Formats.Asn1' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-447r-wph3-92pm
+    C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Web\WyomingDotNet.Web.csproj : error NU1903: Warning As Error: Package 'System.Text.Json' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-8g4q-xg66-9fp4
+    C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Web\WyomingDotNet.Web.csproj : error NU1903: Warning As Error: Package 'System.Text.Json' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-hh2w-p6rv-4g7w
+    C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.FunctionalTests\WyomingDotNet.FunctionalTests.csproj : error NU1903: Warning As Error: Package 'System.Formats.Asn1' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-447r-wph3-92pm
+    C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Infrastructure\WyomingDotNet.Infrastructure.csproj : error NU1903: Warning As Error: Package 'System.Text.Json' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-8g4q-xg66-9fp4
+    C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.FunctionalTests\WyomingDotNet.FunctionalTests.csproj : error NU1903: Warning As Error: Package 'System.Text.Json' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-8g4q-xg66-9fp4
+    C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.IntegrationTests\WyomingDotNet.IntegrationTests.csproj : error NU1903: Warning As Error: Package 'System.Text.Json' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-8g4q-xg66-9fp4
+    C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Infrastructure\WyomingDotNet.Infrastructure.csproj : error NU1903: Warning As Error: Package 'System.Text.Json' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-hh2w-p6rv-4g7w
+    C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.FunctionalTests\WyomingDotNet.FunctionalTests.csproj : error NU1903: Warning As Error: Package 'System.Text.Json' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-hh2w-p6rv-4g7w
+    C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.IntegrationTests\WyomingDotNet.IntegrationTests.csproj : error NU1903: Warning As Error: Package 'System.Text.Json' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-hh2w-p6rv-4g7w
+    C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Infrastructure\WyomingDotNet.Infrastructure.csproj : error NU1605:
+      Warning As Error: Detected package downgrade: Microsoft.Extensions.Logging from 9.0.0 to 8.0.0. Reference the package directly from the project to select a different version.
+       WyomingDotNet.Infrastructure -> Microsoft.EntityFrameworkCore.Relational 9.0.0 -> Microsoft.Extensions.Logging (>= 9.0.0)
+       WyomingDotNet.Infrastructure -> Microsoft.Extensions.Logging (>= 8.0.0)
+
+Restore failed with 33 error(s) in 3.5s
+Saturday, November 16, 2024 3:42:41 PM
+Saturday, November 16, 2024 3:42:41 PM
+yarn install v1.22.22
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.40s.
+Saturday, November 16, 2024 3:42:42 PM
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PowerShell.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Saturday, November 16, 2024 3:42:42 PM
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+Saturday, November 16, 2024 3:42:43 PM
+[master 9b87752] add all changes
+ 1 file changed, 480 insertions(+), 1625 deletions(-)
+Saturday, November 16, 2024 3:42:44 PM
+Current branch master is up to date.
+Saturday, November 16, 2024 3:42:46 PM
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.69 KiB | 458.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: GitHub found 1 vulnerability on onewyoming/onewyoming's default branch (1 high). To find out more, visit:
+remote:      https://github.com/onewyoming/onewyoming/security/dependabot/2062
+remote:
+To github.com:onewyoming/onewyoming.git
+   41bf97b..9b87752  master -> master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.69 KiB | 458.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   41bf97b..9b87752  master -> master
+Saturday, November 16, 2024 3:42:49 PM
+
+
+PS C:\code\wyoming> date; scoop status; date; scoop bucket rm main; date; scoop bucket add main; date; scoop bucket rm extras; date; scoop bucket add extras; date; scoop bucket rm nerd-fonts; date; scoop bucket add nerd-fonts; date; scoop status; date; scoop update; date; scoop update *; date; scoop cache show; date; scoop cache rm *; date; scoop status; date;
+
+Saturday, November 16, 2024 3:43:43 PM
+WARN  Scoop out of date. Run 'scoop update' to get the latest changes.
+Saturday, November 16, 2024 3:43:53 PM
+Saturday, November 16, 2024 3:43:54 PM
+Checking repo... OK
+The main bucket was added successfully.
+Saturday, November 16, 2024 3:44:27 PM
+Saturday, November 16, 2024 3:44:28 PM
+Checking repo... OK
+The extras bucket was added successfully.
+Saturday, November 16, 2024 3:45:00 PM
+Saturday, November 16, 2024 3:45:01 PM
+Checking repo... OK
+The nerd-fonts bucket was added successfully.
+Saturday, November 16, 2024 3:45:04 PM
+WARN  Scoop out of date. Run 'scoop update' to get the latest changes.
+
+Name                 : 7zip
+Installed Version    : 24.06
+Latest Version       : 24.08
+Missing Dependencies :
+Info                 :
+
+
+Name                 : git
+Installed Version    : 2.45.2
+Latest Version       : 2.47.0.2
+Missing Dependencies :
+Info                 :
+
+
+Name                 : nodejs-lts
+Installed Version    : 20.14.0
+Latest Version       : 22.11.0
+Missing Dependencies :
+Info                 :
+
+Saturday, November 16, 2024 3:45:07 PM
+Updating Scoop...
+ * 859d1db51bcc chore(release): Bump to version 0.5.2 (#6080)            4 months ago
+ * c7ec5c82b23b docs(chglog): Update CHANGELOG for v0.5.2 (#6081)        4 months ago
+ * 46624b00c9dd fix(core): Use 'Join-Path' to construct cache file pat.. 4 months ago
+ * 49ee8ad6ec76 fix(scoop-hold): Use 'foreach' loop to allow 'continue.. 4 months ago
+ * 5dc5dd22f8bf fix(json): Fix JSON items counting function (#6073)      4 months ago
+ * 5971f1dda840 builds(supporting): Update Json.Schema to 4.0.1 (#6072)  4 months ago
+ * 0cb479abf032 fix(json): Don't serialize jsonpath return if only one.. 4 months ago
+ * 429ba7af5b54 fix(scoop-alias): Fix 'Option --verbose not recognized.. 4 months ago
+ * be56faf29016 chore(release): Bump to version 0.5.1 (#6057)            4 months ago
+ * 69edc6dc54ff chore(chglog): Update CHANGELOG for v0.5.1 (#6058)       4 months ago
+ * 0138dc426657 fix(scoop-alias): Pass options correctly (#6003)         4 months ago
+ * 1c271f5b90f2 fix(scoop-virustotal): Adjust `json_path` parameters t.. 4 months ago
+ * a76884af1904 fix(install): Fix parsing error when installing multip.. 4 months ago
+ * 7cc4faea1d0f fix(bucket): Implement error handling for failed bucke.. 4 months ago
+ * 83f25a4673c2 fix(install): Expand env_set items (#6050)               4 months ago
+ * 42af27d16c65 fix(sqlite): Fix compatibility with Windows PowerShell.. 4 months ago
+ * 716b6db3ae55 chore(release): Bump to version 0.5.0 (#6035)            5 months ago
+ * ade7aa4a153b (chore): Update changelog (#6036)                        5 months ago
+ * 7e0a2a28c6a0 Update chglog                                            5 months ago
+ * 2d02483fb843 Merge branch 'master' into develop                       5 months ago
+ * 93359a43a112 fix(shim): Restore original path for JAR cmd (#6030)     5 months ago
+ * d8b3cc8a6cd8 fix(checkver): Correct error messages (#6024)            5 months ago
+ * 9239c26bbd8c feat(decompress): Use `innounp-unicode` as default Inn.. 5 months ago
+ * 3a39ba048f47 fix(core): Limit the number of commands to get (#6013)   5 months ago
+ * a9ca75c0cda0 fix(core): Use correct path in 'bash' (#6006)            5 months ago
+ * d20819e14794 fix(core): Search for Git executable instead of any cm.. 5 months ago
+ * dec4232754e1 fix(decompress): Match `extract_dir`/`extract_to` and .. 6 months ago
+ * fa1b42bf285c fix(checkver): Correct variable 'regex' to 'regexp' (#.. 6 months ago
+ * 700a2f4f5e9c feat(install): Added the ability to specify @ version .. 6 months ago
+ * c9048ad97819 fix(sqlite): Fix generic class error in PS5 (#5981)      6 months ago
+ * 5c896e901faf refactor(decompress): Use 7zip to extract Zstd archive.. 6 months ago
+ * 8ea37387aeba fix(install): Add back arg `$Name` in `Invoke-Installe.. 6 months ago
+ * 2544745695c2 refactor(install): Replace 'run_(un)installer()' with .. 6 months ago
+ * 5ce70c41397c fix(sqlite): Update cache after removing bucket or man.. 6 months ago
+ * 2d50a02a321b fix(scoop-download|install|update): Use consistent opt.. 6 months ago
+ * f6f46f6cf44f fix(sqlite): Dispose all command to release database f.. 6 months ago
+ * 4dd2cfdc5f5c fix(core): Add 'PSObject.Copy()' to 'substitute()' (#5.. 6 months ago
+ * a5bd2297c622 refactor(install): Separate archive extraction from do.. 6 months ago
+ * b710ff6c0ad9 fix(scoop-info): Fix download size estimating (#5958)    6 months ago
+ * 1dd479f0be6a fix(database): Use 'Find-BucketDirectory()' to locate .. 6 months ago
+ * 1752050614f2 fix(core): Fix "Invoke-ExternalCommand" quoting rules .. 6 months ago
+ * edaae8d39fad fix(database): Skip caching 'deprecated' dir (#5949)     6 months ago
+ * 776135e0ab98 fix(database): Update cache when adding bucket (#5946)   6 months ago
+ * cc863353e271 fix(scoop-cache): Fix regression in 36026f18 (#5944)     6 months ago
+ * 5b86c302e5c4 fix(system): Fix argument passing to `Split-PathLikeEn.. 7 months ago
+ * b8580aa931bd fix(autoupdate): Copy `PSCustomObject`-type properties.. 7 months ago
+ * 23d55ced727e fix(scoop-search): Catch error of parsing invalid mani.. 7 months ago
+ * 36026f180409 feat(core): New cache filename format (#5929)            7 months ago
+ * 3b34497eb43a fix(json): Serialize jsonpath return (#5921)             7 months ago
+ * bb88dfb2d48b Sync 'master' branch                                     7 months ago
+ * eac58400dbac fix(sqlite): Skip `use_sqlite_cache` config on ARM64 p.. 7 months ago
+ * 2dd91d5ba3c0 feat(sqlite): Use SQLite for caching apps to speed up .. 7 months ago
+Updating Buckets...
+Scoop was updated successfully!
+Saturday, November 16, 2024 3:45:13 PM
+7zip: 24.06 -> 24.08
+git: 2.45.2 -> 2.47.0.2
+nodejs-lts: 20.14.0 -> 22.11.0
+Updating 3 outdated apps:
+Updating '7zip' (24.06 -> 24.08)
+Downloading new version
+7z2408-x64.msi (1.9 MB) [=========================================================================================================================================================================================================================================================================================] 100%
+Checking hash of 7z2408-x64.msi ... ok.
+Uninstalling '7zip' (24.06)
+Removing shim '7z.shim'.
+Removing shim '7z.exe'.
+Removing shim '7zFM.shim'.
+Removing shim '7zFM.exe'.
+Removing shim '7zG.shim'.
+Removing shim '7zG.exe'.
+Unlinking ~\scoop\apps\7zip\current
+Installing '7zip' (24.08) [64bit] from 'main' bucket
+Loading 7z2408-x64.msi from cache
+Extracting 7z2408-x64.msi ... done.
+Linking ~\scoop\apps\7zip\current => ~\scoop\apps\7zip\24.08
+Creating shim for '7z'.
+Creating shim for '7zFM'.
+Making C:\Users\kushal\scoop\shims\7zfm.exe a GUI binary.
+Creating shim for '7zG'.
+Making C:\Users\kushal\scoop\shims\7zg.exe a GUI binary.
+Creating shortcut for 7-Zip (7zFM.exe)
+Persisting Codecs
+Persisting Formats
+Running post_install script...done.
+'7zip' (24.08) was installed successfully!
+Notes
+-----
+Add 7-Zip as a context menu option by running: "C:\Users\kushal\scoop\apps\7zip\current\install-context.reg"
+Updating 'git' (2.45.2 -> 2.47.0.2)
+Downloading new version
+PortableGit-2.47.0.2-64-bit.7z.exe (59.2 MB) [====================================================================================================================================================================================================================================================================] 100%
+Checking hash of PortableGit-2.47.0.2-64-bit.7z.exe ... ok.
+Uninstalling 'git' (2.45.2)
+Removing shim 'sh.shim'.
+Removing shim 'sh.exe'.
+Removing shim 'bash.shim'.
+Removing shim 'bash.exe'.
+Removing shim 'git.shim'.
+Removing shim 'git.exe'.
+Removing shim 'gitk.shim'.
+Removing shim 'gitk.exe'.
+Removing shim 'git-gui.shim'.
+Removing shim 'git-gui.exe'.
+Removing shim 'scalar.shim'.
+Removing shim 'scalar.exe'.
+Removing shim 'tig.shim'.
+Removing shim 'tig.exe'.
+Removing shim 'git-bash.shim'.
+Removing shim 'git-bash.exe'.
+Unlinking ~\scoop\apps\git\current
+Installing 'git' (2.47.0.2) [64bit] from 'main' bucket
+Loading PortableGit-2.47.0.2-64-bit.7z.exe from cache
+Extracting PortableGit-2.47.0.2-64-bit.7z.exe ... done.
+Linking ~\scoop\apps\git\current => ~\scoop\apps\git\2.47.0.2
+Creating shim for 'sh'.
+Creating shim for 'bash'.
+Creating shim for 'git'.
+Creating shim for 'gitk'.
+Making C:\Users\kushal\scoop\shims\gitk.exe a GUI binary.
+Creating shim for 'git-gui'.
+Making C:\Users\kushal\scoop\shims\git-gui.exe a GUI binary.
+Creating shim for 'scalar'.
+Creating shim for 'tig'.
+Creating shim for 'git-bash'.
+Making C:\Users\kushal\scoop\shims\git-bash.exe a GUI binary.
+Creating shortcut for Git Bash (git-bash.exe)
+Creating shortcut for Git GUI (git-gui.exe)
+Running post_install script...done.
+'git' (2.47.0.2) was installed successfully!
+Notes
+-----
+Set Git Credential Manager Core by running: "git config --global credential.helper manager"
+
+To add context menu entries, run 'C:\Users\kushal\scoop\apps\git\current\install-context.reg'
+
+To create file-associations for .git* and .sh files, run 'C:\Users\kushal\scoop\apps\git\current\install-file-associations.reg'
+Updating 'nodejs-lts' (20.14.0 -> 22.11.0)
+Downloading new version
+node-v22.11.0-win-x64.7z (20.3 MB) [==============================================================================================================================================================================================================================================================================] 100%
+Checking hash of node-v22.11.0-win-x64.7z ... ok.
+Uninstalling 'nodejs-lts' (20.14.0)
+Unlinking ~\scoop\apps\nodejs-lts\current
+Removing ~\scoop\apps\nodejs-lts\current\bin from your path.
+Removing ~\scoop\apps\nodejs-lts\current from your path.
+Installing 'nodejs-lts' (22.11.0) [64bit] from 'main' bucket
+Loading node-v22.11.0-win-x64.7z from cache
+Extracting node-v22.11.0-win-x64.7z ... done.
+Linking ~\scoop\apps\nodejs-lts\current => ~\scoop\apps\nodejs-lts\22.11.0
+Adding ~\scoop\apps\nodejs-lts\current\bin to your path.
+Adding ~\scoop\apps\nodejs-lts\current to your path.
+Persisting bin
+Persisting cache
+Running post_install script...done.
+'nodejs-lts' (22.11.0) was installed successfully!
+Saturday, November 16, 2024 3:46:20 PM
+
+Name    : 7zip
+Version : 24.08
+Length  : 1971200
+
+
+Name    : git
+Version : 2.47.0.2
+Length  : 62068112
+
+
+Name    : nodejs-lts
+Version : 22.11.0
+Length  : 21299714
+
+Total: 3 files, 81.4 MB
+Saturday, November 16, 2024 3:46:20 PM
+Removing 7zip#24.08#71f2568.msi...
+Removing git#2.47.0.2#b75ad9d.7z...
+Removing nodejs-lts#22.11.0#2a2e3ab.7z...
+Deleted: 3 files, 81.4 MB
+Saturday, November 16, 2024 3:46:20 PM
+Scoop is up to date.
+Everything is ok!
+Saturday, November 16, 2024 3:46:23 PM
+
+
+PS C:\code\wyoming>
+PS C:\code\wyoming>
+PS C:\code\wyoming>
+PS C:\code\wyoming>
+PS C:\code\wyoming>
+PS C:\code\wyoming>
+PS C:\code\wyoming>
+PS C:\code\wyoming>
+PS C:\code\wyoming>
+PS C:\code\wyoming>
+PS C:\code\wyoming>
+PS C:\code\wyoming>
+PS C:\code\wyoming>
+PS C:\code\wyoming>
+PS C:\code\wyoming> dotnet new install Ardalis.CleanArchitecture.Template
+The following template packages will be installed:
+   Ardalis.CleanArchitecture.Template
+
+Success: Ardalis.CleanArchitecture.Template::10.0.0 installed the following templates:
+Template Name                        Short Name  Language  Tags
+-----------------------------------  ----------  --------  ------------------------------
+ASP.NET Clean Architecture Solution  clean-arch  [C#]      Web/ASP.NET/Clean Architecture
+
+PS C:\code\wyoming> cd "C:\code\wyoming\src\"; dotnet new clean-arch -o WyomingDotNet
+The template "ASP.NET Clean Architecture Solution" was created successfully.
+
+PS C:\code\wyoming\src> $env:DOTNET_CLI_TELEMETRY_OPTOUT='1';cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\mydotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\WyomingDotNet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git push origin master; date;
+
+Saturday, November 16, 2024 3:50:45 PM
+Saturday, November 16, 2024 3:50:45 PM
+
+Build succeeded in 1.5s
+Saturday, November 16, 2024 3:50:47 PM
+Restore complete (1.4s)
+  webapi succeeded (2.2s) → webapi\bin\Debug\net9.0\webapi.dll
+
+Build succeeded in 4.6s
+Saturday, November 16, 2024 3:50:52 PM
+Saturday, November 16, 2024 3:50:52 PM
+
+Build succeeded in 1.5s
+Saturday, November 16, 2024 3:50:54 PM
+Restore complete (1.6s)
+  mydotnet.ServiceDefaults succeeded (0.7s) → mydotnet.ServiceDefaults\bin\Debug\net9.0\mydotnet.ServiceDefaults.dll
+  AlphaTabTutorial_10kmknxx_wpftmp succeeded with 5 warning(s) (0.6s)
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(254,50): warning CS8612: Nullability of reference types in type of 'event PropertyChangedEventHandler MainWindow.PropertyChanged' doesn't match implicitly implemented member 'event PropertyChangedEventHandler? INotifyPropertyChanged.PropertyChanged'.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(255,91): warning CS8625: Cannot convert null literal to non-nullable reference type.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_score' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_selectedTrack' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable event 'PropertyChanged' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable.
+  ConsoleApp1 succeeded (1.3s) → ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.dll
+  AnalyticsWebApi succeeded (1.6s) → AnalyticsWebApi\bin\Debug\net9.0\AnalyticsWebApi.dll
+  AlphaTabTutorial succeeded with 5 warning(s) (2.6s) → AlphaTabTutorial\bin\Debug\net9.0-windows\AlphaTabTutorial.dll
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(254,50): warning CS8612: Nullability of reference types in type of 'event PropertyChangedEventHandler MainWindow.PropertyChanged' doesn't match implicitly implemented member 'event PropertyChangedEventHandler? INotifyPropertyChanged.PropertyChanged'.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(255,91): warning CS8625: Cannot convert null literal to non-nullable reference type.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_score' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_selectedTrack' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable event 'PropertyChanged' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable.
+  mydotnet.AppHost succeeded (1.4s) → mydotnet.AppHost\bin\Debug\net9.0\mydotnet.AppHost.dll
+
+Build succeeded with 10 warning(s) in 5.2s
+Saturday, November 16, 2024 3:50:59 PM
+Saturday, November 16, 2024 3:50:59 PM
+  WyomingDotNet failed with 2 error(s) (0.0s)
+    C:\code\wyoming\src\WyomingDotNet\WyomingDotNet.sln.metaproj : error MSB3202: The project file "C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.AspireHost\WyomingDotNet.AspireHost.csproj" was not found.
+    C:\code\wyoming\src\WyomingDotNet\WyomingDotNet.sln.metaproj : error MSB3202: The project file "C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.ServiceDefaults\WyomingDotNet.ServiceDefaults.csproj" was not found.
+
+Build failed with 2 error(s) in 1.6s
+Saturday, November 16, 2024 3:51:02 PM
+    C:\Program Files\dotnet\sdk\9.0.100\NuGet.targets(471,5): error MSB3202: The project file "C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.ServiceDefaults\WyomingDotNet.ServiceDefaults.csproj" was not found.
+    C:\Program Files\dotnet\sdk\9.0.100\NuGet.targets(471,5): error MSB3202: The project file "C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.AspireHost\WyomingDotNet.AspireHost.csproj" was not found.
+
+Restore failed with 2 error(s) in 1.3s
+Saturday, November 16, 2024 3:51:03 PM
+Saturday, November 16, 2024 3:51:03 PM
+yarn install v1.22.22
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+Done in 5.05s.
+Saturday, November 16, 2024 3:51:11 PM
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/WyomingDotNet/.editorconfig
+        modified:   src/WyomingDotNet/Directory.Packages.props
+        modified:   src/WyomingDotNet/README.md
+        modified:   src/WyomingDotNet/WyomingDotNet.sln
+        modified:   src/WyomingDotNet/global.json
+        modified:   src/WyomingDotNet/nuget.config
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Core/ContributorAggregate/Contributor.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Core/ContributorAggregate/ContributorStatus.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Core/ContributorAggregate/Events/ContributorDeletedEvent.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Core/ContributorAggregate/Handlers/ContributorDeletedHandler.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Core/ContributorAggregate/Specifications/ContributorByIdSpec.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Core/Interfaces/IDeleteContributorService.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Core/Services/DeleteContributorService.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Infrastructure/Data/AppDbContext.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Infrastructure/Data/AppDbContextExtensions.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Infrastructure/Data/Config/ContributorConfiguration.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Infrastructure/Data/EfRepository.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Infrastructure/Data/Queries/FakeListContributorsQueryService.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Infrastructure/Data/Queries/ListContributorsQueryService.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Infrastructure/Data/SeedData.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Infrastructure/Email/FakeEmailSender.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Infrastructure/Email/MimeKitEmailSender.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Infrastructure/Email/SmtpEmailSender.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Infrastructure/InfrastructureServiceExtensions.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Infrastructure/WyomingDotNet.Infrastructure.csproj
+        modified:   src/WyomingDotNet/src/WyomingDotNet.UseCases/Contributors/Create/CreateContributorCommand.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.UseCases/Contributors/Create/CreateContributorHandler.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.UseCases/Contributors/Delete/DeleteContributorCommand.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.UseCases/Contributors/Delete/DeleteContributorHandler.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.UseCases/Contributors/Get/GetContributorHandler.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.UseCases/Contributors/Get/GetContributorQuery.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.UseCases/Contributors/List/ListContributorsHandler.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.UseCases/Contributors/List/ListContributorsQuery.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.UseCases/Contributors/Update/UpdateContributorCommand.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.UseCases/Contributors/Update/UpdateContributorHandler.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.UseCases/WyomingDotNet.UseCases.csproj
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Web/Contributors/Create.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Web/Contributors/Delete.cs
+        deleted:    src/WyomingDotNet/src/WyomingDotNet.Web/Contributors/GetById.GetProjectByIdRequest.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Web/Contributors/GetById.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Web/Contributors/List.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Web/Contributors/Update.cs
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Web/Program.cs
+        deleted:    src/WyomingDotNet/src/WyomingDotNet.Web/Properties/PublishProfiles/site1624-WebDeploy.pubxml
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Web/Properties/launchSettings.json
+        modified:   src/WyomingDotNet/src/WyomingDotNet.Web/WyomingDotNet.Web.csproj
+        deleted:    src/WyomingDotNet/src/WyomingDotNet.Web/api.development.http
+        deleted:    src/WyomingDotNet/src/WyomingDotNet.Web/database.sqlite
+        deleted:    src/WyomingDotNet/src/WyomingDotNet.Web/database.sqlite-shm
+        deleted:    src/WyomingDotNet/src/WyomingDotNet.Web/database.sqlite-wal
+        deleted:    src/WyomingDotNet/src/WyomingDotNet.Web/log20240622.txt
+        deleted:    src/WyomingDotNet/src/WyomingDotNet.Web/log20240623.txt
+        modified:   src/WyomingDotNet/tests/WyomingDotNet.FunctionalTests/ApiEndpoints/ContributorGetById.cs
+        modified:   src/WyomingDotNet/tests/WyomingDotNet.FunctionalTests/ApiEndpoints/ContributorList.cs
+        modified:   src/WyomingDotNet/tests/WyomingDotNet.FunctionalTests/CustomWebApplicationFactory.cs
+        modified:   src/WyomingDotNet/tests/WyomingDotNet.IntegrationTests/Data/BaseEfRepoTestFixture.cs
+        modified:   src/WyomingDotNet/tests/WyomingDotNet.IntegrationTests/Data/EfRepositoryAdd.cs
+        modified:   src/WyomingDotNet/tests/WyomingDotNet.IntegrationTests/Data/EfRepositoryDelete.cs
+        modified:   src/WyomingDotNet/tests/WyomingDotNet.IntegrationTests/Data/EfRepositoryUpdate.cs
+        modified:   src/WyomingDotNet/tests/WyomingDotNet.UnitTests/Core/ContributorAggregate/ContributorConstructor.cs
+        modified:   src/WyomingDotNet/tests/WyomingDotNet.UnitTests/Core/Services/DeleteContributorSevice_DeleteContributor.cs
+        modified:   src/WyomingDotNet/tests/WyomingDotNet.UnitTests/NoOpMediator.cs
+        modified:   src/WyomingDotNet/tests/WyomingDotNet.UnitTests/UseCases/Contributors/CreateContributorHandlerHandle.cs
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/WyomingDotNet/docs/
+        src/WyomingDotNet/src/WyomingDotNet.Core/GlobalUsings.cs
+        src/WyomingDotNet/src/WyomingDotNet.Infrastructure/GlobalUsings.cs
+        src/WyomingDotNet/src/WyomingDotNet.UseCases/GlobalUsings.cs
+        src/WyomingDotNet/src/WyomingDotNet.Web/Configurations/
+        src/WyomingDotNet/src/WyomingDotNet.Web/Contributors/GetById.GetContributorByIdRequest.cs
+        src/WyomingDotNet/src/WyomingDotNet.Web/GlobalUsings.cs
+        src/WyomingDotNet/tests/WyomingDotNet.FunctionalTests/GlobalUsings.cs
+        src/WyomingDotNet/tests/WyomingDotNet.IntegrationTests/GlobalUsings.cs
+        src/WyomingDotNet/tests/WyomingDotNet.UnitTests/GlobalUsings.cs
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Saturday, November 16, 2024 3:51:12 PM
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+Saturday, November 16, 2024 3:51:13 PM
+[master 74a5dda] add all changes
+ 77 files changed, 444 insertions(+), 851 deletions(-)
+ create mode 100644 src/WyomingDotNet/docs/architecture-decisions/README.md
+ create mode 100644 src/WyomingDotNet/docs/architecture-decisions/adr-001-dotnet-di-adoption.md
+ create mode 100644 src/WyomingDotNet/src/WyomingDotNet.Core/GlobalUsings.cs
+ create mode 100644 src/WyomingDotNet/src/WyomingDotNet.Infrastructure/GlobalUsings.cs
+ create mode 100644 src/WyomingDotNet/src/WyomingDotNet.UseCases/GlobalUsings.cs
+ create mode 100644 src/WyomingDotNet/src/WyomingDotNet.Web/Configurations/LoggerConfigs.cs
+ create mode 100644 src/WyomingDotNet/src/WyomingDotNet.Web/Configurations/MediatrConfigs.cs
+ create mode 100644 src/WyomingDotNet/src/WyomingDotNet.Web/Configurations/OptionConfigs.cs
+ create mode 100644 src/WyomingDotNet/src/WyomingDotNet.Web/Configurations/ServiceConfigs.cs
+ create mode 100644 src/WyomingDotNet/src/WyomingDotNet.Web/Configurations/WebApplicationConfigs.cs
+ rename src/WyomingDotNet/src/WyomingDotNet.Web/Contributors/{GetById.GetProjectByIdRequest.cs => GetById.GetContributorByIdRequest.cs} (100%)
+ create mode 100644 src/WyomingDotNet/src/WyomingDotNet.Web/GlobalUsings.cs
+ delete mode 100644 src/WyomingDotNet/src/WyomingDotNet.Web/Properties/PublishProfiles/site1624-WebDeploy.pubxml
+ delete mode 100644 src/WyomingDotNet/src/WyomingDotNet.Web/api.development.http
+ delete mode 100644 src/WyomingDotNet/src/WyomingDotNet.Web/database.sqlite
+ delete mode 100644 src/WyomingDotNet/src/WyomingDotNet.Web/database.sqlite-shm
+ delete mode 100644 src/WyomingDotNet/src/WyomingDotNet.Web/database.sqlite-wal
+ delete mode 100644 src/WyomingDotNet/src/WyomingDotNet.Web/log20240622.txt
+ delete mode 100644 src/WyomingDotNet/src/WyomingDotNet.Web/log20240623.txt
+ create mode 100644 src/WyomingDotNet/tests/WyomingDotNet.FunctionalTests/GlobalUsings.cs
+ create mode 100644 src/WyomingDotNet/tests/WyomingDotNet.IntegrationTests/GlobalUsings.cs
+ create mode 100644 src/WyomingDotNet/tests/WyomingDotNet.UnitTests/GlobalUsings.cs
+Saturday, November 16, 2024 3:51:16 PM
+Current branch master is up to date.
+Saturday, November 16, 2024 3:51:17 PM
+Enumerating objects: 192, done.
+Counting objects: 100% (192/192), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (106/106), done.
+Writing objects: 100% (110/110), 17.77 KiB | 259.00 KiB/s, done.
+Total 110 (delta 55), reused 1 (delta 1), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (55/55), completed with 51 local objects.
+remote:
+remote: GitHub found 1 vulnerability on onewyoming/onewyoming's default branch (1 high). To find out more, visit:
+remote:      https://github.com/onewyoming/onewyoming/security/dependabot/2062
+remote:
+To github.com:onewyoming/onewyoming.git
+   9b87752..74a5dda  master -> master
+Enumerating objects: 192, done.
+Counting objects: 100% (192/192), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (106/106), done.
+Writing objects: 100% (110/110), 17.77 KiB | 284.00 KiB/s, done.
+Total 110 (delta 55), reused 1 (delta 1), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (55/55), completed with 51 local objects.
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   9b87752..74a5dda  master -> master
+Saturday, November 16, 2024 3:51:21 PM
+
+
+PS C:\code\wyoming> $env:DOTNET_CLI_TELEMETRY_OPTOUT='1';cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\mydotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\WyomingDotNet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git pushorigin master; date;
+
+Saturday, November 16, 2024 3:56:53 PM
+Saturday, November 16, 2024 3:56:53 PM
+
+Build succeeded in 1.6s
+Saturday, November 16, 2024 3:56:55 PM
+Restore complete (1.5s)
+  webapi succeeded (2.3s) → webapi\bin\Debug\net9.0\webapi.dll
+
+Build succeeded in 4.8s
+Saturday, November 16, 2024 3:57:00 PM
+Saturday, November 16, 2024 3:57:00 PM
+
+Build succeeded in 1.7s
+Saturday, November 16, 2024 3:57:02 PM
+Restore complete (1.6s)
+  mydotnet.ServiceDefaults succeeded (0.8s) → mydotnet.ServiceDefaults\bin\Debug\net9.0\mydotnet.ServiceDefaults.dll
+  AlphaTabTutorial_hyjcx41u_wpftmp succeeded with 5 warning(s) (0.5s)
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(254,50): warning CS8612: Nullability of reference types in type of 'event PropertyChangedEventHandler MainWindow.PropertyChanged' doesn't match implicitly implemented member 'event PropertyChangedEventHandler? INotifyPropertyChanged.PropertyChanged'.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(255,91): warning CS8625: Cannot convert null literal to non-nullable reference type.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_score' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_selectedTrack' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable event 'PropertyChanged' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable.
+  ConsoleApp1 succeeded (1.4s) → ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.dll
+  AlphaTabTutorial succeeded with 5 warning(s) (2.4s) → AlphaTabTutorial\bin\Debug\net9.0-windows\AlphaTabTutorial.dll
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(254,50): warning CS8612: Nullability of reference types in type of 'event PropertyChangedEventHandler MainWindow.PropertyChanged' doesn't match implicitly implemented member 'event PropertyChangedEventHandler? INotifyPropertyChanged.PropertyChanged'.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(255,91): warning CS8625: Cannot convert null literal to non-nullable reference type.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_score' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_selectedTrack' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable event 'PropertyChanged' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable.
+  AnalyticsWebApi succeeded (1.7s) → AnalyticsWebApi\bin\Debug\net9.0\AnalyticsWebApi.dll
+  mydotnet.AppHost succeeded (1.5s) → mydotnet.AppHost\bin\Debug\net9.0\mydotnet.AppHost.dll
+
+Build succeeded with 10 warning(s) in 5.8s
+Saturday, November 16, 2024 3:57:09 PM
+Saturday, November 16, 2024 3:57:09 PM
+  WyomingDotNet failed with 2 error(s) (0.0s)
+    C:\code\wyoming\src\WyomingDotNet\WyomingDotNet.sln.metaproj : error MSB3202: The project file "C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.AspireHost\WyomingDotNet.AspireHost.csproj" was not found.
+    C:\code\wyoming\src\WyomingDotNet\WyomingDotNet.sln.metaproj : error MSB3202: The project file "C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.ServiceDefaults\WyomingDotNet.ServiceDefaults.csproj" was not found.
+
+Build failed with 2 error(s) in 4.1s
+Saturday, November 16, 2024 3:57:13 PM
+    C:\Program Files\dotnet\sdk\9.0.100\NuGet.targets(471,5): error MSB3202: The project file "C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.ServiceDefaults\WyomingDotNet.ServiceDefaults.csproj" was not found.
+    C:\Program Files\dotnet\sdk\9.0.100\NuGet.targets(471,5): error MSB3202: The project file "C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.AspireHost\WyomingDotNet.AspireHost.csproj" was not found.
+
+Restore failed with 2 error(s) in 1.3s
+Saturday, November 16, 2024 3:57:15 PM
+Saturday, November 16, 2024 3:57:15 PM
+yarn install v1.22.22
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.35s.
+Saturday, November 16, 2024 3:57:16 PM
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+Saturday, November 16, 2024 3:57:16 PM
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+Saturday, November 16, 2024 3:57:19 PM
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+Saturday, November 16, 2024 3:57:19 PM
+Already up to date.
+Saturday, November 16, 2024 3:57:20 PM
+Everything up-to-date
+Everything up-to-date
+Saturday, November 16, 2024 3:57:23 PM
+
+
+PS C:\code\wyoming> $env:DOTNET_CLI_TELEMETRY_OPTOUT='1';cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\mydotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\WyomingDotNet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git pushorigin master; date;
