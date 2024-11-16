@@ -4,184 +4,52 @@ Copyright (C) Microsoft Corporation. All rights reserved.
 Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
 
 PS C:\Users\kushal>
-PS C:\Users\kushal> cd C:\code\wyoming\; date; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git push origin master; date;
+PS C:\Users\kushal> cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git push origin master; date;
 
-Wednesday, November 6, 2024 3:15:29 PM
-On branch master
-Your branch is up to date with 'origin/master'.
+Saturday, November 16, 2024 3:14:12 PM
+Saturday, November 16, 2024 3:14:12 PM
 
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   PowerShell.txt
-        modified:   src/public-website/src/main.ts
-        modified:   src/public-website/tsconfig.json
+Welcome to .NET 9.0!
+---------------------
+SDK Version: 9.0.100
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        src/dotnet/
+Telemetry
+---------
+The .NET tools collect usage data in order to help us improve your experience. It is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
 
-no changes added to commit (use "git add" and/or "git commit -a")
-Wednesday, November 6, 2024 3:15:30 PM
-* remote origin
-  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
-  Push  URL: git@github.com:onewyoming/onewyoming.git
-  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
-  HEAD branch: master
-  Remote branch:
-    master tracked
-  Local branch configured for 'git pull':
-    master merges with remote master
-  Local ref configured for 'git push':
-    master pushes to master (local out of date)
-Wednesday, November 6, 2024 3:15:31 PM
-warning: in the working copy of 'src/public-website/tsconfig.json', LF will be replaced by CRLF the next time Git touches it
-[master 790b71b] add all changes
- 14 files changed, 755 insertions(+), 35 deletions(-)
- create mode 100644 src/dotnet/.gitignore
- create mode 100644 src/dotnet/dotnet.sln
- create mode 100644 src/dotnet/webapi/.config/dotnet-tools.json
- create mode 100644 src/dotnet/webapi/Controllers/WeatherForecastController.cs
- create mode 100644 src/dotnet/webapi/Program.cs
- create mode 100644 src/dotnet/webapi/Properties/launchSettings.json
- create mode 100644 src/dotnet/webapi/WeatherForecast.cs
- create mode 100644 src/dotnet/webapi/appsettings.Development.json
- create mode 100644 src/dotnet/webapi/appsettings.json
- create mode 100644 src/dotnet/webapi/webapi.csproj
- create mode 100644 src/dotnet/webapi/webapi.http
-Wednesday, November 6, 2024 3:15:32 PM
-remote: Enumerating objects: 285, done.
-remote: Counting objects: 100% (29/29), done.
-remote: Compressing objects: 100% (12/12), done.
-remote: Total 285 (delta 22), reused 17 (delta 17), pack-reused 256 (from 1)
-Receiving objects: 100% (285/285), 411.88 KiB | 5.08 MiB/s, done.
-Resolving deltas: 100% (97/97), completed with 5 local objects.
-From gitlab.com:wyoming/wyoming.gitlab.io
-   1845863..983d156  master     -> origin/master
-Successfully rebased and updated refs/heads/master.
-Wednesday, November 6, 2024 3:15:35 PM
-Enumerating objects: 31, done.
-Counting objects: 100% (31/31), done.
-Delta compression using up to 10 threads
-Compressing objects: 100% (22/22), done.
-Writing objects: 100% (24/24), 7.95 KiB | 407.00 KiB/s, done.
-Total 24 (delta 7), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (7/7), completed with 6 local objects.
-remote:
-remote: GitHub found 15 vulnerabilities on onewyoming/onewyoming's default branch (6 high, 3 moderate, 6 low). To find out more, visit:
-remote:      https://github.com/onewyoming/onewyoming/security/dependabot
-remote:
-To github.com:onewyoming/onewyoming.git
-   983d156..10e0b2c  master -> master
-Enumerating objects: 31, done.
-Counting objects: 100% (31/31), done.
-Delta compression using up to 10 threads
-Compressing objects: 100% (22/22), done.
-Writing objects: 100% (24/24), 7.95 KiB | 478.00 KiB/s, done.
-Total 24 (delta 7), reused 0 (delta 0), pack-reused 0 (from 0)
-To gitlab.com:wyoming/wyoming.gitlab.io.git
-   983d156..10e0b2c  master -> master
-Wednesday, November 6, 2024 3:15:38 PM
+Read more about .NET CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
 
+----------------
+Installed an ASP.NET Core HTTPS development certificate.
+To trust the certificate, run 'dotnet dev-certs https --trust'
+Learn about HTTPS: https://aka.ms/dotnet-https
 
-PS C:\code\wyoming> cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git push origin master; date;
+----------------
+Write your first app: https://aka.ms/dotnet-hello-world
+Find out what's new: https://aka.ms/dotnet-whats-new
+Explore documentation: https://aka.ms/dotnet-docs
+Report issues and find source on GitHub: https://github.com/dotnet/core
+Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli
+--------------------------------------------------------------------------------------
 
-Wednesday, November 6, 2024 3:18:57 PM
-Wednesday, November 6, 2024 3:18:57 PM
-yarn install v1.22.22
-info No lockfile found.
-[1/4] Resolving packages...
-[2/4] Fetching packages...
-[3/4] Linking dependencies...
-[4/4] Building fresh packages...
-success Saved lockfile.
-Done in 35.09s.
-Wednesday, November 6, 2024 3:19:34 PM
-On branch master
-Your branch is up to date with 'origin/master'.
+Build succeeded in 2.1s
+Saturday, November 16, 2024 3:14:15 PM
+Restore complete (11.7s)
+  webapi succeeded (7.9s) → webapi\bin\Debug\net8.0\webapi.dll
 
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   ../../PowerShell.txt
-        modified:   yarn.lock
-
-no changes added to commit (use "git add" and/or "git commit -a")
-Wednesday, November 6, 2024 3:19:34 PM
-* remote origin
-  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
-  Push  URL: git@github.com:onewyoming/onewyoming.git
-  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
-  HEAD branch: master
-  Remote branch:
-    master tracked
-  Local branch configured for 'git pull':
-    master merges with remote master
-  Local ref configured for 'git push':
-    master pushes to master (up to date)
-Wednesday, November 6, 2024 3:19:35 PM
-[master bb8461e] add all changes
- 1 file changed, 219 insertions(+), 214 deletions(-)
-Wednesday, November 6, 2024 3:19:36 PM
-error: cannot pull with rebase: You have unstaged changes.
-error: Please commit or stash them.
-Wednesday, November 6, 2024 3:19:36 PM
-Enumerating objects: 9, done.
-Counting objects: 100% (9/9), done.
-Delta compression using up to 10 threads
-Compressing objects: 100% (5/5), done.
-Writing objects: 100% (5/5), 5.82 KiB | 1.16 MiB/s, done.
-Total 5 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
-remote:
-remote: GitHub found 1 vulnerability on onewyoming/onewyoming's default branch (1 moderate). To find out more, visit:
-remote:      https://github.com/onewyoming/onewyoming/security/dependabot/2044
-remote:
-To github.com:onewyoming/onewyoming.git
-   10e0b2c..bb8461e  master -> master
-Enumerating objects: 9, done.
-Counting objects: 100% (9/9), done.
-Delta compression using up to 10 threads
-Compressing objects: 100% (5/5), done.
-Writing objects: 100% (5/5), 5.82 KiB | 1.16 MiB/s, done.
-Total 5 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
-To gitlab.com:wyoming/wyoming.gitlab.io.git
-   10e0b2c..bb8461e  master -> master
-Wednesday, November 6, 2024 3:19:38 PM
-
-
-PS C:\code\wyoming\src\public-website> cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "addall changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git push origin master; date;
-
-Wednesday, November 6, 2024 3:20:58 PM
-Wednesday, November 6, 2024 3:20:58 PM
-You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy
-
-Build succeeded in 2.0s
-Wednesday, November 6, 2024 3:21:01 PM
-Restore complete (6.1s)
-You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy
-  webapi succeeded (8.5s) → webapi\bin\Debug\net8.0\webapi.dll
-
-Build succeeded in 15.9s
-
-Workload updates are available. Run `dotnet workload list` for more information.
-Wednesday, November 6, 2024 3:21:17 PM
-Wednesday, November 6, 2024 3:21:17 PM
+Build succeeded in 20.4s
+Saturday, November 16, 2024 3:14:36 PM
+Saturday, November 16, 2024 3:14:36 PM
 yarn install v1.22.22
 [1/4] Resolving packages...
 success Already up-to-date.
-Done in 0.36s.
-Wednesday, November 6, 2024 3:21:18 PM
+Done in 0.57s.
+Saturday, November 16, 2024 3:14:40 PM
 On branch master
 Your branch is up to date with 'origin/master'.
 
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   PowerShell.txt
-
-no changes added to commit (use "git add" and/or "git commit -a")
-Wednesday, November 6, 2024 3:21:18 PM
+nothing to commit, working tree clean
+Saturday, November 16, 2024 3:14:40 PM
 * remote origin
   Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
   Push  URL: git@github.com:onewyoming/onewyoming.git
@@ -193,30 +61,17 @@ Wednesday, November 6, 2024 3:21:18 PM
     master merges with remote master
   Local ref configured for 'git push':
     master pushes to master (up to date)
-Wednesday, November 6, 2024 3:21:19 PM
-[master b227d00] add all changes
- 1 file changed, 104 insertions(+), 47 deletions(-)
-Wednesday, November 6, 2024 3:21:19 PM
-Current branch master is up to date.
-Wednesday, November 6, 2024 3:21:21 PM
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
-Delta compression using up to 10 threads
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 2.05 KiB | 700.00 KiB/s, done.
-Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To github.com:onewyoming/onewyoming.git
-   bb8461e..b227d00  master -> master
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
-Delta compression using up to 10 threads
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 2.05 KiB | 700.00 KiB/s, done.
-Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
-To gitlab.com:wyoming/wyoming.gitlab.io.git
-   bb8461e..b227d00  master -> master
-Wednesday, November 6, 2024 3:21:23 PM
+Saturday, November 16, 2024 3:14:41 PM
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+Saturday, November 16, 2024 3:14:42 PM
+Already up to date.
+Saturday, November 16, 2024 3:14:43 PM
+Everything up-to-date
+Everything up-to-date
+Saturday, November 16, 2024 3:14:45 PM
 
 
-PS C:\code\wyoming> cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git push origin master; date;
+PS C:\code\wyoming> $env:DOTNET_CLI_TELEMETRY_OPTOUT='1';cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git push origin master; date;
