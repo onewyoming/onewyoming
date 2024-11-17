@@ -1536,3 +1536,108 @@ Saturday, November 16, 2024 3:57:23 PM
 
 
 PS C:\code\wyoming> $env:DOTNET_CLI_TELEMETRY_OPTOUT='1';cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\mydotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\WyomingDotNet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git pushorigin master; date;
+
+Saturday, November 16, 2024 3:58:58 PM
+Saturday, November 16, 2024 3:58:58 PM
+
+Build succeeded in 1.6s
+Saturday, November 16, 2024 3:59:00 PM
+Restore complete (1.5s)
+  webapi succeeded (2.2s) → webapi\bin\Debug\net9.0\webapi.dll
+
+Build succeeded in 4.8s
+Saturday, November 16, 2024 3:59:05 PM
+Saturday, November 16, 2024 3:59:05 PM
+
+Build succeeded in 1.6s
+Saturday, November 16, 2024 3:59:07 PM
+Restore complete (1.6s)
+  mydotnet.ServiceDefaults succeeded (0.8s) → mydotnet.ServiceDefaults\bin\Debug\net9.0\mydotnet.ServiceDefaults.dll
+  AlphaTabTutorial_dw0rkcvg_wpftmp succeeded with 5 warning(s) (0.5s)
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(254,50): warning CS8612: Nullability of reference types in type of 'event PropertyChangedEventHandler MainWindow.PropertyChanged' doesn't match implicitly implemented member 'event PropertyChangedEventHandler? INotifyPropertyChanged.PropertyChanged'.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(255,91): warning CS8625: Cannot convert null literal to non-nullable reference type.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_score' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_selectedTrack' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable event 'PropertyChanged' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable.
+  ConsoleApp1 succeeded (1.3s) → ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.dll
+  AlphaTabTutorial succeeded with 5 warning(s) (2.2s) → AlphaTabTutorial\bin\Debug\net9.0-windows\AlphaTabTutorial.dll
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(254,50): warning CS8612: Nullability of reference types in type of 'event PropertyChangedEventHandler MainWindow.PropertyChanged' doesn't match implicitly implemented member 'event PropertyChangedEventHandler? INotifyPropertyChanged.PropertyChanged'.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(255,91): warning CS8625: Cannot convert null literal to non-nullable reference type.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_score' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_selectedTrack' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable event 'PropertyChanged' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable.
+  AnalyticsWebApi succeeded (1.7s) → AnalyticsWebApi\bin\Debug\net9.0\AnalyticsWebApi.dll
+  mydotnet.AppHost succeeded (1.5s) → mydotnet.AppHost\bin\Debug\net9.0\mydotnet.AppHost.dll
+
+Build succeeded with 10 warning(s) in 5.7s
+Saturday, November 16, 2024 3:59:13 PM
+Saturday, November 16, 2024 3:59:13 PM
+  WyomingDotNet failed with 2 error(s) (0.0s)
+    C:\code\wyoming\src\WyomingDotNet\WyomingDotNet.sln.metaproj : error MSB3202: The project file "C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.AspireHost\WyomingDotNet.AspireHost.csproj" was not found.
+    C:\code\wyoming\src\WyomingDotNet\WyomingDotNet.sln.metaproj : error MSB3202: The project file "C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.ServiceDefaults\WyomingDotNet.ServiceDefaults.csproj" was not found.
+
+Build failed with 2 error(s) in 3.9s
+Saturday, November 16, 2024 3:59:18 PM
+    C:\Program Files\dotnet\sdk\9.0.100\NuGet.targets(471,5): error MSB3202: The project file "C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.ServiceDefaults\WyomingDotNet.ServiceDefaults.csproj" was not found.
+    C:\Program Files\dotnet\sdk\9.0.100\NuGet.targets(471,5): error MSB3202: The project file "C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.AspireHost\WyomingDotNet.AspireHost.csproj" was not found.
+
+Restore failed with 2 error(s) in 1.3s
+Saturday, November 16, 2024 3:59:20 PM
+Saturday, November 16, 2024 3:59:20 PM
+yarn install v1.22.22
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.35s.
+Saturday, November 16, 2024 3:59:20 PM
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PowerShell.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Saturday, November 16, 2024 3:59:21 PM
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+Saturday, November 16, 2024 3:59:24 PM
+[master 04c4c3c] add all changes
+ 1 file changed, 673 insertions(+)
+Saturday, November 16, 2024 3:59:25 PM
+Current branch master is up to date.
+Saturday, November 16, 2024 3:59:30 PM
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 6.47 KiB | 1.29 MiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: GitHub found 1 vulnerability on onewyoming/onewyoming's default branch (1 high). To find out more, visit:
+remote:      https://github.com/onewyoming/onewyoming/security/dependabot/2062
+remote:
+To github.com:onewyoming/onewyoming.git
+   74a5dda..04c4c3c  master -> master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 6.47 KiB | 1.29 MiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   74a5dda..04c4c3c  master -> master
+Saturday, November 16, 2024 3:59:36 PM
+
+
+PS C:\code\wyoming> $env:DOTNET_CLI_TELEMETRY_OPTOUT='1';cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\mydotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\WyomingDotNet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git pushorigin master; date;
