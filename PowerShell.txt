@@ -1641,3 +1641,201 @@ Saturday, November 16, 2024 3:59:36 PM
 
 
 PS C:\code\wyoming> $env:DOTNET_CLI_TELEMETRY_OPTOUT='1';cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\mydotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\WyomingDotNet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git pushorigin master; date;
+
+Saturday, November 16, 2024 4:00:09 PM
+Saturday, November 16, 2024 4:00:09 PM
+
+Build succeeded in 1.5s
+Saturday, November 16, 2024 4:00:11 PM
+Restore complete (1.5s)
+  webapi succeeded (2.2s) → webapi\bin\Debug\net9.0\webapi.dll
+
+Build succeeded in 4.7s
+Saturday, November 16, 2024 4:00:16 PM
+Saturday, November 16, 2024 4:00:16 PM
+
+Build succeeded in 1.6s
+Saturday, November 16, 2024 4:00:18 PM
+Restore complete (1.6s)
+  mydotnet.ServiceDefaults succeeded (0.8s) → mydotnet.ServiceDefaults\bin\Debug\net9.0\mydotnet.ServiceDefaults.dll
+  AlphaTabTutorial_g4ptxsjg_wpftmp succeeded with 5 warning(s) (0.6s)
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(254,50): warning CS8612: Nullability of reference types in type of 'event PropertyChangedEventHandler MainWindow.PropertyChanged' doesn't match implicitly implemented member 'event PropertyChangedEventHandler? INotifyPropertyChanged.PropertyChanged'.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(255,91): warning CS8625: Cannot convert null literal to non-nullable reference type.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_score' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_selectedTrack' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable event 'PropertyChanged' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable.
+  ConsoleApp1 succeeded (1.2s) → ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.dll
+  AlphaTabTutorial succeeded with 5 warning(s) (2.3s) → AlphaTabTutorial\bin\Debug\net9.0-windows\AlphaTabTutorial.dll
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(254,50): warning CS8612: Nullability of reference types in type of 'event PropertyChangedEventHandler MainWindow.PropertyChanged' doesn't match implicitly implemented member 'event PropertyChangedEventHandler? INotifyPropertyChanged.PropertyChanged'.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(255,91): warning CS8625: Cannot convert null literal to non-nullable reference type.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_score' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_selectedTrack' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable event 'PropertyChanged' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable.
+  AnalyticsWebApi succeeded (1.7s) → AnalyticsWebApi\bin\Debug\net9.0\AnalyticsWebApi.dll
+  mydotnet.AppHost succeeded (1.5s) → mydotnet.AppHost\bin\Debug\net9.0\mydotnet.AppHost.dll
+
+Build succeeded with 10 warning(s) in 5.9s
+Saturday, November 16, 2024 4:00:25 PM
+Saturday, November 16, 2024 4:00:25 PM
+
+Build succeeded in 2.0s
+Saturday, November 16, 2024 4:00:27 PM
+Restore complete (4.8s)
+  WyomingDotNet.Core succeeded (1.3s) → src\WyomingDotNet.Core\bin\Debug\net9.0\WyomingDotNet.Core.dll
+  WyomingDotNet.UseCases succeeded (1.4s) → src\WyomingDotNet.UseCases\bin\Debug\net9.0\WyomingDotNet.UseCases.dll
+  WyomingDotNet.UnitTests succeeded (1.6s) → tests\WyomingDotNet.UnitTests\bin\Debug\net9.0\WyomingDotNet.UnitTests.dll
+  WyomingDotNet.Infrastructure succeeded with 1 warning(s) (1.9s) → src\WyomingDotNet.Infrastructure\bin\Debug\net9.0\WyomingDotNet.Infrastructure.dll
+    C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(322,5): warning NETSDK1206: Found version-specific or distribution-specific runtime identifier(s): win7-x64, win7-x86. Affected libraries: SQLite. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See https://aka.ms/dotnet/rid-usage for details.
+  WyomingDotNet.Web succeeded with 1 warning(s) (4.0s) → src\WyomingDotNet.Web\bin\Debug\net9.0\WyomingDotNet.Web.dll
+    C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(322,5): warning NETSDK1206: Found version-specific or distribution-specific runtime identifier(s): win7-x64, win7-x86. Affected libraries: SQLite. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See https://aka.ms/dotnet/rid-usage for details.
+  WyomingDotNet.IntegrationTests succeeded with 1 warning(s) (3.8s) → tests\WyomingDotNet.IntegrationTests\bin\Debug\net9.0\WyomingDotNet.IntegrationTests.dll
+    C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(322,5): warning NETSDK1206: Found version-specific or distribution-specific runtime identifier(s): win7-x64, win7-x86. Affected libraries: SQLite. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See https://aka.ms/dotnet/rid-usage for details.
+  WyomingDotNet.FunctionalTests succeeded with 1 warning(s) (3.3s) → tests\WyomingDotNet.FunctionalTests\bin\Debug\net9.0\WyomingDotNet.FunctionalTests.dll
+    C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(322,5): warning NETSDK1206: Found version-specific or distribution-specific runtime identifier(s): win7-x64, win7-x86. Affected libraries: SQLite. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See https://aka.ms/dotnet/rid-usage for details.
+
+Build succeeded with 4 warning(s) in 17.5s
+Saturday, November 16, 2024 4:00:45 PM
+Saturday, November 16, 2024 4:00:45 PM
+yarn install v1.22.22
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.43s.
+Saturday, November 16, 2024 4:00:46 PM
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PowerShell.txt
+        modified:   src/WyomingDotNet/WyomingDotNet.sln
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Saturday, November 16, 2024 4:00:47 PM
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+Saturday, November 16, 2024 4:00:48 PM
+[master 5c4e886] add all changes
+ 2 files changed, 105 insertions(+), 30 deletions(-)
+Saturday, November 16, 2024 4:00:48 PM
+Current branch master is up to date.
+Saturday, November 16, 2024 4:00:50 PM
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 831 bytes | 277.00 KiB/s, done.
+Total 6 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+remote:
+remote: GitHub found 1 vulnerability on onewyoming/onewyoming's default branch (1 high). To find out more, visit:
+remote:      https://github.com/onewyoming/onewyoming/security/dependabot/2062
+remote:
+To github.com:onewyoming/onewyoming.git
+   04c4c3c..5c4e886  master -> master
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 831 bytes | 277.00 KiB/s, done.
+Total 6 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   04c4c3c..5c4e886  master -> master
+Saturday, November 16, 2024 4:00:54 PM
+
+
+PS C:\code\wyoming> $env:DOTNET_CLI_TELEMETRY_OPTOUT='1';cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\mydotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\WyomingDotNet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git pushorigin master; date;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Restoring packages for C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.UnitTests\WyomingDotNet.UnitTests.csproj...
+  CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/vulnerability.base.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2024.11.12.12.02.33/2024.11.16.17.25.48/vulnerability.update.json
+Installing NuGet package ReportGenerator 5.4.1.
+Generating MSBuild file C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.UnitTests\obj\WyomingDotNet.UnitTests.csproj.nuget.g.props.
+Writing assets file to disk. Path: C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.UnitTests\obj\project.assets.json
+Successfully uninstalled 'ReportGenerator 5.4.0' from WyomingDotNet.UnitTests
+Successfully installed 'ReportGenerator 5.4.1' to WyomingDotNet.UnitTests
+Assets file has not changed. Skipping assets file writing. Path: C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.IntegrationTests\obj\project.assets.json
+Restored C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.IntegrationTests\WyomingDotNet.IntegrationTests.csproj (in 16 ms).
+
+NuGet Config files used:
+    C:\code\wyoming\src\WyomingDotNet\NuGet.Config
+    C:\Users\kushal\AppData\Roaming\NuGet\NuGet.Config
+    C:\Program Files (x86)\NuGet\Config\Microsoft.VisualStudio.FallbackLocation.config
+    C:\Program Files (x86)\NuGet\Config\Microsoft.VisualStudio.Offline.config
+
+Feeds used:
+    https://api.nuget.org/v3/index.json
+    c:\LocalNuget
+Executing nuget actions took 363 ms
+Time Elapsed: 00:00:00.7427890
+========== Finished ==========
+
+Restored C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.UseCases\WyomingDotNet.UseCases.csproj (in 59 ms).
+Restored C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Core\WyomingDotNet.Core.csproj (in 83 ms).
+Restored C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.UnitTests\WyomingDotNet.UnitTests.csproj (in 128 ms).
+Restored C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Infrastructure\WyomingDotNet.Infrastructure.csproj (in 213 ms).
+Restored C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.IntegrationTests\WyomingDotNet.IntegrationTests.csproj (in 214 ms).
+Restored C:\code\wyoming\src\WyomingDotNet\src\WyomingDotNet.Web\WyomingDotNet.Web.csproj (in 214 ms).
+Restored C:\code\wyoming\src\WyomingDotNet\tests\WyomingDotNet.FunctionalTests\WyomingDotNet.FunctionalTests.csproj (in 214 ms).
+Time Elapsed: 00:00:00.2781940
+========== Finished ==========
+
+
+
+
+
+
+
