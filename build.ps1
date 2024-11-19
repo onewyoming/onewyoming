@@ -1,8 +1,7 @@
 $env:DOTNET_CLI_TELEMETRY_OPTOUT='1'
 $baseDir = "C:\code\wyoming\src\dotnet\"
 $configurations = @("Debug", "Release")
-$osPlatforms = @("win-x64", "linux-x64")
-$trimmed = $true
+$osPlatforms = @("win-x64", "linux-x64", "osx-x64", "linux-arm64")
 
 cd $baseDir
 foreach ($config in $configurations) {
@@ -10,7 +9,7 @@ foreach ($config in $configurations) {
         Write-Host "Building with configuration: $config, OS: $os"
         dotnet clean
         dotnet build -c $config
-        dotnet publish -c $config
+        dotnet publish -c $config -r $os
     }
 }
 

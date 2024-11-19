@@ -3111,3 +3111,236 @@ To gitlab.com:wyoming/wyoming.gitlab.io.git
    7a9b40b..efad22f  master -> master
 PS C:\code\wyoming>
 PS C:\code\wyoming> C:\code\wyoming\build.ps1
+Building with configuration: Debug, OS: win-x64, Trimmed: True
+
+Build succeeded in 1.4s
+Restore complete (1.5s)
+  webapi succeeded (2.2s) → webapi\bin\Debug\net9.0\webapi.dll
+
+Build succeeded in 4.6s
+C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(109,33): error MSB4030: "true /p:SelfContained=true /p:RuntimeIdentifier=win-x64" is an invalid value for the "PublishTrimmed" parameter of the "ProcessFrameworkReferences" task. The "PublishTrimmed" parameter is of type "System.Boolean".
+
+Restore failed with 1 error(s) in 1.2s
+Building with configuration: Debug, OS: linux-x64, Trimmed: True
+
+Build succeeded in 1.5s
+Restore complete (1.5s)
+  webapi succeeded (2.3s) → webapi\bin\Debug\net9.0\webapi.dll
+
+Build succeeded in 4.8s
+C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(109,33): error MSB4030: "true /p:SelfContained=true /p:RuntimeIdentifier=linux-x64" is an invalid value for the "PublishTrimmed" parameter of the "ProcessFrameworkReferences" task. The "PublishTrimmed" parameter is of type "System.Boolean".
+
+Restore failed with 1 error(s) in 1.2s
+Building with configuration: Release, OS: win-x64, Trimmed: True
+
+Build succeeded in 1.5s
+Restore complete (1.5s)
+  webapi succeeded (1.6s) → webapi\bin\Release\net9.0\webapi.dll
+
+Build succeeded in 4.1s
+C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(109,33): error MSB4030: "true /p:SelfContained=true /p:RuntimeIdentifier=win-x64" is an invalid value for the "PublishTrimmed" parameter of the "ProcessFrameworkReferences" task. The "PublishTrimmed" parameter is of type "System.Boolean".
+
+Restore failed with 1 error(s) in 1.2s
+Building with configuration: Release, OS: linux-x64, Trimmed: True
+
+Build succeeded in 1.4s
+Restore complete (1.4s)
+  webapi succeeded (1.0s) → webapi\bin\Release\net9.0\webapi.dll
+
+Build succeeded in 3.4s
+C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(109,33): error MSB4030: "true /p:SelfContained=true /p:RuntimeIdentifier=linux-x64" is an invalid value for the "PublishTrimmed" parameter of the "ProcessFrameworkReferences" task. The "PublishTrimmed" parameter is of type "System.Boolean".
+
+Restore failed with 1 error(s) in 1.2s
+
+Build succeeded in 1.5s
+Restore complete (1.5s)
+  mydotnet.ServiceDefaults succeeded (0.8s) → mydotnet.ServiceDefaults\bin\Debug\net9.0\mydotnet.ServiceDefaults.dll
+  ConsoleApp1 succeeded (1.3s) → ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.dll
+  AlphaTabTutorial succeeded (2.5s) → AlphaTabTutorial\bin\Debug\net9.0-windows\AlphaTabTutorial.dll
+  AnalyticsWebApi succeeded (1.5s) → AnalyticsWebApi\bin\Debug\net9.0\AnalyticsWebApi.dll
+  mydotnet.AppHost succeeded (1.4s) → mydotnet.AppHost\bin\Debug\net9.0\mydotnet.AppHost.dll
+
+Build succeeded in 7.0s
+
+Build succeeded in 3.5s
+Restore complete (2.2s)
+  WyomingDotNet.Core succeeded (0.5s) → src\WyomingDotNet.Core\bin\Debug\net9.0\WyomingDotNet.Core.dll
+  WyomingDotNet.ServiceDefaults succeeded (0.8s) → src\WyomingDotNet.ServiceDefaults\bin\Debug\net9.0\WyomingDotNet.ServiceDefaults.dll
+  WyomingDotNet.UseCases succeeded (1.0s) → src\WyomingDotNet.UseCases\bin\Debug\net9.0\WyomingDotNet.UseCases.dll
+  WyomingDotNet.UnitTests succeeded (1.0s) → tests\WyomingDotNet.UnitTests\bin\Debug\net9.0\WyomingDotNet.UnitTests.dll
+  WyomingDotNet.Infrastructure succeeded with 1 warning(s) (1.5s) → src\WyomingDotNet.Infrastructure\bin\Debug\net9.0\WyomingDotNet.Infrastructure.dll
+    C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(322,5): warning NETSDK1206: Found version-specific or distribution-specific runtime identifier(s): win7-x64, win7-x86. Affected libraries: SQLite. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See https://aka.ms/dotnet/rid-usage for details.
+  WyomingDotNet.Web succeeded with 1 warning(s) (2.7s) → src\WyomingDotNet.Web\bin\Debug\net9.0\WyomingDotNet.Web.dll
+    C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(322,5): warning NETSDK1206: Found version-specific or distribution-specific runtime identifier(s): win7-x64, win7-x86. Affected libraries: SQLite. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See https://aka.ms/dotnet/rid-usage for details.
+  WyomingDotNet.AspireHost succeeded (1.6s) → src\WyomingDotNet.AspireHost\bin\Debug\net9.0\WyomingDotNet.AspireHost.dll
+  WyomingDotNet.IntegrationTests succeeded with 1 warning(s) (3.3s) → tests\WyomingDotNet.IntegrationTests\bin\Debug\net9.0\WyomingDotNet.IntegrationTests.dll
+    C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(322,5): warning NETSDK1206: Found version-specific or distribution-specific runtime identifier(s): win7-x64, win7-x86. Affected libraries: SQLite. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See https://aka.ms/dotnet/rid-usage for details.
+  WyomingDotNet.AspireTests succeeded (1.8s) → tests\WyomingDotNet.AspireTests\bin\Debug\net9.0\WyomingDotNet.AspireTests.dll
+  WyomingDotNet.FunctionalTests succeeded with 1 warning(s) (2.4s) → tests\WyomingDotNet.FunctionalTests\bin\Debug\net9.0\WyomingDotNet.FunctionalTests.dll
+    C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(322,5): warning NETSDK1206: Found version-specific or distribution-specific runtime identifier(s): win7-x64, win7-x86. Affected libraries: SQLite. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See https://aka.ms/dotnet/rid-usage for details.
+
+Build succeeded with 4 warning(s) in 10.9s
+yarn install v1.22.22
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.35s.
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PowerShell.txt
+        modified:   build.ps1
+
+no changes added to commit (use "git add" and/or "git commit -a")
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+[master 8dabe1b] add all changes
+ 2 files changed, 130 insertions(+), 2 deletions(-)
+Current branch master is up to date.
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 935 bytes | 311.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To github.com:onewyoming/onewyoming.git
+   efad22f..8dabe1b  master -> master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 935 bytes | 311.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   efad22f..8dabe1b  master -> master
+PS C:\code\wyoming> C:\code\wyoming\build.ps1
+Building with configuration: Debug, OS: win-x64
+
+Build succeeded in 1.4s
+Restore complete (1.5s)
+  webapi succeeded (2.1s) → webapi\bin\Debug\net9.0\webapi.dll
+
+Build succeeded in 4.6s
+Restore complete (1.5s)
+  webapi succeeded (1.1s) → webapi\bin\Debug\net9.0\publish\
+
+Build succeeded in 3.6s
+Building with configuration: Debug, OS: linux-x64
+
+Build succeeded in 1.5s
+Restore complete (1.4s)
+  webapi succeeded (2.1s) → webapi\bin\Debug\net9.0\webapi.dll
+
+Build succeeded in 4.6s
+Restore complete (1.6s)
+  webapi succeeded (1.1s) → webapi\bin\Debug\net9.0\publish\
+
+Build succeeded in 3.8s
+Building with configuration: Release, OS: win-x64
+
+Build succeeded in 1.5s
+Restore complete (1.4s)
+  webapi succeeded (1.6s) → webapi\bin\Release\net9.0\webapi.dll
+
+Build succeeded in 4.0s
+Restore complete (1.5s)
+  webapi succeeded (1.1s) → webapi\bin\Release\net9.0\publish\
+
+Build succeeded in 3.6s
+Building with configuration: Release, OS: linux-x64
+
+Build succeeded in 1.4s
+Restore complete (1.5s)
+  webapi succeeded (1.0s) → webapi\bin\Release\net9.0\webapi.dll
+
+Build succeeded in 3.4s
+Restore complete (1.4s)
+  webapi succeeded (1.1s) → webapi\bin\Release\net9.0\publish\
+
+Build succeeded in 3.4s
+
+Build succeeded in 1.6s
+Restore complete (1.5s)
+  mydotnet.ServiceDefaults succeeded (0.9s) → mydotnet.ServiceDefaults\bin\Debug\net9.0\mydotnet.ServiceDefaults.dll
+  ConsoleApp1 succeeded (1.3s) → ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.dll
+  AlphaTabTutorial succeeded (2.6s) → AlphaTabTutorial\bin\Debug\net9.0-windows\AlphaTabTutorial.dll
+  AnalyticsWebApi succeeded (1.7s) → AnalyticsWebApi\bin\Debug\net9.0\AnalyticsWebApi.dll
+  mydotnet.AppHost succeeded (1.4s) → mydotnet.AppHost\bin\Debug\net9.0\mydotnet.AppHost.dll
+
+Build succeeded in 5.7s
+
+Build succeeded in 3.4s
+Restore complete (2.2s)
+  WyomingDotNet.ServiceDefaults succeeded (0.8s) → src\WyomingDotNet.ServiceDefaults\bin\Debug\net9.0\WyomingDotNet.ServiceDefaults.dll
+  WyomingDotNet.Core succeeded (0.7s) → src\WyomingDotNet.Core\bin\Debug\net9.0\WyomingDotNet.Core.dll
+  WyomingDotNet.UseCases succeeded (0.7s) → src\WyomingDotNet.UseCases\bin\Debug\net9.0\WyomingDotNet.UseCases.dll
+  WyomingDotNet.UnitTests succeeded (1.2s) → tests\WyomingDotNet.UnitTests\bin\Debug\net9.0\WyomingDotNet.UnitTests.dll
+  WyomingDotNet.Infrastructure succeeded with 1 warning(s) (1.5s) → src\WyomingDotNet.Infrastructure\bin\Debug\net9.0\WyomingDotNet.Infrastructure.dll
+    C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(322,5): warning NETSDK1206: Found version-specific or distribution-specific runtime identifier(s): win7-x64, win7-x86. Affected libraries: SQLite. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See https://aka.ms/dotnet/rid-usage for details.
+  WyomingDotNet.Web succeeded with 1 warning(s) (2.7s) → src\WyomingDotNet.Web\bin\Debug\net9.0\WyomingDotNet.Web.dll
+    C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(322,5): warning NETSDK1206: Found version-specific or distribution-specific runtime identifier(s): win7-x64, win7-x86. Affected libraries: SQLite. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See https://aka.ms/dotnet/rid-usage for details.
+  WyomingDotNet.AspireHost succeeded (1.6s) → src\WyomingDotNet.AspireHost\bin\Debug\net9.0\WyomingDotNet.AspireHost.dll
+  WyomingDotNet.IntegrationTests succeeded with 1 warning(s) (3.2s) → tests\WyomingDotNet.IntegrationTests\bin\Debug\net9.0\WyomingDotNet.IntegrationTests.dll
+    C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(322,5): warning NETSDK1206: Found version-specific or distribution-specific runtime identifier(s): win7-x64, win7-x86. Affected libraries: SQLite. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See https://aka.ms/dotnet/rid-usage for details.
+  WyomingDotNet.AspireTests succeeded (1.5s) → tests\WyomingDotNet.AspireTests\bin\Debug\net9.0\WyomingDotNet.AspireTests.dll
+  WyomingDotNet.FunctionalTests succeeded with 1 warning(s) (2.7s) → tests\WyomingDotNet.FunctionalTests\bin\Debug\net9.0\WyomingDotNet.FunctionalTests.dll
+    C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(322,5): warning NETSDK1206: Found version-specific or distribution-specific runtime identifier(s): win7-x64, win7-x86. Affected libraries: SQLite. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See https://aka.ms/dotnet/rid-usage for details.
+
+Build succeeded with 4 warning(s) in 11.3s
+yarn install v1.22.22
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.32s.
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   build.ps1
+
+no changes added to commit (use "git add" and/or "git commit -a")
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+[master 9e2f6b2] add all changes
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+Current branch master is up to date.
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 332 bytes | 166.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:onewyoming/onewyoming.git
+   8dabe1b..9e2f6b2  master -> master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 332 bytes | 166.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   8dabe1b..9e2f6b2  master -> master
+PS C:\code\wyoming> C:\code\wyoming\build.ps1
