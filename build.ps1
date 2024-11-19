@@ -17,7 +17,7 @@ foreach ($config in $configurations) {
 }
 
 # Additional commands for other directories
-$additionalDirs = @("mydotnet", "WyomingDotNet", "public-website")
+$additionalDirs = @("mydotnet", "WyomingDotNet")
 foreach ($dir in $additionalDirs) {
     cd "C:\code\wyoming\src\$dir"
     dotnet clean
