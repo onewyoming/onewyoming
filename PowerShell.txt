@@ -2519,3 +2519,119 @@ Successfully added project(s) to a solution file.
 
 
 PS C:\code\wyoming\src> $env:DOTNET_CLI_TELEMETRY_OPTOUT='1';cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\mydotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\WyomingDotNet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git push origin master; date;
+
+Tuesday, November 19, 2024 3:09:16 AM
+Tuesday, November 19, 2024 3:09:16 AM
+
+Build succeeded in 1.6s
+Tuesday, November 19, 2024 3:09:18 AM
+Restore complete (1.5s)
+  webapi succeeded (7.9s) → webapi\bin\Debug\net9.0\webapi.dll
+
+Build succeeded in 10.3s
+Tuesday, November 19, 2024 3:09:29 AM
+Tuesday, November 19, 2024 3:09:29 AM
+
+Build succeeded in 3.0s
+Tuesday, November 19, 2024 3:09:32 AM
+Restore complete (1.7s)
+  ConsoleApp1 succeeded (1.5s) → ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.dll
+  mydotnet.ServiceDefaults succeeded (2.3s) → mydotnet.ServiceDefaults\bin\Debug\net9.0\mydotnet.ServiceDefaults.dll
+  AlphaTabTutorial_mn554w4h_wpftmp succeeded with 5 warning(s) (1.6s)
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(254,50): warning CS8612: Nullability of reference types in type of 'event PropertyChangedEventHandler MainWindow.PropertyChanged' doesn't match implicitly implemented member 'event PropertyChangedEventHandler? INotifyPropertyChanged.PropertyChanged'.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(255,91): warning CS8625: Cannot convert null literal to non-nullable reference type.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_score' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_selectedTrack' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable event 'PropertyChanged' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable.
+  AlphaTabTutorial succeeded with 5 warning(s) (4.8s) → AlphaTabTutorial\bin\Debug\net9.0-windows\AlphaTabTutorial.dll
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(254,50): warning CS8612: Nullability of reference types in type of 'event PropertyChangedEventHandler MainWindow.PropertyChanged' doesn't match implicitly implemented member 'event PropertyChangedEventHandler? INotifyPropertyChanged.PropertyChanged'.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(255,91): warning CS8625: Cannot convert null literal to non-nullable reference type.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_score' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable field '_selectedTrack' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.
+    C:\code\wyoming\src\mydotnet\AlphaTabTutorial\MainWindow.xaml.cs(176,16): warning CS8618: Non-nullable event 'PropertyChanged' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the event as nullable.
+  AnalyticsWebApi succeeded (3.2s) → AnalyticsWebApi\bin\Debug\net9.0\AnalyticsWebApi.dll
+  mydotnet.AppHost succeeded (2.2s) → mydotnet.AppHost\bin\Debug\net9.0\mydotnet.AppHost.dll
+
+Build succeeded with 10 warning(s) in 11.4s
+Tuesday, November 19, 2024 3:09:44 AM
+Tuesday, November 19, 2024 3:09:44 AM
+
+Build succeeded in 4.4s
+Tuesday, November 19, 2024 3:09:49 AM
+Restore complete (5.4s)
+  WyomingDotNet.ServiceDefaults succeeded (1.6s) → src\WyomingDotNet.ServiceDefaults\bin\Debug\net9.0\WyomingDotNet.ServiceDefaults.dll
+  WyomingDotNet.Core succeeded (1.6s) → src\WyomingDotNet.Core\bin\Debug\net9.0\WyomingDotNet.Core.dll
+  WyomingDotNet.UseCases succeeded (0.9s) → src\WyomingDotNet.UseCases\bin\Debug\net9.0\WyomingDotNet.UseCases.dll
+  WyomingDotNet.UnitTests succeeded (2.7s) → tests\WyomingDotNet.UnitTests\bin\Debug\net9.0\WyomingDotNet.UnitTests.dll
+  WyomingDotNet.Infrastructure succeeded with 1 warning(s) (3.0s) → src\WyomingDotNet.Infrastructure\bin\Debug\net9.0\WyomingDotNet.Infrastructure.dll
+    C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(322,5): warning NETSDK1206: Found version-specific or distribution-specific runtime identifier(s): win7-x64, win7-x86. Affected libraries: SQLite. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See https://aka.ms/dotnet/rid-usage for details.
+  WyomingDotNet.Web succeeded with 1 warning(s) (4.2s) → src\WyomingDotNet.Web\bin\Debug\net9.0\WyomingDotNet.Web.dll
+    C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(322,5): warning NETSDK1206: Found version-specific or distribution-specific runtime identifier(s): win7-x64, win7-x86. Affected libraries: SQLite. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See https://aka.ms/dotnet/rid-usage for details.
+  WyomingDotNet.IntegrationTests succeeded with 1 warning(s) (3.5s) → tests\WyomingDotNet.IntegrationTests\bin\Debug\net9.0\WyomingDotNet.IntegrationTests.dll
+    C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(322,5): warning NETSDK1206: Found version-specific or distribution-specific runtime identifier(s): win7-x64, win7-x86. Affected libraries: SQLite. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See https://aka.ms/dotnet/rid-usage for details.
+  WyomingDotNet.FunctionalTests succeeded with 1 warning(s) (2.5s) → tests\WyomingDotNet.FunctionalTests\bin\Debug\net9.0\WyomingDotNet.FunctionalTests.dll
+    C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(322,5): warning NETSDK1206: Found version-specific or distribution-specific runtime identifier(s): win7-x64, win7-x86. Affected libraries: SQLite. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See https://aka.ms/dotnet/rid-usage for details.
+  WyomingDotNet.AspireHost succeeded (3.0s) → src\WyomingDotNet.AspireHost\bin\Debug\net9.0\WyomingDotNet.AspireHost.dll
+  WyomingDotNet.AspireTests succeeded (2.4s) → tests\WyomingDotNet.AspireTests\bin\Debug\net9.0\WyomingDotNet.AspireTests.dll
+
+Build succeeded with 4 warning(s) in 21.0s
+Tuesday, November 19, 2024 3:10:11 AM
+Tuesday, November 19, 2024 3:10:11 AM
+yarn install v1.22.22
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+success Saved lockfile.
+Done in 4.04s.
+Tuesday, November 19, 2024 3:10:17 AM
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PowerShell.txt
+        modified:   src/public-website/yarn.lock
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Tuesday, November 19, 2024 3:10:18 AM
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (fast-forwardable)
+Tuesday, November 19, 2024 3:10:19 AM
+[master 2eb1671] add all changes
+ 2 files changed, 316 insertions(+), 1 deletion(-)
+Tuesday, November 19, 2024 3:10:19 AM
+Current branch master is up to date.
+Tuesday, November 19, 2024 3:10:21 AM
+Enumerating objects: 52, done.
+Counting objects: 100% (52/52), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (37/37), done.
+Writing objects: 100% (38/38), 7.55 KiB | 406.00 KiB/s, done.
+Total 38 (delta 22), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (22/22), completed with 14 local objects.
+To github.com:onewyoming/onewyoming.git
+   64b9b6e..2eb1671  master -> master
+Enumerating objects: 52, done.
+Counting objects: 100% (52/52), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (37/37), done.
+Writing objects: 100% (38/38), 7.55 KiB | 406.00 KiB/s, done.
+Total 38 (delta 22), reused 0 (delta 0), pack-reused 0 (from 0)
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   64b9b6e..2eb1671  master -> master
+Tuesday, November 19, 2024 3:10:23 AM
+
+
+PS C:\code\wyoming> $env:DOTNET_CLI_TELEMETRY_OPTOUT='1';cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\mydotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\WyomingDotNet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git pushorigin master; date;
