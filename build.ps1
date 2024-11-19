@@ -3,13 +3,13 @@ $baseDir = "C:\code\wyoming\src\dotnet\"
 $configurations = @("Debug", "Release")
 $osPlatforms = @("win-x64", "linux-x64")
 $trimmed = $true
+
 cd $baseDir
 foreach ($config in $configurations) {
     foreach ($os in $osPlatforms) {
-        $trimOption = if ($trimmed) { "--self-contained --runtime $os --publish-trimmed" } else { "" }
+        $trimOption = if ($trimmed) { "/p:PublishTrimmed=true /p:SelfContained=true /p:RuntimeIdentifier=$os" } else { "" }
         Write-Host "Building with configuration: $config, OS: $os, Trimmed: $trimmed"
         
-        cd $baseDir
         dotnet clean
         dotnet build -c $config
         dotnet publish -c $config $trimOption

@@ -2983,3 +2983,131 @@ Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
 To gitlab.com:wyoming/wyoming.gitlab.io.git
    d536cce..7a9b40b  master -> master
 PS C:\code\wyoming> C:\code\wyoming\build.ps1
+Building with configuration: Debug, OS: win-x64, Trimmed: True
+
+Build succeeded in 1.4s
+Restore complete (1.4s)
+  webapi succeeded (2.2s) → webapi\bin\Debug\net9.0\webapi.dll
+
+Build succeeded in 4.6s
+MSBUILD : error MSB1001: Unknown switch.
+    Full command line: 'C:\Program Files\dotnet\sdk\9.0.100\MSBuild.dll -maxcpucount -verbosity:m -tlp:default=auto -nologo -restore -target:Publish --property:_IsPublishing=true -property:Configuration=Debug -property:DOTNET_CLI_DISABLE_PUBLISH_AND_PACK_RELEASE=true --self-contained --runtime win-x64 --publish-trimmed'
+  Switches appended by response files:
+Switch: --self-contained --runtime win-x64 --publish-trimmed
+
+For switch syntax, type "MSBuild -help"
+Building with configuration: Debug, OS: linux-x64, Trimmed: True
+
+Build succeeded in 1.5s
+Restore complete (1.4s)
+  webapi succeeded (2.1s) → webapi\bin\Debug\net9.0\webapi.dll
+
+Build succeeded in 4.5s
+MSBUILD : error MSB1001: Unknown switch.
+    Full command line: 'C:\Program Files\dotnet\sdk\9.0.100\MSBuild.dll -maxcpucount -verbosity:m -tlp:default=auto -nologo -restore -target:Publish --property:_IsPublishing=true -property:Configuration=Debug -property:DOTNET_CLI_DISABLE_PUBLISH_AND_PACK_RELEASE=true --self-contained --runtime linux-x64 --publish-trimmed'
+  Switches appended by response files:
+Switch: --self-contained --runtime linux-x64 --publish-trimmed
+
+For switch syntax, type "MSBuild -help"
+Building with configuration: Release, OS: win-x64, Trimmed: True
+
+Build succeeded in 1.5s
+Restore complete (1.4s)
+  webapi succeeded (1.5s) → webapi\bin\Release\net9.0\webapi.dll
+
+Build succeeded in 3.9s
+MSBUILD : error MSB1001: Unknown switch.
+    Full command line: 'C:\Program Files\dotnet\sdk\9.0.100\MSBuild.dll -maxcpucount -verbosity:m -tlp:default=auto -nologo -restore -target:Publish --property:_IsPublishing=true -property:Configuration=Release -property:DOTNET_CLI_DISABLE_PUBLISH_AND_PACK_RELEASE=true --self-contained --runtime win-x64 --publish-trimmed'
+  Switches appended by response files:
+Switch: --self-contained --runtime win-x64 --publish-trimmed
+
+For switch syntax, type "MSBuild -help"
+Building with configuration: Release, OS: linux-x64, Trimmed: True
+
+Build succeeded in 1.3s
+Restore complete (1.4s)
+  webapi succeeded (1.0s) → webapi\bin\Release\net9.0\webapi.dll
+
+Build succeeded in 3.3s
+MSBUILD : error MSB1001: Unknown switch.
+    Full command line: 'C:\Program Files\dotnet\sdk\9.0.100\MSBuild.dll -maxcpucount -verbosity:m -tlp:default=auto -nologo -restore -target:Publish --property:_IsPublishing=true -property:Configuration=Release -property:DOTNET_CLI_DISABLE_PUBLISH_AND_PACK_RELEASE=true --self-contained --runtime linux-x64 --publish-trimmed'
+  Switches appended by response files:
+Switch: --self-contained --runtime linux-x64 --publish-trimmed
+
+For switch syntax, type "MSBuild -help"
+
+Build succeeded in 1.5s
+Restore complete (1.5s)
+  mydotnet.ServiceDefaults succeeded (0.9s) → mydotnet.ServiceDefaults\bin\Debug\net9.0\mydotnet.ServiceDefaults.dll
+  ConsoleApp1 succeeded (1.3s) → ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.dll
+  AlphaTabTutorial succeeded (2.2s) → AlphaTabTutorial\bin\Debug\net9.0-windows\AlphaTabTutorial.dll
+  AnalyticsWebApi succeeded (1.7s) → AnalyticsWebApi\bin\Debug\net9.0\AnalyticsWebApi.dll
+  mydotnet.AppHost succeeded (1.5s) → mydotnet.AppHost\bin\Debug\net9.0\mydotnet.AppHost.dll
+
+Build succeeded in 5.6s
+
+Build succeeded in 3.6s
+Restore complete (2.2s)
+  WyomingDotNet.Core succeeded (0.6s) → src\WyomingDotNet.Core\bin\Debug\net9.0\WyomingDotNet.Core.dll
+  WyomingDotNet.ServiceDefaults succeeded (0.9s) → src\WyomingDotNet.ServiceDefaults\bin\Debug\net9.0\WyomingDotNet.ServiceDefaults.dll
+  WyomingDotNet.UseCases succeeded (1.0s) → src\WyomingDotNet.UseCases\bin\Debug\net9.0\WyomingDotNet.UseCases.dll
+  WyomingDotNet.UnitTests succeeded (1.3s) → tests\WyomingDotNet.UnitTests\bin\Debug\net9.0\WyomingDotNet.UnitTests.dll
+  WyomingDotNet.Infrastructure succeeded with 1 warning(s) (1.7s) → src\WyomingDotNet.Infrastructure\bin\Debug\net9.0\WyomingDotNet.Infrastructure.dll
+    C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(322,5): warning NETSDK1206: Found version-specific or distribution-specific runtime identifier(s): win7-x64, win7-x86. Affected libraries: SQLite. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See https://aka.ms/dotnet/rid-usage for details.
+  WyomingDotNet.Web succeeded with 1 warning(s) (2.9s) → src\WyomingDotNet.Web\bin\Debug\net9.0\WyomingDotNet.Web.dll
+    C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(322,5): warning NETSDK1206: Found version-specific or distribution-specific runtime identifier(s): win7-x64, win7-x86. Affected libraries: SQLite. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See https://aka.ms/dotnet/rid-usage for details.
+  WyomingDotNet.IntegrationTests succeeded with 1 warning(s) (3.1s) → tests\WyomingDotNet.IntegrationTests\bin\Debug\net9.0\WyomingDotNet.IntegrationTests.dll
+    C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(322,5): warning NETSDK1206: Found version-specific or distribution-specific runtime identifier(s): win7-x64, win7-x86. Affected libraries: SQLite. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See https://aka.ms/dotnet/rid-usage for details.
+  WyomingDotNet.FunctionalTests succeeded with 1 warning(s) (2.4s) → tests\WyomingDotNet.FunctionalTests\bin\Debug\net9.0\WyomingDotNet.FunctionalTests.dll
+    C:\Program Files\dotnet\sdk\9.0.100\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(322,5): warning NETSDK1206: Found version-specific or distribution-specific runtime identifier(s): win7-x64, win7-x86. Affected libraries: SQLite. In .NET 8.0 and higher, assets for version-specific and distribution-specific runtime identifiers will not be found by default. See https://aka.ms/dotnet/rid-usage for details.
+  WyomingDotNet.AspireHost succeeded (1.9s) → src\WyomingDotNet.AspireHost\bin\Debug\net9.0\WyomingDotNet.AspireHost.dll
+  WyomingDotNet.AspireTests succeeded (1.6s) → tests\WyomingDotNet.AspireTests\bin\Debug\net9.0\WyomingDotNet.AspireTests.dll
+
+Build succeeded with 4 warning(s) in 12.8s
+yarn install v1.22.22
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.30s.
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PowerShell.txt
+        modified:   build.ps1
+
+no changes added to commit (use "git add" and/or "git commit -a")
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+[master efad22f] add all changes
+ 2 files changed, 236 insertions(+), 1 deletion(-)
+Current branch master is up to date.
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 2.00 KiB | 341.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To github.com:onewyoming/onewyoming.git
+   7a9b40b..efad22f  master -> master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 2.00 KiB | 255.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   7a9b40b..efad22f  master -> master
+PS C:\code\wyoming>
+PS C:\code\wyoming> C:\code\wyoming\build.ps1
