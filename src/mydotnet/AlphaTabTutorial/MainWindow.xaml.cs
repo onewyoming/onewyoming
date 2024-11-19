@@ -36,10 +36,10 @@ namespace AlphaTabTutorial
                 if (Equals(value, _selectedTrack)) return;
                 _selectedTrack = value;
                 OnPropertyChanged();
-                AlphaTab.Tracks = new[]
-                {
+                AlphaTab.Tracks =
+                [
                     value
-                };
+                ];
                 AlphaTab.RenderTracks();
             }
         }
@@ -89,7 +89,7 @@ namespace AlphaTabTutorial
         }
 
         public double[] ZoomLevels { get; } =
-        {
+        [
             0.25,
             0.5,
             0.75,
@@ -99,7 +99,7 @@ namespace AlphaTabTutorial
             1.25,
             1.5,
             2
-        };
+        ];
 
         private double _currentZoomLevel = 1.0;
         public double CurrentZoomLevel
@@ -120,11 +120,11 @@ namespace AlphaTabTutorial
             }
         }
 
-        public LayoutMode[] LayoutModes { get; } = new[]
-        {
+        public LayoutMode[] LayoutModes { get; } =
+        [
             LayoutMode.Page,
             LayoutMode.Horizontal
-        };
+        ];
 
         private LayoutMode _currentLayoutMode;
         public LayoutMode CurrentLayoutMode
@@ -177,6 +177,8 @@ namespace AlphaTabTutorial
         {
             InitializeComponent();
             DataContext = this;
+            _score = new();
+            _selectedTrack = new();
         }
 
         public bool IsPlayerReady => AlphaTab.Api?.IsReadyForPlayback ?? false;
@@ -251,8 +253,8 @@ namespace AlphaTabTutorial
             }
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        public event PropertyChangedEventHandler? PropertyChanged;
+        protected virtual void OnPropertyChanged([CallerMemberName] string? propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
