@@ -1,7 +1,7 @@
 cd "C:\code\wyoming\"
-pwd
-git status > "C:\code\wyoming\git.txt"
-Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+pwd > "C:\code\wyoming\git.txt"
+git status >> "C:\code\wyoming\git.txt"
+Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\git.txt"
 git clean -dfx >> "C:\code\wyoming\git.txt"
 
 Get-Date -Format "yyyy-MM-dd HH:mm:ss"
