@@ -118,9 +118,19 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        string[] files = { "percentdisktime.txt", "averagediskqueuelength.txt", "bytespersecond.txt" };
+        string currentDirectory = "";
+        if (args.Length == 0)
+        { 
+            currentDirectory = Directory.GetCurrentDirectory();
+        } else
+        {
+            currentDirectory = args[0];
+        }
 
-        foreach (var file in files)
+        // Get all .txt files in the current directory and all subdirectories
+        IEnumerable<string> txtFiles = Directory.EnumerateFiles(currentDirectory, "*.txt", SearchOption.AllDirectories);
+
+        foreach (var file in txtFiles)
         {
             System.Console.WriteLine($"\n--- Processing {file} ---");
             var stats = StatisticalCalculator.CalculateStatistics(file);

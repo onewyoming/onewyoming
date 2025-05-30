@@ -17,7 +17,7 @@ dotnet --info >> "C:\code\wyoming\src\dotnet10preview4\MyStastics\powershell.txt
 Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview4\MyStastics\powershell.txt"
 dotnet build >> "C:\code\wyoming\src\dotnet10preview4\MyStastics\powershell.txt"
 cd "C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console"
-dotnet run >> "C:\code\wyoming\src\dotnet10preview4\MyStastics\powershell.txt"
+dotnet run  >> "C:\code\wyoming\src\dotnet10preview4\MyStastics\powershell.txt"
 Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview4\MyStastics\powershell.txt"
 
 Get-Date -Format "yyyy-MM-dd HH:mm:ss"
