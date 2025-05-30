@@ -300,3 +300,44 @@ remote:
 To gitlab.com:wyoming/wyoming.gitlab.io.git
  * [new branch]      dotnet10preview4 -> dotnet10preview4
 PS C:\code\wyoming> cd "C:\Code\wyoming\src\dotnet10preview4\single"; pwd > "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; ls >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; cat app.cs >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; dotnet --info >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; dotnet run app.cs >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; cd "C:\code\wyoming\"; git status; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git remote show origin; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git pull --rebase --strategy-option=ours; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git push origin master; Get-Date -Format "yyyy-MM-dd HH:mm:ss";
+On branch dotnet10preview4
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PowerShell.txt
+        modified:   src/dotnet10preview4/single/powershell.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2025-05-30 06:34:11
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branches:
+    dotnet10preview4 tracked
+    master           tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local refs configured for 'git push':
+    dotnet10preview4 pushes to dotnet10preview4 (up to date)
+    master           pushes to master           (up to date)
+2025-05-30 06:34:12
+[dotnet10preview4 5baf1e4] add all changes
+ 2 files changed, 75 insertions(+), 3 deletions(-)
+2025-05-30 06:34:13
+There is no tracking information for the current branch.
+Please specify which branch you want to rebase against.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> dotnet10preview4
+
+2025-05-30 06:34:14
+Everything up-to-date
+Everything up-to-date
+2025-05-30 06:34:15
+PS C:\code\wyoming> cd "C:\Code\wyoming\src\dotnet10preview4\single"; pwd > "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; ls >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; cat app.cs >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; dotnet --info >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; dotnet run app.cs >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; cd "C:\code\wyoming\"; git status; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git remote show origin; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git pull --rebase --strategy-option=ours; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git push origin master; Get-Date -Format "yyyy-MM-dd HH:mm:ss";
