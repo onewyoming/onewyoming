@@ -9,7 +9,7 @@ C:\code\wyoming\src\dotnet10preview4\single
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
 -a---           5/30/2025  6:43 AM            242 app.cs
--a---           5/30/2025  7:05 AM           3392 powershell.txt
+-a---           5/30/2025  7:16 AM           3392 powershell.txt
 
 .NET SDK:
  Version:           10.0.100-preview.4.25258.110
@@ -73,7 +73,7 @@ Learn more:
 
 Download .NET:
   https://aka.ms/dotnet/download
-2025-05-30 07:05:14
+2025-05-30 07:16:55
 MSBUILD : error MSB1003: Specify a project or solution file. The current working directory does not contain a project or solution file.
 
 --- Processing percentdisktime.txt ---
@@ -87,8 +87,8 @@ Minimum: 0.000
 P75: 438.993
 P90: 758.061
 P99: 1,669.201
-Time to read file: 20.67 ms
-Time to calculate statistics: 25.03 ms
+Time to read file: 20.89 ms
+Time to calculate statistics: 26.72 ms
 
 --- Processing averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
@@ -101,8 +101,8 @@ Minimum: 0.000
 P75: 4.411
 P90: 9.059
 P99: 16.689
-Time to read file: 0.50 ms
-Time to calculate statistics: 0.28 ms
+Time to read file: 0.52 ms
+Time to calculate statistics: 0.31 ms
 
 --- Processing bytespersecond.txt ---
 File: bytespersecond.txt
@@ -115,6 +115,6 @@ Minimum: 0.000
 P75: 69,263,926.540
 P90: 91,243,341.724
 P99: 119,107,717.504
-Time to read file: 0.31 ms
-Time to calculate statistics: 0.23 ms
-2025-05-30 07:05:21
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.22 ms
+2025-05-30 07:17:09
