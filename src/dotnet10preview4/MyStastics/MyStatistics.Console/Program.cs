@@ -3,25 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
+namespace MyStatistics.Console;
+
 public class StatisticalCalculator
 {
-    public class FileStatistics
-    {
-        public string FileName { get; set; }
-        public double Mean { get; set; }
-        public double Median { get; set; }
-        public double StandardDeviation { get; set; }
-        public double Maximum { get; set; }
-        public double Minimum { get; set; }
-        public double P75 { get; set; }
-        public double P90 { get; set; }
-        public double P99 { get; set; }
-        public int Count { get; set; }
-        public TimeSpan ReadTime { get; set; }
-        public TimeSpan CalculationTime { get; set; }
-    }
-
-    public static FileStatistics CalculateStatistics(string filePath)
+    public static FileStatistics? CalculateStatistics(string filePath)
     {
         var stats = new FileStatistics { FileName = Path.GetFileName(filePath) };
 
@@ -39,19 +25,19 @@ public class StatisticalCalculator
         }
         catch (FileNotFoundException)
         {
-            Console.WriteLine($"Error: File not found at {filePath}");
+            System.Console.WriteLine($"Error: File not found at {filePath}");
             return null;
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error reading file {filePath}: {ex.Message}");
+            System.Console.WriteLine($"Error reading file {filePath}: {ex.Message}");
             return null;
         }
         stats.ReadTime = DateTime.UtcNow - startReadTime;
 
-        if (!data.Any())
+        if (data.Count == 0)
         {
-            Console.WriteLine($"No valid data found in {filePath}");
+            System.Console.WriteLine($"No valid data found in {filePath}");
             return stats;
         }
 
@@ -111,6 +97,22 @@ public class StatisticalCalculator
     }
 }
 
+public class FileStatistics
+{
+    public required string FileName { get; set; }
+    public double Mean { get; set; }
+    public double Median { get; set; }
+    public double StandardDeviation { get; set; }
+    public double Maximum { get; set; }
+    public double Minimum { get; set; }
+    public double P75 { get; set; }
+    public double P90 { get; set; }
+    public double P99 { get; set; }
+    public int Count { get; set; }
+    public TimeSpan ReadTime { get; set; }
+    public TimeSpan CalculationTime { get; set; }
+}
+
 // Program.cs - Example Usage
 public class Program
 {
@@ -120,23 +122,23 @@ public class Program
 
         foreach (var file in files)
         {
-            Console.WriteLine($"\n--- Processing {file} ---");
+            System.Console.WriteLine($"\n--- Processing {file} ---");
             var stats = StatisticalCalculator.CalculateStatistics(file);
 
             if (stats != null)
             {
-                Console.WriteLine($"File: {stats.FileName}");
-                Console.WriteLine($"Total Data Points: {stats.Count}");
-                Console.WriteLine($"Mean: {stats.Mean:N3}");
-                Console.WriteLine($"Median: {stats.Median:N3}");
-                Console.WriteLine($"Standard Deviation: {stats.StandardDeviation:N3}");
-                Console.WriteLine($"Maximum: {stats.Maximum:N3}");
-                Console.WriteLine($"Minimum: {stats.Minimum:N3}");
-                Console.WriteLine($"P75: {stats.P75:N3}");
-                Console.WriteLine($"P90: {stats.P90:N3}");
-                Console.WriteLine($"P99: {stats.P99:N3}");
-                Console.WriteLine($"Time to read file: {stats.ReadTime.TotalMilliseconds:N2} ms");
-                Console.WriteLine($"Time to calculate statistics: {stats.CalculationTime.TotalMilliseconds:N2} ms");
+                System.Console.WriteLine($"File: {stats.FileName}");
+                System.Console.WriteLine($"Total Data Points: {stats.Count}");
+                System.Console.WriteLine($"Mean: {stats.Mean:N3}");
+                System.Console.WriteLine($"Median: {stats.Median:N3}");
+                System.Console.WriteLine($"Standard Deviation: {stats.StandardDeviation:N3}");
+                System.Console.WriteLine($"Maximum: {stats.Maximum:N3}");
+                System.Console.WriteLine($"Minimum: {stats.Minimum:N3}");
+                System.Console.WriteLine($"P75: {stats.P75:N3}");
+                System.Console.WriteLine($"P90: {stats.P90:N3}");
+                System.Console.WriteLine($"P99: {stats.P99:N3}");
+                System.Console.WriteLine($"Time to read file: {stats.ReadTime.TotalMilliseconds:N2} ms");
+                System.Console.WriteLine($"Time to calculate statistics: {stats.CalculationTime.TotalMilliseconds:N2} ms");
             }
         }
     }
