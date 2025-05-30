@@ -1,16 +1,6 @@
 cd "C:\code\wyoming\"
-pwd >> "C:\code\wyoming\git.txt"
-git status >> "C:\code\wyoming\git.txt"
-Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\git.txt"
-git remote show origin >> "C:\code\wyoming\git.txt"
-Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\git.txt"
-git add . >> "C:\code\wyoming\git.txt"
-git commit --message "add all changes" --message "this is a bad commit message, isn't it?" >> "C:\code\wyoming\git.txt"
-Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\git.txt"
-git pull --rebase --strategy-option=ours >> "C:\code\wyoming\git.txt"
-Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\git.txt"
-git push origin --all >> "C:\code\wyoming\git.txt"
-Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\git.txt"
+git add .
+git commit --message "add all changes" --message "this is a bad commit message, isn't it?"
 
 cd "C:\code\wyoming\"
 pwd > "C:\code\wyoming\git.txt"
