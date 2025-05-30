@@ -2,41 +2,15 @@ PowerShell 7.6.0-preview.4
 PS C:\Users\kushal>
 PS C:\Users\kushal> C:\code\wyoming\src\dotnet10preview4\dotnet.ps1
 warning: in the working copy of 'git.txt', LF will be replaced by CRLF the next time Git touches it
-[dotnet10preview4 6a80658] add all changes
- 2 files changed, 420 insertions(+), 136 deletions(-)
-2025-05-30 08:25:05
-2025-05-30 08:25:09
-2025-05-30 08:25:33
+[dotnet10preview4 7174d77] add all changes
+ 2 files changed, 39 insertions(+), 695 deletions(-)
+2025-05-30 11:34:24
+2025-05-30 11:34:39
+2025-05-30 11:35:05
 warning: in the working copy of 'git.txt', LF will be replaced by CRLF the next time Git touches it
 warning: in the working copy of 'src/dotnet10preview4/MyStastics/powershell.txt', LF will be replaced by CRLF the next time Git touches it
-[dotnet10preview4 fe6a341] add all changes
- 3 files changed, 204 insertions(+), 218 deletions(-)
-2025-05-30 08:25:34
-Current branch dotnet10preview4 is up to date.
-PS C:\code\wyoming> C:\code\wyoming\src\dotnet10preview4\dotnet.ps1
-warning: in the working copy of 'git.txt', LF will be replaced by CRLF the next time Git touches it
-[dotnet10preview4 3dfc96f] add all changes
- 1 file changed, 14 insertions(+)
-2025-05-30 08:25:50
-2025-05-30 08:25:53
-2025-05-30 08:26:17
-warning: in the working copy of 'git.txt', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of 'src/dotnet10preview4/MyStastics/powershell.txt', LF will be replaced by CRLF the next time Git touches it
-[dotnet10preview4 0ad9af4] add all changes
- 3 files changed, 207 insertions(+), 221 deletions(-)
-2025-05-30 08:26:19
-Current branch dotnet10preview4 is up to date.
-PS C:\code\wyoming> C:\code\wyoming\src\dotnet10preview4\dotnet.ps1
-warning: in the working copy of 'git.txt', LF will be replaced by CRLF the next time Git touches it
-[dotnet10preview4 cdfee77] add all changes
- 2 files changed, 15 insertions(+)
-2025-05-30 08:29:45
-2025-05-30 08:29:49
-2025-05-30 08:30:12
-warning: in the working copy of 'git.txt', LF will be replaced by CRLF the next time Git touches it
-warning: in the working copy of 'src/dotnet10preview4/MyStastics/powershell.txt', LF will be replaced by CRLF the next time Git touches it
-[dotnet10preview4 7a03772] add all changes
- 3 files changed, 210 insertions(+), 223 deletions(-)
-2025-05-30 08:30:14
+[dotnet10preview4 e57c9fe] add all changes
+ 3 files changed, 232 insertions(+), 246 deletions(-)
+2025-05-30 11:35:06
 Current branch dotnet10preview4 is up to date.
 PS C:\code\wyoming> C:\code\wyoming\src\dotnet10preview4\dotnet.ps1
