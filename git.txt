@@ -4,7 +4,8 @@ Path
 C:\code\wyoming
 
 On branch dotnet10preview4
-Your branch is up to date with 'origin/dotnet10preview4'.
+Your branch is ahead of 'origin/dotnet10preview4' by 1 commit.
+  (use "git push" to publish your local commits)
 
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -12,7 +13,7 @@ Changes not staged for commit:
 	modified:   git.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
-2025-05-30 08:16:29
+2025-05-30 08:18:52
 Removing src/dotnet10preview4/MyStastics/MyStatistics.Console/bin/
 Removing src/dotnet10preview4/MyStastics/MyStatistics.Console/obj/
 
@@ -21,7 +22,8 @@ Path
 C:\code\wyoming
 
 On branch dotnet10preview4
-Your branch is up to date with 'origin/dotnet10preview4'.
+Your branch is ahead of 'origin/dotnet10preview4' by 1 commit.
+  (use "git push" to publish your local commits)
 
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -31,7 +33,7 @@ Changes not staged for commit:
 	modified:   src/dotnet10preview4/single/powershell.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
-2025-05-30 08:16:58
+2025-05-30 08:19:20
 * remote origin
   Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
   Push  URL: git@github.com:onewyoming/onewyoming.git
@@ -44,11 +46,6 @@ no changes added to commit (use "git add" and/or "git commit -a")
     dotnet10preview4 merges with remote dotnet10preview4
     master           merges with remote master
   Local refs configured for 'git push':
-    dotnet10preview4 pushes to dotnet10preview4 (up to date)
+    dotnet10preview4 pushes to dotnet10preview4 (fast-forwardable)
     master           pushes to master           (up to date)
-2025-05-30 08:16:59
-[dotnet10preview4 ea5c707] add all changes
- 3 files changed, 231 insertions(+), 231 deletions(-)
-2025-05-30 08:16:59
-2025-05-30 08:17:00
-2025-05-30 08:17:02
+2025-05-30 08:19:21
