@@ -13,7 +13,7 @@ Changes not staged for commit:
 	modified:   git.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
-2025-05-30 08:18:52
+2025-05-30 08:22:55
 Removing src/dotnet10preview4/MyStastics/MyStatistics.Console/bin/
 Removing src/dotnet10preview4/MyStastics/MyStatistics.Console/obj/
 
@@ -33,7 +33,7 @@ Changes not staged for commit:
 	modified:   src/dotnet10preview4/single/powershell.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
-2025-05-30 08:19:20
+2025-05-30 08:23:23
 * remote origin
   Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
   Push  URL: git@github.com:onewyoming/onewyoming.git
@@ -48,9 +48,4 @@ no changes added to commit (use "git add" and/or "git commit -a")
   Local refs configured for 'git push':
     dotnet10preview4 pushes to dotnet10preview4 (fast-forwardable)
     master           pushes to master           (up to date)
-2025-05-30 08:19:21
-[dotnet10preview4 753d950] add all changes
- 3 files changed, 241 insertions(+), 244 deletions(-)
-2025-05-30 08:19:21
-2025-05-30 08:19:21
-2025-05-30 08:19:24
+2025-05-30 08:23:24
