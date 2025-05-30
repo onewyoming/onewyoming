@@ -1,171 +1,40 @@
 PowerShell 7.6.0-preview.4
-PS C:\Users\kushal>
-PS C:\Users\kushal> date; scoop status; date; scoop bucket rm main; date; scoop bucket add main; date; scoop bucket rm extras; date; scoop bucket add extras; date; scoop bucket rm nerd-fonts; date; scoop bucket add nerd-fonts; date; scoop status; date; scoop update; date; scoop update *; date; scoop cache show; date; scoop cache rm *; date; scoop status; date;
+PS C:\Users\kushal> $env:DOTNET_CLI_TELEMETRY_OPTOUT='1';cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\mydotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\WyomingDotNet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\";git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; gitpush origin master; date; cd "C:\Code\wyoming\src\dotnet10preview4\single"; ls; cat app.cs; dotnet --info; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; dotnet run app.cs; Get-Date -Format "yyyy-MM-dd HH:mm:ss";
 
-Friday, May 30, 2025 6:14:23 AM
-WARN  Scoop bucket(s) out of date. Run 'scoop update' to get the latest changes.
-Friday, May 30, 2025 6:14:33 AM
-The main bucket was removed successfully.
-Friday, May 30, 2025 6:14:34 AM
-Checking repo... OK
-The main bucket was added successfully.
-Friday, May 30, 2025 6:15:00 AM
-The extras bucket was removed successfully.
-Friday, May 30, 2025 6:15:01 AM
-Checking repo... OK
-The extras bucket was added successfully.
-Friday, May 30, 2025 6:15:36 AM
-The nerd-fonts bucket was removed successfully.
-Friday, May 30, 2025 6:15:36 AM
-Checking repo... OK
-The nerd-fonts bucket was added successfully.
-Friday, May 30, 2025 6:15:39 AM
-Scoop is up to date.
-
-Name                 : git
-Installed Version    : 2.47.1.2
-Latest Version       : 2.49.0
-Missing Dependencies :
-Info                 :
-
-
-Name                 : nodejs-lts
-Installed Version    : 22.13.1
-Latest Version       : 22.16.0
-Missing Dependencies :
-Info                 :
-
-Friday, May 30, 2025 6:15:42 AM
-Updating Scoop...
-Updating Buckets...
-Scoop was updated successfully!
-Friday, May 30, 2025 6:15:46 AM
-git: 2.47.1.2 -> 2.49.0
-nodejs-lts: 22.13.1 -> 22.16.0
-Updating 2 outdated apps:
-Updating 'git' (2.47.1.2 -> 2.49.0)
-Downloading new version
-PortableGit-2.49.0-64-bit.7z.exe (61.2 MB) [===========================================================================================================================================================] 100%
-Checking hash of PortableGit-2.49.0-64-bit.7z.exe ... ok.
-Uninstalling 'git' (2.47.1.2)
-Removing shim 'sh.shim'.
-Removing shim 'sh.exe'.
-Removing shim 'bash.shim'.
-Removing shim 'bash.exe'.
-Removing shim 'git.shim'.
-Removing shim 'git.exe'.
-Removing shim 'gitk.shim'.
-Removing shim 'gitk.exe'.
-Removing shim 'git-gui.shim'.
-Removing shim 'git-gui.exe'.
-Removing shim 'scalar.shim'.
-Removing shim 'scalar.exe'.
-Removing shim 'tig.shim'.
-Removing shim 'tig.exe'.
-Removing shim 'git-bash.shim'.
-Removing shim 'git-bash.exe'.
-Unlinking ~\scoop\apps\git\current
-Installing 'git' (2.49.0) [64bit] from 'main' bucket
-Loading PortableGit-2.49.0-64-bit.7z.exe from cache
-Extracting PortableGit-2.49.0-64-bit.7z.exe ... done.
-Linking ~\scoop\apps\git\current => ~\scoop\apps\git\2.49.0
-Creating shim for 'sh'.
-Creating shim for 'bash'.
-Creating shim for 'git'.
-Creating shim for 'gitk'.
-Making C:\Users\kushal\scoop\shims\gitk.exe a GUI binary.
-Creating shim for 'git-gui'.
-Making C:\Users\kushal\scoop\shims\git-gui.exe a GUI binary.
-Creating shim for 'scalar'.
-Creating shim for 'tig'.
-Creating shim for 'git-bash'.
-Making C:\Users\kushal\scoop\shims\git-bash.exe a GUI binary.
-Creating shortcut for Git Bash (git-bash.exe)
-Creating shortcut for Git GUI (git-gui.exe)
-Running post_install script...done.
-'git' (2.49.0) was installed successfully!
-Notes
------
-Set Git Credential Manager Core by running: "git config --global credential.helper manager"
-
-To add context menu entries, run 'C:\Users\kushal\scoop\apps\git\current\install-context.reg'
-
-To create file-associations for .git* and .sh files, run 'C:\Users\kushal\scoop\apps\git\current\install-file-associations.reg'
-Updating 'nodejs-lts' (22.13.1 -> 22.16.0)
-Downloading new version
-node-v22.16.0-win-x64.7z (21.1 MB) [===================================================================================================================================================================] 100%
-Checking hash of node-v22.16.0-win-x64.7z ... ok.
-Uninstalling 'nodejs-lts' (22.13.1)
-Unlinking ~\scoop\apps\nodejs-lts\current
-Removing ~\scoop\apps\nodejs-lts\current\bin from your path.
-Removing ~\scoop\apps\nodejs-lts\current from your path.
-Installing 'nodejs-lts' (22.16.0) [64bit] from 'main' bucket
-Loading node-v22.16.0-win-x64.7z from cache
-Extracting node-v22.16.0-win-x64.7z ... done.
-Linking ~\scoop\apps\nodejs-lts\current => ~\scoop\apps\nodejs-lts\22.16.0
-Adding ~\scoop\apps\nodejs-lts\current\bin to your path.
-Adding ~\scoop\apps\nodejs-lts\current to your path.
-Persisting bin
-Persisting cache
-Running post_install script...done.
-'nodejs-lts' (22.16.0) was installed successfully!
-Friday, May 30, 2025 6:16:46 AM
-
-Name    : git
-Version : 2.49.0
-Length  : 64145824
-
-
-Name    : nodejs-lts
-Version : 22.16.0
-Length  : 22165687
-
-Total: 2 files, 82.3 MB
-Friday, May 30, 2025 6:16:47 AM
-Removing git#2.49.0#3c4b90c.7z...
-Removing nodejs-lts#22.16.0#3067dde.7z...
-Deleted: 2 files, 82.3 MB
-Friday, May 30, 2025 6:16:47 AM
-Scoop is up to date.
-Everything is ok!
-Friday, May 30, 2025 6:16:50 AM
-
-PS C:\Users\kushal> $env:DOTNET_CLI_TELEMETRY_OPTOUT='1';cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\mydotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\WyomingDotNet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\";git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; gitpush origin master; date;
-
-Friday, May 30, 2025 6:17:05 AM
-Friday, May 30, 2025 6:17:05 AM
+Friday, May 30, 2025 6:29:20 AM
+Friday, May 30, 2025 6:29:20 AM
 MSBUILD : error MSB1003: Specify a project or solution file. The current working directory does not contain a project or solution file.
-Friday, May 30, 2025 6:17:06 AM
+Friday, May 30, 2025 6:29:21 AM
 MSBUILD : error MSB1003: Specify a project or solution file. The current working directory does not contain a project or solution file.
-Friday, May 30, 2025 6:17:07 AM
-Friday, May 30, 2025 6:17:07 AM
+Friday, May 30, 2025 6:29:22 AM
+Friday, May 30, 2025 6:29:22 AM
 MSBUILD : error MSB1003: Specify a project or solution file. The current working directory does not contain a project or solution file.
-Friday, May 30, 2025 6:17:07 AM
+Friday, May 30, 2025 6:29:22 AM
 MSBUILD : error MSB1003: Specify a project or solution file. The current working directory does not contain a project or solution file.
-Friday, May 30, 2025 6:17:08 AM
-Friday, May 30, 2025 6:17:08 AM
+Friday, May 30, 2025 6:29:23 AM
+Friday, May 30, 2025 6:29:23 AM
 MSBUILD : error MSB1003: Specify a project or solution file. The current working directory does not contain a project or solution file.
-Friday, May 30, 2025 6:17:09 AM
+Friday, May 30, 2025 6:29:24 AM
 MSBUILD : error MSB1003: Specify a project or solution file. The current working directory does not contain a project or solution file.
-Friday, May 30, 2025 6:17:09 AM
-Friday, May 30, 2025 6:17:09 AM
+Friday, May 30, 2025 6:29:24 AM
+Friday, May 30, 2025 6:29:24 AM
 yarn install v1.22.22
 [1/4] Resolving packages...
-[2/4] Fetching packages...
-[3/4] Linking dependencies...
-[4/4] Building fresh packages...
-Done in 24.08s.
-Friday, May 30, 2025 6:17:37 AM
-On branch master
-Your branch is up to date with 'origin/master'.
+success Already up-to-date.
+Done in 0.34s.
+Friday, May 30, 2025 6:29:25 AM
+On branch dotnet10preview4
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PowerShell.txt
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
-        Windows PowerShell.txt
-        src/dotnet/
+        src/dotnet10preview4/
 
-nothing added to commit but untracked files present (use "git add" to track)
-Friday, May 30, 2025 6:17:37 AM
+no changes added to commit (use "git add" and/or "git commit -a")
+Friday, May 30, 2025 6:29:25 AM
 * remote origin
   Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
   Push  URL: git@github.com:onewyoming/onewyoming.git
@@ -177,202 +46,30 @@ Friday, May 30, 2025 6:17:37 AM
     master merges with remote master
   Local ref configured for 'git push':
     master pushes to master (up to date)
-Friday, May 30, 2025 6:17:38 AM
-[master aefea98] add all changes
- 2 files changed, 174 insertions(+)
- create mode 100644 Windows PowerShell.txt
- create mode 100644 src/dotnet/webapi/Properties/PublishProfiles/site5453-WebDeploy.pubxml
-Friday, May 30, 2025 6:17:39 AM
-Current branch master is up to date.
-Friday, May 30, 2025 6:17:40 AM
-Enumerating objects: 11, done.
-Counting objects: 100% (11/11), done.
-Delta compression using up to 10 threads
-Compressing objects: 100% (6/6), done.
-Writing objects: 100% (9/9), 3.70 KiB | 540.00 KiB/s, done.
-Total 9 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-remote:
-remote: GitHub found 7 vulnerabilities on onewyoming/onewyoming's default branch (2 critical, 5 moderate). To find out more, visit:
-remote:      https://github.com/onewyoming/onewyoming/security/dependabot
-remote:
-To github.com:onewyoming/onewyoming.git
-   e254c41..aefea98  master -> master
-Enumerating objects: 11, done.
-Counting objects: 100% (11/11), done.
-Delta compression using up to 10 threads
-Compressing objects: 100% (6/6), done.
-Writing objects: 100% (9/9), 3.70 KiB | 540.00 KiB/s, done.
-Total 9 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
-To gitlab.com:wyoming/wyoming.gitlab.io.git
-   e254c41..aefea98  master -> master
-Friday, May 30, 2025 6:17:42 AM
+Friday, May 30, 2025 6:29:26 AM
+[dotnet10preview4 1c279d1] add all changes
+ 2 files changed, 543 insertions(+), 14 deletions(-)
+ create mode 100644 src/dotnet10preview4/single/app.cs
+Friday, May 30, 2025 6:29:27 AM
+There is no tracking information for the current branch.
+Please specify which branch you want to rebase against.
+See git-pull(1) for details.
 
-PS C:\code\wyoming> dotnet --info
-.NET SDK:
- Version:           10.0.100-preview.4.25258.110
- Commit:            c22dcd0c7a
- Workload version:  10.0.100-manifests.e9b6aa6e
- MSBuild version:   17.15.0-preview-25258-110+c22dcd0c7
+    git pull <remote> <branch>
 
-Runtime Environment:
- OS Name:     Windows
- OS Version:  10.0.26100
- OS Platform: Windows
- RID:         win-x64
- Base Path:   C:\Program Files\dotnet\sdk\10.0.100-preview.4.25258.110\
+If you wish to set tracking information for this branch you can do so with:
 
-.NET workloads installed:
- [aspire]
-   Installation Source: VS 17.14.36127.28
-   Manifest Version:    8.2.2/8.0.100
-   Manifest Path:       C:\Program Files\dotnet\sdk-manifests\8.0.100\microsoft.net.sdk.aspire\8.2.2\WorkloadManifest.json
-   Install Type:              Msi
+    git branch --set-upstream-to=origin/<branch> dotnet10preview4
 
-Configured to use workload sets when installing new manifests.
-Workloads are configured to install and update using workload versions, but none were found. Run "dotnet workload restore" to install a workload version.
+Friday, May 30, 2025 6:29:28 AM
+Everything up-to-date
+Everything up-to-date
+Friday, May 30, 2025 6:29:30 AM
 
-Host:
-  Version:      10.0.0-preview.4.25258.110
-  Architecture: x64
-  Commit:       c22dcd0c7a
+LastWriteTime : 5/30/2025 6:23:22 AM
+Length        : 242
+Name          : app.cs
 
-.NET SDKs installed:
-  9.0.100 [C:\Program Files\dotnet\sdk]
-  9.0.300 [C:\Program Files\dotnet\sdk]
-  10.0.100-preview.4.25258.110 [C:\Program Files\dotnet\sdk]
-
-.NET runtimes installed:
-  Microsoft.AspNetCore.App 8.0.16 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
-  Microsoft.AspNetCore.App 9.0.0 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
-  Microsoft.AspNetCore.App 9.0.5 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
-  Microsoft.AspNetCore.App 10.0.0-preview.4.25258.110 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
-  Microsoft.NETCore.App 8.0.16 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
-  Microsoft.NETCore.App 9.0.0 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
-  Microsoft.NETCore.App 9.0.5 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
-  Microsoft.NETCore.App 10.0.0-preview.4.25258.110 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
-  Microsoft.WindowsDesktop.App 8.0.16 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
-  Microsoft.WindowsDesktop.App 9.0.0 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
-  Microsoft.WindowsDesktop.App 9.0.5 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
-  Microsoft.WindowsDesktop.App 10.0.0-preview.4.25258.110 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
-
-Other architectures found:
-  x86   [C:\Program Files (x86)\dotnet]
-    registered at [HKLM\SOFTWARE\dotnet\Setup\InstalledVersions\x86\InstallLocation]
-
-Environment variables:
-  Not set
-
-global.json file:
-  Not found
-
-Learn more:
-  https://aka.ms/dotnet/info
-
-Download .NET:
-  https://aka.ms/dotnet/download
-PS C:\code\wyoming> git switch --create "dotnet10preview4"
-Switched to a new branch 'dotnet10preview4'
-PS C:\code\wyoming> mkdir src\dotnet10preview4\single
-
-    Directory: C:\code\wyoming\src\dotnet10preview4
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d----           5/30/2025  6:22 AM                single
-
-PS C:\code\wyoming> cd "C:\Code\wyoming\src\dotnet10preview4\single"
-PS C:\code\wyoming\src\dotnet10preview4\single> code .
-code: The term 'code' is not recognized as a name of a cmdlet, function, script file, or executable program.
-Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
-PS C:\code\wyoming\src\dotnet10preview4\single> cat app.cs
-#:package Humanizer@2.14.1
-
-using Humanizer;
-
-var dotNet9Released = DateTimeOffset.Parse("2024-12-03");
-var since = DateTimeOffset.Now - dotNet9Released;
-
-Console.WriteLine($"It has been {since.Humanize()} since .NET 9 was released.");
-PS C:\code\wyoming\src\dotnet10preview4\single>
-PS C:\code\wyoming\src\dotnet10preview4\single> cd "C:\Code\wyoming\src\dotnet10preview4\single"; dotnet --info; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; dotnet build; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; dotnet clean; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; dotnet run; Get-Date -Format "yyyy-MM-dd HH:mm:ss";
-.NET SDK:
- Version:           10.0.100-preview.4.25258.110
- Commit:            c22dcd0c7a
- Workload version:  10.0.100-manifests.e9b6aa6e
- MSBuild version:   17.15.0-preview-25258-110+c22dcd0c7
-
-Runtime Environment:
- OS Name:     Windows
- OS Version:  10.0.26100
- OS Platform: Windows
- RID:         win-x64
- Base Path:   C:\Program Files\dotnet\sdk\10.0.100-preview.4.25258.110\
-
-.NET workloads installed:
- [aspire]
-   Installation Source: VS 17.14.36127.28
-   Manifest Version:    8.2.2/8.0.100
-   Manifest Path:       C:\Program Files\dotnet\sdk-manifests\8.0.100\microsoft.net.sdk.aspire\8.2.2\WorkloadManifest.json
-   Install Type:              Msi
-
-Configured to use workload sets when installing new manifests.
-Workloads are configured to install and update using workload versions, but none were found. Run "dotnet workload restore" to install a workload version.
-
-Host:
-  Version:      10.0.0-preview.4.25258.110
-  Architecture: x64
-  Commit:       c22dcd0c7a
-
-.NET SDKs installed:
-  9.0.100 [C:\Program Files\dotnet\sdk]
-  9.0.300 [C:\Program Files\dotnet\sdk]
-  10.0.100-preview.4.25258.110 [C:\Program Files\dotnet\sdk]
-
-.NET runtimes installed:
-  Microsoft.AspNetCore.App 8.0.16 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
-  Microsoft.AspNetCore.App 9.0.0 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
-  Microsoft.AspNetCore.App 9.0.5 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
-  Microsoft.AspNetCore.App 10.0.0-preview.4.25258.110 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
-  Microsoft.NETCore.App 8.0.16 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
-  Microsoft.NETCore.App 9.0.0 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
-  Microsoft.NETCore.App 9.0.5 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
-  Microsoft.NETCore.App 10.0.0-preview.4.25258.110 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
-  Microsoft.WindowsDesktop.App 8.0.16 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
-  Microsoft.WindowsDesktop.App 9.0.0 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
-  Microsoft.WindowsDesktop.App 9.0.5 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
-  Microsoft.WindowsDesktop.App 10.0.0-preview.4.25258.110 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
-
-Other architectures found:
-  x86   [C:\Program Files (x86)\dotnet]
-    registered at [HKLM\SOFTWARE\dotnet\Setup\InstalledVersions\x86\InstallLocation]
-
-Environment variables:
-  Not set
-
-global.json file:
-  Not found
-
-Learn more:
-  https://aka.ms/dotnet/info
-
-Download .NET:
-  https://aka.ms/dotnet/download
-2025-05-30 06:24:37
-MSBUILD : error MSB1003: Specify a project or solution file. The current working directory does not contain a project or solution file.
-2025-05-30 06:24:37
-MSBUILD : error MSB1003: Specify a project or solution file. The current working directory does not contain a project or solution file.
-2025-05-30 06:24:38
-Couldn't find a project to run. Ensure a project exists in C:\code\wyoming\src\dotnet10preview4\single, or pass the path to the project using --project.
-2025-05-30 06:24:38
-PS C:\code\wyoming\src\dotnet10preview4\single>
-PS C:\code\wyoming\src\dotnet10preview4\single> cd "C:\Code\wyoming\src\dotnet10preview4\single"; ls; cat app.cs; dotnet --info; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; dotnet build; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; dotnet clean; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; dotnet run; Get-Date -Format "yyyy-MM-dd HH:mm:ss";
-
-    Directory: C:\code\wyoming\src\dotnet10preview4\single
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
--a---           5/30/2025  6:23 AM            242 app.cs
 #:package Humanizer@2.14.1
 
 using Humanizer;
@@ -443,13 +140,9 @@ Learn more:
 
 Download .NET:
   https://aka.ms/dotnet/download
-2025-05-30 06:25:33
-MSBUILD : error MSB1003: Specify a project or solution file. The current working directory does not contain a project or solution file.
-2025-05-30 06:25:34
-MSBUILD : error MSB1003: Specify a project or solution file. The current working directory does not contain a project or solution file.
-2025-05-30 06:25:35
-Couldn't find a project to run. Ensure a project exists in C:\code\wyoming\src\dotnet10preview4\single, or pass the path to the project using --project.
-2025-05-30 06:25:35
+2025-05-30 06:29:31
+It has been 25 weeks since .NET 9 was released.
+2025-05-30 06:29:34
 
 PS C:\code\wyoming\src\dotnet10preview4\single>
 PS C:\code\wyoming\src\dotnet10preview4\single> cd "C:\Code\wyoming\src\dotnet10preview4\single"; ls; cat app.cs; dotnet --info; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; dotnet run app.cs; Get-Date -Format "yyyy-MM-dd HH:mm:ss";
@@ -529,8 +222,9 @@ Learn more:
 
 Download .NET:
   https://aka.ms/dotnet/download
-2025-05-30 06:27:08
+2025-05-30 06:29:43
 It has been 25 weeks since .NET 9 was released.
-2025-05-30 06:27:23
+2025-05-30 06:29:46
 
-PS C:\code\wyoming\src\dotnet10preview4\single> $env:DOTNET_CLI_TELEMETRY_OPTOUT='1';cd "C:\code\wyoming\"; date; cd "C:\code\wyoming\src\dotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\mydotnet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\WyomingDotNet\"; date; dotnet clean; date; dotnet build; date; cd "C:\code\wyoming\src\public-website\"; date; yarn; date; cd "C:\code\wyoming\"; git status; date; git remote show origin; date; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; date; git pull --rebase --strategy-option=ours; date; git push origin master; date; cd "C:\Code\wyoming\src\dotnet10preview4\single"; ls; cat app.cs; dotnet --info; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; dotnet run app.cs; Get-Date -Format "yyyy-MM-dd HH:mm:ss";
+PS C:\code\wyoming\src\dotnet10preview4\single>
+PS C:\code\wyoming\src\dotnet10preview4\single> cd "C:\Code\wyoming\src\dotnet10preview4\single"; pwd > "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; ls >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; cat app.cs >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; dotnet --info >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; Get-Date -Format "yyyy-MM-ddHH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; dotnet run app.cs >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; cd "C:\code\wyoming\"; git status; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git remote show origin; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git pull --rebase --strategy-option=ours; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git push origin master; Get-Date -Format "yyyy-MM-dd HH:mm:ss";

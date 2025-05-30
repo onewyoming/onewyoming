@@ -1,0 +1,86 @@
+
+Path
+----
+C:\code\wyoming\src\dotnet10preview4\single
+
+
+    Directory: C:\code\wyoming\src\dotnet10preview4\single
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---           5/30/2025  6:23 AM            242 app.cs
+-a---           5/30/2025  6:32 AM             61 powershell.txt
+
+#:package Humanizer@2.14.1
+
+using Humanizer;
+
+var dotNet9Released = DateTimeOffset.Parse("2024-12-03");
+var since = DateTimeOffset.Now - dotNet9Released;
+
+Console.WriteLine($"It has been {since.Humanize()} since .NET 9 was released.");
+.NET SDK:
+ Version:           10.0.100-preview.4.25258.110
+ Commit:            c22dcd0c7a
+ Workload version:  10.0.100-manifests.e9b6aa6e
+ MSBuild version:   17.15.0-preview-25258-110+c22dcd0c7
+
+Runtime Environment:
+ OS Name:     Windows
+ OS Version:  10.0.26100
+ OS Platform: Windows
+ RID:         win-x64
+ Base Path:   C:\Program Files\dotnet\sdk\10.0.100-preview.4.25258.110\
+
+.NET workloads installed:
+ [aspire]
+   Installation Source: VS 17.14.36127.28
+   Manifest Version:    8.2.2/8.0.100
+   Manifest Path:       C:\Program Files\dotnet\sdk-manifests\8.0.100\microsoft.net.sdk.aspire\8.2.2\WorkloadManifest.json
+   Install Type:              Msi
+
+Configured to use workload sets when installing new manifests.
+Workloads are configured to install and update using workload versions, but none were found. Run "dotnet workload restore" to install a workload version.
+
+Host:
+  Version:      10.0.0-preview.4.25258.110
+  Architecture: x64
+  Commit:       c22dcd0c7a
+
+.NET SDKs installed:
+  9.0.100 [C:\Program Files\dotnet\sdk]
+  9.0.300 [C:\Program Files\dotnet\sdk]
+  10.0.100-preview.4.25258.110 [C:\Program Files\dotnet\sdk]
+
+.NET runtimes installed:
+  Microsoft.AspNetCore.App 8.0.16 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 9.0.0 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 9.0.5 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 10.0.0-preview.4.25258.110 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.NETCore.App 8.0.16 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.NETCore.App 9.0.0 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.NETCore.App 9.0.5 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.NETCore.App 10.0.0-preview.4.25258.110 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.WindowsDesktop.App 8.0.16 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+  Microsoft.WindowsDesktop.App 9.0.0 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+  Microsoft.WindowsDesktop.App 9.0.5 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+  Microsoft.WindowsDesktop.App 10.0.0-preview.4.25258.110 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+
+Other architectures found:
+  x86   [C:\Program Files (x86)\dotnet]
+    registered at [HKLM\SOFTWARE\dotnet\Setup\InstalledVersions\x86\InstallLocation]
+
+Environment variables:
+  Not set
+
+global.json file:
+  Not found
+
+Learn more:
+  https://aka.ms/dotnet/info
+
+Download .NET:
+  https://aka.ms/dotnet/download
+2025-05-30 06:32:50
+It has been 25 weeks since .NET 9 was released.
+2025-05-30 06:32:57
