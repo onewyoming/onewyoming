@@ -120,17 +120,22 @@ public class Program
     {
         string currentDirectory = "";
         if (args.Length == 0)
-        { 
+        {
             currentDirectory = Directory.GetCurrentDirectory();
-        } else
+        }
+        else
         {
             currentDirectory = args[0];
         }
 
-        // Get all .txt files in the current directory and all subdirectories
-        IEnumerable<string> txtFiles = Directory.EnumerateFiles(currentDirectory, "*.txt", SearchOption.AllDirectories);
+        // Define the specific file names to search for
+        string[] targetFileNames = { "percentdisktime.txt", "averagediskqueuelength.txt", "bytespersecond.txt" };
 
-        foreach (var file in txtFiles)
+        // Get all .txt files in the current directory and all subdirectories, then filter by name
+        IEnumerable<string> filteredFiles = Directory.EnumerateFiles(currentDirectory, "*.txt", SearchOption.AllDirectories)
+                                                    .Where(filePath => targetFileNames.Contains(Path.GetFileName(filePath), StringComparer.OrdinalIgnoreCase));
+
+        foreach (var file in filteredFiles)
         {
             System.Console.WriteLine($"\n--- Processing {file} ---");
             var stats = StatisticalCalculator.CalculateStatistics(file);

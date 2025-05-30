@@ -8,9 +8,9 @@ C:\code\wyoming\src\dotnet10preview4\MyStastics
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
-d----           5/30/2025  6:58 AM                MyStatistics.Console
+d----           5/30/2025  8:02 AM                MyStatistics.Console
 -a---           5/30/2025  6:48 AM           1173 MyStastics.sln
--a---           5/30/2025  7:51 AM             65 powershell.txt
+-a---           5/30/2025  8:03 AM             65 powershell.txt
 
 .NET SDK:
  Version:           10.0.100-preview.4.25258.110
@@ -74,33 +74,2138 @@ Learn more:
 
 Download .NET:
   https://aka.ms/dotnet/download
-2025-05-30 07:51:14
-  Determining projects to restore...
-  All projects are up-to-date for restore.
-C:\Program Files\dotnet\sdk\10.0.100-preview.4.25258.110\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(326,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\MyStatistics.Console.csproj]
-  MyStatistics.Console -> C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\bin\Debug\net10.0\MyStatistics.Console.dll
+2025-05-30 08:03:10
+MSBUILD : error MSB1003: Specify a project or solution file. The current working directory does not contain a project or solution file.
 
-Build succeeded.
-    0 Warning(s)
-    0 Error(s)
-
-Time Elapsed 00:00:06.01
-
---- Processing percentdisktime.txt ---
-File: percentdisktime.txt
-Total Data Points: 204
-Mean: 302.706
-Median: 179.511
-Standard Deviation: 381.838
-Maximum: 1,842.059
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-09-06-47\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 190
+Mean: 31,514,303.448
+Median: 20,293,547.269
+Standard Deviation: 30,698,181.926
+Maximum: 116,238,050.796
 Minimum: 0.000
-P75: 438.993
-P90: 758.061
-P99: 1,669.201
-Time to read file: 21.31 ms
-Time to calculate statistics: 30.97 ms
+P75: 47,653,846.819
+P90: 84,120,114.157
+P99: 108,932,358.627
+Time to read file: 19.97 ms
+Time to calculate statistics: 25.74 ms
 
---- Processing averagediskqueuelength.txt ---
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-09-06-47\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 190
+Mean: 364.576
+Median: 143.071
+Standard Deviation: 552.656
+Maximum: 3,343.534
+Minimum: 0.000
+P75: 433.813
+P90: 884.341
+P99: 2,939.629
+Time to read file: 0.70 ms
+Time to calculate statistics: 0.32 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-11-44-44\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 294
+Mean: 4.235
+Median: 1.644
+Standard Deviation: 5.428
+Maximum: 23.229
+Minimum: 0.000
+P75: 6.064
+P90: 13.287
+P99: 20.207
+Time to read file: 0.61 ms
+Time to calculate statistics: 0.42 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-11-44-44\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 295
+Mean: 32,981,256.396
+Median: 19,761,421.957
+Standard Deviation: 31,808,574.196
+Maximum: 117,099,192.578
+Minimum: 0.000
+P75: 55,871,111.658
+P90: 84,482,107.044
+P99: 110,644,108.379
+Time to read file: 0.63 ms
+Time to calculate statistics: 0.43 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-11-44-44\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 294
+Mean: 412.046
+Median: 182.787
+Standard Deviation: 545.560
+Maximum: 2,950.497
+Minimum: 0.000
+P75: 614.951
+P90: 1,242.854
+P99: 2,290.630
+Time to read file: 0.59 ms
+Time to calculate statistics: 0.41 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-14-46-22\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 216
+Mean: 3.719
+Median: 1.328
+Standard Deviation: 6.694
+Maximum: 42.589
+Minimum: 0.000
+P75: 4.020
+P90: 7.790
+P99: 36.237
+Time to read file: 0.51 ms
+Time to calculate statistics: 0.30 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-14-46-22\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 216
+Mean: 28,347,635.120
+Median: 13,075,303.299
+Standard Deviation: 32,954,984.632
+Maximum: 127,021,838.386
+Minimum: 0.000
+P75: 44,265,045.905
+P90: 83,985,321.235
+P99: 117,572,656.654
+Time to read file: 0.54 ms
+Time to calculate statistics: 0.30 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-14-46-22\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 216
+Mean: 385.623
+Median: 120.314
+Standard Deviation: 746.195
+Maximum: 4,852.317
+Minimum: 0.000
+P75: 380.887
+P90: 792.117
+P99: 4,129.623
+Time to read file: 0.49 ms
+Time to calculate statistics: 0.30 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-01-01\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 159
+Mean: 2.505
+Median: 2.601
+Standard Deviation: 2.228
+Maximum: 10.799
+Minimum: 0.000
+P75: 4.119
+P90: 5.121
+P99: 9.370
+Time to read file: 0.44 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-01-01\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 160
+Mean: 40,020,405.745
+Median: 26,757,717.658
+Standard Deviation: 34,013,255.040
+Maximum: 141,508,783.614
+Minimum: 0.000
+P75: 66,647,636.089
+P90: 87,209,351.152
+P99: 129,109,850.531
+Time to read file: 0.48 ms
+Time to calculate statistics: 0.28 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-01-01\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 159
+Mean: 207.794
+Median: 183.475
+Standard Deviation: 187.859
+Maximum: 758.488
+Minimum: 0.000
+P75: 385.829
+P90: 464.317
+P99: 588.231
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.17 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-11-51\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 177
+Mean: 2.700
+Median: 2.194
+Standard Deviation: 2.811
+Maximum: 18.176
+Minimum: 0.000
+P75: 4.116
+P90: 5.660
+P99: 11.824
+Time to read file: 0.35 ms
+Time to calculate statistics: 0.19 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-11-51\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 177
+Mean: 35,108,937.632
+Median: 23,953,591.121
+Standard Deviation: 34,390,887.625
+Maximum: 132,839,504.464
+Minimum: 0.000
+P75: 56,472,493.788
+P90: 90,587,462.150
+P99: 126,678,369.919
+Time to read file: 0.36 ms
+Time to calculate statistics: 0.19 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-11-51\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 176
+Mean: 234.892
+Median: 181.280
+Standard Deviation: 227.141
+Maximum: 1,394.778
+Minimum: 0.000
+P75: 402.357
+P90: 482.446
+P99: 867.867
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.19 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-23-48\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 169
+Mean: 2.475
+Median: 2.035
+Standard Deviation: 2.340
+Maximum: 17.831
+Minimum: 0.000
+P75: 3.785
+P90: 4.693
+P99: 9.029
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.20 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-23-48\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 169
+Mean: 39,380,425.158
+Median: 26,468,781.284
+Standard Deviation: 34,211,840.664
+Maximum: 120,353,153.257
+Minimum: 0.000
+P75: 65,684,167.421
+P90: 94,939,688.126
+P99: 115,638,776.537
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.18 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-23-48\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 169
+Mean: 205.714
+Median: 118.598
+Standard Deviation: 217.728
+Maximum: 1,422.251
+Minimum: 0.000
+P75: 376.837
+P90: 463.130
+P99: 765.335
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.19 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-35-16\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 168
+Mean: 2.332
+Median: 1.661
+Standard Deviation: 2.341
+Maximum: 11.028
+Minimum: 0.000
+P75: 4.023
+P90: 4.918
+P99: 10.115
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.18 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-35-16\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 168
+Mean: 38,929,350.948
+Median: 25,596,520.590
+Standard Deviation: 33,929,349.133
+Maximum: 135,567,367.972
+Minimum: 0.000
+P75: 65,746,029.949
+P90: 89,615,306.505
+P99: 113,209,777.335
+Time to read file: 0.40 ms
+Time to calculate statistics: 0.19 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-35-16\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 168
+Mean: 251.024
+Median: 177.935
+Standard Deviation: 257.514
+Maximum: 1,486.630
+Minimum: 0.000
+P75: 399.964
+P90: 505.098
+P99: 1,157.897
+Time to read file: 0.36 ms
+Time to calculate statistics: 0.19 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-46-39\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 168
+Mean: 2.399
+Median: 2.083
+Standard Deviation: 2.378
+Maximum: 13.805
+Minimum: 0.000
+P75: 3.956
+P90: 5.208
+P99: 10.102
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.19 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-46-39\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 168
+Mean: 34,660,024.045
+Median: 22,694,571.384
+Standard Deviation: 30,010,873.200
+Maximum: 104,985,356.151
+Minimum: 0.000
+P75: 58,758,397.802
+P90: 79,607,989.501
+P99: 99,600,840.778
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.19 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-46-39\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 168
+Mean: 242.717
+Median: 209.174
+Standard Deviation: 240.033
+Maximum: 1,657.781
+Minimum: 0.000
+P75: 401.316
+P90: 493.329
+P99: 916.355
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.21 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-58-02\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 172
+Mean: 2.619
+Median: 1.665
+Standard Deviation: 2.932
+Maximum: 13.915
+Minimum: 0.000
+P75: 4.138
+P90: 5.672
+P99: 13.023
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.19 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-58-02\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 172
+Mean: 35,934,812.830
+Median: 25,576,322.748
+Standard Deviation: 32,939,162.986
+Maximum: 131,346,259.815
+Minimum: 0.000
+P75: 59,996,217.607
+P90: 88,368,105.842
+P99: 112,612,112.377
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.19 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-58-02\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 172
+Mean: 257.777
+Median: 225.558
+Standard Deviation: 261.026
+Maximum: 1,495.656
+Minimum: 0.000
+P75: 394.498
+P90: 537.776
+P99: 1,218.949
+Time to read file: 0.31 ms
+Time to calculate statistics: 0.19 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-09-42\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 176
+Mean: 2.476
+Median: 1.862
+Standard Deviation: 2.677
+Maximum: 16.136
+Minimum: 0.000
+P75: 4.079
+P90: 5.508
+P99: 11.733
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.20 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-09-42\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 176
+Mean: 33,634,345.371
+Median: 22,429,507.668
+Standard Deviation: 33,651,272.895
+Maximum: 137,766,571.261
+Minimum: 0.000
+P75: 52,218,130.469
+P90: 89,627,411.458
+P99: 127,122,380.281
+Time to read file: 0.36 ms
+Time to calculate statistics: 0.19 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-09-42\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 176
+Mean: 254.344
+Median: 169.850
+Standard Deviation: 274.820
+Maximum: 1,579.646
+Minimum: 0.000
+P75: 398.157
+P90: 622.865
+P99: 1,136.808
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.20 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-21-37\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 169
+Mean: 2.405
+Median: 1.760
+Standard Deviation: 2.354
+Maximum: 11.119
+Minimum: 0.000
+P75: 4.122
+P90: 5.191
+P99: 10.850
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.20 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-21-37\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 169
+Mean: 34,721,725.275
+Median: 22,821,739.142
+Standard Deviation: 31,433,324.854
+Maximum: 125,541,124.591
+Minimum: 0.000
+P75: 56,133,794.345
+P90: 82,088,774.561
+P99: 118,526,271.139
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-21-37\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 169
+Mean: 249.648
+Median: 186.367
+Standard Deviation: 252.145
+Maximum: 1,244.603
+Minimum: 0.000
+P75: 406.476
+P90: 555.960
+P99: 970.127
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.19 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-33-06\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 183
+Mean: 2.419
+Median: 1.970
+Standard Deviation: 2.402
+Maximum: 12.242
+Minimum: 0.000
+P75: 3.881
+P90: 5.386
+P99: 10.014
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.20 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-33-06\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 183
+Mean: 31,967,264.824
+Median: 19,652,003.838
+Standard Deviation: 30,839,268.330
+Maximum: 119,955,350.859
+Minimum: 0.000
+P75: 47,458,636.560
+P90: 80,742,878.173
+P99: 110,737,135.876
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.20 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-33-06\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 183
+Mean: 260.153
+Median: 202.132
+Standard Deviation: 282.645
+Maximum: 1,554.689
+Minimum: 0.000
+P75: 390.964
+P90: 531.583
+P99: 1,357.519
+Time to read file: 0.38 ms
+Time to calculate statistics: 0.21 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-45-31\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 179
+Mean: 2.505
+Median: 1.961
+Standard Deviation: 2.499
+Maximum: 13.462
+Minimum: 0.000
+P75: 3.932
+P90: 5.719
+P99: 10.750
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.20 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-45-31\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 179
+Mean: 35,447,963.159
+Median: 22,159,800.066
+Standard Deviation: 33,398,982.771
+Maximum: 139,019,805.798
+Minimum: 0.000
+P75: 56,247,387.801
+P90: 89,961,551.190
+P99: 123,704,959.925
+Time to read file: 0.36 ms
+Time to calculate statistics: 0.20 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-45-31\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 178
+Mean: 264.633
+Median: 209.889
+Standard Deviation: 322.803
+Maximum: 2,833.250
+Minimum: 0.000
+P75: 382.448
+P90: 508.136
+P99: 1,225.847
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.21 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-57-38\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 175
+Mean: 2.458
+Median: 1.717
+Standard Deviation: 2.341
+Maximum: 9.797
+Minimum: 0.000
+P75: 4.117
+P90: 5.631
+P99: 8.848
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.20 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-57-38\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 175
+Mean: 35,105,432.447
+Median: 22,160,474.200
+Standard Deviation: 32,744,271.209
+Maximum: 130,596,899.102
+Minimum: 0.000
+P75: 54,636,569.935
+P90: 89,166,487.064
+P99: 122,826,223.005
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.20 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-57-38\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 175
+Mean: 261.339
+Median: 208.719
+Standard Deviation: 287.915
+Maximum: 1,861.939
+Minimum: 0.000
+P75: 388.793
+P90: 524.570
+P99: 1,303.828
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.24 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-09-30\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 178
+Mean: 2.472
+Median: 1.772
+Standard Deviation: 2.996
+Maximum: 26.733
+Minimum: 0.000
+P75: 3.806
+P90: 5.355
+P99: 10.949
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.20 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-09-30\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 179
+Mean: 36,570,802.562
+Median: 23,253,974.217
+Standard Deviation: 33,477,708.815
+Maximum: 134,227,569.607
+Minimum: 0.000
+P75: 59,527,285.036
+P90: 90,789,997.028
+P99: 119,641,751.948
+Time to read file: 0.43 ms
+Time to calculate statistics: 0.20 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-09-30\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 178
+Mean: 250.829
+Median: 199.225
+Standard Deviation: 263.881
+Maximum: 1,452.435
+Minimum: 0.000
+P75: 397.440
+P90: 507.192
+P99: 1,339.505
+Time to read file: 0.36 ms
+Time to calculate statistics: 0.20 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-21-33\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 177
+Mean: 2.616
+Median: 1.984
+Standard Deviation: 2.817
+Maximum: 15.293
+Minimum: 0.000
+P75: 4.045
+P90: 5.663
+P99: 12.428
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.25 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-21-33\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 177
+Mean: 36,759,034.478
+Median: 22,651,879.699
+Standard Deviation: 34,833,788.786
+Maximum: 138,858,603.173
+Minimum: 0.000
+P75: 56,041,176.352
+P90: 95,684,488.951
+P99: 119,069,364.938
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.26 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-21-33\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 177
+Mean: 207.557
+Median: 124.680
+Standard Deviation: 226.987
+Maximum: 1,408.651
+Minimum: 0.000
+P75: 389.638
+P90: 477.363
+P99: 944.631
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-33-33\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 184
+Mean: 2.756
+Median: 2.384
+Standard Deviation: 2.788
+Maximum: 14.486
+Minimum: 0.000
+P75: 3.914
+P90: 5.854
+P99: 12.261
+Time to read file: 0.36 ms
+Time to calculate statistics: 0.23 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-33-33\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 185
+Mean: 33,891,949.296
+Median: 23,421,252.468
+Standard Deviation: 32,247,465.043
+Maximum: 150,744,616.017
+Minimum: 0.000
+P75: 53,021,055.458
+P90: 83,878,653.187
+P99: 117,770,971.727
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.23 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-33-33\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 184
+Mean: 256.591
+Median: 186.367
+Standard Deviation: 276.604
+Maximum: 1,967.572
+Minimum: 0.000
+P75: 410.347
+P90: 555.850
+P99: 1,239.637
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.23 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-46-03\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 175
+Mean: 2.348
+Median: 1.313
+Standard Deviation: 2.641
+Maximum: 12.798
+Minimum: 0.000
+P75: 3.959
+P90: 5.131
+P99: 11.725
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.21 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-46-03\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 176
+Mean: 37,122,182.506
+Median: 26,514,247.360
+Standard Deviation: 34,258,724.578
+Maximum: 129,643,055.513
+Minimum: 0.000
+P75: 60,969,052.317
+P90: 92,384,674.907
+P99: 117,792,058.264
+Time to read file: 0.36 ms
+Time to calculate statistics: 0.25 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-46-03\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 175
+Mean: 268.628
+Median: 167.052
+Standard Deviation: 344.057
+Maximum: 2,106.238
+Minimum: 0.000
+P75: 401.400
+P90: 587.571
+P99: 1,881.777
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-57-55\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 181
+Mean: 2.624
+Median: 1.733
+Standard Deviation: 2.671
+Maximum: 14.178
+Minimum: 0.000
+P75: 4.024
+P90: 5.523
+P99: 11.769
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-57-55\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 181
+Mean: 36,350,775.136
+Median: 23,997,273.630
+Standard Deviation: 33,947,075.006
+Maximum: 121,818,177.856
+Minimum: 0.000
+P75: 56,190,134.806
+P90: 92,029,552.823
+P99: 116,323,276.184
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.24 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-57-55\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 181
+Mean: 256.793
+Median: 176.621
+Standard Deviation: 304.521
+Maximum: 1,890.116
+Minimum: 0.000
+P75: 388.350
+P90: 555.491
+P99: 1,365.392
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.23 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-10-12\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 180
+Mean: 2.578
+Median: 1.900
+Standard Deviation: 2.796
+Maximum: 16.578
+Minimum: 0.000
+P75: 3.957
+P90: 5.730
+P99: 12.102
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-10-12\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 180
+Mean: 32,842,715.721
+Median: 23,423,114.371
+Standard Deviation: 31,965,644.922
+Maximum: 115,210,461.466
+Minimum: 0.000
+P75: 55,190,727.713
+P90: 80,320,460.588
+P99: 112,961,581.792
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-10-12\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 180
+Mean: 253.466
+Median: 183.181
+Standard Deviation: 283.337
+Maximum: 1,628.435
+Minimum: 0.000
+P75: 396.965
+P90: 528.072
+P99: 1,381.596
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.25 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-22-24\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 185
+Mean: 2.585
+Median: 1.904
+Standard Deviation: 2.955
+Maximum: 23.519
+Minimum: 0.000
+P75: 4.133
+P90: 5.502
+P99: 12.425
+Time to read file: 0.37 ms
+Time to calculate statistics: 0.23 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-22-24\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 185
+Mean: 32,218,594.087
+Median: 20,862,944.648
+Standard Deviation: 29,846,282.690
+Maximum: 132,629,092.610
+Minimum: 0.000
+P75: 49,001,716.209
+P90: 82,201,148.706
+P99: 111,965,117.392
+Time to read file: 0.37 ms
+Time to calculate statistics: 0.23 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-22-24\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 184
+Mean: 249.527
+Median: 211.444
+Standard Deviation: 274.035
+Maximum: 1,529.551
+Minimum: 0.000
+P75: 419.769
+P90: 498.640
+P99: 1,392.476
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.23 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-34-53\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 230
+Mean: 2.206
+Median: 0.858
+Standard Deviation: 3.030
+Maximum: 16.855
+Minimum: 0.000
+P75: 3.811
+P90: 5.760
+P99: 14.622
+Time to read file: 0.35 ms
+Time to calculate statistics: 0.29 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-34-53\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 231
+Mean: 28,810,610.124
+Median: 15,401,382.003
+Standard Deviation: 32,959,522.512
+Maximum: 147,828,031.378
+Minimum: 0.000
+P75: 45,369,279.402
+P90: 79,499,706.119
+P99: 121,685,333.089
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.28 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-34-53\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 230
+Mean: 219.350
+Median: 99.821
+Standard Deviation: 278.856
+Maximum: 2,282.043
+Minimum: 0.000
+P75: 375.428
+P90: 529.407
+P99: 975.208
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.28 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-50-28\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 209
+Mean: 2.910
+Median: 2.379
+Standard Deviation: 2.595
+Maximum: 17.927
+Minimum: 0.000
+P75: 4.653
+P90: 5.500
+P99: 14.229
+Time to read file: 0.35 ms
+Time to calculate statistics: 0.26 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-50-28\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 209
+Mean: 34,415,132.478
+Median: 22,439,903.203
+Standard Deviation: 30,248,949.739
+Maximum: 114,390,459.160
+Minimum: 0.000
+P75: 59,552,781.266
+P90: 80,649,876.951
+P99: 109,811,937.027
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.26 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-50-28\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 209
+Mean: 309.797
+Median: 254.211
+Standard Deviation: 251.564
+Maximum: 1,469.364
+Minimum: 0.000
+P75: 446.062
+P90: 609.515
+P99: 1,235.177
+Time to read file: 0.35 ms
+Time to calculate statistics: 0.26 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-04-37\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 179
+Mean: 2.645
+Median: 1.891
+Standard Deviation: 3.070
+Maximum: 20.921
+Minimum: 0.000
+P75: 4.010
+P90: 5.490
+P99: 12.556
+Time to read file: 0.31 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-04-37\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 179
+Mean: 35,465,906.112
+Median: 26,384,005.292
+Standard Deviation: 32,080,420.747
+Maximum: 127,269,139.594
+Minimum: 0.000
+P75: 60,505,211.532
+P90: 80,542,759.233
+P99: 110,764,732.951
+Time to read file: 0.35 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-04-37\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 179
+Mean: 216.097
+Median: 138.008
+Standard Deviation: 216.975
+Maximum: 1,297.689
+Minimum: 0.000
+P75: 393.362
+P90: 486.244
+P99: 814.398
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.24 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-16-45\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 210
+Mean: 2.780
+Median: 1.580
+Standard Deviation: 3.374
+Maximum: 21.049
+Minimum: 0.000
+P75: 4.117
+P90: 6.391
+P99: 15.417
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.26 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-16-45\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 210
+Mean: 30,336,172.386
+Median: 16,671,980.400
+Standard Deviation: 33,695,902.140
+Maximum: 154,983,510.268
+Minimum: 0.000
+P75: 49,909,336.333
+P90: 80,225,238.674
+P99: 135,169,279.323
+Time to read file: 0.40 ms
+Time to calculate statistics: 0.28 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-16-45\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 209
+Mean: 252.422
+Median: 112.848
+Standard Deviation: 352.655
+Maximum: 2,693.241
+Minimum: 0.000
+P75: 383.534
+P90: 546.677
+P99: 1,681.072
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.26 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-30-57\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 191
+Mean: 2.333
+Median: 1.392
+Standard Deviation: 2.873
+Maximum: 16.193
+Minimum: 0.000
+P75: 3.950
+P90: 5.456
+P99: 12.527
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.24 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-30-57\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 192
+Mean: 35,848,190.411
+Median: 23,616,484.718
+Standard Deviation: 32,050,192.384
+Maximum: 115,581,975.668
+Minimum: 0.000
+P75: 61,322,696.187
+P90: 85,478,158.367
+P99: 110,138,572.092
+Time to read file: 0.35 ms
+Time to calculate statistics: 0.25 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-30-57\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 191
+Mean: 254.355
+Median: 169.070
+Standard Deviation: 352.710
+Maximum: 3,644.807
+Minimum: 0.000
+P75: 407.022
+P90: 523.602
+P99: 1,261.051
+Time to read file: 0.31 ms
+Time to calculate statistics: 0.23 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-43-55\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 169
+Mean: 2.315
+Median: 1.322
+Standard Deviation: 2.697
+Maximum: 15.231
+Minimum: 0.000
+P75: 3.787
+P90: 5.041
+P99: 12.677
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.21 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-43-55\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 169
+Mean: 38,510,009.932
+Median: 28,489,120.710
+Standard Deviation: 33,703,468.736
+Maximum: 147,150,561.166
+Minimum: 0.000
+P75: 61,106,840.992
+P90: 90,502,389.266
+P99: 121,733,537.507
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.21 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-43-55\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 168
+Mean: 193.426
+Median: 122.108
+Standard Deviation: 235.805
+Maximum: 1,588.938
+Minimum: 0.000
+P75: 294.488
+P90: 470.676
+P99: 933.877
+Time to read file: 0.35 ms
+Time to calculate statistics: 0.21 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-55-21\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 182
+Mean: 2.545
+Median: 1.440
+Standard Deviation: 2.946
+Maximum: 12.682
+Minimum: 0.000
+P75: 3.769
+P90: 6.930
+P99: 12.255
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-55-21\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 183
+Mean: 36,016,580.200
+Median: 25,428,482.888
+Standard Deviation: 31,969,584.490
+Maximum: 120,656,119.681
+Minimum: 0.000
+P75: 56,599,477.454
+P90: 87,333,429.407
+P99: 114,712,883.332
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-55-21\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 182
+Mean: 247.253
+Median: 182.393
+Standard Deviation: 257.544
+Maximum: 1,416.619
+Minimum: 0.000
+P75: 416.851
+P90: 522.285
+P99: 1,053.705
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-20-07-42\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 182
+Mean: 2.583
+Median: 2.015
+Standard Deviation: 2.598
+Maximum: 12.501
+Minimum: 0.000
+P75: 3.997
+P90: 5.402
+P99: 11.472
+Time to read file: 0.36 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-20-07-42\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 182
+Mean: 36,388,620.352
+Median: 23,112,547.587
+Standard Deviation: 33,435,080.594
+Maximum: 128,528,882.425
+Minimum: 0.000
+P75: 56,137,023.998
+P90: 90,020,796.289
+P99: 122,479,687.769
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-20-07-42\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 182
+Mean: 246.289
+Median: 145.738
+Standard Deviation: 271.781
+Maximum: 1,402.823
+Minimum: 0.000
+P75: 398.280
+P90: 538.664
+P99: 1,219.469
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.24 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-20-20-02\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 189
+Mean: 2.932
+Median: 2.207
+Standard Deviation: 3.251
+Maximum: 19.764
+Minimum: 0.000
+P75: 4.152
+P90: 6.779
+P99: 15.795
+Time to read file: 0.37 ms
+Time to calculate statistics: 0.23 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-20-20-02\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 189
+Mean: 33,943,940.367
+Median: 21,884,692.152
+Standard Deviation: 32,858,605.120
+Maximum: 128,317,682.823
+Minimum: 0.000
+P75: 57,775,129.467
+P90: 83,214,651.641
+P99: 107,790,108.971
+Time to read file: 0.31 ms
+Time to calculate statistics: 0.23 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-20-20-02\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 188
+Mean: 259.510
+Median: 217.490
+Standard Deviation: 256.138
+Maximum: 1,677.532
+Minimum: 0.000
+P75: 410.717
+P90: 529.920
+P99: 1,059.292
+Time to read file: 0.35 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-20-32-47\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 258
+Mean: 2.635
+Median: 0.994
+Standard Deviation: 3.947
+Maximum: 21.120
+Minimum: 0.000
+P75: 3.913
+P90: 5.760
+P99: 18.011
+Time to read file: 0.44 ms
+Time to calculate statistics: 0.30 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-20-32-47\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 258
+Mean: 32,228,265.560
+Median: 19,360,458.857
+Standard Deviation: 32,880,889.125
+Maximum: 137,970,609.962
+Minimum: 0.000
+P75: 49,616,512.808
+P90: 79,871,261.826
+P99: 121,770,683.031
+Time to read file: 0.38 ms
+Time to calculate statistics: 0.32 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-20-32-47\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 258
+Mean: 283.987
+Median: 127.662
+Standard Deviation: 390.945
+Maximum: 2,179.057
+Minimum: 0.000
+P75: 419.450
+P90: 731.862
+P99: 1,850.905
+Time to read file: 0.37 ms
+Time to calculate statistics: 0.30 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-20-50-21\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 217
+Mean: 2.330
+Median: 0.628
+Standard Deviation: 3.368
+Maximum: 18.002
+Minimum: 0.000
+P75: 3.841
+P90: 5.345
+P99: 17.170
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.27 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-20-50-21\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 217
+Mean: 34,014,492.310
+Median: 20,310,156.572
+Standard Deviation: 34,008,494.104
+Maximum: 133,147,008.796
+Minimum: 0.000
+P75: 57,754,294.237
+P90: 89,619,985.144
+P99: 112,314,058.009
+Time to read file: 0.35 ms
+Time to calculate statistics: 0.25 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-20-50-21\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 217
+Mean: 282.338
+Median: 105.808
+Standard Deviation: 423.464
+Maximum: 2,679.732
+Minimum: 0.000
+P75: 390.685
+P90: 678.216
+P99: 1,932.823
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.25 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-05-13\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 211
+Mean: 2.260
+Median: 1.168
+Standard Deviation: 3.239
+Maximum: 24.426
+Minimum: 0.000
+P75: 3.418
+P90: 5.800
+P99: 15.654
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.26 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-05-13\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 212
+Mean: 30,508,778.516
+Median: 18,517,250.032
+Standard Deviation: 31,230,197.276
+Maximum: 126,173,069.639
+Minimum: 0.000
+P75: 47,224,484.763
+P90: 81,814,885.117
+P99: 113,604,702.691
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.25 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-05-13\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 211
+Mean: 238.584
+Median: 84.795
+Standard Deviation: 339.197
+Maximum: 1,782.400
+Minimum: 0.000
+P75: 366.060
+P90: 592.070
+P99: 1,523.194
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.25 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-19-36\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 194
+Mean: 2.549
+Median: 1.348
+Standard Deviation: 3.118
+Maximum: 17.147
+Minimum: 0.000
+P75: 3.987
+P90: 6.251
+P99: 14.013
+Time to read file: 0.39 ms
+Time to calculate statistics: 0.23 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-19-36\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 194
+Mean: 33,952,521.204
+Median: 21,980,544.701
+Standard Deviation: 32,399,335.097
+Maximum: 116,809,237.366
+Minimum: 0.000
+P75: 55,833,849.588
+P90: 82,928,090.349
+P99: 116,598,166.245
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.27 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-19-36\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 193
+Mean: 248.877
+Median: 130.887
+Standard Deviation: 322.186
+Maximum: 2,405.598
+Minimum: 0.000
+P75: 390.488
+P90: 571.187
+P99: 1,544.131
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-32-46\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 178
+Mean: 2.444
+Median: 1.297
+Standard Deviation: 2.734
+Maximum: 17.805
+Minimum: 0.000
+P75: 4.138
+P90: 6.039
+P99: 10.141
+Time to read file: 0.35 ms
+Time to calculate statistics: 0.21 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-32-46\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 178
+Mean: 40,082,388.719
+Median: 26,233,600.746
+Standard Deviation: 35,847,633.786
+Maximum: 155,131,492.992
+Minimum: 0.000
+P75: 67,935,136.664
+P90: 96,211,010.592
+P99: 118,458,988.484
+Time to read file: 0.35 ms
+Time to calculate statistics: 0.23 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-32-46\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 178
+Mean: 240.330
+Median: 179.119
+Standard Deviation: 268.047
+Maximum: 1,894.370
+Minimum: 0.000
+P75: 383.362
+P90: 571.210
+P99: 1,034.670
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.21 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-44-49\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 187
+Mean: 2.474
+Median: 1.575
+Standard Deviation: 2.757
+Maximum: 16.789
+Minimum: 0.000
+P75: 3.922
+P90: 5.518
+P99: 12.813
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-44-49\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 187
+Mean: 34,165,198.407
+Median: 18,446,915.692
+Standard Deviation: 33,715,735.081
+Maximum: 126,879,698.721
+Minimum: 0.000
+P75: 59,495,365.533
+P90: 85,486,054.782
+P99: 119,583,435.857
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-44-49\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 186
+Mean: 244.720
+Median: 175.329
+Standard Deviation: 283.031
+Maximum: 1,753.043
+Minimum: 0.000
+P75: 384.992
+P90: 517.232
+P99: 1,400.725
+Time to read file: 0.36 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-57-29\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 182
+Mean: 2.432
+Median: 1.850
+Standard Deviation: 2.608
+Maximum: 14.812
+Minimum: 0.000
+P75: 3.840
+P90: 5.319
+P99: 11.856
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.21 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-57-29\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 182
+Mean: 35,399,127.317
+Median: 22,826,100.642
+Standard Deviation: 33,569,568.072
+Maximum: 148,598,922.562
+Minimum: 0.000
+P75: 56,814,029.869
+P90: 88,628,332.554
+P99: 115,564,687.038
+Time to read file: 0.31 ms
+Time to calculate statistics: 0.21 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-57-29\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 182
+Mean: 267.134
+Median: 156.912
+Standard Deviation: 314.230
+Maximum: 1,555.321
+Minimum: 0.000
+P75: 399.899
+P90: 611.290
+P99: 1,428.153
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.23 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-09-47\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 185
+Mean: 2.499
+Median: 1.509
+Standard Deviation: 2.941
+Maximum: 21.447
+Minimum: 0.000
+P75: 4.020
+P90: 5.810
+P99: 12.514
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-09-47\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 185
+Mean: 37,627,313.639
+Median: 20,720,093.288
+Standard Deviation: 34,737,019.454
+Maximum: 122,080,829.358
+Minimum: 0.000
+P75: 62,685,618.811
+P90: 94,498,403.457
+P99: 113,286,389.122
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-09-47\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 185
+Mean: 289.903
+Median: 152.472
+Standard Deviation: 353.049
+Maximum: 2,027.150
+Minimum: 0.000
+P75: 426.574
+P90: 646.773
+P99: 1,716.356
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.23 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-22-21\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 184
+Mean: 2.423
+Median: 1.684
+Standard Deviation: 2.666
+Maximum: 13.696
+Minimum: 0.000
+P75: 4.001
+P90: 5.029
+P99: 12.815
+Time to read file: 0.31 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-22-21\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 184
+Mean: 37,382,052.638
+Median: 26,085,093.456
+Standard Deviation: 32,973,383.307
+Maximum: 139,207,637.148
+Minimum: 0.000
+P75: 62,261,705.004
+P90: 82,595,776.631
+P99: 124,019,692.102
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.21 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-22-21\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 183
+Mean: 241.549
+Median: 161.373
+Standard Deviation: 279.269
+Maximum: 1,779.972
+Minimum: 0.000
+P75: 390.308
+P90: 556.061
+P99: 1,126.913
+Time to read file: 0.37 ms
+Time to calculate statistics: 0.21 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-34-45\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 198
+Mean: 2.381
+Median: 1.804
+Standard Deviation: 2.522
+Maximum: 17.732
+Minimum: 0.000
+P75: 4.030
+P90: 5.161
+P99: 10.015
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.23 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-34-45\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 198
+Mean: 37,936,286.369
+Median: 26,948,356.996
+Standard Deviation: 33,780,211.579
+Maximum: 127,876,605.615
+Minimum: 0.000
+P75: 65,512,171.052
+P90: 87,613,717.561
+P99: 117,560,905.778
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.23 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-34-45\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 198
+Mean: 215.301
+Median: 170.578
+Standard Deviation: 213.160
+Maximum: 1,420.188
+Minimum: 0.000
+P75: 359.840
+P90: 464.577
+P99: 787.822
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.23 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-48-10\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 191
+Mean: 2.571
+Median: 1.828
+Standard Deviation: 2.953
+Maximum: 19.284
+Minimum: 0.000
+P75: 4.009
+P90: 5.874
+P99: 11.748
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-48-10\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 191
+Mean: 38,098,598.365
+Median: 28,274,955.890
+Standard Deviation: 32,075,086.456
+Maximum: 115,213,470.946
+Minimum: 0.000
+P75: 64,463,073.364
+P90: 85,747,365.073
+P99: 108,604,518.519
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.24 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-48-10\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 190
+Mean: 272.513
+Median: 158.411
+Standard Deviation: 364.751
+Maximum: 2,296.375
+Minimum: 0.000
+P75: 416.276
+P90: 601.594
+P99: 1,672.831
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-01-04\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 190
+Mean: 2.807
+Median: 1.636
+Standard Deviation: 4.999
+Maximum: 59.491
+Minimum: 0.000
+P75: 4.075
+P90: 5.668
+P99: 13.653
+Time to read file: 0.36 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-01-04\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 190
+Mean: 37,608,704.239
+Median: 23,135,105.764
+Standard Deviation: 34,748,258.722
+Maximum: 125,555,830.103
+Minimum: 0.000
+P75: 62,761,403.818
+P90: 96,411,300.858
+P99: 122,675,246.751
+Time to read file: 0.35 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-01-04\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 190
+Mean: 285.612
+Median: 170.506
+Standard Deviation: 359.244
+Maximum: 1,749.908
+Minimum: 0.000
+P75: 416.283
+P90: 658.194
+P99: 1,637.868
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.25 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-13-56\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 187
+Mean: 2.818
+Median: 2.014
+Standard Deviation: 3.225
+Maximum: 18.305
+Minimum: 0.000
+P75: 4.030
+P90: 5.815
+P99: 15.253
+Time to read file: 0.41 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-13-56\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 187
+Mean: 38,433,399.860
+Median: 28,630,849.982
+Standard Deviation: 35,954,775.978
+Maximum: 133,930,672.419
+Minimum: 0.000
+P75: 65,761,356.786
+P90: 92,763,582.073
+P99: 127,482,855.435
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-13-56\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 186
+Mean: 282.689
+Median: 142.772
+Standard Deviation: 385.980
+Maximum: 2,577.990
+Minimum: 0.000
+P75: 404.274
+P90: 668.395
+P99: 1,888.167
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.22 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-26-34\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 185
+Mean: 2.751
+Median: 1.656
+Standard Deviation: 3.719
+Maximum: 27.565
+Minimum: 0.000
+P75: 4.017
+P90: 6.244
+P99: 19.586
+Time to read file: 0.36 ms
+Time to calculate statistics: 0.26 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-26-34\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 185
+Mean: 38,452,648.950
+Median: 22,412,862.587
+Standard Deviation: 33,519,921.239
+Maximum: 131,701,083.854
+Minimum: 0.000
+P75: 65,048,993.335
+P90: 87,925,463.897
+P99: 117,807,012.201
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.21 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-26-34\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 185
+Mean: 251.561
+Median: 126.222
+Standard Deviation: 348.314
+Maximum: 2,510.882
+Minimum: 0.000
+P75: 368.834
+P90: 604.083
+P99: 1,699.946
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.28 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-39-05\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 188
+Mean: 2.748
+Median: 2.037
+Standard Deviation: 3.269
+Maximum: 18.668
+Minimum: 0.000
+P75: 4.134
+P90: 5.712
+P99: 17.665
+Time to read file: 0.55 ms
+Time to calculate statistics: 0.28 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-39-05\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 189
+Mean: 37,013,454.921
+Median: 24,842,848.328
+Standard Deviation: 34,622,164.946
+Maximum: 138,947,114.360
+Minimum: 0.000
+P75: 59,915,322.731
+P90: 87,391,064.614
+P99: 118,862,008.436
+Time to read file: 0.52 ms
+Time to calculate statistics: 0.28 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-39-05\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 188
+Mean: 290.990
+Median: 195.016
+Standard Deviation: 341.315
+Maximum: 1,813.082
+Minimum: 0.000
+P75: 437.561
+P90: 622.513
+P99: 1,594.540
+Time to read file: 0.52 ms
+Time to calculate statistics: 0.28 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-51-50\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 192
+Mean: 2.812
+Median: 1.667
+Standard Deviation: 3.544
+Maximum: 21.475
+Minimum: 0.000
+P75: 4.156
+P90: 5.987
+P99: 15.498
+Time to read file: 0.48 ms
+Time to calculate statistics: 0.36 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-51-50\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 192
+Mean: 38,601,873.711
+Median: 28,000,366.328
+Standard Deviation: 33,597,725.346
+Maximum: 135,696,684.490
+Minimum: 0.000
+P75: 65,235,288.643
+P90: 90,486,056.213
+P99: 112,174,080.231
+Time to read file: 0.47 ms
+Time to calculate statistics: 0.29 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-51-50\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 192
+Mean: 321.406
+Median: 169.890
+Standard Deviation: 473.155
+Maximum: 2,796.182
+Minimum: 0.000
+P75: 396.369
+P90: 787.756
+P99: 2,174.068
+Time to read file: 0.47 ms
+Time to calculate statistics: 0.30 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-04-51\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 189
+Mean: 2.705
+Median: 2.057
+Standard Deviation: 3.035
+Maximum: 19.312
+Minimum: 0.000
+P75: 4.126
+P90: 6.235
+P99: 13.198
+Time to read file: 0.46 ms
+Time to calculate statistics: 0.28 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-04-51\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 189
+Mean: 36,657,084.981
+Median: 24,600,768.501
+Standard Deviation: 32,255,077.151
+Maximum: 131,071,649.632
+Minimum: 0.000
+P75: 60,555,618.820
+P90: 87,270,358.597
+P99: 109,544,138.994
+Time to read file: 0.54 ms
+Time to calculate statistics: 0.28 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-04-51\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 189
+Mean: 276.037
+Median: 196.477
+Standard Deviation: 311.710
+Maximum: 1,764.372
+Minimum: 0.000
+P75: 409.054
+P90: 616.119
+P99: 1,478.505
+Time to read file: 0.50 ms
+Time to calculate statistics: 0.28 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-17-39\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 184
+Mean: 2.467
+Median: 1.540
+Standard Deviation: 2.702
+Maximum: 16.050
+Minimum: 0.000
+P75: 4.122
+P90: 5.359
+P99: 10.640
+Time to read file: 0.47 ms
+Time to calculate statistics: 0.28 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-17-39\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 184
+Mean: 36,023,916.334
+Median: 22,349,420.692
+Standard Deviation: 32,706,017.225
+Maximum: 136,045,900.972
+Minimum: 0.000
+P75: 58,984,994.788
+P90: 85,324,997.936
+P99: 111,087,379.005
+Time to read file: 0.49 ms
+Time to calculate statistics: 0.28 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-17-39\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 184
+Mean: 260.045
+Median: 189.202
+Standard Deviation: 299.397
+Maximum: 1,544.172
+Minimum: 0.000
+P75: 387.794
+P90: 589.638
+P99: 1,348.084
+Time to read file: 0.46 ms
+Time to calculate statistics: 0.34 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-30-07\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 178
+Mean: 2.224
+Median: 1.478
+Standard Deviation: 2.532
+Maximum: 18.955
+Minimum: 0.000
+P75: 3.676
+P90: 4.754
+P99: 9.987
+Time to read file: 0.52 ms
+Time to calculate statistics: 0.27 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-30-07\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 178
+Mean: 40,486,948.225
+Median: 26,635,707.384
+Standard Deviation: 36,309,424.967
+Maximum: 133,706,355.649
+Minimum: 0.000
+P75: 68,725,534.928
+P90: 97,131,540.837
+P99: 127,826,971.533
+Time to read file: 0.49 ms
+Time to calculate statistics: 0.27 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-30-07\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 177
+Mean: 253.761
+Median: 150.733
+Standard Deviation: 293.866
+Maximum: 1,823.086
+Minimum: 0.000
+P75: 392.397
+P90: 506.334
+P99: 1,366.898
+Time to read file: 0.47 ms
+Time to calculate statistics: 0.29 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-42-10\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 192
+Mean: 3.320
+Median: 2.190
+Standard Deviation: 5.731
+Maximum: 64.208
+Minimum: 0.000
+P75: 4.254
+P90: 6.368
+P99: 18.267
+Time to read file: 0.61 ms
+Time to calculate statistics: 0.28 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-42-10\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 193
+Mean: 38,826,687.812
+Median: 26,760,089.396
+Standard Deviation: 34,851,764.828
+Maximum: 149,282,931.738
+Minimum: 0.000
+P75: 60,865,471.693
+P90: 92,193,250.250
+P99: 125,327,763.950
+Time to read file: 0.59 ms
+Time to calculate statistics: 0.28 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-42-10\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 192
+Mean: 293.774
+Median: 163.563
+Standard Deviation: 375.644
+Maximum: 2,019.468
+Minimum: 0.000
+P75: 416.940
+P90: 738.570
+P99: 1,676.478
+Time to read file: 0.49 ms
+Time to calculate statistics: 0.28 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-55-10\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 188
+Mean: 2.904
+Median: 1.964
+Standard Deviation: 3.717
+Maximum: 23.529
+Minimum: 0.000
+P75: 4.016
+P90: 5.733
+P99: 18.355
+Time to read file: 0.48 ms
+Time to calculate statistics: 0.28 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-55-10\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 188
+Mean: 35,959,169.943
+Median: 21,272,827.961
+Standard Deviation: 32,529,143.566
+Maximum: 121,378,810.292
+Minimum: 0.000
+P75: 60,143,676.676
+P90: 83,241,179.353
+P99: 111,974,567.069
+Time to read file: 0.48 ms
+Time to calculate statistics: 0.28 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-55-10\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 187
+Mean: 232.985
+Median: 140.152
+Standard Deviation: 261.913
+Maximum: 1,444.340
+Minimum: 0.000
+P75: 387.815
+P90: 489.516
+P99: 1,249.573
+Time to read file: 0.48 ms
+Time to calculate statistics: 0.28 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-01-07-51\averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
 Total Data Points: 205
 Mean: 3.311
@@ -111,10 +2216,10 @@ Minimum: 0.000
 P75: 4.411
 P90: 9.059
 P99: 16.689
-Time to read file: 0.70 ms
-Time to calculate statistics: 0.35 ms
+Time to read file: 0.50 ms
+Time to calculate statistics: 0.33 ms
 
---- Processing bytespersecond.txt ---
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-01-07-51\bytespersecond.txt ---
 File: bytespersecond.txt
 Total Data Points: 205
 Mean: 41,409,507.960
@@ -125,6 +2230,62 @@ Minimum: 0.000
 P75: 69,263,926.540
 P90: 91,243,341.724
 P99: 119,107,717.504
-Time to read file: 0.37 ms
+Time to read file: 0.48 ms
+Time to calculate statistics: 0.32 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-01-07-51\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 204
+Mean: 302.706
+Median: 179.511
+Standard Deviation: 381.838
+Maximum: 1,842.059
+Minimum: 0.000
+P75: 438.993
+P90: 758.061
+P99: 1,669.201
+Time to read file: 0.48 ms
+Time to calculate statistics: 0.30 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\bin\Debug\net9.0\averagediskqueuelength.txt ---
+File: averagediskqueuelength.txt
+Total Data Points: 205
+Mean: 3.311
+Median: 1.901
+Standard Deviation: 4.126
+Maximum: 18.066
+Minimum: 0.000
+P75: 4.411
+P90: 9.059
+P99: 16.689
+Time to read file: 18.65 ms
 Time to calculate statistics: 0.25 ms
-2025-05-30 07:51:28
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\bin\Debug\net9.0\bytespersecond.txt ---
+File: bytespersecond.txt
+Total Data Points: 205
+Mean: 41,409,507.960
+Median: 33,941,286.494
+Standard Deviation: 34,220,864.061
+Maximum: 130,204,731.836
+Minimum: 0.000
+P75: 69,263,926.540
+P90: 91,243,341.724
+P99: 119,107,717.504
+Time to read file: 1.76 ms
+Time to calculate statistics: 0.24 ms
+
+--- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\bin\Debug\net9.0\percentdisktime.txt ---
+File: percentdisktime.txt
+Total Data Points: 204
+Mean: 302.706
+Median: 179.511
+Standard Deviation: 381.838
+Maximum: 1,842.059
+Minimum: 0.000
+P75: 438.993
+P90: 758.061
+P99: 1,669.201
+Time to read file: 1.79 ms
+Time to calculate statistics: 0.24 ms
+2025-05-30 08:03:26
