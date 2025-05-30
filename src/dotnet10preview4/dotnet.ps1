@@ -8,7 +8,7 @@ dotnet run app.cs >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt
 Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"
 
 
-cd "C:\Code\wyoming\src\dotnet10preview4\single"
+cd "C:\Code\wyoming\src\dotnet10preview4\MyStastics"
 pwd > "C:\code\wyoming\src\dotnet10preview4\MyStastics\powershell.txt"
 ls >> "C:\code\wyoming\src\dotnet10preview4\MyStastics\powershell.txt"
 dotnet --info >> "C:\code\wyoming\src\dotnet10preview4\MyStastics\powershell.txt"
