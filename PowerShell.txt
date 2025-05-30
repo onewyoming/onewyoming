@@ -228,3 +228,75 @@ It has been 25 weeks since .NET 9 was released.
 
 PS C:\code\wyoming\src\dotnet10preview4\single>
 PS C:\code\wyoming\src\dotnet10preview4\single> cd "C:\Code\wyoming\src\dotnet10preview4\single"; pwd > "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; ls >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; cat app.cs >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; dotnet --info >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; Get-Date -Format "yyyy-MM-ddHH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; dotnet run app.cs >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; cd "C:\code\wyoming\"; git status; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git remote show origin; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git pull --rebase --strategy-option=ours; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git push origin master; Get-Date -Format "yyyy-MM-dd HH:mm:ss";
+On branch dotnet10preview4
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PowerShell.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/dotnet10preview4/single/powershell.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2025-05-30 06:32:57
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+2025-05-30 06:32:58
+[dotnet10preview4 5aae46e] add all changes
+ 2 files changed, 135 insertions(+), 355 deletions(-)
+ create mode 100644 src/dotnet10preview4/single/powershell.txt
+2025-05-30 06:32:58
+There is no tracking information for the current branch.
+Please specify which branch you want to rebase against.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> dotnet10preview4
+
+2025-05-30 06:33:00
+Everything up-to-date
+Everything up-to-date
+2025-05-30 06:33:01
+PS C:\code\wyoming> git push origin dotnet10preview4
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (14/14), 6.52 KiB | 607.00 KiB/s, done.
+Total 14 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), completed with 1 local object.
+remote:
+remote: Create a pull request for 'dotnet10preview4' on GitHub by visiting:
+remote:      https://github.com/onewyoming/onewyoming/pull/new/dotnet10preview4
+remote:
+remote: GitHub found 7 vulnerabilities on onewyoming/onewyoming's default branch (2 critical, 5 moderate). To find out more, visit:
+remote:      https://github.com/onewyoming/onewyoming/security/dependabot
+remote:
+To github.com:onewyoming/onewyoming.git
+ * [new branch]      dotnet10preview4 -> dotnet10preview4
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (14/14), 6.52 KiB | 667.00 KiB/s, done.
+Total 14 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: To create a merge request for dotnet10preview4, visit:
+remote:   https://gitlab.com/wyoming/wyoming.gitlab.io/-/merge_requests/new?merge_request%5Bsource_branch%5D=dotnet10preview4
+remote:
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+ * [new branch]      dotnet10preview4 -> dotnet10preview4
+PS C:\code\wyoming> cd "C:\Code\wyoming\src\dotnet10preview4\single"; pwd > "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; ls >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; cat app.cs >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; dotnet --info >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; dotnet run app.cs >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; cd "C:\code\wyoming\"; git status; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git remote show origin; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git pull --rebase --strategy-option=ours; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git push origin master; Get-Date -Format "yyyy-MM-dd HH:mm:ss";
