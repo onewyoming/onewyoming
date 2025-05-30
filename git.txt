@@ -13,10 +13,10 @@ Changes not staged for commit:
 	modified:   git.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
-2025-05-30 08:29:45
+2025-05-30 11:34:24
 Removing src/dotnet10preview4/MyStastics/MyStatistics.Console/bin/
 Removing src/dotnet10preview4/MyStastics/MyStatistics.Console/obj/
-2025-05-30 08:29:45
+2025-05-30 11:34:24
 
 Path
 ----
@@ -34,7 +34,7 @@ Changes not staged for commit:
 	modified:   src/dotnet10preview4/single/powershell.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
-2025-05-30 08:30:13
+2025-05-30 11:35:05
 * remote origin
   Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
   Push  URL: git@github.com:onewyoming/onewyoming.git
@@ -49,18 +49,4 @@ no changes added to commit (use "git add" and/or "git commit -a")
   Local refs configured for 'git push':
     dotnet10preview4 pushes to dotnet10preview4 (fast-forwardable)
     master           pushes to master           (up to date)
-2025-05-30 08:30:13
-2025-05-30 08:30:15
-remote: 
-remote: GitHub found 7 vulnerabilities on onewyoming/onewyoming's default branch (2 critical, 5 moderate). To find out more, visit:        
-remote:      https://github.com/onewyoming/onewyoming/security/dependabot        
-remote: 
-To github.com:onewyoming/onewyoming.git
-   0ad9af4..7a03772  dotnet10preview4 -> dotnet10preview4
-remote: 
-remote: To create a merge request for dotnet10preview4, visit:        
-remote:   https://gitlab.com/wyoming/wyoming.gitlab.io/-/merge_requests/new?merge_request%5Bsource_branch%5D=dotnet10preview4        
-remote: 
-To gitlab.com:wyoming/wyoming.gitlab.io.git
-   0ad9af4..7a03772  dotnet10preview4 -> dotnet10preview4
-2025-05-30 08:30:18
+2025-05-30 11:35:06
