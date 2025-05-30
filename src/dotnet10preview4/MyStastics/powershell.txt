@@ -8,9 +8,9 @@ C:\code\wyoming\src\dotnet10preview4\MyStastics
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
-d----           5/30/2025  8:14 AM                MyStatistics.Console
+d----           5/30/2025  8:16 AM                MyStatistics.Console
 -a---           5/30/2025  6:48 AM           1173 MyStastics.sln
--a---           5/30/2025  8:14 AM             65 powershell.txt
+-a---           5/30/2025  8:16 AM             65 powershell.txt
 
 .NET SDK:
  Version:           10.0.100-preview.4.25258.110
@@ -74,9 +74,9 @@ Learn more:
 
 Download .NET:
   https://aka.ms/dotnet/download
-2025-05-30 08:14:52
+2025-05-30 08:16:34
   Determining projects to restore...
-  Restored C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\MyStatistics.Console.csproj (in 713 ms).
+  Restored C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\MyStatistics.Console.csproj (in 798 ms).
 C:\Program Files\dotnet\sdk\10.0.100-preview.4.25258.110\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(326,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\MyStatistics.Console.csproj]
   MyStatistics.Console -> C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\bin\Debug\net10.0\MyStatistics.Console.dll
 
@@ -84,9 +84,9 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:05.87
-2025-05-30 08:14:59
-Build started 5/30/2025 8:15:00 AM.
+Time Elapsed 00:00:06.32
+2025-05-30 08:16:41
+Build started 5/30/2025 8:16:42 AM.
      1>Project "C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStastics.sln" on node 1 (Clean target(s)).
      1>ValidateSolutionConfiguration:
          Building solution configuration "Debug|Any CPU".
@@ -116,8 +116,8 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:02.27
-2025-05-30 08:15:02
+Time Elapsed 00:00:02.28
+2025-05-30 08:16:44
   Determining projects to restore...
   All projects are up-to-date for restore.
 C:\Program Files\dotnet\sdk\10.0.100-preview.4.25258.110\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(326,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\MyStatistics.Console.csproj]
@@ -127,7 +127,7 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:05.17
+Time Elapsed 00:00:05.40
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-09-06-47\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -140,8 +140,8 @@ Minimum: 0.000
 P75: 47,653,846.819
 P90: 84,120,114.157
 P99: 108,932,358.627
-Time to read file: 20.90 ms
-Time to calculate statistics: 25.63 ms
+Time to read file: 21.14 ms
+Time to calculate statistics: 32.94 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-09-06-47\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -154,8 +154,8 @@ Minimum: 0.000
 P75: 433.813
 P90: 884.341
 P99: 2,939.629
-Time to read file: 0.51 ms
-Time to calculate statistics: 0.28 ms
+Time to read file: 0.53 ms
+Time to calculate statistics: 0.25 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-11-44-44\averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
@@ -168,8 +168,8 @@ Minimum: 0.000
 P75: 6.064
 P90: 13.287
 P99: 20.207
-Time to read file: 0.47 ms
-Time to calculate statistics: 0.43 ms
+Time to read file: 0.40 ms
+Time to calculate statistics: 0.39 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-11-44-44\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -182,8 +182,8 @@ Minimum: 0.000
 P75: 55,871,111.658
 P90: 84,482,107.044
 P99: 110,644,108.379
-Time to read file: 0.42 ms
-Time to calculate statistics: 0.34 ms
+Time to read file: 0.39 ms
+Time to calculate statistics: 0.32 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-11-44-44\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -196,8 +196,8 @@ Minimum: 0.000
 P75: 614.951
 P90: 1,242.854
 P99: 2,290.630
-Time to read file: 0.42 ms
-Time to calculate statistics: 0.34 ms
+Time to read file: 0.39 ms
+Time to calculate statistics: 0.32 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-14-46-22\averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
@@ -210,8 +210,8 @@ Minimum: 0.000
 P75: 4.020
 P90: 7.790
 P99: 36.237
-Time to read file: 0.40 ms
-Time to calculate statistics: 0.25 ms
+Time to read file: 0.35 ms
+Time to calculate statistics: 0.23 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-14-46-22\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -225,7 +225,7 @@ P75: 44,265,045.905
 P90: 83,985,321.235
 P99: 117,572,656.654
 Time to read file: 0.31 ms
-Time to calculate statistics: 0.23 ms
+Time to calculate statistics: 0.24 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-14-46-22\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -238,8 +238,8 @@ Minimum: 0.000
 P75: 380.887
 P90: 792.117
 P99: 4,129.623
-Time to read file: 0.37 ms
-Time to calculate statistics: 0.24 ms
+Time to read file: 0.30 ms
+Time to calculate statistics: 0.23 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-01-01\averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
@@ -252,8 +252,8 @@ Minimum: 0.000
 P75: 4.119
 P90: 5.121
 P99: 9.370
-Time to read file: 0.28 ms
-Time to calculate statistics: 0.19 ms
+Time to read file: 0.29 ms
+Time to calculate statistics: 0.17 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-01-01\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -267,7 +267,7 @@ P75: 66,647,636.089
 P90: 87,209,351.152
 P99: 129,109,850.531
 Time to read file: 0.30 ms
-Time to calculate statistics: 0.17 ms
+Time to calculate statistics: 0.19 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-01-01\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -280,8 +280,8 @@ Minimum: 0.000
 P75: 385.829
 P90: 464.317
 P99: 588.231
-Time to read file: 0.29 ms
-Time to calculate statistics: 0.18 ms
+Time to read file: 0.38 ms
+Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-11-51\averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
@@ -294,7 +294,7 @@ Minimum: 0.000
 P75: 4.116
 P90: 5.660
 P99: 11.824
-Time to read file: 0.30 ms
+Time to read file: 0.43 ms
 Time to calculate statistics: 0.19 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-11-51\bytespersecond.txt ---
@@ -308,8 +308,8 @@ Minimum: 0.000
 P75: 56,472,493.788
 P90: 90,587,462.150
 P99: 126,678,369.919
-Time to read file: 0.31 ms
-Time to calculate statistics: 0.19 ms
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.21 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-11-51\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -322,7 +322,7 @@ Minimum: 0.000
 P75: 402.357
 P90: 482.446
 P99: 867.867
-Time to read file: 0.28 ms
+Time to read file: 0.29 ms
 Time to calculate statistics: 0.19 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-23-48\averagediskqueuelength.txt ---
@@ -336,7 +336,7 @@ Minimum: 0.000
 P75: 3.785
 P90: 4.693
 P99: 9.029
-Time to read file: 0.29 ms
+Time to read file: 0.32 ms
 Time to calculate statistics: 0.18 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-23-48\bytespersecond.txt ---
@@ -350,8 +350,8 @@ Minimum: 0.000
 P75: 65,684,167.421
 P90: 94,939,688.126
 P99: 115,638,776.537
-Time to read file: 0.29 ms
-Time to calculate statistics: 0.21 ms
+Time to read file: 0.38 ms
+Time to calculate statistics: 0.19 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-23-48\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -364,7 +364,7 @@ Minimum: 0.000
 P75: 376.837
 P90: 463.130
 P99: 765.335
-Time to read file: 0.32 ms
+Time to read file: 0.38 ms
 Time to calculate statistics: 0.18 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-35-16\averagediskqueuelength.txt ---
@@ -378,8 +378,8 @@ Minimum: 0.000
 P75: 4.023
 P90: 4.918
 P99: 10.115
-Time to read file: 0.30 ms
-Time to calculate statistics: 0.23 ms
+Time to read file: 0.31 ms
+Time to calculate statistics: 0.18 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-35-16\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -393,7 +393,7 @@ P75: 65,746,029.949
 P90: 89,615,306.505
 P99: 113,209,777.335
 Time to read file: 0.32 ms
-Time to calculate statistics: 0.19 ms
+Time to calculate statistics: 0.20 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-35-16\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -406,7 +406,7 @@ Minimum: 0.000
 P75: 399.964
 P90: 505.098
 P99: 1,157.897
-Time to read file: 0.28 ms
+Time to read file: 0.33 ms
 Time to calculate statistics: 0.19 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-46-39\averagediskqueuelength.txt ---
@@ -420,8 +420,8 @@ Minimum: 0.000
 P75: 3.956
 P90: 5.208
 P99: 10.102
-Time to read file: 0.30 ms
-Time to calculate statistics: 0.19 ms
+Time to read file: 0.31 ms
+Time to calculate statistics: 0.20 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-46-39\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -434,8 +434,8 @@ Minimum: 0.000
 P75: 58,758,397.802
 P90: 79,607,989.501
 P99: 99,600,840.778
-Time to read file: 0.29 ms
-Time to calculate statistics: 0.24 ms
+Time to read file: 0.40 ms
+Time to calculate statistics: 0.19 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-46-39\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -448,7 +448,7 @@ Minimum: 0.000
 P75: 401.316
 P90: 493.329
 P99: 916.355
-Time to read file: 0.32 ms
+Time to read file: 0.30 ms
 Time to calculate statistics: 0.19 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-58-02\averagediskqueuelength.txt ---
@@ -476,8 +476,8 @@ Minimum: 0.000
 P75: 59,996,217.607
 P90: 88,368,105.842
 P99: 112,612,112.377
-Time to read file: 0.32 ms
-Time to calculate statistics: 0.19 ms
+Time to read file: 0.31 ms
+Time to calculate statistics: 0.25 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-15-58-02\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -490,7 +490,7 @@ Minimum: 0.000
 P75: 394.498
 P90: 537.776
 P99: 1,218.949
-Time to read file: 0.32 ms
+Time to read file: 0.29 ms
 Time to calculate statistics: 0.20 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-09-42\averagediskqueuelength.txt ---
@@ -504,7 +504,7 @@ Minimum: 0.000
 P75: 4.079
 P90: 5.508
 P99: 11.733
-Time to read file: 0.30 ms
+Time to read file: 0.36 ms
 Time to calculate statistics: 0.20 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-09-42\bytespersecond.txt ---
@@ -518,7 +518,7 @@ Minimum: 0.000
 P75: 52,218,130.469
 P90: 89,627,411.458
 P99: 127,122,380.281
-Time to read file: 0.31 ms
+Time to read file: 0.33 ms
 Time to calculate statistics: 0.20 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-09-42\percentdisktime.txt ---
@@ -532,7 +532,7 @@ Minimum: 0.000
 P75: 398.157
 P90: 622.865
 P99: 1,136.808
-Time to read file: 0.29 ms
+Time to read file: 0.30 ms
 Time to calculate statistics: 0.20 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-21-37\averagediskqueuelength.txt ---
@@ -547,7 +547,7 @@ P75: 4.122
 P90: 5.191
 P99: 10.850
 Time to read file: 0.31 ms
-Time to calculate statistics: 0.22 ms
+Time to calculate statistics: 0.19 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-21-37\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -588,7 +588,7 @@ Minimum: 0.000
 P75: 3.881
 P90: 5.386
 P99: 10.014
-Time to read file: 0.29 ms
+Time to read file: 0.30 ms
 Time to calculate statistics: 0.20 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-33-06\bytespersecond.txt ---
@@ -602,8 +602,8 @@ Minimum: 0.000
 P75: 47,458,636.560
 P90: 80,742,878.173
 P99: 110,737,135.876
-Time to read file: 0.31 ms
-Time to calculate statistics: 0.25 ms
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.26 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-33-06\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -631,7 +631,7 @@ P75: 3.932
 P90: 5.719
 P99: 10.750
 Time to read file: 0.29 ms
-Time to calculate statistics: 0.20 ms
+Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-45-31\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -644,8 +644,8 @@ Minimum: 0.000
 P75: 56,247,387.801
 P90: 89,961,551.190
 P99: 123,704,959.925
-Time to read file: 0.34 ms
-Time to calculate statistics: 0.20 ms
+Time to read file: 0.31 ms
+Time to calculate statistics: 0.23 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-45-31\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -658,7 +658,7 @@ Minimum: 0.000
 P75: 382.448
 P90: 508.136
 P99: 1,225.847
-Time to read file: 0.30 ms
+Time to read file: 0.34 ms
 Time to calculate statistics: 0.21 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-57-38\averagediskqueuelength.txt ---
@@ -672,8 +672,8 @@ Minimum: 0.000
 P75: 4.117
 P90: 5.631
 P99: 8.848
-Time to read file: 0.30 ms
-Time to calculate statistics: 0.20 ms
+Time to read file: 0.31 ms
+Time to calculate statistics: 0.21 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-57-38\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -687,7 +687,7 @@ P75: 54,636,569.935
 P90: 89,166,487.064
 P99: 122,826,223.005
 Time to read file: 0.35 ms
-Time to calculate statistics: 0.25 ms
+Time to calculate statistics: 0.20 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-16-57-38\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -714,8 +714,8 @@ Minimum: 0.000
 P75: 3.806
 P90: 5.355
 P99: 10.949
-Time to read file: 0.36 ms
-Time to calculate statistics: 0.20 ms
+Time to read file: 0.31 ms
+Time to calculate statistics: 0.29 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-09-30\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -728,8 +728,8 @@ Minimum: 0.000
 P75: 59,527,285.036
 P90: 90,789,997.028
 P99: 119,641,751.948
-Time to read file: 0.30 ms
-Time to calculate statistics: 0.22 ms
+Time to read file: 0.31 ms
+Time to calculate statistics: 0.24 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-09-30\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -742,7 +742,7 @@ Minimum: 0.000
 P75: 397.440
 P90: 507.192
 P99: 1,339.505
-Time to read file: 0.30 ms
+Time to read file: 0.29 ms
 Time to calculate statistics: 0.20 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-21-33\averagediskqueuelength.txt ---
@@ -756,7 +756,7 @@ Minimum: 0.000
 P75: 4.045
 P90: 5.663
 P99: 12.428
-Time to read file: 0.30 ms
+Time to read file: 0.33 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-21-33\bytespersecond.txt ---
@@ -770,8 +770,8 @@ Minimum: 0.000
 P75: 56,041,176.352
 P90: 95,684,488.951
 P99: 119,069,364.938
-Time to read file: 0.30 ms
-Time to calculate statistics: 0.22 ms
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.21 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-21-33\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -784,7 +784,7 @@ Minimum: 0.000
 P75: 389.638
 P90: 477.363
 P99: 944.631
-Time to read file: 0.35 ms
+Time to read file: 0.29 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-33-33\averagediskqueuelength.txt ---
@@ -798,7 +798,7 @@ Minimum: 0.000
 P75: 3.914
 P90: 5.854
 P99: 12.261
-Time to read file: 0.30 ms
+Time to read file: 0.37 ms
 Time to calculate statistics: 0.23 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-33-33\bytespersecond.txt ---
@@ -813,7 +813,7 @@ P75: 53,021,055.458
 P90: 83,878,653.187
 P99: 117,770,971.727
 Time to read file: 0.31 ms
-Time to calculate statistics: 0.23 ms
+Time to calculate statistics: 0.24 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-33-33\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -826,7 +826,7 @@ Minimum: 0.000
 P75: 410.347
 P90: 555.850
 P99: 1,239.637
-Time to read file: 0.33 ms
+Time to read file: 0.30 ms
 Time to calculate statistics: 0.23 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-46-03\averagediskqueuelength.txt ---
@@ -840,7 +840,7 @@ Minimum: 0.000
 P75: 3.959
 P90: 5.131
 P99: 11.725
-Time to read file: 0.29 ms
+Time to read file: 0.31 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-46-03\bytespersecond.txt ---
@@ -854,8 +854,8 @@ Minimum: 0.000
 P75: 60,969,052.317
 P90: 92,384,674.907
 P99: 117,792,058.264
-Time to read file: 0.31 ms
-Time to calculate statistics: 0.22 ms
+Time to read file: 0.35 ms
+Time to calculate statistics: 0.23 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-46-03\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -868,7 +868,7 @@ Minimum: 0.000
 P75: 401.400
 P90: 587.571
 P99: 1,881.777
-Time to read file: 0.32 ms
+Time to read file: 0.30 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-57-55\averagediskqueuelength.txt ---
@@ -882,7 +882,7 @@ Minimum: 0.000
 P75: 4.024
 P90: 5.523
 P99: 11.769
-Time to read file: 0.30 ms
+Time to read file: 0.34 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-57-55\bytespersecond.txt ---
@@ -896,8 +896,8 @@ Minimum: 0.000
 P75: 56,190,134.806
 P90: 92,029,552.823
 P99: 116,323,276.184
-Time to read file: 0.29 ms
-Time to calculate statistics: 0.23 ms
+Time to read file: 0.31 ms
+Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-17-57-55\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -910,8 +910,8 @@ Minimum: 0.000
 P75: 388.350
 P90: 555.491
 P99: 1,365.392
-Time to read file: 0.32 ms
-Time to calculate statistics: 0.23 ms
+Time to read file: 0.36 ms
+Time to calculate statistics: 0.33 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-10-12\averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
@@ -924,8 +924,8 @@ Minimum: 0.000
 P75: 3.957
 P90: 5.730
 P99: 12.102
-Time to read file: 0.31 ms
-Time to calculate statistics: 0.23 ms
+Time to read file: 0.40 ms
+Time to calculate statistics: 0.25 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-10-12\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -938,8 +938,8 @@ Minimum: 0.000
 P75: 55,190,727.713
 P90: 80,320,460.588
 P99: 112,961,581.792
-Time to read file: 0.28 ms
-Time to calculate statistics: 0.23 ms
+Time to read file: 0.44 ms
+Time to calculate statistics: 0.24 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-10-12\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -952,8 +952,8 @@ Minimum: 0.000
 P75: 396.965
 P90: 528.072
 P99: 1,381.596
-Time to read file: 0.30 ms
-Time to calculate statistics: 0.22 ms
+Time to read file: 0.42 ms
+Time to calculate statistics: 0.23 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-22-24\averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
@@ -966,7 +966,7 @@ Minimum: 0.000
 P75: 4.133
 P90: 5.502
 P99: 12.425
-Time to read file: 0.31 ms
+Time to read file: 0.44 ms
 Time to calculate statistics: 0.23 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-22-24\bytespersecond.txt ---
@@ -980,8 +980,8 @@ Minimum: 0.000
 P75: 49,001,716.209
 P90: 82,201,148.706
 P99: 111,965,117.392
-Time to read file: 0.37 ms
-Time to calculate statistics: 0.24 ms
+Time to read file: 0.44 ms
+Time to calculate statistics: 0.26 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-22-24\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -994,8 +994,8 @@ Minimum: 0.000
 P75: 419.769
 P90: 498.640
 P99: 1,392.476
-Time to read file: 0.33 ms
-Time to calculate statistics: 0.23 ms
+Time to read file: 0.37 ms
+Time to calculate statistics: 0.25 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-34-53\averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
@@ -1008,7 +1008,7 @@ Minimum: 0.000
 P75: 3.811
 P90: 5.760
 P99: 14.622
-Time to read file: 0.39 ms
+Time to read file: 0.34 ms
 Time to calculate statistics: 0.28 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-34-53\bytespersecond.txt ---
@@ -1022,8 +1022,8 @@ Minimum: 0.000
 P75: 45,369,279.402
 P90: 79,499,706.119
 P99: 121,685,333.089
-Time to read file: 0.32 ms
-Time to calculate statistics: 0.28 ms
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.33 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-34-53\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -1036,8 +1036,8 @@ Minimum: 0.000
 P75: 375.428
 P90: 529.407
 P99: 975.208
-Time to read file: 0.31 ms
-Time to calculate statistics: 0.30 ms
+Time to read file: 0.41 ms
+Time to calculate statistics: 0.28 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-50-28\averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
@@ -1064,7 +1064,7 @@ Minimum: 0.000
 P75: 59,552,781.266
 P90: 80,649,876.951
 P99: 109,811,937.027
-Time to read file: 0.30 ms
+Time to read file: 0.41 ms
 Time to calculate statistics: 0.26 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-18-50-28\percentdisktime.txt ---
@@ -1078,7 +1078,7 @@ Minimum: 0.000
 P75: 446.062
 P90: 609.515
 P99: 1,235.177
-Time to read file: 0.32 ms
+Time to read file: 0.33 ms
 Time to calculate statistics: 0.26 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-04-37\averagediskqueuelength.txt ---
@@ -1092,8 +1092,8 @@ Minimum: 0.000
 P75: 4.010
 P90: 5.490
 P99: 12.556
-Time to read file: 0.32 ms
-Time to calculate statistics: 0.22 ms
+Time to read file: 0.31 ms
+Time to calculate statistics: 0.24 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-04-37\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -1106,7 +1106,7 @@ Minimum: 0.000
 P75: 60,505,211.532
 P90: 80,542,759.233
 P99: 110,764,732.951
-Time to read file: 0.31 ms
+Time to read file: 0.36 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-04-37\percentdisktime.txt ---
@@ -1120,8 +1120,8 @@ Minimum: 0.000
 P75: 393.362
 P90: 486.244
 P99: 814.398
-Time to read file: 0.30 ms
-Time to calculate statistics: 0.26 ms
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-16-45\averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
@@ -1134,7 +1134,7 @@ Minimum: 0.000
 P75: 4.117
 P90: 6.391
 P99: 15.417
-Time to read file: 0.31 ms
+Time to read file: 0.34 ms
 Time to calculate statistics: 0.26 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-16-45\bytespersecond.txt ---
@@ -1148,8 +1148,8 @@ Minimum: 0.000
 P75: 49,909,336.333
 P90: 80,225,238.674
 P99: 135,169,279.323
-Time to read file: 0.31 ms
-Time to calculate statistics: 0.27 ms
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.28 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-16-45\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -1162,7 +1162,7 @@ Minimum: 0.000
 P75: 383.534
 P90: 546.677
 P99: 1,681.072
-Time to read file: 0.29 ms
+Time to read file: 0.30 ms
 Time to calculate statistics: 0.26 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-30-57\averagediskqueuelength.txt ---
@@ -1176,7 +1176,7 @@ Minimum: 0.000
 P75: 3.950
 P90: 5.456
 P99: 12.527
-Time to read file: 0.29 ms
+Time to read file: 0.31 ms
 Time to calculate statistics: 0.24 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-30-57\bytespersecond.txt ---
@@ -1190,8 +1190,8 @@ Minimum: 0.000
 P75: 61,322,696.187
 P90: 85,478,158.367
 P99: 110,138,572.092
-Time to read file: 0.30 ms
-Time to calculate statistics: 0.25 ms
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.26 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-30-57\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -1204,8 +1204,8 @@ Minimum: 0.000
 P75: 407.022
 P90: 523.602
 P99: 1,261.051
-Time to read file: 0.32 ms
-Time to calculate statistics: 0.24 ms
+Time to read file: 0.30 ms
+Time to calculate statistics: 0.28 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-43-55\averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
@@ -1218,8 +1218,8 @@ Minimum: 0.000
 P75: 3.787
 P90: 5.041
 P99: 12.677
-Time to read file: 0.31 ms
-Time to calculate statistics: 0.21 ms
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.26 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-43-55\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -1232,8 +1232,8 @@ Minimum: 0.000
 P75: 61,106,840.992
 P90: 90,502,389.266
 P99: 121,733,537.507
-Time to read file: 0.30 ms
-Time to calculate statistics: 0.21 ms
+Time to read file: 0.28 ms
+Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-43-55\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -1246,8 +1246,8 @@ Minimum: 0.000
 P75: 294.488
 P90: 470.676
 P99: 933.877
-Time to read file: 0.30 ms
-Time to calculate statistics: 0.21 ms
+Time to read file: 0.31 ms
+Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-55-21\averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
@@ -1260,8 +1260,8 @@ Minimum: 0.000
 P75: 3.769
 P90: 6.930
 P99: 12.255
-Time to read file: 0.31 ms
-Time to calculate statistics: 0.28 ms
+Time to read file: 0.35 ms
+Time to calculate statistics: 0.25 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-55-21\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -1274,8 +1274,8 @@ Minimum: 0.000
 P75: 56,599,477.454
 P90: 87,333,429.407
 P99: 114,712,883.332
-Time to read file: 0.32 ms
-Time to calculate statistics: 0.23 ms
+Time to read file: 0.31 ms
+Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-19-55-21\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -1288,7 +1288,7 @@ Minimum: 0.000
 P75: 416.851
 P90: 522.285
 P99: 1,053.705
-Time to read file: 0.30 ms
+Time to read file: 0.33 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-20-07-42\averagediskqueuelength.txt ---
@@ -1302,8 +1302,8 @@ Minimum: 0.000
 P75: 3.997
 P90: 5.402
 P99: 11.472
-Time to read file: 0.33 ms
-Time to calculate statistics: 0.28 ms
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.24 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-20-07-42\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -1330,8 +1330,8 @@ Minimum: 0.000
 P75: 398.280
 P90: 538.664
 P99: 1,219.469
-Time to read file: 0.30 ms
-Time to calculate statistics: 0.23 ms
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.24 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-20-20-02\averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
@@ -1344,7 +1344,7 @@ Minimum: 0.000
 P75: 4.152
 P90: 6.779
 P99: 15.795
-Time to read file: 0.31 ms
+Time to read file: 0.33 ms
 Time to calculate statistics: 0.24 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-20-20-02\bytespersecond.txt ---
@@ -1372,7 +1372,7 @@ Minimum: 0.000
 P75: 410.717
 P90: 529.920
 P99: 1,059.292
-Time to read file: 0.31 ms
+Time to read file: 0.32 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-20-32-47\averagediskqueuelength.txt ---
@@ -1386,7 +1386,7 @@ Minimum: 0.000
 P75: 3.913
 P90: 5.760
 P99: 18.011
-Time to read file: 0.53 ms
+Time to read file: 0.45 ms
 Time to calculate statistics: 0.31 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-20-32-47\bytespersecond.txt ---
@@ -1400,7 +1400,7 @@ Minimum: 0.000
 P75: 49,616,512.808
 P90: 79,871,261.826
 P99: 121,770,683.031
-Time to read file: 0.39 ms
+Time to read file: 0.38 ms
 Time to calculate statistics: 0.31 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-20-32-47\percentdisktime.txt ---
@@ -1414,7 +1414,7 @@ Minimum: 0.000
 P75: 419.450
 P90: 731.862
 P99: 1,850.905
-Time to read file: 0.33 ms
+Time to read file: 0.34 ms
 Time to calculate statistics: 0.32 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-20-50-21\averagediskqueuelength.txt ---
@@ -1442,7 +1442,7 @@ Minimum: 0.000
 P75: 57,754,294.237
 P90: 89,619,985.144
 P99: 112,314,058.009
-Time to read file: 0.31 ms
+Time to read file: 0.38 ms
 Time to calculate statistics: 0.26 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-20-50-21\percentdisktime.txt ---
@@ -1456,8 +1456,8 @@ Minimum: 0.000
 P75: 390.685
 P90: 678.216
 P99: 1,932.823
-Time to read file: 0.31 ms
-Time to calculate statistics: 0.29 ms
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.30 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-05-13\averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
@@ -1470,8 +1470,8 @@ Minimum: 0.000
 P75: 3.418
 P90: 5.800
 P99: 15.654
-Time to read file: 0.32 ms
-Time to calculate statistics: 0.25 ms
+Time to read file: 0.48 ms
+Time to calculate statistics: 0.31 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-05-13\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -1484,8 +1484,8 @@ Minimum: 0.000
 P75: 47,224,484.763
 P90: 81,814,885.117
 P99: 113,604,702.691
-Time to read file: 0.32 ms
-Time to calculate statistics: 0.25 ms
+Time to read file: 0.46 ms
+Time to calculate statistics: 0.30 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-05-13\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -1498,8 +1498,8 @@ Minimum: 0.000
 P75: 366.060
 P90: 592.070
 P99: 1,523.194
-Time to read file: 0.31 ms
-Time to calculate statistics: 0.25 ms
+Time to read file: 0.46 ms
+Time to calculate statistics: 0.33 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-19-36\averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
@@ -1512,7 +1512,7 @@ Minimum: 0.000
 P75: 3.987
 P90: 6.251
 P99: 14.013
-Time to read file: 0.32 ms
+Time to read file: 0.37 ms
 Time to calculate statistics: 0.23 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-19-36\bytespersecond.txt ---
@@ -1526,8 +1526,8 @@ Minimum: 0.000
 P75: 55,833,849.588
 P90: 82,928,090.349
 P99: 116,598,166.245
-Time to read file: 0.30 ms
-Time to calculate statistics: 0.24 ms
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.23 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-19-36\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -1540,7 +1540,7 @@ Minimum: 0.000
 P75: 390.488
 P90: 571.187
 P99: 1,544.131
-Time to read file: 0.30 ms
+Time to read file: 0.38 ms
 Time to calculate statistics: 0.23 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-32-46\averagediskqueuelength.txt ---
@@ -1554,8 +1554,8 @@ Minimum: 0.000
 P75: 4.138
 P90: 6.039
 P99: 10.141
-Time to read file: 0.31 ms
-Time to calculate statistics: 0.21 ms
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.24 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-32-46\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -1568,8 +1568,8 @@ Minimum: 0.000
 P75: 67,935,136.664
 P90: 96,211,010.592
 P99: 118,458,988.484
-Time to read file: 0.30 ms
-Time to calculate statistics: 0.22 ms
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.21 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-32-46\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -1582,7 +1582,7 @@ Minimum: 0.000
 P75: 383.362
 P90: 571.210
 P99: 1,034.670
-Time to read file: 0.31 ms
+Time to read file: 0.34 ms
 Time to calculate statistics: 0.21 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-44-49\averagediskqueuelength.txt ---
@@ -1610,8 +1610,8 @@ Minimum: 0.000
 P75: 59,495,365.533
 P90: 85,486,054.782
 P99: 119,583,435.857
-Time to read file: 0.32 ms
-Time to calculate statistics: 0.25 ms
+Time to read file: 0.36 ms
+Time to calculate statistics: 0.23 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-44-49\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -1624,7 +1624,7 @@ Minimum: 0.000
 P75: 384.992
 P90: 517.232
 P99: 1,400.725
-Time to read file: 0.32 ms
+Time to read file: 0.34 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-57-29\averagediskqueuelength.txt ---
@@ -1638,7 +1638,7 @@ Minimum: 0.000
 P75: 3.840
 P90: 5.319
 P99: 11.856
-Time to read file: 0.29 ms
+Time to read file: 0.35 ms
 Time to calculate statistics: 0.21 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-57-29\bytespersecond.txt ---
@@ -1653,7 +1653,7 @@ P75: 56,814,029.869
 P90: 88,628,332.554
 P99: 115,564,687.038
 Time to read file: 0.29 ms
-Time to calculate statistics: 0.22 ms
+Time to calculate statistics: 0.23 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-21-57-29\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -1666,8 +1666,8 @@ Minimum: 0.000
 P75: 399.899
 P90: 611.290
 P99: 1,428.153
-Time to read file: 0.34 ms
-Time to calculate statistics: 0.29 ms
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.21 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-09-47\averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
@@ -1680,7 +1680,7 @@ Minimum: 0.000
 P75: 4.020
 P90: 5.810
 P99: 12.514
-Time to read file: 0.30 ms
+Time to read file: 0.33 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-09-47\bytespersecond.txt ---
@@ -1694,8 +1694,8 @@ Minimum: 0.000
 P75: 62,685,618.811
 P90: 94,498,403.457
 P99: 113,286,389.122
-Time to read file: 0.30 ms
-Time to calculate statistics: 0.27 ms
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.23 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-09-47\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -1708,8 +1708,8 @@ Minimum: 0.000
 P75: 426.574
 P90: 646.773
 P99: 1,716.356
-Time to read file: 0.29 ms
-Time to calculate statistics: 0.22 ms
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.23 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-22-21\averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
@@ -1736,8 +1736,8 @@ Minimum: 0.000
 P75: 62,261,705.004
 P90: 82,595,776.631
 P99: 124,019,692.102
-Time to read file: 0.30 ms
-Time to calculate statistics: 0.23 ms
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-22-21\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -1750,8 +1750,8 @@ Minimum: 0.000
 P75: 390.308
 P90: 556.061
 P99: 1,126.913
-Time to read file: 0.33 ms
-Time to calculate statistics: 0.21 ms
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-34-45\averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
@@ -1764,8 +1764,8 @@ Minimum: 0.000
 P75: 4.030
 P90: 5.161
 P99: 10.015
-Time to read file: 0.31 ms
-Time to calculate statistics: 0.23 ms
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.30 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-34-45\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -1778,8 +1778,8 @@ Minimum: 0.000
 P75: 65,512,171.052
 P90: 87,613,717.561
 P99: 117,560,905.778
-Time to read file: 0.31 ms
-Time to calculate statistics: 0.25 ms
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.24 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-34-45\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -1792,7 +1792,7 @@ Minimum: 0.000
 P75: 359.840
 P90: 464.577
 P99: 787.822
-Time to read file: 0.38 ms
+Time to read file: 0.32 ms
 Time to calculate statistics: 0.23 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-48-10\averagediskqueuelength.txt ---
@@ -1806,7 +1806,7 @@ Minimum: 0.000
 P75: 4.009
 P90: 5.874
 P99: 11.748
-Time to read file: 0.31 ms
+Time to read file: 0.30 ms
 Time to calculate statistics: 0.23 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-48-10\bytespersecond.txt ---
@@ -1820,8 +1820,8 @@ Minimum: 0.000
 P75: 64,463,073.364
 P90: 85,747,365.073
 P99: 108,604,518.519
-Time to read file: 0.43 ms
-Time to calculate statistics: 0.27 ms
+Time to read file: 0.35 ms
+Time to calculate statistics: 0.23 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-22-48-10\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -1834,7 +1834,7 @@ Minimum: 0.000
 P75: 416.276
 P90: 601.594
 P99: 1,672.831
-Time to read file: 0.31 ms
+Time to read file: 0.33 ms
 Time to calculate statistics: 0.23 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-01-04\averagediskqueuelength.txt ---
@@ -1848,8 +1848,8 @@ Minimum: 0.000
 P75: 4.075
 P90: 5.668
 P99: 13.653
-Time to read file: 0.31 ms
-Time to calculate statistics: 0.22 ms
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.25 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-01-04\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -1862,7 +1862,7 @@ Minimum: 0.000
 P75: 62,761,403.818
 P90: 96,411,300.858
 P99: 122,675,246.751
-Time to read file: 0.31 ms
+Time to read file: 0.32 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-01-04\percentdisktime.txt ---
@@ -1876,7 +1876,7 @@ Minimum: 0.000
 P75: 416.283
 P90: 658.194
 P99: 1,637.868
-Time to read file: 0.30 ms
+Time to read file: 0.32 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-13-56\averagediskqueuelength.txt ---
@@ -1890,8 +1890,8 @@ Minimum: 0.000
 P75: 4.030
 P90: 5.815
 P99: 15.253
-Time to read file: 0.31 ms
-Time to calculate statistics: 0.25 ms
+Time to read file: 0.34 ms
+Time to calculate statistics: 0.26 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-13-56\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -1904,7 +1904,7 @@ Minimum: 0.000
 P75: 65,761,356.786
 P90: 92,763,582.073
 P99: 127,482,855.435
-Time to read file: 0.34 ms
+Time to read file: 0.31 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-13-56\percentdisktime.txt ---
@@ -1918,7 +1918,7 @@ Minimum: 0.000
 P75: 404.274
 P90: 668.395
 P99: 1,888.167
-Time to read file: 0.28 ms
+Time to read file: 0.31 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-26-34\averagediskqueuelength.txt ---
@@ -1932,7 +1932,7 @@ Minimum: 0.000
 P75: 4.017
 P90: 6.244
 P99: 19.586
-Time to read file: 0.31 ms
+Time to read file: 0.34 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-26-34\bytespersecond.txt ---
@@ -1946,8 +1946,8 @@ Minimum: 0.000
 P75: 65,048,993.335
 P90: 87,925,463.897
 P99: 117,807,012.201
-Time to read file: 0.30 ms
-Time to calculate statistics: 0.22 ms
+Time to read file: 0.31 ms
+Time to calculate statistics: 0.24 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-26-34\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -1974,7 +1974,7 @@ Minimum: 0.000
 P75: 4.134
 P90: 5.712
 P99: 17.665
-Time to read file: 0.30 ms
+Time to read file: 0.31 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-39-05\bytespersecond.txt ---
@@ -1988,8 +1988,8 @@ Minimum: 0.000
 P75: 59,915,322.731
 P90: 87,391,064.614
 P99: 118,862,008.436
-Time to read file: 0.37 ms
-Time to calculate statistics: 0.22 ms
+Time to read file: 0.30 ms
+Time to calculate statistics: 0.24 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-39-05\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -2016,8 +2016,8 @@ Minimum: 0.000
 P75: 4.156
 P90: 5.987
 P99: 15.498
-Time to read file: 0.31 ms
-Time to calculate statistics: 0.23 ms
+Time to read file: 0.29 ms
+Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-51-50\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -2030,7 +2030,7 @@ Minimum: 0.000
 P75: 65,235,288.643
 P90: 90,486,056.213
 P99: 112,174,080.231
-Time to read file: 0.34 ms
+Time to read file: 0.31 ms
 Time to calculate statistics: 0.23 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-29-23-51-50\percentdisktime.txt ---
@@ -2044,7 +2044,7 @@ Minimum: 0.000
 P75: 396.369
 P90: 787.756
 P99: 2,174.068
-Time to read file: 0.30 ms
+Time to read file: 0.27 ms
 Time to calculate statistics: 0.24 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-04-51\averagediskqueuelength.txt ---
@@ -2058,7 +2058,7 @@ Minimum: 0.000
 P75: 4.126
 P90: 6.235
 P99: 13.198
-Time to read file: 0.29 ms
+Time to read file: 0.30 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-04-51\bytespersecond.txt ---
@@ -2072,8 +2072,8 @@ Minimum: 0.000
 P75: 60,555,618.820
 P90: 87,270,358.597
 P99: 109,544,138.994
-Time to read file: 0.30 ms
-Time to calculate statistics: 0.25 ms
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-04-51\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -2086,8 +2086,8 @@ Minimum: 0.000
 P75: 409.054
 P90: 616.119
 P99: 1,478.505
-Time to read file: 0.29 ms
-Time to calculate statistics: 0.23 ms
+Time to read file: 0.35 ms
+Time to calculate statistics: 0.26 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-17-39\averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
@@ -2114,7 +2114,7 @@ Minimum: 0.000
 P75: 58,984,994.788
 P90: 85,324,997.936
 P99: 111,087,379.005
-Time to read file: 0.31 ms
+Time to read file: 0.33 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-17-39\percentdisktime.txt ---
@@ -2128,8 +2128,8 @@ Minimum: 0.000
 P75: 387.794
 P90: 589.638
 P99: 1,348.084
-Time to read file: 0.29 ms
-Time to calculate statistics: 0.23 ms
+Time to read file: 0.40 ms
+Time to calculate statistics: 0.25 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-30-07\averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
@@ -2142,8 +2142,8 @@ Minimum: 0.000
 P75: 3.676
 P90: 4.754
 P99: 9.987
-Time to read file: 0.29 ms
-Time to calculate statistics: 0.21 ms
+Time to read file: 0.35 ms
+Time to calculate statistics: 0.28 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-30-07\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -2156,8 +2156,8 @@ Minimum: 0.000
 P75: 68,725,534.928
 P90: 97,131,540.837
 P99: 127,826,971.533
-Time to read file: 0.30 ms
-Time to calculate statistics: 0.21 ms
+Time to read file: 0.33 ms
+Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-30-07\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -2170,7 +2170,7 @@ Minimum: 0.000
 P75: 392.397
 P90: 506.334
 P99: 1,366.898
-Time to read file: 0.30 ms
+Time to read file: 0.32 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-42-10\averagediskqueuelength.txt ---
@@ -2184,8 +2184,8 @@ Minimum: 0.000
 P75: 4.254
 P90: 6.368
 P99: 18.267
-Time to read file: 0.34 ms
-Time to calculate statistics: 0.22 ms
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.39 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-42-10\bytespersecond.txt ---
 File: bytespersecond.txt
@@ -2198,7 +2198,7 @@ Minimum: 0.000
 P75: 60,865,471.693
 P90: 92,193,250.250
 P99: 125,327,763.950
-Time to read file: 0.31 ms
+Time to read file: 0.41 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-42-10\percentdisktime.txt ---
@@ -2212,7 +2212,7 @@ Minimum: 0.000
 P75: 416.940
 P90: 738.570
 P99: 1,676.478
-Time to read file: 0.36 ms
+Time to read file: 0.33 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-55-10\averagediskqueuelength.txt ---
@@ -2226,7 +2226,7 @@ Minimum: 0.000
 P75: 4.016
 P90: 5.733
 P99: 18.355
-Time to read file: 0.31 ms
+Time to read file: 0.33 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-55-10\bytespersecond.txt ---
@@ -2240,7 +2240,7 @@ Minimum: 0.000
 P75: 60,143,676.676
 P90: 83,241,179.353
 P99: 111,974,567.069
-Time to read file: 0.37 ms
+Time to read file: 0.31 ms
 Time to calculate statistics: 0.22 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-00-55-10\percentdisktime.txt ---
@@ -2254,8 +2254,8 @@ Minimum: 0.000
 P75: 387.815
 P90: 489.516
 P99: 1,249.573
-Time to read file: 0.30 ms
-Time to calculate statistics: 0.22 ms
+Time to read file: 0.31 ms
+Time to calculate statistics: 0.27 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-01-07-51\averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
@@ -2268,7 +2268,7 @@ Minimum: 0.000
 P75: 4.411
 P90: 9.059
 P99: 16.689
-Time to read file: 0.32 ms
+Time to read file: 0.37 ms
 Time to calculate statistics: 0.24 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-01-07-51\bytespersecond.txt ---
@@ -2282,8 +2282,8 @@ Minimum: 0.000
 P75: 69,263,926.540
 P90: 91,243,341.724
 P99: 119,107,717.504
-Time to read file: 0.31 ms
-Time to calculate statistics: 0.24 ms
+Time to read file: 0.32 ms
+Time to calculate statistics: 0.25 ms
 
 --- Processing C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\mydata\2025-05-30-01-07-51\percentdisktime.txt ---
 File: percentdisktime.txt
@@ -2298,4 +2298,4 @@ P90: 758.061
 P99: 1,669.201
 Time to read file: 0.31 ms
 Time to calculate statistics: 0.24 ms
-2025-05-30 08:15:15
+2025-05-30 08:16:58
