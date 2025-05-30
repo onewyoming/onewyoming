@@ -17,6 +17,7 @@ Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview4\
 Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 
 cd "C:\Code\wyoming\src\dotnet10preview4\MyStastics"
+Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview4\MyStastics\powershell.txt"
 pwd > "C:\code\wyoming\src\dotnet10preview4\MyStastics\powershell.txt"
 ls >> "C:\code\wyoming\src\dotnet10preview4\MyStastics\powershell.txt"
 dotnet --info >> "C:\code\wyoming\src\dotnet10preview4\MyStastics\powershell.txt"

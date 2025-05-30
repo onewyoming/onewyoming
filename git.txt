@@ -10,8 +10,9 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
 	modified:   git.txt
+	modified:   src/dotnet10preview4/dotnet.ps1
 
 no changes added to commit (use "git add" and/or "git commit -a")
-2025-05-30 08:13:34
+2025-05-30 08:14:48
 Removing src/dotnet10preview4/MyStastics/MyStatistics.Console/bin/
 Removing src/dotnet10preview4/MyStastics/MyStatistics.Console/obj/
