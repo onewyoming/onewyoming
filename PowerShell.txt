@@ -304,3 +304,139 @@ To gitlab.com:wyoming/wyoming.gitlab.io.git
    e292146..80f5045  dotnet10preview4 -> dotnet10preview4
 2025-05-30 07:25:46
 PS C:\code\wyoming> C:\code\wyoming\src\dotnet10preview4\dotnet.ps1
+2025-05-30 07:30:41
+2025-05-30 07:30:45
+2025-05-30 07:30:57
+
+On branch dotnet10preview4
+Your branch is up to date with 'origin/dotnet10preview4'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PowerShell.txt
+        modified:   src/dotnet10preview4/MyStastics/powershell.txt
+        modified:   src/dotnet10preview4/dotnet.ps1
+        modified:   src/dotnet10preview4/single/powershell.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branches:
+    dotnet10preview4 tracked
+    master           tracked
+  Local branches configured for 'git pull':
+    dotnet10preview4 merges with remote dotnet10preview4
+    master           merges with remote master
+  Local refs configured for 'git push':
+    dotnet10preview4 pushes to dotnet10preview4 (up to date)
+    master           pushes to master           (up to date)
+Path
+----
+C:\code\wyoming
+2025-05-30 07:30:58
+2025-05-30 07:30:59
+warning: in the working copy of 'src/dotnet10preview4/MyStastics/powershell.txt', LF will be replaced by CRLF the next time Git touches it
+[dotnet10preview4 0a88226] add all changes
+ 4 files changed, 77 insertions(+), 13 deletions(-)
+2025-05-30 07:30:59
+Current branch dotnet10preview4 is up to date.
+2025-05-30 07:31:00
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 1.26 KiB | 184.00 KiB/s, done.
+Total 10 (delta 7), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (7/7), completed with 6 local objects.
+remote:
+remote: GitHub found 7 vulnerabilities on onewyoming/onewyoming's default branch (2 critical, 5 moderate). To find out more, visit:
+remote:      https://github.com/onewyoming/onewyoming/security/dependabot
+remote:
+To github.com:onewyoming/onewyoming.git
+   80f5045..0a88226  dotnet10preview4 -> dotnet10preview4
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 1.26 KiB | 214.00 KiB/s, done.
+Total 10 (delta 7), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: To create a merge request for dotnet10preview4, visit:
+remote:   https://gitlab.com/wyoming/wyoming.gitlab.io/-/merge_requests/new?merge_request%5Bsource_branch%5D=dotnet10preview4
+remote:
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   80f5045..0a88226  dotnet10preview4 -> dotnet10preview4
+2025-05-30 07:31:03
+
+PS C:\code\wyoming> C:\code\wyoming\src\dotnet10preview4\dotnet.ps1
+2025-05-30 07:31:23
+2025-05-30 07:31:26
+2025-05-30 07:31:39
+
+On branch dotnet10preview4
+Your branch is up to date with 'origin/dotnet10preview4'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/dotnet10preview4/MyStastics/powershell.txt
+        modified:   src/dotnet10preview4/single/powershell.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branches:
+    dotnet10preview4 tracked
+    master           tracked
+  Local branches configured for 'git pull':
+    dotnet10preview4 merges with remote dotnet10preview4
+    master           merges with remote master
+  Local refs configured for 'git push':
+    dotnet10preview4 pushes to dotnet10preview4 (up to date)
+    master           pushes to master           (up to date)
+Path
+----
+C:\code\wyoming
+2025-05-30 07:31:39
+2025-05-30 07:31:40
+warning: in the working copy of 'src/dotnet10preview4/MyStastics/powershell.txt', LF will be replaced by CRLF the next time Git touches it
+[dotnet10preview4 6c61a76] add all changes
+ 2 files changed, 13 insertions(+), 13 deletions(-)
+2025-05-30 07:31:40
+Current branch dotnet10preview4 is up to date.
+2025-05-30 07:31:42
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 1005 bytes | 201.00 KiB/s, done.
+Total 8 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), completed with 4 local objects.
+remote:
+remote: GitHub found 7 vulnerabilities on onewyoming/onewyoming's default branch (2 critical, 5 moderate). To find out more, visit:
+remote:      https://github.com/onewyoming/onewyoming/security/dependabot
+remote:
+To github.com:onewyoming/onewyoming.git
+   0a88226..6c61a76  dotnet10preview4 -> dotnet10preview4
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 1005 bytes | 167.00 KiB/s, done.
+Total 8 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: To create a merge request for dotnet10preview4, visit:
+remote:   https://gitlab.com/wyoming/wyoming.gitlab.io/-/merge_requests/new?merge_request%5Bsource_branch%5D=dotnet10preview4
+remote:
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   0a88226..6c61a76  dotnet10preview4 -> dotnet10preview4
+2025-05-30 07:31:44
+
+PS C:\code\wyoming> C:\code\wyoming\src\dotnet10preview4\dotnet.ps1
