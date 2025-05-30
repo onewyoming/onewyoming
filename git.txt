@@ -1,3 +1,8 @@
+
+Path
+----
+C:\code\wyoming
+
 On branch dotnet10preview4
 Your branch is up to date with 'origin/dotnet10preview4'.
 
@@ -7,6 +12,6 @@ Changes not staged for commit:
 	modified:   git.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
-Removing src/dotnet10preview4/MyStastics/.vs/
+2025-05-30 08:13:34
 Removing src/dotnet10preview4/MyStastics/MyStatistics.Console/bin/
 Removing src/dotnet10preview4/MyStastics/MyStatistics.Console/obj/
