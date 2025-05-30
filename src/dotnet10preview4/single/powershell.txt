@@ -9,7 +9,7 @@ C:\code\wyoming\src\dotnet10preview4\single
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
 -a---           5/30/2025  6:43 AM            242 app.cs
--a---           5/30/2025  7:21 AM             61 powershell.txt
+-a---           5/30/2025  7:23 AM             61 powershell.txt
 
 #:package Humanizer@2.14.1
 
@@ -81,6 +81,6 @@ Learn more:
 
 Download .NET:
   https://aka.ms/dotnet/download
-2025-05-30 07:22:00
+2025-05-30 07:23:01
 It has been 25 weeks since .NET 9 was released.
-2025-05-30 07:22:03
+2025-05-30 07:23:03

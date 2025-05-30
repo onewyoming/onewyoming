@@ -10,7 +10,7 @@ Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
 d----           5/30/2025  6:58 AM                MyStatistics.Console
 -a---           5/30/2025  6:48 AM           1173 MyStastics.sln
--a---           5/30/2025  7:22 AM             65 powershell.txt
+-a---           5/30/2025  7:23 AM             65 powershell.txt
 
 .NET SDK:
  Version:           10.0.100-preview.4.25258.110
@@ -74,7 +74,7 @@ Learn more:
 
 Download .NET:
   https://aka.ms/dotnet/download
-2025-05-30 07:22:04
+2025-05-30 07:23:04
   Determining projects to restore...
   All projects are up-to-date for restore.
 C:\Program Files\dotnet\sdk\10.0.100-preview.4.25258.110\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(326,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [C:\code\wyoming\src\dotnet10preview4\MyStastics\MyStatistics.Console\MyStatistics.Console.csproj]
@@ -84,7 +84,7 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:05.25
+Time Elapsed 00:00:04.78
 
 --- Processing percentdisktime.txt ---
 File: percentdisktime.txt
@@ -97,8 +97,8 @@ Minimum: 0.000
 P75: 438.993
 P90: 758.061
 P99: 1,669.201
-Time to read file: 20.91 ms
-Time to calculate statistics: 24.24 ms
+Time to read file: 21.18 ms
+Time to calculate statistics: 25.09 ms
 
 --- Processing averagediskqueuelength.txt ---
 File: averagediskqueuelength.txt
@@ -111,7 +111,7 @@ Minimum: 0.000
 P75: 4.411
 P90: 9.059
 P99: 16.689
-Time to read file: 0.54 ms
+Time to read file: 0.48 ms
 Time to calculate statistics: 0.30 ms
 
 --- Processing bytespersecond.txt ---
@@ -125,6 +125,6 @@ Minimum: 0.000
 P75: 69,263,926.540
 P90: 91,243,341.724
 P99: 119,107,717.504
-Time to read file: 0.34 ms
-Time to calculate statistics: 0.23 ms
-2025-05-30 07:22:16
+Time to read file: 0.31 ms
+Time to calculate statistics: 0.22 ms
+2025-05-30 07:23:16
