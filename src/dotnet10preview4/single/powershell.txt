@@ -81,6 +81,6 @@ Learn more:
 
 Download .NET:
   https://aka.ms/dotnet/download
-2025-05-30 08:25:07
+2025-05-30 08:25:51
 It has been 25 weeks since .NET 9 was released.
-2025-05-30 08:25:09
+2025-05-30 08:25:53
