@@ -1,3 +1,9 @@
+cd "C:\code\wyoming\"
+pwd
+git status > "C:\code\wyoming\git.txt"
+Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+git clean -dfx >> "C:\code\wyoming\git.txt"
+
 Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 cd "C:\Code\wyoming\src\dotnet10preview4\single"
 pwd > "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"
