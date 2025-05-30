@@ -49,3 +49,19 @@ no changes added to commit (use "git add" and/or "git commit -a")
     dotnet10preview4 pushes to dotnet10preview4 (fast-forwardable)
     master           pushes to master           (up to date)
 2025-05-30 08:23:24
+warning: in the working copy of 'git.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/MyStastics/powershell.txt', LF will be replaced by CRLF the next time Git touches it
+2025-05-30 08:23:25
+remote: 
+remote: GitHub found 7 vulnerabilities on onewyoming/onewyoming's default branch (2 critical, 5 moderate). To find out more, visit:        
+remote:      https://github.com/onewyoming/onewyoming/security/dependabot        
+remote: 
+To github.com:onewyoming/onewyoming.git
+   753d950..1d00b6a  dotnet10preview4 -> dotnet10preview4
+remote: 
+remote: To create a merge request for dotnet10preview4, visit:        
+remote:   https://gitlab.com/wyoming/wyoming.gitlab.io/-/merge_requests/new?merge_request%5Bsource_branch%5D=dotnet10preview4        
+remote: 
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   753d950..1d00b6a  dotnet10preview4 -> dotnet10preview4
+2025-05-30 08:23:27

@@ -43,7 +43,7 @@ git status *>> "C:\code\wyoming\git.txt"
 Get-Date -Format "yyyy-MM-dd HH:mm:ss" *>> "C:\code\wyoming\git.txt"
 git remote show origin *>> "C:\code\wyoming\git.txt"
 Get-Date -Format "yyyy-MM-dd HH:mm:ss" *>> "C:\code\wyoming\git.txt"
-git add . *>> "C:\code\wyoming\git.txt"
+git add .
 git commit --message "add all changes" --message "this is a bad commit message, isn't it?"
 Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 git pull --rebase --strategy-option=ours
