@@ -563,4 +563,109 @@ Current branch dotnet10preview4 is up to date.
 Everything up-to-date
 Everything up-to-date
 2025-05-30 06:52:11
+PS C:\code\wyoming> cd "C:\Code\wyoming\src\dotnet10preview4\single"; pwd > "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; ls >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; cat app.cs >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; dotnet --info >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; dotnet run app.cs >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview4\single\powershell.txt"; cd "C:\code\wyoming\"; git status; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git remote show origin; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git pull --rebase --strategy-option=ours; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git push origin master; Get-Date -Format "yyyy-MM-dd HH:mm:ss";
+On branch dotnet10preview4
+Your branch is ahead of 'origin/dotnet10preview4' by 7 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PowerShell.txt
+        modified:   src/dotnet10preview4/single/powershell.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2025-05-30 06:52:25
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branches:
+    dotnet10preview4 tracked
+    master           tracked
+  Local branches configured for 'git pull':
+    dotnet10preview4 merges with remote dotnet10preview4
+    master           merges with remote master
+  Local refs configured for 'git push':
+    dotnet10preview4 pushes to dotnet10preview4 (fast-forwardable)
+    master           pushes to master           (up to date)
+2025-05-30 06:52:26
+[dotnet10preview4 75ae4cc] add all changes
+ 2 files changed, 225 insertions(+), 2 deletions(-)
+2025-05-30 06:52:26
+Current branch dotnet10preview4 is up to date.
+2025-05-30 06:52:28
+Everything up-to-date
+Everything up-to-date
+2025-05-30 06:52:29
+PS C:\code\wyoming>
+PS C:\code\wyoming> C:\code\wyoming\src\dotnet10preview4\dotnet.ps1
+On branch dotnet10preview4
+Your branch is ahead of 'origin/dotnet10preview4' by 8 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/dotnet10preview4/MyStastics/MyStatistics.Console/MyStatistics.Console.csproj
+        modified:   src/dotnet10preview4/MyStastics/MyStatistics.Console/Program.cs
+        modified:   src/dotnet10preview4/single/powershell.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/dotnet10preview4/MyStastics/powershell.txt
+        src/dotnet10preview4/dotnet.ps1
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2025-05-30 07:04:27
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branches:
+    dotnet10preview4 tracked
+    master           tracked
+  Local branches configured for 'git pull':
+    dotnet10preview4 merges with remote dotnet10preview4
+    master           merges with remote master
+  Local refs configured for 'git push':
+    dotnet10preview4 pushes to dotnet10preview4 (fast-forwardable)
+    master           pushes to master           (up to date)
+2025-05-30 07:04:28
+warning: in the working copy of 'src/dotnet10preview4/MyStastics/powershell.txt', LF will be replaced by CRLF the next time Git touches it
+[dotnet10preview4 c4c2acd] add all changes
+ 5 files changed, 193 insertions(+), 38 deletions(-)
+ create mode 100644 src/dotnet10preview4/MyStastics/powershell.txt
+ create mode 100644 src/dotnet10preview4/dotnet.ps1
+2025-05-30 07:04:28
+Current branch dotnet10preview4 is up to date.
+2025-05-30 07:04:29
+Enumerating objects: 80, done.
+Counting objects: 100% (80/80), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (70/70), done.
+Writing objects: 100% (74/74), 22.98 KiB | 547.00 KiB/s, done.
+Total 74 (delta 37), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (37/37), completed with 2 local objects.
+remote:
+remote: GitHub found 7 vulnerabilities on onewyoming/onewyoming's default branch (2 critical, 5 moderate). To find out more, visit:
+remote:      https://github.com/onewyoming/onewyoming/security/dependabot
+remote:
+To github.com:onewyoming/onewyoming.git
+   5aae46e..c4c2acd  dotnet10preview4 -> dotnet10preview4
+Enumerating objects: 80, done.
+Counting objects: 100% (80/80), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (70/70), done.
+Writing objects: 100% (74/74), 22.98 KiB | 470.00 KiB/s, done.
+Total 74 (delta 37), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: To create a merge request for dotnet10preview4, visit:
+remote:   https://gitlab.com/wyoming/wyoming.gitlab.io/-/merge_requests/new?merge_request%5Bsource_branch%5D=dotnet10preview4
+remote:
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   5aae46e..c4c2acd  dotnet10preview4 -> dotnet10preview4
+2025-05-30 07:04:33
 PS C:\code\wyoming>
