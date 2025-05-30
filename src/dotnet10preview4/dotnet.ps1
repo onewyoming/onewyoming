@@ -1,4 +1,18 @@
 cd "C:\code\wyoming\"
+pwd >> "C:\code\wyoming\git.txt"
+git status >> "C:\code\wyoming\git.txt"
+Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\git.txt"
+git remote show origin >> "C:\code\wyoming\git.txt"
+Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\git.txt"
+git add . >> "C:\code\wyoming\git.txt"
+git commit --message "add all changes" --message "this is a bad commit message, isn't it?" >> "C:\code\wyoming\git.txt"
+Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\git.txt"
+git pull --rebase --strategy-option=ours >> "C:\code\wyoming\git.txt"
+Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\git.txt"
+git push origin --all >> "C:\code\wyoming\git.txt"
+Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\git.txt"
+
+cd "C:\code\wyoming\"
 pwd > "C:\code\wyoming\git.txt"
 git status >> "C:\code\wyoming\git.txt"
 Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\git.txt"
@@ -34,15 +48,15 @@ Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview4\
 Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 
 cd "C:\code\wyoming\"
-pwd
-git status
-Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-git remote show origin
-Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-git add .
-git commit --message "add all changes" --message "this is a bad commit message, isn't it?"
-Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-git pull --rebase --strategy-option=ours
-Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-git push origin --all
-Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+pwd >> "C:\code\wyoming\git.txt"
+git status >> "C:\code\wyoming\git.txt"
+Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\git.txt"
+git remote show origin >> "C:\code\wyoming\git.txt"
+Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\git.txt"
+git add . >> "C:\code\wyoming\git.txt"
+git commit --message "add all changes" --message "this is a bad commit message, isn't it?" >> "C:\code\wyoming\git.txt"
+Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\git.txt"
+git pull --rebase --strategy-option=ours >> "C:\code\wyoming\git.txt"
+Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\git.txt"
+git push origin --all >> "C:\code\wyoming\git.txt"
+Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\git.txt"
