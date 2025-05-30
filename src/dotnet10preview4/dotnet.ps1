@@ -7,6 +7,7 @@ pwd > "C:\code\wyoming\git.txt"
 git status >> "C:\code\wyoming\git.txt"
 Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\git.txt"
 git clean -dfx >> "C:\code\wyoming\git.txt"
+Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\git.txt"
 
 Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 cd "C:\Code\wyoming\src\dotnet10preview4\single"
