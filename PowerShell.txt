@@ -2,20 +2,17 @@ PowerShell 7.6.0-preview.4
 PS C:\Users\kushal>
 PS C:\Users\kushal> dotnet --info >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; cd "C:\code\wyoming\"; git status; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git remote show origin; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git pull --rebase --strategy-option=ours; Get-Date -Format"yyyy-MM-dd HH:mm:ss"; git push origin master; Get-Date -Format "yyyy-MM-dd HH:mm:ss";
 On branch dotnet10preview4
-Your branch is up to date with 'origin/dotnet10preview4'.
+Your branch is ahead of 'origin/dotnet10preview4' by 2 commits.
+  (use "git push" to publish your local commits)
 
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
-        modified:   README.md
-        modified:   git.txt
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        src/dotnet10preview5/
+        modified:   PowerShell.txt
+        modified:   src/dotnet10preview5/powershell.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
-2025-06-10 13:11:35
+2025-06-10 13:14:56
 * remote origin
   Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
   Push  URL: git@github.com:onewyoming/onewyoming.git
@@ -28,96 +25,74 @@ no changes added to commit (use "git add" and/or "git commit -a")
     dotnet10preview4 merges with remote dotnet10preview4
     master           merges with remote master
   Local refs configured for 'git push':
-    dotnet10preview4 pushes to dotnet10preview4 (up to date)
+    dotnet10preview4 pushes to dotnet10preview4 (fast-forwardable)
     master           pushes to master           (up to date)
-2025-06-10 13:11:36
-warning: in the working copy of 'git.txt', LF will be replaced by CRLF the next time Git touches it
-[dotnet10preview4 890ad14] add all changes
- 81 files changed, 63824 insertions(+), 1 deletion(-)
- create mode 100644 src/dotnet10preview5/dotnet10preview5.ApiService/Program.cs
- create mode 100644 src/dotnet10preview5/dotnet10preview5.ApiService/Properties/launchSettings.json
- create mode 100644 src/dotnet10preview5/dotnet10preview5.ApiService/appsettings.Development.json
- create mode 100644 src/dotnet10preview5/dotnet10preview5.ApiService/appsettings.json
- create mode 100644 src/dotnet10preview5/dotnet10preview5.ApiService/dotnet10preview5.ApiService.csproj
- create mode 100644 src/dotnet10preview5/dotnet10preview5.AppHost/Program.cs
- create mode 100644 src/dotnet10preview5/dotnet10preview5.AppHost/Properties/launchSettings.json
- create mode 100644 src/dotnet10preview5/dotnet10preview5.AppHost/appsettings.Development.json
- create mode 100644 src/dotnet10preview5/dotnet10preview5.AppHost/appsettings.json
- create mode 100644 src/dotnet10preview5/dotnet10preview5.AppHost/dotnet10preview5.AppHost.csproj
- create mode 100644 src/dotnet10preview5/dotnet10preview5.ServiceDefaults/Extensions.cs
- create mode 100644 src/dotnet10preview5/dotnet10preview5.ServiceDefaults/dotnet10preview5.ServiceDefaults.csproj
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Tests/WebTests.cs
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Tests/dotnet10preview5.Tests.csproj
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/Components/App.razor
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/Components/Layout/MainLayout.razor
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/Components/Layout/MainLayout.razor.css
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/Components/Layout/NavMenu.razor
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/Components/Layout/NavMenu.razor.css
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/Components/Pages/Counter.razor
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/Components/Pages/Error.razor
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/Components/Pages/Home.razor
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/Components/Pages/Weather.razor
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/Components/Routes.razor
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/Components/_Imports.razor
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/Program.cs
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/Properties/launchSettings.json
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/WeatherApiClient.cs
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/appsettings.Development.json
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/appsettings.json
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/dotnet10preview5.Web.csproj
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/app.css
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/favicon.png
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.css
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js
- create mode 100644 src/dotnet10preview5/dotnet10preview5.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map
- create mode 100644 src/dotnet10preview5/dotnet10preview5.sln
- create mode 100644 src/dotnet10preview5/powershell.txt
-2025-06-10 13:11:41
+2025-06-10 13:14:57
+[dotnet10preview4 0e81fbe] add all changes
+ 2 files changed, 183 insertions(+), 12 deletions(-)
+2025-06-10 13:14:58
 Current branch dotnet10preview4 is up to date.
-2025-06-10 13:11:43
+2025-06-10 13:14:59
 Everything up-to-date
 Everything up-to-date
-2025-06-10 13:11:44
-PS C:\code\wyoming>
-PS C:\code\wyoming> dotnet --info >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; cd "C:\code\wyoming\"; git status; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git remote show origin; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git pull --rebase --strategy-option=ours; Get-Date -Format"yyyy-MM-dd HH:mm:ss"; git push origin master; Get-Date -Format "yyyy-MM-dd HH:mm:ss";
+2025-06-10 13:15:01
+PS C:\code\wyoming> dotnet --info >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; cd "C:\code\wyoming\"; git status; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git remote show origin; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git pull --rebase --strategy-option=ours; Get-Date -Format"yyyy-MM-dd HH:mm:ss"; git push origin --all; Get-Date -Format "yyyy-MM-dd HH:mm:ss";
+On branch dotnet10preview4
+Your branch is ahead of 'origin/dotnet10preview4' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/dotnet10preview5/powershell.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2025-06-10 13:15:41
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branches:
+    dotnet10preview4 tracked
+    master           tracked
+  Local branches configured for 'git pull':
+    dotnet10preview4 merges with remote dotnet10preview4
+    master           merges with remote master
+  Local refs configured for 'git push':
+    dotnet10preview4 pushes to dotnet10preview4 (fast-forwardable)
+    master           pushes to master           (up to date)
+2025-06-10 13:15:41
+[dotnet10preview4 6632975] add all changes
+ 1 file changed, 64 insertions(+)
+2025-06-10 13:15:42
+Current branch dotnet10preview4 is up to date.
+2025-06-10 13:15:43
+Enumerating objects: 129, done.
+Counting objects: 100% (129/129), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (119/119), done.
+Writing objects: 100% (124/124), 836.30 KiB | 1.45 MiB/s, done.
+Total 124 (delta 59), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (59/59), completed with 3 local objects.
+remote:
+remote: GitHub found 7 vulnerabilities on onewyoming/onewyoming's default branch (2 critical, 5 moderate). To find out more, visit:
+remote:      https://github.com/onewyoming/onewyoming/security/dependabot
+remote:
+To github.com:onewyoming/onewyoming.git
+   7bcaf67..6632975  dotnet10preview4 -> dotnet10preview4
+Enumerating objects: 129, done.
+Counting objects: 100% (129/129), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (119/119), done.
+Writing objects: 100% (124/124), 836.30 KiB | 1.43 MiB/s, done.
+Total 124 (delta 59), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (59/59), completed with 3 local objects.
+remote:
+remote: To create a merge request for dotnet10preview4, visit:
+remote:   https://gitlab.com/wyoming/wyoming.gitlab.io/-/merge_requests/new?merge_request%5Bsource_branch%5D=dotnet10preview4
+remote:
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   7bcaf67..6632975  dotnet10preview4 -> dotnet10preview4
+2025-06-10 13:15:48
+PS C:\code\wyoming> dotnet --info >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; cd "C:\code\wyoming\"; git status; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git remote show origin; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git pull --rebase --strategy-option=ours; Get-Date -Format"yyyy-MM-dd HH:mm:ss"; git push origin --all; Get-Date -Format "yyyy-MM-dd HH:mm:ss";
