@@ -2,20 +2,16 @@ PowerShell 7.6.0-preview.4
 PS C:\Users\kushal>
 PS C:\Users\kushal> dotnet --info >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; cd "C:\code\wyoming\"; git status; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git remote show origin; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git pull --rebase --strategy-option=ours; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git push origin --all; Get-Date -Format "yyyy-MM-dd HH:mm:ss";
 On branch dotnet10preview4
-Your branch is ahead of 'origin/dotnet10preview4' by 4 commits.
-  (use "git push" to publish your local commits)
+Your branch is up to date with 'origin/dotnet10preview4'.
 
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
+        modified:   PowerShell.txt
         modified:   src/dotnet10preview5/powershell.txt
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        src/dotnet10preview4/BlazorPreview5/
-
 no changes added to commit (use "git add" and/or "git commit -a")
-2025-06-10 14:46:11
+2025-06-10 14:46:49
 * remote origin
   Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
   Push  URL: git@github.com:onewyoming/onewyoming.git
@@ -28,9 +24,182 @@ no changes added to commit (use "git add" and/or "git commit -a")
     dotnet10preview4 merges with remote dotnet10preview4
     master           merges with remote master
   Local refs configured for 'git push':
-    dotnet10preview4 pushes to dotnet10preview4 (fast-forwardable)
+    dotnet10preview4 pushes to dotnet10preview4 (up to date)
     master           pushes to master           (up to date)
-2025-06-10 14:46:12
+2025-06-10 14:46:50
+[dotnet10preview4 666e54b] add all changes
+ 2 files changed, 176 insertions(+), 59 deletions(-)
+2025-06-10 14:46:51
+Current branch dotnet10preview4 is up to date.
+2025-06-10 14:46:52
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 2.13 KiB | 545.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+remote:
+remote: GitHub found 7 vulnerabilities on onewyoming/onewyoming's default branch (2 critical, 5 moderate). To find out more, visit:
+remote:      https://github.com/onewyoming/onewyoming/security/dependabot
+remote:
+To github.com:onewyoming/onewyoming.git
+   0efdf1e..666e54b  dotnet10preview4 -> dotnet10preview4
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 2.13 KiB | 436.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: To create a merge request for dotnet10preview4, visit:
+remote:   https://gitlab.com/wyoming/wyoming.gitlab.io/-/merge_requests/new?merge_request%5Bsource_branch%5D=dotnet10preview4
+remote:
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   0efdf1e..666e54b  dotnet10preview4 -> dotnet10preview4
+2025-06-10 14:46:54
+PS C:\code\wyoming>
+PS C:\code\wyoming> dotnet --info >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; cd "C:\code\wyoming\"; git status; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git remote show origin; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git pull --rebase --strategy-option=ours; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git push origin --all; Get-Date -Format "yyyy-MM-dd HH:mm:ss";
+On branch dotnet10preview4
+Your branch is up to date with 'origin/dotnet10preview4'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/dotnet10preview5/powershell.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2025-06-10 14:47:08
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branches:
+    dotnet10preview4 tracked
+    master           tracked
+  Local branches configured for 'git pull':
+    dotnet10preview4 merges with remote dotnet10preview4
+    master           merges with remote master
+  Local refs configured for 'git push':
+    dotnet10preview4 pushes to dotnet10preview4 (up to date)
+    master           pushes to master           (up to date)
+2025-06-10 14:47:09
+[dotnet10preview4 c72d0ee] add all changes
+ 1 file changed, 64 insertions(+)
+2025-06-10 14:47:09
+Current branch dotnet10preview4 is up to date.
+2025-06-10 14:47:11
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 463 bytes | 154.00 KiB/s, done.
+Total 5 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+remote:
+remote: GitHub found 7 vulnerabilities on onewyoming/onewyoming's default branch (2 critical, 5 moderate). To find out more, visit:
+remote:      https://github.com/onewyoming/onewyoming/security/dependabot
+remote:
+To github.com:onewyoming/onewyoming.git
+   666e54b..c72d0ee  dotnet10preview4 -> dotnet10preview4
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 463 bytes | 115.00 KiB/s, done.
+Total 5 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: To create a merge request for dotnet10preview4, visit:
+remote:   https://gitlab.com/wyoming/wyoming.gitlab.io/-/merge_requests/new?merge_request%5Bsource_branch%5D=dotnet10preview4
+remote:
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   666e54b..c72d0ee  dotnet10preview4 -> dotnet10preview4
+2025-06-10 14:47:13
+PS C:\code\wyoming>
+PS C:\code\wyoming> dotnet --info >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; cd "C:\code\wyoming\"; git status; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git remote show origin; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git pull --rebase --strategy-option=ours; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git push origin --all; Get-Date -Format "yyyy-MM-dd HH:mm:ss";
+On branch dotnet10preview4
+Your branch is up to date with 'origin/dotnet10preview4'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/Components/App.razor
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/Components/Pages/Home.razor
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap.css
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.js
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js
+        modified:   src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map
+        modified:   src/dotnet10preview5/powershell.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/dotnet10preview4/BlazorPreview5/BlazorApp1/libman.json
+        src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/animate.css/
+        src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/LICENSE
+        src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/README.md
+        src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/
+        src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/package.json
+        src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/
+        src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/jquery/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2025-06-10 14:52:44
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branches:
+    dotnet10preview4 tracked
+    master           tracked
+  Local branches configured for 'git pull':
+    dotnet10preview4 merges with remote dotnet10preview4
+    master           merges with remote master
+  Local refs configured for 'git push':
+    dotnet10preview4 pushes to dotnet10preview4 (up to date)
+    master           pushes to master           (up to date)
+2025-06-10 14:52:44
 warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css', LF will be replaced by CRLF the next time Git touches it
 warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css', LF will be replaced by CRLF the next time Git touches it
 warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css', LF will be replaced by CRLF the next time Git touches it
@@ -53,99 +222,374 @@ warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/
 warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js', LF will be replaced by CRLF the next time Git touches it
 warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.js', LF will be replaced by CRLF the next time Git touches it
 warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js', LF will be replaced by CRLF the next time Git touches it
-[dotnet10preview4 0efdf1e] add all changes
- 64 files changed, 60233 insertions(+)
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/BlazorApp1.csproj
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/Components/App.razor
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/Components/Layout/MainLayout.razor
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/Components/Layout/MainLayout.razor.css
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/Components/Layout/NavMenu.razor
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/Components/Layout/NavMenu.razor.css
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/Components/Pages/Counter.razor
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/Components/Pages/Error.razor
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/Components/Pages/Home.razor
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/Components/Pages/Weather.razor
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/Components/Routes.razor
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/Components/_Imports.razor
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/Program.cs
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/Properties/launchSettings.json
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/appsettings.Development.json
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/appsettings.json
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/app.css
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/favicon.png
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap.css
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.js
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map
- create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorPreview5.sln
-2025-06-10 14:46:15
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/animate.css/animate.compat.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/animate.css/animate.compat.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/animate.css/animate.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/animate.css/animate.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/LICENSE', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/alert.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/base-component.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/button.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/carousel.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/collapse.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/dom/data.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/dom/event-handler.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/dom/manipulator.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/dom/selector-engine.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/dropdown.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/modal.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/offcanvas.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/popover.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/scrollspy.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/tab.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/toast.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/tooltip.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/backdrop.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/component-functions.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/focustrap.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/index.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/sanitizer.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/scrollbar.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/swipe.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/template-factory.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/index.esm.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/index.umd.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/alert.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/base-component.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/button.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/carousel.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/collapse.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/dom/data.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/dom/event-handler.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/dom/manipulator.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/dom/selector-engine.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/dropdown.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/modal.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/offcanvas.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/popover.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/scrollspy.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/tab.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/toast.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/tooltip.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/util/backdrop.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/util/component-functions.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/util/config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/util/focustrap.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/util/index.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/util/sanitizer.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/util/scrollbar.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/util/swipe.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/util/template-factory.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_accordion.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_alert.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_badge.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_breadcrumb.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_button-group.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_buttons.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_card.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_carousel.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_close.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_containers.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_dropdown.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_forms.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_functions.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_grid.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_helpers.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_images.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_list-group.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_maps.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_mixins.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_modal.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_nav.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_navbar.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_offcanvas.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_pagination.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_placeholders.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_popover.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_progress.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_reboot.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_root.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_spinners.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_tables.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_toasts.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_tooltip.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_transitions.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_type.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_utilities.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_variables-dark.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_variables.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/bootstrap-grid.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/bootstrap-reboot.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/bootstrap-utilities.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/bootstrap.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/forms/_floating-labels.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/forms/_form-check.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/forms/_form-control.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/forms/_form-range.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/forms/_form-select.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/forms/_form-text.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/forms/_input-group.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/forms/_labels.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/forms/_validation.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_clearfix.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_color-bg.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_colored-links.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_focus-ring.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_icon-link.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_position.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_ratio.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_stacks.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_stretched-link.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_text-truncation.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_visually-hidden.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_vr.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_alert.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_backdrop.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_banner.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_border-radius.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_box-shadow.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_breakpoints.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_buttons.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_caret.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_clearfix.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_color-mode.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_color-scheme.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_container.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_deprecate.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_forms.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_gradients.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_grid.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_image.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_list-group.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_lists.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_pagination.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_reset-text.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_resize.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_table-variants.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_text-truncate.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_transition.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_utilities.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_visually-hidden.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/utilities/_api.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/vendor/_rfs.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/jquery/jquery.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/jquery/jquery.min.js', LF will be replaced by CRLF the next time Git touches it
+[dotnet10preview4 88e0d9a] add all changes
+ 230 files changed, 36515 insertions(+), 380 deletions(-)
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/libman.json
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/animate.css/animate.compat.css
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/animate.css/animate.compat.min.css
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/animate.css/animate.css
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/animate.css/animate.min.css
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/LICENSE
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/README.md
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/alert.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/alert.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/base-component.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/base-component.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/button.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/button.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/carousel.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/carousel.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/collapse.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/collapse.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/dom/data.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/dom/data.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/dom/event-handler.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/dom/event-handler.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/dom/manipulator.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/dom/manipulator.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/dom/selector-engine.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/dom/selector-engine.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/dropdown.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/dropdown.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/modal.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/modal.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/offcanvas.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/offcanvas.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/popover.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/popover.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/scrollspy.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/scrollspy.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/tab.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/tab.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/toast.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/toast.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/tooltip.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/tooltip.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/backdrop.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/backdrop.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/component-functions.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/component-functions.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/config.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/config.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/focustrap.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/focustrap.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/index.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/index.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/sanitizer.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/sanitizer.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/scrollbar.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/scrollbar.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/swipe.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/swipe.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/template-factory.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/dist/util/template-factory.js.map
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/index.esm.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/index.umd.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/alert.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/base-component.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/button.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/carousel.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/collapse.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/dom/data.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/dom/event-handler.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/dom/manipulator.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/dom/selector-engine.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/dropdown.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/modal.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/offcanvas.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/popover.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/scrollspy.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/tab.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/toast.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/tooltip.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/util/backdrop.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/util/component-functions.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/util/config.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/util/focustrap.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/util/index.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/util/sanitizer.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/util/scrollbar.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/util/swipe.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/js/src/util/template-factory.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/package.json
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_accordion.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_alert.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_badge.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_breadcrumb.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_button-group.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_buttons.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_card.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_carousel.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_close.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_containers.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_dropdown.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_forms.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_functions.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_grid.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_helpers.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_images.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_list-group.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_maps.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_mixins.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_modal.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_nav.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_navbar.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_offcanvas.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_pagination.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_placeholders.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_popover.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_progress.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_reboot.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_root.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_spinners.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_tables.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_toasts.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_tooltip.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_transitions.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_type.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_utilities.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_variables-dark.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/_variables.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/bootstrap-grid.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/bootstrap-reboot.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/bootstrap-utilities.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/bootstrap.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/forms/_floating-labels.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/forms/_form-check.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/forms/_form-control.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/forms/_form-range.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/forms/_form-select.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/forms/_form-text.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/forms/_input-group.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/forms/_labels.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/forms/_validation.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_clearfix.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_color-bg.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_colored-links.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_focus-ring.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_icon-link.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_position.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_ratio.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_stacks.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_stretched-link.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_text-truncation.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_visually-hidden.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/helpers/_vr.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_alert.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_backdrop.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_banner.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_border-radius.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_box-shadow.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_breakpoints.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_buttons.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_caret.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_clearfix.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_color-mode.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_color-scheme.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_container.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_deprecate.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_forms.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_gradients.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_grid.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_image.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_list-group.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_lists.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_pagination.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_reset-text.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_resize.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_table-variants.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_text-truncate.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_transition.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_utilities.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/mixins/_visually-hidden.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/utilities/_api.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/bootstrap/scss/vendor/_rfs.scss
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/jquery/jquery.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/jquery/jquery.min.js
+ create mode 100644 src/dotnet10preview4/BlazorPreview5/BlazorApp1/wwwroot/lib/jquery/jquery.min.map
+2025-06-10 14:52:53
 Current branch dotnet10preview4 is up to date.
-2025-06-10 14:46:16
-Enumerating objects: 362, done.
-Counting objects: 100% (362/362), done.
+2025-06-10 14:52:54
+Enumerating objects: 317, done.
+Counting objects: 100% (317/317), done.
 Delta compression using up to 10 threads
-Compressing objects: 100% (316/316), done.
-Writing objects: 100% (322/322), 1.05 MiB | 1.32 MiB/s, done.
-Total 322 (delta 120), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (120/120), completed with 32 local objects.
+Compressing objects: 100% (257/257), done.
+Writing objects: 100% (260/260), 675.82 KiB | 1.14 MiB/s, done.
+Total 260 (delta 90), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (90/90), completed with 45 local objects.
 remote:
 remote: GitHub found 7 vulnerabilities on onewyoming/onewyoming's default branch (2 critical, 5 moderate). To find out more, visit:
 remote:      https://github.com/onewyoming/onewyoming/security/dependabot
 remote:
 To github.com:onewyoming/onewyoming.git
-   e890c05..0efdf1e  dotnet10preview4 -> dotnet10preview4
-Enumerating objects: 362, done.
-Counting objects: 100% (362/362), done.
+   c72d0ee..88e0d9a  dotnet10preview4 -> dotnet10preview4
+Enumerating objects: 317, done.
+Counting objects: 100% (317/317), done.
 Delta compression using up to 10 threads
-Compressing objects: 100% (316/316), done.
-Writing objects: 100% (322/322), 1.05 MiB | 1.23 MiB/s, done.
-Total 322 (delta 120), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (120/120), completed with 32 local objects.
+Compressing objects: 100% (257/257), done.
+Writing objects: 100% (260/260), 675.82 KiB | 1.25 MiB/s, done.
+Total 260 (delta 90), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (90/90), completed with 45 local objects.
 remote:
 remote: To create a merge request for dotnet10preview4, visit:
 remote:   https://gitlab.com/wyoming/wyoming.gitlab.io/-/merge_requests/new?merge_request%5Bsource_branch%5D=dotnet10preview4
 remote:
 To gitlab.com:wyoming/wyoming.gitlab.io.git
-   e890c05..0efdf1e  dotnet10preview4 -> dotnet10preview4
-2025-06-10 14:46:25
-PS C:\code\wyoming> dotnet --info >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; cd "C:\code\wyoming\"; git status; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git remote show origin; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git pull --rebase --strategy-option=ours; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git push origin --all; Get-Date -Format "yyyy-MM-dd HH:mm:ss";
+   c72d0ee..88e0d9a  dotnet10preview4 -> dotnet10preview4
+2025-06-10 14:52:59
+PS C:\code\wyoming>
