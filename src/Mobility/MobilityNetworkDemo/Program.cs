@@ -129,15 +129,21 @@ public class Program
         var host = Host.CreateDefaultBuilder(args)
             .ConfigureServices((context, services) =>
             {
-                // Bind the "FleetSettings" section from appsettings.json to our VehicleConfig class
-                // and register it in the DI container.
+                // Bind the FleetSettings section
                 services.Configure<List<VehicleConfig>>(context.Configuration.GetSection("FleetSettings"));
+
+                // *** NEW: Bind the SimulationSettings section ***
+                services.Configure<SimulationSettings>(context.Configuration.GetSection("SimulationSettings"));
 
                 services.AddSingleton<MobilityNetwork>();
             })
             .Build();
 
         var logger = host.Services.GetRequiredService<ILogger<Program>>();
+
+        // *** NEW: Get the simulation settings from the service provider ***
+        var simSettings = host.Services.GetRequiredService<IOptions<SimulationSettings>>().Value;
+
         logger.LogInformation("Starting Fictional Manhattan Mobility Simulation...");
 
         var network = host.Services.GetRequiredService<MobilityNetwork>();
@@ -157,10 +163,16 @@ public class Program
             }
         });
 
-        logger.LogWarning("Simulation will run for 15 seconds. Press any key to stop early.");
-        var cancellationTask = Task.Run(() => Console.ReadKey(true));
-        await Task.WhenAny(cancellationTask, Task.Delay(TimeSpan.FromSeconds(15)));
+        // --- Use the new settings for duration and logging ---
+        int duration = simSettings.DurationInSeconds;
+        logger.LogWarning("Simulation will run for {Duration} seconds. Press any key to stop early.", duration);
 
+        var cancellationTask = Task.Run(() => Console.ReadKey(true));
+
+        // *** MODIFIED: Use the variable from our settings ***
+        await Task.WhenAny(cancellationTask, Task.Delay(TimeSpan.FromSeconds(duration)));
+
+        // --- Graceful Shutdown ---
         logger.LogInformation("Shutting down simulation...");
         cts.Cancel();
 
@@ -185,3 +197,7 @@ public class VehicleConfig
     public int Capacity { get; set; }
 }
 
+public class SimulationSettings
+{
+    public int DurationInSeconds { get; set; } = 30; // Default value of 30 seconds
+}
