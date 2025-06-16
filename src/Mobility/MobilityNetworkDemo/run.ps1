@@ -1,3 +1,5 @@
+# cd "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\"; pwd > "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt"; dotnet run Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt"; dotnet --info >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; cd "C:\code\wyoming\"; git status; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git remote show origin; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git pull --rebase --strategy-option=ours; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git push origin --all; Get-Date -Format "yyyy-MM-dd HH:mm:ss";
+
 # Define the target directory and file
 $targetDir = "C:\code\wyoming\src\Mobility\MobilityNetworkDemo"
 $outputFile = Join-Path $targetDir "powershell.txt"
@@ -18,7 +20,11 @@ Push-Location $targetDir # Change to the directory for pwd to be relevant
 
 # Add timestamps
 Get-Date -Format "yyyy-MM-dd HH:mm:ss" | Add-Content -Path $outputFile
+dotnet clean | Add-Content -Path $outputFile
 Get-Date -Format "yyyy-MM-dd HH:mm:ss" | Add-Content -Path $outputFile
+dotnet build | Add-Content -Path $outputFile
+Get-Date -Format "yyyy-MM-dd HH:mm:ss" | Add-Content -Path $outputFile
+dotnet run | Add-Content -Path $outputFile
 Get-Date -Format "yyyy-MM-dd HH:mm:ss" | Add-Content -Path $outputFile
 
 # Execute dotnet commands and redirect output
