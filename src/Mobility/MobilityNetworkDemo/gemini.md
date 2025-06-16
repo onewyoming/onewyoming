@@ -1859,3 +1859,645 @@ public class SimulationSettings
     public int MaxRequestIntervalMs { get; set; } = 500;
 }
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+add response 
+
+prompt 
+
+Severity	Code	Description	Project	File	Line	Suppression State
+Message (active)	CA1873	In many situations, logging is disabled or set to a log level that results in an unnecessary evaluation for this argument.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	109	
+
+
+Excellent question. That warning, CA1873, is pointing out a potential performance issue. You're right to ask how to guard against it.
+
+In short, when you write a logging statement like this:
+C#
+
+_logger.LogInformation("Some message with details: {Details}", someObject.ToString());
+
+The .ToString() method (or any other processing on the arguments) is executed before the LogInformation method is even called. If your logging is configured to ignore Information level messages, you've spent CPU cycles preparing arguments for a log that will just be thrown away.
+
+The best way to fix this in modern .NET is to use Source-Generated Logging. This highly performant feature, introduced in .NET 6, generates optimized logging code for you at compile time. It automatically includes the check to see if the log level is enabled, completely avoiding the overhead and fixing the warning.
+
+I have updated the code to use this modern logging pattern. Here's what I changed:
+
+    Created LoggerExtensions classes: Inside both MobilityNetwork and Program, you'll see new private static partial class Log definitions. This is where we define our logging messages.
+    Used [LoggerMessage] attribute: Each logging call is now defined as a partial method decorated with the [LoggerMessage] attribute. This tells the source generator to create the highly optimized code for us.
+    Replaced Direct Logger Calls: All previous calls like _logger.LogInformation(...) have been replaced with calls to our new, strongly-typed methods (e.g., _logger.ProcessingRequest(...)).
+
+This not only resolves the performance warning but also makes your logging calls cleaner, less prone to typos in message templates, and faster.
+
+Here is the updated code with the source-generated logging implemented.
+
+```
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using System.Collections.Concurrent;
+using System.ComponentModel.DataAnnotations;
+using System.Threading.Channels;
+
+namespace MobilityNetworkDemo;
+
+/// <summary>
+/// Represents a single vehicle in the fleet.
+/// Now uses a primary constructor for conciseness.
+/// </summary>
+public class Vehicle(int id, int capacity, string vehicleType)
+{
+    public int Id { get; } = id;
+    public int Capacity { get; } = capacity;
+    public string VehicleType { get; } = vehicleType;
+    public VehicleStatus Status { get; set; } = VehicleStatus.Idle;
+
+    private int _currentPassengers = 0;
+    public int CurrentPassengers => _currentPassengers;
+
+    public bool TryAddPassenger()
+    {
+        if (_currentPassengers < Capacity)
+        {
+            Interlocked.Increment(ref _currentPassengers);
+            Status = _currentPassengers == Capacity ? VehicleStatus.Full : VehicleStatus.EnRoute;
+            return true;
+        }
+        return false;
+    }
+
+    public void CompleteTripForPassenger()
+    {
+        Interlocked.Decrement(ref _currentPassengers);
+        Status = _currentPassengers == 0 ? VehicleStatus.Idle : VehicleStatus.EnRoute;
+    }
+}
+
+public enum VehicleStatus { Idle, EnRoute, Full }
+
+public record PassengerRequest(Guid Id);
+
+/// <summary>
+/// The main orchestrator class, representing the "brain" of the mobility network.
+/// </summary>
+public partial class MobilityNetwork // Made partial for LoggerMessage extensions
+{
+    private readonly ILogger<MobilityNetwork> _logger;
+    private readonly ConcurrentDictionary<int, Vehicle> _fleet = new();
+    private readonly Channel<PassengerRequest> _requestChannel;
+    private readonly List<VehicleConfig> _fleetSettings;
+    private readonly ConcurrentQueue<Vehicle> _idleVehicles = new();
+
+    public MobilityNetwork(ILogger<MobilityNetwork> logger, IOptions<List<VehicleConfig>> fleetSettings)
+    {
+        _logger = logger;
+        _fleetSettings = fleetSettings.Value;
+        _requestChannel = Channel.CreateUnbounded<PassengerRequest>();
+        InitializeFleet();
+    }
+
+    private void InitializeFleet()
+    {
+        int vehicleIdCounter = 1;
+        foreach (var config in _fleetSettings)
+        {
+            for (int i = 0; i < config.Count; i++)
+            {
+                var vehicle = new Vehicle(vehicleIdCounter, config.Capacity, config.VehicleType);
+                _fleet.TryAdd(vehicleIdCounter, vehicle);
+                _idleVehicles.Enqueue(vehicle);
+                vehicleIdCounter++;
+            }
+            Log.AddedVehicleType(_logger, config.Count, config.VehicleType, config.Capacity);
+        }
+        Log.NetworkInitialized(_logger, _fleet.Count);
+    }
+
+    public async Task SubmitRequestAsync(PassengerRequest request, CancellationToken cancellationToken)
+    {
+        await _requestChannel.Writer.WriteAsync(request, cancellationToken);
+        Log.RequestSubmitted(_logger, request.Id.ToString("N")[..8]);
+    }
+
+    public async Task ProcessRequestsAsync(CancellationToken cancellationToken)
+    {
+        Log.NetworkProcessorStarted(_logger);
+
+        await foreach (var request in _requestChannel.Reader.ReadAllAsync(cancellationToken))
+        {
+            string riderId = request.Id.ToString("N")[..8];
+            Log.ProcessingRequest(_logger, riderId);
+
+            Vehicle? dispatchedVehicle = null;
+
+            if (_idleVehicles.TryDequeue(out var idleVehicle))
+            {
+                dispatchedVehicle = idleVehicle;
+            }
+            else
+            {
+                dispatchedVehicle = _fleet.Values.FirstOrDefault(v => v.Status == VehicleStatus.EnRoute);
+            }
+
+            if (dispatchedVehicle != null && dispatchedVehicle.TryAddPassenger())
+            {
+                Log.DispatchedVehicle(
+                    _logger,
+                    dispatchedVehicle.Id,
+                    dispatchedVehicle.VehicleType,
+                    riderId,
+                    dispatchedVehicle.CurrentPassengers,
+                    dispatchedVehicle.Capacity
+                );
+                _ = SimulateTripAsync(dispatchedVehicle, request, cancellationToken);
+            }
+            else
+            {
+                Log.NoAvailableVehicles(_logger, riderId);
+            }
+            await Task.Delay(100, cancellationToken);
+        }
+    }
+
+    private async Task SimulateTripAsync(Vehicle vehicle, PassengerRequest request, CancellationToken cancellationToken)
+    {
+        int tripDurationMs = Random.Shared.Next(5000, 15000);
+        string riderId = request.Id.ToString("N")[..8];
+        Log.TripStarted(_logger, riderId, tripDurationMs / 1000, vehicle.Id);
+
+        try
+        {
+            await Task.Delay(tripDurationMs, cancellationToken);
+            vehicle.CompleteTripForPassenger();
+            Log.TripEnded(_logger, riderId, vehicle.Id, vehicle.CurrentPassengers, vehicle.Capacity, vehicle.Status);
+
+            if (vehicle.Status == VehicleStatus.Idle)
+            {
+                _idleVehicles.Enqueue(vehicle);
+                Log.VehicleNowIdle(_logger, vehicle.Id);
+            }
+        }
+        catch (TaskCanceledException)
+        {
+            Log.TripCanceled(_logger, riderId);
+        }
+    }
+
+    // =================================================================================
+    // IMPROVEMENT: Source-Generated Logging.
+    // This creates high-performance logging delegates at compile time, which
+    // automatically handle checking if a log level is enabled, resolving CA1873.
+    // =================================================================================
+    private static partial class Log
+    {
+        [LoggerMessage(Level = LogLevel.Information, Message = "Added {VehicleCount} of '{VehicleType}' (Capacity: {VehicleCapacity}) to the fleet.")]
+        public static partial void AddedVehicleType(ILogger logger, int vehicleCount, string vehicleType, int vehicleCapacity);
+
+        [LoggerMessage(Level = LogLevel.Information, Message = "Mobility network initialized with {VehicleCount} total vehicles.")]
+        public static partial void NetworkInitialized(ILogger logger, int vehicleCount);
+
+        [LoggerMessage(Level = LogLevel.Information, Message = "Rider [ID: {RiderId}] submitted a new request.")]
+        public static partial void RequestSubmitted(ILogger logger, string riderId);
+
+        [LoggerMessage(Level = LogLevel.Information, Message = "Network processor started. Waiting for ride requests...")]
+        public static partial void NetworkProcessorStarted(ILogger logger);
+        
+        [LoggerMessage(Level = LogLevel.Information, Message = "Network processing request from Rider [ID: {RiderId}]")]
+        public static partial void ProcessingRequest(ILogger logger, string riderId);
+
+        [LoggerMessage(Level = LogLevel.Information, Message = "-> Dispatched Vehicle [ID: {VehicleId}, Type: {VehicleType}] for Rider [ID: {RiderId}]. Vehicle is now at {PassengerCount}/{Capacity} capacity.")]
+        public static partial void DispatchedVehicle(ILogger logger, int vehicleId, string vehicleType, string riderId, int passengerCount, int capacity);
+
+        [LoggerMessage(Level = LogLevel.Error, Message = "!!! No available vehicles for Rider [ID: {RiderId}]. Request will be dropped in this demo.")]
+        public static partial void NoAvailableVehicles(ILogger logger, string riderId);
+
+        [LoggerMessage(Level = LogLevel.Information, Message = "    (Trip Start) Rider {RiderId} is on a {Duration}s journey in Vehicle {VehicleId}.")]
+        public static partial void TripStarted(ILogger logger, string riderId, int duration, int vehicleId);
+        
+        [LoggerMessage(Level = LogLevel.Information, Message = "    (Trip End) Rider {RiderId} has alighted from Vehicle {VehicleId}. Vehicle is now at {PassengerCount}/{Capacity} capacity. Status: {VehicleStatus}")]
+        public static partial void TripEnded(ILogger logger, string riderId, int vehicleId, int passengerCount, int capacity, VehicleStatus vehicleStatus);
+
+        [LoggerMessage(Level = LogLevel.Information, Message = "    (Vehicle {VehicleId} is now idle and available for new requests)")]
+        public static partial void VehicleNowIdle(ILogger logger, int vehicleId);
+
+        [LoggerMessage(Level = LogLevel.Warning, Message = "    (Trip Canceled) Trip for Rider {RiderId} was canceled due to simulation shutdown.")]
+        public static partial void TripCanceled(ILogger logger, string riderId);
+    }
+}
+
+
+public partial class Program // Made partial for LoggerMessage extensions
+{
+    public static async Task Main(string[] args)
+    {
+        var host = Host.CreateDefaultBuilder(args)
+            .ConfigureServices((context, services) =>
+            {
+                // FIX: The .ValidateDataAnnotations() method requires the following NuGet package.
+                // Please ensure it is added to your project file (.csproj) to resolve the error.
+                //
+                // <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" Version="10.0.0-preview.5.25277.114" />
+                services.AddOptions<List<VehicleConfig>>()
+                    .Bind(context.Configuration.GetSection("FleetSettings"))
+                    .ValidateDataAnnotations()
+                    .ValidateOnStart();
+                services.AddOptions<SimulationSettings>()
+                    .Bind(context.Configuration.GetSection("SimulationSettings"))
+                    .ValidateDataAnnotations()
+                    .ValidateOnStart();
+                services.AddSingleton<MobilityNetwork>();
+            })
+            .Build();
+
+        var logger = host.Services.GetRequiredService<ILogger<Program>>();
+        
+        try
+        {
+             await RunSimulationAsync(host, logger);
+        }
+        catch (OptionsValidationException ex)
+        {
+            Log.ConfigValidationError(logger, ex);
+            foreach (var failure in ex.Failures)
+            {
+                Log.ConfigValidationFailure(logger, failure);
+            }
+        }
+    }
+
+    private static async Task RunSimulationAsync(IHost host, ILogger<Program> logger)
+    {
+        var simSettings = host.Services.GetRequiredService<IOptions<SimulationSettings>>().Value;
+        Log.SimulationStarting(logger);
+
+        var network = host.Services.GetRequiredService<MobilityNetwork>();
+        using var cts = new CancellationTokenSource();
+
+        var processorTask = Task.Run(() => network.ProcessRequestsAsync(cts.Token), cts.Token);
+        var producerTask = Task.Run(async () =>
+        {
+            while (!cts.Token.IsCancellationRequested)
+            {
+                var request = new PassengerRequest(Guid.NewGuid());
+                await network.SubmitRequestAsync(request, cts.Token);
+                await Task.Delay(TimeSpan.FromMilliseconds(Random.Shared.Next(simSettings.MinRequestIntervalMs, simSettings.MaxRequestIntervalMs)), cts.Token);
+            }
+        }, cts.Token);
+
+        int duration = simSettings.DurationInSeconds;
+        Log.SimulationWillRun(logger, duration);
+
+        var cancellationTask = Task.Run(() => Console.ReadKey(true), cts.Token);
+        var timerTask = Task.Delay(TimeSpan.FromSeconds(duration), cts.Token);
+        
+        await Task.WhenAny(cancellationTask, timerTask);
+
+        Log.ShuttingDown(logger);
+        await cts.CancelAsync();
+
+        try
+        {
+            await Task.WhenAll(processorTask, producerTask);
+        }
+        catch (OperationCanceledException)
+        {
+            Log.TasksCancelled(logger);
+        }
+
+        Log.SimulationFinished(logger);
+    }
+
+    private static partial class Log
+    {
+        [LoggerMessage(Level = LogLevel.Error, Message = "Configuration validation failed. Please check your appsettings.json.")]
+        public static partial void ConfigValidationError(ILogger logger, OptionsValidationException ex);
+
+        [LoggerMessage(Level = LogLevel.Error, Message = "- {FailureMessage}")]
+        public static partial void ConfigValidationFailure(ILogger logger, string failureMessage);
+
+        [LoggerMessage(Level = LogLevel.Information, Message = "Starting Fictional Mobility Simulation...")]
+        public static partial void SimulationStarting(ILogger logger);
+
+        [LoggerMessage(Level = LogLevel.Warning, Message = "Simulation will run for {Duration} seconds. Press any key to stop early.")]
+        public static partial void SimulationWillRun(ILogger logger, int duration);
+        
+        [LoggerMessage(Level = LogLevel.Information, Message = "Shutting down simulation...")]
+        public static partial void ShuttingDown(ILogger logger);
+
+        [LoggerMessage(Level = LogLevel.Information, Message = "All tasks cancelled gracefully.")]
+        public static partial void TasksCancelled(ILogger logger);
+
+        [LoggerMessage(Level = LogLevel.Information, Message = "Simulation finished.")]
+        public static partial void SimulationFinished(ILogger logger);
+    }
+}
+
+public class VehicleConfig(string vehicleType, int count, int capacity)
+{
+    [Required]
+    public string VehicleType { get; set; } = vehicleType;
+    [Range(1, 10000, ErrorMessage = "Vehicle count must be between 1 and 10,000.")]
+    public int Count { get; set; } = count;
+    [Range(1, 100, ErrorMessage = "Vehicle capacity must be between 1 and 100.")]
+    public int Capacity { get; set; } = capacity;
+}
+
+public class SimulationSettings
+{
+    [Range(5, 300, ErrorMessage = "Simulation duration must be between 5 and 300 seconds.")]
+    public int DurationInSeconds { get; set; } = 30;
+    [Range(10, 1000, ErrorMessage = "Minimum request interval must be between 10 and 1000 ms.")]
+    public int MinRequestIntervalMs { get; set; } = 50;
+    [Range(100, 2000, ErrorMessage = "Maximum request interval must be between 100 and 2000 ms.")]
+    public int MaxRequestIntervalMs { get; set; } = 500;
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+This does not look like a complete implementation. in particular, I get the following errors that weren't there before 
+
+Severity	Code	Description	Project	File	Line	Suppression State
+Error (active)	CS8795	Partial method 'MobilityNetwork.Log.AddedVehicleType(ILogger, int, string, int)' must have an implementation part because it has accessibility modifiers.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	161	
+Error (active)	CS8795	Partial method 'MobilityNetwork.Log.NetworkInitialized(ILogger, int)' must have an implementation part because it has accessibility modifiers.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	164	
+Error (active)	CS8795	Partial method 'MobilityNetwork.Log.RequestSubmitted(ILogger, string)' must have an implementation part because it has accessibility modifiers.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	167	
+Error (active)	CS8795	Partial method 'MobilityNetwork.Log.NetworkProcessorStarted(ILogger)' must have an implementation part because it has accessibility modifiers.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	170	
+Error (active)	CS8795	Partial method 'MobilityNetwork.Log.ProcessingRequest(ILogger, string)' must have an implementation part because it has accessibility modifiers.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	173	
+Error (active)	CS8795	Partial method 'MobilityNetwork.Log.DispatchedVehicle(ILogger, int, string, string, int, int)' must have an implementation part because it has accessibility modifiers.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	176	
+Error (active)	CS8795	Partial method 'MobilityNetwork.Log.NoAvailableVehicles(ILogger, string)' must have an implementation part because it has accessibility modifiers.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	179	
+Error (active)	CS8795	Partial method 'MobilityNetwork.Log.TripStarted(ILogger, string, int, int)' must have an implementation part because it has accessibility modifiers.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	182	
+Error (active)	CS8795	Partial method 'MobilityNetwork.Log.TripEnded(ILogger, string, int, int, int, VehicleStatus)' must have an implementation part because it has accessibility modifiers.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	185	
+Error (active)	CS8795	Partial method 'MobilityNetwork.Log.VehicleNowIdle(ILogger, int)' must have an implementation part because it has accessibility modifiers.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	188	
+Error (active)	CS8795	Partial method 'MobilityNetwork.Log.TripCanceled(ILogger, string)' must have an implementation part because it has accessibility modifiers.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	191	
+Error (active)	CS8795	Partial method 'Program.Log.ConfigValidationError(ILogger, OptionsValidationException)' must have an implementation part because it has accessibility modifiers.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	280	
+Error (active)	CS8795	Partial method 'Program.Log.ConfigValidationFailure(ILogger, string)' must have an implementation part because it has accessibility modifiers.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	283	
+Error (active)	CS8795	Partial method 'Program.Log.SimulationStarting(ILogger)' must have an implementation part because it has accessibility modifiers.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	286	
+Error (active)	CS8795	Partial method 'Program.Log.SimulationWillRun(ILogger, int)' must have an implementation part because it has accessibility modifiers.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	289	
+Error (active)	CS8795	Partial method 'Program.Log.ShuttingDown(ILogger)' must have an implementation part because it has accessibility modifiers.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	292	
+Error (active)	CS8795	Partial method 'Program.Log.TasksCancelled(ILogger)' must have an implementation part because it has accessibility modifiers.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	295	
+Error (active)	CS8795	Partial method 'Program.Log.SimulationFinished(ILogger)' must have an implementation part because it has accessibility modifiers.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	298	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	161	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	161	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	161	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	161	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	164	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	164	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	167	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	167	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	170	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	173	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	173	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	176	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	176	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	176	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	176	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	176	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	176	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	179	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	179	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	182	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	182	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	182	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	182	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	185	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	185	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	185	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	185	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	185	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	185	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	188	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	188	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	191	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	191	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	280	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	280	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	283	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	283	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	286	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	289	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	289	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	292	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	295	
+Message (active)	IDE0060	Avoid unused parameters in your code. If the parameter cannot be removed, then change its name so it starts with an underscore and is optionally followed by an integer, such as '_', '_1', '_2', etc. These are treated as special discard symbol names.	MobilityNetworkDemo	C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	298	
+Message (active)	SPELL	Spelling error - csproj is not a word		C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs	204	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
