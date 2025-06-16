@@ -222,12 +222,6 @@ public class Program
         var host = Host.CreateDefaultBuilder(args)
             .ConfigureServices((context, services) =>
             {
-                // =================================================================================
-                // FIX: The .ValidateDataAnnotations() method requires the following NuGet package.
-                // Please ensure it is added to your project file (.csproj) to resolve the error.
-                //
-                // <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" Version="10.0.0-preview.5.25277.114" />
-                // =================================================================================
                 services.AddOptions<List<VehicleConfig>>()
                     .Bind(context.Configuration.GetSection("FleetSettings"))
                     .ValidateDataAnnotations()
