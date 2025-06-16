@@ -1,0 +1,110 @@
+
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo
+2025-06-16 06:16:46
+Build started 6/16/2025 6:16:46 AM.
+     1>Project "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj" on node 1 (Clean target(s)).
+     1>_CheckForNETCoreSdkIsPreview:
+       C:\Program Files\dotnet\sdk\10.0.100-preview.5.25277.114\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(326,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
+       CoreClean:
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\appsettings.json".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\MobilityNetworkDemo.exe".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\MobilityNetworkDemo.deps.json".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\MobilityNetworkDemo.runtimeconfig.json".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\MobilityNetworkDemo.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\MobilityNetworkDemo.pdb".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.Configuration.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Abstractions.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Binder.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.Configuration.CommandLine.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.Configuration.FileExtensions.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Json.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.Configuration.UserSecrets.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.Diagnostics.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.Diagnostics.Abstractions.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.FileProviders.Abstractions.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.FileProviders.Physical.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.FileSystemGlobbing.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.Hosting.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.Hosting.Abstractions.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.Logging.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.Logging.Abstractions.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.Logging.Configuration.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.Logging.Console.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.Logging.Debug.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.Logging.EventLog.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.Logging.EventSource.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.Options.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\Microsoft.Extensions.Primitives.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\System.Diagnostics.EventLog.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\runtimes\win\lib\net10.0\System.Diagnostics.EventLog.Messages.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net10.0\runtimes\win\lib\net10.0\System.Diagnostics.EventLog.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\obj\Debug\net10.0\MobilityNetworkDemo.csproj.AssemblyReference.cache".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\obj\Debug\net10.0\MobilityNetworkDemo.GeneratedMSBuildEditorConfig.editorconfig".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\obj\Debug\net10.0\MobilityNetworkDemo.AssemblyInfoInputs.cache".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\obj\Debug\net10.0\MobilityNetworkDemo.AssemblyInfo.cs".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\obj\Debug\net10.0\MobilityNetworkDemo.csproj.CoreCompileInputs.cache".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\obj\Debug\net10.0\MobilityNetworkDemo.sourcelink.json".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\obj\Debug\net10.0\Mobility.C93856D0.Up2Date".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\obj\Debug\net10.0\MobilityNetworkDemo.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\obj\Debug\net10.0\refint\MobilityNetworkDemo.dll".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\obj\Debug\net10.0\MobilityNetworkDemo.pdb".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\obj\Debug\net10.0\MobilityNetworkDemo.genruntimeconfig.cache".
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\obj\Debug\net10.0\ref\MobilityNetworkDemo.dll".
+     1>Done Building Project "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj" (Clean target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.30
+2025-06-16 06:16:48
+  Determining projects to restore...
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.DependencyInjection (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting.Abstractions (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Logging (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Logging 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Logging 10.0.0-preview.5.25277.114 was resolved instead.
+  All projects are up-to-date for restore.
+C:\Program Files\dotnet\sdk\10.0.100-preview.5.25277.114\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(326,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.DependencyInjection (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting.Abstractions (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Logging (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Logging 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Logging 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(67,14): error CS0260: Missing partial modifier on declaration of type 'MobilityNetwork'; another partial declaration of this type exists [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(132,12): error CS0111: Type 'MobilityNetwork' already defines a member called 'MobilityNetwork' with the same parameter types [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
+
+Build FAILED.
+
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.DependencyInjection (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting.Abstractions (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Logging (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Logging 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Logging 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.DependencyInjection (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting.Abstractions (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Logging (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Logging 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Logging 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(67,14): error CS0260: Missing partial modifier on declaration of type 'MobilityNetwork'; another partial declaration of this type exists [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(132,12): error CS0111: Type 'MobilityNetwork' already defines a member called 'MobilityNetwork' with the same parameter types [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
+    8 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:03.77
+2025-06-16 06:16:52
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.DependencyInjection (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting.Abstractions (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Logging (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Logging 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Logging 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.DependencyInjection (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting.Abstractions (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Logging (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Logging 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Logging 10.0.0-preview.5.25277.114 was resolved instead.
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(67,14): error CS0260: Missing partial modifier on declaration of type 'MobilityNetwork'; another partial declaration of this type exists [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(132,12): error CS0111: Type 'MobilityNetwork' already defines a member called 'MobilityNetwork' with the same parameter types [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
+
+The build failed. Fix the build errors and run again.
+2025-06-16 06:16:56
+2025-06-16 06:16:57
+2025-06-16 06:16:57
