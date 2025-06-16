@@ -1,7 +1,7 @@
 
 C:\code\wyoming\src\Mobility\MobilityNetworkDemo
-2025-06-16 06:19:53
-Build started 6/16/2025 6:19:54 AM.
+2025-06-16 06:22:02
+Build started 6/16/2025 6:22:03 AM.
      1>Project "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj" on node 1 (Clean target(s)).
      1>_CheckForNETCoreSdkIsPreview:
        C:\Program Files\dotnet\sdk\10.0.100-preview.5.25277.114\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(326,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
@@ -18,27 +18,27 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.26
-2025-06-16 06:19:55
+Time Elapsed 00:00:01.24
+2025-06-16 06:22:04
   Determining projects to restore...
-  Restored C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj (in 938 ms).
+  All projects are up-to-date for restore.
 C:\Program Files\dotnet\sdk\10.0.100-preview.5.25277.114\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(326,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(129,5): error CS1519: Invalid token '{' in a member declaration [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(131,5): error CS1519: Invalid token '}' in a member declaration [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(129,5): error CS1520: Method must have a return type [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(129,5): error CS0501: 'MobilityNetwork.MobilityNetwork()' must declare a body because it is not marked abstract, extern, or partial [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
 
 Build FAILED.
 
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(129,5): error CS1519: Invalid token '{' in a member declaration [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(131,5): error CS1519: Invalid token '}' in a member declaration [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(129,5): error CS1520: Method must have a return type [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(129,5): error CS0501: 'MobilityNetwork.MobilityNetwork()' must declare a body because it is not marked abstract, extern, or partial [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
     0 Warning(s)
     2 Error(s)
 
-Time Elapsed 00:00:04.02
-2025-06-16 06:20:00
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(129,5): error CS1519: Invalid token '{' in a member declaration [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(131,5): error CS1519: Invalid token '}' in a member declaration [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
+Time Elapsed 00:00:03.72
+2025-06-16 06:22:09
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(129,5): error CS1520: Method must have a return type [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(129,5): error CS0501: 'MobilityNetwork.MobilityNetwork()' must declare a body because it is not marked abstract, extern, or partial [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
 
 The build failed. Fix the build errors and run again.
-2025-06-16 06:20:04
-2025-06-16 06:20:05
-2025-06-16 06:20:05
+2025-06-16 06:22:13
+2025-06-16 06:22:14
+2025-06-16 06:22:14
