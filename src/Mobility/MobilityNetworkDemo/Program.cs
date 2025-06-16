@@ -124,17 +124,13 @@ public partial class MobilityNetwork(ILogger<MobilityNetwork> logger, IOptions<L
         internal static partial void VehicleAddPassengerFailed(ILogger logger, int vehicleId);
     }
 
-    // InitializeFleet is called directly from the primary constructor context.
-    // The static constructor was a misplacement and is removed.
-    // The previous explicit constructors are also removed to avoid CS0111.
-    public MobilityNetwork // This is the implicit constructor created by the primary constructor
+    // The body of the primary constructor goes directly after the parameter list.
+    // InitializeFleet is called here.
     {
-        get // Constructor body starts here
-        {
-            InitializeFleet();
-        }
+        InitializeFleet();
     }
 
+    // Removed the previous explicit and static constructors to avoid CS0111 and CS1519.
 
     private void InitializeFleet()
     {

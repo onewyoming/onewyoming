@@ -1,7 +1,7 @@
 
 C:\code\wyoming\src\Mobility\MobilityNetworkDemo
-2025-06-16 06:18:17
-Build started 6/16/2025 6:18:17 AM.
+2025-06-16 06:19:53
+Build started 6/16/2025 6:19:54 AM.
      1>Project "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj" on node 1 (Clean target(s)).
      1>_CheckForNETCoreSdkIsPreview:
        C:\Program Files\dotnet\sdk\10.0.100-preview.5.25277.114\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(326,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
@@ -18,72 +18,27 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.21
-2025-06-16 06:18:18
+Time Elapsed 00:00:01.26
+2025-06-16 06:19:55
   Determining projects to restore...
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.DependencyInjection (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting.Abstractions (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Logging (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Logging 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Logging 10.0.0-preview.5.25277.114 was resolved instead.
-  All projects are up-to-date for restore.
+  Restored C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj (in 938 ms).
 C:\Program Files\dotnet\sdk\10.0.100-preview.5.25277.114\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(326,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.DependencyInjection (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting.Abstractions (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Logging (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Logging 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Logging 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(131,5): error CS1519: Invalid token '{' in a member declaration [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(133,9): error CS1519: Invalid token '{' in a member declaration [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(136,5): error CS1022: Type or namespace definition, or end-of-file expected [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(139,5): error CS8803: Top-level statements must precede namespace and type declarations. [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(139,5): error CS0106: The modifier 'private' is not valid for this item [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(159,5): error CS0106: The modifier 'public' is not valid for this item [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(166,5): error CS0106: The modifier 'public' is not valid for this item [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(231,5): error CS0106: The modifier 'private' is not valid for this item [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(274,1): error CS1022: Type or namespace definition, or end-of-file expected [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(129,5): error CS1519: Invalid token '{' in a member declaration [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(131,5): error CS1519: Invalid token '}' in a member declaration [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
 
 Build FAILED.
 
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.DependencyInjection (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting.Abstractions (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Logging (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Logging 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Logging 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.DependencyInjection (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting.Abstractions (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Logging (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Logging 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Logging 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(131,5): error CS1519: Invalid token '{' in a member declaration [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(133,9): error CS1519: Invalid token '{' in a member declaration [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(136,5): error CS1022: Type or namespace definition, or end-of-file expected [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(139,5): error CS8803: Top-level statements must precede namespace and type declarations. [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(139,5): error CS0106: The modifier 'private' is not valid for this item [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(159,5): error CS0106: The modifier 'public' is not valid for this item [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(166,5): error CS0106: The modifier 'public' is not valid for this item [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(231,5): error CS0106: The modifier 'private' is not valid for this item [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(274,1): error CS1022: Type or namespace definition, or end-of-file expected [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-    8 Warning(s)
-    9 Error(s)
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(129,5): error CS1519: Invalid token '{' in a member declaration [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(131,5): error CS1519: Invalid token '}' in a member declaration [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
+    0 Warning(s)
+    2 Error(s)
 
-Time Elapsed 00:00:03.32
-2025-06-16 06:18:22
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.DependencyInjection (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting.Abstractions (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Logging (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Logging 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Logging 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.DependencyInjection (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.DependencyInjection 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Hosting.Abstractions (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Hosting.Abstractions 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj : warning NU1603: MobilityNetworkDemo depends on Microsoft.Extensions.Logging (>= 10.0.0-preview.5.24278.2) but Microsoft.Extensions.Logging 10.0.0-preview.5.24278.2 was not found. Microsoft.Extensions.Logging 10.0.0-preview.5.25277.114 was resolved instead.
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(131,5): error CS1519: Invalid token '{' in a member declaration [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(133,9): error CS1519: Invalid token '{' in a member declaration [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(136,5): error CS1022: Type or namespace definition, or end-of-file expected [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(139,5): error CS8803: Top-level statements must precede namespace and type declarations. [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(139,5): error CS0106: The modifier 'private' is not valid for this item [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(159,5): error CS0106: The modifier 'public' is not valid for this item [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(166,5): error CS0106: The modifier 'public' is not valid for this item [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(231,5): error CS0106: The modifier 'private' is not valid for this item [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
-C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(274,1): error CS1022: Type or namespace definition, or end-of-file expected [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
+Time Elapsed 00:00:04.02
+2025-06-16 06:20:00
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(129,5): error CS1519: Invalid token '{' in a member declaration [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
+C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs(131,5): error CS1519: Invalid token '}' in a member declaration [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
 
 The build failed. Fix the build errors and run again.
-2025-06-16 06:18:26
-2025-06-16 06:18:27
-2025-06-16 06:18:27
+2025-06-16 06:20:04
+2025-06-16 06:20:05
+2025-06-16 06:20:05
