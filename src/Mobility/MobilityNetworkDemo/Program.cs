@@ -22,7 +22,6 @@ public class Vehicle
     private int _currentPassengers;
     public int CurrentPassengers => _currentPassengers;
 
-
     public Vehicle(int id, int capacity, string vehicleType)
     {
         Id = id;
@@ -30,6 +29,11 @@ public class Vehicle
         VehicleType = vehicleType;
         Status = VehicleStatus.Idle;
         _currentPassengers = 0;
+    }
+
+    public void SetStatus(VehicleStatus newStatus)
+    {
+        Status = newStatus;
     }
 
     // Tries to add a passenger. Returns false if full.
@@ -57,13 +61,14 @@ public class Vehicle
     }
 }
 // Represents a ride request from a passenger
-public record PassengerRequest(Guid Id);
+public record struct PassengerRequest(Guid Id);
 
 // The main orchestrator class, representing the "brain" of the mobility network.
 public class MobilityNetwork
 {
     private readonly ILogger<MobilityNetwork> _logger;
     private readonly ConcurrentDictionary<int, Vehicle> _fleet = new();
+    private readonly ConcurrentBag<Vehicle> _idleVehicles = new();
     private readonly Channel<PassengerRequest> _requestChannel;
     private readonly List<VehicleConfig> _fleetSettings;
 
@@ -85,6 +90,8 @@ public class MobilityNetwork
             {
                 var vehicle = new Vehicle(vehicleIdCounter, config.Capacity, config.VehicleType);
                 _fleet.TryAdd(vehicleIdCounter, vehicle);
+                _idleVehicles.Add(vehicle); // Add to the idle pool
+                vehicle.SetStatus(VehicleStatus.Idle); // Ensure initial status is Idle
                 vehicleIdCounter++;
             }
             _logger.LogInformation("Added {VehicleCount} of {VehicleType} (Capacity: {VehicleCapacity}) to the fleet.", config.Count, config.VehicleType, config.Capacity);
@@ -106,26 +113,33 @@ public class MobilityNetwork
         {
             _logger.LogWarning("Network processing request from Rider [ID: {RiderId}]", request.Id.ToString("N")[..8]);
 
-            Vehicle? dispatchedVehicle = null;
-
-            // Simple logic: Find the first available vehicle that is not full.
-            // Using a lock or semaphore here could be more robust, but for this simulation, FirstOrDefault is sufficient.
-            dispatchedVehicle = _fleet.Values.FirstOrDefault(v => v.Status != VehicleStatus.Full);
-
-            if (dispatchedVehicle != null && dispatchedVehicle.TryAddPassenger())
+            // MODIFIED: Directly try to get an idle vehicle from the bag
+            if (_idleVehicles.TryTake(out Vehicle? dispatchedVehicle))
             {
-                _logger.LogInformation(
-                    "-> Dispatched Vehicle [ID: {VehicleId}, Type: {VehicleType}] for Rider [ID: {RiderId}]. Vehicle is now at {PassengerCount}/{Capacity} capacity.",
-                    dispatchedVehicle.Id,
-                    dispatchedVehicle.VehicleType,
-                    request.Id.ToString("N")[..8],
-                    dispatchedVehicle.CurrentPassengers,
-                    dispatchedVehicle.Capacity
-                );
+                // Vehicle is now busy, update its status
+                dispatchedVehicle.SetStatus(VehicleStatus.EnRoute);
 
-                // ADDED: Fire and forget a task to simulate the trip and free the vehicle later.
-                // This is the key to fixing the resource leak.
-                _ = SimulateTripAsync(dispatchedVehicle, request, cancellationToken);
+                if (dispatchedVehicle.TryAddPassenger())
+                {
+                    _logger.LogInformation(
+                        "-> Dispatched Vehicle [ID: {VehicleId}, Type: {VehicleType}] for Rider [ID: {RiderId}]. Vehicle is now at {PassengerCount}/{Capacity} capacity.",
+                        dispatchedVehicle.Id,
+                        dispatchedVehicle.VehicleType,
+                        request.Id.ToString("N")[..8],
+                        dispatchedVehicle.CurrentPassengers,
+                        dispatchedVehicle.Capacity
+                    );
+
+                    _ = SimulateTripAsync(dispatchedVehicle, request, cancellationToken);
+                }
+                else
+                {
+                    // This case should ideally not happen if a vehicle is truly 'idle' (capacity > 0),
+                    // but as a safeguard, if it somehow can't take a passenger, return it to the idle pool.
+                    _logger.LogError("!!! Vehicle [ID: {VehicleId}] was taken but failed to add passenger. Returning to idle pool.", dispatchedVehicle.Id);
+                    dispatchedVehicle.SetStatus(VehicleStatus.Idle);
+                    _idleVehicles.Add(dispatchedVehicle);
+                }
             }
             else
             {
@@ -138,17 +152,22 @@ public class MobilityNetwork
     // ADDED: New method to simulate a passenger's trip.
     private async Task SimulateTripAsync(Vehicle vehicle, PassengerRequest request, CancellationToken cancellationToken)
     {
-        // Simulate travel time with a random delay.
-        int tripDurationMs = Random.Shared.Next(5000, 15000); // 5 to 15 seconds
-        _logger.LogInformation("   (Trip Start) Rider {RiderId} is on a {Duration}s journey in Vehicle {VehicleId}.",
-            request.Id.ToString("N")[..8], tripDurationMs / 1000, vehicle.Id);
+        // ... (existing simulation logic) ...
 
         try
         {
             await Task.Delay(tripDurationMs, cancellationToken);
 
-            // Passenger gets off the vehicle.
             vehicle.RemovePassenger();
+
+            // If the vehicle is now empty, it's truly idle and can be returned to the pool
+            if (vehicle.CurrentPassengers == 0)
+            {
+                vehicle.SetStatus(VehicleStatus.Idle);
+                _idleVehicles.Add(vehicle); // Return to idle pool
+            }
+            // If vehicle.CurrentPassengers > 0, it means it's still carrying passengers from other trips
+            // so it remains 'EnRoute' and is NOT added back to the idle pool until completely empty.
 
             _logger.LogInformation(
                 "   (Trip End) Rider {RiderId} has alighted from Vehicle {VehicleId}. Vehicle is now at {PassengerCount}/{Capacity} capacity. Status: {VehicleStatus}",
@@ -161,10 +180,70 @@ public class MobilityNetwork
         }
         catch (TaskCanceledException)
         {
-            // If the simulation shuts down mid-trip, handle it gracefully.
             _logger.LogWarning("   (Trip Canceled) Trip for Rider {RiderId} was canceled due to simulation shutdown.", request.Id.ToString("N")[..8]);
+            // If a trip is canceled, ensure the vehicle is returned to a valid state
+            // This might need more complex logic if passengers are stuck mid-trip.
+            // For simplicity in this demo, if cancelled, assume it returns to idle if empty, or stays en-route if not.
+            if (vehicle.CurrentPassengers == 0) {
+                vehicle.SetStatus(VehicleStatus.Idle);
+                _idleVehicles.Add(vehicle);
+            }
         }
     }
+    // Inside MobilityNetwork class, define a static nested class for log messages
+    private static partial class Log
+    {
+        // Define the logger message for vehicle addition
+        [LoggerMessage(EventId = 1, Level = LogLevel.Information,
+            Message = "Added {VehicleCount} of {VehicleType} (Capacity: {VehicleCapacity}) to the fleet.")]
+        public static partial void VehicleAdded(ILogger logger, int vehicleCount, string vehicleType, int vehicleCapacity);
+
+        // Define the logger message for fleet initialization
+        [LoggerMessage(EventId = 2, Level = LogLevel.Information,
+            Message = "Mobility network initialized with {VehicleCount} total vehicles.")]
+        public static partial void FleetInitialized(ILogger logger, int vehicleCount);
+
+        // Define the logger message for rider request submission
+        [LoggerMessage(EventId = 3, Level = LogLevel.Information,
+            Message = "Rider [ID: {RiderId}] submitted a new request.")]
+        public static partial void RiderRequestSubmitted(ILogger logger, string riderId);
+
+        // Define the logger message for network processing request
+        [LoggerMessage(EventId = 4, Level = LogLevel.Warning,
+            Message = "Network processing request from Rider [ID: {RiderId}]")]
+        public static partial void ProcessingRiderRequest(ILogger logger, string riderId);
+
+        // Define the logger message for vehicle dispatch
+        [LoggerMessage(EventId = 5, Level = LogLevel.Information,
+            Message = "-> Dispatched Vehicle [ID: {VehicleId}, Type: {VehicleType}] for Rider [ID: {RiderId}]. Vehicle is now at {PassengerCount}/{Capacity} capacity.")]
+        public static partial void VehicleDispatched(ILogger logger, int vehicleId, string vehicleType, string riderId, int passengerCount, int capacity);
+
+        // Define the logger message for no available vehicles
+        [LoggerMessage(EventId = 6, Level = LogLevel.Error,
+            Message = "!!! No available vehicles for Rider [ID: {RiderId}]. Request will be dropped in this demo.")]
+        public static partial void NoVehiclesAvailable(ILogger logger, string riderId);
+
+        // ... and so on for other log messages
+    }
+
+    // Then, replace your existing log calls with the generated methods:
+
+    // In InitializeFleet:
+    // _logger.LogInformation("Added {VehicleCount} of {VehicleType} (Capacity: {VehicleCapacity}) to the fleet.", config.Count, config.VehicleType, config.Capacity);
+    Log.VehicleAdded(_logger, config.Count, config.VehicleType, config.Capacity);
+
+    // _logger.LogInformation("Mobility network initialized with {VehicleCount} total vehicles.", _fleet.Count);
+    Log.FleetInitialized(_logger, _fleet.Count);
+
+    // In SubmitRequestAsync:
+    // _logger.LogInformation("Rider [ID: {RiderId}] submitted a new request.", request.Id.ToString("N")[..8]);
+    Log.RiderRequestSubmitted(_logger, request.Id.ToString("N")[..8]);
+
+    // In ProcessRequestsAsync:
+    // _logger.LogWarning("Network processing request from Rider [ID: {RiderId}]", request.Id.ToString("N")[..8]);
+    Log.ProcessingRiderRequest(_logger, request.Id.ToString("N")[..8]);
+
+    // ... and similarly for other log calls.
 }
 
 public class Program
