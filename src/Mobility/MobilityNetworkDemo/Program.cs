@@ -63,8 +63,8 @@ public class Vehicle(int id, int capacity, string vehicleType)
 public record struct PassengerRequest(Guid Id);
 
 // The main orchestrator class, representing the "brain" of the mobility network.
-// IMPROVEMENT: Using primary constructor (C# 12)
-public class MobilityNetwork(ILogger<MobilityNetwork> logger, IOptions<List<VehicleConfig>> fleetSettings)
+// IMPROVEMENT: Added 'partial' keyword and refined primary constructor usage (C# 12)
+public partial class MobilityNetwork(ILogger<MobilityNetwork> logger, IOptions<List<VehicleConfig>> fleetSettingsOptions)
 {
     private readonly ILogger<MobilityNetwork> _logger = logger;
     private readonly ConcurrentDictionary<int, Vehicle> _fleet = new();
@@ -72,7 +72,8 @@ public class MobilityNetwork(ILogger<MobilityNetwork> logger, IOptions<List<Vehi
     // IMPROVEMENT: ConcurrentBag to efficiently manage available (idle) vehicles (O(1) access)
     private readonly ConcurrentBag<Vehicle> _idleVehicles = new();
     private readonly Channel<PassengerRequest> _requestChannel = Channel.CreateUnbounded<PassengerRequest>();
-    private readonly List<VehicleConfig> _fleetSettings = fleetSettings.Value;
+    // Access Value directly from the primary constructor parameter
+    private readonly List<VehicleConfig> _fleetSettings = fleetSettingsOptions.Value;
 
     // IMPROVEMENT: Defined a static partial class for high-performance logging (LoggerMessage)
     // This eliminates boxing and reduces overhead for frequent log calls.
@@ -123,24 +124,15 @@ public class MobilityNetwork(ILogger<MobilityNetwork> logger, IOptions<List<Vehi
         internal static partial void VehicleAddPassengerFailed(ILogger logger, int vehicleId);
     }
 
-    static MobilityNetwork() // Static constructor to call InitializeFleet once
+    // InitializeFleet is called directly from the primary constructor context.
+    // The static constructor was a misplacement and is removed.
+    // The previous explicit constructors are also removed to avoid CS0111.
+    public MobilityNetwork // This is the implicit constructor created by the primary constructor
     {
-        // This is not the correct place for InitializeFleet as it depends on instance members.
-        // InitializeFleet will be called from the instance constructor.
-    }
-
-    public MobilityNetwork(ILogger<MobilityNetwork> logger, IOptions<List<VehicleConfig>> fleetSettings) : this(logger, fleetSettings.Value)
-    {
-        InitializeFleet();
-    }
-
-    // Private constructor for primary constructor pattern with direct list value
-    private MobilityNetwork(ILogger<MobilityNetwork> logger, List<VehicleConfig> fleetSettings)
-    {
-        _logger = logger;
-        _fleetSettings = fleetSettings;
-        _requestChannel = Channel.CreateUnbounded<PassengerRequest>();
-        InitializeFleet();
+        get // Constructor body starts here
+        {
+            InitializeFleet();
+        }
     }
 
 
