@@ -1,11 +1,12 @@
 
 C:\code\wyoming\src\Mobility\MobilityNetworkDemo
-2025-06-16 05:50:09
-Build started 6/16/2025 5:50:10 AM.
+2025-06-16 05:54:00
+Build started 6/16/2025 5:54:01 AM.
      1>Project "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj" on node 1 (Clean target(s)).
      1>_CheckForNETCoreSdkIsPreview:
        C:\Program Files\dotnet\sdk\10.0.100-preview.5.25277.114\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(326,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
        CoreClean:
+         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net9.0\appsettings.json".
          Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net9.0\MobilityNetworkDemo.exe".
          Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net9.0\MobilityNetworkDemo.deps.json".
          Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net9.0\MobilityNetworkDemo.runtimeconfig.json".
@@ -41,7 +42,6 @@ Build started 6/16/2025 5:50:10 AM.
          Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net9.0\System.Diagnostics.EventLog.dll".
          Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Diagnostics.EventLog.Messages.dll".
          Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Diagnostics.EventLog.dll".
-         Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\bin\Debug\net9.0\appsettings.json".
          Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\obj\Debug\net9.0\MobilityNetworkDemo.csproj.AssemblyReference.cache".
          Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\obj\Debug\net9.0\MobilityNetworkDemo.GeneratedMSBuildEditorConfig.editorconfig".
          Deleting file "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\obj\Debug\net9.0\MobilityNetworkDemo.AssemblyInfoInputs.cache".
@@ -60,8 +60,8 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.26
-2025-06-16 05:50:11
+Time Elapsed 00:00:01.30
+2025-06-16 05:54:02
   Determining projects to restore...
   All projects are up-to-date for restore.
 C:\Program Files\dotnet\sdk\10.0.100-preview.5.25277.114\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(326,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [C:\code\wyoming\src\Mobility\MobilityNetworkDemo\MobilityNetworkDemo.csproj]
@@ -71,8 +71,8 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:09.43
-2025-06-16 05:50:21
+Time Elapsed 00:00:04.11
+2025-06-16 05:54:07
 info: MobilityNetworkDemo.Program[0]
       Starting Fictional Manhattan Mobility Simulation...
 info: MobilityNetworkDemo.MobilityNetwork[0]
@@ -85,1128 +85,1116 @@ warn: MobilityNetworkDemo.Program[0]
       Simulation will run for 30 seconds. Press any key to stop early.
 info: MobilityNetworkDemo.MobilityNetwork[0]
       Network processor started. Waiting for ride requests...
-info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 4ee95887] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 4ee95887]
-info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 4ee95887]. Vehicle is now at 1/6 capacity.
+      Network processing request from Rider [ID: 1bdb84fb]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 4ee95887 is on a 8s journey in Vehicle 1.
-info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: b12915ce] submitted a new request.
-warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: b12915ce]
+      Rider [ID: 1bdb84fb] submitted a new request.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: b12915ce]. Vehicle is now at 2/6 capacity.
+      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 1bdb84fb]. Vehicle is now at 1/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider b12915ce is on a 6s journey in Vehicle 1.
+         (Trip Start) Rider 1bdb84fb is on a 12s journey in Vehicle 1.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 7acca770] submitted a new request.
+      Rider [ID: 0de683f7] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 7acca770]
+      Network processing request from Rider [ID: 0de683f7]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 7acca770]. Vehicle is now at 3/6 capacity.
+      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 0de683f7]. Vehicle is now at 2/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 7acca770 is on a 7s journey in Vehicle 1.
+         (Trip Start) Rider 0de683f7 is on a 6s journey in Vehicle 1.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 6e2be3e2] submitted a new request.
+      Rider [ID: a28f3a3f] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 6e2be3e2]
+      Network processing request from Rider [ID: a28f3a3f]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 6e2be3e2]. Vehicle is now at 4/6 capacity.
+      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: a28f3a3f]. Vehicle is now at 3/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 6e2be3e2 is on a 6s journey in Vehicle 1.
+         (Trip Start) Rider a28f3a3f is on a 12s journey in Vehicle 1.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 348bc690] submitted a new request.
+      Rider [ID: 723110a1] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 348bc690]
+      Network processing request from Rider [ID: 723110a1]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 348bc690]. Vehicle is now at 5/6 capacity.
+      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 723110a1]. Vehicle is now at 4/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 348bc690 is on a 8s journey in Vehicle 1.
+         (Trip Start) Rider 723110a1 is on a 8s journey in Vehicle 1.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 61662af2] submitted a new request.
+      Rider [ID: 73b7a848] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 61662af2]
+      Network processing request from Rider [ID: 73b7a848]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 61662af2]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 73b7a848]. Vehicle is now at 5/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 61662af2 is on a 7s journey in Vehicle 1.
+         (Trip Start) Rider 73b7a848 is on a 6s journey in Vehicle 1.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: a00dcb96] submitted a new request.
+      Rider [ID: 3935ce35] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: a00dcb96]
+      Network processing request from Rider [ID: 3935ce35]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: a00dcb96]. Vehicle is now at 1/6 capacity.
+      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 3935ce35]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider a00dcb96 is on a 8s journey in Vehicle 2.
+         (Trip Start) Rider 3935ce35 is on a 6s journey in Vehicle 1.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 0d2503e5] submitted a new request.
+      Rider [ID: 3fcb223a] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 0d2503e5]
+      Network processing request from Rider [ID: 3fcb223a]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 0d2503e5]. Vehicle is now at 2/6 capacity.
+      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 3fcb223a]. Vehicle is now at 1/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 0d2503e5 is on a 10s journey in Vehicle 2.
+         (Trip Start) Rider 3fcb223a is on a 5s journey in Vehicle 2.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 0b514e2f] submitted a new request.
+      Rider [ID: 4d9899ba] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 0b514e2f]
+      Network processing request from Rider [ID: 4d9899ba]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 0b514e2f]. Vehicle is now at 3/6 capacity.
+      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 4d9899ba]. Vehicle is now at 2/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 0b514e2f is on a 12s journey in Vehicle 2.
+         (Trip Start) Rider 4d9899ba is on a 5s journey in Vehicle 2.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 50f6da1a] submitted a new request.
+      Rider [ID: b43abea7] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 50f6da1a]
+      Network processing request from Rider [ID: b43abea7]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 50f6da1a]. Vehicle is now at 4/6 capacity.
+      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: b43abea7]. Vehicle is now at 3/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 50f6da1a is on a 6s journey in Vehicle 2.
+         (Trip Start) Rider b43abea7 is on a 13s journey in Vehicle 2.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 481fe368] submitted a new request.
+      Rider [ID: 52770604] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 481fe368]
+      Network processing request from Rider [ID: 52770604]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 481fe368]. Vehicle is now at 5/6 capacity.
+      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 52770604]. Vehicle is now at 4/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 481fe368 is on a 12s journey in Vehicle 2.
+         (Trip Start) Rider 52770604 is on a 13s journey in Vehicle 2.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 8173db27] submitted a new request.
+      Rider [ID: 37bd21d6] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 8173db27]
+      Network processing request from Rider [ID: 37bd21d6]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 8173db27]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 37bd21d6]. Vehicle is now at 5/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 8173db27 is on a 13s journey in Vehicle 2.
-info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 06535393] submitted a new request.
+         (Trip Start) Rider 37bd21d6 is on a 13s journey in Vehicle 2.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 06535393]
+      Network processing request from Rider [ID: 6b2a6ece]
+info: MobilityNetworkDemo.MobilityNetwork[0]
+      Rider [ID: 6b2a6ece] submitted a new request.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 06535393]. Vehicle is now at 1/6 capacity.
+      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 6b2a6ece]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 06535393 is on a 9s journey in Vehicle 3.
+         (Trip Start) Rider 6b2a6ece is on a 11s journey in Vehicle 2.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: baefeb3b] submitted a new request.
+      Rider [ID: 55b0bfa6] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: baefeb3b]
+      Network processing request from Rider [ID: 55b0bfa6]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: baefeb3b]. Vehicle is now at 2/6 capacity.
+      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 55b0bfa6]. Vehicle is now at 1/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider baefeb3b is on a 7s journey in Vehicle 3.
+         (Trip Start) Rider 55b0bfa6 is on a 9s journey in Vehicle 3.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 1e039cdb] submitted a new request.
+      Rider [ID: 34807e92] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 1e039cdb]
+      Network processing request from Rider [ID: 34807e92]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 1e039cdb]. Vehicle is now at 3/6 capacity.
+      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 34807e92]. Vehicle is now at 2/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 1e039cdb is on a 8s journey in Vehicle 3.
+         (Trip Start) Rider 34807e92 is on a 12s journey in Vehicle 3.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: bef2efaa] submitted a new request.
+      Rider [ID: 97d02ff8] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: bef2efaa]
+      Network processing request from Rider [ID: 97d02ff8]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: bef2efaa]. Vehicle is now at 4/6 capacity.
+      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 97d02ff8]. Vehicle is now at 3/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider bef2efaa is on a 11s journey in Vehicle 3.
+         (Trip Start) Rider 97d02ff8 is on a 11s journey in Vehicle 3.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 98a9733b] submitted a new request.
+      Rider [ID: 4fd1162c] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 98a9733b]
+      Network processing request from Rider [ID: 4fd1162c]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 98a9733b]. Vehicle is now at 5/6 capacity.
+      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 4fd1162c]. Vehicle is now at 4/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 98a9733b is on a 12s journey in Vehicle 3.
+         (Trip Start) Rider 4fd1162c is on a 7s journey in Vehicle 3.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: cb68ac64] submitted a new request.
+      Rider [ID: d7e355c1] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: cb68ac64]
+      Network processing request from Rider [ID: d7e355c1]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: cb68ac64]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: d7e355c1]. Vehicle is now at 5/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider cb68ac64 is on a 9s journey in Vehicle 3.
+         (Trip Start) Rider d7e355c1 is on a 14s journey in Vehicle 3.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 4c030fe9] submitted a new request.
+      Rider [ID: 10da6921] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 4c030fe9]
+      Network processing request from Rider [ID: 10da6921]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: 4c030fe9]. Vehicle is now at 1/6 capacity.
+      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 10da6921]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 4c030fe9 is on a 7s journey in Vehicle 4.
+         (Trip Start) Rider 10da6921 is on a 6s journey in Vehicle 3.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 6bb8b88b] submitted a new request.
+      Rider [ID: 02e51f4b] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 6bb8b88b]
+      Network processing request from Rider [ID: 02e51f4b]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: 6bb8b88b]. Vehicle is now at 2/6 capacity.
+      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: 02e51f4b]. Vehicle is now at 1/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 6bb8b88b is on a 8s journey in Vehicle 4.
+         (Trip Start) Rider 02e51f4b is on a 10s journey in Vehicle 4.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: d86fc789] submitted a new request.
+      Rider [ID: 4b61bd40] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: d86fc789]
+      Network processing request from Rider [ID: 4b61bd40]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: d86fc789]. Vehicle is now at 3/6 capacity.
+      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: 4b61bd40]. Vehicle is now at 2/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider d86fc789 is on a 12s journey in Vehicle 4.
+         (Trip Start) Rider 4b61bd40 is on a 11s journey in Vehicle 4.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 2306b1ca] submitted a new request.
+      Rider [ID: ad72ad17] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 2306b1ca]
+      Network processing request from Rider [ID: ad72ad17]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: 2306b1ca]. Vehicle is now at 4/6 capacity.
+      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: ad72ad17]. Vehicle is now at 3/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 2306b1ca is on a 12s journey in Vehicle 4.
+         (Trip Start) Rider ad72ad17 is on a 6s journey in Vehicle 4.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 12768b70] submitted a new request.
+      Rider [ID: 20e148ac] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 12768b70]
+      Network processing request from Rider [ID: 20e148ac]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: 12768b70]. Vehicle is now at 5/6 capacity.
+      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: 20e148ac]. Vehicle is now at 4/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 12768b70 is on a 5s journey in Vehicle 4.
+         (Trip Start) Rider 20e148ac is on a 10s journey in Vehicle 4.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: ec491a7f] submitted a new request.
+      Rider [ID: 6c10b6c5] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: ec491a7f]
+      Network processing request from Rider [ID: 6c10b6c5]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: ec491a7f]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: 6c10b6c5]. Vehicle is now at 5/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider ec491a7f is on a 7s journey in Vehicle 4.
+         (Trip Start) Rider 6c10b6c5 is on a 13s journey in Vehicle 4.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 4021822a] submitted a new request.
+      Rider [ID: 8202f1b3] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 4021822a]
+      Network processing request from Rider [ID: 8202f1b3]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: 4021822a]. Vehicle is now at 1/6 capacity.
+      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: 8202f1b3]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 4021822a is on a 8s journey in Vehicle 5.
+         (Trip Start) Rider 8202f1b3 is on a 5s journey in Vehicle 4.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: ea87be53] submitted a new request.
+      Rider [ID: e0d4ea7d] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: ea87be53]
+      Network processing request from Rider [ID: e0d4ea7d]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: ea87be53]. Vehicle is now at 2/6 capacity.
+      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: e0d4ea7d]. Vehicle is now at 1/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider ea87be53 is on a 13s journey in Vehicle 5.
+         (Trip Start) Rider e0d4ea7d is on a 6s journey in Vehicle 5.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: bb490dc4] submitted a new request.
+      Rider [ID: fd8460e9] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: bb490dc4]
+      Network processing request from Rider [ID: fd8460e9]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: bb490dc4]. Vehicle is now at 3/6 capacity.
+      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: fd8460e9]. Vehicle is now at 2/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider bb490dc4 is on a 12s journey in Vehicle 5.
+         (Trip Start) Rider fd8460e9 is on a 13s journey in Vehicle 5.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: d576c8dd] submitted a new request.
-warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: d576c8dd]
+         (Trip End) Rider 0de683f7 has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: d576c8dd]. Vehicle is now at 4/6 capacity.
+      Rider [ID: da06d3a3] submitted a new request.
+warn: MobilityNetworkDemo.MobilityNetwork[0]
+      Network processing request from Rider [ID: da06d3a3]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider d576c8dd is on a 10s journey in Vehicle 5.
+      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: da06d3a3]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider b12915ce has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip Start) Rider da06d3a3 is on a 6s journey in Vehicle 1.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 6e2be3e2 has alighted from Vehicle 1. Vehicle is now at 4/6 capacity. Status: EnRoute
+         (Trip End) Rider 3fcb223a has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: fc9f4f9c] submitted a new request.
+      Rider [ID: c7caf2f0] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: fc9f4f9c]
+      Network processing request from Rider [ID: c7caf2f0]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: fc9f4f9c]. Vehicle is now at 5/6 capacity.
+      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: c7caf2f0]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider fc9f4f9c is on a 7s journey in Vehicle 1.
+         (Trip Start) Rider c7caf2f0 is on a 5s journey in Vehicle 2.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 49dff681] submitted a new request.
+      Rider [ID: 07e27706] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 49dff681]
+      Network processing request from Rider [ID: 07e27706]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 49dff681]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: 07e27706]. Vehicle is now at 3/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 49dff681 is on a 11s journey in Vehicle 1.
+         (Trip Start) Rider 07e27706 is on a 9s journey in Vehicle 5.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 7acca770 has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
-info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 08683108] submitted a new request.
+      Rider [ID: 3db4cdc5] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 08683108]
+      Network processing request from Rider [ID: 3db4cdc5]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 08683108]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: 3db4cdc5]. Vehicle is now at 4/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 08683108 is on a 10s journey in Vehicle 1.
+         (Trip Start) Rider 3db4cdc5 is on a 5s journey in Vehicle 5.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: d23b9b80] submitted a new request.
+      Rider [ID: dc8baf47] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: d23b9b80]
+      Network processing request from Rider [ID: dc8baf47]
+info: MobilityNetworkDemo.MobilityNetwork[0]
+      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: dc8baf47]. Vehicle is now at 5/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: d23b9b80]. Vehicle is now at 5/6 capacity.
+         (Trip Start) Rider dc8baf47 is on a 7s journey in Vehicle 5.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider d23b9b80 is on a 7s journey in Vehicle 5.
+         (Trip End) Rider 4d9899ba has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 4ee95887 has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider 73b7a848 has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 148015bc] submitted a new request.
+      Rider [ID: 4ad6f1bb] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 148015bc]
+      Network processing request from Rider [ID: 4ad6f1bb]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 148015bc]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 4ad6f1bb]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 148015bc is on a 10s journey in Vehicle 1.
+         (Trip Start) Rider 4ad6f1bb is on a 11s journey in Vehicle 1.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 61662af2 has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider 3935ce35 has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 98328fae] submitted a new request.
+      Rider [ID: 2697874f] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 98328fae]
+      Network processing request from Rider [ID: 2697874f]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 98328fae]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 2697874f]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 98328fae is on a 9s journey in Vehicle 1.
+         (Trip Start) Rider 2697874f is on a 5s journey in Vehicle 1.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 348bc690 has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
-info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 53ed8724] submitted a new request.
+      Rider [ID: 70f8fbd5] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 53ed8724]
-info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 53ed8724]. Vehicle is now at 6/6 capacity.
+      Network processing request from Rider [ID: 70f8fbd5]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 53ed8724 is on a 10s journey in Vehicle 1.
+      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 70f8fbd5]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 50f6da1a has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip Start) Rider 70f8fbd5 is on a 11s journey in Vehicle 2.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 474a5dca] submitted a new request.
+         (Trip End) Rider 723110a1 has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 474a5dca]
+      Network processing request from Rider [ID: a20228aa]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 474a5dca]. Vehicle is now at 6/6 capacity.
+      Rider [ID: a20228aa] submitted a new request.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 474a5dca is on a 9s journey in Vehicle 2.
+      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: a20228aa]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: f6e3563c] submitted a new request.
+         (Trip Start) Rider a20228aa is on a 8s journey in Vehicle 1.
+info: MobilityNetworkDemo.MobilityNetwork[0]
+      Rider [ID: 53b964f5] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: f6e3563c]
+      Network processing request from Rider [ID: 53b964f5]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: f6e3563c]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: 53b964f5]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider f6e3563c is on a 9s journey in Vehicle 5.
+         (Trip Start) Rider 53b964f5 is on a 14s journey in Vehicle 5.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 34e65389] submitted a new request.
+      Rider [ID: 7c4ae3a5] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 34e65389]
+      Network processing request from Rider [ID: 7c4ae3a5]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 6, Type: Small Minivan] for Rider [ID: 34e65389]. Vehicle is now at 1/6 capacity.
+      -> Dispatched Vehicle [ID: 6, Type: Small Minivan] for Rider [ID: 7c4ae3a5]. Vehicle is now at 1/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 34e65389 is on a 8s journey in Vehicle 6.
+         (Trip Start) Rider 7c4ae3a5 is on a 14s journey in Vehicle 6.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: a3cb5c51] submitted a new request.
+      Rider [ID: 71325745] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: a3cb5c51]
+      Network processing request from Rider [ID: 71325745]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 6, Type: Small Minivan] for Rider [ID: a3cb5c51]. Vehicle is now at 2/6 capacity.
+      -> Dispatched Vehicle [ID: 6, Type: Small Minivan] for Rider [ID: 71325745]. Vehicle is now at 2/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider a3cb5c51 is on a 13s journey in Vehicle 6.
+         (Trip Start) Rider 71325745 is on a 5s journey in Vehicle 6.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: bed03a43] submitted a new request.
+      Rider [ID: 3f444771] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: bed03a43]
-info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 6, Type: Small Minivan] for Rider [ID: bed03a43]. Vehicle is now at 3/6 capacity.
+      Network processing request from Rider [ID: 3f444771]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider bed03a43 is on a 7s journey in Vehicle 6.
+      -> Dispatched Vehicle [ID: 6, Type: Small Minivan] for Rider [ID: 3f444771]. Vehicle is now at 3/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider a00dcb96 has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip Start) Rider 3f444771 is on a 7s journey in Vehicle 6.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 968bbf87] submitted a new request.
+      Rider [ID: c080db2a] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 968bbf87]
+      Network processing request from Rider [ID: c080db2a]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 968bbf87]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 6, Type: Small Minivan] for Rider [ID: c080db2a]. Vehicle is now at 4/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 968bbf87 is on a 5s journey in Vehicle 2.
+         (Trip Start) Rider c080db2a is on a 13s journey in Vehicle 6.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: c974429e] submitted a new request.
+      Rider [ID: 0d85c42d] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: c974429e]
+      Network processing request from Rider [ID: 0d85c42d]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 6, Type: Small Minivan] for Rider [ID: c974429e]. Vehicle is now at 4/6 capacity.
+      -> Dispatched Vehicle [ID: 6, Type: Small Minivan] for Rider [ID: 0d85c42d]. Vehicle is now at 5/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider c974429e is on a 7s journey in Vehicle 6.
+         (Trip Start) Rider 0d85c42d is on a 14s journey in Vehicle 6.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider baefeb3b has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider 10da6921 has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: cb6698ac] submitted a new request.
+      Rider [ID: 6c551b36] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: cb6698ac]
+      Network processing request from Rider [ID: 6c551b36]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: cb6698ac]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 6c551b36]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider cb6698ac is on a 13s journey in Vehicle 3.
+         (Trip Start) Rider 6c551b36 is on a 7s journey in Vehicle 3.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 12768b70 has alighted from Vehicle 4. Vehicle is now at 5/6 capacity. Status: EnRoute
-info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 473c0620] submitted a new request.
+      Rider [ID: c6cd7804] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 473c0620]
+      Network processing request from Rider [ID: c6cd7804]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: 473c0620]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 6, Type: Small Minivan] for Rider [ID: c6cd7804]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 473c0620 is on a 13s journey in Vehicle 4.
+         (Trip Start) Rider c6cd7804 is on a 6s journey in Vehicle 6.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: b0080f25] submitted a new request.
+      Rider [ID: 107d555d] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: b0080f25]
+      Network processing request from Rider [ID: 107d555d]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 6, Type: Small Minivan] for Rider [ID: b0080f25]. Vehicle is now at 5/6 capacity.
+      -> Dispatched Vehicle [ID: 7, Type: Small Minivan] for Rider [ID: 107d555d]. Vehicle is now at 1/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider b0080f25 is on a 5s journey in Vehicle 6.
+         (Trip Start) Rider 107d555d is on a 5s journey in Vehicle 7.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: f91b7b7c] submitted a new request.
+      Rider [ID: 1bfa2add] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: f91b7b7c]
+      Network processing request from Rider [ID: 1bfa2add]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 6, Type: Small Minivan] for Rider [ID: f91b7b7c]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 7, Type: Small Minivan] for Rider [ID: 1bfa2add]. Vehicle is now at 2/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider f91b7b7c is on a 9s journey in Vehicle 6.
+         (Trip Start) Rider 1bfa2add is on a 9s journey in Vehicle 7.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 6549fa4b] submitted a new request.
+      Rider [ID: e800155a] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 6549fa4b]
+      Network processing request from Rider [ID: e800155a]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 7, Type: Small Minivan] for Rider [ID: 6549fa4b]. Vehicle is now at 1/6 capacity.
+      -> Dispatched Vehicle [ID: 7, Type: Small Minivan] for Rider [ID: e800155a]. Vehicle is now at 3/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 6549fa4b is on a 12s journey in Vehicle 7.
+         (Trip Start) Rider e800155a is on a 10s journey in Vehicle 7.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 4c030fe9 has alighted from Vehicle 4. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider 4fd1162c has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 1e039cdb has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider ad72ad17 has alighted from Vehicle 4. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 2e64ea42] submitted a new request.
+      Rider [ID: 47219787] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 2e64ea42]
-info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 2e64ea42]. Vehicle is now at 6/6 capacity.
-info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 2e64ea42 is on a 11s journey in Vehicle 3.
+      Network processing request from Rider [ID: 47219787]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 0d2503e5 has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
+      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 47219787]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 3f9ee63d] submitted a new request.
-warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 3f9ee63d]
+         (Trip Start) Rider 47219787 is on a 8s journey in Vehicle 3.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 3f9ee63d]. Vehicle is now at 6/6 capacity.
+         (Trip End) Rider 1bdb84fb has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 3f9ee63d is on a 5s journey in Vehicle 2.
+         (Trip End) Rider 8202f1b3 has alighted from Vehicle 4. Vehicle is now at 4/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 6bb8b88b has alighted from Vehicle 4. Vehicle is now at 4/6 capacity. Status: EnRoute
+         (Trip End) Rider 55b0bfa6 has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: e54c8417] submitted a new request.
+      Rider [ID: 0f480129] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: e54c8417]
-info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: e54c8417]. Vehicle is now at 5/6 capacity.
+      Network processing request from Rider [ID: 0f480129]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider e54c8417 is on a 12s journey in Vehicle 4.
+      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 0f480129]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider ec491a7f has alighted from Vehicle 4. Vehicle is now at 4/6 capacity. Status: EnRoute
+         (Trip Start) Rider 0f480129 is on a 12s journey in Vehicle 1.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: b172ade3] submitted a new request.
+      Rider [ID: cb6c9f5f] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: b172ade3]
+      Network processing request from Rider [ID: cb6c9f5f]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: b172ade3]. Vehicle is now at 5/6 capacity.
+      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: cb6c9f5f]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider b172ade3 is on a 8s journey in Vehicle 4.
+         (Trip Start) Rider cb6c9f5f is on a 7s journey in Vehicle 3.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 06535393 has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
-info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: dbce8227] submitted a new request.
+      Rider [ID: c87f8395] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: dbce8227]
+      Network processing request from Rider [ID: c87f8395]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: dbce8227]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: c87f8395]. Vehicle is now at 5/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider dbce8227 is on a 5s journey in Vehicle 3.
+         (Trip Start) Rider c87f8395 is on a 14s journey in Vehicle 4.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: d3f0d51b] submitted a new request.
+      Rider [ID: aa18e4eb] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: d3f0d51b]
+      Network processing request from Rider [ID: aa18e4eb]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: d3f0d51b]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: aa18e4eb]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider d3f0d51b is on a 8s journey in Vehicle 4.
+         (Trip Start) Rider aa18e4eb is on a 7s journey in Vehicle 4.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 885844d1] submitted a new request.
-warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 885844d1]
+         (Trip End) Rider c7caf2f0 has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 7, Type: Small Minivan] for Rider [ID: 885844d1]. Vehicle is now at 2/6 capacity.
+         (Trip End) Rider e0d4ea7d has alighted from Vehicle 5. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 885844d1 is on a 13s journey in Vehicle 7.
+      Rider [ID: 66cc2ff6] submitted a new request.
+warn: MobilityNetworkDemo.MobilityNetwork[0]
+      Network processing request from Rider [ID: 66cc2ff6]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider cb68ac64 has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
+      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 66cc2ff6]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 9eeb5bdb] submitted a new request.
-warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 9eeb5bdb]
+         (Trip Start) Rider 66cc2ff6 is on a 8s journey in Vehicle 2.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 9eeb5bdb]. Vehicle is now at 6/6 capacity.
+         (Trip End) Rider 3db4cdc5 has alighted from Vehicle 5. Vehicle is now at 4/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 9eeb5bdb is on a 7s journey in Vehicle 3.
+         (Trip End) Rider a28f3a3f has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 3fdd3e60] submitted a new request.
+      Rider [ID: 1336e4d0] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 3fdd3e60]
+      Network processing request from Rider [ID: 1336e4d0]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 7, Type: Small Minivan] for Rider [ID: 3fdd3e60]. Vehicle is now at 3/6 capacity.
+      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 1336e4d0]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 3fdd3e60 is on a 12s journey in Vehicle 7.
+         (Trip Start) Rider 1336e4d0 is on a 8s journey in Vehicle 1.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider fc9f4f9c has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider da06d3a3 has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 4021822a has alighted from Vehicle 5. Vehicle is now at 5/6 capacity. Status: EnRoute
-info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 73a8c89f] submitted a new request.
+      Rider [ID: 797e8df0] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 73a8c89f]
+      Network processing request from Rider [ID: 797e8df0]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 73a8c89f]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 797e8df0]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 73a8c89f is on a 11s journey in Vehicle 1.
+         (Trip Start) Rider 797e8df0 is on a 10s journey in Vehicle 1.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 0b514e2f has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
-info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: a0e7fd3c] submitted a new request.
+      Rider [ID: abc4e2b1] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: a0e7fd3c]
+      Network processing request from Rider [ID: abc4e2b1]
+info: MobilityNetworkDemo.MobilityNetwork[0]
+      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: abc4e2b1]. Vehicle is now at 5/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: a0e7fd3c]. Vehicle is now at 6/6 capacity.
+         (Trip Start) Rider abc4e2b1 is on a 11s journey in Vehicle 5.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider a0e7fd3c is on a 10s journey in Vehicle 2.
+         (Trip End) Rider 2697874f has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 481fe368 has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
+      Rider [ID: 21926238] submitted a new request.
+warn: MobilityNetworkDemo.MobilityNetwork[0]
+      Network processing request from Rider [ID: 21926238]
+info: MobilityNetworkDemo.MobilityNetwork[0]
+      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 21926238]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider d23b9b80 has alighted from Vehicle 5. Vehicle is now at 4/6 capacity. Status: EnRoute
+         (Trip Start) Rider 21926238 is on a 9s journey in Vehicle 1.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 76fc29d8] submitted a new request.
+      Rider [ID: 15801478] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 76fc29d8]
+      Network processing request from Rider [ID: 15801478]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 76fc29d8]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: 15801478]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 76fc29d8 is on a 7s journey in Vehicle 2.
+         (Trip Start) Rider 15801478 is on a 8s journey in Vehicle 5.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider bef2efaa has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider 6b2a6ece has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 6d011851] submitted a new request.
+      Rider [ID: 29c3f530] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 6d011851]
+      Network processing request from Rider [ID: 29c3f530]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 6d011851]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 29c3f530]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 6d011851 is on a 12s journey in Vehicle 3.
+         (Trip Start) Rider 29c3f530 is on a 10s journey in Vehicle 2.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: cee7ed3b] submitted a new request.
+      Rider [ID: 82299084] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: cee7ed3b]
+      Network processing request from Rider [ID: 82299084]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: cee7ed3b]. Vehicle is now at 5/6 capacity.
+      -> Dispatched Vehicle [ID: 7, Type: Small Minivan] for Rider [ID: 82299084]. Vehicle is now at 4/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider cee7ed3b is on a 5s journey in Vehicle 5.
+         (Trip Start) Rider 82299084 is on a 9s journey in Vehicle 7.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 8173db27 has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider 02e51f4b has alighted from Vehicle 4. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: f0ccb487] submitted a new request.
+      Rider [ID: 2ec2e919] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: f0ccb487]
-info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: f0ccb487]. Vehicle is now at 6/6 capacity.
-info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider f0ccb487 is on a 14s journey in Vehicle 2.
+      Network processing request from Rider [ID: 2ec2e919]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 968bbf87 has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
+      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: 2ec2e919]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider d576c8dd has alighted from Vehicle 5. Vehicle is now at 4/6 capacity. Status: EnRoute
+         (Trip Start) Rider 2ec2e919 is on a 5s journey in Vehicle 4.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: d342cfac] submitted a new request.
+      Rider [ID: a6c520b4] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: d342cfac]
+      Network processing request from Rider [ID: a6c520b4]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: d342cfac]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 7, Type: Small Minivan] for Rider [ID: a6c520b4]. Vehicle is now at 5/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider d342cfac is on a 12s journey in Vehicle 2.
+         (Trip Start) Rider a6c520b4 is on a 12s journey in Vehicle 7.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider d86fc789 has alighted from Vehicle 4. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider 97d02ff8 has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 98a9733b has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider dc8baf47 has alighted from Vehicle 5. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider bed03a43 has alighted from Vehicle 6. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider 71325745 has alighted from Vehicle 6. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: a4dd52fc] submitted a new request.
+      Rider [ID: ad9e86a7] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: a4dd52fc]
+      Network processing request from Rider [ID: ad9e86a7]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: a4dd52fc]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: ad9e86a7]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider a4dd52fc is on a 5s journey in Vehicle 3.
+         (Trip Start) Rider ad9e86a7 is on a 6s journey in Vehicle 3.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: b98974a1] submitted a new request.
-warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: b98974a1]
-info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: b98974a1]. Vehicle is now at 6/6 capacity.
+         (Trip End) Rider 52770604 has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider b98974a1 is on a 9s journey in Vehicle 4.
+         (Trip End) Rider 34807e92 has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: c93bba09] submitted a new request.
+      Rider [ID: 167c2f8b] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: c93bba09]
+      Network processing request from Rider [ID: 167c2f8b]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: c93bba09]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 167c2f8b]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 2306b1ca has alighted from Vehicle 4. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip Start) Rider 167c2f8b is on a 13s journey in Vehicle 2.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider c93bba09 is on a 9s journey in Vehicle 4.
+      Rider [ID: 4f24e13a] submitted a new request.
+warn: MobilityNetworkDemo.MobilityNetwork[0]
+      Network processing request from Rider [ID: 4f24e13a]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 98328fae has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
+      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 4f24e13a]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider b0080f25 has alighted from Vehicle 6. Vehicle is now at 4/6 capacity. Status: EnRoute
+         (Trip Start) Rider 4f24e13a is on a 7s journey in Vehicle 3.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 3a89bd7c] submitted a new request.
+         (Trip End) Rider b43abea7 has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
+info: MobilityNetworkDemo.MobilityNetwork[0]
+      Rider [ID: 3da04f56] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 3a89bd7c]
+      Network processing request from Rider [ID: 3da04f56]
+info: MobilityNetworkDemo.MobilityNetwork[0]
+      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 3da04f56]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 3a89bd7c]. Vehicle is now at 6/6 capacity.
+         (Trip Start) Rider 3da04f56 is on a 9s journey in Vehicle 2.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 3a89bd7c is on a 5s journey in Vehicle 1.
+         (Trip End) Rider 4b61bd40 has alighted from Vehicle 4. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 7e41deb1] submitted a new request.
+      Rider [ID: f60a9abb] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 7e41deb1]
+      Network processing request from Rider [ID: f60a9abb]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: 7e41deb1]. Vehicle is now at 5/6 capacity.
+      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: f60a9abb]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 7e41deb1 is on a 9s journey in Vehicle 5.
+         (Trip Start) Rider f60a9abb is on a 8s journey in Vehicle 4.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 3f9ee63d has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider 107d555d has alighted from Vehicle 7. Vehicle is now at 4/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 08683108 has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider 20e148ac has alighted from Vehicle 4. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 61a0a508] submitted a new request.
+      Rider [ID: 73bd6a33] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 61a0a508]
+      Network processing request from Rider [ID: 73bd6a33]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 61a0a508]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: 73bd6a33]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 61a0a508 is on a 12s journey in Vehicle 1.
+         (Trip Start) Rider 73bd6a33 is on a 8s journey in Vehicle 4.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 569f90eb] submitted a new request.
-warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 569f90eb]
+         (Trip End) Rider 37bd21d6 has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 569f90eb]. Vehicle is now at 6/6 capacity.
+         (Trip End) Rider 3f444771 has alighted from Vehicle 6. Vehicle is now at 4/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 569f90eb is on a 7s journey in Vehicle 2.
+         (Trip End) Rider 07e27706 has alighted from Vehicle 5. Vehicle is now at 4/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider bb490dc4 has alighted from Vehicle 5. Vehicle is now at 4/6 capacity. Status: EnRoute
+      Rider [ID: 9294459b] submitted a new request.
+warn: MobilityNetworkDemo.MobilityNetwork[0]
+      Network processing request from Rider [ID: 9294459b]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider c974429e has alighted from Vehicle 6. Vehicle is now at 3/6 capacity. Status: EnRoute
+      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 9294459b]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 474a5dca has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip Start) Rider 9294459b is on a 14s journey in Vehicle 2.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 34e65389 has alighted from Vehicle 6. Vehicle is now at 2/6 capacity. Status: EnRoute
+         (Trip End) Rider a20228aa has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 93e4f2c2] submitted a new request.
+      Rider [ID: d402488f] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 93e4f2c2]
+      Network processing request from Rider [ID: d402488f]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 93e4f2c2]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: d402488f]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 93e4f2c2 is on a 14s journey in Vehicle 2.
+         (Trip Start) Rider d402488f is on a 5s journey in Vehicle 1.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 138eaa1f] submitted a new request.
+      Rider [ID: 0b028cf1] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 138eaa1f]
+      Network processing request from Rider [ID: 0b028cf1]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: 138eaa1f]. Vehicle is now at 5/6 capacity.
+      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: 0b028cf1]. Vehicle is now at 5/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 138eaa1f is on a 5s journey in Vehicle 5.
-info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 65b3d508] submitted a new request.
-warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 65b3d508]
+         (Trip Start) Rider 0b028cf1 is on a 11s journey in Vehicle 5.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: 65b3d508]. Vehicle is now at 6/6 capacity.
+         (Trip End) Rider c6cd7804 has alighted from Vehicle 6. Vehicle is now at 3/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 65b3d508 is on a 12s journey in Vehicle 5.
+         (Trip End) Rider 6c551b36 has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: d121fc53] submitted a new request.
+      Rider [ID: d77ba22a] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: d121fc53]
+      Network processing request from Rider [ID: d77ba22a]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 6, Type: Small Minivan] for Rider [ID: d121fc53]. Vehicle is now at 3/6 capacity.
+      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: d77ba22a]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider d121fc53 is on a 5s journey in Vehicle 6.
+         (Trip Start) Rider d77ba22a is on a 8s journey in Vehicle 3.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 49dff681 has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
-info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 148015bc has alighted from Vehicle 1. Vehicle is now at 4/6 capacity. Status: EnRoute
+      Rider [ID: 0ef0adeb] submitted a new request.
+warn: MobilityNetworkDemo.MobilityNetwork[0]
+      Network processing request from Rider [ID: 0ef0adeb]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider f6e3563c has alighted from Vehicle 5. Vehicle is now at 5/6 capacity. Status: EnRoute
+      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: 0ef0adeb]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider dbce8227 has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip Start) Rider 0ef0adeb is on a 9s journey in Vehicle 5.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 9dc8309f] submitted a new request.
+      Rider [ID: 2b1ed29f] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 9dc8309f]
+      Network processing request from Rider [ID: 2b1ed29f]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 9dc8309f]. Vehicle is now at 5/6 capacity.
+      -> Dispatched Vehicle [ID: 6, Type: Small Minivan] for Rider [ID: 2b1ed29f]. Vehicle is now at 4/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 9dc8309f is on a 6s journey in Vehicle 1.
+         (Trip Start) Rider 2b1ed29f is on a 7s journey in Vehicle 6.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 53ed8724 has alighted from Vehicle 1. Vehicle is now at 4/6 capacity. Status: EnRoute
+         (Trip End) Rider d7e355c1 has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 5c997002] submitted a new request.
+      Rider [ID: 89eff257] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 5c997002]
+      Network processing request from Rider [ID: 89eff257]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 5c997002]. Vehicle is now at 5/6 capacity.
+      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 89eff257]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 5c997002 is on a 6s journey in Vehicle 1.
+         (Trip Start) Rider 89eff257 is on a 9s journey in Vehicle 3.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 54de816b] submitted a new request.
+      Rider [ID: b04b5244] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 54de816b]
+      Network processing request from Rider [ID: b04b5244]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 54de816b]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 6, Type: Small Minivan] for Rider [ID: b04b5244]. Vehicle is now at 5/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 54de816b is on a 5s journey in Vehicle 1.
+         (Trip Start) Rider b04b5244 is on a 6s journey in Vehicle 6.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider ea87be53 has alighted from Vehicle 5. Vehicle is now at 4/6 capacity. Status: EnRoute
-info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 750075e8] submitted a new request.
+      Rider [ID: 9398848f] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 750075e8]
+      Network processing request from Rider [ID: 9398848f]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 750075e8]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 6, Type: Small Minivan] for Rider [ID: 9398848f]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 750075e8 is on a 13s journey in Vehicle 3.
+         (Trip Start) Rider 9398848f is on a 6s journey in Vehicle 6.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 22fb3abb] submitted a new request.
+      Rider [ID: 7caafd2a] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 22fb3abb]
+      Network processing request from Rider [ID: 7caafd2a]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: 22fb3abb]. Vehicle is now at 5/6 capacity.
+      -> Dispatched Vehicle [ID: 7, Type: Small Minivan] for Rider [ID: 7caafd2a]. Vehicle is now at 5/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 22fb3abb is on a 10s journey in Vehicle 5.
+         (Trip Start) Rider 7caafd2a is on a 9s journey in Vehicle 7.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 62b661f7] submitted a new request.
-warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 62b661f7]
+         (Trip End) Rider 6c10b6c5 has alighted from Vehicle 4. Vehicle is now at 5/6 capacity. Status: EnRoute
+info: MobilityNetworkDemo.MobilityNetwork[0]
+         (Trip End) Rider 4ad6f1bb has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: 62b661f7]. Vehicle is now at 6/6 capacity.
+         (Trip End) Rider 70f8fbd5 has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 62b661f7 is on a 5s journey in Vehicle 5.
+         (Trip End) Rider cb6c9f5f has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 42b07eeb] submitted a new request.
+      Rider [ID: 3d068dce] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 42b07eeb]
+      Network processing request from Rider [ID: 3d068dce]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 6, Type: Small Minivan] for Rider [ID: 42b07eeb]. Vehicle is now at 4/6 capacity.
+      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 3d068dce]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 42b07eeb is on a 6s journey in Vehicle 6.
+         (Trip Start) Rider 3d068dce is on a 12s journey in Vehicle 1.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 9eeb5bdb has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider aa18e4eb has alighted from Vehicle 4. Vehicle is now at 4/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 9a1b4059] submitted a new request.
+      Rider [ID: edb7e408] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 9a1b4059]
+      Network processing request from Rider [ID: edb7e408]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 9a1b4059]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: edb7e408]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 9a1b4059 is on a 7s journey in Vehicle 3.
+         (Trip Start) Rider edb7e408 is on a 6s journey in Vehicle 2.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider f91b7b7c has alighted from Vehicle 6. Vehicle is now at 3/6 capacity. Status: EnRoute
+         (Trip End) Rider 47219787 has alighted from Vehicle 3. Vehicle is now at 4/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: d9a5611d] submitted a new request.
+         (Trip End) Rider fd8460e9 has alighted from Vehicle 5. Vehicle is now at 5/6 capacity. Status: EnRoute
+info: MobilityNetworkDemo.MobilityNetwork[0]
+      Rider [ID: de179731] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: d9a5611d]
+      Network processing request from Rider [ID: de179731]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 6, Type: Small Minivan] for Rider [ID: d9a5611d]. Vehicle is now at 4/6 capacity.
+      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: de179731]. Vehicle is now at 5/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider d9a5611d is on a 9s journey in Vehicle 6.
+         (Trip Start) Rider de179731 is on a 5s journey in Vehicle 3.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 364caa7b] submitted a new request.
+      Rider [ID: 9b51472a] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 364caa7b]
-info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 6, Type: Small Minivan] for Rider [ID: 364caa7b]. Vehicle is now at 5/6 capacity.
+      Network processing request from Rider [ID: 9b51472a]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 364caa7b is on a 6s journey in Vehicle 6.
+      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 9b51472a]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider cee7ed3b has alighted from Vehicle 5. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip Start) Rider 9b51472a is on a 7s journey in Vehicle 3.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider b172ade3 has alighted from Vehicle 4. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider 2ec2e919 has alighted from Vehicle 4. Vehicle is now at 3/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 95a4291e] submitted a new request.
+      Rider [ID: c3b1b009] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 95a4291e]
+      Network processing request from Rider [ID: c3b1b009]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: 95a4291e]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: c3b1b009]. Vehicle is now at 4/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 95a4291e is on a 14s journey in Vehicle 4.
+         (Trip Start) Rider c3b1b009 is on a 10s journey in Vehicle 4.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 40525f94] submitted a new request.
-warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 40525f94]
+         (Trip End) Rider 1bfa2add has alighted from Vehicle 7. Vehicle is now at 4/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: 40525f94]. Vehicle is now at 6/6 capacity.
+      Rider [ID: 5ceff7c2] submitted a new request.
+warn: MobilityNetworkDemo.MobilityNetwork[0]
+      Network processing request from Rider [ID: 5ceff7c2]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 40525f94 is on a 10s journey in Vehicle 5.
+      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: 5ceff7c2]. Vehicle is now at 5/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider d3f0d51b has alighted from Vehicle 4. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip Start) Rider 5ceff7c2 is on a 11s journey in Vehicle 4.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 7019b952] submitted a new request.
+      Rider [ID: 679030f6] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 7019b952]
+      Network processing request from Rider [ID: 679030f6]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: 7019b952]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: 679030f6]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 7019b952 is on a 9s journey in Vehicle 4.
+         (Trip Start) Rider 679030f6 is on a 8s journey in Vehicle 4.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 76fc29d8 has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
+      Rider [ID: 598adfd1] submitted a new request.
+warn: MobilityNetworkDemo.MobilityNetwork[0]
+      Network processing request from Rider [ID: 598adfd1]
+info: MobilityNetworkDemo.MobilityNetwork[0]
+      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: 598adfd1]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider a4dd52fc has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip Start) Rider 598adfd1 is on a 8s journey in Vehicle 5.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: be0b7efe] submitted a new request.
+      Rider [ID: dad28006] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: be0b7efe]
+      Network processing request from Rider [ID: dad28006]
+info: MobilityNetworkDemo.MobilityNetwork[0]
+      -> Dispatched Vehicle [ID: 7, Type: Small Minivan] for Rider [ID: dad28006]. Vehicle is now at 5/6 capacity.
+info: MobilityNetworkDemo.MobilityNetwork[0]
+         (Trip Start) Rider dad28006 is on a 7s journey in Vehicle 7.
+info: MobilityNetworkDemo.MobilityNetwork[0]
+         (Trip End) Rider ad9e86a7 has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: be0b7efe]. Vehicle is now at 6/6 capacity.
+         (Trip End) Rider 66cc2ff6 has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider be0b7efe is on a 13s journey in Vehicle 2.
+         (Trip End) Rider 1336e4d0 has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: c6ac9577] submitted a new request.
+      Rider [ID: 7492ef23] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: c6ac9577]
+      Network processing request from Rider [ID: 7492ef23]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: c6ac9577]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 7492ef23]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider c6ac9577 is on a 10s journey in Vehicle 3.
+         (Trip Start) Rider 7492ef23 is on a 6s journey in Vehicle 1.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 3a89bd7c has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider e800155a has alighted from Vehicle 7. Vehicle is now at 4/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 93d9aca7] submitted a new request.
+      Rider [ID: 2b084d55] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 93d9aca7]
+      Network processing request from Rider [ID: 2b084d55]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 93d9aca7]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 2b084d55]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 93d9aca7 is on a 12s journey in Vehicle 1.
+         (Trip Start) Rider 2b084d55 is on a 9s journey in Vehicle 2.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: afe6accd] submitted a new request.
+         (Trip End) Rider d402488f has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
+info: MobilityNetworkDemo.MobilityNetwork[0]
+      Rider [ID: a9d5ead0] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: afe6accd]
+      Network processing request from Rider [ID: a9d5ead0]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 6, Type: Small Minivan] for Rider [ID: afe6accd]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: a9d5ead0]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider afe6accd is on a 7s journey in Vehicle 6.
+         (Trip Start) Rider a9d5ead0 is on a 9s journey in Vehicle 1.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider a3cb5c51 has alighted from Vehicle 6. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider 15801478 has alighted from Vehicle 5. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 294c3fdd] submitted a new request.
+      Rider [ID: f3a69b03] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 294c3fdd]
+      Network processing request from Rider [ID: f3a69b03]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 6, Type: Small Minivan] for Rider [ID: 294c3fdd]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: f3a69b03]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 294c3fdd is on a 8s journey in Vehicle 6.
+         (Trip Start) Rider f3a69b03 is on a 11s journey in Vehicle 3.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 2e64ea42 has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider 4f24e13a has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 78c416e3] submitted a new request.
+      Rider [ID: 1ef40351] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 78c416e3]
+      Network processing request from Rider [ID: 1ef40351]
+info: MobilityNetworkDemo.MobilityNetwork[0]
+      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 1ef40351]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 78c416e3]. Vehicle is now at 6/6 capacity.
+         (Trip Start) Rider 1ef40351 is on a 14s journey in Vehicle 3.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 78c416e3 is on a 8s journey in Vehicle 3.
+         (Trip End) Rider c080db2a has alighted from Vehicle 6. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: af7a9e72] submitted a new request.
+         (Trip End) Rider 21926238 has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
+info: MobilityNetworkDemo.MobilityNetwork[0]
+      Rider [ID: 6f6254f2] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: af7a9e72]
+      Network processing request from Rider [ID: 6f6254f2]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 7, Type: Small Minivan] for Rider [ID: af7a9e72]. Vehicle is now at 4/6 capacity.
+      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 6f6254f2]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider af7a9e72 is on a 9s journey in Vehicle 7.
+         (Trip Start) Rider 6f6254f2 is on a 10s journey in Vehicle 1.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider cb6698ac has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider 7c4ae3a5 has alighted from Vehicle 6. Vehicle is now at 4/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider d121fc53 has alighted from Vehicle 6. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider 53b964f5 has alighted from Vehicle 5. Vehicle is now at 4/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 138eaa1f has alighted from Vehicle 5. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider 82299084 has alighted from Vehicle 7. Vehicle is now at 3/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 6549fa4b has alighted from Vehicle 7. Vehicle is now at 3/6 capacity. Status: EnRoute
+         (Trip End) Rider 797e8df0 has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 899cc826] submitted a new request.
+      Rider [ID: 64adac18] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 899cc826]
-info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 899cc826]. Vehicle is now at 6/6 capacity.
+      Network processing request from Rider [ID: 64adac18]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 899cc826 is on a 6s journey in Vehicle 3.
+      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 64adac18]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 512fc5d7] submitted a new request.
-warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 512fc5d7]
+         (Trip Start) Rider 64adac18 is on a 9s journey in Vehicle 1.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: 512fc5d7]. Vehicle is now at 6/6 capacity.
+         (Trip End) Rider 29c3f530 has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 512fc5d7 is on a 10s journey in Vehicle 5.
+         (Trip End) Rider f60a9abb has alighted from Vehicle 4. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 473c0620 has alighted from Vehicle 4. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider abc4e2b1 has alighted from Vehicle 5. Vehicle is now at 3/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: fb0bc00c] submitted a new request.
+      Rider [ID: 2a771732] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: fb0bc00c]
+      Network processing request from Rider [ID: 2a771732]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: fb0bc00c]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 2a771732]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider fb0bc00c is on a 9s journey in Vehicle 4.
+         (Trip Start) Rider 2a771732 is on a 10s journey in Vehicle 2.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 54de816b has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider 0d85c42d has alighted from Vehicle 6. Vehicle is now at 3/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 569f90eb has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
+      Rider [ID: a394a229] submitted a new request.
+warn: MobilityNetworkDemo.MobilityNetwork[0]
+      Network processing request from Rider [ID: a394a229]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider e54c8417 has alighted from Vehicle 4. Vehicle is now at 5/6 capacity. Status: EnRoute
+      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: a394a229]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 73a8c89f has alighted from Vehicle 1. Vehicle is now at 4/6 capacity. Status: EnRoute
+         (Trip Start) Rider a394a229 is on a 11s journey in Vehicle 4.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider a0e7fd3c has alighted from Vehicle 2. Vehicle is now at 4/6 capacity. Status: EnRoute
+         (Trip End) Rider 73bd6a33 has alighted from Vehicle 4. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 5560e7c3] submitted a new request.
+      Rider [ID: 9903543e] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 5560e7c3]
+      Network processing request from Rider [ID: 9903543e]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 5560e7c3]. Vehicle is now at 5/6 capacity.
+      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: 9903543e]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 5560e7c3 is on a 10s journey in Vehicle 1.
+         (Trip Start) Rider 9903543e is on a 5s journey in Vehicle 4.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: aeeb2899] submitted a new request.
-warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: aeeb2899]
+         (Trip End) Rider 0f480129 has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: aeeb2899]. Vehicle is now at 6/6 capacity.
+         (Trip End) Rider de179731 has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider aeeb2899 is on a 7s journey in Vehicle 1.
-info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 56e2c91d] submitted a new request.
+      Rider [ID: 2e6eaf90] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 56e2c91d]
+      Network processing request from Rider [ID: 2e6eaf90]
+info: MobilityNetworkDemo.MobilityNetwork[0]
+      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: 2e6eaf90]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 56e2c91d]. Vehicle is now at 5/6 capacity.
+         (Trip Start) Rider 2e6eaf90 is on a 14s journey in Vehicle 1.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 56e2c91d is on a 14s journey in Vehicle 2.
+         (Trip End) Rider b04b5244 has alighted from Vehicle 6. Vehicle is now at 2/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 9dc8309f has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
+      Rider [ID: d3e8212c] submitted a new request.
+warn: MobilityNetworkDemo.MobilityNetwork[0]
+      Network processing request from Rider [ID: d3e8212c]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 62b661f7 has alighted from Vehicle 5. Vehicle is now at 5/6 capacity. Status: EnRoute
+      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: d3e8212c]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider b98974a1 has alighted from Vehicle 4. Vehicle is now at 4/6 capacity. Status: EnRoute
+         (Trip Start) Rider d3e8212c is on a 12s journey in Vehicle 3.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 5c997002 has alighted from Vehicle 1. Vehicle is now at 4/6 capacity. Status: EnRoute
+         (Trip End) Rider 9398848f has alighted from Vehicle 6. Vehicle is now at 1/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: a6d30c82] submitted a new request.
-warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: a6d30c82]
+         (Trip End) Rider 2b1ed29f has alighted from Vehicle 6. Vehicle is now at 0/6 capacity. Status: Idle
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: a6d30c82]. Vehicle is now at 5/6 capacity.
+      Rider [ID: 1075af88] submitted a new request.
+warn: MobilityNetworkDemo.MobilityNetwork[0]
+      Network processing request from Rider [ID: 1075af88]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider a6d30c82 is on a 12s journey in Vehicle 1.
+      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: 1075af88]. Vehicle is now at 4/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider c93bba09 has alighted from Vehicle 4. Vehicle is now at 3/6 capacity. Status: EnRoute
+         (Trip Start) Rider 1075af88 is on a 5s journey in Vehicle 5.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 885844d1 has alighted from Vehicle 7. Vehicle is now at 2/6 capacity. Status: EnRoute
+         (Trip End) Rider d77ba22a has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 3fdd3e60 has alighted from Vehicle 7. Vehicle is now at 1/6 capacity. Status: EnRoute
+         (Trip End) Rider 3da04f56 has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: da930006] submitted a new request.
+      Rider [ID: 2e7a57fc] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: da930006]
+      Network processing request from Rider [ID: 2e7a57fc]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 7e41deb1 has alighted from Vehicle 5. Vehicle is now at 4/6 capacity. Status: EnRoute
+      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 2e7a57fc]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: da930006]. Vehicle is now at 6/6 capacity.
+         (Trip Start) Rider 2e7a57fc is on a 7s journey in Vehicle 2.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider da930006 is on a 10s journey in Vehicle 1.
+         (Trip End) Rider edb7e408 has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 75d2c94c] submitted a new request.
+      Rider [ID: 4a40b5fd] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 75d2c94c]
+      Network processing request from Rider [ID: 4a40b5fd]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 75d2c94c]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: 4a40b5fd]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 75d2c94c is on a 7s journey in Vehicle 2.
+         (Trip Start) Rider 4a40b5fd is on a 13s journey in Vehicle 2.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 42b07eeb has alighted from Vehicle 6. Vehicle is now at 4/6 capacity. Status: EnRoute
+         (Trip End) Rider c87f8395 has alighted from Vehicle 4. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 87170c62] submitted a new request.
+      Rider [ID: 66867114] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 87170c62]
+      Network processing request from Rider [ID: 66867114]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: 87170c62]. Vehicle is now at 4/6 capacity.
+      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 66867114]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 87170c62 is on a 8s journey in Vehicle 4.
+         (Trip Start) Rider 66867114 is on a 10s journey in Vehicle 3.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 9da96fdc] submitted a new request.
+      Rider [ID: f34797d5] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 9da96fdc]
+      Network processing request from Rider [ID: f34797d5]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: 9da96fdc]. Vehicle is now at 5/6 capacity.
+      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: f34797d5]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 9da96fdc is on a 9s journey in Vehicle 4.
+         (Trip Start) Rider f34797d5 is on a 8s journey in Vehicle 4.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 22502585] submitted a new request.
+      Rider [ID: 31a503a3] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 22502585]
+      Network processing request from Rider [ID: 31a503a3]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 4, Type: Small Minivan] for Rider [ID: 22502585]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: 31a503a3]. Vehicle is now at 5/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 22502585 is on a 14s journey in Vehicle 4.
+         (Trip Start) Rider 31a503a3 is on a 11s journey in Vehicle 5.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 4bce8a59] submitted a new request.
+      Rider [ID: 5ea4eae9] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 4bce8a59]
+      Network processing request from Rider [ID: 5ea4eae9]
+info: MobilityNetworkDemo.MobilityNetwork[0]
+      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: 5ea4eae9]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: 4bce8a59]. Vehicle is now at 5/6 capacity.
+         (Trip Start) Rider 5ea4eae9 is on a 9s journey in Vehicle 5.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 4bce8a59 is on a 7s journey in Vehicle 5.
+         (Trip End) Rider a6c520b4 has alighted from Vehicle 7. Vehicle is now at 2/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 6d011851 has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider 0ef0adeb has alighted from Vehicle 5. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 364caa7b has alighted from Vehicle 6. Vehicle is now at 3/6 capacity. Status: EnRoute
+         (Trip End) Rider 9b51472a has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 90187c7b] submitted a new request.
+      Rider [ID: 73668c86] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 90187c7b]
+      Network processing request from Rider [ID: 73668c86]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 90187c7b]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 73668c86]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 90187c7b is on a 10s journey in Vehicle 3.
+         (Trip Start) Rider 73668c86 is on a 13s journey in Vehicle 3.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 9effd665] submitted a new request.
+      Rider [ID: 9fc2a1f2] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 9effd665]
+      Network processing request from Rider [ID: 9fc2a1f2]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: 9effd665]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 5, Type: Small Minivan] for Rider [ID: 9fc2a1f2]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 9effd665 is on a 11s journey in Vehicle 5.
+         (Trip Start) Rider 9fc2a1f2 is on a 14s journey in Vehicle 5.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: efc0449a] submitted a new request.
+         (Trip End) Rider 0b028cf1 has alighted from Vehicle 5. Vehicle is now at 5/6 capacity. Status: EnRoute
+info: MobilityNetworkDemo.MobilityNetwork[0]
+         (Trip End) Rider 89eff257 has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
+info: MobilityNetworkDemo.MobilityNetwork[0]
+         (Trip End) Rider 7caafd2a has alighted from Vehicle 7. Vehicle is now at 1/6 capacity. Status: EnRoute
+info: MobilityNetworkDemo.MobilityNetwork[0]
+      Rider [ID: 2fcabdaa] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: efc0449a]
+      Network processing request from Rider [ID: 2fcabdaa]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 6, Type: Small Minivan] for Rider [ID: efc0449a]. Vehicle is now at 4/6 capacity.
+      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 2fcabdaa]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider efc0449a is on a 6s journey in Vehicle 6.
+         (Trip Start) Rider 2fcabdaa is on a 11s journey in Vehicle 3.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider 9a1b4059 has alighted from Vehicle 3. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider 7492ef23 has alighted from Vehicle 1. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: 0751c687] submitted a new request.
+      Rider [ID: ee1b0c67] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: 0751c687]
+      Network processing request from Rider [ID: ee1b0c67]
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 3, Type: Small Minivan] for Rider [ID: 0751c687]. Vehicle is now at 6/6 capacity.
+      -> Dispatched Vehicle [ID: 1, Type: Small Minivan] for Rider [ID: ee1b0c67]. Vehicle is now at 6/6 capacity.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider 0751c687 is on a 13s journey in Vehicle 3.
+         (Trip Start) Rider ee1b0c67 is on a 5s journey in Vehicle 1.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip End) Rider d342cfac has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
+         (Trip End) Rider 167c2f8b has alighted from Vehicle 2. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      Rider [ID: a84d23f9] submitted a new request.
+      Rider [ID: c1d773e3] submitted a new request.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-      Network processing request from Rider [ID: a84d23f9]
+      Network processing request from Rider [ID: c1d773e3]
+info: MobilityNetworkDemo.MobilityNetwork[0]
+      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: c1d773e3]. Vehicle is now at 6/6 capacity.
+info: MobilityNetworkDemo.MobilityNetwork[0]
+         (Trip Start) Rider c1d773e3 is on a 12s journey in Vehicle 2.
 info: MobilityNetworkDemo.MobilityNetwork[0]
-      -> Dispatched Vehicle [ID: 2, Type: Small Minivan] for Rider [ID: a84d23f9]. Vehicle is now at 6/6 capacity.
+         (Trip End) Rider 679030f6 has alighted from Vehicle 4. Vehicle is now at 5/6 capacity. Status: EnRoute
 info: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Start) Rider a84d23f9 is on a 6s journey in Vehicle 2.
+         (Trip End) Rider dad28006 has alighted from Vehicle 7. Vehicle is now at 0/6 capacity. Status: Idle
 info: MobilityNetworkDemo.Program[0]
       Shutting down simulation...
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider f0ccb487 was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider 9294459b was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider a84d23f9 was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider ee1b0c67 was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 0751c687 was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider c1d773e3 was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 61a0a508 was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider 3d068dce was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 9effd665 was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider 9fc2a1f2 was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 90187c7b was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider 31a503a3 was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 4bce8a59 was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider 2fcabdaa was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 93e4f2c2 was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider 73668c86 was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider efc0449a was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider c3b1b009 was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 9da96fdc was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider f34797d5 was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 87170c62 was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider 66867114 was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 75d2c94c was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider 4a40b5fd was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 65b3d508 was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider 2e7a57fc was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider da930006 was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider 5ceff7c2 was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 22502585 was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider 5ea4eae9 was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 56e2c91d was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider 1075af88 was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider aeeb2899 was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider 2e6eaf90 was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 5560e7c3 was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider a394a229 was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider a6d30c82 was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider d3e8212c was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 750075e8 was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider 2a771732 was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 512fc5d7 was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider 64adac18 was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider fb0bc00c was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider 9903543e was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 899cc826 was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider 6f6254f2 was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider af7a9e72 was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider 598adfd1 was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 78c416e3 was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider 1ef40351 was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 294c3fdd was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider f3a69b03 was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider afe6accd was canceled due to simulation shutdown.
+         (Trip Canceled) Trip for Rider a9d5ead0 was canceled due to simulation shutdown.
 warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 93d9aca7 was canceled due to simulation shutdown.
-warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 22fb3abb was canceled due to simulation shutdown.
-warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider c6ac9577 was canceled due to simulation shutdown.
-warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider be0b7efe was canceled due to simulation shutdown.
-warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 7019b952 was canceled due to simulation shutdown.
-warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 40525f94 was canceled due to simulation shutdown.
-warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider 95a4291e was canceled due to simulation shutdown.
-warn: MobilityNetworkDemo.MobilityNetwork[0]
-         (Trip Canceled) Trip for Rider d9a5611d was canceled due to simulation shutdown.
-2025-06-16 05:51:00
-2025-06-16 05:51:01
-2025-06-16 05:51:01
+         (Trip Canceled) Trip for Rider 2b084d55 was canceled due to simulation shutdown.
+Unhandled exception. System.OperationCanceledException: The operation was canceled.
+   at System.Threading.Channels.AsyncOperation`1.GetResult(Int16 token)
+   at System.Threading.Channels.ChannelReader`1.ReadAllAsync(CancellationToken cancellationToken)+MoveNext()
+   at System.Threading.Channels.ChannelReader`1.ReadAllAsync(CancellationToken cancellationToken)+System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.GetResult()
+   at MobilityNetworkDemo.MobilityNetwork.ProcessRequestsAsync(CancellationToken cancellationToken) in C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs:line 105
+   at MobilityNetworkDemo.MobilityNetwork.ProcessRequestsAsync(CancellationToken cancellationToken) in C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs:line 105
+   at MobilityNetworkDemo.Program.Main(String[] args) in C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs:line 226
+   at MobilityNetworkDemo.Program.<Main>(String[] args)
+2025-06-16 05:54:45
+2025-06-16 05:54:46
+2025-06-16 05:54:46
