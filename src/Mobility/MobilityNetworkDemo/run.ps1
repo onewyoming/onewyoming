@@ -1,5 +1,3 @@
-# cd "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\"; pwd > "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt"; dotnet run Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt"; dotnet --info >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; cd "C:\code\wyoming\"; git status; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git remote show origin; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git pull --rebase --strategy-option=ours; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git push origin --all; Get-Date -Format "yyyy-MM-dd HH:mm:ss";
-
 # Define the target directory and file
 $targetDir = "C:\code\wyoming\src\Mobility\MobilityNetworkDemo"
 $outputFile = Join-Path $targetDir "powershell.txt"
@@ -18,29 +16,29 @@ Push-Location $targetDir # Change to the directory for pwd to be relevant
 # Output current working directory
 (Get-Location).Path | Add-Content -Path $outputFile
 
-# Add timestamps
-Get-Date -Format "yyyy-MM-dd HH:mm:ss" | Add-Content -Path $outputFile
-dotnet clean | Add-Content -Path $outputFile
-Get-Date -Format "yyyy-MM-dd HH:mm:ss" | Add-Content -Path $outputFile
-dotnet build | Add-Content -Path $outputFile
-Get-Date -Format "yyyy-MM-dd HH:mm:ss" | Add-Content -Path $outputFile
-dotnet run | Add-Content -Path $outputFile
+# Add timestamps and capture command output
 Get-Date -Format "yyyy-MM-dd HH:mm:ss" | Add-Content -Path $outputFile
 
-# Execute dotnet commands and redirect output
-# Assuming 'dotnet run' isn't meant to output directly to the file here,
-# as it typically runs an application. If it's meant to output the result
-# of a specific command, that command would need to be specified.
-# For example, if you wanted 'dotnet --version':
-# (dotnet --version) | Add-Content -Path $outputFile
+Write-Host "Running dotnet clean..."
+# Capture all output (stdout and stderr) from dotnet clean
+(dotnet clean 2>&1) | Add-Content -Path $outputFile
 
-# If 'dotnet run' is meant to output *something*, you might need to adjust this.
-# For now, I'm removing 'dotnet run Get-Date -Format "yyyy-MM-dd HH:mm:ss"'
-# as it's unlikely to produce useful output for a text file unless a specific
-# program is being run to output that date.
+Get-Date -Format "yyyy-MM-dd HH:mm:ss" | Add-Content -Path $outputFile
+
+Write-Host "Running dotnet build..."
+# Capture all output (stdout and stderr) from dotnet build
+(dotnet build 2>&1) | Add-Content -Path $outputFile
+
+Get-Date -Format "yyyy-MM-dd HH:mm:ss" | Add-Content -Path $outputFile
+
+Write-Host "Running dotnet run (capturing unhandled exceptions)..."
+# Capture all output (stdout and stderr) from dotnet run
+# The unhandled exception will be captured here because 2>&1 redirects stderr.
+(dotnet run 2>&1) | Add-Content -Path $outputFile
+
+Get-Date -Format "yyyy-MM-dd HH:mm:ss" | Add-Content -Path $outputFile
 
 # Collect .NET info
-# Correcting the path for dotnet --info output
 $dotnetInfoPath = Join-Path $targetDir "dotnet_info.txt" # Consider a separate file for dotnet info
 Write-Host "Collecting .NET info into '$dotnetInfoPath'..."
 dotnet --info | Add-Content -Path $dotnetInfoPath # Appends to a separate file, or change $outputFile if you want it in powershell.txt
