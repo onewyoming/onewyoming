@@ -500,3 +500,332 @@ To gitlab.com:wyoming/wyoming.gitlab.io.git
 PS C:\code\wyoming>
 PS C:\code\wyoming>
 PS C:\code\wyoming> cd "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\"; pwd > "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt"; dotnet run Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt"; dotnet --info >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; Get-Date -Format "yyyy-MM-dd HH:mm:ss" >> "C:\code\wyoming\src\dotnet10preview5\powershell.txt"; cd "C:\code\wyoming\"; git status; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git remote show origin; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git add .; git commit --message "add all changes" --message "this is a bad commit message, isn't it?"; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git pull --rebase --strategy-option=ours; Get-Date -Format "yyyy-MM-dd HH:mm:ss"; git push origin --all; Get-Date -Format "yyyy-MM-dd HH:mm:ss";
+Unhandled exception. System.OperationCanceledException: The operation was canceled.
+   at System.Threading.Channels.AsyncOperation`1.GetResult(Int16 token)
+   at System.Threading.Channels.ChannelReader`1.ReadAllAsync(CancellationToken cancellationToken)+MoveNext()
+   at System.Threading.Channels.ChannelReader`1.ReadAllAsync(CancellationToken cancellationToken)+System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.GetResult()
+   at MobilityNetworkDemo.MobilityNetwork.ProcessRequestsAsync(CancellationToken cancellationToken) in C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs:line 105
+   at MobilityNetworkDemo.MobilityNetwork.ProcessRequestsAsync(CancellationToken cancellationToken) in C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs:line 105
+   at MobilityNetworkDemo.Program.Main(String[] args) in C:\code\wyoming\src\Mobility\MobilityNetworkDemo\Program.cs:line 226
+   at MobilityNetworkDemo.Program.<Main>(String[] args)
+On branch dotnet10preview4
+Your branch is up to date with 'origin/dotnet10preview4'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PowerShell.txt
+        modified:   src/Mobility/MobilityNetworkDemo/powershell.txt
+        modified:   src/dotnet10preview5/powershell.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2025-06-12 21:17:03
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branches:
+    dotnet10preview4 tracked
+    master           tracked
+  Local branches configured for 'git pull':
+    dotnet10preview4 merges with remote dotnet10preview4
+    master           merges with remote master
+  Local refs configured for 'git push':
+    dotnet10preview4 pushes to dotnet10preview4 (up to date)
+    master           pushes to master           (up to date)
+2025-06-12 21:17:05
+[dotnet10preview4 f3be66d] add all changes
+ 3 files changed, 1062943 insertions(+), 12 deletions(-)
+2025-06-12 21:17:08
+Current branch dotnet10preview4 is up to date.
+2025-06-12 21:17:10
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 3.06 MiB | 1.86 MiB/s, done.
+Total 9 (delta 6), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (6/6), completed with 6 local objects.
+remote: warning: See https://gh.io/lfs for more information.
+remote: warning: File src/Mobility/MobilityNetworkDemo/powershell.txt is 64.21 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+remote:
+remote: GitHub found 7 vulnerabilities on onewyoming/onewyoming's default branch (2 critical, 5 moderate). To find out more, visit:
+remote:      https://github.com/onewyoming/onewyoming/security/dependabot
+remote:
+To github.com:onewyoming/onewyoming.git
+   cdc804f..f3be66d  dotnet10preview4 -> dotnet10preview4
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 3.06 MiB | 1.97 MiB/s, done.
+Total 9 (delta 6), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: To create a merge request for dotnet10preview4, visit:
+remote:   https://gitlab.com/wyoming/wyoming.gitlab.io/-/merge_requests/new?merge_request%5Bsource_branch%5D=dotnet10preview4
+remote:
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   cdc804f..f3be66d  dotnet10preview4 -> dotnet10preview4
+2025-06-12 21:17:16
+PS C:\code\wyoming>
+PS C:\code\wyoming> C:\code\wyoming\src\Mobility\MobilityNetworkDemo\compress.ps1
+Compressing 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt' to 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.7z' with maximum compression...
+
+7-Zip 24.09 (x64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-11-29
+
+Scanning the drive:
+1 file, 68387781 bytes (66 MiB)
+
+Creating archive: C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.7z
+
+Add new data to archive: 1 file, 68387781 bytes (66 MiB)
+
+
+Files read from disk: 1
+Archive size: 2873407 bytes (2807 KiB)
+Everything is Ok
+Compression successful. Checking archive for errors...
+
+7-Zip 24.09 (x64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-11-29
+
+Scanning the drive for archives:
+1 file, 2873407 bytes (2807 KiB)
+
+Testing archive: C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.7z
+--
+Path = C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.7z
+Type = 7z
+Physical Size = 2873407
+Headers Size = 138
+Method = LZMA2:96m
+Solid = -
+Blocks = 1
+
+Everything is Ok
+
+Size:       68387781
+Compressed: 2873407
+Archive check passed. No errors found.
+Deleting original file: 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt'...
+Original file deleted successfully.
+Script completed.
+PS C:\code\wyoming> C:\code\wyoming\src\Mobility\MobilityNetworkDemo\compress.ps1
+Compressing 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt' to 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.7z' with maximum compression...
+
+7-Zip 24.09 (x64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-11-29
+
+Open archive: C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.7z
+--
+Path = C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.7z
+Type = 7z
+Physical Size = 2873407
+Headers Size = 138
+Method = LZMA2:96m
+Solid = -
+Blocks = 1
+
+Scanning the drive:
+1 file, 67925 bytes (67 KiB)
+
+Updating archive: C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.7z
+
+Add new data to archive: 1 file, 67925 bytes (67 KiB)
+
+
+Files read from disk: 1
+Archive size: 3469 bytes (4 KiB)
+Everything is Ok
+Compression successful. Checking archive for errors...
+
+7-Zip 24.09 (x64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-11-29
+
+Scanning the drive for archives:
+1 file, 3469 bytes (4 KiB)
+
+Testing archive: C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.7z
+--
+Path = C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.7z
+Type = 7z
+Physical Size = 3469
+Headers Size = 138
+Method = LZMA2:96k
+Solid = -
+Blocks = 1
+
+Everything is Ok
+
+Size:       67925
+Compressed: 3469
+Archive check passed. No errors found.
+Deleting original file: 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt'...
+Original file deleted successfully.
+Script completed.
+On branch dotnet10preview4
+Your branch is ahead of 'origin/dotnet10preview4' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/Mobility/MobilityNetworkDemo/powershell.7z
+        modified:   src/dotnet10preview5/powershell.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2025-06-16 05:36:52
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branches:
+    dotnet10preview4 tracked
+    master           tracked
+  Local branches configured for 'git pull':
+    dotnet10preview4 merges with remote dotnet10preview4
+    master           merges with remote master
+  Local refs configured for 'git push':
+    dotnet10preview4 pushes to dotnet10preview4 (fast-forwardable)
+    master           pushes to master           (up to date)
+2025-06-16 05:36:53
+[dotnet10preview4 a0b3903] add all changes
+ 2 files changed, 64 insertions(+)
+2025-06-16 05:36:54
+Current branch dotnet10preview4 is up to date.
+2025-06-16 05:36:55
+Enumerating objects: 34, done.
+Counting objects: 100% (34/34), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (27/27), done.
+Writing objects: 100% (27/27), 2.75 MiB | 5.66 MiB/s, done.
+Total 27 (delta 15), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (15/15), completed with 5 local objects.
+remote:
+remote: GitHub found 7 vulnerabilities on onewyoming/onewyoming's default branch (2 critical, 5 moderate). To find out more, visit:
+remote:      https://github.com/onewyoming/onewyoming/security/dependabot
+remote:
+To github.com:onewyoming/onewyoming.git
+   f3be66d..a0b3903  dotnet10preview4 -> dotnet10preview4
+Enumerating objects: 34, done.
+Counting objects: 100% (34/34), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (27/27), done.
+Writing objects: 100% (27/27), 2.75 MiB | 5.92 MiB/s, done.
+Total 27 (delta 15), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: To create a merge request for dotnet10preview4, visit:
+remote:   https://gitlab.com/wyoming/wyoming.gitlab.io/-/merge_requests/new?merge_request%5Bsource_branch%5D=dotnet10preview4
+remote:
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   f3be66d..a0b3903  dotnet10preview4 -> dotnet10preview4
+2025-06-16 05:36:59
+PS C:\code\wyoming> C:\code\wyoming\src\Mobility\MobilityNetworkDemo\compress.ps1
+PS C:\code\wyoming\src\Mobility\MobilityNetworkDemo>
+PS C:\code\wyoming\src\Mobility\MobilityNetworkDemo> C:\code\wyoming\src\Mobility\MobilityNetworkDemo\commit.ps1
+---
+Starting Git operations in 'C:\code\wyoming'...
+Checking git status...
+On branch dotnet10preview4
+Your branch is ahead of 'origin/dotnet10preview4' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/Mobility/MobilityNetworkDemo/compress.ps1
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/Mobility/MobilityNetworkDemo/commit.ps1
+        src/Mobility/MobilityNetworkDemo/run.ps1
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Showing remote origin details...
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branches:
+    dotnet10preview4 tracked
+    master           tracked
+  Local branches configured for 'git pull':
+    dotnet10preview4 merges with remote dotnet10preview4
+    master           merges with remote master
+  Local refs configured for 'git push':
+    dotnet10preview4 pushes to dotnet10preview4 (fast-forwardable)
+    master           pushes to master           (up to date)
+Adding all changes to staging...
+Committing changes...
+[dotnet10preview4 970eae2] Refactor: Improve file generation and compression scripts
+ 3 files changed, 180 insertions(+), 28 deletions(-)
+ create mode 100644 src/Mobility/MobilityNetworkDemo/commit.ps1
+ create mode 100644 src/Mobility/MobilityNetworkDemo/run.ps1
+Changes committed successfully.
+Pulling latest changes with rebase and 'ours' strategy...
+Current branch dotnet10preview4 is up to date.
+Pushing all branches to origin...
+Enumerating objects: 26, done.
+Counting objects: 100% (26/26), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (20/20), 26.75 KiB | 684.00 KiB/s, done.
+Total 20 (delta 9), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (9/9), completed with 3 local objects.
+remote:
+remote: GitHub found 7 vulnerabilities on onewyoming/onewyoming's default branch (2 critical, 5 moderate). To find out more, visit:
+remote:      https://github.com/onewyoming/onewyoming/security/dependabot
+remote:
+To github.com:onewyoming/onewyoming.git
+   a0b3903..970eae2  dotnet10preview4 -> dotnet10preview4
+Enumerating objects: 26, done.
+Counting objects: 100% (26/26), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (20/20), 26.75 KiB | 668.00 KiB/s, done.
+Total 20 (delta 9), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: To create a merge request for dotnet10preview4, visit:
+remote:   https://gitlab.com/wyoming/wyoming.gitlab.io/-/merge_requests/new?merge_request%5Bsource_branch%5D=dotnet10preview4
+remote:
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   a0b3903..970eae2  dotnet10preview4 -> dotnet10preview4
+Git operations completed.
+PS C:\code\wyoming> C:\code\wyoming\src\Mobility\MobilityNetworkDemo\commit.ps1
+---
+Starting Git operations in 'C:\code\wyoming'...
+Checking git status...
+On branch dotnet10preview4
+Your branch is up to date with 'origin/dotnet10preview4'.
+
+nothing to commit, working tree clean
+Showing remote origin details...
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branches:
+    dotnet10preview4 tracked
+    master           tracked
+  Local branches configured for 'git pull':
+    dotnet10preview4 merges with remote dotnet10preview4
+    master           merges with remote master
+  Local refs configured for 'git push':
+    dotnet10preview4 pushes to dotnet10preview4 (up to date)
+    master           pushes to master           (up to date)
+Adding all changes to staging...
+Committing changes...
+On branch dotnet10preview4
+Your branch is up to date with 'origin/dotnet10preview4'.
+
+nothing to commit, working tree clean
+WARNING: Git commit failed. This might be due to no changes to commit.
+Pulling latest changes with rebase and 'ours' strategy...
+Already up to date.
+Pushing all branches to origin...
+Everything up-to-date
+Everything up-to-date
+Git operations completed.
+PS C:\code\wyoming>
