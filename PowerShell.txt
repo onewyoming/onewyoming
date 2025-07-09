@@ -792,3 +792,201 @@ Total tests: 79
 Test summary: total: 79, failed: 0, succeeded: 79, skipped: 0, duration: 2.9s
 Build succeeded in 15.5s
 PS C:\code\MyAggregateRootSample> C:\code\wyoming\src\Mobility\MobilityNetworkDemo\omnibus.ps1
+--- Starting sequence of operations ---
+Executing 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\run.ps1'...
+Running dotnet clean...
+Running dotnet build...
+Running dotnet run (capturing unhandled exceptions)...
+Collecting .NET info into 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\dotnet_info.txt'...
+File 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt' and potentially 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\dotnet_info.txt' have been updated.
+Successfully executed 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\run.ps1'.
+---
+Executing 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\compress.ps1' for file 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt'...
+Starting compression and verification process...
+Original file: 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt'
+Archive will be created at: 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt.7z'
+---
+Attempting to compress 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt' to 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt.7z' with maximum compression...
+Compression completed successfully.
+---
+Checking integrity of 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt.7z'...
+Archive integrity check passed: No errors found in 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt.7z'.
+---
+Deleting original file: 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt'...
+Original file 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt' deleted successfully.
+---
+Script completed successfully.
+Successfully executed 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\compress.ps1'.
+---
+Executing 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\commit.ps1'...
+---
+Starting Git operations in 'C:\code\wyoming'...
+Checking git status...
+On branch dotnet10preview4
+Your branch is up to date with 'origin/dotnet10preview4'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PowerShell.txt
+        modified:   src/Mobility/MobilityNetworkDemo/dotnet_info.txt
+        modified:   src/Mobility/MobilityNetworkDemo/powershell.txt.7z
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Showing remote origin details...
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branches:
+    dotnet10preview4 tracked
+    master           tracked
+  Local branches configured for 'git pull':
+    dotnet10preview4 merges with remote dotnet10preview4
+    master           merges with remote master
+  Local refs configured for 'git push':
+    dotnet10preview4 pushes to dotnet10preview4 (up to date)
+    master           pushes to master           (up to date)
+Adding all changes to staging...
+Committing changes...
+[dotnet10preview4 e32e984] Refactor: Improve file generation and compression scripts
+ 3 files changed, 842 insertions(+), 183 deletions(-)
+Changes committed successfully.
+Pulling latest changes with rebase and 'ours' strategy...
+Current branch dotnet10preview4 is up to date.
+Pushing all branches to origin...
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 8.00 KiB | 1.14 MiB/s, done.
+Total 8 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+remote:
+remote: GitHub found 7 vulnerabilities on onewyoming/onewyoming's default branch (2 critical, 5 moderate). To find out more, visit:
+remote:      https://github.com/onewyoming/onewyoming/security/dependabot
+remote:
+To github.com:onewyoming/onewyoming.git
+   93ed6f5..e32e984  dotnet10preview4 -> dotnet10preview4
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 8.00 KiB | 1023.00 KiB/s, done.
+Total 8 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: To create a merge request for dotnet10preview4, visit:
+remote:   https://gitlab.com/wyoming/wyoming.gitlab.io/-/merge_requests/new?merge_request%5Bsource_branch%5D=dotnet10preview4
+remote:
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   93ed6f5..e32e984  dotnet10preview4 -> dotnet10preview4
+Git operations completed.
+Successfully executed 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\commit.ps1'.
+--- All scripts in sequence completed successfully! ---
+PS C:\code\wyoming> Set-Location "C:\code\MyAggregateRootSample"; dotnet test --logger "console;verbosity=detailed"
+Restore complete (2.5s)
+You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy
+  MyClassLibrary succeeded (0.6s) → MyClassLibrary\bin\Debug\net9.0\MyClassLibrary.dll
+  MyClassLibrary.Tests succeeded (0.8s) → MyClassLibrary.Tests\bin\Debug\net9.0\MyClassLibrary.Tests.dll
+A total of 1 test files matched the specified pattern.
+C:\code\MyAggregateRootSample\MyClassLibrary.Tests\bin\Debug\net9.0\MyClassLibrary.Tests.dll
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 9.0.6)
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 9.0.6)
+[xUnit.net 00:00:00.17]   Discovering: MyClassLibrary.Tests
+[xUnit.net 00:00:00.17]   Discovering: MyClassLibrary.Tests
+[xUnit.net 00:00:00.30]   Discovered:  MyClassLibrary.Tests
+[xUnit.net 00:00:00.30]   Discovered:  MyClassLibrary.Tests
+[xUnit.net 00:00:00.31]   Starting:    MyClassLibrary.Tests
+[xUnit.net 00:00:00.31]   Starting:    MyClassLibrary.Tests
+  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_InvalidName_ThrowsArgumentException(name: null) [14 ms]
+  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.Constructor_NullLogger_ThrowsArgumentNullException [14 ms]
+  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidPrice_ThrowsArgumentException(price: 0) [11 ms]
+  Passed MyClassLibrary.Tests.Domain.Events.DomainEventTests.CustomerCreatedEvent_PropertiesSetCorrectly [18 ms]
+  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidPrice_ThrowsArgumentException(price: -100.5) [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_InvalidName_ThrowsArgumentException(name: "") [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidPrice_ThrowsArgumentException(price: -1) [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_InvalidName_ThrowsArgumentException(name: "   ") [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidQuantity_ThrowsArgumentException(quantity: -1) [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidQuantity_ThrowsArgumentException(quantity: -100) [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidQuantity_ThrowsArgumentException(quantity: 0) [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_TrimsProductName [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.LineTotal_CalculatesCorrectly [5 ms]
+  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidProduct_ThrowsArgumentException(product: null) [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidProduct_ThrowsArgumentException(product: "   ") [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidProduct_ThrowsArgumentException(product: "") [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.Events.DomainEventTests.DomainEvents_RecordEquality_WorksCorrectly [10 ms]
+  Passed MyClassLibrary.Tests.Domain.Events.DomainEventTests.OrderItemAddedEvent_PropertiesSetCorrectly [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.Events.DomainEventTests.OrderPlacedEvent_PropertiesSetCorrectly [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.AddItem_ValidItem_AddsToOrder [36 ms]
+  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.TotalAmount_MultipleItems_CalculatesCorrectly [1 ms]
+  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.GetOrder_ExistingOrder_ReturnsOrder [18 ms]
+  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_EmptyId_ThrowsArgumentException [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_ValidParameters_CreatesOrderItem [10 ms]
+  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_MultipleEvents_LogsAllEvents [44 ms]
+  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.OrderItem_RecordEquality_WorksCorrectly [2 ms]
+  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.GetByIdAsync_AfterSave_ReturnsCustomer [22 ms]
+  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_ValidParameters_CreatesCustomer [4 ms]
+  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 31, expectedOutstanding: False) [7 ms]
+  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.SaveAsync_NewCustomer_SavesSuccessfully [1 ms]
+  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.GetOrder_NonExistentOrder_ReturnsNull [< 1 ms]
+  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.CreateCustomerAndPlaceOrderAsync_DomainEventsAreDispatched [48 ms]
+  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 0, expectedOutstanding: True) [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 10, expectedOutstanding: True) [< 1 ms]
+  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_LogsEventTypeNameCorrectly [4 ms]
+  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 30, expectedOutstanding: False) [< 1 ms]
+  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullCustomerLogger_ThrowsArgumentNullException [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 100, expectedOutstanding: False) [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 29, expectedOutstanding: True) [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.AddItem_SameProductDifferentPrice_DoesNotCombine [< 1 ms]
+  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.Repository_IsolatedBetweenInstances [1 ms]
+  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_EmptyEventList_DoesNotLog [1 ms]
+  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.Constructor_ValidParameters_CreatesOrder [< 1 ms]
+  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.Constructor_NullLogger_ThrowsArgumentNullException [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_UnderLimit_CreatesOrder [3 ms]
+  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.GetByIdAsync_NonExistentCustomer_ReturnsNull [1 ms]
+  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.CreateCustomerAndPlaceOrderAsync_EmptyOrderItems_CreatesOrderWithNoItems [2 ms]
+  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_TrimsCustomerName [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.AddItem_DuplicateItem_CombinesQuantities [1 ms]
+  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullBusinessRules_ThrowsArgumentNullException [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_AllOrdersCountAsOutstanding_EnforcesLimit [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.Constructor_EmptyId_ThrowsArgumentException [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_NullBusinessRules_ThrowsArgumentNullException [< 1 ms]
+  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.SaveAsync_MultipleCustomers_SavesAll [1 ms]
+  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.Constructor_FutureDate_ThrowsArgumentException [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.AddItemToOrder_NonExistentOrder_ThrowsException [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.AddItem_NullItem_ThrowsArgumentNullException [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.ClearDomainEvents_RemovesAllEvents [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.AddItemToOrder_ValidOrder_AddsItem [< 1 ms]
+  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_ReachesMaxOutstandingOrders_ThrowsException [< 1 ms]
+  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.SaveAsync_NullCustomer_ThrowsArgumentNullException [4 ms]
+  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_SingleEvent_LogsCorrectly [7 ms]
+  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.SaveAsync_ExistingCustomer_UpdatesSuccessfully [1 ms]
+  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.AddOrderItemsToExistingOrderAsync_CustomerNotFound_ThrowsInvalidOperationException [8 ms]
+  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullEventDispatcher_ThrowsArgumentNullException [< 1 ms]
+  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_WithCancellationToken_CompletesSuccessfully [3 ms]
+  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.CreateCustomerAndPlaceOrderAsync_Success_ReturnsCustomerId [3 ms]
+  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullServiceLogger_ThrowsArgumentNullException [< 1 ms]
+  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.AddOrderItemsToExistingOrderAsync_Exception_LogsErrorAndRethrows [2 ms]
+  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.AddOrderItemsToExistingOrderAsync_Success_AddsItems [1 ms]
+  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullRepository_ThrowsArgumentNullException [< 1 ms]
+  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.CreateCustomerAndPlaceOrderAsync_Exception_LogsErrorAndRethrows [1 ms]
+  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_CanResolveAllDependenciesForApplicationService [137 ms]
+  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_RegistersTransientApplicationService [5 ms]
+  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_RegistersAllRequiredServices [19 ms]
+  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_RegistersCorrectImplementations [1 ms]
+  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_ConfiguresBusinessRulesFromConfiguration [< 1 ms]
+[xUnit.net 00:00:00.59]   Finished:    MyClassLibrary.Tests
+[xUnit.net 00:00:00.59]   Finished:    MyClassLibrary.Tests
+  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_RegistersSingletonServices [1 ms]
+  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_DefaultBusinessRulesWhenNotInConfiguration [< 1 ms]
+
+Test Run Successful.
+Total tests: 79
+     Passed: 79
+ Total time: 1.7290 Seconds
+  MyClassLibrary.Tests test succeeded (2.4s)
+
+Test summary: total: 79, failed: 0, succeeded: 79, skipped: 0, duration: 2.4s
+Build succeeded in 7.2s
+PS C:\code\MyAggregateRootSample> Set-Location "C:\code\MyAggregateRootSample"; dotnet test --logger "console;verbosity=detailed"
