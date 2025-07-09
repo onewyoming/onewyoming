@@ -1,992 +1,365 @@
 PowerShell 7.6.0-preview.4
-PS C:\Users\kushal> C:\code\wyoming\src\Mobility\MobilityNetworkDemo\omnibus.ps1
---- Starting sequence of operations ---
-Executing 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\run.ps1'...
-Running dotnet clean...
-Running dotnet build...
-Running dotnet run (capturing unhandled exceptions)...
-Collecting .NET info into 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\dotnet_info.txt'...
-File 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt' and potentially 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\dotnet_info.txt' have been updated.
-Successfully executed 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\run.ps1'.
----
-Executing 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\compress.ps1' for file 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt'...
-Starting compression and verification process...
-Original file: 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt'
-Archive will be created at: 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt.7z'
----
-Attempting to compress 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt' to 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt.7z' with maximum compression...
-Compression completed successfully.
----
-Checking integrity of 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt.7z'...
-Archive integrity check passed: No errors found in 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt.7z'.
----
-Deleting original file: 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt'...
-Original file 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt' deleted successfully.
----
-Script completed successfully.
-Successfully executed 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\compress.ps1'.
----
-Executing 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\commit.ps1'...
----
-Starting Git operations in 'C:\code\wyoming'...
-Checking git status...
-On branch dotnet10preview4
-Your branch is up to date with 'origin/dotnet10preview4'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   PowerShell.txt
-        modified:   src/Mobility/MobilityNetworkDemo/dotnet_info.txt
-        modified:   src/Mobility/MobilityNetworkDemo/powershell.txt.7z
-
-no changes added to commit (use "git add" and/or "git commit -a")
-Showing remote origin details...
+PS C:\Users\kushal>
+PS C:\Users\kushal> Set-Location "C:\code\inmemoryof\Incheon\"; git status; git remote show origin; git pull origin master; git status; dotnet clean; dotnet build; dotnet test; Set-Location "C:\code\inmemoryof\Incheon\Incheon.WebApi\"; dotnet run --configuration Release
+On branch master
+nothing to commit, working tree clean
 * remote origin
-  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
-  Push  URL: git@github.com:onewyoming/onewyoming.git
-  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Fetch URL: git@github.com:kusl/incheon-2025-06-20.git
+  Push  URL: git@github.com:kusl/incheon-2025-06-20.git
   HEAD branch: master
-  Remote branches:
-    dotnet10preview4 tracked
-    master           tracked
-  Local branches configured for 'git pull':
-    dotnet10preview4 merges with remote dotnet10preview4
-    master           merges with remote master
-  Local refs configured for 'git push':
-    dotnet10preview4 pushes to dotnet10preview4 (up to date)
-    master           pushes to master           (up to date)
-Adding all changes to staging...
-Committing changes...
-[dotnet10preview4 abbb651] Refactor: Improve file generation and compression scripts
- 3 files changed, 8119 insertions(+), 1513 deletions(-)
-Changes committed successfully.
-Pulling latest changes with rebase and 'ours' strategy...
-Current branch dotnet10preview4 is up to date.
-Pushing all branches to origin...
-Enumerating objects: 15, done.
-Counting objects: 100% (15/15), done.
-Delta compression using up to 10 threads
-Compressing objects: 100% (8/8), done.
-Writing objects: 100% (8/8), 7.08 KiB | 426.00 KiB/s, done.
-Total 8 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
-remote:
-remote: GitHub found 7 vulnerabilities on onewyoming/onewyoming's default branch (2 critical, 5 moderate). To find out more, visit:
-remote:      https://github.com/onewyoming/onewyoming/security/dependabot
-remote:
-To github.com:onewyoming/onewyoming.git
-   5a04b7d..abbb651  dotnet10preview4 -> dotnet10preview4
-Enumerating objects: 15, done.
-Counting objects: 100% (15/15), done.
-Delta compression using up to 10 threads
-Compressing objects: 100% (8/8), done.
-Writing objects: 100% (8/8), 7.08 KiB | 452.00 KiB/s, done.
-Total 8 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
-remote:
-remote: To create a merge request for dotnet10preview4, visit:
-remote:   https://gitlab.com/wyoming/wyoming.gitlab.io/-/merge_requests/new?merge_request%5Bsource_branch%5D=dotnet10preview4
-remote:
-To gitlab.com:wyoming/wyoming.gitlab.io.git
-   5a04b7d..abbb651  dotnet10preview4 -> dotnet10preview4
-Git operations completed.
-Successfully executed 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\commit.ps1'.
---- All scripts in sequence completed successfully! ---
-PS C:\code\wyoming> C:\code\wyoming\src\Mobility\MobilityNetworkDemo\omnibus.ps1
---- Starting sequence of operations ---
-Executing 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\run.ps1'...
-Running dotnet clean...
-Running dotnet build...
-Running dotnet run (capturing unhandled exceptions)...
-Collecting .NET info into 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\dotnet_info.txt'...
-File 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt' and potentially 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\dotnet_info.txt' have been updated.
-Successfully executed 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\run.ps1'.
----
-Executing 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\compress.ps1' for file 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt'...
-Starting compression and verification process...
-Original file: 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt'
-Archive will be created at: 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt.7z'
----
-Attempting to compress 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt' to 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt.7z' with maximum compression...
-Compression completed successfully.
----
-Checking integrity of 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt.7z'...
-Archive integrity check passed: No errors found in 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt.7z'.
----
-Deleting original file: 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt'...
-Original file 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt' deleted successfully.
----
-Script completed successfully.
-Successfully executed 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\compress.ps1'.
----
-Executing 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\commit.ps1'...
----
-Starting Git operations in 'C:\code\wyoming'...
-Checking git status...
-On branch dotnet10preview4
-Your branch is up to date with 'origin/dotnet10preview4'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   PowerShell.txt
-        modified:   src/Mobility/MobilityNetworkDemo/dotnet_info.txt
-        modified:   src/Mobility/MobilityNetworkDemo/powershell.txt.7z
-
-no changes added to commit (use "git add" and/or "git commit -a")
-Showing remote origin details...
-* remote origin
-  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
-  Push  URL: git@github.com:onewyoming/onewyoming.git
-  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
-  HEAD branch: master
-  Remote branches:
-    dotnet10preview4 tracked
-    master           tracked
-  Local branches configured for 'git pull':
-    dotnet10preview4 merges with remote dotnet10preview4
-    master           merges with remote master
-  Local refs configured for 'git push':
-    dotnet10preview4 pushes to dotnet10preview4 (up to date)
-    master           pushes to master           (up to date)
-Adding all changes to staging...
-Committing changes...
-[dotnet10preview4 93ed6f5] Refactor: Improve file generation and compression scripts
- 3 files changed, 204 insertions(+), 8002 deletions(-)
-Changes committed successfully.
-Pulling latest changes with rebase and 'ours' strategy...
-Current branch dotnet10preview4 is up to date.
-Pushing all branches to origin...
-Enumerating objects: 15, done.
-Counting objects: 100% (15/15), done.
-Delta compression using up to 10 threads
-Compressing objects: 100% (8/8), done.
-Writing objects: 100% (8/8), 4.25 KiB | 725.00 KiB/s, done.
-Total 8 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
-remote:
-remote: GitHub found 7 vulnerabilities on onewyoming/onewyoming's default branch (2 critical, 5 moderate). To find out more, visit:
-remote:      https://github.com/onewyoming/onewyoming/security/dependabot
-remote:
-To github.com:onewyoming/onewyoming.git
-   abbb651..93ed6f5  dotnet10preview4 -> dotnet10preview4
-Enumerating objects: 15, done.
-Counting objects: 100% (15/15), done.
-Delta compression using up to 10 threads
-Compressing objects: 100% (8/8), done.
-Writing objects: 100% (8/8), 4.25 KiB | 621.00 KiB/s, done.
-Total 8 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
-remote:
-remote: To create a merge request for dotnet10preview4, visit:
-remote:   https://gitlab.com/wyoming/wyoming.gitlab.io/-/merge_requests/new?merge_request%5Bsource_branch%5D=dotnet10preview4
-remote:
-To gitlab.com:wyoming/wyoming.gitlab.io.git
-   abbb651..93ed6f5  dotnet10preview4 -> dotnet10preview4
-Git operations completed.
-Successfully executed 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\commit.ps1'.
---- All scripts in sequence completed successfully! ---
-PS C:\code\wyoming> Set-Location "C:\code\MyAggregateRootSample"; dotnet test --logger "console;verbosity=detailed"
-Restore complete (3.3s)
+  Remote branch:
+    master tracked
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+From github.com:kusl/incheon-2025-06-20
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+On branch master
+nothing to commit, working tree clean
 You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy
-  MyClassLibrary succeeded (7.0s) → MyClassLibrary\bin\Debug\net9.0\MyClassLibrary.dll
-  MyClassLibrary.Tests succeeded (3.3s) → MyClassLibrary.Tests\bin\Debug\net9.0\MyClassLibrary.Tests.dll
-A total of 1 test files matched the specified pattern.
-C:\code\MyAggregateRootSample\MyClassLibrary.Tests\bin\Debug\net9.0\MyClassLibrary.Tests.dll
-[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 9.0.6)
-[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 9.0.6)
-[xUnit.net 00:00:00.37]   Discovering: MyClassLibrary.Tests
-[xUnit.net 00:00:00.37]   Discovering: MyClassLibrary.Tests
-[xUnit.net 00:00:00.51]   Discovered:  MyClassLibrary.Tests
-[xUnit.net 00:00:00.51]   Discovered:  MyClassLibrary.Tests
-[xUnit.net 00:00:00.52]   Starting:    MyClassLibrary.Tests
-[xUnit.net 00:00:00.52]   Starting:    MyClassLibrary.Tests
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidPrice_ThrowsArgumentException(price: 0) [10 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.Constructor_NullLogger_ThrowsArgumentNullException [13 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_InvalidName_ThrowsArgumentException(name: null) [13 ms]
-  Passed MyClassLibrary.Tests.Domain.Events.DomainEventTests.CustomerCreatedEvent_PropertiesSetCorrectly [20 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_InvalidName_ThrowsArgumentException(name: "") [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidPrice_ThrowsArgumentException(price: -100.5) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_InvalidName_ThrowsArgumentException(name: "   ") [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidPrice_ThrowsArgumentException(price: -1) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidQuantity_ThrowsArgumentException(quantity: -1) [1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidQuantity_ThrowsArgumentException(quantity: -100) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidQuantity_ThrowsArgumentException(quantity: 0) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_TrimsProductName [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.LineTotal_CalculatesCorrectly [8 ms]
-  Passed MyClassLibrary.Tests.Domain.Events.DomainEventTests.DomainEvents_RecordEquality_WorksCorrectly [12 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidProduct_ThrowsArgumentException(product: null) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Events.DomainEventTests.OrderItemAddedEvent_PropertiesSetCorrectly [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidProduct_ThrowsArgumentException(product: "   ") [< 1 ms]
-[xUnit.net 00:00:00.76]     MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 100, expectedOutstanding: True) [FAIL]
-[xUnit.net 00:00:00.76]     MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 100, expectedOutstanding: True) [FAIL]
-[xUnit.net 00:00:00.76]       Assert.Equal() Failure: Values differ
-[xUnit.net 00:00:00.76]       Assert.Equal() Failure: Values differ
-[xUnit.net 00:00:00.76]       Expected: True
-[xUnit.net 00:00:00.76]       Expected: True
-[xUnit.net 00:00:00.76]       Actual:   False
-[xUnit.net 00:00:00.76]       Actual:   False
-[xUnit.net 00:00:00.76]       Stack Trace:
-[xUnit.net 00:00:00.76]       Stack Trace:
-[xUnit.net 00:00:00.76]         C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs(148,0): at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding)
-[xUnit.net 00:00:00.76]         C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs(148,0): at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding)
-[xUnit.net 00:00:00.76]            at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
-[xUnit.net 00:00:00.76]            at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
-[xUnit.net 00:00:00.76]            at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
-[xUnit.net 00:00:00.76]            at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidProduct_ThrowsArgumentException(product: "") [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Events.DomainEventTests.OrderPlacedEvent_PropertiesSetCorrectly [1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.GetOrder_ExistingOrder_ReturnsOrder [15 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_EmptyId_ThrowsArgumentException [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.GetByIdAsync_AfterSave_ReturnsCustomer [22 ms]
-  Failed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 100, expectedOutstanding: True) [22 ms]
-  Error Message:
-   Assert.Equal() Failure: Values differ
-Expected: True
-Actual:   False
-  Stack Trace:
-     at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding) in C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs:line 148
-   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
-   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
-[xUnit.net 00:00:00.77]     MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 10, expectedOutstanding: False) [FAIL]
-[xUnit.net 00:00:00.77]     MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 10, expectedOutstanding: False) [FAIL]
-[xUnit.net 00:00:00.77]       Assert.Equal() Failure: Values differ
-[xUnit.net 00:00:00.77]       Assert.Equal() Failure: Values differ
-[xUnit.net 00:00:00.77]       Expected: False
-[xUnit.net 00:00:00.77]       Expected: False
-[xUnit.net 00:00:00.77]       Actual:   True
-[xUnit.net 00:00:00.77]       Actual:   True
-[xUnit.net 00:00:00.77]       Stack Trace:
-[xUnit.net 00:00:00.77]       Stack Trace:
-[xUnit.net 00:00:00.77]         C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs(148,0): at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding)
-[xUnit.net 00:00:00.77]         C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs(148,0): at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding)
-[xUnit.net 00:00:00.77]            at InvokeStub_OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Object, Span`1)
-[xUnit.net 00:00:00.77]            at InvokeStub_OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Object, Span`1)
-[xUnit.net 00:00:00.77]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-[xUnit.net 00:00:00.77]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-[xUnit.net 00:00:00.77]     MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 29, expectedOutstanding: False) [FAIL]
-[xUnit.net 00:00:00.77]     MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 29, expectedOutstanding: False) [FAIL]
-[xUnit.net 00:00:00.77]       Assert.Equal() Failure: Values differ
-[xUnit.net 00:00:00.77]       Assert.Equal() Failure: Values differ
-[xUnit.net 00:00:00.77]       Expected: False
-[xUnit.net 00:00:00.77]       Expected: False
-[xUnit.net 00:00:00.77]       Actual:   True
-[xUnit.net 00:00:00.77]       Actual:   True
-[xUnit.net 00:00:00.77]       Stack Trace:
-[xUnit.net 00:00:00.77]       Stack Trace:
-[xUnit.net 00:00:00.77]         C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs(148,0): at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding)
-[xUnit.net 00:00:00.77]         C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs(148,0): at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding)
-[xUnit.net 00:00:00.77]            at InvokeStub_OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Object, Span`1)
-[xUnit.net 00:00:00.77]            at InvokeStub_OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Object, Span`1)
-[xUnit.net 00:00:00.77]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-[xUnit.net 00:00:00.77]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-[xUnit.net 00:00:00.77]     MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 31, expectedOutstanding: True) [FAIL]
-[xUnit.net 00:00:00.77]     MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 31, expectedOutstanding: True) [FAIL]
-[xUnit.net 00:00:00.77]       Assert.Equal() Failure: Values differ
-[xUnit.net 00:00:00.77]       Assert.Equal() Failure: Values differ
-[xUnit.net 00:00:00.77]       Expected: True
-[xUnit.net 00:00:00.77]       Expected: True
-[xUnit.net 00:00:00.77]       Actual:   False
-[xUnit.net 00:00:00.77]       Actual:   False
-[xUnit.net 00:00:00.77]       Stack Trace:
-[xUnit.net 00:00:00.77]       Stack Trace:
-[xUnit.net 00:00:00.77]         C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs(148,0): at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding)
-[xUnit.net 00:00:00.77]         C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs(148,0): at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding)
-[xUnit.net 00:00:00.77]            at InvokeStub_OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Object, Span`1)
-[xUnit.net 00:00:00.77]            at InvokeStub_OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Object, Span`1)
-[xUnit.net 00:00:00.77]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-[xUnit.net 00:00:00.77]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_ValidParameters_CreatesOrderItem [9 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_MultipleEvents_LogsAllEvents [47 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.SaveAsync_NewCustomer_SavesSuccessfully [1 ms]
-  Failed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 10, expectedOutstanding: False) [< 1 ms]
-  Error Message:
-   Assert.Equal() Failure: Values differ
-Expected: False
-Actual:   True
-  Stack Trace:
-     at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding) in C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs:line 148
-   at InvokeStub_OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Object, Span`1)
-   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-  Failed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 29, expectedOutstanding: False) [< 1 ms]
-  Error Message:
-   Assert.Equal() Failure: Values differ
-Expected: False
-Actual:   True
-  Stack Trace:
-     at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding) in C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs:line 148
-   at InvokeStub_OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Object, Span`1)
-   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-  Failed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 31, expectedOutstanding: True) [< 1 ms]
-  Error Message:
-   Assert.Equal() Failure: Values differ
-Expected: True
-Actual:   False
-  Stack Trace:
-     at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding) in C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs:line 148
-   at InvokeStub_OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Object, Span`1)
-   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-[xUnit.net 00:00:00.77]     MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 0, expectedOutstanding: False) [FAIL]
-[xUnit.net 00:00:00.77]     MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 0, expectedOutstanding: False) [FAIL]
-[xUnit.net 00:00:00.77]       Assert.Equal() Failure: Values differ
-[xUnit.net 00:00:00.77]       Assert.Equal() Failure: Values differ
-[xUnit.net 00:00:00.77]       Expected: False
-[xUnit.net 00:00:00.77]       Expected: False
-[xUnit.net 00:00:00.77]       Actual:   True
-[xUnit.net 00:00:00.77]       Actual:   True
-[xUnit.net 00:00:00.77]       Stack Trace:
-[xUnit.net 00:00:00.77]       Stack Trace:
-[xUnit.net 00:00:00.77]         C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs(148,0): at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding)
-[xUnit.net 00:00:00.77]         C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs(148,0): at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding)
-[xUnit.net 00:00:00.77]            at InvokeStub_OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Object, Span`1)
-[xUnit.net 00:00:00.77]            at InvokeStub_OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Object, Span`1)
-[xUnit.net 00:00:00.77]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-[xUnit.net 00:00:00.77]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-[xUnit.net 00:00:00.77]     MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 30, expectedOutstanding: True) [FAIL]
-[xUnit.net 00:00:00.77]     MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 30, expectedOutstanding: True) [FAIL]
-[xUnit.net 00:00:00.77]       Assert.Equal() Failure: Values differ
-[xUnit.net 00:00:00.77]       Assert.Equal() Failure: Values differ
-[xUnit.net 00:00:00.77]       Expected: True
-[xUnit.net 00:00:00.77]       Expected: True
-[xUnit.net 00:00:00.77]       Actual:   False
-[xUnit.net 00:00:00.77]       Actual:   False
-[xUnit.net 00:00:00.77]       Stack Trace:
-[xUnit.net 00:00:00.77]       Stack Trace:
-[xUnit.net 00:00:00.77]         C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs(148,0): at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding)
-[xUnit.net 00:00:00.77]         C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs(148,0): at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding)
-[xUnit.net 00:00:00.77]            at InvokeStub_OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Object, Span`1)
-[xUnit.net 00:00:00.77]            at InvokeStub_OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Object, Span`1)
-[xUnit.net 00:00:00.77]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-[xUnit.net 00:00:00.77]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-  Failed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 0, expectedOutstanding: False) [< 1 ms]
-  Error Message:
-   Assert.Equal() Failure: Values differ
-Expected: False
-Actual:   True
-  Stack Trace:
-     at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding) in C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs:line 148
-   at InvokeStub_OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Object, Span`1)
-   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-  Failed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 30, expectedOutstanding: True) [< 1 ms]
-  Error Message:
-   Assert.Equal() Failure: Values differ
-Expected: True
-Actual:   False
-  Stack Trace:
-     at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding) in C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs:line 148
-   at InvokeStub_OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Object, Span`1)
-   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.OrderItem_RecordEquality_WorksCorrectly [2 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.Repository_IsolatedBetweenInstances [2 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.CreateCustomerAndPlaceOrderAsync_DomainEventsAreDispatched [51 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullCustomerLogger_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_LogsEventTypeNameCorrectly [4 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.GetByIdAsync_NonExistentCustomer_ReturnsNull [1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.SaveAsync_MultipleCustomers_SavesAll [2 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.AddItem_ValidItem_AddsToOrder [5 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.TotalAmount_MultipleItems_CalculatesCorrectly [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.AddItem_SameProductDifferentPrice_DoesNotCombine [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_EmptyEventList_DoesNotLog [4 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.Constructor_ValidParameters_CreatesOrder [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.Constructor_NullLogger_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.AddItem_DuplicateItem_CombinesQuantities [< 1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.CreateCustomerAndPlaceOrderAsync_EmptyOrderItems_CreatesOrderWithNoItems [6 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.Constructor_EmptyId_ThrowsArgumentException [< 1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullBusinessRules_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.SaveAsync_NullCustomer_ThrowsArgumentNullException [4 ms]
-[xUnit.net 00:00:00.79]     MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_OldOrdersNotOutstanding_AllowsNewOrder [FAIL]
-[xUnit.net 00:00:00.79]     MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_OldOrdersNotOutstanding_AllowsNewOrder [FAIL]
-[xUnit.net 00:00:00.79]       System.InvalidOperationException : Customer 'Test Customer' has reached the maximum of 2 outstanding orders.
-[xUnit.net 00:00:00.79]       System.InvalidOperationException : Customer 'Test Customer' has reached the maximum of 2 outstanding orders.
-[xUnit.net 00:00:00.79]       Stack Trace:
-[xUnit.net 00:00:00.79]       Stack Trace:
-[xUnit.net 00:00:00.79]         C:\code\MyAggregateRootSample\MyClassLibrary\Domain\Aggregates\CustomerAggregateRoot.cs(52,0): at MyClassLibrary.Domain.Aggregates.CustomerAggregateRoot.PlaceNewOrder()
-[xUnit.net 00:00:00.79]         C:\code\MyAggregateRootSample\MyClassLibrary\Domain\Aggregates\CustomerAggregateRoot.cs(52,0): at MyClassLibrary.Domain.Aggregates.CustomerAggregateRoot.PlaceNewOrder()
-[xUnit.net 00:00:00.79]         C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Aggregates\CustomerAggregateRootTests.cs(231,0): at MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_OldOrdersNotOutstanding_AllowsNewOrder()
-[xUnit.net 00:00:00.79]         C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Aggregates\CustomerAggregateRootTests.cs(231,0): at MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_OldOrdersNotOutstanding_AllowsNewOrder()
-[xUnit.net 00:00:00.79]            at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
-[xUnit.net 00:00:00.79]            at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
-[xUnit.net 00:00:00.79]            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
-[xUnit.net 00:00:00.79]            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.Constructor_FutureDate_ThrowsArgumentException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.AddItem_NullItem_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.SaveAsync_ExistingCustomer_UpdatesSuccessfully [1 ms]
-  Failed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_OldOrdersNotOutstanding_AllowsNewOrder [1 ms]
-  Error Message:
-   System.InvalidOperationException : Customer 'Test Customer' has reached the maximum of 2 outstanding orders.
-  Stack Trace:
-     at MyClassLibrary.Domain.Aggregates.CustomerAggregateRoot.PlaceNewOrder() in C:\code\MyAggregateRootSample\MyClassLibrary\Domain\Aggregates\CustomerAggregateRoot.cs:line 52
-   at MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_OldOrdersNotOutstanding_AllowsNewOrder() in C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Aggregates\CustomerAggregateRootTests.cs:line 231
-   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
-   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_ValidParameters_CreatesCustomer [1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.AddOrderItemsToExistingOrderAsync_CustomerNotFound_ThrowsInvalidOperationException [4 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.GetOrder_NonExistentOrder_ReturnsNull [< 1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullEventDispatcher_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_UnderLimit_CreatesOrder [1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.CreateCustomerAndPlaceOrderAsync_Success_ReturnsCustomerId [1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_TrimsCustomerName [< 1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullServiceLogger_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_NullBusinessRules_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.AddItemToOrder_NonExistentOrder_ThrowsException [1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.AddOrderItemsToExistingOrderAsync_Exception_LogsErrorAndRethrows [1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.ClearDomainEvents_RemovesAllEvents [< 1 ms]
-[xUnit.net 00:00:00.79]     MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_SingleEvent_LogsCorrectly [FAIL]
-[xUnit.net 00:00:00.79]     MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_SingleEvent_LogsCorrectly [FAIL]
-[xUnit.net 00:00:00.79]       Assert.Contains() Failure: Sub-string not found
-[xUnit.net 00:00:00.79]       Assert.Contains() Failure: Sub-string not found
-[xUnit.net 00:00:00.79]       String:    "Domain event dispatched: CustomerCreatedE"···
-[xUnit.net 00:00:00.79]       String:    "Domain event dispatched: CustomerCreatedE"···
-[xUnit.net 00:00:00.79]       Not found: "7/8/2025 8:30:00 PM"
-[xUnit.net 00:00:00.79]       Not found: "7/8/2025 8:30:00 PM"
-[xUnit.net 00:00:00.79]       Stack Trace:
-[xUnit.net 00:00:00.79]       Stack Trace:
-[xUnit.net 00:00:00.79]         C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Infrastructure\Events\LoggingDomainEventDispatcherTests.cs(50,0): at MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_SingleEvent_LogsCorrectly()
-[xUnit.net 00:00:00.79]         C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Infrastructure\Events\LoggingDomainEventDispatcherTests.cs(50,0): at MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_SingleEvent_LogsCorrectly()
-[xUnit.net 00:00:00.80]         --- End of stack trace from previous location ---
-[xUnit.net 00:00:00.80]         --- End of stack trace from previous location ---
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.AddItemToOrder_ValidOrder_AddsItem [< 1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.AddOrderItemsToExistingOrderAsync_Success_AddsItems [1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullRepository_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_ReachesMaxOutstandingOrders_ThrowsException [< 1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.CreateCustomerAndPlaceOrderAsync_Exception_LogsErrorAndRethrows [1 ms]
-  Failed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_SingleEvent_LogsCorrectly [15 ms]
-  Error Message:
-   Assert.Contains() Failure: Sub-string not found
-String:    "Domain event dispatched: CustomerCreatedE"···
-Not found: "7/8/2025 8:30:00 PM"
-  Stack Trace:
-     at MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_SingleEvent_LogsCorrectly() in C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Infrastructure\Events\LoggingDomainEventDispatcherTests.cs:line 50
---- End of stack trace from previous location ---
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_WithCancellationToken_CompletesSuccessfully [2 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_CanResolveAllDependenciesForApplicationService [130 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_RegistersTransientApplicationService [7 ms]
-[xUnit.net 00:00:00.80]   Finished:    MyClassLibrary.Tests
-[xUnit.net 00:00:00.80]   Finished:    MyClassLibrary.Tests
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_RegistersAllRequiredServices [11 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_RegistersCorrectImplementations [< 1 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_ConfiguresBusinessRulesFromConfiguration [< 1 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_RegistersSingletonServices [< 1 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_DefaultBusinessRulesWhenNotInConfiguration [< 1 ms]
 
-Test Run Failed.
-Total tests: 79
-     Passed: 71
-     Failed: 8
- Total time: 2.0675 Seconds
-  MyClassLibrary.Tests test failed with 8 error(s) (3.1s)
-    C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs(148): error TESTERROR:
-      MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 100, expectedOutstanding: True) (22ms): Error Message: Assert.Equal() Failure: Values differ
-      Expected: True
-      Actual:   False
-      Stack Trace:
-         at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding) in C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Doma
-      in\Entities\OrderTests.cs:line 148
-         at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
-         at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
-    C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs(148): error TESTERROR:
-      MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 10, expectedOutstanding: False) (< 1ms): Error Message: Assert.Equal() Failure: Values differ
-      Expected: False
-      Actual:   True
-      Stack Trace:
-         at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding) in C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Doma
-      in\Entities\OrderTests.cs:line 148
-         at InvokeStub_OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Object, Span`1)
-         at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-    C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs(148): error TESTERROR:
-      MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 29, expectedOutstanding: False) (< 1ms): Error Message: Assert.Equal() Failure: Values differ
-      Expected: False
-      Actual:   True
-      Stack Trace:
-         at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding) in C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Doma
-      in\Entities\OrderTests.cs:line 148
-         at InvokeStub_OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Object, Span`1)
-         at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-    C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs(148): error TESTERROR:
-      MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 31, expectedOutstanding: True) (< 1ms): Error Message: Assert.Equal() Failure: Values differ
-      Expected: True
-      Actual:   False
-      Stack Trace:
-         at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding) in C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Doma
-      in\Entities\OrderTests.cs:line 148
-         at InvokeStub_OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Object, Span`1)
-         at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-    C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs(148): error TESTERROR:
-      MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 0, expectedOutstanding: False) (< 1ms): Error Message: Assert.Equal() Failure: Values differ
-      Expected: False
-      Actual:   True
-      Stack Trace:
-         at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding) in C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Doma
-      in\Entities\OrderTests.cs:line 148
-         at InvokeStub_OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Object, Span`1)
-         at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-    C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Entities\OrderTests.cs(148): error TESTERROR:
-      MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 30, expectedOutstanding: True) (< 1ms): Error Message: Assert.Equal() Failure: Values differ
-      Expected: True
-      Actual:   False
-      Stack Trace:
-         at MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Int32 daysAgo, Boolean expectedOutstanding) in C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Doma
-      in\Entities\OrderTests.cs:line 148
-         at InvokeStub_OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(Object, Span`1)
-         at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-    C:\code\MyAggregateRootSample\MyClassLibrary\Domain\Aggregates\CustomerAggregateRoot.cs(52): error TESTERROR:
-      MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_OldOrdersNotOutstanding_AllowsNewOrder (1ms): Error Message: System.InvalidOperationException : Customer 'Test Customer' ha
-      s reached the maximum of 2 outstanding orders.
-      Stack Trace:
-         at MyClassLibrary.Domain.Aggregates.CustomerAggregateRoot.PlaceNewOrder() in C:\code\MyAggregateRootSample\MyClassLibrary\Domain\Aggregates\CustomerAggregateRoot.cs:line 52
-         at MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_OldOrdersNotOutstanding_AllowsNewOrder() in C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Aggregates\Cust
-      omerAggregateRootTests.cs:line 231
-         at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
-         at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
-    C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Infrastructure\Events\LoggingDomainEventDispatcherTests.cs(50): error TESTERROR:
-      MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_SingleEvent_LogsCorrectly (15ms): Error Message: Assert.Contains() Failure: Sub-string not found
-      String:    "Domain event dispatched: CustomerCreatedE"···
-      Not found: "7/8/2025 8:30:00 PM"
-      Stack Trace:
-         at MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_SingleEvent_LogsCorrectly() in C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Infrastructure\Events\Lo
-      ggingDomainEventDispatcherTests.cs:line 50
-      --- End of stack trace from previous location ---
-
-Test summary: total: 79, failed: 8, succeeded: 71, skipped: 0, duration: 3.1s
-Build failed with 8 error(s) in 17.6s
-PS C:\code\MyAggregateRootSample>
-PS C:\code\MyAggregateRootSample> Set-Location "C:\code\MyAggregateRootSample"; dotnet test --logger "console;verbosity=detailed"
-Restore complete (3.5s)
+Build succeeded in 2.5s
+Restore complete (1.9s)
 You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy
-  MyClassLibrary succeeded (7.2s) → MyClassLibrary\bin\Debug\net9.0\MyClassLibrary.dll
-  MyClassLibrary.Tests succeeded (3.0s) → MyClassLibrary.Tests\bin\Debug\net9.0\MyClassLibrary.Tests.dll
-A total of 1 test files matched the specified pattern.
-C:\code\MyAggregateRootSample\MyClassLibrary.Tests\bin\Debug\net9.0\MyClassLibrary.Tests.dll
-[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 9.0.6)
-[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 9.0.6)
-[xUnit.net 00:00:00.37]   Discovering: MyClassLibrary.Tests
-[xUnit.net 00:00:00.37]   Discovering: MyClassLibrary.Tests
-[xUnit.net 00:00:00.55]   Discovered:  MyClassLibrary.Tests
-[xUnit.net 00:00:00.55]   Discovered:  MyClassLibrary.Tests
-[xUnit.net 00:00:00.56]   Starting:    MyClassLibrary.Tests
-[xUnit.net 00:00:00.56]   Starting:    MyClassLibrary.Tests
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidPrice_ThrowsArgumentException(price: 0) [13 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.Constructor_NullLogger_ThrowsArgumentNullException [18 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_InvalidName_ThrowsArgumentException(name: null) [19 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_InvalidName_ThrowsArgumentException(name: "") [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_InvalidName_ThrowsArgumentException(name: "   ") [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidPrice_ThrowsArgumentException(price: -100.5) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidPrice_ThrowsArgumentException(price: -1) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidQuantity_ThrowsArgumentException(quantity: -1) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidQuantity_ThrowsArgumentException(quantity: -100) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidQuantity_ThrowsArgumentException(quantity: 0) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Events.DomainEventTests.CustomerCreatedEvent_PropertiesSetCorrectly [23 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_TrimsProductName [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.GetOrder_ExistingOrder_ReturnsOrder [18 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.AddItem_ValidItem_AddsToOrder [38 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.LineTotal_CalculatesCorrectly [15 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_EmptyId_ThrowsArgumentException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidProduct_ThrowsArgumentException(product: null) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.TotalAmount_MultipleItems_CalculatesCorrectly [1 ms]
-  Passed MyClassLibrary.Tests.Domain.Events.DomainEventTests.DomainEvents_RecordEquality_WorksCorrectly [16 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidProduct_ThrowsArgumentException(product: "   ") [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidProduct_ThrowsArgumentException(product: "") [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Events.DomainEventTests.OrderItemAddedEvent_PropertiesSetCorrectly [2 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.CreateCustomerAndPlaceOrderAsync_DomainEventsAreDispatched [48 ms]
-  Passed MyClassLibrary.Tests.Domain.Events.DomainEventTests.OrderPlacedEvent_PropertiesSetCorrectly [1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullCustomerLogger_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 31, expectedOutstanding: False) [7 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 0, expectedOutstanding: True) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 10, expectedOutstanding: True) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 30, expectedOutstanding: False) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 100, expectedOutstanding: False) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 29, expectedOutstanding: True) [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.GetByIdAsync_AfterSave_ReturnsCustomer [29 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.AddItem_SameProductDifferentPrice_DoesNotCombine [1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_MultipleEvents_LogsAllEvents [55 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.SaveAsync_NewCustomer_SavesSuccessfully [1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.Repository_IsolatedBetweenInstances [2 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_ValidParameters_CreatesOrderItem [12 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.Constructor_ValidParameters_CreatesOrder [2 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.GetByIdAsync_NonExistentCustomer_ReturnsNull [3 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_LogsEventTypeNameCorrectly [6 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.OrderItem_RecordEquality_WorksCorrectly [3 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.SaveAsync_MultipleCustomers_SavesAll [2 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.CreateCustomerAndPlaceOrderAsync_EmptyOrderItems_CreatesOrderWithNoItems [14 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_EmptyEventList_DoesNotLog [1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullBusinessRules_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.Constructor_NullLogger_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.AddItem_DuplicateItem_CombinesQuantities [7 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.Constructor_EmptyId_ThrowsArgumentException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.Constructor_FutureDate_ThrowsArgumentException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.AddItem_NullItem_ThrowsArgumentNullException [1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.SaveAsync_NullCustomer_ThrowsArgumentNullException [7 ms]
-[xUnit.net 00:00:00.82]     MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_OldOrdersNotOutstanding_AllowsNewOrder [FAIL]
-[xUnit.net 00:00:00.82]     MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_OldOrdersNotOutstanding_AllowsNewOrder [FAIL]
-[xUnit.net 00:00:00.82]       System.InvalidOperationException : Customer 'Test Customer' has reached the maximum of 2 outstanding orders.
-[xUnit.net 00:00:00.82]       System.InvalidOperationException : Customer 'Test Customer' has reached the maximum of 2 outstanding orders.
-[xUnit.net 00:00:00.82]       Stack Trace:
-[xUnit.net 00:00:00.82]       Stack Trace:
-[xUnit.net 00:00:00.82]         C:\code\MyAggregateRootSample\MyClassLibrary\Domain\Aggregates\CustomerAggregateRoot.cs(52,0): at MyClassLibrary.Domain.Aggregates.CustomerAggregateRoot.PlaceNewOrder()
-[xUnit.net 00:00:00.82]         C:\code\MyAggregateRootSample\MyClassLibrary\Domain\Aggregates\CustomerAggregateRoot.cs(52,0): at MyClassLibrary.Domain.Aggregates.CustomerAggregateRoot.PlaceNewOrder()
-[xUnit.net 00:00:00.82]         C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Aggregates\CustomerAggregateRootTests.cs(231,0): at MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_OldOrdersNotOutstanding_AllowsNewOrder()
-[xUnit.net 00:00:00.82]         C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Aggregates\CustomerAggregateRootTests.cs(231,0): at MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_OldOrdersNotOutstanding_AllowsNewOrder()
-[xUnit.net 00:00:00.82]            at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
-[xUnit.net 00:00:00.82]            at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
-[xUnit.net 00:00:00.82]            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
-[xUnit.net 00:00:00.82]            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.SaveAsync_ExistingCustomer_UpdatesSuccessfully [1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_SingleEvent_LogsCorrectly [9 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.AddOrderItemsToExistingOrderAsync_CustomerNotFound_ThrowsInvalidOperationException [10 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullEventDispatcher_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_WithCancellationToken_CompletesSuccessfully [1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.CreateCustomerAndPlaceOrderAsync_Success_ReturnsCustomerId [2 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullServiceLogger_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.AddOrderItemsToExistingOrderAsync_Exception_LogsErrorAndRethrows [2 ms]
-  Failed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_OldOrdersNotOutstanding_AllowsNewOrder [3 ms]
-  Error Message:
-   System.InvalidOperationException : Customer 'Test Customer' has reached the maximum of 2 outstanding orders.
-  Stack Trace:
-     at MyClassLibrary.Domain.Aggregates.CustomerAggregateRoot.PlaceNewOrder() in C:\code\MyAggregateRootSample\MyClassLibrary\Domain\Aggregates\CustomerAggregateRoot.cs:line 52
-   at MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_OldOrdersNotOutstanding_AllowsNewOrder() in C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Aggregates\CustomerAggregateRootTests.cs:line 231
-   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
-   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.AddOrderItemsToExistingOrderAsync_Success_AddsItems [2 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullRepository_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_ValidParameters_CreatesCustomer [1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.GetOrder_NonExistentOrder_ReturnsNull [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_UnderLimit_CreatesOrder [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_TrimsCustomerName [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_NullBusinessRules_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.CreateCustomerAndPlaceOrderAsync_Exception_LogsErrorAndRethrows [2 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.AddItemToOrder_NonExistentOrder_ThrowsException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.ClearDomainEvents_RemovesAllEvents [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.AddItemToOrder_ValidOrder_AddsItem [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_ReachesMaxOutstandingOrders_ThrowsException [1 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_CanResolveAllDependenciesForApplicationService [152 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_RegistersTransientApplicationService [17 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_RegistersAllRequiredServices [2 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_RegistersCorrectImplementations [1 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_ConfiguresBusinessRulesFromConfiguration [1 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_RegistersSingletonServices [2 ms]
-[xUnit.net 00:00:00.86]   Finished:    MyClassLibrary.Tests
-[xUnit.net 00:00:00.86]   Finished:    MyClassLibrary.Tests
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_DefaultBusinessRulesWhenNotInConfiguration [1 ms]
+  Analytics.Data succeeded (3.1s) → Analytics.Data\bin\Debug\net9.0\Analytics.Data.dll
+  Analytics.Data.Tests succeeded with 2 warning(s) (2.3s) → Analytics.Data.Tests\bin\Debug\net9.0\Analytics.Data.Tests.dll
+    C:\code\inmemoryof\Incheon\Analytics.Data.Tests\AnalyticsServiceTests.cs(26,45): warning EF1001: Microsoft.EntityFrameworkCore.Sqlite.Infrastructure.Internal.SqliteOptionsExtension is an internal API that supports the Entity Framework Core infrastructure and not subject to the same compatibility standards as public APIs. It may be changed or removed without notice in any release.
+    C:\code\inmemoryof\Incheon\Analytics.Data.Tests\AnalyticsServiceTests.cs(26,45): warning EF1001: Microsoft.EntityFrameworkCore.Sqlite.Infrastructure.Internal.SqliteOptionsExtension is an internal API that supports the Entity Framework Core infrastructure and not subject to the same compatibility standards as public APIs. It may be changed or removed without notice in any release.
+  Incheon.WebApi succeeded (4.1s) → Incheon.WebApi\bin\Debug\net9.0\Incheon.WebApi.dll
 
-Test Run Failed.
-Total tests: 79
-     Passed: 78
-     Failed: 1
- Total time: 2.1143 Seconds
-  MyClassLibrary.Tests test failed with 1 error(s) (3.1s)
-    C:\code\MyAggregateRootSample\MyClassLibrary\Domain\Aggregates\CustomerAggregateRoot.cs(52): error TESTERROR:
-      MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_OldOrdersNotOutstanding_AllowsNewOrder (3ms): Error Message: System.InvalidOperationException : Customer 'Test Customer' ha
-      s reached the maximum of 2 outstanding orders.
-      Stack Trace:
-         at MyClassLibrary.Domain.Aggregates.CustomerAggregateRoot.PlaceNewOrder() in C:\code\MyAggregateRootSample\MyClassLibrary\Domain\Aggregates\CustomerAggregateRoot.cs:line 52
-         at MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_OldOrdersNotOutstanding_AllowsNewOrder() in C:\code\MyAggregateRootSample\MyClassLibrary.Tests\Domain\Aggregates\Cust
-      omerAggregateRootTests.cs:line 231
-         at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
-         at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
-
-Test summary: total: 79, failed: 1, succeeded: 78, skipped: 0, duration: 3.0s
-Build failed with 1 error(s) in 17.6s
-PS C:\code\MyAggregateRootSample>
-PS C:\code\MyAggregateRootSample> Set-Location "C:\code\MyAggregateRootSample"; dotnet test --logger "console;verbosity=detailed"
-Restore complete (2.3s)
+Build succeeded with 2 warning(s) in 9.9s
+Restore complete (1.8s)
 You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy
-  MyClassLibrary succeeded (7.1s) → MyClassLibrary\bin\Debug\net9.0\MyClassLibrary.dll
-  MyClassLibrary.Tests succeeded (2.3s) → MyClassLibrary.Tests\bin\Debug\net9.0\MyClassLibrary.Tests.dll
-A total of 1 test files matched the specified pattern.
-C:\code\MyAggregateRootSample\MyClassLibrary.Tests\bin\Debug\net9.0\MyClassLibrary.Tests.dll
-[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 9.0.6)
-[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 9.0.6)
-[xUnit.net 00:00:00.33]   Discovering: MyClassLibrary.Tests
-[xUnit.net 00:00:00.33]   Discovering: MyClassLibrary.Tests
-[xUnit.net 00:00:00.49]   Discovered:  MyClassLibrary.Tests
-[xUnit.net 00:00:00.49]   Discovered:  MyClassLibrary.Tests
-[xUnit.net 00:00:00.49]   Starting:    MyClassLibrary.Tests
-[xUnit.net 00:00:00.49]   Starting:    MyClassLibrary.Tests
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidPrice_ThrowsArgumentException(price: 0) [291 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.Constructor_NullLogger_ThrowsArgumentNullException [297 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_InvalidName_ThrowsArgumentException(name: null) [294 ms]
-  Passed MyClassLibrary.Tests.Domain.Events.DomainEventTests.CustomerCreatedEvent_PropertiesSetCorrectly [300 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_InvalidName_ThrowsArgumentException(name: "") [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidPrice_ThrowsArgumentException(price: -100.5) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidPrice_ThrowsArgumentException(price: -1) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_InvalidName_ThrowsArgumentException(name: "   ") [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidQuantity_ThrowsArgumentException(quantity: -1) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidQuantity_ThrowsArgumentException(quantity: -100) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidQuantity_ThrowsArgumentException(quantity: 0) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_TrimsProductName [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Events.DomainEventTests.DomainEvents_RecordEquality_WorksCorrectly [7 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.AddItem_ValidItem_AddsToOrder [309 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.LineTotal_CalculatesCorrectly [5 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidProduct_ThrowsArgumentException(product: null) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.TotalAmount_MultipleItems_CalculatesCorrectly [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Events.DomainEventTests.OrderItemAddedEvent_PropertiesSetCorrectly [1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidProduct_ThrowsArgumentException(product: "   ") [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidProduct_ThrowsArgumentException(product: "") [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Events.DomainEventTests.OrderPlacedEvent_PropertiesSetCorrectly [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.GetOrder_ExistingOrder_ReturnsOrder [12 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_EmptyId_ThrowsArgumentException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 31, expectedOutstanding: False) [5 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 0, expectedOutstanding: True) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 10, expectedOutstanding: True) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 30, expectedOutstanding: False) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 100, expectedOutstanding: False) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 29, expectedOutstanding: True) [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.GetByIdAsync_AfterSave_ReturnsCustomer [16 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_ValidParameters_CreatesOrderItem [7 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.AddItem_SameProductDifferentPrice_DoesNotCombine [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_MultipleEvents_LogsAllEvents [321 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_ValidParameters_CreatesCustomer [4 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.Constructor_ValidParameters_CreatesOrder [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.SaveAsync_NewCustomer_SavesSuccessfully [1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.OrderItem_RecordEquality_WorksCorrectly [1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.GetOrder_NonExistentOrder_ReturnsNull [1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.AddItem_DuplicateItem_CombinesQuantities [1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.CreateCustomerAndPlaceOrderAsync_DomainEventsAreDispatched [324 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.Repository_IsolatedBetweenInstances [2 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullCustomerLogger_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.Constructor_EmptyId_ThrowsArgumentException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.Constructor_FutureDate_ThrowsArgumentException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.AddItem_NullItem_ThrowsArgumentNullException [1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.GetByIdAsync_NonExistentCustomer_ReturnsNull [1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_LogsEventTypeNameCorrectly [6 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_UnderLimit_CreatesOrder [5 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.CreateCustomerAndPlaceOrderAsync_EmptyOrderItems_CreatesOrderWithNoItems [4 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.SaveAsync_MultipleCustomers_SavesAll [2 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_TrimsCustomerName [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_EmptyEventList_DoesNotLog [1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullBusinessRules_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.Constructor_NullLogger_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_AllOrdersCountAsOutstanding_EnforcesLimit [1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_NullBusinessRules_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.AddItemToOrder_NonExistentOrder_ThrowsException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.ClearDomainEvents_RemovesAllEvents [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.SaveAsync_NullCustomer_ThrowsArgumentNullException [4 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.AddItemToOrder_ValidOrder_AddsItem [1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.SaveAsync_ExistingCustomer_UpdatesSuccessfully [1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_ReachesMaxOutstandingOrders_ThrowsException [1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.AddOrderItemsToExistingOrderAsync_CustomerNotFound_ThrowsInvalidOperationException [7 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullEventDispatcher_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_SingleEvent_LogsCorrectly [7 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.CreateCustomerAndPlaceOrderAsync_Success_ReturnsCustomerId [1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullServiceLogger_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_WithCancellationToken_CompletesSuccessfully [2 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.AddOrderItemsToExistingOrderAsync_Exception_LogsErrorAndRethrows [1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.AddOrderItemsToExistingOrderAsync_Success_AddsItems [1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullRepository_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.CreateCustomerAndPlaceOrderAsync_Exception_LogsErrorAndRethrows [1 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_CanResolveAllDependenciesForApplicationService [441 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_RegistersTransientApplicationService [8 ms]
-[xUnit.net 00:00:01.08]   Finished:    MyClassLibrary.Tests
-[xUnit.net 00:00:01.08]   Finished:    MyClassLibrary.Tests
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_RegistersAllRequiredServices [14 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_RegistersCorrectImplementations [< 1 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_ConfiguresBusinessRulesFromConfiguration [< 1 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_RegistersSingletonServices [< 1 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_DefaultBusinessRulesWhenNotInConfiguration [< 1 ms]
+  Analytics.Data succeeded (0.7s) → Analytics.Data\bin\Debug\net9.0\Analytics.Data.dll
+  Analytics.Data.Tests succeeded (0.4s) → Analytics.Data.Tests\bin\Debug\net9.0\Analytics.Data.Tests.dll
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.1+bf6400fd51 (64-bit .NET 9.0.6)
+[xUnit.net 00:00:00.93]   Discovering: Analytics.Data.Tests
+[xUnit.net 00:00:01.01]   Discovered:  Analytics.Data.Tests
+[xUnit.net 00:00:01.06]   Starting:    Analytics.Data.Tests
+[xUnit.net 00:00:04.44]   Finished:    Analytics.Data.Tests
+  Analytics.Data.Tests test succeeded (7.2s)
 
-Test Run Successful.
-Total tests: 79
-     Passed: 79
- Total time: 2.1002 Seconds
-  MyClassLibrary.Tests test succeeded (3.0s)
-
-Test summary: total: 79, failed: 0, succeeded: 79, skipped: 0, duration: 2.9s
-Build succeeded in 15.5s
-PS C:\code\MyAggregateRootSample> C:\code\wyoming\src\Mobility\MobilityNetworkDemo\omnibus.ps1
---- Starting sequence of operations ---
-Executing 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\run.ps1'...
-Running dotnet clean...
-Running dotnet build...
-Running dotnet run (capturing unhandled exceptions)...
-Collecting .NET info into 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\dotnet_info.txt'...
-File 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt' and potentially 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\dotnet_info.txt' have been updated.
-Successfully executed 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\run.ps1'.
----
-Executing 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\compress.ps1' for file 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt'...
-Starting compression and verification process...
-Original file: 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt'
-Archive will be created at: 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt.7z'
----
-Attempting to compress 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt' to 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt.7z' with maximum compression...
-Compression completed successfully.
----
-Checking integrity of 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt.7z'...
-Archive integrity check passed: No errors found in 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt.7z'.
----
-Deleting original file: 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt'...
-Original file 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt' deleted successfully.
----
-Script completed successfully.
-Successfully executed 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\compress.ps1'.
----
-Executing 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\commit.ps1'...
----
-Starting Git operations in 'C:\code\wyoming'...
-Checking git status...
-On branch dotnet10preview4
-Your branch is up to date with 'origin/dotnet10preview4'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   PowerShell.txt
-        modified:   src/Mobility/MobilityNetworkDemo/dotnet_info.txt
-        modified:   src/Mobility/MobilityNetworkDemo/powershell.txt.7z
-
-no changes added to commit (use "git add" and/or "git commit -a")
-Showing remote origin details...
-* remote origin
-  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
-  Push  URL: git@github.com:onewyoming/onewyoming.git
-  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
-  HEAD branch: master
-  Remote branches:
-    dotnet10preview4 tracked
-    master           tracked
-  Local branches configured for 'git pull':
-    dotnet10preview4 merges with remote dotnet10preview4
-    master           merges with remote master
-  Local refs configured for 'git push':
-    dotnet10preview4 pushes to dotnet10preview4 (up to date)
-    master           pushes to master           (up to date)
-Adding all changes to staging...
-Committing changes...
-[dotnet10preview4 e32e984] Refactor: Improve file generation and compression scripts
- 3 files changed, 842 insertions(+), 183 deletions(-)
-Changes committed successfully.
-Pulling latest changes with rebase and 'ours' strategy...
-Current branch dotnet10preview4 is up to date.
-Pushing all branches to origin...
-Enumerating objects: 15, done.
-Counting objects: 100% (15/15), done.
-Delta compression using up to 10 threads
-Compressing objects: 100% (8/8), done.
-Writing objects: 100% (8/8), 8.00 KiB | 1.14 MiB/s, done.
-Total 8 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
-remote:
-remote: GitHub found 7 vulnerabilities on onewyoming/onewyoming's default branch (2 critical, 5 moderate). To find out more, visit:
-remote:      https://github.com/onewyoming/onewyoming/security/dependabot
-remote:
-To github.com:onewyoming/onewyoming.git
-   93ed6f5..e32e984  dotnet10preview4 -> dotnet10preview4
-Enumerating objects: 15, done.
-Counting objects: 100% (15/15), done.
-Delta compression using up to 10 threads
-Compressing objects: 100% (8/8), done.
-Writing objects: 100% (8/8), 8.00 KiB | 1023.00 KiB/s, done.
-Total 8 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
-remote:
-remote: To create a merge request for dotnet10preview4, visit:
-remote:   https://gitlab.com/wyoming/wyoming.gitlab.io/-/merge_requests/new?merge_request%5Bsource_branch%5D=dotnet10preview4
-remote:
-To gitlab.com:wyoming/wyoming.gitlab.io.git
-   93ed6f5..e32e984  dotnet10preview4 -> dotnet10preview4
-Git operations completed.
-Successfully executed 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\commit.ps1'.
---- All scripts in sequence completed successfully! ---
-PS C:\code\wyoming> Set-Location "C:\code\MyAggregateRootSample"; dotnet test --logger "console;verbosity=detailed"
-Restore complete (2.5s)
+Test summary: total: 3, failed: 0, succeeded: 3, skipped: 0, duration: 7.2s
+Build succeeded in 11.0s
+Using launch settings from C:\code\inmemoryof\Incheon\Incheon.WebApi\Properties\launchSettings.json...
+Building...
+Restore complete (1.7s)
 You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy
-  MyClassLibrary succeeded (0.6s) → MyClassLibrary\bin\Debug\net9.0\MyClassLibrary.dll
-  MyClassLibrary.Tests succeeded (0.8s) → MyClassLibrary.Tests\bin\Debug\net9.0\MyClassLibrary.Tests.dll
-A total of 1 test files matched the specified pattern.
-C:\code\MyAggregateRootSample\MyClassLibrary.Tests\bin\Debug\net9.0\MyClassLibrary.Tests.dll
-[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 9.0.6)
-[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 9.0.6)
-[xUnit.net 00:00:00.17]   Discovering: MyClassLibrary.Tests
-[xUnit.net 00:00:00.17]   Discovering: MyClassLibrary.Tests
-[xUnit.net 00:00:00.30]   Discovered:  MyClassLibrary.Tests
-[xUnit.net 00:00:00.30]   Discovered:  MyClassLibrary.Tests
-[xUnit.net 00:00:00.31]   Starting:    MyClassLibrary.Tests
-[xUnit.net 00:00:00.31]   Starting:    MyClassLibrary.Tests
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_InvalidName_ThrowsArgumentException(name: null) [14 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.Constructor_NullLogger_ThrowsArgumentNullException [14 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidPrice_ThrowsArgumentException(price: 0) [11 ms]
-  Passed MyClassLibrary.Tests.Domain.Events.DomainEventTests.CustomerCreatedEvent_PropertiesSetCorrectly [18 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidPrice_ThrowsArgumentException(price: -100.5) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_InvalidName_ThrowsArgumentException(name: "") [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidPrice_ThrowsArgumentException(price: -1) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_InvalidName_ThrowsArgumentException(name: "   ") [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidQuantity_ThrowsArgumentException(quantity: -1) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidQuantity_ThrowsArgumentException(quantity: -100) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidQuantity_ThrowsArgumentException(quantity: 0) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_TrimsProductName [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.LineTotal_CalculatesCorrectly [5 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidProduct_ThrowsArgumentException(product: null) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidProduct_ThrowsArgumentException(product: "   ") [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_InvalidProduct_ThrowsArgumentException(product: "") [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Events.DomainEventTests.DomainEvents_RecordEquality_WorksCorrectly [10 ms]
-  Passed MyClassLibrary.Tests.Domain.Events.DomainEventTests.OrderItemAddedEvent_PropertiesSetCorrectly [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Events.DomainEventTests.OrderPlacedEvent_PropertiesSetCorrectly [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.AddItem_ValidItem_AddsToOrder [36 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.TotalAmount_MultipleItems_CalculatesCorrectly [1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.GetOrder_ExistingOrder_ReturnsOrder [18 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_EmptyId_ThrowsArgumentException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.Constructor_ValidParameters_CreatesOrderItem [10 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_MultipleEvents_LogsAllEvents [44 ms]
-  Passed MyClassLibrary.Tests.Domain.ValueObjects.OrderItemTests.OrderItem_RecordEquality_WorksCorrectly [2 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.GetByIdAsync_AfterSave_ReturnsCustomer [22 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_ValidParameters_CreatesCustomer [4 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 31, expectedOutstanding: False) [7 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.SaveAsync_NewCustomer_SavesSuccessfully [1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.GetOrder_NonExistentOrder_ReturnsNull [< 1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.CreateCustomerAndPlaceOrderAsync_DomainEventsAreDispatched [48 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 0, expectedOutstanding: True) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 10, expectedOutstanding: True) [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_LogsEventTypeNameCorrectly [4 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 30, expectedOutstanding: False) [< 1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullCustomerLogger_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 100, expectedOutstanding: False) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.IsOutstanding_VariousDays_ReturnsCorrectResult(daysAgo: 29, expectedOutstanding: True) [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.AddItem_SameProductDifferentPrice_DoesNotCombine [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.Repository_IsolatedBetweenInstances [1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_EmptyEventList_DoesNotLog [1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.Constructor_ValidParameters_CreatesOrder [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.Constructor_NullLogger_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_UnderLimit_CreatesOrder [3 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.GetByIdAsync_NonExistentCustomer_ReturnsNull [1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.CreateCustomerAndPlaceOrderAsync_EmptyOrderItems_CreatesOrderWithNoItems [2 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_TrimsCustomerName [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.AddItem_DuplicateItem_CombinesQuantities [1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullBusinessRules_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_AllOrdersCountAsOutstanding_EnforcesLimit [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.Constructor_EmptyId_ThrowsArgumentException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.Constructor_NullBusinessRules_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.SaveAsync_MultipleCustomers_SavesAll [1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.Constructor_FutureDate_ThrowsArgumentException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.AddItemToOrder_NonExistentOrder_ThrowsException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Entities.OrderTests.AddItem_NullItem_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.ClearDomainEvents_RemovesAllEvents [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.AddItemToOrder_ValidOrder_AddsItem [< 1 ms]
-  Passed MyClassLibrary.Tests.Domain.Aggregates.CustomerAggregateRootTests.PlaceNewOrder_ReachesMaxOutstandingOrders_ThrowsException [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.SaveAsync_NullCustomer_ThrowsArgumentNullException [4 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_SingleEvent_LogsCorrectly [7 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Repositories.InMemoryCustomerAggregateRepositoryTests.SaveAsync_ExistingCustomer_UpdatesSuccessfully [1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.AddOrderItemsToExistingOrderAsync_CustomerNotFound_ThrowsInvalidOperationException [8 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullEventDispatcher_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Infrastructure.Events.LoggingDomainEventDispatcherTests.DispatchAsync_WithCancellationToken_CompletesSuccessfully [3 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.CreateCustomerAndPlaceOrderAsync_Success_ReturnsCustomerId [3 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullServiceLogger_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.AddOrderItemsToExistingOrderAsync_Exception_LogsErrorAndRethrows [2 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.AddOrderItemsToExistingOrderAsync_Success_AddsItems [1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.Constructor_NullRepository_ThrowsArgumentNullException [< 1 ms]
-  Passed MyClassLibrary.Tests.Application.Services.CustomerApplicationServiceTests.CreateCustomerAndPlaceOrderAsync_Exception_LogsErrorAndRethrows [1 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_CanResolveAllDependenciesForApplicationService [137 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_RegistersTransientApplicationService [5 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_RegistersAllRequiredServices [19 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_RegistersCorrectImplementations [1 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_ConfiguresBusinessRulesFromConfiguration [< 1 ms]
-[xUnit.net 00:00:00.59]   Finished:    MyClassLibrary.Tests
-[xUnit.net 00:00:00.59]   Finished:    MyClassLibrary.Tests
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_RegistersSingletonServices [1 ms]
-  Passed MyClassLibrary.Tests.Extensions.ServiceCollectionExtensionsTests.AddCustomerDomain_DefaultBusinessRulesWhenNotInConfiguration [< 1 ms]
+  Analytics.Data succeeded (0.8s) → C:\code\inmemoryof\Incheon\Analytics.Data\bin\Release\net9.0\Analytics.Data.dll
+  Incheon.WebApi succeeded (1.2s) → bin\Release\net9.0\Incheon.WebApi.dll
 
-Test Run Successful.
-Total tests: 79
-     Passed: 79
- Total time: 1.7290 Seconds
-  MyClassLibrary.Tests test succeeded (2.4s)
-
-Test summary: total: 79, failed: 0, succeeded: 79, skipped: 0, duration: 2.4s
-Build succeeded in 7.2s
-PS C:\code\MyAggregateRootSample> Set-Location "C:\code\MyAggregateRootSample"; dotnet test --logger "console;verbosity=detailed"
+Build succeeded in 5.6s
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "WebAnalyticsEvents" (
+          "Id" INTEGER NOT NULL CONSTRAINT "PK_WebAnalyticsEvents" PRIMARY KEY AUTOINCREMENT,
+          "Timestamp" TEXT NOT NULL,
+          "EventType" TEXT NOT NULL,
+          "UserId" TEXT NULL,
+          "SessionId" TEXT NULL,
+          "PageUrl" TEXT NULL,
+          "ReferrerUrl" TEXT NULL,
+          "UserAgent" TEXT NULL,
+          "IpAddress" TEXT NULL,
+          "DataPayload" TEXT NULL
+      );
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_WebAnalyticsEvents_EventType" ON "WebAnalyticsEvents" ("EventType");
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_WebAnalyticsEvents_SessionId" ON "WebAnalyticsEvents" ("SessionId");
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_WebAnalyticsEvents_Timestamp" ON "WebAnalyticsEvents" ("Timestamp");
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_WebAnalyticsEvents_UserId" ON "WebAnalyticsEvents" ("UserId");
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://0.0.0.0:5102
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\code\inmemoryof\Incheon\Incheon.WebApi
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (14ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?', @p1='?' (Size = 8), @p2='?' (Size = 13), @p3='?' (Size = 9), @p4='?', @p5='?' (Size = 36), @p6='?' (DbType = DateTime), @p7='?' (Size = 80), @p8='?' (Size = 9)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "WebAnalyticsEvents" ("DataPayload", "EventType", "IpAddress", "PageUrl", "ReferrerUrl", "SessionId", "Timestamp", "UserAgent", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+      RETURNING "Id";
