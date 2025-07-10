@@ -2136,3 +2136,96 @@ Git operations completed.
 Successfully executed 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\commit.ps1'.
 --- All scripts in sequence completed successfully! ---
 PS C:\code\wyoming> C:\code\wyoming\src\Mobility\MobilityNetworkDemo\omnibus.ps1
+--- Starting sequence of operations ---
+Executing 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\run.ps1'...
+Running dotnet clean...
+Running dotnet build...
+Running dotnet run (capturing unhandled exceptions)...
+Collecting .NET info into 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\dotnet_info.txt'...
+File 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt' and potentially 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\dotnet_info.txt' have been updated.
+Successfully executed 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\run.ps1'.
+---
+Executing 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\compress.ps1' for file 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt'...
+Starting compression and verification process...
+Original file: 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt'
+Archive will be created at: 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt.7z'
+---
+Attempting to compress 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt' to 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt.7z' with maximum compression...
+Compression completed successfully.
+---
+Checking integrity of 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt.7z'...
+Archive integrity check passed: No errors found in 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt.7z'.
+---
+Deleting original file: 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt'...
+Original file 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\powershell.txt' deleted successfully.
+---
+Script completed successfully.
+Successfully executed 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\compress.ps1'.
+---
+Executing 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\commit.ps1'...
+---
+Starting Git operations in 'C:\code\wyoming'...
+Checking git status...
+On branch dotnet10preview4
+Your branch is up to date with 'origin/dotnet10preview4'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   PowerShell.txt
+        modified:   src/Mobility/MobilityNetworkDemo/dotnet_info.txt
+        modified:   src/Mobility/MobilityNetworkDemo/powershell.txt.7z
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Showing remote origin details...
+* remote origin
+  Fetch URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  Push  URL: git@github.com:onewyoming/onewyoming.git
+  Push  URL: git@gitlab.com:wyoming/wyoming.gitlab.io.git
+  HEAD branch: master
+  Remote branches:
+    dotnet10preview4 tracked
+    master           tracked
+  Local branches configured for 'git pull':
+    dotnet10preview4 merges with remote dotnet10preview4
+    master           merges with remote master
+  Local refs configured for 'git push':
+    dotnet10preview4 pushes to dotnet10preview4 (up to date)
+    master           pushes to master           (up to date)
+Adding all changes to staging...
+Committing changes...
+[dotnet10preview4 8c0c94c] Refactor: Improve file generation and compression scripts
+ 3 files changed, 1893 insertions(+), 5066 deletions(-)
+Changes committed successfully.
+Pulling latest changes with rebase and 'ours' strategy...
+Current branch dotnet10preview4 is up to date.
+Pushing all branches to origin...
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 6.78 KiB | 495.00 KiB/s, done.
+Total 8 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+remote:
+remote: GitHub found 7 vulnerabilities on onewyoming/onewyoming's default branch (2 critical, 5 moderate). To find out more, visit:
+remote:      https://github.com/onewyoming/onewyoming/security/dependabot
+remote:
+To github.com:onewyoming/onewyoming.git
+   abfda7e..8c0c94c  dotnet10preview4 -> dotnet10preview4
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 6.78 KiB | 495.00 KiB/s, done.
+Total 8 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: To create a merge request for dotnet10preview4, visit:
+remote:   https://gitlab.com/wyoming/wyoming.gitlab.io/-/merge_requests/new?merge_request%5Bsource_branch%5D=dotnet10preview4
+remote:
+To gitlab.com:wyoming/wyoming.gitlab.io.git
+   abfda7e..8c0c94c  dotnet10preview4 -> dotnet10preview4
+Git operations completed.
+Successfully executed 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\commit.ps1'.
+--- All scripts in sequence completed successfully! ---
+PS C:\code\wyoming> C:\code\wyoming\src\Mobility\MobilityNetworkDemo\omnibus.ps1
