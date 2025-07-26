@@ -1,5 +1,49 @@
 PowerShell 7.6.0-preview.4
-PS C:\Users\kushal> C:\code\wyoming\src\Mobility\MobilityNetworkDemo\omnibus.ps1
+PS C:\Users\kushal> ping 192.168.0.1
+
+Pinging 192.168.0.1 with 32 bytes of data:
+Reply from 192.168.0.1: bytes=32 time<1ms TTL=64
+Reply from 192.168.0.1: bytes=32 time<1ms TTL=64
+Reply from 192.168.0.1: bytes=32 time=1ms TTL=64
+Reply from 192.168.0.1: bytes=32 time=1ms TTL=64
+
+Ping statistics for 192.168.0.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 1ms, Average = 0ms
+PS C:\Users\kushal> ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::c308:b4ba:21f5:ea3f%11
+   IPv4 Address. . . . . . . . . . . : 192.168.0.168
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.0.1
+PS C:\Users\kushal> Set-Location C:\code
+PS C:\code> mkdir NetworkCheck
+
+    Directory: C:\code
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----           7/25/2025  5:16 PM                NetworkCheck
+
+PS C:\code> Set-Location C:\code\NetworkCheck\
+PS C:\code\NetworkCheck> code C:\code\NetworkCheck\
+code: The term 'code' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+PS C:\code\NetworkCheck>
+PS C:\code\NetworkCheck> C:\code\NetworkCheck\Network-Monitor-Advanced.ps1
+2025-07-25 17:19:36.707 : === Advanced Network Monitor Started ===
+2025-07-25 17:19:36.727 : Router IP: 192.168.0.1 (threshold: 10ms)
+2025-07-25 17:19:36.731 : Internet Test: 8.8.8.8 (Google DNS)
+2025-07-25 17:20:29.797 : === Monitor Stopped - Total Runtime: 00:00:53.0556498 ===
+2025-07-25 17:20:29.806 : Total Checks: 52, Router Failures: 0, Internet Failures: 0
+PS C:\code\NetworkCheck> C:\code\wyoming\src\Mobility\MobilityNetworkDemo\omnibus.ps1
 --- Starting sequence of operations ---
 Executing 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\run.ps1'...
 Running dotnet clean...
@@ -36,7 +80,6 @@ Your branch is up to date with 'origin/dotnet10preview4'.
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
-        modified:   PowerShell.txt
         modified:   src/Mobility/MobilityNetworkDemo/dotnet_info.txt
         modified:   src/Mobility/MobilityNetworkDemo/powershell.txt.7z
 
@@ -58,38 +101,38 @@ Showing remote origin details...
     master           pushes to master           (up to date)
 Adding all changes to staging...
 Committing changes...
-[dotnet10preview4 5f9b9b5] Refactor: Improve file generation and compression scripts
- 3 files changed, 1055 insertions(+), 6812 deletions(-)
+[dotnet10preview4 c9a7f8a] Refactor: Improve file generation and compression scripts
+ 2 files changed, 62 insertions(+)
 Changes committed successfully.
 Pulling latest changes with rebase and 'ours' strategy...
 Current branch dotnet10preview4 is up to date.
 Pushing all branches to origin...
-Enumerating objects: 15, done.
-Counting objects: 100% (15/15), done.
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
 Delta compression using up to 10 threads
-Compressing objects: 100% (8/8), done.
-Writing objects: 100% (8/8), 9.29 KiB | 380.00 KiB/s, done.
-Total 8 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.92 KiB | 280.00 KiB/s, done.
+Total 7 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
 remote:
 remote: GitHub found 7 vulnerabilities on onewyoming/onewyoming's default branch (2 critical, 5 moderate). To find out more, visit:
 remote:      https://github.com/onewyoming/onewyoming/security/dependabot
 remote:
 To github.com:onewyoming/onewyoming.git
-   fe04913..5f9b9b5  dotnet10preview4 -> dotnet10preview4
-Enumerating objects: 15, done.
-Counting objects: 100% (15/15), done.
+   588606d..c9a7f8a  dotnet10preview4 -> dotnet10preview4
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
 Delta compression using up to 10 threads
-Compressing objects: 100% (8/8), done.
-Writing objects: 100% (8/8), 9.29 KiB | 528.00 KiB/s, done.
-Total 8 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.92 KiB | 327.00 KiB/s, done.
+Total 7 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
 remote:
 remote: To create a merge request for dotnet10preview4, visit:
 remote:   https://gitlab.com/wyoming/wyoming.gitlab.io/-/merge_requests/new?merge_request%5Bsource_branch%5D=dotnet10preview4
 remote:
 To gitlab.com:wyoming/wyoming.gitlab.io.git
-   fe04913..5f9b9b5  dotnet10preview4 -> dotnet10preview4
+   588606d..c9a7f8a  dotnet10preview4 -> dotnet10preview4
 Git operations completed.
 Successfully executed 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\commit.ps1'.
 --- All scripts in sequence completed successfully! ---
-PS C:\code\wyoming> C:\code\wyoming\src\Mobility\MobilityNetworkDemo\omnibus.ps1
+PS C:\code\wyoming>
