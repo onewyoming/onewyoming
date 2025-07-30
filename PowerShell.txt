@@ -1,49 +1,6 @@
 PowerShell 7.6.0-preview.4
-PS C:\Users\kushal> ping 192.168.0.1
-
-Pinging 192.168.0.1 with 32 bytes of data:
-Reply from 192.168.0.1: bytes=32 time<1ms TTL=64
-Reply from 192.168.0.1: bytes=32 time<1ms TTL=64
-Reply from 192.168.0.1: bytes=32 time=1ms TTL=64
-Reply from 192.168.0.1: bytes=32 time=1ms TTL=64
-
-Ping statistics for 192.168.0.1:
-    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
-Approximate round trip times in milli-seconds:
-    Minimum = 0ms, Maximum = 1ms, Average = 0ms
-PS C:\Users\kushal> ipconfig
-
-Windows IP Configuration
-
-
-Ethernet adapter Ethernet:
-
-   Connection-specific DNS Suffix  . :
-   Link-local IPv6 Address . . . . . : fe80::c308:b4ba:21f5:ea3f%11
-   IPv4 Address. . . . . . . . . . . : 192.168.0.168
-   Subnet Mask . . . . . . . . . . . : 255.255.255.0
-   Default Gateway . . . . . . . . . : 192.168.0.1
-PS C:\Users\kushal> Set-Location C:\code
-PS C:\code> mkdir NetworkCheck
-
-    Directory: C:\code
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d----           7/25/2025  5:16 PM                NetworkCheck
-
-PS C:\code> Set-Location C:\code\NetworkCheck\
-PS C:\code\NetworkCheck> code C:\code\NetworkCheck\
-code: The term 'code' is not recognized as a name of a cmdlet, function, script file, or executable program.
-Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
-PS C:\code\NetworkCheck>
-PS C:\code\NetworkCheck> C:\code\NetworkCheck\Network-Monitor-Advanced.ps1
-2025-07-25 17:19:36.707 : === Advanced Network Monitor Started ===
-2025-07-25 17:19:36.727 : Router IP: 192.168.0.1 (threshold: 10ms)
-2025-07-25 17:19:36.731 : Internet Test: 8.8.8.8 (Google DNS)
-2025-07-25 17:20:29.797 : === Monitor Stopped - Total Runtime: 00:00:53.0556498 ===
-2025-07-25 17:20:29.806 : Total Checks: 52, Router Failures: 0, Internet Failures: 0
-PS C:\code\NetworkCheck> C:\code\wyoming\src\Mobility\MobilityNetworkDemo\omnibus.ps1
+PS C:\Users\kushal>
+PS C:\Users\kushal> C:\code\wyoming\src\Mobility\MobilityNetworkDemo\omnibus.ps1
 --- Starting sequence of operations ---
 Executing 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\run.ps1'...
 Running dotnet clean...
@@ -101,7 +58,7 @@ Showing remote origin details...
     master           pushes to master           (up to date)
 Adding all changes to staging...
 Committing changes...
-[dotnet10preview4 c9a7f8a] Refactor: Improve file generation and compression scripts
+[dotnet10preview4 67e78ce] Refactor: Improve file generation and compression scripts
  2 files changed, 62 insertions(+)
 Changes committed successfully.
 Pulling latest changes with rebase and 'ours' strategy...
@@ -111,7 +68,7 @@ Enumerating objects: 13, done.
 Counting objects: 100% (13/13), done.
 Delta compression using up to 10 threads
 Compressing objects: 100% (7/7), done.
-Writing objects: 100% (7/7), 1.92 KiB | 280.00 KiB/s, done.
+Writing objects: 100% (7/7), 1.92 KiB | 492.00 KiB/s, done.
 Total 7 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
 remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
 remote:
@@ -119,20 +76,83 @@ remote: GitHub found 7 vulnerabilities on onewyoming/onewyoming's default branch
 remote:      https://github.com/onewyoming/onewyoming/security/dependabot
 remote:
 To github.com:onewyoming/onewyoming.git
-   588606d..c9a7f8a  dotnet10preview4 -> dotnet10preview4
+   005dc81..67e78ce  dotnet10preview4 -> dotnet10preview4
 Enumerating objects: 13, done.
 Counting objects: 100% (13/13), done.
 Delta compression using up to 10 threads
 Compressing objects: 100% (7/7), done.
-Writing objects: 100% (7/7), 1.92 KiB | 327.00 KiB/s, done.
+Writing objects: 100% (7/7), 1.92 KiB | 394.00 KiB/s, done.
 Total 7 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
 remote:
 remote: To create a merge request for dotnet10preview4, visit:
 remote:   https://gitlab.com/wyoming/wyoming.gitlab.io/-/merge_requests/new?merge_request%5Bsource_branch%5D=dotnet10preview4
 remote:
 To gitlab.com:wyoming/wyoming.gitlab.io.git
-   588606d..c9a7f8a  dotnet10preview4 -> dotnet10preview4
+   005dc81..67e78ce  dotnet10preview4 -> dotnet10preview4
 Git operations completed.
 Successfully executed 'C:\code\wyoming\src\Mobility\MobilityNetworkDemo\commit.ps1'.
 --- All scripts in sequence completed successfully! ---
-PS C:\code\wyoming>
+PS C:\code\wyoming> dotnet --info
+.NET SDK:
+ Version:           10.0.100-preview.5.25277.114
+ Commit:            ddf39a1b46
+ Workload version:  10.0.100-manifests.a07d1f1a
+ MSBuild version:   17.15.0-preview-25277-114+ddf39a1b4
+
+Runtime Environment:
+ OS Name:     Windows
+ OS Version:  10.0.26100
+ OS Platform: Windows
+ RID:         win-x64
+ Base Path:   C:\Program Files\dotnet\sdk\10.0.100-preview.5.25277.114\
+
+.NET workloads installed:
+ [aspire]
+   Installation Source: VS 17.14.36310.24
+   Manifest Version:    8.2.2/8.0.100
+   Manifest Path:       C:\Program Files\dotnet\sdk-manifests\8.0.100\microsoft.net.sdk.aspire\8.2.2\WorkloadManifest.json
+   Install Type:              Msi
+
+Configured to use workload sets when installing new manifests.
+Workloads are configured to install and update using workload versions, but none were found. Run "dotnet workload restore" to install a workload version.
+
+Host:
+  Version:      10.0.0-preview.5.25277.114
+  Architecture: x64
+  Commit:       ddf39a1b46
+
+.NET SDKs installed:
+  9.0.100 [C:\Program Files\dotnet\sdk]
+  9.0.302 [C:\Program Files\dotnet\sdk]
+  10.0.100-preview.5.25277.114 [C:\Program Files\dotnet\sdk]
+
+.NET runtimes installed:
+  Microsoft.AspNetCore.App 8.0.18 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 9.0.0 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 9.0.7 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 10.0.0-preview.5.25277.114 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.NETCore.App 8.0.18 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.NETCore.App 9.0.0 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.NETCore.App 9.0.7 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.NETCore.App 10.0.0-preview.5.25277.114 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.WindowsDesktop.App 8.0.18 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+  Microsoft.WindowsDesktop.App 9.0.0 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+  Microsoft.WindowsDesktop.App 9.0.7 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+  Microsoft.WindowsDesktop.App 10.0.0-preview.5.25277.114 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+
+Other architectures found:
+  x86   [C:\Program Files (x86)\dotnet]
+    registered at [HKLM\SOFTWARE\dotnet\Setup\InstalledVersions\x86\InstallLocation]
+
+Environment variables:
+  Not set
+
+global.json file:
+  Not found
+
+Learn more:
+  https://aka.ms/dotnet/info
+
+Download .NET:
+  https://aka.ms/dotnet/download
+PS C:\code\wyoming> C:\code\wyoming\src\Mobility\MobilityNetworkDemo\omnibus.ps1
