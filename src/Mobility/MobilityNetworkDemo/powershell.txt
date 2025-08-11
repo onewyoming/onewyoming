@@ -3,9 +3,9 @@ Path
 ----
 C:\code\wyoming\src\Mobility\MobilityNetworkDemo
 
-2025-08-11 15:09:26
+2025-08-11 15:42:46
 fail: MobilityNetworkDemo.Program[0]
       Configuration validation failed. Please check your appsettings.json.
 fail: MobilityNetworkDemo.Program[0]
       - DataAnnotation validation failed for 'SimulationSettings' members: 'DurationInSeconds' with the error: 'Simulation duration must be between 5 and 300 seconds.'.
-2025-08-11 15:09:40
+2025-08-11 15:42:53
