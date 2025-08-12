@@ -5896,4 +5896,2208 @@ ValueError: 'CMD_SHELL' takes a single string after it
 real    1m44.703s
 user    1m56.983s
 sys     0m19.692s
+kushal@texas:~/src/MyOpenTelemetryApi$ free -h
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       504Mi        12Gi       828Ki       2.6Gi        14Gi
+Swap:          979Mi          0B       979Mi
+kushal@texas:~/src/MyOpenTelemetryApi$ cd ~/src/MyOpenTelemetryApi/; time git pull --verbose
+POST git-upload-pack (186 bytes)
+POST git-upload-pack (408 bytes)
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 8 (delta 5), reused 8 (delta 5), pack-reused 0 (from 0)
+Unpacking objects: 100% (8/8), 1.95 KiB | 498.00 KiB/s, done.
+From https://github.com/kusl/MyOpenTelemetryApi
+   d586272..ad276c5  main           -> origin/main
+ = [up to date]      feat/dotnet-10 -> origin/feat/dotnet-10
+Updating d586272..ad276c5
+Fast-forward
+ Dockerfile                |  4 ++++
+ claude.md                 | 73 +++++++++++++++++++++++++------------------------------------------------
+ docker-compose.simple.yml |  0
+ docker-compose.yml        |  4 ++--
+ podman-compose.yml        |  4 ++--
+ setup-podman.sh           | 29 +++++++++++++++++------------
+ 6 files changed, 50 insertions(+), 64 deletions(-)
+ create mode 100644 docker-compose.simple.yml
+
+real    0m0.269s
+user    0m0.095s
+sys     0m0.048s
+kushal@texas:~/src/MyOpenTelemetryApi$ time bash setup-podman.sh
+🚀 Setting up MyOpenTelemetryApi with Podman
+================================================
+📦 Using compose command: podman-compose
+📄 Using compose file: docker-compose.simple.yml
+🧹 Cleaning up existing containers and networks...
+myopentelemetryapi_myotel-network
+✅ Cleanup completed
+📁 Creating necessary directories...
+✅ Directories created
+🔨 Building and starting services...
+[1/4] STEP 1/4: FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
+[1/4] STEP 2/4: WORKDIR /app
+--> Using cache 9bbbb6b2fb0161cf11b4fa55ea48b8bc29fe989fcc8e4a6b2ca063ee672db04e
+--> 9bbbb6b2fb01
+[1/4] STEP 3/4: EXPOSE 8080
+--> Using cache 245a7f9d8bffa9794de724d09f22c5691c9fd1c59aea9e642b6729cad3f816c8
+--> 245a7f9d8bff
+[1/4] STEP 4/4: EXPOSE 8081
+--> Using cache fca5bdb66eddbe0f002f751e2bb993785c4df8a281dc2b39d86bdd3434ac5427
+--> fca5bdb66edd
+[2/4] STEP 1/11: FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+[2/4] STEP 2/11: ARG BUILD_CONFIGURATION=Release
+--> Using cache dcd814b031184426f0895318a4bdc639f013f5c1d22696647bfed65d150970a3
+--> dcd814b03118
+[2/4] STEP 3/11: WORKDIR /src
+--> Using cache 38854f82e26e35a1f04c0ddabc8781bc90dbb79b2a4d92a72f46fdae87bc4fa0
+--> 38854f82e26e
+[2/4] STEP 4/11: COPY ["src/MyOpenTelemetryApi.Api/MyOpenTelemetryApi.Api.csproj", "src/MyOpenTelemetryApi.Api/"]
+--> Using cache 4e4df1f7d231223505b3eaabcc4c2219aaf76a2e6d1ec96ad72b52be8b799561
+--> 4e4df1f7d231
+[2/4] STEP 5/11: COPY ["src/MyOpenTelemetryApi.Application/MyOpenTelemetryApi.Application.csproj", "src/MyOpenTelemetryApi.Application/"]
+--> Using cache 644ff99713f464e5a8f4298c445d1aeb84720678cdeacfa5dfb9ec81f3be77ee
+--> 644ff99713f4
+[2/4] STEP 6/11: COPY ["src/MyOpenTelemetryApi.Domain/MyOpenTelemetryApi.Domain.csproj", "src/MyOpenTelemetryApi.Domain/"]
+--> Using cache 4aeecc8a1139011826faf51b0e82d8f00d51973b62c4aa121aa661d67af0a733
+--> 4aeecc8a1139
+[2/4] STEP 7/11: COPY ["src/MyOpenTelemetryApi.Infrastructure/MyOpenTelemetryApi.Infrastructure.csproj", "src/MyOpenTelemetryApi.Infrastructure/"]
+--> Using cache c0fc4bc8fb16d74032757b20b1b97218454266964a38052b92117aa06859be4a
+--> c0fc4bc8fb16
+[2/4] STEP 8/11: RUN dotnet restore "src/MyOpenTelemetryApi.Api/MyOpenTelemetryApi.Api.csproj"
+--> Using cache 02ff3c7b66c8c42a4748d1368e000efa30a051f13e69639c9b3c0e147130f315
+--> 02ff3c7b66c8
+[2/4] STEP 9/11: COPY . .
+--> 8a6f7e59957f
+[2/4] STEP 10/11: WORKDIR "/src/src/MyOpenTelemetryApi.Api"
+--> 0ab21f979e5a
+[2/4] STEP 11/11: RUN dotnet build "MyOpenTelemetryApi.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  MyOpenTelemetryApi.Domain -> /app/build/MyOpenTelemetryApi.Domain.dll
+  MyOpenTelemetryApi.Application -> /app/build/MyOpenTelemetryApi.Application.dll
+  MyOpenTelemetryApi.Infrastructure -> /app/build/MyOpenTelemetryApi.Infrastructure.dll
+  MyOpenTelemetryApi.Api -> /app/build/MyOpenTelemetryApi.Api.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:13.92
+--> 2a1721e4a713
+[3/4] STEP 1/3: FROM 2a1721e4a71338291cc580ce6e0afdce78aefdc2fcc393ad9323e3afabd2d3f2 AS publish
+[3/4] STEP 2/3: ARG BUILD_CONFIGURATION=Release
+--> dac42312856a
+[3/4] STEP 3/3: RUN dotnet publish "MyOpenTelemetryApi.Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  MyOpenTelemetryApi.Domain -> /src/src/MyOpenTelemetryApi.Domain/bin/Release/net9.0/MyOpenTelemetryApi.Domain.dll
+  MyOpenTelemetryApi.Application -> /src/src/MyOpenTelemetryApi.Application/bin/Release/net9.0/MyOpenTelemetryApi.Application.dll
+  MyOpenTelemetryApi.Infrastructure -> /src/src/MyOpenTelemetryApi.Infrastructure/bin/Release/net9.0/MyOpenTelemetryApi.Infrastructure.dll
+  MyOpenTelemetryApi.Api -> /src/src/MyOpenTelemetryApi.Api/bin/Release/net9.0/MyOpenTelemetryApi.Api.dll
+  MyOpenTelemetryApi.Api -> /app/publish/
+--> 0ccd98af8dd0
+[4/4] STEP 1/9: FROM fca5bdb66eddbe0f002f751e2bb993785c4df8a281dc2b39d86bdd3434ac5427 AS final
+[4/4] STEP 2/9: WORKDIR /app
+--> Using cache 6b3ed11af9afa759181793c6a4a0357cb27dad5d03a637d4488691b3dcce0ef1
+--> 6b3ed11af9af
+[4/4] STEP 3/9: USER root
+--> 56467b2e5fca
+[4/4] STEP 4/9: RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8793 kB]
+Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [272 kB]
+Fetched 9327 kB in 3s (3712 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  krb5-locales libbrotli1 libcurl4 libgssapi-krb5-2 libk5crypto3 libkeyutils1
+  libkrb5-3 libkrb5support0 libldap-2.5-0 libldap-common libnghttp2-14 libpsl5
+  librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libssh2-1
+  publicsuffix
+Suggested packages:
+  krb5-doc krb5-user libsasl2-modules-gssapi-mit
+  | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp
+  libsasl2-modules-sql
+The following NEW packages will be installed:
+  curl krb5-locales libbrotli1 libcurl4 libgssapi-krb5-2 libk5crypto3
+  libkeyutils1 libkrb5-3 libkrb5support0 libldap-2.5-0 libldap-common
+  libnghttp2-14 libpsl5 librtmp1 libsasl2-2 libsasl2-modules
+  libsasl2-modules-db libssh2-1 publicsuffix
+0 upgraded, 19 newly installed, 0 to remove and 2 not upgraded.
+Need to get 2489 kB of archives.
+After this operation, 6813 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bookworm/main amd64 krb5-locales all 1.20.1-2+deb12u3 [63.1 kB]
+Get:2 http://deb.debian.org/debian bookworm/main amd64 libbrotli1 amd64 1.0.9-2+b6 [275 kB]
+Get:3 http://deb.debian.org/debian bookworm/main amd64 libkrb5support0 amd64 1.20.1-2+deb12u3 [32.8 kB]
+Get:4 http://deb.debian.org/debian bookworm/main amd64 libk5crypto3 amd64 1.20.1-2+deb12u3 [78.9 kB]
+Get:5 http://deb.debian.org/debian bookworm/main amd64 libkeyutils1 amd64 1.6.3-2 [8808 B]
+Get:6 http://deb.debian.org/debian bookworm/main amd64 libkrb5-3 amd64 1.20.1-2+deb12u3 [332 kB]
+Get:7 http://deb.debian.org/debian bookworm/main amd64 libgssapi-krb5-2 amd64 1.20.1-2+deb12u3 [135 kB]
+Get:8 http://deb.debian.org/debian bookworm/main amd64 libsasl2-modules-db amd64 2.1.28+dfsg-10 [20.3 kB]
+Get:9 http://deb.debian.org/debian bookworm/main amd64 libsasl2-2 amd64 2.1.28+dfsg-10 [59.7 kB]
+Get:10 http://deb.debian.org/debian bookworm/main amd64 libldap-2.5-0 amd64 2.5.13+dfsg-5 [183 kB]
+Get:11 http://deb.debian.org/debian bookworm/main amd64 libnghttp2-14 amd64 1.52.0-1+deb12u2 [73.0 kB]
+Get:12 http://deb.debian.org/debian bookworm/main amd64 libpsl5 amd64 0.21.2-1 [58.7 kB]
+Get:13 http://deb.debian.org/debian bookworm/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2+b2 [60.8 kB]
+Get:14 http://deb.debian.org/debian bookworm/main amd64 libssh2-1 amd64 1.10.0-3+b1 [179 kB]
+Get:15 http://deb.debian.org/debian bookworm/main amd64 libcurl4 amd64 7.88.1-10+deb12u12 [391 kB]
+Get:16 http://deb.debian.org/debian bookworm/main amd64 curl amd64 7.88.1-10+deb12u12 [315 kB]
+Get:17 http://deb.debian.org/debian bookworm/main amd64 libldap-common all 2.5.13+dfsg-5 [29.3 kB]
+Get:18 http://deb.debian.org/debian bookworm/main amd64 libsasl2-modules amd64 2.1.28+dfsg-10 [66.6 kB]
+Get:19 http://deb.debian.org/debian bookworm/main amd64 publicsuffix all 20230209.2326-1 [126 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 2489 kB in 0s (5781 kB/s)
+Selecting previously unselected package krb5-locales.
+(Reading database ... 6594 files and directories currently installed.)
+Preparing to unpack .../00-krb5-locales_1.20.1-2+deb12u3_all.deb ...
+Unpacking krb5-locales (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libbrotli1:amd64.
+Preparing to unpack .../01-libbrotli1_1.0.9-2+b6_amd64.deb ...
+Unpacking libbrotli1:amd64 (1.0.9-2+b6) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../02-libkrb5support0_1.20.1-2+deb12u3_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../03-libk5crypto3_1.20.1-2+deb12u3_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../04-libkeyutils1_1.6.3-2_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.6.3-2) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../05-libkrb5-3_1.20.1-2+deb12u3_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../06-libgssapi-krb5-2_1.20.1-2+deb12u3_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../07-libsasl2-modules-db_2.1.28+dfsg-10_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.28+dfsg-10) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../08-libsasl2-2_2.1.28+dfsg-10_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.28+dfsg-10) ...
+Selecting previously unselected package libldap-2.5-0:amd64.
+Preparing to unpack .../09-libldap-2.5-0_2.5.13+dfsg-5_amd64.deb ...
+Unpacking libldap-2.5-0:amd64 (2.5.13+dfsg-5) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../10-libnghttp2-14_1.52.0-1+deb12u2_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.52.0-1+deb12u2) ...
+Selecting previously unselected package libpsl5:amd64.
+Preparing to unpack .../11-libpsl5_0.21.2-1_amd64.deb ...
+Unpacking libpsl5:amd64 (0.21.2-1) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../12-librtmp1_2.4+20151223.gitfa8646d.1-2+b2_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b2) ...
+Selecting previously unselected package libssh2-1:amd64.
+Preparing to unpack .../13-libssh2-1_1.10.0-3+b1_amd64.deb ...
+Unpacking libssh2-1:amd64 (1.10.0-3+b1) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../14-libcurl4_7.88.1-10+deb12u12_amd64.deb ...
+Unpacking libcurl4:amd64 (7.88.1-10+deb12u12) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../15-curl_7.88.1-10+deb12u12_amd64.deb ...
+Unpacking curl (7.88.1-10+deb12u12) ...
+Selecting previously unselected package libldap-common.
+Preparing to unpack .../16-libldap-common_2.5.13+dfsg-5_all.deb ...
+Unpacking libldap-common (2.5.13+dfsg-5) ...
+Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../17-libsasl2-modules_2.1.28+dfsg-10_amd64.deb ...
+Unpacking libsasl2-modules:amd64 (2.1.28+dfsg-10) ...
+Selecting previously unselected package publicsuffix.
+Preparing to unpack .../18-publicsuffix_20230209.2326-1_all.deb ...
+Unpacking publicsuffix (20230209.2326-1) ...
+Setting up libkeyutils1:amd64 (1.6.3-2) ...
+Setting up libpsl5:amd64 (0.21.2-1) ...
+Setting up libbrotli1:amd64 (1.0.9-2+b6) ...
+Setting up libsasl2-modules:amd64 (2.1.28+dfsg-10) ...
+Setting up libnghttp2-14:amd64 (1.52.0-1+deb12u2) ...
+Setting up krb5-locales (1.20.1-2+deb12u3) ...
+Setting up libldap-common (2.5.13+dfsg-5) ...
+Setting up libkrb5support0:amd64 (1.20.1-2+deb12u3) ...
+Setting up libsasl2-modules-db:amd64 (2.1.28+dfsg-10) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b2) ...
+Setting up libk5crypto3:amd64 (1.20.1-2+deb12u3) ...
+Setting up libsasl2-2:amd64 (2.1.28+dfsg-10) ...
+Setting up libssh2-1:amd64 (1.10.0-3+b1) ...
+Setting up libkrb5-3:amd64 (1.20.1-2+deb12u3) ...
+Setting up publicsuffix (20230209.2326-1) ...
+Setting up libldap-2.5-0:amd64 (2.5.13+dfsg-5) ...
+Setting up libgssapi-krb5-2:amd64 (1.20.1-2+deb12u3) ...
+Setting up libcurl4:amd64 (7.88.1-10+deb12u12) ...
+Setting up curl (7.88.1-10+deb12u12) ...
+Processing triggers for libc-bin (2.36-9+deb12u10) ...
+--> da875e5660dd
+[4/4] STEP 5/9: RUN mkdir -p /app/logs && chmod 755 /app/logs
+--> 4b7a338d95d8
+[4/4] STEP 6/9: COPY --from=publish /app/publish .
+--> 9d7a410375e3
+[4/4] STEP 7/9: RUN adduser --disabled-password --gecos "" --uid 1000 appuser && chown -R appuser:appuser /app
+Adding user `appuser' ...
+Adding new group `appuser' (1000) ...
+Adding new user `appuser' (1000) with group `appuser (1000)' ...
+Creating home directory `/home/appuser' ...
+Copying files from `/etc/skel' ...
+Adding new user `appuser' to supplemental / extra groups `users' ...
+Adding user `appuser' to group `users' ...
+--> daa1dba56284
+[4/4] STEP 8/9: USER appuser
+--> 6e3719387fe7
+[4/4] STEP 9/9: ENTRYPOINT ["dotnet", "MyOpenTelemetryApi.Api.dll"]
+[4/4] COMMIT myopentelemetryapi_api
+--> abb24d44d5e2
+Successfully tagged localhost/myopentelemetryapi_api:latest
+abb24d44d5e200d73c3ad0d72feddccd88030f8b48ecf1b342a7473a58a21982
+Error: short-name "postgres:16-alpine" did not resolve to an alias and no unqualified-search registries are defined in "/etc/containers/registries.conf"
+Error: no container with name or ID "myotel-postgres" found: no such container
+Error: "myotel-postgres" is not a valid container, cannot be used as a dependency: no container with name or ID "myotel-postgres" found: no such container
+^CTraceback (most recent call last):
+  File "/usr/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 3707, in async_main
+    await podman_compose.run()
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 1861, in run
+    retcode = await cmd(self, args)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 2705, in compose_up
+    await run_container(compose, cnt["name"], cnt["_deps"], ([], "start", [cnt["name"]]))
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 2654, in run_container
+    await check_dep_conditions(compose, deps)
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 2643, in check_dep_conditions
+    await asyncio.sleep(1)
+  File "/usr/lib/python3.13/asyncio/tasks.py", line 718, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/bin/podman-compose", line 33, in <module>
+    sys.exit(load_entry_point('podman-compose==1.3.0', 'console_scripts', 'podman-compose')())
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 3711, in main
+    asyncio.run(async_main())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+real    1m43.815s
+user    0m35.071s
+sys     0m7.852s
+
+kushal@texas:~/src/MyOpenTelemetryApi$
+kushal@texas:~/src/MyOpenTelemetryApi$ cd ~/src/MyOpenTelemetryApi/; time git pull --verbose
+POST git-upload-pack (186 bytes)
+POST git-upload-pack (458 bytes)
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 7 (delta 4), reused 7 (delta 4), pack-reused 0 (from 0)
+Unpacking objects: 100% (7/7), 2.55 KiB | 870.00 KiB/s, done.
+From https://github.com/kusl/MyOpenTelemetryApi
+   ad276c5..1ac43cc  main           -> origin/main
+ = [up to date]      feat/dotnet-10 -> origin/feat/dotnet-10
+Updating ad276c5..1ac43cc
+Fast-forward
+ claude.md                 | 54 ++++++++++++++++++++++++++++++------------------------
+ cleanup-and-retry.sh      | 44 ++++++++++++++++++++++++++++++++++++++++++++
+ docker-compose.simple.yml | 49 +++++++++++++++++++++++++++++++++++++++++++++++++
+ docker-compose.yml        |  4 ++--
+ podman-compose.yml        |  8 ++++----
+ 5 files changed, 129 insertions(+), 30 deletions(-)
+ create mode 100644 cleanup-and-retry.sh
+
+real    0m0.263s
+user    0m0.095s
+sys     0m0.045s
+kushal@texas:~/src/MyOpenTelemetryApi$ time bash cleanup-and-retry.sh
+🧹 Cleaning up containers and trying again...
+Stopping containers...
+Removing containers...
+Removing built images...
+Untagged: localhost/myopentelemetryapi_api:latest
+Deleted: abb24d44d5e200d73c3ad0d72feddccd88030f8b48ecf1b342a7473a58a21982
+Deleted: 6e3719387fe7886226a902ffb1b5f18907609de3af860f5d289f54f8543a1897
+Deleted: daa1dba5628457db466772d393bff6c9788598ac0228ef9361ce120d46186380
+Deleted: 9d7a410375e37f755cf93675d2cba121b06f1550e48c086254f0a898a7d7ae6d
+Deleted: 4b7a338d95d8e4ccb134bbdbb5b427c302861e90d833558054d2a5ced50f4ce8
+Deleted: da875e5660dded30b460f12b86dc46205128bb8ac0567dcf6b3e08e12dca519f
+Deleted: 56467b2e5fca1883f427e2c155160b14ece846c41b376fb18ac7a2c9cef0255c
+Cleaning up networks...
+myopentelemetryapi_myotel-network
+Cleaning up volumes...
+myopentelemetryapi_postgres_data
+📦 Pre-pulling PostgreSQL image...
+Trying to pull docker.io/library/postgres:16-alpine...
+Getting image source signatures
+Copying blob 9824c27679d3 done   |
+Copying blob e62b35ad5ef0 done   |
+Copying blob 0ff154fa3401 done   |
+Copying blob d0075eb78730 done   |
+Copying blob f9996286154d done   |
+Copying blob ad66e73d9475 done   |
+Copying blob ca2e0665c045 done   |
+Copying blob 68fd2dbe7703 done   |
+Copying blob e155013fa2b9 done   |
+Copying blob 27e0d631c908 done   |
+Copying blob 5f5cf5fab12d done   |
+Copying config dca9c7aa70 done   |
+Writing manifest to image destination
+dca9c7aa70c71caf8bcc48c8ec40658c1fdf2d1e4e8d26bc27d4d18e030d779a
+✅ Cleanup completed
+🚀 Now running setup...
+🚀 Setting up MyOpenTelemetryApi with Podman
+================================================
+📦 Using compose command: podman-compose
+📄 Using compose file: docker-compose.simple.yml
+🧹 Cleaning up existing containers and networks...
+✅ Cleanup completed
+📁 Creating necessary directories...
+✅ Directories created
+🔨 Building and starting services...
+[1/4] STEP 1/4: FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
+[1/4] STEP 2/4: WORKDIR /app
+--> Using cache 9bbbb6b2fb0161cf11b4fa55ea48b8bc29fe989fcc8e4a6b2ca063ee672db04e
+--> 9bbbb6b2fb01
+[1/4] STEP 3/4: EXPOSE 8080
+--> Using cache 245a7f9d8bffa9794de724d09f22c5691c9fd1c59aea9e642b6729cad3f816c8
+--> 245a7f9d8bff
+[1/4] STEP 4/4: EXPOSE 8081
+--> Using cache fca5bdb66eddbe0f002f751e2bb993785c4df8a281dc2b39d86bdd3434ac5427
+--> fca5bdb66edd
+[2/4] STEP 1/11: FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+[2/4] STEP 2/11: ARG BUILD_CONFIGURATION=Release
+--> Using cache dcd814b031184426f0895318a4bdc639f013f5c1d22696647bfed65d150970a3
+--> dcd814b03118
+[2/4] STEP 3/11: WORKDIR /src
+--> Using cache 38854f82e26e35a1f04c0ddabc8781bc90dbb79b2a4d92a72f46fdae87bc4fa0
+--> 38854f82e26e
+[2/4] STEP 4/11: COPY ["src/MyOpenTelemetryApi.Api/MyOpenTelemetryApi.Api.csproj", "src/MyOpenTelemetryApi.Api/"]
+--> Using cache 4e4df1f7d231223505b3eaabcc4c2219aaf76a2e6d1ec96ad72b52be8b799561
+--> 4e4df1f7d231
+[2/4] STEP 5/11: COPY ["src/MyOpenTelemetryApi.Application/MyOpenTelemetryApi.Application.csproj", "src/MyOpenTelemetryApi.Application/"]
+--> Using cache 644ff99713f464e5a8f4298c445d1aeb84720678cdeacfa5dfb9ec81f3be77ee
+--> 644ff99713f4
+[2/4] STEP 6/11: COPY ["src/MyOpenTelemetryApi.Domain/MyOpenTelemetryApi.Domain.csproj", "src/MyOpenTelemetryApi.Domain/"]
+--> Using cache 4aeecc8a1139011826faf51b0e82d8f00d51973b62c4aa121aa661d67af0a733
+--> 4aeecc8a1139
+[2/4] STEP 7/11: COPY ["src/MyOpenTelemetryApi.Infrastructure/MyOpenTelemetryApi.Infrastructure.csproj", "src/MyOpenTelemetryApi.Infrastructure/"]
+--> Using cache c0fc4bc8fb16d74032757b20b1b97218454266964a38052b92117aa06859be4a
+--> c0fc4bc8fb16
+[2/4] STEP 8/11: RUN dotnet restore "src/MyOpenTelemetryApi.Api/MyOpenTelemetryApi.Api.csproj"
+--> Using cache 02ff3c7b66c8c42a4748d1368e000efa30a051f13e69639c9b3c0e147130f315
+--> 02ff3c7b66c8
+[2/4] STEP 9/11: COPY . .
+--> 33732cab6152
+[2/4] STEP 10/11: WORKDIR "/src/src/MyOpenTelemetryApi.Api"
+--> 443aa129394a
+[2/4] STEP 11/11: RUN dotnet build "MyOpenTelemetryApi.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  MyOpenTelemetryApi.Domain -> /app/build/MyOpenTelemetryApi.Domain.dll
+  MyOpenTelemetryApi.Application -> /app/build/MyOpenTelemetryApi.Application.dll
+  MyOpenTelemetryApi.Infrastructure -> /app/build/MyOpenTelemetryApi.Infrastructure.dll
+  MyOpenTelemetryApi.Api -> /app/build/MyOpenTelemetryApi.Api.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:14.04
+--> 5e9b836ec6bf
+[3/4] STEP 1/3: FROM 5e9b836ec6bf16f6c78db790cb34957a2e388e1fd8be8300bbf9183e718dcfc1 AS publish
+[3/4] STEP 2/3: ARG BUILD_CONFIGURATION=Release
+--> 59795c1b1f19
+[3/4] STEP 3/3: RUN dotnet publish "MyOpenTelemetryApi.Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  MyOpenTelemetryApi.Domain -> /src/src/MyOpenTelemetryApi.Domain/bin/Release/net9.0/MyOpenTelemetryApi.Domain.dll
+  MyOpenTelemetryApi.Application -> /src/src/MyOpenTelemetryApi.Application/bin/Release/net9.0/MyOpenTelemetryApi.Application.dll
+  MyOpenTelemetryApi.Infrastructure -> /src/src/MyOpenTelemetryApi.Infrastructure/bin/Release/net9.0/MyOpenTelemetryApi.Infrastructure.dll
+  MyOpenTelemetryApi.Api -> /src/src/MyOpenTelemetryApi.Api/bin/Release/net9.0/MyOpenTelemetryApi.Api.dll
+  MyOpenTelemetryApi.Api -> /app/publish/
+--> 8290e0254951
+[4/4] STEP 1/9: FROM fca5bdb66eddbe0f002f751e2bb993785c4df8a281dc2b39d86bdd3434ac5427 AS final
+[4/4] STEP 2/9: WORKDIR /app
+--> Using cache 6b3ed11af9afa759181793c6a4a0357cb27dad5d03a637d4488691b3dcce0ef1
+--> 6b3ed11af9af
+[4/4] STEP 3/9: USER root
+--> 9d08979f3445
+[4/4] STEP 4/9: RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8793 kB]
+Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [272 kB]
+Fetched 9327 kB in 2s (3742 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  krb5-locales libbrotli1 libcurl4 libgssapi-krb5-2 libk5crypto3 libkeyutils1
+  libkrb5-3 libkrb5support0 libldap-2.5-0 libldap-common libnghttp2-14 libpsl5
+  librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libssh2-1
+  publicsuffix
+Suggested packages:
+  krb5-doc krb5-user libsasl2-modules-gssapi-mit
+  | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp
+  libsasl2-modules-sql
+The following NEW packages will be installed:
+  curl krb5-locales libbrotli1 libcurl4 libgssapi-krb5-2 libk5crypto3
+  libkeyutils1 libkrb5-3 libkrb5support0 libldap-2.5-0 libldap-common
+  libnghttp2-14 libpsl5 librtmp1 libsasl2-2 libsasl2-modules
+  libsasl2-modules-db libssh2-1 publicsuffix
+0 upgraded, 19 newly installed, 0 to remove and 2 not upgraded.
+Need to get 2489 kB of archives.
+After this operation, 6813 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bookworm/main amd64 krb5-locales all 1.20.1-2+deb12u3 [63.1 kB]
+Get:2 http://deb.debian.org/debian bookworm/main amd64 libbrotli1 amd64 1.0.9-2+b6 [275 kB]
+Get:3 http://deb.debian.org/debian bookworm/main amd64 libkrb5support0 amd64 1.20.1-2+deb12u3 [32.8 kB]
+Get:4 http://deb.debian.org/debian bookworm/main amd64 libk5crypto3 amd64 1.20.1-2+deb12u3 [78.9 kB]
+Get:5 http://deb.debian.org/debian bookworm/main amd64 libkeyutils1 amd64 1.6.3-2 [8808 B]
+Get:6 http://deb.debian.org/debian bookworm/main amd64 libkrb5-3 amd64 1.20.1-2+deb12u3 [332 kB]
+Get:7 http://deb.debian.org/debian bookworm/main amd64 libgssapi-krb5-2 amd64 1.20.1-2+deb12u3 [135 kB]
+Get:8 http://deb.debian.org/debian bookworm/main amd64 libsasl2-modules-db amd64 2.1.28+dfsg-10 [20.3 kB]
+Get:9 http://deb.debian.org/debian bookworm/main amd64 libsasl2-2 amd64 2.1.28+dfsg-10 [59.7 kB]
+Get:10 http://deb.debian.org/debian bookworm/main amd64 libldap-2.5-0 amd64 2.5.13+dfsg-5 [183 kB]
+Get:11 http://deb.debian.org/debian bookworm/main amd64 libnghttp2-14 amd64 1.52.0-1+deb12u2 [73.0 kB]
+Get:12 http://deb.debian.org/debian bookworm/main amd64 libpsl5 amd64 0.21.2-1 [58.7 kB]
+Get:13 http://deb.debian.org/debian bookworm/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2+b2 [60.8 kB]
+Get:14 http://deb.debian.org/debian bookworm/main amd64 libssh2-1 amd64 1.10.0-3+b1 [179 kB]
+Get:15 http://deb.debian.org/debian bookworm/main amd64 libcurl4 amd64 7.88.1-10+deb12u12 [391 kB]
+Get:16 http://deb.debian.org/debian bookworm/main amd64 curl amd64 7.88.1-10+deb12u12 [315 kB]
+Get:17 http://deb.debian.org/debian bookworm/main amd64 libldap-common all 2.5.13+dfsg-5 [29.3 kB]
+Get:18 http://deb.debian.org/debian bookworm/main amd64 libsasl2-modules amd64 2.1.28+dfsg-10 [66.6 kB]
+Get:19 http://deb.debian.org/debian bookworm/main amd64 publicsuffix all 20230209.2326-1 [126 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 2489 kB in 0s (5664 kB/s)
+Selecting previously unselected package krb5-locales.
+(Reading database ... 6594 files and directories currently installed.)
+Preparing to unpack .../00-krb5-locales_1.20.1-2+deb12u3_all.deb ...
+Unpacking krb5-locales (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libbrotli1:amd64.
+Preparing to unpack .../01-libbrotli1_1.0.9-2+b6_amd64.deb ...
+Unpacking libbrotli1:amd64 (1.0.9-2+b6) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../02-libkrb5support0_1.20.1-2+deb12u3_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../03-libk5crypto3_1.20.1-2+deb12u3_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../04-libkeyutils1_1.6.3-2_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.6.3-2) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../05-libkrb5-3_1.20.1-2+deb12u3_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../06-libgssapi-krb5-2_1.20.1-2+deb12u3_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../07-libsasl2-modules-db_2.1.28+dfsg-10_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.28+dfsg-10) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../08-libsasl2-2_2.1.28+dfsg-10_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.28+dfsg-10) ...
+Selecting previously unselected package libldap-2.5-0:amd64.
+Preparing to unpack .../09-libldap-2.5-0_2.5.13+dfsg-5_amd64.deb ...
+Unpacking libldap-2.5-0:amd64 (2.5.13+dfsg-5) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../10-libnghttp2-14_1.52.0-1+deb12u2_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.52.0-1+deb12u2) ...
+Selecting previously unselected package libpsl5:amd64.
+Preparing to unpack .../11-libpsl5_0.21.2-1_amd64.deb ...
+Unpacking libpsl5:amd64 (0.21.2-1) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../12-librtmp1_2.4+20151223.gitfa8646d.1-2+b2_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b2) ...
+Selecting previously unselected package libssh2-1:amd64.
+Preparing to unpack .../13-libssh2-1_1.10.0-3+b1_amd64.deb ...
+Unpacking libssh2-1:amd64 (1.10.0-3+b1) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../14-libcurl4_7.88.1-10+deb12u12_amd64.deb ...
+Unpacking libcurl4:amd64 (7.88.1-10+deb12u12) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../15-curl_7.88.1-10+deb12u12_amd64.deb ...
+Unpacking curl (7.88.1-10+deb12u12) ...
+Selecting previously unselected package libldap-common.
+Preparing to unpack .../16-libldap-common_2.5.13+dfsg-5_all.deb ...
+Unpacking libldap-common (2.5.13+dfsg-5) ...
+Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../17-libsasl2-modules_2.1.28+dfsg-10_amd64.deb ...
+Unpacking libsasl2-modules:amd64 (2.1.28+dfsg-10) ...
+Selecting previously unselected package publicsuffix.
+Preparing to unpack .../18-publicsuffix_20230209.2326-1_all.deb ...
+Unpacking publicsuffix (20230209.2326-1) ...
+Setting up libkeyutils1:amd64 (1.6.3-2) ...
+Setting up libpsl5:amd64 (0.21.2-1) ...
+Setting up libbrotli1:amd64 (1.0.9-2+b6) ...
+Setting up libsasl2-modules:amd64 (2.1.28+dfsg-10) ...
+Setting up libnghttp2-14:amd64 (1.52.0-1+deb12u2) ...
+Setting up krb5-locales (1.20.1-2+deb12u3) ...
+Setting up libldap-common (2.5.13+dfsg-5) ...
+Setting up libkrb5support0:amd64 (1.20.1-2+deb12u3) ...
+Setting up libsasl2-modules-db:amd64 (2.1.28+dfsg-10) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b2) ...
+Setting up libk5crypto3:amd64 (1.20.1-2+deb12u3) ...
+Setting up libsasl2-2:amd64 (2.1.28+dfsg-10) ...
+Setting up libssh2-1:amd64 (1.10.0-3+b1) ...
+Setting up libkrb5-3:amd64 (1.20.1-2+deb12u3) ...
+Setting up publicsuffix (20230209.2326-1) ...
+Setting up libldap-2.5-0:amd64 (2.5.13+dfsg-5) ...
+Setting up libgssapi-krb5-2:amd64 (1.20.1-2+deb12u3) ...
+Setting up libcurl4:amd64 (7.88.1-10+deb12u12) ...
+Setting up curl (7.88.1-10+deb12u12) ...
+Processing triggers for libc-bin (2.36-9+deb12u10) ...
+--> 0ee9fa13c4de
+[4/4] STEP 5/9: RUN mkdir -p /app/logs && chmod 755 /app/logs
+--> 01e56f9007f6
+[4/4] STEP 6/9: COPY --from=publish /app/publish .
+--> d9c5118a4ae3
+[4/4] STEP 7/9: RUN adduser --disabled-password --gecos "" --uid 1000 appuser && chown -R appuser:appuser /app
+Adding user `appuser' ...
+Adding new group `appuser' (1000) ...
+Adding new user `appuser' (1000) with group `appuser (1000)' ...
+Creating home directory `/home/appuser' ...
+Copying files from `/etc/skel' ...
+Adding new user `appuser' to supplemental / extra groups `users' ...
+Adding user `appuser' to group `users' ...
+--> eb76a77ed8e7
+[4/4] STEP 8/9: USER appuser
+--> e7f3c3b282ad
+[4/4] STEP 9/9: ENTRYPOINT ["dotnet", "MyOpenTelemetryApi.Api.dll"]
+[4/4] COMMIT myopentelemetryapi_api
+--> ad768ed59044
+Successfully tagged localhost/myopentelemetryapi_api:latest
+ad768ed590446c055b9a0f34fdc350a91d086418177793bd022d115723ef05fb
+f61e80644575b8e44905d02b73157e8043f167a827dd1326643b66e405b55330
+myotel-postgres
+b7f608c8e7a2d551ea230d0cc57ba398ec444b62fece15df1e907247be9a0654
+
+^CTraceback (most recent call last):
+  File "/usr/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 3707, in async_main
+    await podman_compose.run()
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 1861, in run
+    retcode = await cmd(self, args)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 2705, in compose_up
+    await run_container(compose, cnt["name"], cnt["_deps"], ([], "start", [cnt["name"]]))
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 2654, in run_container
+    await check_dep_conditions(compose, deps)
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 2624, in check_dep_conditions
+    await compose.podman.output(
+        [], "wait", [f"--condition={condition.value}"] + deps_cd
+    )
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 1424, in output
+    stdout_data, stderr_data = await p.communicate()
+                               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/subprocess.py", line 201, in communicate
+    stdin, stdout, stderr = await tasks.gather(stdin, stdout, stderr)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/subprocess.py", line 181, in _read_stream
+    output = await stream.read()
+             ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/streams.py", line 723, in read
+    block = await self.read(self._limit)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/streams.py", line 730, in read
+    await self._wait_for_data('read')
+  File "/usr/lib/python3.13/asyncio/streams.py", line 539, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/bin/podman-compose", line 33, in <module>
+    sys.exit(load_entry_point('podman-compose==1.3.0', 'console_scripts', 'podman-compose')())
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 3711, in main
+    asyncio.run(async_main())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+real    9m43.088s
+user    0m54.095s
+sys     0m10.607s
+
+kushal@texas:~/src/MyOpenTelemetryApi$
+kushal@texas:~/src/MyOpenTelemetryApi$ cd ~/src/MyOpenTelemetryApi/; time git pull --verbose
+POST git-upload-pack (186 bytes)
+POST git-upload-pack (508 bytes)
+remote: Enumerating objects: 20, done.
+remote: Counting objects: 100% (20/20), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 13 (delta 8), reused 13 (delta 8), pack-reused 0 (from 0)
+Unpacking objects: 100% (13/13), 7.05 KiB | 1.01 MiB/s, done.
+From https://github.com/kusl/MyOpenTelemetryApi
+   1ac43cc..cb07645  main           -> origin/main
+ = [up to date]      feat/dotnet-10 -> origin/feat/dotnet-10
+Updating 1ac43cc..cb07645
+Fast-forward
+ Dockerfile                |   7 +++++-
+ claude.md                 |  76 +++++++++++++++++++++++++++++++++++++------------------------
+ docker-compose.simple.yml |   6 ++---
+ docker-compose.yml        |   8 +++----
+ podman-compose.yml        |   6 ++---
+ run-migrations.sh         | 189 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ setup-podman.sh           |   2 ++
+ test-external-access.sh   | 219 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 8 files changed, 472 insertions(+), 41 deletions(-)
+ create mode 100644 run-migrations.sh
+ create mode 100644 test-external-access.sh
+
+real    0m0.275s
+user    0m0.111s
+sys     0m0.051s
+kushal@texas:~/src/MyOpenTelemetryApi$ time bash run-migrations.sh
+🗄️ Entity Framework Migration Runner
+========================================
+Usage: run-migrations.sh <command> [options]
+
+Commands:
+  container, c     - Run migrations using the API container (recommended)
+  local, l         - Run migrations using local .NET CLI
+  status, s        - Check database and migration status
+  reset, r         - Reset database (WARNING: destructive!)
+  create <name>    - Create a new migration
+  help, h          - Show this help message
+
+Examples:
+  run-migrations.sh container           # Run migrations in container
+  run-migrations.sh status              # Check database status
+  run-migrations.sh create AddUserTable # Create new migration
+
+💡 Recommended: Use 'container' method for consistency
+
+real    0m0.159s
+user    0m0.103s
+sys     0m0.034s
+kushal@texas:~/src/MyOpenTelemetryApi$ time bash run-migrations.sh status
+🗄️ Entity Framework Migration Runner
+========================================
+📊 Checking database status...
+Testing database connection...
+/var/run/postgresql:5432 - accepting connections
+✅ Database connection OK
+Listing existing tables...
+                  List of relations
+ Schema |         Name          | Type  |   Owner
+--------+-----------------------+-------+------------
+ public | Addresses             | table | myoteluser
+ public | ContactGroups         | table | myoteluser
+ public | ContactTags           | table | myoteluser
+ public | Contacts              | table | myoteluser
+ public | EmailAddresses        | table | myoteluser
+ public | Groups                | table | myoteluser
+ public | PhoneNumbers          | table | myoteluser
+ public | Tags                  | table | myoteluser
+ public | __EFMigrationsHistory | table | myoteluser
+(9 rows)
+
+Checking migration history...
+         MigrationId          | ProductVersion
+------------------------------+----------------
+ 20250804231722_InitialCreate | 9.0.8
+(1 row)
+
+
+real    0m0.999s
+user    0m0.279s
+sys     0m0.139s
+kushal@texas:~/src/MyOpenTelemetryApi$ time bash setup-podman.sh
+🚀 Setting up MyOpenTelemetryApi with Podman
+================================================
+📦 Using compose command: podman-compose
+📄 Using compose file: docker-compose.simple.yml
+🧹 Cleaning up existing containers and networks...
+myotel-api
+myotel-postgres
+myotel-api
+myotel-postgres
+myopentelemetryapi_myotel-network
+✅ Cleanup completed
+📁 Creating necessary directories...
+✅ Directories created
+🔨 Building and starting services...
+[1/4] STEP 1/4: FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
+[1/4] STEP 2/4: WORKDIR /app
+--> Using cache 9bbbb6b2fb0161cf11b4fa55ea48b8bc29fe989fcc8e4a6b2ca063ee672db04e
+--> 9bbbb6b2fb01
+[1/4] STEP 3/4: EXPOSE 8080
+--> Using cache 245a7f9d8bffa9794de724d09f22c5691c9fd1c59aea9e642b6729cad3f816c8
+--> 245a7f9d8bff
+[1/4] STEP 4/4: EXPOSE 8081
+--> Using cache fca5bdb66eddbe0f002f751e2bb993785c4df8a281dc2b39d86bdd3434ac5427
+--> fca5bdb66edd
+[2/4] STEP 1/11: FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+[2/4] STEP 2/11: ARG BUILD_CONFIGURATION=Release
+--> Using cache dcd814b031184426f0895318a4bdc639f013f5c1d22696647bfed65d150970a3
+--> dcd814b03118
+[2/4] STEP 3/11: WORKDIR /src
+--> Using cache 38854f82e26e35a1f04c0ddabc8781bc90dbb79b2a4d92a72f46fdae87bc4fa0
+--> 38854f82e26e
+[2/4] STEP 4/11: COPY ["src/MyOpenTelemetryApi.Api/MyOpenTelemetryApi.Api.csproj", "src/MyOpenTelemetryApi.Api/"]
+--> Using cache 4e4df1f7d231223505b3eaabcc4c2219aaf76a2e6d1ec96ad72b52be8b799561
+--> 4e4df1f7d231
+[2/4] STEP 5/11: COPY ["src/MyOpenTelemetryApi.Application/MyOpenTelemetryApi.Application.csproj", "src/MyOpenTelemetryApi.Application/"]
+--> Using cache 644ff99713f464e5a8f4298c445d1aeb84720678cdeacfa5dfb9ec81f3be77ee
+--> 644ff99713f4
+[2/4] STEP 6/11: COPY ["src/MyOpenTelemetryApi.Domain/MyOpenTelemetryApi.Domain.csproj", "src/MyOpenTelemetryApi.Domain/"]
+--> Using cache 4aeecc8a1139011826faf51b0e82d8f00d51973b62c4aa121aa661d67af0a733
+--> 4aeecc8a1139
+[2/4] STEP 7/11: COPY ["src/MyOpenTelemetryApi.Infrastructure/MyOpenTelemetryApi.Infrastructure.csproj", "src/MyOpenTelemetryApi.Infrastructure/"]
+--> Using cache c0fc4bc8fb16d74032757b20b1b97218454266964a38052b92117aa06859be4a
+--> c0fc4bc8fb16
+[2/4] STEP 8/11: RUN dotnet restore "src/MyOpenTelemetryApi.Api/MyOpenTelemetryApi.Api.csproj"
+--> Using cache 02ff3c7b66c8c42a4748d1368e000efa30a051f13e69639c9b3c0e147130f315
+--> 02ff3c7b66c8
+[2/4] STEP 9/11: COPY . .
+--> fc885a4908f6
+[2/4] STEP 10/11: WORKDIR "/src/src/MyOpenTelemetryApi.Api"
+--> 89309fd1cd1b
+[2/4] STEP 11/11: RUN dotnet build "MyOpenTelemetryApi.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  MyOpenTelemetryApi.Domain -> /app/build/MyOpenTelemetryApi.Domain.dll
+  MyOpenTelemetryApi.Application -> /app/build/MyOpenTelemetryApi.Application.dll
+  MyOpenTelemetryApi.Infrastructure -> /app/build/MyOpenTelemetryApi.Infrastructure.dll
+  MyOpenTelemetryApi.Api -> /app/build/MyOpenTelemetryApi.Api.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:13.63
+--> 6ca96c11e3e0
+[3/4] STEP 1/3: FROM 6ca96c11e3e0422a8f7e838b28c7668209fcc94d86125453cb5b8ee6ac8cea66 AS publish
+[3/4] STEP 2/3: ARG BUILD_CONFIGURATION=Release
+--> 04b74f6b0bfe
+[3/4] STEP 3/3: RUN dotnet publish "MyOpenTelemetryApi.Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  MyOpenTelemetryApi.Domain -> /src/src/MyOpenTelemetryApi.Domain/bin/Release/net9.0/MyOpenTelemetryApi.Domain.dll
+  MyOpenTelemetryApi.Application -> /src/src/MyOpenTelemetryApi.Application/bin/Release/net9.0/MyOpenTelemetryApi.Application.dll
+  MyOpenTelemetryApi.Infrastructure -> /src/src/MyOpenTelemetryApi.Infrastructure/bin/Release/net9.0/MyOpenTelemetryApi.Infrastructure.dll
+  MyOpenTelemetryApi.Api -> /src/src/MyOpenTelemetryApi.Api/bin/Release/net9.0/MyOpenTelemetryApi.Api.dll
+  MyOpenTelemetryApi.Api -> /app/publish/
+--> 88f30f69ba5d
+[4/4] STEP 1/12: FROM fca5bdb66eddbe0f002f751e2bb993785c4df8a281dc2b39d86bdd3434ac5427 AS final
+[4/4] STEP 2/12: WORKDIR /app
+--> Using cache 6b3ed11af9afa759181793c6a4a0357cb27dad5d03a637d4488691b3dcce0ef1
+--> 6b3ed11af9af
+[4/4] STEP 3/12: USER root
+--> Using cache 9d08979f34450dac6b1886dd435671497de7675c935d5cd85e6235f7fc57e2cf
+--> 9d08979f3445
+[4/4] STEP 4/12: RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+--> Using cache 0ee9fa13c4de688cda04e6384b5f59a86ed0a695b7653d6d9176ba72a1ff3344
+--> 0ee9fa13c4de
+[4/4] STEP 5/12: RUN mkdir -p /app/logs && chmod 755 /app/logs
+--> Using cache 01e56f9007f69436065127d066544ff1aa094f0cd5a56d956d4dd759d541cf9a
+--> 01e56f9007f6
+[4/4] STEP 6/12: COPY --from=publish /app/publish .
+--> Using cache d9c5118a4ae39f9bd20e0b9066d62cd96287661a87a4afe5aaa81b5c8447ec55
+--> d9c5118a4ae3
+[4/4] STEP 7/12: RUN adduser --disabled-password --gecos "" --uid 1000 appuser && chown -R appuser:appuser /app
+--> Using cache eb76a77ed8e76b7eabbcf21a74f29a42905a1279390a7c389a339d1af64424e4
+--> eb76a77ed8e7
+[4/4] STEP 8/12: USER appuser
+--> Using cache e7f3c3b282ad6ab3e9d320fb33a076f5c416573cd881ae6ac920faec10a4463b
+--> e7f3c3b282ad
+[4/4] STEP 9/12: RUN dotnet tool install --global dotnet-ef --version 9.0.8
+The command could not be loaded, possibly because:
+  * You intended to execute a .NET application:
+      The application 'tool' does not exist.
+  * You intended to execute a .NET SDK command:
+      No .NET SDKs were found.
+
+Download a .NET SDK:
+https://aka.ms/dotnet/download
+
+Learn about SDK resolution:
+https://aka.ms/dotnet/sdk-not-found
+Error: building at STEP "RUN dotnet tool install --global dotnet-ef --version 9.0.8": while running runtime: exit status 145
+ERROR:podman_compose:Build command failed
+0f2d1130c01de35e4d1e9faf3fcd4e101c51aaf3dbdb7ec3457ba1498866e3cd
+myotel-postgres
+c668d0ae5834106552bde67ae807dd55119c3ddd34149ce44eb885a77142062e
+^CTraceback (most recent call last):
+  File "/usr/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 3707, in async_main
+    await podman_compose.run()
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 1861, in run
+    retcode = await cmd(self, args)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 2705, in compose_up
+    await run_container(compose, cnt["name"], cnt["_deps"], ([], "start", [cnt["name"]]))
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 2654, in run_container
+    await check_dep_conditions(compose, deps)
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 2624, in check_dep_conditions
+    await compose.podman.output(
+        [], "wait", [f"--condition={condition.value}"] + deps_cd
+    )
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 1424, in output
+    stdout_data, stderr_data = await p.communicate()
+                               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/subprocess.py", line 201, in communicate
+    stdin, stdout, stderr = await tasks.gather(stdin, stdout, stderr)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/subprocess.py", line 181, in _read_stream
+    output = await stream.read()
+             ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/streams.py", line 723, in read
+    block = await self.read(self._limit)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/streams.py", line 730, in read
+    await self._wait_for_data('read')
+  File "/usr/lib/python3.13/asyncio/streams.py", line 539, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/bin/podman-compose", line 33, in <module>
+    sys.exit(load_entry_point('podman-compose==1.3.0', 'console_scripts', 'podman-compose')())
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 3711, in main
+    asyncio.run(async_main())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+real    25m50.033s
+user    0m33.269s
+sys     0m7.825s
+
+kushal@texas:~/src/MyOpenTelemetryApi$
+kushal@texas:~/src/MyOpenTelemetryApi$ time bash setup-podman.sh
+🚀 Setting up MyOpenTelemetryApi with Podman
+================================================
+📦 Using compose command: podman-compose
+📄 Using compose file: docker-compose.simple.yml
+🧹 Cleaning up existing containers and networks...
+myotel-api
+myotel-postgres
+myotel-api
+✅ Cleanup completed
+📁 Creating necessary directories...
+✅ Directories created
+🔨 Building and starting services...
+[1/4] STEP 1/4: FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
+[1/4] STEP 2/4: WORKDIR /app
+--> Using cache 9bbbb6b2fb0161cf11b4fa55ea48b8bc29fe989fcc8e4a6b2ca063ee672db04e
+--> 9bbbb6b2fb01
+[1/4] STEP 3/4: EXPOSE 8080
+--> Using cache 245a7f9d8bffa9794de724d09f22c5691c9fd1c59aea9e642b6729cad3f816c8
+--> 245a7f9d8bff
+[1/4] STEP 4/4: EXPOSE 8081
+--> Using cache fca5bdb66eddbe0f002f751e2bb993785c4df8a281dc2b39d86bdd3434ac5427
+--> fca5bdb66edd
+[2/4] STEP 1/11: FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+[2/4] STEP 2/11: ARG BUILD_CONFIGURATION=Release
+--> Using cache dcd814b031184426f0895318a4bdc639f013f5c1d22696647bfed65d150970a3
+--> dcd814b03118
+[2/4] STEP 3/11: WORKDIR /src
+--> Using cache 38854f82e26e35a1f04c0ddabc8781bc90dbb79b2a4d92a72f46fdae87bc4fa0
+--> 38854f82e26e
+[2/4] STEP 4/11: COPY ["src/MyOpenTelemetryApi.Api/MyOpenTelemetryApi.Api.csproj", "src/MyOpenTelemetryApi.Api/"]
+--> Using cache 4e4df1f7d231223505b3eaabcc4c2219aaf76a2e6d1ec96ad72b52be8b799561
+--> 4e4df1f7d231
+[2/4] STEP 5/11: COPY ["src/MyOpenTelemetryApi.Application/MyOpenTelemetryApi.Application.csproj", "src/MyOpenTelemetryApi.Application/"]
+--> Using cache 644ff99713f464e5a8f4298c445d1aeb84720678cdeacfa5dfb9ec81f3be77ee
+--> 644ff99713f4
+[2/4] STEP 6/11: COPY ["src/MyOpenTelemetryApi.Domain/MyOpenTelemetryApi.Domain.csproj", "src/MyOpenTelemetryApi.Domain/"]
+--> Using cache 4aeecc8a1139011826faf51b0e82d8f00d51973b62c4aa121aa661d67af0a733
+--> 4aeecc8a1139
+[2/4] STEP 7/11: COPY ["src/MyOpenTelemetryApi.Infrastructure/MyOpenTelemetryApi.Infrastructure.csproj", "src/MyOpenTelemetryApi.Infrastructure/"]
+--> Using cache c0fc4bc8fb16d74032757b20b1b97218454266964a38052b92117aa06859be4a
+--> c0fc4bc8fb16
+[2/4] STEP 8/11: RUN dotnet restore "src/MyOpenTelemetryApi.Api/MyOpenTelemetryApi.Api.csproj"
+--> Using cache 02ff3c7b66c8c42a4748d1368e000efa30a051f13e69639c9b3c0e147130f315
+--> 02ff3c7b66c8
+[2/4] STEP 9/11: COPY . .
+--> Using cache fc885a4908f636e60100e02bbe81ce97cd52ea69f521d97948de45ad2c958964
+--> fc885a4908f6
+[2/4] STEP 10/11: WORKDIR "/src/src/MyOpenTelemetryApi.Api"
+--> Using cache 89309fd1cd1b4bf570ab9164be13b9dfc00b6226efd1b114642c3eb2ae33c284
+--> 89309fd1cd1b
+[2/4] STEP 11/11: RUN dotnet build "MyOpenTelemetryApi.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
+--> Using cache 6ca96c11e3e0422a8f7e838b28c7668209fcc94d86125453cb5b8ee6ac8cea66
+--> 6ca96c11e3e0
+[3/4] STEP 1/3: FROM 6ca96c11e3e0422a8f7e838b28c7668209fcc94d86125453cb5b8ee6ac8cea66 AS publish
+[3/4] STEP 2/3: ARG BUILD_CONFIGURATION=Release
+--> Using cache 04b74f6b0bfeae6cb7e01f550f78094d1344e8857918248d7c356aa775702e02
+--> 04b74f6b0bfe
+[3/4] STEP 3/3: RUN dotnet publish "MyOpenTelemetryApi.Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+--> Using cache 88f30f69ba5d9b646efe68fbb2d6f2b035be1b712bb2a2bfcefffd47b1ed41fc
+--> 88f30f69ba5d
+[4/4] STEP 1/12: FROM fca5bdb66eddbe0f002f751e2bb993785c4df8a281dc2b39d86bdd3434ac5427 AS final
+[4/4] STEP 2/12: WORKDIR /app
+--> Using cache 6b3ed11af9afa759181793c6a4a0357cb27dad5d03a637d4488691b3dcce0ef1
+--> 6b3ed11af9af
+[4/4] STEP 3/12: USER root
+--> Using cache 9d08979f34450dac6b1886dd435671497de7675c935d5cd85e6235f7fc57e2cf
+--> 9d08979f3445
+[4/4] STEP 4/12: RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+--> Using cache 0ee9fa13c4de688cda04e6384b5f59a86ed0a695b7653d6d9176ba72a1ff3344
+--> 0ee9fa13c4de
+[4/4] STEP 5/12: RUN mkdir -p /app/logs && chmod 755 /app/logs
+--> Using cache 01e56f9007f69436065127d066544ff1aa094f0cd5a56d956d4dd759d541cf9a
+--> 01e56f9007f6
+[4/4] STEP 6/12: COPY --from=publish /app/publish .
+--> Using cache d9c5118a4ae39f9bd20e0b9066d62cd96287661a87a4afe5aaa81b5c8447ec55
+--> d9c5118a4ae3
+[4/4] STEP 7/12: RUN adduser --disabled-password --gecos "" --uid 1000 appuser && chown -R appuser:appuser /app
+--> Using cache eb76a77ed8e76b7eabbcf21a74f29a42905a1279390a7c389a339d1af64424e4
+--> eb76a77ed8e7
+[4/4] STEP 8/12: USER appuser
+--> Using cache e7f3c3b282ad6ab3e9d320fb33a076f5c416573cd881ae6ac920faec10a4463b
+--> e7f3c3b282ad
+[4/4] STEP 9/12: RUN dotnet tool install --global dotnet-ef --version 9.0.8
+The command could not be loaded, possibly because:
+  * You intended to execute a .NET application:
+      The application 'tool' does not exist.
+  * You intended to execute a .NET SDK command:
+      No .NET SDKs were found.
+
+Download a .NET SDK:
+https://aka.ms/dotnet/download
+
+Learn about SDK resolution:
+https://aka.ms/dotnet/sdk-not-found
+Error: building at STEP "RUN dotnet tool install --global dotnet-ef --version 9.0.8": while running runtime: exit status 145
+ERROR:podman_compose:Build command failed
+Error: creating container storage: the container name "myotel-postgres" is already in use by 0f2d1130c01de35e4d1e9faf3fcd4e101c51aaf3dbdb7ec3457ba1498866e3cd. You have to remove that container to be able to reuse that name: that name is already in use, or use --replace to instruct Podman to do so.
+myotel-postgres
+e0f4aa9b7fbc855c772bb67c1bf69bedfa9b05c724f3d4231695454e292ea495
+
+^CTraceback (most recent call last):
+  File "/usr/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 3707, in async_main
+    await podman_compose.run()
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 1861, in run
+    retcode = await cmd(self, args)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 2705, in compose_up
+    await run_container(compose, cnt["name"], cnt["_deps"], ([], "start", [cnt["name"]]))
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 2654, in run_container
+    await check_dep_conditions(compose, deps)
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 2624, in check_dep_conditions
+    await compose.podman.output(
+        [], "wait", [f"--condition={condition.value}"] + deps_cd
+    )
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 1424, in output
+    stdout_data, stderr_data = await p.communicate()
+                               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/subprocess.py", line 201, in communicate
+    stdin, stdout, stderr = await tasks.gather(stdin, stdout, stderr)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/subprocess.py", line 181, in _read_stream
+    output = await stream.read()
+             ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/streams.py", line 723, in read
+    block = await self.read(self._limit)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/streams.py", line 730, in read
+    await self._wait_for_data('read')
+  File "/usr/lib/python3.13/asyncio/streams.py", line 539, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/bin/podman-compose", line 33, in <module>
+    sys.exit(load_entry_point('podman-compose==1.3.0', 'console_scripts', 'podman-compose')())
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 3711, in main
+    asyncio.run(async_main())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+
+real    0m9.014s
+user    0m3.286s
+sys     0m1.903s
+kushal@texas:~/src/MyOpenTelemetryApi$
+kushal@texas:~/src/MyOpenTelemetryApi$ cd ~/src/MyOpenTelemetryApi/; time git pull --verbose
+POST git-upload-pack (186 bytes)
+POST git-upload-pack (608 bytes)
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 12 (delta 7), reused 12 (delta 7), pack-reused 0 (from 0)
+Unpacking objects: 100% (12/12), 7.19 KiB | 1.20 MiB/s, done.
+From https://github.com/kusl/MyOpenTelemetryApi
+   cb07645..2b04f23  main           -> origin/main
+ = [up to date]      feat/dotnet-10 -> origin/feat/dotnet-10
+Updating cb07645..2b04f23
+Fast-forward
+ Dockerfile                |  6 +-----
+ Dockerfile.migrations     | 25 +++++++++++++++++++++++++
+ claude.md                 | 86 ++++++++++++++++++++++++++++++++++++++++++--------------------------------------------
+ docker-compose.simple.yml | 17 ++++++++++++++++-
+ run-migrations.sh         | 59 +++++++++++++++++++++++++++++++++++++++++++++++++++--------
+ 5 files changed, 135 insertions(+), 58 deletions(-)
+ create mode 100644 Dockerfile.migrations
+
+real    0m0.380s
+user    0m0.118s
+sys     0m0.036s
+kushal@texas:~/src/MyOpenTelemetryApi$ time bash cleanup-and-retry.sh
+🧹 Cleaning up containers and trying again...
+Stopping containers...
+myotel-postgres
+myotel-api
+Removing containers...
+myotel-api
+Removing built images...
+Untagged: localhost/myopentelemetryapi_api:latest
+Deleted: ad768ed590446c055b9a0f34fdc350a91d086418177793bd022d115723ef05fb
+Deleted: e7f3c3b282ad6ab3e9d320fb33a076f5c416573cd881ae6ac920faec10a4463b
+Deleted: eb76a77ed8e76b7eabbcf21a74f29a42905a1279390a7c389a339d1af64424e4
+Deleted: d9c5118a4ae39f9bd20e0b9066d62cd96287661a87a4afe5aaa81b5c8447ec55
+Deleted: 01e56f9007f69436065127d066544ff1aa094f0cd5a56d956d4dd759d541cf9a
+Deleted: 0ee9fa13c4de688cda04e6384b5f59a86ed0a695b7653d6d9176ba72a1ff3344
+Deleted: 9d08979f34450dac6b1886dd435671497de7675c935d5cd85e6235f7fc57e2cf
+Cleaning up networks...
+Cleaning up volumes...
+📦 Pre-pulling PostgreSQL image...
+Trying to pull docker.io/library/postgres:16-alpine...
+Getting image source signatures
+Copying blob 0ff154fa3401 skipped: already exists
+Copying blob e62b35ad5ef0 skipped: already exists
+Copying blob d0075eb78730 skipped: already exists
+Copying blob ad66e73d9475 skipped: already exists
+Copying blob f9996286154d skipped: already exists
+Copying blob ca2e0665c045 skipped: already exists
+Copying blob 68fd2dbe7703 skipped: already exists
+Copying blob e155013fa2b9 skipped: already exists
+Copying blob 27e0d631c908 skipped: already exists
+Copying blob 5f5cf5fab12d skipped: already exists
+Copying blob 9824c27679d3 skipped: already exists
+Copying config dca9c7aa70 done   |
+Writing manifest to image destination
+dca9c7aa70c71caf8bcc48c8ec40658c1fdf2d1e4e8d26bc27d4d18e030d779a
+✅ Cleanup completed
+🚀 Now running setup...
+🚀 Setting up MyOpenTelemetryApi with Podman
+================================================
+📦 Using compose command: podman-compose
+📄 Using compose file: docker-compose.simple.yml
+🧹 Cleaning up existing containers and networks...
+✅ Cleanup completed
+📁 Creating necessary directories...
+✅ Directories created
+🔨 Building and starting services...
+[1/4] STEP 1/4: FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
+[1/4] STEP 2/4: WORKDIR /app
+--> Using cache 9bbbb6b2fb0161cf11b4fa55ea48b8bc29fe989fcc8e4a6b2ca063ee672db04e
+--> 9bbbb6b2fb01
+[1/4] STEP 3/4: EXPOSE 8080
+--> Using cache 245a7f9d8bffa9794de724d09f22c5691c9fd1c59aea9e642b6729cad3f816c8
+--> 245a7f9d8bff
+[1/4] STEP 4/4: EXPOSE 8081
+--> Using cache fca5bdb66eddbe0f002f751e2bb993785c4df8a281dc2b39d86bdd3434ac5427
+--> fca5bdb66edd
+[2/4] STEP 1/11: FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+[2/4] STEP 2/11: ARG BUILD_CONFIGURATION=Release
+--> Using cache dcd814b031184426f0895318a4bdc639f013f5c1d22696647bfed65d150970a3
+--> dcd814b03118
+[2/4] STEP 3/11: WORKDIR /src
+--> Using cache 38854f82e26e35a1f04c0ddabc8781bc90dbb79b2a4d92a72f46fdae87bc4fa0
+--> 38854f82e26e
+[2/4] STEP 4/11: COPY ["src/MyOpenTelemetryApi.Api/MyOpenTelemetryApi.Api.csproj", "src/MyOpenTelemetryApi.Api/"]
+--> Using cache 4e4df1f7d231223505b3eaabcc4c2219aaf76a2e6d1ec96ad72b52be8b799561
+--> 4e4df1f7d231
+[2/4] STEP 5/11: COPY ["src/MyOpenTelemetryApi.Application/MyOpenTelemetryApi.Application.csproj", "src/MyOpenTelemetryApi.Application/"]
+--> Using cache 644ff99713f464e5a8f4298c445d1aeb84720678cdeacfa5dfb9ec81f3be77ee
+--> 644ff99713f4
+[2/4] STEP 6/11: COPY ["src/MyOpenTelemetryApi.Domain/MyOpenTelemetryApi.Domain.csproj", "src/MyOpenTelemetryApi.Domain/"]
+--> Using cache 4aeecc8a1139011826faf51b0e82d8f00d51973b62c4aa121aa661d67af0a733
+--> 4aeecc8a1139
+[2/4] STEP 7/11: COPY ["src/MyOpenTelemetryApi.Infrastructure/MyOpenTelemetryApi.Infrastructure.csproj", "src/MyOpenTelemetryApi.Infrastructure/"]
+--> Using cache c0fc4bc8fb16d74032757b20b1b97218454266964a38052b92117aa06859be4a
+--> c0fc4bc8fb16
+[2/4] STEP 8/11: RUN dotnet restore "src/MyOpenTelemetryApi.Api/MyOpenTelemetryApi.Api.csproj"
+--> Using cache 02ff3c7b66c8c42a4748d1368e000efa30a051f13e69639c9b3c0e147130f315
+--> 02ff3c7b66c8
+[2/4] STEP 9/11: COPY . .
+--> d37cf1796e5c
+[2/4] STEP 10/11: WORKDIR "/src/src/MyOpenTelemetryApi.Api"
+--> 3f739fdd3b88
+[2/4] STEP 11/11: RUN dotnet build "MyOpenTelemetryApi.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  MyOpenTelemetryApi.Domain -> /app/build/MyOpenTelemetryApi.Domain.dll
+  MyOpenTelemetryApi.Application -> /app/build/MyOpenTelemetryApi.Application.dll
+  MyOpenTelemetryApi.Infrastructure -> /app/build/MyOpenTelemetryApi.Infrastructure.dll
+  MyOpenTelemetryApi.Api -> /app/build/MyOpenTelemetryApi.Api.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:13.56
+--> 0925a3e02a86
+[3/4] STEP 1/3: FROM 0925a3e02a869ab2076894d0625497f5989f782089d370de3965b1117a2213d4 AS publish
+[3/4] STEP 2/3: ARG BUILD_CONFIGURATION=Release
+--> b718c472d732
+[3/4] STEP 3/3: RUN dotnet publish "MyOpenTelemetryApi.Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  MyOpenTelemetryApi.Domain -> /src/src/MyOpenTelemetryApi.Domain/bin/Release/net9.0/MyOpenTelemetryApi.Domain.dll
+  MyOpenTelemetryApi.Application -> /src/src/MyOpenTelemetryApi.Application/bin/Release/net9.0/MyOpenTelemetryApi.Application.dll
+  MyOpenTelemetryApi.Infrastructure -> /src/src/MyOpenTelemetryApi.Infrastructure/bin/Release/net9.0/MyOpenTelemetryApi.Infrastructure.dll
+  MyOpenTelemetryApi.Api -> /src/src/MyOpenTelemetryApi.Api/bin/Release/net9.0/MyOpenTelemetryApi.Api.dll
+  MyOpenTelemetryApi.Api -> /app/publish/
+--> 3a3ad8d155d4
+[4/4] STEP 1/10: FROM fca5bdb66eddbe0f002f751e2bb993785c4df8a281dc2b39d86bdd3434ac5427 AS final
+[4/4] STEP 2/10: WORKDIR /app
+--> Using cache 6b3ed11af9afa759181793c6a4a0357cb27dad5d03a637d4488691b3dcce0ef1
+--> 6b3ed11af9af
+[4/4] STEP 3/10: USER root
+--> 9b4f2f71f391
+[4/4] STEP 4/10: RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8793 kB]
+Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [272 kB]
+Fetched 9327 kB in 3s (3716 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  krb5-locales libbrotli1 libcurl4 libgssapi-krb5-2 libk5crypto3 libkeyutils1
+  libkrb5-3 libkrb5support0 libldap-2.5-0 libldap-common libnghttp2-14 libpsl5
+  librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libssh2-1
+  publicsuffix
+Suggested packages:
+  krb5-doc krb5-user libsasl2-modules-gssapi-mit
+  | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp
+  libsasl2-modules-sql
+The following NEW packages will be installed:
+  curl krb5-locales libbrotli1 libcurl4 libgssapi-krb5-2 libk5crypto3
+  libkeyutils1 libkrb5-3 libkrb5support0 libldap-2.5-0 libldap-common
+  libnghttp2-14 libpsl5 librtmp1 libsasl2-2 libsasl2-modules
+  libsasl2-modules-db libssh2-1 publicsuffix
+0 upgraded, 19 newly installed, 0 to remove and 2 not upgraded.
+Need to get 2489 kB of archives.
+After this operation, 6813 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bookworm/main amd64 krb5-locales all 1.20.1-2+deb12u3 [63.1 kB]
+Get:2 http://deb.debian.org/debian bookworm/main amd64 libbrotli1 amd64 1.0.9-2+b6 [275 kB]
+Get:3 http://deb.debian.org/debian bookworm/main amd64 libkrb5support0 amd64 1.20.1-2+deb12u3 [32.8 kB]
+Get:4 http://deb.debian.org/debian bookworm/main amd64 libk5crypto3 amd64 1.20.1-2+deb12u3 [78.9 kB]
+Get:5 http://deb.debian.org/debian bookworm/main amd64 libkeyutils1 amd64 1.6.3-2 [8808 B]
+Get:6 http://deb.debian.org/debian bookworm/main amd64 libkrb5-3 amd64 1.20.1-2+deb12u3 [332 kB]
+Get:7 http://deb.debian.org/debian bookworm/main amd64 libgssapi-krb5-2 amd64 1.20.1-2+deb12u3 [135 kB]
+Get:8 http://deb.debian.org/debian bookworm/main amd64 libsasl2-modules-db amd64 2.1.28+dfsg-10 [20.3 kB]
+Get:9 http://deb.debian.org/debian bookworm/main amd64 libsasl2-2 amd64 2.1.28+dfsg-10 [59.7 kB]
+Get:10 http://deb.debian.org/debian bookworm/main amd64 libldap-2.5-0 amd64 2.5.13+dfsg-5 [183 kB]
+Get:11 http://deb.debian.org/debian bookworm/main amd64 libnghttp2-14 amd64 1.52.0-1+deb12u2 [73.0 kB]
+Get:12 http://deb.debian.org/debian bookworm/main amd64 libpsl5 amd64 0.21.2-1 [58.7 kB]
+Get:13 http://deb.debian.org/debian bookworm/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2+b2 [60.8 kB]
+Get:14 http://deb.debian.org/debian bookworm/main amd64 libssh2-1 amd64 1.10.0-3+b1 [179 kB]
+Get:15 http://deb.debian.org/debian bookworm/main amd64 libcurl4 amd64 7.88.1-10+deb12u12 [391 kB]
+Get:16 http://deb.debian.org/debian bookworm/main amd64 curl amd64 7.88.1-10+deb12u12 [315 kB]
+Get:17 http://deb.debian.org/debian bookworm/main amd64 libldap-common all 2.5.13+dfsg-5 [29.3 kB]
+Get:18 http://deb.debian.org/debian bookworm/main amd64 libsasl2-modules amd64 2.1.28+dfsg-10 [66.6 kB]
+Get:19 http://deb.debian.org/debian bookworm/main amd64 publicsuffix all 20230209.2326-1 [126 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 2489 kB in 0s (8089 kB/s)
+Selecting previously unselected package krb5-locales.
+(Reading database ... 6594 files and directories currently installed.)
+Preparing to unpack .../00-krb5-locales_1.20.1-2+deb12u3_all.deb ...
+Unpacking krb5-locales (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libbrotli1:amd64.
+Preparing to unpack .../01-libbrotli1_1.0.9-2+b6_amd64.deb ...
+Unpacking libbrotli1:amd64 (1.0.9-2+b6) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../02-libkrb5support0_1.20.1-2+deb12u3_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../03-libk5crypto3_1.20.1-2+deb12u3_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../04-libkeyutils1_1.6.3-2_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.6.3-2) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../05-libkrb5-3_1.20.1-2+deb12u3_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../06-libgssapi-krb5-2_1.20.1-2+deb12u3_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../07-libsasl2-modules-db_2.1.28+dfsg-10_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.28+dfsg-10) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../08-libsasl2-2_2.1.28+dfsg-10_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.28+dfsg-10) ...
+Selecting previously unselected package libldap-2.5-0:amd64.
+Preparing to unpack .../09-libldap-2.5-0_2.5.13+dfsg-5_amd64.deb ...
+Unpacking libldap-2.5-0:amd64 (2.5.13+dfsg-5) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../10-libnghttp2-14_1.52.0-1+deb12u2_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.52.0-1+deb12u2) ...
+Selecting previously unselected package libpsl5:amd64.
+Preparing to unpack .../11-libpsl5_0.21.2-1_amd64.deb ...
+Unpacking libpsl5:amd64 (0.21.2-1) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../12-librtmp1_2.4+20151223.gitfa8646d.1-2+b2_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b2) ...
+Selecting previously unselected package libssh2-1:amd64.
+Preparing to unpack .../13-libssh2-1_1.10.0-3+b1_amd64.deb ...
+Unpacking libssh2-1:amd64 (1.10.0-3+b1) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../14-libcurl4_7.88.1-10+deb12u12_amd64.deb ...
+Unpacking libcurl4:amd64 (7.88.1-10+deb12u12) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../15-curl_7.88.1-10+deb12u12_amd64.deb ...
+Unpacking curl (7.88.1-10+deb12u12) ...
+Selecting previously unselected package libldap-common.
+Preparing to unpack .../16-libldap-common_2.5.13+dfsg-5_all.deb ...
+Unpacking libldap-common (2.5.13+dfsg-5) ...
+Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../17-libsasl2-modules_2.1.28+dfsg-10_amd64.deb ...
+Unpacking libsasl2-modules:amd64 (2.1.28+dfsg-10) ...
+Selecting previously unselected package publicsuffix.
+Preparing to unpack .../18-publicsuffix_20230209.2326-1_all.deb ...
+Unpacking publicsuffix (20230209.2326-1) ...
+Setting up libkeyutils1:amd64 (1.6.3-2) ...
+Setting up libpsl5:amd64 (0.21.2-1) ...
+Setting up libbrotli1:amd64 (1.0.9-2+b6) ...
+Setting up libsasl2-modules:amd64 (2.1.28+dfsg-10) ...
+Setting up libnghttp2-14:amd64 (1.52.0-1+deb12u2) ...
+Setting up krb5-locales (1.20.1-2+deb12u3) ...
+Setting up libldap-common (2.5.13+dfsg-5) ...
+Setting up libkrb5support0:amd64 (1.20.1-2+deb12u3) ...
+Setting up libsasl2-modules-db:amd64 (2.1.28+dfsg-10) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b2) ...
+Setting up libk5crypto3:amd64 (1.20.1-2+deb12u3) ...
+Setting up libsasl2-2:amd64 (2.1.28+dfsg-10) ...
+Setting up libssh2-1:amd64 (1.10.0-3+b1) ...
+Setting up libkrb5-3:amd64 (1.20.1-2+deb12u3) ...
+Setting up publicsuffix (20230209.2326-1) ...
+Setting up libldap-2.5-0:amd64 (2.5.13+dfsg-5) ...
+Setting up libgssapi-krb5-2:amd64 (1.20.1-2+deb12u3) ...
+Setting up libcurl4:amd64 (7.88.1-10+deb12u12) ...
+Setting up curl (7.88.1-10+deb12u12) ...
+Processing triggers for libc-bin (2.36-9+deb12u10) ...
+--> b0232f53a1ad
+[4/4] STEP 5/10: RUN mkdir -p /app/logs && chmod 755 /app/logs
+--> d6dd5a6c5a76
+[4/4] STEP 6/10: COPY --from=publish /app/publish .
+--> 491190815345
+[4/4] STEP 7/10: RUN adduser --disabled-password --gecos "" --uid 1000 appuser && chown -R appuser:appuser /app
+Adding user `appuser' ...
+Adding new group `appuser' (1000) ...
+Adding new user `appuser' (1000) with group `appuser (1000)' ...
+Creating home directory `/home/appuser' ...
+Copying files from `/etc/skel' ...
+Adding new user `appuser' to supplemental / extra groups `users' ...
+Adding user `appuser' to group `users' ...
+--> 609e3569ad5d
+[4/4] STEP 8/10: USER appuser
+--> 5fc2f3b467ed
+[4/4] STEP 9/10: USER appuser
+--> a7bdedb4926c
+[4/4] STEP 10/10: ENTRYPOINT ["dotnet", "MyOpenTelemetryApi.Api.dll"]
+[4/4] COMMIT myopentelemetryapi_api
+--> c66bd0004a0d
+Successfully tagged localhost/myopentelemetryapi_api:latest
+c66bd0004a0d7c98d091290fe7bc431eb3a42cc9585713c15a5a72b322543bd6
+Error: creating container storage: the container name "myotel-postgres" is already in use by 0f2d1130c01de35e4d1e9faf3fcd4e101c51aaf3dbdb7ec3457ba1498866e3cd. You have to remove that container to be able to reuse that name: that name is already in use, or use --replace to instruct Podman to do so.
+myotel-postgres
+4ab02d285b39ac40b1aad85fc237096dbcf0ec7c7faf06f9b7aa0f0c63636813
+^CTraceback (most recent call last):
+  File "/usr/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 3707, in async_main
+    await podman_compose.run()
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 1861, in run
+    retcode = await cmd(self, args)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 2705, in compose_up
+    await run_container(compose, cnt["name"], cnt["_deps"], ([], "start", [cnt["name"]]))
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 2654, in run_container
+    await check_dep_conditions(compose, deps)
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 2624, in check_dep_conditions
+    await compose.podman.output(
+        [], "wait", [f"--condition={condition.value}"] + deps_cd
+    )
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 1424, in output
+    stdout_data, stderr_data = await p.communicate()
+                               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/subprocess.py", line 201, in communicate
+    stdin, stdout, stderr = await tasks.gather(stdin, stdout, stderr)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/subprocess.py", line 181, in _read_stream
+    output = await stream.read()
+             ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/streams.py", line 723, in read
+    block = await self.read(self._limit)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/streams.py", line 730, in read
+    await self._wait_for_data('read')
+  File "/usr/lib/python3.13/asyncio/streams.py", line 539, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/bin/podman-compose", line 33, in <module>
+    sys.exit(load_entry_point('podman-compose==1.3.0', 'console_scripts', 'podman-compose')())
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 3711, in main
+    asyncio.run(async_main())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+real    7m7.875s
+user    0m34.842s
+sys     0m8.057s
+
+kushal@texas:~/src/MyOpenTelemetryApi$ cd ~/src/MyOpenTelemetryApi/; time git pull --verbose
+POST git-upload-pack (186 bytes)
+POST git-upload-pack (708 bytes)
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 5 (delta 2), reused 5 (delta 2), pack-reused 0 (from 0)
+Unpacking objects: 100% (5/5), 2.30 KiB | 1.15 MiB/s, done.
+From https://github.com/kusl/MyOpenTelemetryApi
+   2b04f23..74a3a9c  main           -> origin/main
+ = [up to date]      feat/dotnet-10 -> origin/feat/dotnet-10
+Updating 2b04f23..74a3a9c
+Fast-forward
+ claude.md            | 73 ++++++++++++++++++++++++++++++++-----------------------------------------
+ cleanup-and-retry.sh | 29 +++++++++++++++++++++++++++--
+ emergency-cleanup.sh | 60 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 119 insertions(+), 43 deletions(-)
+ create mode 100644 emergency-cleanup.sh
+
+real    0m0.331s
+user    0m0.125s
+sys     0m0.041s
+kushal@texas:~/src/MyOpenTelemetryApi$ time bash emergency-cleanup.sh
+🚨 EMERGENCY CLEANUP - This will force remove everything
+========================================================
+Are you sure you want to force cleanup everything? (yes/no): yes
+🛑 Stopping ALL containers with myotel prefix...
+0f2d1130c01d
+4ab02d285b39
+🗑️ Force removing ALL containers with myotel prefix...
+4ab02d285b39
+Error: container 0f2d1130c01de35e4d1e9faf3fcd4e101c51aaf3dbdb7ec3457ba1498866e3cd has dependent containers which must be removed before it: 4ab02d285b39ac40b1aad85fc237096dbcf0ec7c7faf06f9b7aa0f0c63636813: container already exists
+
+real    0m4.103s
+user    0m0.284s
+sys     0m0.131s
+kushal@texas:~/src/MyOpenTelemetryApi$ cd ~/src/MyOpenTelemetryApi/; time git pull --verbose
+POST git-upload-pack (186 bytes)
+POST git-upload-pack (758 bytes)
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 5 (delta 2), reused 5 (delta 2), pack-reused 0 (from 0)
+Unpacking objects: 100% (5/5), 3.51 KiB | 1.75 MiB/s, done.
+From https://github.com/kusl/MyOpenTelemetryApi
+   74a3a9c..1c712f4  main           -> origin/main
+ = [up to date]      feat/dotnet-10 -> origin/feat/dotnet-10
+Updating 74a3a9c..1c712f4
+Fast-forward
+ claude.md            | 77 ++++++++++++++++++++++++++++++++++++++++++++++++-----------------------------
+ emergency-cleanup.sh | 36 ++++++++++++++++++++++++++++++++++--
+ quick-cleanup.sh     | 55 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 137 insertions(+), 31 deletions(-)
+ create mode 100644 quick-cleanup.sh
+
+real    0m0.280s
+user    0m0.108s
+sys     0m0.043s
+kushal@texas:~/src/MyOpenTelemetryApi$ time bash quick-cleanup.sh
+🧹 Quick cleanup using compose
+================================
+📦 Using compose command: podman-compose
+🔄 Cleaning up with docker-compose.simple.yml...
+🔄 Cleaning up with docker-compose.yml...
+myotel-postgres
+myotel-postgres
+myopentelemetryapi_postgres_data
+c58f22a9fe8fc4b050bae12dc93aa83a25e1ae8aef48e9525ff24a9a5e7ebe8b
+myopentelemetryapi_myotel-network
+🔄 Cleaning up with podman-compose.yml...
+🔄 Cleaning up default compose...
+🖼️ Removing built images...
+Untagged: localhost/myopentelemetryapi_api:latest
+Deleted: c66bd0004a0d7c98d091290fe7bc431eb3a42cc9585713c15a5a72b322543bd6
+Deleted: a7bdedb4926c140c215cbed4c7f9073083bfa3b6528eff4db72e5eb4c9efb955
+Deleted: 5fc2f3b467ed10932b6b2e4610f5b482b1aac91c634940bdd9d8eb60bb0547e9
+Deleted: 609e3569ad5d5371828d4ed0829476f7f8dae9d0b846e4df3c1e3e93296da9dc
+Deleted: 4911908153454ac999ba7c9e47ccb692ae2b2b534bc6305b13b45a24395e196f
+Deleted: d6dd5a6c5a764afaa6b08effb2759d6e253451d8a0979a29a9f970700ef501eb
+Deleted: b0232f53a1ad4b3c92bc2c7b4fa89af3221d80338d3fc41aea5a2af1f1a7b22a
+Deleted: 9b4f2f71f3916bfe9df3703284ad51a64d8d83bd5af90b1bfcf93fa4ea41fe73
+✅ Quick cleanup completed!
+
+📊 Remaining myotel containers:
+None found
+
+real    0m2.913s
+user    0m2.101s
+sys     0m0.819s
+kushal@texas:~/src/MyOpenTelemetryApi$ time bash emergency-cleanup.sh
+🚨 EMERGENCY CLEANUP - This will force remove everything
+========================================================
+Are you sure you want to force cleanup everything? (yes/no): yes
+🔄 Attempting compose down first (handles dependencies properly)...
+Using podman-compose to clean up...
+Compose cleanup completed
+🛑 Stopping ALL containers with myotel prefix...
+🗑️ Force removing dependent containers first...
+🗑️ Force removing database container...
+🗑️ Force removing any remaining myotel containers...
+🧹 Removing containers by image (dependent containers first)...
+🖼️ Removing built images...
+🌐 Removing networks...
+💾 Removing volumes...
+🧹 Pruning unused containers and images...
+ba7c2b91f06b1e62729d25bc336e1c4912e99d1a63ca7511c7361ad5cfecd74e
+fc6698943fa6122325c292699afd31fd8d97502ea87284868a4a7b8397688f4e
+fa75004ae837ef98120521e70b5547152b6c38cd539a4275bccb594c1bfa53ce
+88ed52f6a97c14d80319a13a00f27238716abc8e9277498c6035f1bc61e0fa71
+24c1a234162a80fefad9fcdebffb1b591f71c82a2f78df46456add3d7d933bc3
+dac92bb99d88925fea29d18dd33ba9a7dc6c83c29bd043d912cff8c998cc76cf
+c96540842af1ca62e253a2a7ba86fbf9b95dd7c1aae3ee2f054d79ef94463456
+44cd1a2c3dd7228f5b8890709930f72afdd6dd3a7caeab066ed2e2938d6b99cc
+b92a97a83c8e76a232cca6154d51e0100a179ef36fe5d1028bc5d0aed6c3d847
+9b32d58beb7454dbf129a76ec51a016a6d3322e975af5ac1b927508088b03c0c
+6b3ed11af9afa759181793c6a4a0357cb27dad5d03a637d4488691b3dcce0ef1
+fca5bdb66eddbe0f002f751e2bb993785c4df8a281dc2b39d86bdd3434ac5427
+245a7f9d8bffa9794de724d09f22c5691c9fd1c59aea9e642b6729cad3f816c8
+9bbbb6b2fb0161cf11b4fa55ea48b8bc29fe989fcc8e4a6b2ca063ee672db04e
+0ccd98af8dd0254486eb3a4cc91239227353e428e1f99d14d23758078dab9c66
+dac42312856a4a133878ba45be520e33b17c6e1bb593fced537791a624719639
+2a1721e4a71338291cc580ce6e0afdce78aefdc2fcc393ad9323e3afabd2d3f2
+0ab21f979e5acbdb84c950ec25914295b13ab9f99d392d0a62de8a0fdcb324c5
+8a6f7e59957f46bd1dd592f8897821c5234be88079b828fabaf6df6721769732
+8290e0254951e9c2976d64eec134f9beeee41fb546dde734b2a4faa4f2470901
+59795c1b1f19050420f5d5d6122cbb7287be6b3a1bb11ebb1703899d29802d57
+5e9b836ec6bf16f6c78db790cb34957a2e388e1fd8be8300bbf9183e718dcfc1
+443aa129394a13f8f3fa82751e50c33ab9578c067ae0f6437ee463336279255a
+33732cab615203df5a62a405b5e202dbc2a9f78644fb0ee48dabab0602183ccb
+88f30f69ba5d9b646efe68fbb2d6f2b035be1b712bb2a2bfcefffd47b1ed41fc
+04b74f6b0bfeae6cb7e01f550f78094d1344e8857918248d7c356aa775702e02
+6ca96c11e3e0422a8f7e838b28c7668209fcc94d86125453cb5b8ee6ac8cea66
+89309fd1cd1b4bf570ab9164be13b9dfc00b6226efd1b114642c3eb2ae33c284
+fc885a4908f636e60100e02bbe81ce97cd52ea69f521d97948de45ad2c958964
+3a3ad8d155d40bafa5c807568b6a462b6b95206f922e824259263a5eb6a79278
+b718c472d7329f260bfee53abfb95cd90365663f1145292482524e1e3c594306
+0925a3e02a869ab2076894d0625497f5989f782089d370de3965b1117a2213d4
+3f739fdd3b882f806ff26285b2821279a3a9b8cae6a6e05f2c104451f99c1369
+d37cf1796e5c6a0e225bff01bea526ada421ca198ede3ed9dad54948a3653e84
+02ff3c7b66c8c42a4748d1368e000efa30a051f13e69639c9b3c0e147130f315
+c0fc4bc8fb16d74032757b20b1b97218454266964a38052b92117aa06859be4a
+4aeecc8a1139011826faf51b0e82d8f00d51973b62c4aa121aa661d67af0a733
+644ff99713f464e5a8f4298c445d1aeb84720678cdeacfa5dfb9ec81f3be77ee
+4e4df1f7d231223505b3eaabcc4c2219aaf76a2e6d1ec96ad72b52be8b799561
+38854f82e26e35a1f04c0ddabc8781bc90dbb79b2a4d92a72f46fdae87bc4fa0
+dcd814b031184426f0895318a4bdc639f013f5c1d22696647bfed65d150970a3
+✅ Emergency cleanup completed!
+emergency-cleanup.sh: line 92: syntax error near unexpected token `('
+
+real    0m6.158s
+user    0m2.368s
+sys     0m1.318s
+kushal@texas:~/src/MyOpenTelemetryApi$ time bash cleanup-and-retry.sh
+🧹 Cleaning up containers and trying again...
+Stopping containers...
+Removing containers...
+Force removing any stuck containers...
+Checking for remaining containers by name...
+Removing built images...
+Cleaning up networks...
+Cleaning up volumes...
+📦 Pre-pulling PostgreSQL image...
+Trying to pull docker.io/library/postgres:16-alpine...
+Getting image source signatures
+Copying blob 0ff154fa3401 skipped: already exists
+Copying blob e62b35ad5ef0 skipped: already exists
+Copying blob d0075eb78730 skipped: already exists
+Copying blob f9996286154d skipped: already exists
+Copying blob ad66e73d9475 skipped: already exists
+Copying blob ca2e0665c045 skipped: already exists
+Copying blob 9824c27679d3 skipped: already exists
+Copying blob 68fd2dbe7703 skipped: already exists
+Copying blob e155013fa2b9 skipped: already exists
+Copying blob 5f5cf5fab12d skipped: already exists
+Copying blob 27e0d631c908 skipped: already exists
+Copying config dca9c7aa70 done   |
+Writing manifest to image destination
+dca9c7aa70c71caf8bcc48c8ec40658c1fdf2d1e4e8d26bc27d4d18e030d779a
+✅ Cleanup completed
+🚀 Now running setup...
+🚀 Setting up MyOpenTelemetryApi with Podman
+================================================
+📦 Using compose command: podman-compose
+📄 Using compose file: docker-compose.simple.yml
+🧹 Cleaning up existing containers and networks...
+✅ Cleanup completed
+📁 Creating necessary directories...
+✅ Directories created
+🔨 Building and starting services...
+[1/4] STEP 1/4: FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
+[1/4] STEP 2/4: WORKDIR /app
+--> beccd122837d
+[1/4] STEP 3/4: EXPOSE 8080
+--> 7f010f9d8b7a
+[1/4] STEP 4/4: EXPOSE 8081
+--> 6e6955d9ab07
+[2/4] STEP 1/11: FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+[2/4] STEP 2/11: ARG BUILD_CONFIGURATION=Release
+--> bf77c79521d1
+[2/4] STEP 3/11: WORKDIR /src
+--> affc384916a3
+[2/4] STEP 4/11: COPY ["src/MyOpenTelemetryApi.Api/MyOpenTelemetryApi.Api.csproj", "src/MyOpenTelemetryApi.Api/"]
+--> d7c32a79d1a4
+[2/4] STEP 5/11: COPY ["src/MyOpenTelemetryApi.Application/MyOpenTelemetryApi.Application.csproj", "src/MyOpenTelemetryApi.Application/"]
+--> 4741b07be915
+[2/4] STEP 6/11: COPY ["src/MyOpenTelemetryApi.Domain/MyOpenTelemetryApi.Domain.csproj", "src/MyOpenTelemetryApi.Domain/"]
+--> 4198b1e36538
+[2/4] STEP 7/11: COPY ["src/MyOpenTelemetryApi.Infrastructure/MyOpenTelemetryApi.Infrastructure.csproj", "src/MyOpenTelemetryApi.Infrastructure/"]
+--> bfb0513aac6a
+[2/4] STEP 8/11: RUN dotnet restore "src/MyOpenTelemetryApi.Api/MyOpenTelemetryApi.Api.csproj"
+  Determining projects to restore...
+  Restored /src/src/MyOpenTelemetryApi.Domain/MyOpenTelemetryApi.Domain.csproj (in 181 ms).
+  Restored /src/src/MyOpenTelemetryApi.Application/MyOpenTelemetryApi.Application.csproj (in 2.91 sec).
+  Restored /src/src/MyOpenTelemetryApi.Infrastructure/MyOpenTelemetryApi.Infrastructure.csproj (in 10.4 sec).
+  Restored /src/src/MyOpenTelemetryApi.Api/MyOpenTelemetryApi.Api.csproj (in 10.43 sec).
+--> 4c443e2b6476
+[2/4] STEP 9/11: COPY . .
+--> 46471c8e8e14
+[2/4] STEP 10/11: WORKDIR "/src/src/MyOpenTelemetryApi.Api"
+--> c8399bb67fed
+[2/4] STEP 11/11: RUN dotnet build "MyOpenTelemetryApi.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  MyOpenTelemetryApi.Domain -> /app/build/MyOpenTelemetryApi.Domain.dll
+  MyOpenTelemetryApi.Application -> /app/build/MyOpenTelemetryApi.Application.dll
+  MyOpenTelemetryApi.Infrastructure -> /app/build/MyOpenTelemetryApi.Infrastructure.dll
+  MyOpenTelemetryApi.Api -> /app/build/MyOpenTelemetryApi.Api.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:14.23
+--> e7b1f8954abd
+[3/4] STEP 1/3: FROM e7b1f8954abd3a41deb64711c4fdc1320ca51ad3ee760380c1aa9d218fff0965 AS publish
+[3/4] STEP 2/3: ARG BUILD_CONFIGURATION=Release
+--> 5b16760cee85
+[3/4] STEP 3/3: RUN dotnet publish "MyOpenTelemetryApi.Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  MyOpenTelemetryApi.Domain -> /src/src/MyOpenTelemetryApi.Domain/bin/Release/net9.0/MyOpenTelemetryApi.Domain.dll
+  MyOpenTelemetryApi.Application -> /src/src/MyOpenTelemetryApi.Application/bin/Release/net9.0/MyOpenTelemetryApi.Application.dll
+  MyOpenTelemetryApi.Infrastructure -> /src/src/MyOpenTelemetryApi.Infrastructure/bin/Release/net9.0/MyOpenTelemetryApi.Infrastructure.dll
+  MyOpenTelemetryApi.Api -> /src/src/MyOpenTelemetryApi.Api/bin/Release/net9.0/MyOpenTelemetryApi.Api.dll
+  MyOpenTelemetryApi.Api -> /app/publish/
+--> d4b8101839fc
+[4/4] STEP 1/10: FROM 6e6955d9ab07552d5e4700347ffa2f0e461e25966b4712566182f37fffc501aa AS final
+[4/4] STEP 2/10: WORKDIR /app
+--> 8b5e3db63b85
+[4/4] STEP 3/10: USER root
+--> 25c20c6b6dd2
+[4/4] STEP 4/10: RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8793 kB]
+Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [272 kB]
+Fetched 9327 kB in 2s (3882 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  krb5-locales libbrotli1 libcurl4 libgssapi-krb5-2 libk5crypto3 libkeyutils1
+  libkrb5-3 libkrb5support0 libldap-2.5-0 libldap-common libnghttp2-14 libpsl5
+  librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libssh2-1
+  publicsuffix
+Suggested packages:
+  krb5-doc krb5-user libsasl2-modules-gssapi-mit
+  | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp
+  libsasl2-modules-sql
+The following NEW packages will be installed:
+  curl krb5-locales libbrotli1 libcurl4 libgssapi-krb5-2 libk5crypto3
+  libkeyutils1 libkrb5-3 libkrb5support0 libldap-2.5-0 libldap-common
+  libnghttp2-14 libpsl5 librtmp1 libsasl2-2 libsasl2-modules
+  libsasl2-modules-db libssh2-1 publicsuffix
+0 upgraded, 19 newly installed, 0 to remove and 2 not upgraded.
+Need to get 2489 kB of archives.
+After this operation, 6813 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bookworm/main amd64 krb5-locales all 1.20.1-2+deb12u3 [63.1 kB]
+Get:2 http://deb.debian.org/debian bookworm/main amd64 libbrotli1 amd64 1.0.9-2+b6 [275 kB]
+Get:3 http://deb.debian.org/debian bookworm/main amd64 libkrb5support0 amd64 1.20.1-2+deb12u3 [32.8 kB]
+Get:4 http://deb.debian.org/debian bookworm/main amd64 libk5crypto3 amd64 1.20.1-2+deb12u3 [78.9 kB]
+Get:5 http://deb.debian.org/debian bookworm/main amd64 libkeyutils1 amd64 1.6.3-2 [8808 B]
+Get:6 http://deb.debian.org/debian bookworm/main amd64 libkrb5-3 amd64 1.20.1-2+deb12u3 [332 kB]
+Get:7 http://deb.debian.org/debian bookworm/main amd64 libgssapi-krb5-2 amd64 1.20.1-2+deb12u3 [135 kB]
+Get:8 http://deb.debian.org/debian bookworm/main amd64 libsasl2-modules-db amd64 2.1.28+dfsg-10 [20.3 kB]
+Get:9 http://deb.debian.org/debian bookworm/main amd64 libsasl2-2 amd64 2.1.28+dfsg-10 [59.7 kB]
+Get:10 http://deb.debian.org/debian bookworm/main amd64 libldap-2.5-0 amd64 2.5.13+dfsg-5 [183 kB]
+Get:11 http://deb.debian.org/debian bookworm/main amd64 libnghttp2-14 amd64 1.52.0-1+deb12u2 [73.0 kB]
+Get:12 http://deb.debian.org/debian bookworm/main amd64 libpsl5 amd64 0.21.2-1 [58.7 kB]
+Get:13 http://deb.debian.org/debian bookworm/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2+b2 [60.8 kB]
+Get:14 http://deb.debian.org/debian bookworm/main amd64 libssh2-1 amd64 1.10.0-3+b1 [179 kB]
+Get:15 http://deb.debian.org/debian bookworm/main amd64 libcurl4 amd64 7.88.1-10+deb12u12 [391 kB]
+Get:16 http://deb.debian.org/debian bookworm/main amd64 curl amd64 7.88.1-10+deb12u12 [315 kB]
+Get:17 http://deb.debian.org/debian bookworm/main amd64 libldap-common all 2.5.13+dfsg-5 [29.3 kB]
+Get:18 http://deb.debian.org/debian bookworm/main amd64 libsasl2-modules amd64 2.1.28+dfsg-10 [66.6 kB]
+Get:19 http://deb.debian.org/debian bookworm/main amd64 publicsuffix all 20230209.2326-1 [126 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 2489 kB in 0s (8477 kB/s)
+Selecting previously unselected package krb5-locales.
+(Reading database ... 6594 files and directories currently installed.)
+Preparing to unpack .../00-krb5-locales_1.20.1-2+deb12u3_all.deb ...
+Unpacking krb5-locales (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libbrotli1:amd64.
+Preparing to unpack .../01-libbrotli1_1.0.9-2+b6_amd64.deb ...
+Unpacking libbrotli1:amd64 (1.0.9-2+b6) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../02-libkrb5support0_1.20.1-2+deb12u3_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../03-libk5crypto3_1.20.1-2+deb12u3_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../04-libkeyutils1_1.6.3-2_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.6.3-2) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../05-libkrb5-3_1.20.1-2+deb12u3_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../06-libgssapi-krb5-2_1.20.1-2+deb12u3_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../07-libsasl2-modules-db_2.1.28+dfsg-10_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.28+dfsg-10) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../08-libsasl2-2_2.1.28+dfsg-10_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.28+dfsg-10) ...
+Selecting previously unselected package libldap-2.5-0:amd64.
+Preparing to unpack .../09-libldap-2.5-0_2.5.13+dfsg-5_amd64.deb ...
+Unpacking libldap-2.5-0:amd64 (2.5.13+dfsg-5) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../10-libnghttp2-14_1.52.0-1+deb12u2_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.52.0-1+deb12u2) ...
+Selecting previously unselected package libpsl5:amd64.
+Preparing to unpack .../11-libpsl5_0.21.2-1_amd64.deb ...
+Unpacking libpsl5:amd64 (0.21.2-1) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../12-librtmp1_2.4+20151223.gitfa8646d.1-2+b2_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b2) ...
+Selecting previously unselected package libssh2-1:amd64.
+Preparing to unpack .../13-libssh2-1_1.10.0-3+b1_amd64.deb ...
+Unpacking libssh2-1:amd64 (1.10.0-3+b1) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../14-libcurl4_7.88.1-10+deb12u12_amd64.deb ...
+Unpacking libcurl4:amd64 (7.88.1-10+deb12u12) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../15-curl_7.88.1-10+deb12u12_amd64.deb ...
+Unpacking curl (7.88.1-10+deb12u12) ...
+Selecting previously unselected package libldap-common.
+Preparing to unpack .../16-libldap-common_2.5.13+dfsg-5_all.deb ...
+Unpacking libldap-common (2.5.13+dfsg-5) ...
+Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../17-libsasl2-modules_2.1.28+dfsg-10_amd64.deb ...
+Unpacking libsasl2-modules:amd64 (2.1.28+dfsg-10) ...
+Selecting previously unselected package publicsuffix.
+Preparing to unpack .../18-publicsuffix_20230209.2326-1_all.deb ...
+Unpacking publicsuffix (20230209.2326-1) ...
+Setting up libkeyutils1:amd64 (1.6.3-2) ...
+Setting up libpsl5:amd64 (0.21.2-1) ...
+Setting up libbrotli1:amd64 (1.0.9-2+b6) ...
+Setting up libsasl2-modules:amd64 (2.1.28+dfsg-10) ...
+Setting up libnghttp2-14:amd64 (1.52.0-1+deb12u2) ...
+Setting up krb5-locales (1.20.1-2+deb12u3) ...
+Setting up libldap-common (2.5.13+dfsg-5) ...
+Setting up libkrb5support0:amd64 (1.20.1-2+deb12u3) ...
+Setting up libsasl2-modules-db:amd64 (2.1.28+dfsg-10) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b2) ...
+Setting up libk5crypto3:amd64 (1.20.1-2+deb12u3) ...
+Setting up libsasl2-2:amd64 (2.1.28+dfsg-10) ...
+Setting up libssh2-1:amd64 (1.10.0-3+b1) ...
+Setting up libkrb5-3:amd64 (1.20.1-2+deb12u3) ...
+Setting up publicsuffix (20230209.2326-1) ...
+Setting up libldap-2.5-0:amd64 (2.5.13+dfsg-5) ...
+Setting up libgssapi-krb5-2:amd64 (1.20.1-2+deb12u3) ...
+Setting up libcurl4:amd64 (7.88.1-10+deb12u12) ...
+Setting up curl (7.88.1-10+deb12u12) ...
+Processing triggers for libc-bin (2.36-9+deb12u10) ...
+--> 916f8614f627
+[4/4] STEP 5/10: RUN mkdir -p /app/logs && chmod 755 /app/logs
+--> cbb601400d53
+[4/4] STEP 6/10: COPY --from=publish /app/publish .
+--> dd37bf10c212
+[4/4] STEP 7/10: RUN adduser --disabled-password --gecos "" --uid 1000 appuser && chown -R appuser:appuser /app
+Adding user `appuser' ...
+Adding new group `appuser' (1000) ...
+Adding new user `appuser' (1000) with group `appuser (1000)' ...
+Creating home directory `/home/appuser' ...
+Copying files from `/etc/skel' ...
+Adding new user `appuser' to supplemental / extra groups `users' ...
+Adding user `appuser' to group `users' ...
+--> 1366dfca7234
+[4/4] STEP 8/10: USER appuser
+--> 860ade12900d
+[4/4] STEP 9/10: USER appuser
+--> aa47ae489940
+[4/4] STEP 10/10: ENTRYPOINT ["dotnet", "MyOpenTelemetryApi.Api.dll"]
+[4/4] COMMIT myopentelemetryapi_api
+--> ba1dfb2513d0
+Successfully tagged localhost/myopentelemetryapi_api:latest
+ba1dfb2513d0d35eaad2c154606eb4a4d792f951dafa7121f3e0df5f528e7a8f
+ae13f268ce0a4a860125dda62f86b7db13911636bd6c2de012d786cba6f4d2c0
+18ce0b4b6d345085ad11cbbfc9574badf2d43c8d645aa04ac2402a0afe02526c
+myotel-postgres
+8f22f0039666a5d3fa15ad5aa038c11260f6ee0d1ae3e07345564ed44a5baaba
+
+^CTraceback (most recent call last):
+  File "/usr/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 3707, in async_main
+    await podman_compose.run()
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 1861, in run
+    retcode = await cmd(self, args)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 2705, in compose_up
+    await run_container(compose, cnt["name"], cnt["_deps"], ([], "start", [cnt["name"]]))
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 2654, in run_container
+    await check_dep_conditions(compose, deps)
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 2624, in check_dep_conditions
+    await compose.podman.output(
+        [], "wait", [f"--condition={condition.value}"] + deps_cd
+    )
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 1424, in output
+    stdout_data, stderr_data = await p.communicate()
+                               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/subprocess.py", line 201, in communicate
+    stdin, stdout, stderr = await tasks.gather(stdin, stdout, stderr)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/subprocess.py", line 181, in _read_stream
+    output = await stream.read()
+             ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/streams.py", line 723, in read
+    block = await self.read(self._limit)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/streams.py", line 730, in read
+    await self._wait_for_data('read')
+  File "/usr/lib/python3.13/asyncio/streams.py", line 539, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/bin/podman-compose", line 33, in <module>
+    sys.exit(load_entry_point('podman-compose==1.3.0', 'console_scripts', 'podman-compose')())
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 3711, in main
+    asyncio.run(async_main())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+real    34m43.797s
+user    1m11.756s
+sys     0m18.088s
+
+kushal@texas:~/src/MyOpenTelemetryApi$
+kushal@texas:~/src/MyOpenTelemetryApi$ time bash cleanup-and-retry.sh
+🧹 Cleaning up containers and trying again...
+Stopping containers...
+Removing containers...
+Force removing any stuck containers...
+myotel-api
+Checking for remaining containers by name...
+Removing PostgreSQL container by ID: 18ce0b4b6d34
+18ce0b4b6d34
+Removing built images...
+Untagged: localhost/myopentelemetryapi_api:latest
+Deleted: ba1dfb2513d0d35eaad2c154606eb4a4d792f951dafa7121f3e0df5f528e7a8f
+Deleted: aa47ae4899404b750b0cd92c7a70ebabf8604b49f0da27295635e26b91876b4a
+Deleted: 860ade12900d575ed2b8e829cb1c50e729382410073d1fd21c7f5e58afa52d0d
+Deleted: 1366dfca7234f1368869a4b5d9aff1652bd04e61986ca858532194bfab193ee1
+Deleted: dd37bf10c212980797ba696569cd95b671ba8dda93bad08ce4c0d71ec2e61543
+Deleted: cbb601400d53a058abaf8984bd6b03304f97a6bfb4744c397d37e39755009903
+Deleted: 916f8614f62787b2b8ab698151f7f7bbee0d1dd5783a290f77ea3ba7621547c1
+Deleted: 25c20c6b6dd298c39ceb5bdc16e2d23b3d456a8fa621ccd6763f3aadb91d9348
+Deleted: 8b5e3db63b85dc044249b0ced0f07b5bc41899053b04f8e1647a6400c3f6f811
+Deleted: 6e6955d9ab07552d5e4700347ffa2f0e461e25966b4712566182f37fffc501aa
+Deleted: 7f010f9d8b7a7455dedfa55d7483f5443cbe697aab690fead6808d749c630376
+Deleted: beccd122837d1a438392b350df34e5127dcfb7289ca9267730275f3416d5376d
+Cleaning up networks...
+myopentelemetryapi_myotel-network
+Cleaning up volumes...
+myopentelemetryapi_postgres_data
+📦 Pre-pulling PostgreSQL image...
+Trying to pull docker.io/library/postgres:16-alpine...
+Getting image source signatures
+Copying blob 0ff154fa3401 skipped: already exists
+Copying blob ad66e73d9475 skipped: already exists
+Copying blob d0075eb78730 skipped: already exists
+Copying blob e155013fa2b9 skipped: already exists
+Copying blob 68fd2dbe7703 skipped: already exists
+Copying blob f9996286154d skipped: already exists
+Copying blob e62b35ad5ef0 skipped: already exists
+Copying blob ca2e0665c045 skipped: already exists
+Copying blob 5f5cf5fab12d skipped: already exists
+Copying blob 27e0d631c908 skipped: already exists
+Copying blob 9824c27679d3 skipped: already exists
+Copying config dca9c7aa70 done   |
+Writing manifest to image destination
+dca9c7aa70c71caf8bcc48c8ec40658c1fdf2d1e4e8d26bc27d4d18e030d779a
+✅ Cleanup completed
+🚀 Now running setup...
+🚀 Setting up MyOpenTelemetryApi with Podman
+================================================
+📦 Using compose command: podman-compose
+📄 Using compose file: docker-compose.simple.yml
+🧹 Cleaning up existing containers and networks...
+✅ Cleanup completed
+📁 Creating necessary directories...
+✅ Directories created
+🔨 Building and starting services...
+[1/4] STEP 1/4: FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
+[1/4] STEP 2/4: WORKDIR /app
+--> b76007281138
+[1/4] STEP 3/4: EXPOSE 8080
+--> 9d3e067d1bfd
+[1/4] STEP 4/4: EXPOSE 8081
+--> 521d9abbf656
+[2/4] STEP 1/11: FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+[2/4] STEP 2/11: ARG BUILD_CONFIGURATION=Release
+--> Using cache bf77c79521d1ce40bf64674ab17b717d18230a15747b692511d4030bba30ccf0
+--> bf77c79521d1
+[2/4] STEP 3/11: WORKDIR /src
+--> Using cache affc384916a31ecd4baf8ead34ae0405816dec79e983940d9d3d972b82b83b4a
+--> affc384916a3
+[2/4] STEP 4/11: COPY ["src/MyOpenTelemetryApi.Api/MyOpenTelemetryApi.Api.csproj", "src/MyOpenTelemetryApi.Api/"]
+--> Using cache d7c32a79d1a43df007abba693b5dfc38efb5b1ae28e7b3300bbd23ec3d204104
+--> d7c32a79d1a4
+[2/4] STEP 5/11: COPY ["src/MyOpenTelemetryApi.Application/MyOpenTelemetryApi.Application.csproj", "src/MyOpenTelemetryApi.Application/"]
+--> Using cache 4741b07be915ad87537e30750807b227e3d2fc03a83d7ba0a38d9102e0496ed0
+--> 4741b07be915
+[2/4] STEP 6/11: COPY ["src/MyOpenTelemetryApi.Domain/MyOpenTelemetryApi.Domain.csproj", "src/MyOpenTelemetryApi.Domain/"]
+--> Using cache 4198b1e365386c54fd43986b33da4700e40394d7e13fea3e3bbbcdfe14c0b789
+--> 4198b1e36538
+[2/4] STEP 7/11: COPY ["src/MyOpenTelemetryApi.Infrastructure/MyOpenTelemetryApi.Infrastructure.csproj", "src/MyOpenTelemetryApi.Infrastructure/"]
+--> Using cache bfb0513aac6a8d03d9c29135bea5a9adc700638993bb0b191cedf0ead242152a
+--> bfb0513aac6a
+[2/4] STEP 8/11: RUN dotnet restore "src/MyOpenTelemetryApi.Api/MyOpenTelemetryApi.Api.csproj"
+--> Using cache 4c443e2b64767b628b6864d32290a69dd9111b228ea545403b7c2f0b2a6e240f
+--> 4c443e2b6476
+[2/4] STEP 9/11: COPY . .
+--> Using cache 46471c8e8e14e5e57de9990984affbe108d98e7ff309cd0eed49d275131f2a86
+--> 46471c8e8e14
+[2/4] STEP 10/11: WORKDIR "/src/src/MyOpenTelemetryApi.Api"
+--> Using cache c8399bb67fedd49c5ac2bea2ae75cc9af991af6bd9f547bfeb9e5bbbd1e2d7fe
+--> c8399bb67fed
+[2/4] STEP 11/11: RUN dotnet build "MyOpenTelemetryApi.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
+--> Using cache e7b1f8954abd3a41deb64711c4fdc1320ca51ad3ee760380c1aa9d218fff0965
+--> e7b1f8954abd
+[3/4] STEP 1/3: FROM e7b1f8954abd3a41deb64711c4fdc1320ca51ad3ee760380c1aa9d218fff0965 AS publish
+[3/4] STEP 2/3: ARG BUILD_CONFIGURATION=Release
+--> Using cache 5b16760cee857b938a92b0bcf0cf5c72ef58108d4cad79d3b0a6e74fa28458bb
+--> 5b16760cee85
+[3/4] STEP 3/3: RUN dotnet publish "MyOpenTelemetryApi.Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+--> Using cache d4b8101839fc0b83c67097621feb961fb3bc4a9c981090a6cc6c54c33470614c
+--> d4b8101839fc
+[4/4] STEP 1/10: FROM 521d9abbf6567cf4abc5dce966955a072413689856a353099952c52270c9ab40 AS final
+[4/4] STEP 2/10: WORKDIR /app
+--> 1089d706324c
+[4/4] STEP 3/10: USER root
+--> 19c4b5fdb61b
+[4/4] STEP 4/10: RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8793 kB]
+Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [272 kB]
+Fetched 9327 kB in 2s (3893 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  krb5-locales libbrotli1 libcurl4 libgssapi-krb5-2 libk5crypto3 libkeyutils1
+  libkrb5-3 libkrb5support0 libldap-2.5-0 libldap-common libnghttp2-14 libpsl5
+  librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libssh2-1
+  publicsuffix
+Suggested packages:
+  krb5-doc krb5-user libsasl2-modules-gssapi-mit
+  | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp
+  libsasl2-modules-sql
+The following NEW packages will be installed:
+  curl krb5-locales libbrotli1 libcurl4 libgssapi-krb5-2 libk5crypto3
+  libkeyutils1 libkrb5-3 libkrb5support0 libldap-2.5-0 libldap-common
+  libnghttp2-14 libpsl5 librtmp1 libsasl2-2 libsasl2-modules
+  libsasl2-modules-db libssh2-1 publicsuffix
+0 upgraded, 19 newly installed, 0 to remove and 2 not upgraded.
+Need to get 2489 kB of archives.
+After this operation, 6813 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bookworm/main amd64 krb5-locales all 1.20.1-2+deb12u3 [63.1 kB]
+Get:2 http://deb.debian.org/debian bookworm/main amd64 libbrotli1 amd64 1.0.9-2+b6 [275 kB]
+Get:3 http://deb.debian.org/debian bookworm/main amd64 libkrb5support0 amd64 1.20.1-2+deb12u3 [32.8 kB]
+Get:4 http://deb.debian.org/debian bookworm/main amd64 libk5crypto3 amd64 1.20.1-2+deb12u3 [78.9 kB]
+Get:5 http://deb.debian.org/debian bookworm/main amd64 libkeyutils1 amd64 1.6.3-2 [8808 B]
+Get:6 http://deb.debian.org/debian bookworm/main amd64 libkrb5-3 amd64 1.20.1-2+deb12u3 [332 kB]
+Get:7 http://deb.debian.org/debian bookworm/main amd64 libgssapi-krb5-2 amd64 1.20.1-2+deb12u3 [135 kB]
+Get:8 http://deb.debian.org/debian bookworm/main amd64 libsasl2-modules-db amd64 2.1.28+dfsg-10 [20.3 kB]
+Get:9 http://deb.debian.org/debian bookworm/main amd64 libsasl2-2 amd64 2.1.28+dfsg-10 [59.7 kB]
+Get:10 http://deb.debian.org/debian bookworm/main amd64 libldap-2.5-0 amd64 2.5.13+dfsg-5 [183 kB]
+Get:11 http://deb.debian.org/debian bookworm/main amd64 libnghttp2-14 amd64 1.52.0-1+deb12u2 [73.0 kB]
+Get:12 http://deb.debian.org/debian bookworm/main amd64 libpsl5 amd64 0.21.2-1 [58.7 kB]
+Get:13 http://deb.debian.org/debian bookworm/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2+b2 [60.8 kB]
+Get:14 http://deb.debian.org/debian bookworm/main amd64 libssh2-1 amd64 1.10.0-3+b1 [179 kB]
+Get:15 http://deb.debian.org/debian bookworm/main amd64 libcurl4 amd64 7.88.1-10+deb12u12 [391 kB]
+Get:16 http://deb.debian.org/debian bookworm/main amd64 curl amd64 7.88.1-10+deb12u12 [315 kB]
+Get:17 http://deb.debian.org/debian bookworm/main amd64 libldap-common all 2.5.13+dfsg-5 [29.3 kB]
+Get:18 http://deb.debian.org/debian bookworm/main amd64 libsasl2-modules amd64 2.1.28+dfsg-10 [66.6 kB]
+Get:19 http://deb.debian.org/debian bookworm/main amd64 publicsuffix all 20230209.2326-1 [126 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 2489 kB in 0s (5818 kB/s)
+Selecting previously unselected package krb5-locales.
+(Reading database ... 6594 files and directories currently installed.)
+Preparing to unpack .../00-krb5-locales_1.20.1-2+deb12u3_all.deb ...
+Unpacking krb5-locales (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libbrotli1:amd64.
+Preparing to unpack .../01-libbrotli1_1.0.9-2+b6_amd64.deb ...
+Unpacking libbrotli1:amd64 (1.0.9-2+b6) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../02-libkrb5support0_1.20.1-2+deb12u3_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../03-libk5crypto3_1.20.1-2+deb12u3_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../04-libkeyutils1_1.6.3-2_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.6.3-2) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../05-libkrb5-3_1.20.1-2+deb12u3_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../06-libgssapi-krb5-2_1.20.1-2+deb12u3_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.20.1-2+deb12u3) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../07-libsasl2-modules-db_2.1.28+dfsg-10_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.28+dfsg-10) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../08-libsasl2-2_2.1.28+dfsg-10_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.28+dfsg-10) ...
+Selecting previously unselected package libldap-2.5-0:amd64.
+Preparing to unpack .../09-libldap-2.5-0_2.5.13+dfsg-5_amd64.deb ...
+Unpacking libldap-2.5-0:amd64 (2.5.13+dfsg-5) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../10-libnghttp2-14_1.52.0-1+deb12u2_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.52.0-1+deb12u2) ...
+Selecting previously unselected package libpsl5:amd64.
+Preparing to unpack .../11-libpsl5_0.21.2-1_amd64.deb ...
+Unpacking libpsl5:amd64 (0.21.2-1) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../12-librtmp1_2.4+20151223.gitfa8646d.1-2+b2_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b2) ...
+Selecting previously unselected package libssh2-1:amd64.
+Preparing to unpack .../13-libssh2-1_1.10.0-3+b1_amd64.deb ...
+Unpacking libssh2-1:amd64 (1.10.0-3+b1) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../14-libcurl4_7.88.1-10+deb12u12_amd64.deb ...
+Unpacking libcurl4:amd64 (7.88.1-10+deb12u12) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../15-curl_7.88.1-10+deb12u12_amd64.deb ...
+Unpacking curl (7.88.1-10+deb12u12) ...
+Selecting previously unselected package libldap-common.
+Preparing to unpack .../16-libldap-common_2.5.13+dfsg-5_all.deb ...
+Unpacking libldap-common (2.5.13+dfsg-5) ...
+Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../17-libsasl2-modules_2.1.28+dfsg-10_amd64.deb ...
+Unpacking libsasl2-modules:amd64 (2.1.28+dfsg-10) ...
+Selecting previously unselected package publicsuffix.
+Preparing to unpack .../18-publicsuffix_20230209.2326-1_all.deb ...
+Unpacking publicsuffix (20230209.2326-1) ...
+Setting up libkeyutils1:amd64 (1.6.3-2) ...
+Setting up libpsl5:amd64 (0.21.2-1) ...
+Setting up libbrotli1:amd64 (1.0.9-2+b6) ...
+Setting up libsasl2-modules:amd64 (2.1.28+dfsg-10) ...
+Setting up libnghttp2-14:amd64 (1.52.0-1+deb12u2) ...
+Setting up krb5-locales (1.20.1-2+deb12u3) ...
+Setting up libldap-common (2.5.13+dfsg-5) ...
+Setting up libkrb5support0:amd64 (1.20.1-2+deb12u3) ...
+Setting up libsasl2-modules-db:amd64 (2.1.28+dfsg-10) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b2) ...
+Setting up libk5crypto3:amd64 (1.20.1-2+deb12u3) ...
+Setting up libsasl2-2:amd64 (2.1.28+dfsg-10) ...
+Setting up libssh2-1:amd64 (1.10.0-3+b1) ...
+Setting up libkrb5-3:amd64 (1.20.1-2+deb12u3) ...
+Setting up publicsuffix (20230209.2326-1) ...
+Setting up libldap-2.5-0:amd64 (2.5.13+dfsg-5) ...
+Setting up libgssapi-krb5-2:amd64 (1.20.1-2+deb12u3) ...
+Setting up libcurl4:amd64 (7.88.1-10+deb12u12) ...
+Setting up curl (7.88.1-10+deb12u12) ...
+Processing triggers for libc-bin (2.36-9+deb12u10) ...
+--> c550d65ca90d
+[4/4] STEP 5/10: RUN mkdir -p /app/logs && chmod 755 /app/logs
+--> d47e1394664f
+[4/4] STEP 6/10: COPY --from=publish /app/publish .
+--> e655248502f8
+[4/4] STEP 7/10: RUN adduser --disabled-password --gecos "" --uid 1000 appuser && chown -R appuser:appuser /app
+Adding user `appuser' ...
+Adding new group `appuser' (1000) ...
+Adding new user `appuser' (1000) with group `appuser (1000)' ...
+Creating home directory `/home/appuser' ...
+Copying files from `/etc/skel' ...
+Adding new user `appuser' to supplemental / extra groups `users' ...
+Adding user `appuser' to group `users' ...
+--> 887917d953f0
+[4/4] STEP 8/10: USER appuser
+--> 90fc8371894f
+[4/4] STEP 9/10: USER appuser
+--> 6c567a2c9d7c
+[4/4] STEP 10/10: ENTRYPOINT ["dotnet", "MyOpenTelemetryApi.Api.dll"]
+[4/4] COMMIT myopentelemetryapi_api
+--> 691008f29455
+Successfully tagged localhost/myopentelemetryapi_api:latest
+691008f2945549c1f0eadd34a13ed47d33f48e000fb17540b11c1cf6c495d32c
+9cc4352306f7bea4da47efc03526600470f03b4f66e0a03791d0fb04d3121d6d
+myotel-postgres
+44d4ba907a37f4f8b46a08a212b43e0b08b196c466dac799cb97bf05c78ba833
+^CTraceback (most recent call last):
+  File "/usr/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 3707, in async_main
+    await podman_compose.run()
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 1861, in run
+    retcode = await cmd(self, args)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 2705, in compose_up
+    await run_container(compose, cnt["name"], cnt["_deps"], ([], "start", [cnt["name"]]))
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 2654, in run_container
+    await check_dep_conditions(compose, deps)
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 2624, in check_dep_conditions
+    await compose.podman.output(
+        [], "wait", [f"--condition={condition.value}"] + deps_cd
+    )
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 1424, in output
+    stdout_data, stderr_data = await p.communicate()
+                               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/subprocess.py", line 201, in communicate
+    stdin, stdout, stderr = await tasks.gather(stdin, stdout, stderr)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/subprocess.py", line 181, in _read_stream
+    output = await stream.read()
+             ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/streams.py", line 723, in read
+    block = await self.read(self._limit)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/streams.py", line 730, in read
+    await self._wait_for_data('read')
+  File "/usr/lib/python3.13/asyncio/streams.py", line 539, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/bin/podman-compose", line 33, in <module>
+    sys.exit(load_entry_point('podman-compose==1.3.0', 'console_scripts', 'podman-compose')())
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/podman_compose.py", line 3711, in main
+    asyncio.run(async_main())
+    ~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+
+real    12m27.088s
+user    0m14.175s
+sys     0m5.444s
 kushal@texas:~/src/MyOpenTelemetryApi$

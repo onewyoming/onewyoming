@@ -1406,3 +1406,67 @@ Download .NET:
   https://aka.ms/dotnet/download
 2025-08-11 15:42:53
 2025-08-11 15:42:53
+.NET SDK:
+ Version:           10.0.100-preview.6.25358.103
+ Commit:            75972a5ba7
+ Workload version:  10.0.100-manifests.6616851e
+ MSBuild version:   17.15.0-preview-25358-103+75972a5ba
+
+Runtime Environment:
+ OS Name:     Windows
+ OS Version:  10.0.26100
+ OS Platform: Windows
+ RID:         win-x64
+ Base Path:   C:\Program Files\dotnet\sdk\10.0.100-preview.6.25358.103\
+
+.NET workloads installed:
+ [aspire]
+   Installation Source: VS 17.14.36401.2
+   Manifest Version:    8.2.2/8.0.100
+   Manifest Path:       C:\Program Files\dotnet\sdk-manifests\8.0.100\microsoft.net.sdk.aspire\8.2.2\WorkloadManifest.json
+   Install Type:              Msi
+
+Configured to use workload sets when installing new manifests.
+Workloads are configured to install and update using workload versions, but none were found. Run "dotnet workload restore" to install a workload version.
+
+Host:
+  Version:      10.0.0-preview.6.25358.103
+  Architecture: x64
+  Commit:       75972a5ba7
+
+.NET SDKs installed:
+  9.0.100 [C:\Program Files\dotnet\sdk]
+  9.0.304 [C:\Program Files\dotnet\sdk]
+  10.0.100-preview.6.25358.103 [C:\Program Files\dotnet\sdk]
+
+.NET runtimes installed:
+  Microsoft.AspNetCore.App 8.0.19 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 9.0.0 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 9.0.8 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 10.0.0-preview.6.25358.103 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.NETCore.App 8.0.19 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.NETCore.App 9.0.0 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.NETCore.App 9.0.8 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.NETCore.App 10.0.0-preview.6.25358.103 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.WindowsDesktop.App 8.0.19 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+  Microsoft.WindowsDesktop.App 9.0.0 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+  Microsoft.WindowsDesktop.App 9.0.8 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+  Microsoft.WindowsDesktop.App 10.0.0-preview.6.25358.103 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+
+Other architectures found:
+  x86   [C:\Program Files (x86)\dotnet]
+    registered at [HKLM\SOFTWARE\dotnet\Setup\InstalledVersions\x86\InstallLocation]
+
+Environment variables:
+  Not set
+
+global.json file:
+  Not found
+
+Learn more:
+  https://aka.ms/dotnet/info
+
+Download .NET:
+  https://aka.ms/dotnet/download
+2025-08-11 19:00:18
+2025-08-11 19:00:18
